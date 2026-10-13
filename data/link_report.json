@@ -83,15 +83,6 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-elite-secure-income.pdf",
-   "kind": "pdf",
-   "label": "AIA Elite Secure Income",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-elite-secure-income.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-enhanced-cancer-protect-brochure.pdf",
    "kind": "pdf",
    "label": "AIA Enhanced Cancer Protect",
@@ -146,24 +137,6 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-invest-easy-brochure.pdf",
-   "kind": "pdf",
-   "label": "AIA Invest Easy",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-invest-easy-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-life-dividends.pdf",
-   "kind": "pdf",
-   "label": "AIA Life Dividends",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-life-dividends.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-mum2baby-choices.pdf",
    "kind": "pdf",
    "label": "AIA Mum2Baby Choices",
@@ -191,93 +164,12 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-generations-ii.pdf",
-   "kind": "pdf",
-   "label": "AIA Platinum Generations (II)",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-generations-ii.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-gift-for-life-series.pdf",
-   "kind": "pdf",
-   "label": "AIA Platinum Gift for Life Series",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-gift-for-life-series.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-heritage-wealth-ii.pdf",
-   "kind": "pdf",
-   "label": "AIA Platinum Heritage Wealth (II)",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-heritage-wealth-ii.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-indexed-legacy-iii-brochure.pdf",
-   "kind": "pdf",
-   "label": "AIA Platinum Indexed Legacy (III)",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-indexed-legacy-iii-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-infinite-wealth-ii.pdf",
-   "kind": "pdf",
-   "label": "AIA Platinum Infinite Wealth (II)",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-infinite-wealth-ii.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-international-health-brochure.pdf",
    "kind": "pdf",
    "label": "AIA Platinum International Health",
    "owner": "aia",
    "code": 200,
    "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-international-health-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-retirement-elite.pdf",
-   "kind": "pdf",
-   "label": "AIA Platinum Retirement Elite",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-retirement-elite.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-wealth-elite-2.0-brochure.pdf",
-   "kind": "pdf",
-   "label": "AIA Platinum Wealth Elite 2.0",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-wealth-elite-2.0-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-wealth-legacy.pdf",
-   "kind": "pdf",
-   "label": "AIA Platinum Wealth Legacy",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-wealth-legacy.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-wealth-venture-iii.pdf",
-   "kind": "pdf",
-   "label": "AIA Platinum Wealth Venture 3.0",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-wealth-venture-iii.pdf",
    "status": "pdf"
   },
   {
@@ -308,24 +200,6 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-pro-achiever-3.0.pdf",
-   "kind": "pdf",
-   "label": "AIA Pro Achiever 3.0",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-pro-achiever-3.0.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-pro-lifetime-protector-ii.pdf",
-   "kind": "pdf",
-   "label": "AIA Pro Lifetime Protector (II)",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-pro-lifetime-protector-ii.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-protect-3-brochure.pdf",
    "kind": "pdf",
    "label": "AIA Protect 3",
@@ -335,48 +209,12 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-retirement-saver-iv.pdf",
-   "kind": "pdf",
-   "label": "AIA Retirement Saver (IV)",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-retirement-saver-iv.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-secure-flexi-term-brochure.pdf",
    "kind": "pdf",
    "label": "AIA Secure Flexi Term",
    "owner": "aia",
    "code": 200,
    "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-secure-flexi-term-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-smart-flexi-growth.pdf",
-   "kind": "pdf",
-   "label": "AIA Smart Flexi Growth",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-smart-flexi-growth.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-smart-flexi-rewards-ii.pdf",
-   "kind": "pdf",
-   "label": "AIA Smart Flexi Rewards (II)",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-smart-flexi-rewards-ii.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-smart-wealth-builder-series.pdf",
-   "kind": "pdf",
-   "label": "AIA Smart Wealth Builder Series",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-smart-wealth-builder-series.pdf",
    "status": "pdf"
   },
   {
@@ -404,15 +242,6 @@
    "owner": "aia",
    "code": 200,
    "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-ultimate-critical-cover-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-wealth-venture.pdf",
-   "kind": "pdf",
-   "label": "AIA Wealth Venture",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-wealth-venture.pdf",
    "status": "pdf"
   },
   {
@@ -641,192 +470,12 @@
    "status": "ok"
   },
   {
-   "url": "https://www.aia.com.sg/en/our-products/life-insurance/whole-life-insurance/aia-life-dividends",
-   "kind": "product",
-   "label": "AIA Life Dividends",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/life-insurance/whole-life-insurance/aia-life-dividends",
-   "status": "ok"
-  },
-  {
    "url": "https://www.aia.com.sg/en/our-products/life-insurance/whole-life-insurance/direct-aia-whole-life-cover-ii",
    "kind": "product",
    "label": "DIRECT - AIA Whole Life Cover (II)",
    "owner": "aia",
    "code": 200,
    "final": "https://www.aia.com.sg/en/our-products/life-insurance/whole-life-insurance/direct-aia-whole-life-cover-ii",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/platinum/legacy-planning/aia-platinum-generations-ii",
-   "kind": "product",
-   "label": "AIA Platinum Generations (II)",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/platinum/legacy-planning/aia-platinum-generations-ii",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/platinum/legacy-planning/aia-platinum-heritage-wealth-ii",
-   "kind": "product",
-   "label": "AIA Platinum Heritage Wealth (II)",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/platinum/legacy-planning/aia-platinum-heritage-wealth-ii",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/platinum/legacy-planning/aia-platinum-indexed-legacy-iii",
-   "kind": "product",
-   "label": "AIA Platinum Indexed Legacy (III)",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/platinum/legacy-planning/aia-platinum-indexed-legacy-iii",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/platinum/legacy-planning/aia-platinum-legacy-ix",
-   "kind": "product",
-   "label": "AIA Platinum Legacy (IX)",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/platinum/legacy-planning/aia-platinum-legacy-ix",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/platinum/wealth-accumulation/aia-platinum-gift-for-life-series",
-   "kind": "product",
-   "label": "AIA Platinum Gift for Life Series",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/platinum/wealth-accumulation/aia-platinum-gift-for-life-series",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/platinum/wealth-accumulation/aia-platinum-infinite-wealth-ii",
-   "kind": "product",
-   "label": "AIA Platinum Infinite Wealth (II)",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/platinum/wealth-accumulation/aia-platinum-infinite-wealth-ii",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-elite-secure-income",
-   "kind": "product",
-   "label": "AIA Elite Secure Income",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-elite-secure-income",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-invest-easy",
-   "kind": "product",
-   "label": "AIA Invest Easy",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-invest-easy",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-platinum-retirement-elite",
-   "kind": "product",
-   "label": "AIA Platinum Retirement Elite",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-platinum-retirement-elite",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-platinum-wealth-elite-ii",
-   "kind": "product",
-   "label": "AIA Platinum Wealth Elite 2.0",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-platinum-wealth-elite-ii",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-platinum-wealth-legacy",
-   "kind": "product",
-   "label": "AIA Platinum Wealth Legacy",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-platinum-wealth-legacy",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-platinum-wealth-venture-iii",
-   "kind": "product",
-   "label": "AIA Platinum Wealth Venture 3.0",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-platinum-wealth-venture-iii",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-pro-achiever-iii",
-   "kind": "product",
-   "label": "AIA Pro Achiever 3.0",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-pro-achiever-iii",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-pro-lifetime-protector-ii",
-   "kind": "product",
-   "label": "AIA Pro Lifetime Protector (II)",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-pro-lifetime-protector-ii",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-wealth-venture",
-   "kind": "product",
-   "label": "AIA Wealth Venture",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-wealth-venture",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/save-and-invest/participating-savings/aia-retirement-saver-iv",
-   "kind": "product",
-   "label": "AIA Retirement Saver (IV)",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/save-and-invest/participating-savings/aia-retirement-saver-iv",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/save-and-invest/participating-savings/aia-smart-flexi-growth",
-   "kind": "product",
-   "label": "AIA Smart Flexi Growth",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/save-and-invest/participating-savings/aia-smart-flexi-growth",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/save-and-invest/participating-savings/aia-smart-flexi-rewards-ii",
-   "kind": "product",
-   "label": "AIA Smart Flexi Rewards (II)",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/save-and-invest/participating-savings/aia-smart-flexi-rewards-ii",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.aia.com.sg/en/our-products/save-and-invest/participating-savings/aia-smart-wealth-builder-series",
-   "kind": "product",
-   "label": "AIA Smart Wealth Builder Series",
-   "owner": "aia",
-   "code": 200,
-   "final": "https://www.aia.com.sg/en/our-products/save-and-invest/participating-savings/aia-smart-wealth-builder-series",
    "status": "ok"
   },
   {
@@ -1001,24 +650,6 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/life-insurance-/great-life-advantage-4-plus/great-life-advantage-4-plus-web-brochure.pdf",
-   "kind": "pdf",
-   "label": "GREAT Life Advantage 4 Plus",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/life-insurance-/great-life-advantage-4-plus/great-life-advantage-4-plus-web-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/life-insurance-/great-life-advantage/great-life-advantage-4-eng-brochure.pdf",
-   "kind": "pdf",
-   "label": "GREAT Life Advantage 4",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/life-insurance-/great-life-advantage/great-life-advantage-4-eng-brochure.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/life-insurance-/great-life-multiplier/gels-pdt-pd-glm-eng-brochure.pdf",
    "kind": "pdf",
    "label": "GREAT Life Multiplier",
@@ -1091,147 +722,12 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/prestige-/prestige-legacy-index/prestige-legacy-index-eng-brochure.pdf",
-   "kind": "pdf",
-   "label": "Prestige Legacy Index",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/prestige-/prestige-legacy-index/prestige-legacy-index-eng-brochure.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/prestige-/prestige-pacare/prestige-pacare-english-brochure.pdf",
    "kind": "pdf",
    "label": "Prestige PACare",
    "owner": "great_eastern",
    "code": 200,
    "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/prestige-/prestige-pacare/prestige-pacare-english-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/prestige-/prestige-wealth-legacy/prestige-wealth-legacy-eng-brochure.pdf",
-   "kind": "pdf",
-   "label": "Prestige Wealth Legacy",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/prestige-/prestige-wealth-legacy/prestige-wealth-legacy-eng-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/retirement/great-prime-rewards/2026/gels-pd-pdt-great-prime-rewards3-brochure.pdf",
-   "kind": "pdf",
-   "label": "GREAT Prime Rewards 3",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/retirement/great-prime-rewards/2026/gels-pd-pdt-great-prime-rewards3-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/retirement/lifetime-boost/lifetime-boost-english-brochure.pdf",
-   "kind": "pdf",
-   "label": "Lifetime Boost",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/retirement/lifetime-boost/lifetime-boost-english-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/great-flexi-advantage/2026/great-flexi-advantage-brochure.pdf",
-   "kind": "pdf",
-   "label": "GREAT Flexi Advantage",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/great-flexi-advantage/2026/great-flexi-advantage-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/great-flexi-cashback/2026/great-flexi-cashback-english-brochure.pdf",
-   "kind": "pdf",
-   "label": "GREAT Flexi Cashback",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/great-flexi-cashback/2026/great-flexi-cashback-english-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/great-index-income/great-index-income-eng-brochure.pdf",
-   "kind": "pdf",
-   "label": "GREAT Index Income",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/great-index-income/great-index-income-eng-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/great-invest-advantage/gels-pdt-pd-gia-brochure.pdf",
-   "kind": "pdf",
-   "label": "GREAT Invest Advantage",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/great-invest-advantage/gels-pdt-pd-gia-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/great-lifetime-payout/2026/gels-pdt-pd-glp3-brochure-ri.pdf",
-   "kind": "pdf",
-   "label": "GREAT Lifetime Payout 3",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/great-lifetime-payout/2026/gels-pdt-pd-glp3-brochure-ri.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/great-wealth-advantage-4/great-wealth-advantage-english-brochure.pdf",
-   "kind": "pdf",
-   "label": "GREAT Wealth Advantage 4",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/great-wealth-advantage-4/great-wealth-advantage-english-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/great-wealth-multiplier-3/great-wealth-multiplier-english-brochure.pdf",
-   "kind": "pdf",
-   "label": "GREAT Wealth Multiplier 3",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/great-wealth-multiplier-3/great-wealth-multiplier-english-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/index-income-usd/index-income-usd-eng-brochure.pdf",
-   "kind": "pdf",
-   "label": "Index Income (USD)",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/index-income-usd/index-income-usd-eng-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/legacy-income/legacy-income-english-brochure.pdf",
-   "kind": "pdf",
-   "label": "Legacy Income (USD)",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/legacy-income/legacy-income-english-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/prestige-life-rewards-series/prestige-life-rewards-series-brochure.pdf",
-   "kind": "pdf",
-   "label": "Prestige Life Rewards Series",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/prestige-life-rewards-series/prestige-life-rewards-series-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/prestige-portfolio/2026/gels-pdt-pd-pp-eng-brochure.pdf",
-   "kind": "pdf",
-   "label": "Prestige Portfolio",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/wealth-accumulation/prestige-portfolio/2026/gels-pdt-pd-pp-eng-brochure.pdf",
    "status": "pdf"
   },
   {
@@ -1259,24 +755,6 @@
    "owner": "great_eastern",
    "code": 200,
    "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/homepage/personal-insurance/our-products/personal-accident-insurance/prestige-pacare/prestige-pacare-product-summary.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/homepage/personal-insurance/our-products/retirement-income/great-retire-income-brochure.pdf",
-   "kind": "pdf",
-   "label": "GREAT Retire Income",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/homepage/personal-insurance/our-products/retirement-income/great-retire-income-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/homepage/personal-insurance/our-products/wealth-accumulation/great-flexi-goal/great-flexi-goal-brochure-en.pdf",
-   "kind": "pdf",
-   "label": "GREAT Flexi Goal",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/homepage/personal-insurance/our-products/wealth-accumulation/great-flexi-goal/great-flexi-goal-brochure-en.pdf",
    "status": "pdf"
   },
   {
@@ -1406,24 +884,6 @@
    "status": "ok"
   },
   {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/great-life-advantage-4-plus.html",
-   "kind": "product",
-   "label": "GREAT Life Advantage 4 Plus",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/great-life-advantage-4-plus.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/great-life-advantage.html",
-   "kind": "product",
-   "label": "GREAT Life Advantage 4",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/great-life-advantage.html",
-   "status": "ok"
-  },
-  {
    "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/great-life-multiplier.html",
    "kind": "product",
    "label": "GREAT Life Multiplier",
@@ -1439,15 +899,6 @@
    "owner": "great_eastern",
    "code": 200,
    "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/great-term.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/prestige-legacy-index.html",
-   "kind": "product",
-   "label": "Prestige Legacy Index",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/prestige-legacy-index.html",
    "status": "ok"
   },
   {
@@ -1511,186 +962,6 @@
    "owner": "great_eastern",
    "code": 200,
    "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/personal-accident-insurance/prestige-pacare.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/retirement-income/great-lifetime-payout.html",
-   "kind": "product",
-   "label": "GREAT Lifetime Payout 3",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/retirement-income/great-lifetime-payout.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/retirement-income/great-prime-rewards.html",
-   "kind": "product",
-   "label": "GREAT Prime Rewards 3",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/retirement-income/great-prime-rewards.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/retirement-income/great-retire-income.html",
-   "kind": "product",
-   "label": "GREAT Retire Income",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/retirement-income/great-retire-income.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/retirement-income/lifetime-boost.html",
-   "kind": "product",
-   "label": "Lifetime Boost",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/retirement-income/lifetime-boost.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-flexi-advantage.html",
-   "kind": "product",
-   "label": "GREAT Flexi Advantage",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-flexi-advantage.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-flexi-cashback.html",
-   "kind": "product",
-   "label": "GREAT Flexi Cashback",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-flexi-cashback.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-flexi-goal.html",
-   "kind": "product",
-   "label": "GREAT Flexi Goal",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-flexi-goal.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-flexi-saver.html",
-   "kind": "product",
-   "label": "GREAT Flexi Saver",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-flexi-saver.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-index-income.html",
-   "kind": "product",
-   "label": "GREAT Index Income",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-index-income.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-invest-advantage.html",
-   "kind": "product",
-   "label": "GREAT Invest Advantage",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-invest-advantage.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-sp-special.html",
-   "kind": "product",
-   "label": "GREAT SP Special",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-sp-special.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-sp-usd.html",
-   "kind": "product",
-   "label": "GREAT SP USD",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-sp-usd.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-sp.html",
-   "kind": "product",
-   "label": "GREAT SP",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-sp.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-wealth-advantage.html",
-   "kind": "product",
-   "label": "GREAT Wealth Advantage 4",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-wealth-advantage.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-wealth-multiplier.html",
-   "kind": "product",
-   "label": "GREAT Wealth Multiplier 3",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/great-wealth-multiplier.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/index-income.html",
-   "kind": "product",
-   "label": "Index Income (USD)",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/index-income.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/legacy-income.html",
-   "kind": "product",
-   "label": "Legacy Income (USD)",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/legacy-income.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/prestige-life-rewards-series.html",
-   "kind": "product",
-   "label": "Prestige Life Rewards Series",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/prestige-life-rewards-series.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/prestige-portfolio.html",
-   "kind": "product",
-   "label": "Prestige Portfolio",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/prestige-portfolio.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/prestige-wealth-legacy.html",
-   "kind": "product",
-   "label": "Prestige Wealth Legacy",
-   "owner": "great_eastern",
-   "code": 200,
-   "final": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/wealth-accumulation/prestige-wealth-legacy.html",
    "status": "ok"
   },
   {
@@ -1775,15 +1046,6 @@
    "status": "ok"
   },
   {
-   "url": "https://www.cpf.gov.sg/member/retirement-income/monthly-payouts/cpf-life",
-   "kind": "source",
-   "label": "CPF LIFE",
-   "owner": "guide",
-   "code": 200,
-   "final": "https://www.cpf.gov.sg/member/retirement-income/monthly-payouts/cpf-life",
-   "status": "ok"
-  },
-  {
    "url": "https://www.fidrec.com.sg/",
    "kind": "source",
    "label": "Financial Industry Disputes Resolution Centre",
@@ -1791,6 +1053,33 @@
    "code": 200,
    "final": "https://www.fidrec.com.sg/",
    "status": "ok"
+  },
+  {
+   "url": "https://www.lia.org.sg/media/1386/may2016_lia_ygthieng_lowresolution.pdf",
+   "kind": "source",
+   "label": "Your Guide to Health Insurance (May 2016)",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.lia.org.sg/media/1386/may2016_lia_ygthieng_lowresolution.pdf",
+   "status": "pdf"
+  },
+  {
+   "url": "https://www.lia.org.sg/media/2329/07171027_lia-singapore-comment-on-rejected-claims-due-to-medical-conditions-st-forum.pdf",
+   "kind": "source",
+   "label": "Comment on claims rejected over medical conditions (27 Oct 2017)",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.lia.org.sg/media/2329/07171027_lia-singapore-comment-on-rejected-claims-due-to-medical-conditions-st-forum.pdf",
+   "status": "pdf"
+  },
+  {
+   "url": "https://www.lia.org.sg/media/3972/lia-pgs-2022-press-release_final_8-sep-2023.pdf",
+   "kind": "source",
+   "label": "Protection Gap Study 2022 (media release, 8 Sep 2023)",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.lia.org.sg/media/3972/lia-pgs-2022-press-release_final_8-sep-2023.pdf",
+   "status": "pdf"
   },
   {
    "url": "https://www.lia.org.sg/media/4008/basic-financial-planning-guide.pdf",
@@ -1874,6 +1163,15 @@
    "status": "ok"
   },
   {
+   "url": "https://www.moh.gov.sg/newsroom/claims-rejected-under-integrated-shield-plan-but-successfully-processed-under-medishield-life-cover/",
+   "kind": "source",
+   "label": "Claims rejected under Integrated Shield Plans (parliamentary reply, 6 Oct 2020)",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.moh.gov.sg/newsroom/claims-rejected-under-integrated-shield-plan-but-successfully-processed-under-medishield-life-cover/",
+   "status": "ok"
+  },
+  {
    "url": "https://www.moh.gov.sg/newsroom/government-accepts-careshield-life-council-s-recommendations-to-enhance-careshield-life--provides-additional--570-million-to-subsidise-premiums/",
    "kind": "source",
    "label": "Government accepts CareShield Life Council's recommendations (press release, 27 Aug 2025)",
@@ -1910,6 +1208,15 @@
    "status": "ok"
   },
   {
+   "url": "https://www.moneysense.gov.sg/health-insurance-terms-know-what-you-re-paying-for/",
+   "kind": "source",
+   "label": "Health insurance terms: know what you're paying for",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.moneysense.gov.sg/health-insurance-terms-know-what-you-re-paying-for/",
+   "status": "ok"
+  },
+  {
    "url": "https://www.moneysense.gov.sg/insurance-basics/",
    "kind": "source",
    "label": "Insurance basics",
@@ -1919,12 +1226,57 @@
    "status": "ok"
   },
   {
+   "url": "https://www.moneysense.gov.sg/integrated-shield-plans/",
+   "kind": "source",
+   "label": "Understanding Integrated Shield Plans",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.moneysense.gov.sg/integrated-shield-plans/",
+   "status": "ok"
+  },
+  {
+   "url": "https://www.moneysense.gov.sg/life-insurance/",
+   "kind": "source",
+   "label": "Understanding life insurance",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.moneysense.gov.sg/life-insurance/",
+   "status": "ok"
+  },
+  {
    "url": "https://www.moneysense.gov.sg/planning-your-finances-well/",
    "kind": "source",
    "label": "Basic Financial Planning Guide",
    "owner": "guide",
    "code": 200,
    "final": "https://www.moneysense.gov.sg/planning-your-finances-well/",
+   "status": "ok"
+  },
+  {
+   "url": "https://www.moneysense.gov.sg/understanding-disability-income-insurance/",
+   "kind": "source",
+   "label": "Understanding disability income insurance",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.moneysense.gov.sg/understanding-disability-income-insurance/",
+   "status": "ok"
+  },
+  {
+   "url": "https://www.moneysense.gov.sg/understanding-whole-life-insurance/",
+   "kind": "source",
+   "label": "Understanding whole life insurance",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.moneysense.gov.sg/understanding-whole-life-insurance/",
+   "status": "ok"
+  },
+  {
+   "url": "https://www.moneysense.gov.sg/what-to-ask-before-buying-life-insurance/",
+   "kind": "source",
+   "label": "What to ask before buying life insurance",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.moneysense.gov.sg/what-to-ask-before-buying-life-insurance/",
    "status": "ok"
   },
   {
@@ -2054,87 +1406,6 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/investments/life-wealth-voyage-product-brochure.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Wealth Voyage",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/investments/life-wealth-voyage-product-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/investments/products/goal-builder/hsbc-life-goal-builder-ii-product-brochure.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Goal Builder II",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/investments/products/goal-builder/hsbc-life-goal-builder-ii-product-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/investments/products/goal-focus/hsbc-life-goal-focus-product-brochure-en.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Goal Focus",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/investments/products/goal-focus/hsbc-life-goal-focus-product-brochure-en.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/investments/products/hsbc-life-wealth-focus-brochure.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Wealth Focus",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/investments/products/hsbc-life-wealth-focus-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/legacy/emerald-life-plan-iii/product-brochure.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Emerald Legacy Life III",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/legacy/emerald-life-plan-iii/product-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/legacy/hsbc-life-diamond-prestige-iul-product-brochure.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Diamond Prestige IUL III",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/legacy/hsbc-life-diamond-prestige-iul-product-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/legacy/jade/non-ultra-product-brochure.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Jade Legacy Universal Life plans",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/legacy/jade/non-ultra-product-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/legacy/jade/ultra-product-brochure.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Jade Legacy Universal Life plans",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/legacy/jade/ultra-product-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/legacy/sapphire-prestige-income/product-brochure.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Sapphire Prestige Income II",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/legacy/sapphire-prestige-income/product-brochure.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/life/direct-hsbclife-term-lite-brochure-english.pdf",
    "kind": "pdf",
    "label": "DIRECT – HSBC Life – Term Lite",
@@ -2207,78 +1478,6 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/retirement/life-indexed-flexi-income-product-brochure.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Indexed Flexi Income",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/retirement/life-indexed-flexi-income-product-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/savings-investments/hsbc-life-wealth-abundance-brochure.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Wealth Abundance",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/savings-investments/hsbc-life-wealth-abundance-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/savings-investments/hsbc-life-wealth-accelerate-brochure-english.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Wealth Accelerate",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/savings-investments/hsbc-life-wealth-accelerate-brochure-english.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/savings-investments/hsbc-life-wealth-harvest-brochure.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Wealth Harvest",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/savings-investments/hsbc-life-wealth-harvest-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/savings-investments/hsbc-life-wealth-invest-brochure.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Wealth Invest",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/savings-investments/hsbc-life-wealth-invest-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/savings/hsbc-life-flexi-protector-brochure-english.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Flexi Protector",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/savings/hsbc-life-flexi-protector-brochure-english.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/savings/hsbc-life-wealth-builder-brochure.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Wealth Builder",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/savings/hsbc-life-wealth-builder-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/savings/savings-protector/product-brochure.pdf",
-   "kind": "pdf",
-   "label": "HSBC Life Savings Protector II",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/savings/savings-protector/product-brochure.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.insurance.hsbc.com.sg/health/products/globalcare-health-plan/",
    "kind": "product",
    "label": "HSBC Life GlobalCare Health Plan",
@@ -2330,123 +1529,6 @@
    "owner": "hsbc_life",
    "code": 200,
    "final": "https://www.insurance.hsbc.com.sg/health/products/smartcare-optimum-enhanced/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/investment/products/flexi-protector/",
-   "kind": "product",
-   "label": "HSBC Life Flexi Protector",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/investment/products/flexi-protector/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/investment/products/goal-builder/",
-   "kind": "product",
-   "label": "HSBC Life Goal Builder II",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/investment/products/goal-builder/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/investment/products/goal-focus/",
-   "kind": "product",
-   "label": "HSBC Life Goal Focus",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/investment/products/goal-focus/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/investment/products/wealth-abundance/",
-   "kind": "product",
-   "label": "HSBC Life Wealth Abundance",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/investment/products/wealth-abundance/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/investment/products/wealth-accelerate/",
-   "kind": "product",
-   "label": "HSBC Life Wealth Accelerate",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/investment/products/wealth-accelerate/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/investment/products/wealth-focus/",
-   "kind": "product",
-   "label": "HSBC Life Wealth Focus",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/investment/products/wealth-focus/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/investment/products/wealth-harvest/",
-   "kind": "product",
-   "label": "HSBC Life Wealth Harvest",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/investment/products/wealth-harvest/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/investment/products/wealth-invest/",
-   "kind": "product",
-   "label": "HSBC Life Wealth Invest",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/investment/products/wealth-invest/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/investment/products/wealth-voyage/",
-   "kind": "product",
-   "label": "HSBC Life Wealth Voyage",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/investment/products/wealth-voyage/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/legacy/jade/",
-   "kind": "product",
-   "label": "HSBC Life Jade Legacy Universal Life plans",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/legacy/jade/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/legacy/products/diamond-prestige-iul/",
-   "kind": "product",
-   "label": "HSBC Life Diamond Prestige IUL III",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/legacy/products/diamond-prestige-iul/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/legacy/products/emerald-legacy-life/",
-   "kind": "product",
-   "label": "HSBC Life Emerald Legacy Life III",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/legacy/products/emerald-legacy-life/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/legacy/sapphire-prestige-income-ii/",
-   "kind": "product",
-   "label": "HSBC Life Sapphire Prestige Income II",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/legacy/sapphire-prestige-income-ii/",
    "status": "ok"
   },
   {
@@ -2540,33 +1622,6 @@
    "status": "ok"
   },
   {
-   "url": "https://www.insurance.hsbc.com.sg/retirement/products/indexed-flexi-income/",
-   "kind": "product",
-   "label": "HSBC Life Indexed Flexi Income",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/retirement/products/indexed-flexi-income/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/savings/savings-protector/",
-   "kind": "product",
-   "label": "HSBC Life Savings Protector II",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/savings/savings-protector/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.insurance.hsbc.com.sg/savings/wealth-builder/",
-   "kind": "product",
-   "label": "HSBC Life Wealth Builder",
-   "owner": "hsbc_life",
-   "code": 200,
-   "final": "https://www.insurance.hsbc.com.sg/savings/wealth-builder/",
-   "status": "ok"
-  },
-  {
    "url": "https://www.insurance.hsbc.com.sg/",
    "kind": "website",
    "label": "HSBC Life (Singapore)",
@@ -2594,15 +1649,6 @@
    "status": "ok"
   },
   {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/01446aed-5b2a-4bca-90cb-d89da6dd58bd/Solitaire_Wealth%20Plus%20Solitaire%20II_Brochure_ENG_Web.pdf",
-   "kind": "pdf",
-   "label": "Wealth Plus Solitaire II",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/01446aed-5b2a-4bca-90cb-d89da6dd58bd/Solitaire_Wealth%20Plus%20Solitaire%20II_Brochure_ENG_Web.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/05effb9c-3c54-4081-a63c-bcd6461563b4/_Final_%20Contract%20-%20Complete%20Critical%20Protect.pdf",
    "kind": "pdf",
    "label": "Complete Critical Protect",
@@ -2618,15 +1664,6 @@
    "owner": "income",
    "code": 200,
    "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/0b95f02b-8f12-42aa-a9ec-45dbc5e909a5/SAFRA%20Essential%20Term%20Product%20Summary%20%28Jul%202024%29.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/0c8b31b3-4c2c-4a7b-8f5f-f821268cc820/Savings_Gro%20Cash%20Sure_Brochure_ENG_Web.pdf",
-   "kind": "pdf",
-   "label": "Gro Cash Sure",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/0c8b31b3-4c2c-4a7b-8f5f-f821268cc820/Savings_Gro%20Cash%20Sure_Brochure_ENG_Web.pdf",
    "status": "pdf"
   },
   {
@@ -2702,15 +1739,6 @@
    "status": "pdf"
   },
   {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1b71e702-0a9a-4449-8160-2f3094da76b4/ILP_Invest%20Wealth%20Vantage_Brochure_ENG_web.pdf",
-   "kind": "pdf",
-   "label": "Invest Wealth Vantage",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1b71e702-0a9a-4449-8160-2f3094da76b4/ILP_Invest%20Wealth%20Vantage_Brochure_ENG_web.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1bc21c0d-02a6-4266-9c8b-cabdfd0950bb/Product%20summary%20for%20OCBC%20Protect%20Classic%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf",
    "kind": "pdf",
    "label": "OCBC Protect",
@@ -2726,51 +1754,6 @@
    "owner": "income",
    "code": 200,
    "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1c451505-2ed5-4486-9e4c-081a7e6bb5d6/DIRECT%20Star%20Term%20%28renewable%29%20%28TAN17%29.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1ecc907f-db49-47de-9444-4d381a12ff7f/DIRECT%20Star%20Protect%20Pro%20%28DXMW%29.pdf",
-   "kind": "pdf",
-   "label": "DIRECT Star Protect Pro",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1ecc907f-db49-47de-9444-4d381a12ff7f/DIRECT%20Star%20Protect%20Pro%20%28DXMW%29.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/20da1df9-12cc-4877-b8cb-987389f37ed5/Contract%20-%20Gro%20Annuity%20Pro%20%28GAMA%29.pdf",
-   "kind": "pdf",
-   "label": "Gro Annuity Pro",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/20da1df9-12cc-4877-b8cb-987389f37ed5/Contract%20-%20Gro%20Annuity%20Pro%20%28GAMA%29.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/263d166f-c8fc-440c-8eb1-c8ed4cfe2915/Savings_Gro%20Saver%20Flex%20Pro_Brochure_ENG_Web.pdf",
-   "kind": "pdf",
-   "label": "Gro Saver Flex Pro",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/263d166f-c8fc-440c-8eb1-c8ed4cfe2915/Savings_Gro%20Saver%20Flex%20Pro_Brochure_ENG_Web.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/2917ec5c-e064-4947-b44d-1a381aa83e9f/Policy%20Contract%20-%20Invest%20Flex%20TriVantage%20%28VS3%29.pdf",
-   "kind": "pdf",
-   "label": "Invest Flex TriVantage",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/2917ec5c-e064-4947-b44d-1a381aa83e9f/Policy%20Contract%20-%20Invest%20Flex%20TriVantage%20%28VS3%29.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/2b927c05-9c78-4495-b9df-5054a013b8ff/Policy%20Contract%20-%20Legacy%20Flex%20Solitaire%20%28VA3%29.pdf",
-   "kind": "pdf",
-   "label": "Legacy Flex Solitaire",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/2b927c05-9c78-4495-b9df-5054a013b8ff/Policy%20Contract%20-%20Legacy%20Flex%20Solitaire%20%28VA3%29.pdf",
    "status": "pdf"
   },
   {
@@ -2819,24 +1802,6 @@
    "status": "pdf"
   },
   {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/3e2c97dc-fad6-42f9-a00b-68ce1cc54a8f/Savings_Gro%20Annuity%20Pro_Brochure_ENG_Web%20%281%29.pdf",
-   "kind": "pdf",
-   "label": "Gro Annuity Pro",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/3e2c97dc-fad6-42f9-a00b-68ce1cc54a8f/Savings_Gro%20Annuity%20Pro_Brochure_ENG_Web%20%281%29.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/42bc80cf-29d3-4d71-9c9d-851d4ce63d68/Policy%20Contract%20-%20Invest%20Wealth%20Vantage.pdf",
-   "kind": "pdf",
-   "label": "Invest Wealth Vantage",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/42bc80cf-29d3-4d71-9c9d-851d4ce63d68/Policy%20Contract%20-%20Invest%20Wealth%20Vantage.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/43854019-aba4-4778-96cd-f0f885a0e84c/SpecialCare%20Down%20Syndrome%20EN%202024.pdf",
    "kind": "pdf",
    "label": "SpecialCare (Down Syndrome) Insurance",
@@ -2873,15 +1838,6 @@
    "status": "pdf"
   },
   {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4ff71d67-eed6-4922-b7ef-40baac1d7626/Savings_Gro%20Cash%20Plus_Brochure_ENG_Web.pdf",
-   "kind": "pdf",
-   "label": "Gro Cash Plus",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4ff71d67-eed6-4922-b7ef-40baac1d7626/Savings_Gro%20Cash%20Plus_Brochure_ENG_Web.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/52510d85-ff40-4747-b815-d5698a3563eb/Product%20summary%20for%20SAFRA%20Living%20Care%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf",
    "kind": "pdf",
    "label": "SAFRA Essential Term and SAFRA Living Care",
@@ -2906,15 +1862,6 @@
    "owner": "income",
    "code": 200,
    "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/5880ac15-d464-470f-aa39-aff13c996c22/Star%20Term%20Protect%20Brochure_ENG_Web.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/5888b1c6-f3f3-45c5-8558-117838d604b2/DIRECT%20Dread%20Disease%20Protect%20Pro%20%28CWV4%29.pdf",
-   "kind": "pdf",
-   "label": "DIRECT Star Protect Pro",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/5888b1c6-f3f3-45c5-8558-117838d604b2/DIRECT%20Dread%20Disease%20Protect%20Pro%20%28CWV4%29.pdf",
    "status": "pdf"
   },
   {
@@ -2999,39 +1946,12 @@
    "status": "pdf"
   },
   {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/80ccac2b-0ade-41f9-8faf-182bfd57bbd5/Policy%20Contract%20-%20Gro%20Cash%20Flex%20Pro%20%28GCME%29.pdf",
-   "kind": "pdf",
-   "label": "Gro Cash Flex Pro",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/80ccac2b-0ade-41f9-8faf-182bfd57bbd5/Policy%20Contract%20-%20Gro%20Cash%20Flex%20Pro%20%28GCME%29.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/829f8fbe-e22f-4f8b-8bfc-04d3c0511c07/GPF%20PA%20Assurance%20Product%20Summary%202026%20%28A%29%20202602A.pdf",
    "kind": "pdf",
    "label": "PA Assurance",
    "owner": "income",
    "code": 200,
    "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/829f8fbe-e22f-4f8b-8bfc-04d3c0511c07/GPF%20PA%20Assurance%20Product%20Summary%202026%20%28A%29%20202602A.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/8370e939-4c56-4669-b649-f9ab328a245b/Policy%20Contract%20-%20Invest%20Flex%20Vantage%20%28VS2%29.pdf",
-   "kind": "pdf",
-   "label": "Invest Flex Vantage",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/8370e939-4c56-4669-b649-f9ab328a245b/Policy%20Contract%20-%20Invest%20Flex%20Vantage%20%28VS2%29.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/84c33dc2-169b-4fdf-b2a8-bde04570ae27/Policy%20Contract%20-%20Wealth%20Plus%20Solitaire%20II%20%28LTMW2%29.pdf",
-   "kind": "pdf",
-   "label": "Wealth Plus Solitaire II",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/84c33dc2-169b-4fdf-b2a8-bde04570ae27/Policy%20Contract%20-%20Wealth%20Plus%20Solitaire%20II%20%28LTMW2%29.pdf",
    "status": "pdf"
   },
   {
@@ -3050,15 +1970,6 @@
    "owner": "income",
    "code": 200,
    "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/889d72f1-0474-46d6-ad8a-f7de42043cf0/Conditions%20for%20Optima%20Care%20Rider%201%20Apr%202026.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/88cc39a2-459d-4267-978d-943e1095153e/ILP_AstraLink_Brochure_ENG_Web.pdf",
-   "kind": "pdf",
-   "label": "AstraLink",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/88cc39a2-459d-4267-978d-943e1095153e/ILP_AstraLink_Brochure_ENG_Web.pdf",
    "status": "pdf"
   },
   {
@@ -3089,57 +2000,12 @@
    "status": "pdf"
   },
   {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/99a0bc5d-1a7d-4cea-9c1e-823490316a46/Policy%20Contract%20-%20Gro%20Retire%20Flex%20Pro%20II%20%28GRME2%29.pdf",
-   "kind": "pdf",
-   "label": "Gro Retire Flex Pro II",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/99a0bc5d-1a7d-4cea-9c1e-823490316a46/Policy%20Contract%20-%20Gro%20Retire%20Flex%20Pro%20II%20%28GRME2%29.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/9a2724b5-4e4d-4ea7-8ad2-0bd0ec83d3d8/IncomeShield%20Standard%20Plan%20Policy%20Conditions%201%20Apr%202026.pdf",
    "kind": "pdf",
    "label": "IncomeShield Standard Plan",
    "owner": "income",
    "code": 200,
    "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/9a2724b5-4e4d-4ea7-8ad2-0bd0ec83d3d8/IncomeShield%20Standard%20Plan%20Policy%20Conditions%201%20Apr%202026.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/9b66e3ea-a695-4f8e-b16b-9d1fd9acb25a/ILP_WealthLink_Brochure_ENG_Web.pdf",
-   "kind": "pdf",
-   "label": "WealthLink",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/9b66e3ea-a695-4f8e-b16b-9d1fd9acb25a/ILP_WealthLink_Brochure_ENG_Web.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/9e00dfa9-8b9c-4fc0-8432-64fe4aea7b35/Savings_Gro%20Cash%20Flex%20Pro_Brochure_ENG_Web.pdf",
-   "kind": "pdf",
-   "label": "Gro Cash Flex Pro",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/9e00dfa9-8b9c-4fc0-8432-64fe4aea7b35/Savings_Gro%20Cash%20Flex%20Pro_Brochure_ENG_Web.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a3262ada-212b-401d-82c1-d2cc7db72a76/Solitaire_Legacy%20Flex%20Solitaire_Brochure_ENG_Web.pdf",
-   "kind": "pdf",
-   "label": "Legacy Flex Solitaire",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a3262ada-212b-401d-82c1-d2cc7db72a76/Solitaire_Legacy%20Flex%20Solitaire_Brochure_ENG_Web.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a35485ee-78c1-4448-aca9-073a19a8d813/Savings_Gro%20Retire%20Flex%20Pro%20II_Brochure_ENG_Web.pdf",
-   "kind": "pdf",
-   "label": "Gro Retire Flex Pro II",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a35485ee-78c1-4448-aca9-073a19a8d813/Savings_Gro%20Retire%20Flex%20Pro%20II_Brochure_ENG_Web.pdf",
    "status": "pdf"
   },
   {
@@ -3158,15 +2024,6 @@
    "owner": "income",
    "code": 200,
    "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a6f7e820-5293-4ff6-bf99-698271a40c0a/SilverCare%20ENG_2026_web.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a81f0dc1-b0c4-4648-b272-49f865cae25a/ILP_Invest%20Flex%20Vantage_Brochure_ENG_Web.pdf",
-   "kind": "pdf",
-   "label": "Invest Flex Vantage",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a81f0dc1-b0c4-4648-b272-49f865cae25a/ILP_Invest%20Flex%20Vantage_Brochure_ENG_Web.pdf",
    "status": "pdf"
   },
   {
@@ -3215,57 +2072,12 @@
    "status": "pdf"
   },
   {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/cc178342-1630-4319-a66a-56197bb7371e/ILP_Invest%20Flex%20TriVantage_Brochure_ENG_Web.pdf",
-   "kind": "pdf",
-   "label": "Invest Flex TriVantage",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/cc178342-1630-4319-a66a-56197bb7371e/ILP_Invest%20Flex%20TriVantage_Brochure_ENG_Web.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/cc22ce34-8fdf-4086-8c9f-075f70845dac/Policy%20Contract%20-%20Gro%20Cash%20Plus%20%28GDMW%29.pdf",
-   "kind": "pdf",
-   "label": "Gro Cash Plus",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/cc22ce34-8fdf-4086-8c9f-075f70845dac/Policy%20Contract%20-%20Gro%20Cash%20Plus%20%28GDMW%29.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/cd579840-cc93-41c5-beeb-56578bbf8095/GAL%20PA%20Fitness%20Protect%20Product%20Summary%20202306A.pdf",
    "kind": "pdf",
    "label": "PA Fitness Protect",
    "owner": "income",
    "code": 200,
    "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/cd579840-cc93-41c5-beeb-56578bbf8095/GAL%20PA%20Fitness%20Protect%20Product%20Summary%20202306A.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/db7ec9b3-0f16-4243-aba8-ad4bafe59264/Policy%20Contract%20-%20AstraLink%20%28VA2%29.pdf",
-   "kind": "pdf",
-   "label": "AstraLink",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/db7ec9b3-0f16-4243-aba8-ad4bafe59264/Policy%20Contract%20-%20AstraLink%20%28VA2%29.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/de05ea72-6712-4a34-ab17-27e1e9159100/Policy%20Contract%20-%20Gro%20Saver%20Flex%20Pro%20%28GSME%29.pdf",
-   "kind": "pdf",
-   "label": "Gro Saver Flex Pro",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/de05ea72-6712-4a34-ab17-27e1e9159100/Policy%20Contract%20-%20Gro%20Saver%20Flex%20Pro%20%28GSME%29.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/e6b88b33-93c1-4cf6-b4d4-e9887bb2e641/Policy%20Contract%20-%20Invest%20Flex%20%28VS1%29.pdf",
-   "kind": "pdf",
-   "label": "Invest Flex",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/e6b88b33-93c1-4cf6-b4d4-e9887bb2e641/Policy%20Contract%20-%20Invest%20Flex%20%28VS1%29.pdf",
    "status": "pdf"
   },
   {
@@ -3278,30 +2090,12 @@
    "status": "pdf"
   },
   {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/e9a36e32-e41e-44f8-92c4-494f716266d9/Policy%20Contract%20-%20Gro%20Cash%20Sure%20%28GCMW%29.pdf",
-   "kind": "pdf",
-   "label": "Gro Cash Sure",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/e9a36e32-e41e-44f8-92c4-494f716266d9/Policy%20Contract%20-%20Gro%20Cash%20Sure%20%28GCMW%29.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/ee90b8b8-d070-4854-b2e3-47c72f7f1ad7/GSD%20SilverCare%20Product%20Summary%20202501.pdf",
    "kind": "pdf",
    "label": "SilverCare Insurance",
    "owner": "income",
    "code": 200,
    "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/ee90b8b8-d070-4854-b2e3-47c72f7f1ad7/GSD%20SilverCare%20Product%20Summary%20202501.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/f26a2008-f61d-4493-b0c3-ad42a58b50a9/ILP_Invest%20Flex_Brochure_ENG_Web.pdf",
-   "kind": "pdf",
-   "label": "Invest Flex",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/f26a2008-f61d-4493-b0c3-ad42a58b50a9/ILP_Invest%20Flex_Brochure_ENG_Web.pdf",
    "status": "pdf"
   },
   {
@@ -3329,15 +2123,6 @@
    "owner": "income",
    "code": 200,
    "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/f578b1df-bba3-4745-9182-4b249beb434f/Whole%20Life_Complete%20Life%20Secure_Brochure_ENG_Web.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/f703e9ca-50a6-46d6-b6a1-d33d2a94a696/Contract%20-%20WealthLink%20%28GL3%29.pdf",
-   "kind": "pdf",
-   "label": "WealthLink",
-   "owner": "income",
-   "code": 200,
-   "final": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/f703e9ca-50a6-46d6-b6a1-d33d2a94a696/Contract%20-%20WealthLink%20%28GL3%29.pdf",
    "status": "pdf"
   },
   {
@@ -3437,15 +2222,6 @@
    "owner": "income",
    "code": 200,
    "final": "https://www.income.com.sg/life-insurance/complete-life-secure/coverage-for-hospital-cashaid-rider",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.income.com.sg/life-insurance/direct-star-protect-pro",
-   "kind": "product",
-   "label": "DIRECT Star Protect Pro",
-   "owner": "income",
-   "code": 200,
-   "final": "https://www.income.com.sg/life-insurance/direct-star-protect-pro",
    "status": "ok"
   },
   {
@@ -3611,132 +2387,6 @@
    "status": "ok"
   },
   {
-   "url": "https://www.income.com.sg/savings-and-investments/astralink",
-   "kind": "product",
-   "label": "AstraLink",
-   "owner": "income",
-   "code": 200,
-   "final": "https://www.income.com.sg/savings-and-investments/astralink",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.income.com.sg/savings-and-investments/gro-annuity-pro",
-   "kind": "product",
-   "label": "Gro Annuity Pro",
-   "owner": "income",
-   "code": 200,
-   "final": "https://www.income.com.sg/savings-and-investments/gro-annuity-pro",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.income.com.sg/savings-and-investments/gro-cash-flex-pro",
-   "kind": "product",
-   "label": "Gro Cash Flex Pro",
-   "owner": "income",
-   "code": 200,
-   "final": "https://www.income.com.sg/savings-and-investments/gro-cash-flex-pro",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.income.com.sg/savings-and-investments/gro-cash-plus",
-   "kind": "product",
-   "label": "Gro Cash Plus",
-   "owner": "income",
-   "code": 200,
-   "final": "https://www.income.com.sg/savings-and-investments/gro-cash-plus",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.income.com.sg/savings-and-investments/gro-cash-sure",
-   "kind": "product",
-   "label": "Gro Cash Sure",
-   "owner": "income",
-   "code": 200,
-   "final": "https://www.income.com.sg/savings-and-investments/gro-cash-sure",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.income.com.sg/savings-and-investments/gro-retire-flex-pro-ii",
-   "kind": "product",
-   "label": "Gro Retire Flex Pro II",
-   "owner": "income",
-   "code": 200,
-   "final": "https://www.income.com.sg/savings-and-investments/gro-retire-flex-pro-ii",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.income.com.sg/savings-and-investments/gro-saver-flex-pro",
-   "kind": "product",
-   "label": "Gro Saver Flex Pro",
-   "owner": "income",
-   "code": 200,
-   "final": "https://www.income.com.sg/savings-and-investments/gro-saver-flex-pro",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.income.com.sg/savings-and-investments/invest-flex",
-   "kind": "product",
-   "label": "Invest Flex",
-   "owner": "income",
-   "code": 200,
-   "final": "https://www.income.com.sg/savings-and-investments/invest-flex",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.income.com.sg/savings-and-investments/invest-flex-trivantage",
-   "kind": "product",
-   "label": "Invest Flex TriVantage",
-   "owner": "income",
-   "code": 200,
-   "final": "https://www.income.com.sg/savings-and-investments/invest-flex-trivantage",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.income.com.sg/savings-and-investments/invest-flex-vantage",
-   "kind": "product",
-   "label": "Invest Flex Vantage",
-   "owner": "income",
-   "code": 200,
-   "final": "https://www.income.com.sg/savings-and-investments/invest-flex-vantage",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.income.com.sg/savings-and-investments/invest-wealth-vantage",
-   "kind": "product",
-   "label": "Invest Wealth Vantage",
-   "owner": "income",
-   "code": 200,
-   "final": "https://www.income.com.sg/savings-and-investments/invest-wealth-vantage",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.income.com.sg/savings-and-investments/legacy-flex-solitaire",
-   "kind": "product",
-   "label": "Legacy Flex Solitaire",
-   "owner": "income",
-   "code": 200,
-   "final": "https://www.income.com.sg/savings-and-investments/legacy-flex-solitaire",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.income.com.sg/savings-and-investments/wealth-plus-solitaire-ii",
-   "kind": "product",
-   "label": "Wealth Plus Solitaire II",
-   "owner": "income",
-   "code": 200,
-   "final": "https://www.income.com.sg/savings-and-investments/wealth-plus-solitaire-ii",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.income.com.sg/savings-and-investments/wealthlink",
-   "kind": "product",
-   "label": "WealthLink",
-   "owner": "income",
-   "code": 200,
-   "final": "https://www.income.com.sg/savings-and-investments/wealthlink",
-   "status": "ok"
-  },
-  {
    "url": "https://www.income.com.sg/sitemap",
    "kind": "products_index_url",
    "label": "Income Insurance",
@@ -3818,51 +2468,6 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/invest/investment-linked-plans/investready/investready-growth_english_brochure.pdf",
-   "kind": "pdf",
-   "label": "Manulife InvestReady Growth",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/invest/investment-linked-plans/investready/investready-growth_english_brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/invest/investment-linked-plans/investready/investready_en.pdf",
-   "kind": "pdf",
-   "label": "Manulife InvestReady (III)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/invest/investment-linked-plans/investready/investready_en.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/invest/investment-linked-plans/manuinvestduo/ManuInvest%20Duo%20Brochure%20(English).pdf",
-   "kind": "pdf",
-   "label": "ManuInvest Duo",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/invest/investment-linked-plans/manuinvestduo/ManuInvest%20Duo%20Brochure%20(English).pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/invest/investment-linked-plans/manulink-investor/Manulink%20Investor%20(II)%20Brochure_English.pdf",
-   "kind": "pdf",
-   "label": "Manulink Investor (II)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/invest/investment-linked-plans/manulink-investor/Manulink%20Investor%20(II)%20Brochure_English.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/invest/investment-linked-plans/smartretire/manulife_smartretire_ENG.pdf",
-   "kind": "pdf",
-   "label": "Manulife SmartRetire (V)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/invest/investment-linked-plans/smartretire/manulife_smartretire_ENG.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/direct-manuassure-term/Direct%20ManuAssure%20Term%20Brochure%20(English).pdf",
    "kind": "pdf",
    "label": "DIRECT-ManuAssure Term",
@@ -3917,165 +2522,12 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/retirement/retire-ready-plus/retireready-plus-(iii)/RetireReady%20Plus%20Brochure%20(English).pdf",
-   "kind": "pdf",
-   "label": "RetireReady Plus (III)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/retirement/retire-ready-plus/retireready-plus-(iii)/RetireReady%20Plus%20Brochure%20(English).pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-goal-brochure-ENG.pdf",
-   "kind": "pdf",
-   "label": "Manulife Goal 2026 (I)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-goal-brochure-ENG.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-growsecure/manulife_growsecure_ENG.pdf",
-   "kind": "pdf",
-   "label": "Manulife GrowSecure",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-growsecure/manulife_growsecure_ENG.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-income-gen/Income_Gen_EN.pdf",
-   "kind": "pdf",
-   "label": "Manulife IncomeGen (II)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-income-gen/Income_Gen_EN.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-incomesecure/manulife_incomesecure_ENG.pdf",
-   "kind": "pdf",
-   "label": "Manulife IncomeSecure",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-incomesecure/manulife_incomesecure_ENG.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-indexed-income/manulife_indexed_income_english_brochure.pdf",
-   "kind": "pdf",
-   "label": "Manulife Indexed Income",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-indexed-income/manulife_indexed_income_english_brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-indexed-wealth/manulife_indexed_wealth_english_brochure.pdf",
-   "kind": "pdf",
-   "label": "Manulife Indexed Wealth",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-indexed-wealth/manulife_indexed_wealth_english_brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-wealthgen/manulife_wealthgen_english_brochure.pdf",
-   "kind": "pdf",
-   "label": "Manulife WealthGen",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-wealthgen/manulife_wealthgen_english_brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/heirloom/Heirloom_Brochure_(English).pdf",
-   "kind": "pdf",
-   "label": "Heirloom (VII)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/heirloom/Heirloom_Brochure_(English).pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-income/Signature%20Income%20Series%20English%20Brochure%2013Dec2021.pdf",
-   "kind": "pdf",
-   "label": "Signature Income Series",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-income/Signature%20Income%20Series%20English%20Brochure%2013Dec2021.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-indexed-income/signature-indexed-income_english_brochure.pdf",
-   "kind": "pdf",
-   "label": "Signature Indexed Income",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-indexed-income/signature-indexed-income_english_brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-indexed-universal-life-select/Signature%20Indexed%20Universal%20Life%20Select_Brochure%20(English).pdf",
-   "kind": "pdf",
-   "label": "Signature Indexed Universal Life Select (III)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-indexed-universal-life-select/Signature%20Indexed%20Universal%20Life%20Select_Brochure%20(English).pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-legacy-growth/signature-legacy-growth_english_brochure.pdf",
-   "kind": "pdf",
-   "label": "Signature Legacy Growth (USD)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-legacy-growth/signature-legacy-growth_english_brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-legacy-harvest/signature_legacy_harvest_english_brochure.pdf",
-   "kind": "pdf",
-   "label": "Signature Legacy Harvest",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-legacy-harvest/signature_legacy_harvest_english_brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-life-elite-prestige/signature-life-elite-prestige_english_brochure.pdf",
-   "kind": "pdf",
-   "label": "Signature Life Elite & Prestige (USD)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-life-elite-prestige/signature-life-elite-prestige_english_brochure.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-life/Signature%20Life%20Brochure%20(English).pdf",
    "kind": "pdf",
    "label": "Signature Life Series",
    "owner": "manulife",
    "code": 200,
    "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-life/Signature%20Life%20Brochure%20(English).pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-lifetime-rewards/Signature%20Lifetime%20Rewards%20English%20Brochure.pdf",
-   "kind": "pdf",
-   "label": "Signature Lifetime Rewards (II) (SGD)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-lifetime-rewards/Signature%20Lifetime%20Rewards%20English%20Brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-wealth/Signature%20Wealth%20Brochure%20(English).pdf",
-   "kind": "pdf",
-   "label": "Signature Wealth",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-wealth/Signature%20Wealth%20Brochure%20(English).pdf",
    "status": "pdf"
   },
   {
@@ -4124,51 +2576,6 @@
    "status": "ok"
   },
   {
-   "url": "https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/investready-growth.html",
-   "kind": "product",
-   "label": "Manulife InvestReady Growth",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/investready-growth.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/investready.html",
-   "kind": "product",
-   "label": "Manulife InvestReady (III)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/investready.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/manuinvestduo.html",
-   "kind": "product",
-   "label": "ManuInvest Duo",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/manuinvestduo.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/manulink-investor.html",
-   "kind": "product",
-   "label": "Manulink Investor (II)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/manulink-investor.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/smartretire.html",
-   "kind": "product",
-   "label": "Manulife SmartRetire (V)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/smartretire.html",
-   "status": "ok"
-  },
-  {
    "url": "https://www.manulife.com.sg/en/solutions/life/term-life-insurance/direct-manuassure-term.html",
    "kind": "product",
    "label": "DIRECT-ManuAssure Term",
@@ -4214,165 +2621,12 @@
    "status": "ok"
   },
   {
-   "url": "https://www.manulife.com.sg/en/solutions/save/retirement/retire-ready-plus.html",
-   "kind": "product",
-   "label": "RetireReady Plus (III)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/save/retirement/retire-ready-plus.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/save/savings-plans/Manulife-IncomeGen.html",
-   "kind": "product",
-   "label": "Manulife IncomeGen (II)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/save/savings-plans/Manulife-IncomeGen.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-goal.html",
-   "kind": "product",
-   "label": "Manulife Goal 2026 (I)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-goal.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-growsecure.html",
-   "kind": "product",
-   "label": "Manulife GrowSecure",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-growsecure.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-incomesecure.html",
-   "kind": "product",
-   "label": "Manulife IncomeSecure",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-incomesecure.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-indexed-income.html",
-   "kind": "product",
-   "label": "Manulife Indexed Income",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-indexed-income.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-indexed-wealth.html",
-   "kind": "product",
-   "label": "Manulife Indexed Wealth",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-indexed-wealth.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-wealthgen.html",
-   "kind": "product",
-   "label": "Manulife WealthGen",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-wealthgen.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/signature/signature/Signature-Indexed-Universal-Life-Select.html",
-   "kind": "product",
-   "label": "Signature Indexed Universal Life Select (III)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/signature/signature/Signature-Indexed-Universal-Life-Select.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/signature/signature/Signature-Lifetime-Rewards.html",
-   "kind": "product",
-   "label": "Signature Lifetime Rewards (II) (SGD)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/signature/signature/Signature-Lifetime-Rewards.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/signature/signature/heirloom.html",
-   "kind": "product",
-   "label": "Heirloom (VII)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/signature/signature/heirloom.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-income.html",
-   "kind": "product",
-   "label": "Signature Income Series",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-income.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-indexed-income.html",
-   "kind": "product",
-   "label": "Signature Indexed Income",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-indexed-income.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-legacy-growth.html",
-   "kind": "product",
-   "label": "Signature Legacy Growth (USD)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-legacy-growth.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-legacy-harvest.html",
-   "kind": "product",
-   "label": "Signature Legacy Harvest",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-legacy-harvest.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-life-elite-prestige.html",
-   "kind": "product",
-   "label": "Signature Life Elite & Prestige (USD)",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-life-elite-prestige.html",
-   "status": "ok"
-  },
-  {
    "url": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-life.html",
    "kind": "product",
    "label": "Signature Life Series",
    "owner": "manulife",
    "code": 200,
    "final": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-life.html",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-wealth.html",
-   "kind": "product",
-   "label": "Signature Wealth",
-   "owner": "manulife",
-   "code": 200,
-   "final": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-wealth.html",
    "status": "ok"
   },
   {
@@ -4448,15 +2702,6 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-cash/PRUActive-Cash-Brochure_AD.pdf",
-   "kind": "pdf",
-   "label": "PRUActive Cash",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-cash/PRUActive-Cash-Brochure_AD.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-crisis-guard/PRUActive-Crisis-Guard-Brochure-ENG.pdf",
    "kind": "pdf",
    "label": "PRUActive Crisis Guard",
@@ -4484,15 +2729,6 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-linkguard/PRUActive-LinkGuard_brochure_en.pdf",
-   "kind": "pdf",
-   "label": "PRUActive LinkGuard",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-linkguard/PRUActive-LinkGuard_brochure_en.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-protect/PRUActive-Protect-Brochure-en.pdf",
    "kind": "pdf",
    "label": "PRUActive Protect Series",
@@ -4502,57 +2738,12 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-retirement-ii/PRUActive%20Retirement%20II_eBrochure_ENG_AD.pdf",
-   "kind": "pdf",
-   "label": "PRUActive Retirement II",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-retirement-ii/PRUActive%20Retirement%20II_eBrochure_ENG_AD.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-saver-iii/PRUActive_20Saver_20III_20SGD_ENG.pdf",
-   "kind": "pdf",
-   "label": "PRUActive Saver III",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-saver-iii/PRUActive_20Saver_20III_20SGD_ENG.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-term/pruactive_term_eBrochure_english.pdf",
    "kind": "pdf",
    "label": "PRUActive Term",
    "owner": "prudential",
    "code": 200,
    "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-term/pruactive_term_eBrochure_english.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruapex-legacy-index/pruapex-legacy-index-ii-brochure-en.pdf",
-   "kind": "pdf",
-   "label": "PRUApex Legacy Index II",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruapex-legacy-index/pruapex-legacy-index-ii-brochure-en.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruapex-multigen-wealth/pruapex-multigen-wealth-brochure-en.pdf",
-   "kind": "pdf",
-   "label": "PRUApex MultiGen Wealth",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruapex-multigen-wealth/pruapex-multigen-wealth-brochure-en.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruassure-income-promo/pruassure-income-usd-brochure-en.pdf",
-   "kind": "pdf",
-   "label": "PRUAssure Income (USD)",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruassure-income-promo/pruassure-income-usd-brochure-en.pdf",
    "status": "pdf"
   },
   {
@@ -4592,48 +2783,12 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruindex-income-boost/PRUIndex-Income-Boost_Brochure_EN.pdf",
-   "kind": "pdf",
-   "label": "PRUIndex Income Boost",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruindex-income-boost/PRUIndex-Income-Boost_Brochure_EN.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruindex-lifetime-income/pruindex-lifetime-income_brochure_en.pdf",
-   "kind": "pdf",
-   "label": "PRUIndex Lifetime Income",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruindex-lifetime-income/pruindex-lifetime-income_brochure_en.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prulady/prulady-eBrochure-EN.pdf",
    "kind": "pdf",
    "label": "PRULady",
    "owner": "prudential",
    "code": 200,
    "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prulady/prulady-eBrochure-EN.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prulifetime-income-plus/prulifetime-income-plus-english.pdf",
-   "kind": "pdf",
-   "label": "PRULifetime Income Plus",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prulifetime-income-plus/prulifetime-income-plus-english.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prulinkinvestgrowth/PRULink-InvestGrowth_Brochure.pdf",
-   "kind": "pdf",
-   "label": "PRULink InvestGrowth",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prulinkinvestgrowth/PRULink-InvestGrowth_Brochure.pdf",
    "status": "pdf"
   },
   {
@@ -4682,93 +2837,12 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvantage-achiever-prime-series/PRULife-Vantage-Achiever-Prime-Series-Brochure-EN.pdf",
-   "kind": "pdf",
-   "label": "PRULife Vantage Achiever Prime Series",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvantage-achiever-prime-series/PRULife-Vantage-Achiever-Prime-Series-Brochure-EN.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvantage-assure-series/ebrochure-en.pdf",
-   "kind": "pdf",
-   "label": "PRUVantage Assure Series",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvantage-assure-series/ebrochure-en.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvantage-prosper/PRUVantage_20Prosper_Brochure_EN.pdf",
-   "kind": "pdf",
-   "label": "PRUVantage Prosper",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvantage-prosper/PRUVantage_20Prosper_Brochure_EN.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvantage-wealth-ii/PRUVantage-Wealth-II-Brochure-EN.pdf",
-   "kind": "pdf",
-   "label": "PRUVantage Wealth II (USD)",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvantage-wealth-ii/PRUVantage-Wealth-II-Brochure-EN.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvantage-wealth-iii/pruvantage-wealth-iii-brochure-en.pdf",
-   "kind": "pdf",
-   "label": "PRUVantage Wealth III (SGD)",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvantage-wealth-iii/pruvantage-wealth-iii-brochure-en.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvital-cover/PRUVital-Cover-eBrochure-ENG-Final.pdf",
    "kind": "pdf",
    "label": "PRUVital Cover",
    "owner": "prudential",
    "code": 200,
    "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvital-cover/PRUVital-Cover-eBrochure-ENG-Final.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruwealth-income-ii-usd/pruwealth-income-ii-usd-ebrochure-eng.pdf",
-   "kind": "pdf",
-   "label": "PRUWealth Income II (USD)",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruwealth-income-ii-usd/pruwealth-income-ii-usd-ebrochure-eng.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruwealth-income/pruwealth-income-ebrochure-eng.pdf",
-   "kind": "pdf",
-   "label": "PRUWealth Income",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruwealth-income/pruwealth-income-ebrochure-eng.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruwealth-plus-sgd/pruwealth-plus-sgd-ebrochure-eng.pdf",
-   "kind": "pdf",
-   "label": "PRUWealth Plus (SGD)",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruwealth-plus-sgd/pruwealth-plus-sgd-ebrochure-eng.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruwealth-usd/pruwealth_usd_ebrochure_english.pdf",
-   "kind": "pdf",
-   "label": "PRUWealth (USD)",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruwealth-usd/pruwealth_usd_ebrochure_english.pdf",
    "status": "pdf"
   },
   {
@@ -4862,24 +2936,6 @@
    "status": "ok"
   },
   {
-   "url": "https://www.prudential.com.sg/en/products/legacy-planning/pruapex-legacy-index-ii/",
-   "kind": "product",
-   "label": "PRUApex Legacy Index II",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/legacy-planning/pruapex-legacy-index-ii/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/legacy-planning/prulife-vantage-achiever-prime-series/",
-   "kind": "product",
-   "label": "PRULife Vantage Achiever Prime Series",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/legacy-planning/prulife-vantage-achiever-prime-series/",
-   "status": "ok"
-  },
-  {
    "url": "https://www.prudential.com.sg/en/products/life/maternity/pfg2/",
    "kind": "product",
    "label": "PRUFirst Gift II",
@@ -4967,168 +3023,6 @@
    "owner": "prudential",
    "code": 200,
    "final": "https://www.prudential.com.sg/en/products/life/whole-life/pruactive-life-v/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/life/whole-life/pruactive-linkguard/",
-   "kind": "product",
-   "label": "PRUActive LinkGuard",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/life/whole-life/pruactive-linkguard/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/investments/prulink-investgrowth/",
-   "kind": "product",
-   "label": "PRULink InvestGrowth",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/investments/prulink-investgrowth/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/investments/pruvantage-assure-series/",
-   "kind": "product",
-   "label": "PRUVantage Assure Series",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/investments/pruvantage-assure-series/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/investments/pruvantage-prosper/",
-   "kind": "product",
-   "label": "PRUVantage Prosper",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/investments/pruvantage-prosper/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/investments/pruvantage-wealth-ii/",
-   "kind": "product",
-   "label": "PRUVantage Wealth II (USD)",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/investments/pruvantage-wealth-ii/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/investments/pruvantage-wealth-iii/",
-   "kind": "product",
-   "label": "PRUVantage Wealth III (SGD)",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/investments/pruvantage-wealth-iii/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/retirement/pruactive-retirement-ii/",
-   "kind": "product",
-   "label": "PRUActive Retirement II",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/retirement/pruactive-retirement-ii/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruactive-cash/",
-   "kind": "product",
-   "label": "PRUActive Cash",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/savings/pruactive-cash/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruactive-saver-iii/",
-   "kind": "product",
-   "label": "PRUActive Saver III",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/savings/pruactive-saver-iii/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruapex-multigen-wealth/",
-   "kind": "product",
-   "label": "PRUApex MultiGen Wealth",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/savings/pruapex-multigen-wealth/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruassure-income-promo/",
-   "kind": "product",
-   "label": "PRUAssure Income (USD)",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/savings/pruassure-income-promo/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruindex-incomeboost/",
-   "kind": "product",
-   "label": "PRUIndex Income Boost",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/savings/pruindex-incomeboost/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruindex-lifetime-income/",
-   "kind": "product",
-   "label": "PRUIndex Lifetime Income",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/savings/pruindex-lifetime-income/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/savings/prulifetime-income-plus/",
-   "kind": "product",
-   "label": "PRULifetime Income Plus",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/savings/prulifetime-income-plus/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruwealth-income-ii-usd/",
-   "kind": "product",
-   "label": "PRUWealth Income II (USD)",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/savings/pruwealth-income-ii-usd/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruwealth-income/",
-   "kind": "product",
-   "label": "PRUWealth Income",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/savings/pruwealth-income/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruwealth-plus-sgd/",
-   "kind": "product",
-   "label": "PRUWealth Plus (SGD)",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/savings/pruwealth-plus-sgd/",
-   "status": "ok"
-  },
-  {
-   "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruwealth-usd/",
-   "kind": "product",
-   "label": "PRUWealth (USD)",
-   "owner": "prudential",
-   "code": 200,
-   "final": "https://www.prudential.com.sg/en/products/wealth/savings/pruwealth-usd/",
    "status": "ok"
   },
   {
@@ -5249,24 +3143,6 @@
    "status": "pdf"
   },
   {
-   "url": "https://singlife.com/content/dam/public/sg/documents/investment-linked-plan/singlife-savvy-invest-ii/brochure.pdf",
-   "kind": "pdf",
-   "label": "Singlife Savvy Invest II",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/content/dam/public/sg/documents/investment-linked-plan/singlife-savvy-invest-ii/brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://singlife.com/content/dam/public/sg/documents/legacy-invest/brochure.pdf",
-   "kind": "pdf",
-   "label": "Singlife Legacy Invest",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/content/dam/public/sg/documents/legacy-invest/brochure.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://singlife.com/content/dam/public/sg/documents/life-insurance/direct-purchase-insurance/brochure.pdf",
    "kind": "pdf",
    "label": "DIRECT – Singlife Whole Life",
@@ -5384,96 +3260,6 @@
    "status": "pdf"
   },
   {
-   "url": "https://singlife.com/content/dam/public/sg/documents/retirement/singlife-flexi-retirement-ii/brochure.pdf",
-   "kind": "pdf",
-   "label": "Singlife Flexi Retirement II",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/content/dam/public/sg/documents/retirement/singlife-flexi-retirement-ii/brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://singlife.com/content/dam/public/sg/documents/savings/singlife-flexi-life-income-ii/brochure.pdf",
-   "kind": "pdf",
-   "label": "Singlife Flexi Life Income II",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/content/dam/public/sg/documents/savings/singlife-flexi-life-income-ii/brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://singlife.com/content/dam/public/sg/documents/savings/singlife-heritage-income/singlife-heritage-income-brochure.pdf",
-   "kind": "pdf",
-   "label": "Singlife Heritage Income",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/content/dam/public/sg/documents/savings/singlife-heritage-income/singlife-heritage-income-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://singlife.com/content/dam/public/sg/documents/savings/singlife-legacy-income/brochure.pdf",
-   "kind": "pdf",
-   "label": "Singlife Legacy Income",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/content/dam/public/sg/documents/savings/singlife-legacy-income/brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://singlife.com/content/dam/public/sg/documents/savings/singlife-smart-saver/brochure.pdf",
-   "kind": "pdf",
-   "label": "Singlife Smart Saver",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/content/dam/public/sg/documents/savings/singlife-smart-saver/brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://singlife.com/content/dam/public/sg/documents/savings/singlife-steadypay-saver/brochure.pdf",
-   "kind": "pdf",
-   "label": "Singlife Steadypay Saver",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/content/dam/public/sg/documents/savings/singlife-steadypay-saver/brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://singlife.com/content/dam/public/sg/documents/singlife-account/singlife-account-product-summary-nov23.pdf",
-   "kind": "pdf",
-   "label": "Singlife Account",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/content/dam/public/sg/documents/singlife-account/singlife-account-product-summary-nov23.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://singlife.com/content/dam/public/sg/legacy-indexed-universal-life/brochure.pdf",
-   "kind": "pdf",
-   "label": "Singlife Legacy Indexed Universal Life",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/content/dam/public/sg/legacy-indexed-universal-life/brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://singlife.com/content/dam/public/sg/pinnacle/heritage-reserve/singlife-heritage-reserve-universal-life-brochure.pdf",
-   "kind": "pdf",
-   "label": "Singlife Heritage Reserve",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/content/dam/public/sg/pinnacle/heritage-reserve/singlife-heritage-reserve-universal-life-brochure.pdf",
-   "status": "pdf"
-  },
-  {
-   "url": "https://singlife.com/content/dam/public/sg/pinnacle/legacy-indexed-income/singlife-legacy-indexed-income-brochure.pdf",
-   "kind": "pdf",
-   "label": "Singlife Legacy Indexed Income",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/content/dam/public/sg/pinnacle/legacy-indexed-income/singlife-legacy-indexed-income-brochure.pdf",
-   "status": "pdf"
-  },
-  {
    "url": "https://singlife.com/en/accident-insurance/accident-care",
    "kind": "product",
    "label": "Singlife Accident Care",
@@ -5564,33 +3350,6 @@
    "status": "ok"
   },
   {
-   "url": "https://singlife.com/en/flexi-retirement-ii",
-   "kind": "product",
-   "label": "Singlife Flexi Retirement II",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/en/flexi-retirement-ii",
-   "status": "ok"
-  },
-  {
-   "url": "https://singlife.com/en/investment-linked-plan/savvy-invest-ii",
-   "kind": "product",
-   "label": "Singlife Savvy Invest II",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/en/investment-linked-plan/savvy-invest-ii",
-   "status": "ok"
-  },
-  {
-   "url": "https://singlife.com/en/legacy-indexed-universal-life",
-   "kind": "product",
-   "label": "Singlife Legacy Indexed Universal Life",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/en/legacy-indexed-universal-life",
-   "status": "ok"
-  },
-  {
    "url": "https://singlife.com/en/life-insurance/direct-term-life",
    "kind": "product",
    "label": "DIRECT – Singlife Term Life",
@@ -5669,87 +3428,6 @@
    "owner": "singlife",
    "code": 200,
    "final": "https://singlife.com/en/medical-insurance/singlife-shield-starter-and-health-plus",
-   "status": "ok"
-  },
-  {
-   "url": "https://singlife.com/en/pinnacle/heritage-reserve",
-   "kind": "product",
-   "label": "Singlife Heritage Reserve",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/en/pinnacle/heritage-reserve",
-   "status": "ok"
-  },
-  {
-   "url": "https://singlife.com/en/pinnacle/legacy-indexed-income",
-   "kind": "product",
-   "label": "Singlife Legacy Indexed Income",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/en/pinnacle/legacy-indexed-income",
-   "status": "ok"
-  },
-  {
-   "url": "https://singlife.com/en/pinnacle/legacy-invest",
-   "kind": "product",
-   "label": "Singlife Legacy Invest",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/en/pinnacle/legacy-invest",
-   "status": "ok"
-  },
-  {
-   "url": "https://singlife.com/en/savings/flexi-life-income-ii",
-   "kind": "product",
-   "label": "Singlife Flexi Life Income II",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/en/savings/flexi-life-income-ii",
-   "status": "ok"
-  },
-  {
-   "url": "https://singlife.com/en/savings/heritage-income",
-   "kind": "product",
-   "label": "Singlife Heritage Income",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/en/savings/heritage-income",
-   "status": "ok"
-  },
-  {
-   "url": "https://singlife.com/en/savings/legacy-income",
-   "kind": "product",
-   "label": "Singlife Legacy Income",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/en/savings/legacy-income",
-   "status": "ok"
-  },
-  {
-   "url": "https://singlife.com/en/savings/smart-saver",
-   "kind": "product",
-   "label": "Singlife Smart Saver",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/en/savings/smart-saver",
-   "status": "ok"
-  },
-  {
-   "url": "https://singlife.com/en/savings/steadypay-saver",
-   "kind": "product",
-   "label": "Singlife Steadypay Saver",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/en/savings/steadypay-saver",
-   "status": "ok"
-  },
-  {
-   "url": "https://singlife.com/en/singlife-account",
-   "kind": "product",
-   "label": "Singlife Account",
-   "owner": "singlife",
-   "code": 200,
-   "final": "https://singlife.com/en/singlife-account",
    "status": "ok"
   },
   {

@@ -48,10 +48,43 @@ function srcLink(id) {
   return ext(s.url, s.publisher, "src");
 }
 
-function factList(items, cls) {
-  return h("ul", { class: "facts" + (cls ? " " + cls : "") },
-    items.map(f => h("li", null, f.t, f.s ? [" ", srcLink(f.s)] : null)));
+// Amounts, percentages, multiples and durations in bold so a skimming eye lands on them.
+const FIGURE = /(S?\$[\d,]+(?:\.\d+)?|\b\d[\d,]*(?:\.\d+)?%|\b\d+(?:\.\d+)?(?:x\b| times\b)|\b\d+ (?:days|weeks|months|years)\b)/;
+function rich(text) {
+  return text.split(FIGURE).map((part, i) => i % 2 ? h("strong", { class: "num", text: part }) : part);
 }
+
+function factList(items, cls) {
+  // Must-know items first, marked; the rest keep their order.
+  const sorted = [...items.filter(f => f.top), ...items.filter(f => !f.top)];
+  return h("ul", { class: "facts" + (cls ? " " + cls : "") },
+    sorted.map(f => h("li", { class: f.top ? "top" : null },
+      f.top ? h("span", { class: "flag", text: "Must know" }) : null,
+      rich(f.t), f.s ? [" ", srcLink(f.s)] : null)));
+}
+
+// The one to three figures that matter most on a page, each with its own source.
+function glance(keys) {
+  if (!keys || !keys.length) return null;
+  return h("div", { class: "glance", role: "list", "aria-label": "At a glance" },
+    keys.map(k => h("div", { class: "fig", role: "listitem" },
+      h("p", { class: "v", text: k.v }),
+      h("p", { class: "l" }, k.l, " ", srcLink(k.s)))));
+}
+
+// Must-know items from all three lists, pulled to the top of a type page with what kind each is.
+function mustKnow(c) {
+  const kinds = [["watch", "Pitfall"], ["caveats", "Fine print"], ["facts", "Fact"]];
+  const items = kinds.flatMap(([key, label]) => c[key].filter(f => f.top).map(f => [label, f]));
+  if (!items.length) return null;
+  return h("section", { class: "must", "aria-labelledby": "must-h" },
+    h("h2", { id: "must-h", class: "mt0", text: "Must know" }),
+    h("ul", null, items.map(([label, f]) => h("li", null,
+      h("span", { class: "tag" + (label === "Pitfall" ? " warn" : ""), text: label }), " ",
+      rich(f.t), f.s ? [" ", srcLink(f.s)] : null))));
+}
+
+function rest(items) { return items.filter(f => !f.top); }
 
 // Short form of the disclaimer, shown where people decide; the full list is on the Sources page.
 function disclaimerNote() {
@@ -70,6 +103,10 @@ function viewTypes() {
     h("h1", { text: "Singapore personal insurance, sourced" }),
     h("p", { class: "lede", text: "Every type of protection insurance except travel, explained in plain words: what it does, what can go wrong, what the Government already gives you, and which insurers sell it. Every official figure links to its source." }),
     disclaimerNote(),
+    h("section", { class: "must", "aria-labelledby": "top5-h" },
+      h("h2", { id: "top5-h", class: "mt0", text: "Top 5 ways people get caught out" }),
+      h("ol", { class: "top5" }, state.guide.pain_points.map(p =>
+        h("li", null, h("a", { href: "#/top5#" + p.id, text: p.title }))))),
   ];
   for (const [title, ids] of GROUPS) {
     out.push(h("h2", { class: "group-title", text: title }));
@@ -96,7 +133,7 @@ function productCard(p, showInsurer) {
       p.flags.includes("limited") ? h("span", { class: "tag warn", text: "Limited eligibility" }) : null) : null,
     p.subtype ? h("p", { class: "meta", text: p.subtype }) : null,
     p.summary ? h("p", { text: p.summary }) : null,
-    p.facts.length ? h("ul", null, p.facts.map(f => h("li", { text: f }))) : null,
+    p.facts.length ? h("ul", null, p.facts.map(f => h("li", null, rich(f)))) : null,
     h("div", { class: "links" },
       ext(p.url, "Official page"),
       p.pdfs.map(d => ext(d.url, d.title + " (PDF)"))),
@@ -113,18 +150,27 @@ function viewType(id, params) {
   const out = [
     h("p", { class: "crumb" }, h("a", { href: "#/", text: "All types" })),
     h("h1", { text: c.name }),
+    glance(c.key),
+    mustKnow(c),
     h("h2", { text: "In simple terms" }),
     h("p", { class: "lede", text: c.plain }),
     h("h2", { text: "Who it is for" }),
     h("p", { text: c.who }),
     h("h2", { text: "Key facts" }),
     h("p", { text: c.what }),
-    factList(c.facts),
-    h("h2", { text: "Pitfalls to avoid" }),
-    factList(c.watch, "watch"),
-    h("h2", { text: "Caveats and fine print" }),
-    factList(c.caveats),
   ];
+  // Must-know items already sit at the top; the sections below hold the rest.
+  const sections = [
+    ["facts", null, null, null],
+    ["watch", "Pitfalls to avoid", "More pitfalls to avoid", "watch"],
+    ["caveats", "Caveats and fine print", "More fine print", null],
+  ];
+  for (const [key, title, moreTitle, cls] of sections) {
+    const items = rest(c[key]);
+    if (!items.length) continue;
+    if (title) out.push(h("h2", { text: items.length < c[key].length ? moreTitle : title }));
+    out.push(factList(items, cls));
+  }
   if (c.schemes.length) {
     out.push(h("h2", { text: "What the Government already covers" }),
       h("div", { class: "grid" }, c.schemes.map(s => {
@@ -209,6 +255,7 @@ function viewSchemes() {
     state.guide.schemes.map(s => h("section", { class: "card scheme", id: s.id },
       h("h2", { class: "mt0", text: s.name }),
       h("p", { class: "meta", text: s.kind + ". " + s.who }),
+      glance(s.key),
       factList(s.facts),
       h("p", { class: "links mt8" }, ext(state.guide.sources[s.link].url, "Official page")))),
   ];
@@ -266,10 +313,35 @@ function viewCheck() {
   ];
 }
 
+// The short answer sits in the summary, so the page answers every question without a tap.
+function faqItem(q) {
+  return h("details", { class: "faq" },
+    h("summary", null, h("span", { class: "q", text: q.q }), h("span", { class: "short", text: q.short })),
+    h("div", null, h("p", null, rich(q.a)), h("p", { class: "meta" }, "Source: ", srcLink(q.s))));
+}
+
 function viewFaq() {
   return [
     h("h1", { text: "Common questions" }),
-    state.guide.faq.map(q => h("details", { class: "faq" }, h("summary", { text: q.q }), h("div", null, h("p", { text: q.a }), h("p", { class: "meta" }, "Source: ", srcLink(q.s))))),
+    state.guide.faq.map(faqItem),
+  ];
+}
+
+function viewTop5() {
+  const bullets = items => h("ul", { class: "facts" }, items.map(f => h("li", null,
+    rich(f.t), f.s ? [" ", srcLink(f.s)] : null,
+    f.link ? [" ", h("a", { href: f.link, text: f.label })] : null)));
+  return [
+    h("h1", { text: "Top 5 ways people get caught out" }),
+    h("p", { class: "lede", text: "The problems that cost people most when they buy medical, life and critical illness cover in Singapore, and what to do about each. Every figure links to its source." }),
+    state.guide.pain_points.map((p, i) => h("section", { class: "card pain", id: p.id },
+      h("h2", { class: "mt0", text: `${i + 1}. ${p.title}` }),
+      glance(p.key),
+      h("h3", { text: "Why it bites" }),
+      bullets(p.why),
+      h("h3", { text: "What to do" }),
+      bullets(p.fix))),
+    disclaimerNote(),
   ];
 }
 
@@ -297,15 +369,17 @@ function viewSearch(q) {
   const prods = state.products.filter(p => hit([p.name, insName(p.insurer), catName(p.category), p.subtype || "", p.summary, p.facts.join(" ")].join(" ")));
   const ins = state.insurers.filter(i => hit(i.name + " " + (i.formerly || "")));
   const faq = state.guide.faq.filter(f => hit(f.q + " " + f.a));
+  const pains = state.guide.pain_points.filter(p => hit([p.title, ...p.why.map(f => f.t), ...p.fix.map(f => f.t)].join(" ")));
   const schemes = state.guide.schemes.filter(s => hit([s.name, s.kind, s.who, s.facts.map(f => f.t).join(" ")].join(" ")));
   const out = [h("h1", { text: `Results for “${q}”` })];
-  if (!cats.length && !prods.length && !ins.length && !faq.length && !schemes.length) {
+  if (!cats.length && !prods.length && !ins.length && !faq.length && !schemes.length && !pains.length) {
     out.push(h("p", { text: "Nothing matched. Try a plan name, an insurer, or a word like “cancer” or “hospital”." }));
   }
   if (ins.length) out.push(h("h2", { text: "Insurers" }), h("div", { class: "grid" }, ins.map(i => h("a", { class: "card", href: "#/insurer/" + i.id }, h("h3", { text: i.name })))));
   if (cats.length) out.push(h("h2", { text: "Insurance types" }), h("div", { class: "grid" }, cats.map(c => h("a", { class: "card", href: "#/type/" + c.id }, h("h3", { text: c.name }), h("p", { text: c.short })))));
   if (schemes.length) out.push(h("h2", { text: "National schemes" }), h("div", { class: "grid" }, schemes.map(s => h("a", { class: "card", href: "#/schemes#" + s.id }, h("h3", { text: s.name }), h("p", { class: "meta", text: s.kind })))));
-  if (faq.length) out.push(h("h2", { text: "Questions" }), faq.map(f => h("details", { class: "faq" }, h("summary", { text: f.q }), h("div", null, h("p", { text: f.a })))));
+  if (pains.length) out.push(h("h2", { text: "Top 5 ways people get caught out" }), h("div", { class: "grid" }, pains.map(p => h("a", { class: "card", href: "#/top5#" + p.id }, h("h3", { text: p.title })))));
+  if (faq.length) out.push(h("h2", { text: "Questions" }), faq.map(faqItem));
   if (prods.length) out.push(h("h2", { text: `Plans (${prods.length})` }), h("div", { class: "grid" }, prods.slice(0, 60).map(p => productCard(p, true))),
     prods.length > 60 ? h("p", { class: "meta", text: "Showing the first 60. Add a word to narrow it down." }) : null);
   return out;
@@ -316,7 +390,7 @@ function viewMissing() {
 }
 
 // ---------- router ----------
-const TAB_OF = { "": "types", type: "types", insurers: "insurers", insurer: "insurers", compare: "compare", schemes: "schemes", check: "check", faq: "faq", sources: "sources" };
+const TAB_OF = { "": "types", type: "types", top5: "top5", insurers: "insurers", insurer: "insurers", compare: "compare", schemes: "schemes", check: "check", faq: "faq", sources: "sources" };
 
 function route() {
   const raw = location.hash.replace(/^#\/?/, "");
@@ -328,6 +402,7 @@ function route() {
   switch (seg) {
     case "": view = viewTypes(); break;
     case "type": view = viewType(decodeURIComponent(arg || ""), params); break;
+    case "top5": view = viewTop5(); break;
     case "insurers": view = viewInsurers(); break;
     case "insurer": view = viewInsurer(decodeURIComponent(arg || "")); break;
     case "compare": view = viewCompare(); break;

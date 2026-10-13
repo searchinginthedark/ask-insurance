@@ -11,7 +11,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAIRS = [("text", "bg", 4.5), ("text", "surface", 4.5), ("muted", "bg", 4.5), ("muted", "surface", 4.5),
          ("link", "surface", 4.5), ("link", "bg", 4.5), ("on-brand", "brand", 4.5), ("warn-fg", "warn-bg", 4.5),
          ("ok-fg", "ok-bg", 4.5), ("tag-fg", "tag-bg", 4.5), ("muted", "tag-bg", 4.5), ("focus", "surface", 3),
-         ("focus", "bg", 3), ("edge", "surface", 3.0), ("edge", "bg", 3.0)]
+         ("focus", "bg", 3), ("edge", "surface", 3.0), ("edge", "bg", 3.0),
+         # "Must know" flag text, and the accent edge that marks key figures and flagged items.
+         ("accent", "surface", 4.5), ("accent", "bg", 3.0), ("brand", "surface", 3.0)]
 
 
 def lum(hexv):

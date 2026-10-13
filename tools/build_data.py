@@ -68,6 +68,57 @@ def on_domain(url, insurer):
     return any((host + parsed.path).startswith(p) for p in CDN_PREFIXES.get(insurer, []))
 
 
+# Pages with no "At a glance" strip, because no allowed source gives a figure worth showing for them.
+NO_KEY = {"personal_accident"}
+
+
+def check_highlights(guide):
+    """Key figures, must-know flags, FAQ one-liners and pain points. Numbers in them are checked
+    against the sources themselves by tools/verify_guide.py; this only checks shape and source ids."""
+    errors = []
+    src = guide["sources"]
+
+    def keys(owner, lst, required):
+        if required and not lst:
+            errors.append("guide: %s has no key figures" % owner)
+        for k in lst or []:
+            if not (k.get("v") and k.get("l")):
+                errors.append("guide: %s key figure needs v and l: %r" % (owner, k))
+            elif k.get("s") not in src:
+                errors.append("guide: %s key figure %r has no valid source" % (owner, k["v"]))
+            # A figure strip is for a glance: the value must stay short enough to read as one.
+            elif len(k["v"]) > 22 or len(k["l"]) > 140:
+                errors.append("guide: %s key figure %r is too long" % (owner, k["v"]))
+
+    for c in guide["categories"]:
+        keys(c["id"], c.get("key"), c["id"] not in NO_KEY)
+        for f in c["facts"] + c["watch"] + c["caveats"]:
+            if "top" in f and f["top"] is not True:
+                errors.append("guide: %s top must be true or absent" % c["id"])
+    for s in guide["schemes"]:
+        keys(s["id"], s.get("key"), True)
+    for q in guide["faq"]:
+        if not q.get("short"):
+            errors.append("guide: FAQ %r has no short answer" % q["q"])
+    pains = guide.get("pain_points") or []
+    if len(pains) != 5:
+        errors.append("guide: expected 5 pain points, found %d" % len(pains))
+    for p in pains:
+        where = "pain point %s" % p.get("id")
+        if not p.get("title"):
+            errors.append("guide: %s has no title" % where)
+        keys(where, p.get("key"), True)
+        for field in ("why", "fix"):
+            if not p.get(field):
+                errors.append("guide: %s has no %s" % (where, field))
+            for f in p.get(field) or []:
+                if f.get("s") and f["s"] not in src:
+                    errors.append("guide: %s unknown source %s" % (where, f["s"]))
+                if f.get("link") and not (re.match(r"^#/[a-z0-9/_-]*$", f["link"]) and f.get("label")):
+                    errors.append("guide: %s link must be an in-app #/ route with a label: %s" % (where, f["link"]))
+    return errors
+
+
 def load(path):
     with open(path, encoding="utf-8") as f:
         return json.load(f)
@@ -177,6 +228,7 @@ def main():
         for key in ("plain", "who", "watch", "caveats"):
             if not c.get(key):
                 errors.append("guide: %s has no %s" % (c["id"], key))
+    errors += check_highlights(guide)
     if errors:
         print("BUILD FAILED, %d problem(s):" % len(errors))
         for e in errors:

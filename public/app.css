@@ -15,7 +15,7 @@
   --edge: #7a8b9b;
   --brand: #123a57;
   --on-brand: #ffffff;
-  --accent: #b86a06;      /* amber from the icon, darkened to clear 4.5:1 as text */
+  --accent: #9a5804;      /* amber from the icon, darkened to clear 4.5:1 as text (tools/contrast.py) */
   --link: #1557a6;
   --focus: #1a5fb4;
   --warn-bg: #fff1d6;
@@ -131,6 +131,32 @@ a.card h3 { color: var(--link); }
 .facts.watch li { background: var(--warn-bg); color: var(--warn-fg); border-color: transparent; }
 .src { display: inline-block; font-size: .8rem; margin-left: 4px; white-space: nowrap; }
 .facts.watch .src { color: inherit; }
+.facts li.top { border-left: 4px solid var(--accent); }
+.facts.watch li.top { border-left-color: var(--warn-fg); }
+.flag { display: block; font-size: .75rem; font-weight: 800; letter-spacing: .02em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
+.facts.watch .flag { color: inherit; }
+.num { font-weight: 750; }
+
+/* At a glance: the page's one to three headline figures, each with its source */
+.glance { display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); margin: .5rem 0 1rem; }
+.fig { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: var(--r-ctl); padding: 8px 12px; min-width: 0; }
+.fig .v { font-size: 1.3rem; font-weight: 800; line-height: 1.2; margin: 0; }
+.fig .l { font-size: .9rem; color: var(--muted); margin: 2px 0 0; line-height: 1.4; }
+.card .glance { margin: .5rem 0 .75rem; }
+.card .fig { background: var(--bg); }
+
+/* Must know: the flagged items of a page, pulled to the top */
+.must { background: var(--surface); border: 2px solid var(--brand); border-radius: var(--r-card); padding: 12px 16px; margin: 0 0 1rem; }
+.must h2 { font-size: 1.05rem; }
+.must ul, .must ol { margin: 0; padding-left: 1.2rem; display: grid; gap: 8px; }
+.must ul { list-style: none; padding-left: 0; }
+.must .tag { margin-right: 2px; }
+.top5 a { display: inline-block; min-height: 32px; padding: 4px 0; font-weight: 650; }
+
+.pain { margin-bottom: 12px; }
+.pain h3 { margin: .75rem 0 .4rem; font-size: .98rem; }
+.pain .facts li { background: var(--bg); }
+
 .checklist { margin: 0; padding-left: 1.2rem; }
 .checklist li { margin-bottom: 4px; }
 
@@ -179,6 +205,7 @@ table.matrix { border-collapse: separate; border-spacing: 0; font-size: .88rem; 
 
 details.faq { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-ctl); margin-bottom: 8px; }
 details.faq summary { cursor: pointer; padding: 12px 14px; font-weight: 700; min-height: 44px; }
+details.faq summary .short { display: block; font-weight: 500; color: var(--muted); font-size: .93rem; margin-top: 2px; }
 details.faq div { padding: 0 14px 12px; }
 
 .scheme { margin-bottom: 12px; }

@@ -22,6 +22,7 @@ pip install -r requirements.txt
 python tools/check_links.py      # every link: dead, soft-404, wrong page, or bot-blocked
 python tools/build_data.py       # validate research files and write public/data/
 python tools/verify_facts.py     # every numeric fact must appear in its cited page or PDF
+python tools/verify_guide.py     # same for guide.json: key figures, pain points, FAQ (plus quotes)
 python tools/contrast.py         # WCAG contrast for the colour tokens, light and dark
 python -m unittest discover -s tests
 python -m http.server 8774 --directory public
@@ -32,7 +33,9 @@ python -m http.server 8774 --directory public
 ## Updating
 
 1. Edit or re-research `research/insurers/<id>.json` (follow `research/CONTRACT.md`).
-2. Run `check_links.py`, then `build_data.py`, then `verify_facts.py`.
+2. Run `check_links.py`, then `build_data.py`, then `verify_facts.py` and `verify_guide.py`.
+   A key figure (`key`) or must-know flag (`top`) in `data/guide.json` needs a source id; add a
+   `quote` from the source when the claim is in words rather than digits.
 3. For links that come back `blocked`, open them in a real browser and add them to `data/browser_verified.json`.
 
 Downloaded PDFs stay in `research/pdf/` (gitignored). The app links to the insurers' own copies.
