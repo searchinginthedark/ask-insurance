@@ -135,7 +135,7 @@ function viewType(id, params) {
 function viewInsurers() {
   return [
     h("h1", { text: "Insurers" }),
-    h("p", { class: "lede", text: "Life and general insurers selling personal plans in Singapore. Product lists come from each insurer's own website." }),
+    h("p", { class: "lede", text: "The major life insurers selling personal plans in Singapore. Product lists come from each insurer's own website. Smaller insurers are left out on purpose, including Raffles Health Insurance, the seventh Shield plan insurer." }),
     h("div", { class: "grid" }, state.insurers.map(i => {
       const cats = new Set(i.products.map(p => p.category)).size;
       return h("a", { class: "card", href: "#/insurer/" + i.id },
