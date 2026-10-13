@@ -1,0 +1,5 @@
+# What gets UPLOADED to Vercel. An allowlist: the site is static and lives in public/,
+# so research notes, downloaded PDFs and tooling never reach a server.
+/*
+!/public
+!/vercel.json

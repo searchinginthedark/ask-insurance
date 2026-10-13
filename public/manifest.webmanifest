@@ -1,0 +1,15 @@
+{
+  "name": "Ask Insurance",
+  "short_name": "Ask Insurance",
+  "description": "Singapore personal insurance: every type, who sells it, and the official sources.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#e9eff5",
+  "theme_color": "#123a57",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

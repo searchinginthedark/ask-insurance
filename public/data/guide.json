@@ -1,0 +1,987 @@
+{
+ "updated": "2026-10-13",
+ "sources": {
+  "moh_ip_riders": {
+   "title": "New requirements for Integrated Shield Plan riders (press release, 26 Nov 2025)",
+   "publisher": "MOH",
+   "url": "https://www.moh.gov.sg/newsroom/new-requirements-for-integrated-shield-plan-riders-to-strengthen-sustainability-of-private-health-insurance-and-address-rising-healthcare-costs/"
+  },
+  "moh_mshl_review": {
+   "title": "Government accepts MediShield Life Council's recommendations (press release, 15 Oct 2024)",
+   "publisher": "MOH",
+   "url": "https://www.moh.gov.sg/newsroom/government-accepts-medishield-life-council-s-recommendations-to-enhance-medishield-life-scheme---government-support-more-than-offsets-premium-increases"
+  },
+  "moh_mshl_benefits": {
+   "title": "MediShield Life Benefits (claim limits and exclusions)",
+   "publisher": "MOH",
+   "url": "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/medishield-life-benefits/"
+  },
+  "moh_mshl": {
+   "title": "MediShield Life",
+   "publisher": "MOH",
+   "url": "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/medishield-life/"
+  },
+  "moh_ip_about": {
+   "title": "About Integrated Shield Plans",
+   "publisher": "MOH",
+   "url": "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/integrated-shield-plans/about-integrated-shield-plans/"
+  },
+  "moh_ip_compare": {
+   "title": "Comparison of Integrated Shield Plans (plan list, lifetime premiums, claims data)",
+   "publisher": "MOH",
+   "url": "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/integrated-shield-plans/comparision-of-integrated-shield-plans/"
+  },
+  "cpf_ip": {
+   "title": "Integrated Shield Plan info page",
+   "publisher": "CPF Board",
+   "url": "https://www.cpf.gov.sg/member/healthcare-financing/getting-supplementary-coverage/integrated-shield-plan"
+  },
+  "cpf_mshl": {
+   "title": "MediShield Life",
+   "publisher": "CPF Board",
+   "url": "https://www.cpf.gov.sg/member/healthcare-financing/medishield-life"
+  },
+  "cpf_careshield": {
+   "title": "CareShield Life",
+   "publisher": "CPF Board",
+   "url": "https://www.cpf.gov.sg/member/healthcare-financing/careshield-life"
+  },
+  "moh_careshield_2025": {
+   "title": "Government accepts CareShield Life Council's recommendations (press release, 27 Aug 2025)",
+   "publisher": "MOH",
+   "url": "https://www.moh.gov.sg/newsroom/government-accepts-careshield-life-council-s-recommendations-to-enhance-careshield-life--provides-additional--570-million-to-subsidise-premiums/"
+  },
+  "moh_supplements": {
+   "title": "CareShield Life and ElderShield Supplements",
+   "publisher": "MOH",
+   "url": "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/careshield-life/careshield-life-and-eldershield-supplements/"
+  },
+  "cpf_eldershield": {
+   "title": "ElderShield",
+   "publisher": "CPF Board",
+   "url": "https://www.cpf.gov.sg/member/healthcare-financing/eldershield"
+  },
+  "cpf_dps": {
+   "title": "Insuring to protect your dependants (DPS)",
+   "publisher": "CPF Board",
+   "url": "https://www.cpf.gov.sg/member/account-services/providing-for-your-loved-ones/insuring-to-protect-your-dependants"
+  },
+  "ge_dps": {
+   "title": "Dependants' Protection Scheme",
+   "publisher": "Great Eastern (DPS administrator)",
+   "url": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/dependants-protection-scheme.html"
+  },
+  "cpf_hps": {
+   "title": "Protecting against losing your home (Home Protection Scheme)",
+   "publisher": "CPF Board",
+   "url": "https://www.cpf.gov.sg/member/home-ownership/protecting-against-losing-your-home"
+  },
+  "cpf_life": {
+   "title": "CPF LIFE",
+   "publisher": "CPF Board",
+   "url": "https://www.cpf.gov.sg/member/retirement-income/monthly-payouts/cpf-life"
+  },
+  "sdic_ppf_scope": {
+   "title": "Scope of PPF Scheme coverage",
+   "publisher": "SDIC",
+   "url": "https://www.sdic.org.sg/pp_scope_of_coverage/"
+  },
+  "sdic_ppf_caps": {
+   "title": "PPF entitlement and caps",
+   "publisher": "SDIC",
+   "url": "https://www.sdic.org.sg/pp_entitlement/"
+  },
+  "lia_ygtli": {
+   "title": "Your Guide to Life Insurance (May 2020)",
+   "publisher": "LIA and MoneySense",
+   "url": "https://www.lia.org.sg/media/4290/ygtli-english-may-2020-v20.pdf"
+  },
+  "lia_bfpg": {
+   "title": "Basic Financial Planning Guide",
+   "publisher": "LIA",
+   "url": "https://www.lia.org.sg/media/4008/basic-financial-planning-guide.pdf"
+  },
+  "ms_bfpg": {
+   "title": "Basic Financial Planning Guide",
+   "publisher": "MoneySense",
+   "url": "https://www.moneysense.gov.sg/planning-your-finances-well/"
+  },
+  "ms_needs": {
+   "title": "Assessing your insurance needs",
+   "publisher": "MoneySense",
+   "url": "https://www.moneysense.gov.sg/assessing-your-insurance-needs/"
+  },
+  "ms_basics": {
+   "title": "Insurance basics",
+   "publisher": "MoneySense",
+   "url": "https://www.moneysense.gov.sg/insurance-basics/"
+  },
+  "lia_ci_2024": {
+   "title": "LIA Critical Illness Framework 2024 (MU 58/24)",
+   "publisher": "LIA",
+   "url": "https://www.lia.org.sg/media/4326/amended-for-lia-mu-5824-part-1-of-4-_lia-ci-framework-2024.pdf"
+  },
+  "comparefirst": {
+   "title": "compareFIRST product comparison portal",
+   "publisher": "LIA and MoneySense",
+   "url": "https://www.comparefirst.sg/wap/homeEvent.action"
+  },
+  "fidrec": {
+   "title": "Financial Industry Disputes Resolution Centre",
+   "publisher": "FIDReC",
+   "url": "https://www.fidrec.com.sg/"
+  },
+  "lia_terms": {
+   "title": "Insurance terms",
+   "publisher": "LIA",
+   "url": "https://www.lia.org.sg/tools-and-resources/insurance-terms/"
+  }
+ },
+ "schemes": [
+  {
+   "id": "medishield_life",
+   "name": "MediShield Life",
+   "kind": "National health insurance (compulsory)",
+   "who": "All Singapore Citizens and Permanent Residents, for life.",
+   "facts": [
+    {
+     "t": "Covers you for life regardless of age or pre-existing conditions.",
+     "s": "moh_ip_about"
+    },
+    {
+     "t": "Sized for Class B2/C bills in public hospitals.",
+     "s": "moh_ip_about"
+    },
+    {
+     "t": "Claim limit of $200,000 per policy year, with no lifetime limit.",
+     "s": "moh_mshl_benefits"
+    },
+    {
+     "t": "Inpatient deductible rising by up to $1,500 in two phases: 1 April 2025 and 1 April 2027.",
+     "s": "moh_mshl_review"
+    },
+    {
+     "t": "A $500-a-year outpatient deductible starts 1 June 2026 (moved from 1 January 2026).",
+     "s": "moh_mshl_review"
+    },
+    {
+     "t": "Outpatient cover is limited to listed treatments such as cancer drug treatment, radiotherapy and kidney dialysis ($1,750 per month).",
+     "s": "moh_mshl_benefits"
+    },
+    {
+     "t": "Excludes maternity charges (except listed serious complications), cosmetic surgery, dental work (except accidental injury), overseas treatment and private nursing.",
+     "s": "moh_mshl_benefits"
+    },
+    {
+     "t": "Premiums are fully payable by MediSave.",
+     "s": "moh_ip_about"
+    }
+   ],
+   "link": "moh_mshl_benefits"
+  },
+  {
+   "id": "careshield_life",
+   "name": "CareShield Life",
+   "kind": "National long-term care insurance",
+   "who": "Automatic for Singaporeans born in 1980 or later, from age 30. Optional for those born in 1979 or earlier.",
+   "facts": [
+    {
+     "t": "Pays monthly cash for life while you cannot do at least 3 of 6 activities of daily living (severe disability).",
+     "s": "cpf_careshield"
+    },
+    {
+     "t": "A successful claim in 2026 pays $689 a month for life.",
+     "s": "cpf_careshield"
+    },
+    {
+     "t": "Payouts grow 4% a year from 2026 to 2030 (up from 2%); a claim in 2030 would pay $806 a month.",
+     "s": "moh_careshield_2025"
+    },
+    {
+     "t": "Payouts rise each year until you turn 67 or claim, whichever is earlier.",
+     "s": "cpf_careshield"
+    },
+    {
+     "t": "Premiums are paid until age 67 (or 10 years after joining, whichever is later), then cover continues for life.",
+     "s": "cpf_careshield"
+    },
+    {
+     "t": "Annual premium increases from 2026 to 2030 are moderated to about $38 on average and no more than $75.",
+     "s": "moh_careshield_2025"
+    },
+    {
+     "t": "Fully payable by MediSave; nobody loses cover for being unable to pay.",
+     "s": "cpf_careshield"
+    }
+   ],
+   "link": "cpf_careshield"
+  },
+  {
+   "id": "eldershield",
+   "name": "ElderShield",
+   "kind": "Older national long-term care insurance (closed)",
+   "who": "People enrolled before 2020. No longer open to new applications.",
+   "facts": [
+    {
+     "t": "ElderShield 300 pays $300 a month for up to 60 months; ElderShield 400 pays $400 a month for up to 72 months.",
+     "s": "cpf_eldershield"
+    },
+    {
+     "t": "Premiums are fixed at entry and paid until the policy anniversary after age 65.",
+     "s": "cpf_eldershield"
+    },
+    {
+     "t": "Run by the Government since 1 November 2021.",
+     "s": "cpf_eldershield"
+    }
+   ],
+   "link": "cpf_eldershield"
+  },
+  {
+   "id": "dps",
+   "name": "Dependants' Protection Scheme (DPS)",
+   "kind": "National term life insurance (opt-out)",
+   "who": "Working Singapore Citizens and PRs aged 21 to 65 with CPF contributions; those aged 16 to 20 can apply.",
+   "facts": [
+    {
+     "t": "Covers death, terminal illness and total permanent disability.",
+     "s": "cpf_dps"
+    },
+    {
+     "t": "Sum assured S$70,000 up to age 59, then S$55,000 for the next 5 years.",
+     "s": "ge_dps"
+    },
+    {
+     "t": "Premiums start from S$18 a year and are paid from CPF savings.",
+     "s": "ge_dps"
+    },
+    {
+     "t": "Administered solely by Great Eastern Life.",
+     "s": "cpf_dps"
+    },
+    {
+     "t": "Optional: you can opt out, but re-joining later depends on your health then.",
+     "s": "ge_dps"
+    }
+   ],
+   "link": "ge_dps"
+  },
+  {
+   "id": "hps",
+   "name": "Home Protection Scheme (HPS)",
+   "kind": "Mortgage-reducing insurance for HDB flats",
+   "who": "HDB flat owners paying their housing loan with CPF (required) or cash (encouraged).",
+   "facts": [
+    {
+     "t": "Pays off the outstanding HDB housing loan, up to the insured sum, on death, terminal illness or total permanent disability.",
+     "s": "cpf_hps"
+    },
+    {
+     "t": "Covers you until age 65 or until the loan is paid off.",
+     "s": "cpf_hps"
+    },
+    {
+     "t": "Does not cover private property, executive condominiums or privatised HUDC flats.",
+     "s": "cpf_hps"
+    },
+    {
+     "t": "Each household's shares of cover must add up to at least 100%.",
+     "s": "cpf_hps"
+    },
+    {
+     "t": "Premiums are deducted from your CPF Ordinary Account; acceptance depends on your health.",
+     "s": "cpf_hps"
+    }
+   ],
+   "link": "cpf_hps"
+  },
+  {
+   "id": "cpf_life",
+   "name": "CPF LIFE",
+   "kind": "National life annuity",
+   "who": "CPF members reaching their payout age.",
+   "facts": [
+    {
+     "t": "Gives monthly payouts for life.",
+     "s": "cpf_life"
+    },
+    {
+     "t": "You can start payouts any time from 65 to one month before turning 80.",
+     "s": "cpf_life"
+    },
+    {
+     "t": "The Escalating Plan starts lower and grows payouts by 2% a year for life.",
+     "s": "cpf_life"
+    }
+   ],
+   "link": "cpf_life"
+  }
+ ],
+ "categories": [
+  {
+   "id": "hospitalisation",
+   "name": "Hospitalisation (Shield and medical plans)",
+   "short": "Pays large hospital bills. Upgrades MediShield Life to A/B1 wards or private hospitals.",
+   "what": "An Integrated Shield Plan (IP) is MediShield Life plus a private top-up from an insurer. The private part targets higher ward classes or private hospitals and lets you choose your doctor. Some insurers also sell international or regional medical plans that are not Shield plans; those are tagged, and are not on MOH's list of MediSave-approved Shield plans.",
+   "facts": [
+    {
+     "t": "Seven insurers sell IPs: AIA, Great Eastern, HSBC Life, Income, Prudential, Raffles Health Insurance and Singlife.",
+     "s": "moh_ip_about"
+    },
+    {
+     "t": "You can hold only one IP at a time.",
+     "s": "cpf_ip"
+    },
+    {
+     "t": "MediSave pays the private part only up to $300 a year (age 40 and below next birthday), $600 (41 to 70) or $900 (71 and above). The rest is cash.",
+     "s": "cpf_ip"
+    },
+    {
+     "t": "IP premiums rise with age and could be up to five times your MediShield Life premiums in your 70s or 80s.",
+     "s": "cpf_ip"
+    },
+    {
+     "t": "Standard IPs have the same coverage at every insurer; other IPs differ.",
+     "s": "moh_ip_compare"
+    },
+    {
+     "t": "69% of private-component claims that paid nothing were bills at or below the deductible.",
+     "s": "moh_ip_compare"
+    }
+   ],
+   "watch": [
+    {
+     "t": "Pre-existing conditions may be excluded from the private part, though MediShield Life still covers them.",
+     "s": "moh_ip_about"
+    },
+    {
+     "t": "Using an insurer's panel doctors usually means lower co-payment and pre-authorisation. Check the panel before you need it.",
+     "s": "moh_ip_about"
+    },
+    {
+     "t": "Switching IPs can mean new underwriting and new exclusions. Do not cancel the old plan until the new one is in force."
+    }
+   ],
+   "compare": [
+    "Ward class targeted (B1, A or private)",
+    "Lifetime premium at your age (MOH publishes this)",
+    "Panel size and pre-authorisation",
+    "Pre- and post-hospitalisation days covered",
+    "Claims processing time (MOH service indicators)"
+   ],
+   "schemes": [
+    "medishield_life"
+   ],
+   "tools": [
+    "moh_ip_compare",
+    "cpf_ip"
+   ]
+  },
+  {
+   "id": "ip_rider",
+   "name": "IP riders",
+   "short": "Optional add-on to an IP that pays part of your co-payment.",
+   "what": "A rider sits on top of your Integrated Shield Plan and reduces what you pay yourself after a claim. Rules changed for riders sold from 1 April 2026.",
+   "facts": [
+    {
+     "t": "From 1 April 2026, new riders cannot cover the minimum IP deductible.",
+     "s": "moh_ip_riders"
+    },
+    {
+     "t": "Minimum deductibles range from $1,500 to $3,500 a year depending on ward class ($3,500 for Class A or private).",
+     "s": "moh_ip_riders"
+    },
+    {
+     "t": "The yearly co-payment cap rose to a minimum of $6,000, excluding the deductible, and applies only to panel or pre-authorised claims.",
+     "s": "moh_ip_riders"
+    },
+    {
+     "t": "The minimum 5% co-payment is unchanged.",
+     "s": "moh_ip_riders"
+    },
+    {
+     "t": "New riders are expected to cost about 30% less than older full-coverage riders.",
+     "s": "moh_ip_riders"
+    },
+    {
+     "t": "Riders bought from 27 November 2025 to 31 March 2026 move to the new design no later than the next renewal after 1 April 2028.",
+     "s": "moh_ip_riders"
+    }
+   ],
+   "watch": [
+    {
+     "t": "Riders bought before 27 November 2025 are left to each insurer to decide. Ask yours what will happen.",
+     "s": "moh_ip_riders"
+    }
+   ],
+   "compare": [
+    "Which ward class it pairs with",
+    "Co-payment cap and whether it needs panel doctors",
+    "Premium at your age and how fast it rises"
+   ],
+   "schemes": [
+    "medishield_life"
+   ],
+   "tools": [
+    "moh_ip_riders"
+   ]
+  },
+  {
+   "id": "term_life",
+   "name": "Term life",
+   "short": "Lump sum to your family if you die or are totally disabled within a set period.",
+   "what": "Protection for a fixed period, usually to an age like 65 or 75. It pays only if a claim happens in that period and has no cash value.",
+   "facts": [
+    {
+     "t": "Term insurance pays the sum insured only on death or total and permanent disability during the term, and is typically cheaper because it has no savings element.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "A rule of thumb: death and TPD cover of 9 times your annual income.",
+     "s": "ms_bfpg"
+    },
+    {
+     "t": "Direct Purchase Insurance (DPI) term plans are sold without advice or commission, so premiums are lower. Their names start with \"DIRECT\".",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "Working CPF members aged 21 to 65 are automatically covered by DPS (S$70,000 up to age 59) unless they opt out.",
+     "s": "ge_dps"
+    }
+   ],
+   "watch": [
+    {
+     "t": "Decreasing (mortgage) term cover falls with your loan. HPS already covers HDB loans paid by CPF.",
+     "s": "cpf_hps"
+    },
+    {
+     "t": "Renewable term plans re-price at each renewal and can get expensive late in life."
+    }
+   ],
+   "compare": [
+    "Cover end age",
+    "Whether TPD and terminal illness are included",
+    "Guaranteed vs non-guaranteed premium rates",
+    "Option to convert or increase cover without health checks"
+   ],
+   "schemes": [
+    "dps",
+    "hps"
+   ],
+   "tools": [
+    "comparefirst"
+   ]
+  },
+  {
+   "id": "whole_life",
+   "name": "Whole life and universal life",
+   "short": "Lifelong cover with a cash value. Pricier than term.",
+   "what": "Whole life covers you for life and builds cash value. Universal life is an interest-sensitive version aimed at larger sums, often for legacy planning.",
+   "facts": [
+    {
+     "t": "Whole life pays the sum insured plus bonuses on death or TPD; premiums can be limited to a set period.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "Bonuses are non-guaranteed: your return can underperform expectations.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "Universal life credits interest at a declared rate that can change, usually with a guaranteed minimum.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "Bundled products like whole life may push premiums above 15% of income because they mix savings and protection.",
+     "s": "lia_bfpg"
+    }
+   ],
+   "watch": [
+    {
+     "t": "Surrendering early usually returns less than you paid in.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "The Policy Owners' Protection Scheme only protects guaranteed benefits, capped at S$500,000 sum assured and S$100,000 surrender value per life per insurer.",
+     "s": "sdic_ppf_caps"
+    }
+   ],
+   "compare": [
+    "Guaranteed vs projected cash value",
+    "Premium term (to 65, 20 years, whole life)",
+    "Multiplier: extra cover until a set age",
+    "Early CI acceleration options"
+   ],
+   "schemes": [
+    "dps"
+   ],
+   "tools": [
+    "comparefirst"
+   ]
+  },
+  {
+   "id": "critical_illness",
+   "name": "Critical illness (CI)",
+   "short": "Lump sum on diagnosis of a listed serious illness, to replace income while you recover.",
+   "what": "CI plans pay a lump sum on diagnosis, not a reimbursement of bills. Some pay only at the severe stage; early or multi-stage plans pay earlier; multi-pay plans pay more than once.",
+   "facts": [
+    {
+     "t": "LIA standardises the severe-stage definitions of 37 critical illnesses so claims are judged the same way at every insurer.",
+     "s": "lia_ci_2024"
+    },
+    {
+     "t": "From 1 July 2025, only products using the Version 2024 definitions may be sold.",
+     "s": "lia_ci_2024"
+    },
+    {
+     "t": "Early and intermediate stages are not defined by LIA; each insurer sets its own.",
+     "s": "lia_ci_2024"
+    },
+    {
+     "t": "A rule of thumb: CI cover of 4 times your annual income.",
+     "s": "ms_bfpg"
+    }
+   ],
+   "watch": [
+    {
+     "t": "Early-stage definitions vary. Read the policy's list, not the marketing count of conditions.",
+     "s": "lia_ci_2024"
+    },
+    {
+     "t": "A CI benefit that accelerates your life policy reduces your death cover when it pays."
+    }
+   ],
+   "compare": [
+    "Severe-only vs early/multi-stage",
+    "Number of claims allowed and waiting periods between them",
+    "Cover end age",
+    "Standalone vs accelerated rider"
+   ],
+   "schemes": [],
+   "tools": [
+    "lia_ci_2024"
+   ]
+  },
+  {
+   "id": "cancer",
+   "name": "Cancer plans",
+   "short": "Lump sum (or yearly payouts) on cancer diagnosis only.",
+   "what": "A narrower, cheaper form of critical illness cover that pays only for cancer, often from early stage.",
+   "facts": [
+    {
+     "t": "Outpatient cancer drug treatment under MediShield Life is limited to drugs on MOH's Cancer Drug List, at $200 to $12,800 a month depending on the drug.",
+     "s": "moh_mshl_benefits"
+    },
+    {
+     "t": "IP claim limits for cancer drugs are set by each private insurer.",
+     "s": "moh_mshl_benefits"
+    }
+   ],
+   "watch": [
+    {
+     "t": "Cancer-only cover does not pay for heart attack, stroke or other critical illnesses."
+    },
+    {
+     "t": "Many cancer plans are yearly renewable and their premiums are not guaranteed."
+    }
+   ],
+   "compare": [
+    "Stage at which it pays",
+    "Waiting period after purchase",
+    "Renewability and premium guarantee",
+    "Whether it also pays for Cancer Drug List gaps"
+   ],
+   "schemes": [
+    "medishield_life"
+   ],
+   "tools": [
+    "moh_mshl_benefits"
+   ]
+  },
+  {
+   "id": "disability_income",
+   "name": "Disability income",
+   "short": "Monthly income if illness or injury stops you working.",
+   "what": "Replaces part of your income if you become totally or partially disabled and cannot work, under the policy's conditions.",
+   "facts": [
+    {
+     "t": "Disability income insurance helps replace part of your income if you become totally or partially disabled and cannot work because of accident or sickness.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "Long-term accident and health policies, including disability income, are protected by the PPF Scheme without caps.",
+     "s": "sdic_ppf_caps"
+    }
+   ],
+   "watch": [
+    {
+     "t": "Check whether disability means unable to do your own job or any job. The difference decides most claims."
+    },
+    {
+     "t": "There is usually a waiting period of a few months before payouts start."
+    }
+   ],
+   "compare": [
+    "Own-occupation vs any-occupation definition",
+    "Waiting (deferment) period",
+    "Benefit period and maximum % of income",
+    "Partial disability benefit"
+   ],
+   "schemes": [],
+   "tools": [
+    "lia_ygtli"
+   ]
+  },
+  {
+   "id": "long_term_care",
+   "name": "Long-term care (CareShield supplements)",
+   "short": "Monthly cash if you become severely disabled, on top of CareShield Life.",
+   "what": "Supplements top up CareShield Life or ElderShield with higher monthly payouts, and some pay at milder disability levels.",
+   "facts": [
+    {
+     "t": "You must already be covered by CareShield Life or ElderShield to buy a supplement.",
+     "s": "moh_supplements"
+    },
+    {
+     "t": "MediSave can pay supplement premiums up to $600 per calendar year per insured person, from your own or a family member's account.",
+     "s": "moh_supplements"
+    },
+    {
+     "t": "Supplement insurers named by MOH: Singlife, Great Eastern and Income.",
+     "s": "moh_supplements"
+    },
+    {
+     "t": "CareShield Life alone pays $689 a month for a claim made in 2026.",
+     "s": "cpf_careshield"
+    }
+   ],
+   "watch": [
+    {
+     "t": "CareShield Life only pays at 3 of 6 activities of daily living. Supplements that pay at 1 or 2 ADLs cost more.",
+     "s": "cpf_careshield"
+    }
+   ],
+   "compare": [
+    "ADLs needed to claim",
+    "Monthly payout and how it grows",
+    "Lump-sum or dependant benefits",
+    "Premium payment term"
+   ],
+   "schemes": [
+    "careshield_life",
+    "eldershield"
+   ],
+   "tools": [
+    "moh_supplements"
+   ]
+  },
+  {
+   "id": "personal_accident",
+   "name": "Personal accident (PA)",
+   "short": "Pays for accidental death, disability and accident medical bills.",
+   "what": "Cheap yearly cover for accidents only: a lump sum for accidental death or permanent disability, plus reimbursement of accident medical costs, often including TCM and physiotherapy.",
+   "facts": [
+    {
+     "t": "Personal accident is one of the accident and health policy types protected by the PPF Scheme.",
+     "s": "sdic_ppf_scope"
+    }
+   ],
+   "watch": [
+    {
+     "t": "Illness is not covered, even if it leads to death or disability."
+    },
+    {
+     "t": "Many plans exclude or limit infectious diseases, high-risk sports and some occupations. Check the exclusions."
+    }
+   ],
+   "compare": [
+    "Accidental death / permanent disability sum",
+    "Medical expense limit per accident",
+    "Coverage for infectious diseases (e.g. dengue)",
+    "Age limits and renewability"
+   ],
+   "schemes": [],
+   "tools": []
+  },
+  {
+   "id": "hospital_cash",
+   "name": "Hospital cash (hospital income)",
+   "short": "Fixed daily cash for each day you are warded.",
+   "what": "Pays a set amount per day in hospital, whatever the bill. Useful for lost income or extras, not for paying the bill itself.",
+   "facts": [
+    {
+     "t": "A hospital income plan pays a fixed daily benefit based on the number of days you are an inpatient.",
+     "s": "lia_ygtli"
+    }
+   ],
+   "watch": [
+    {
+     "t": "Short stays and day surgery often pay little or nothing. It does not replace an IP."
+    }
+   ],
+   "compare": [
+    "Daily amount and ICU multiplier",
+    "Maximum days per year",
+    "Day-surgery benefit"
+   ],
+   "schemes": [
+    "medishield_life"
+   ],
+   "tools": []
+  },
+  {
+   "id": "endowment",
+   "name": "Endowment and savings plans",
+   "short": "Save for a set goal (education, a lump sum at a date) with some protection.",
+   "what": "Pays a sum at maturity, or earlier on death or TPD. Part of the return is usually non-guaranteed bonuses.",
+   "facts": [
+    {
+     "t": "Endowment pays the sum insured plus bonuses at maturity, or on death or TPD during the term.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "Returns can underperform expectations, as with all investment products.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "compareFIRST lists endowment policies for side-by-side comparison.",
+     "s": "comparefirst"
+    }
+   ],
+   "watch": [
+    {
+     "t": "Early surrender usually loses money. Only commit money you will not need before maturity."
+    }
+   ],
+   "compare": [
+    "Guaranteed vs illustrated maturity value",
+    "Premium term vs policy term",
+    "Breakeven year",
+    "Capital guarantee, if any"
+   ],
+   "schemes": [],
+   "tools": [
+    "comparefirst"
+   ]
+  },
+  {
+   "id": "ilp",
+   "name": "Investment-linked plans (ILPs)",
+   "short": "Insurance plus investment in funds. Value goes up and down with markets.",
+   "what": "Premiums buy both insurance cover and units in funds you pick. What it pays depends on unit prices at the time of claim or surrender.",
+   "facts": [
+    {
+     "t": "Cover charges generally rise with age; poor fund returns plus high cover can drain the units needed to pay those charges.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "Benefits tied directly to fund value are not guaranteed, so the PPF Scheme does not protect them.",
+     "s": "sdic_ppf_caps"
+    },
+    {
+     "t": "Within the 14-day free-look, an ILP refund can be adjusted for changes in unit value.",
+     "s": "lia_ygtli"
+    }
+   ],
+   "watch": [
+    {
+     "t": "Ask for every charge in writing: premium, fund management, policy and cover charges."
+    }
+   ],
+   "compare": [
+    "Total charges",
+    "Fund choices and track record",
+    "Cover charges by age",
+    "Surrender charges and lock-in"
+   ],
+   "schemes": [],
+   "tools": [
+    "comparefirst"
+   ]
+  },
+  {
+   "id": "annuity",
+   "name": "Annuities and retirement income",
+   "short": "Turns a lump sum or savings into monthly income in retirement.",
+   "what": "Private retirement plans pay monthly income from a set age, on top of CPF LIFE.",
+   "facts": [
+    {
+     "t": "A life annuity usually takes a lump sum and pays monthly in return.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "CPF LIFE pays monthly for life; you can start payouts any time from 65 to one month before turning 80.",
+     "s": "cpf_life"
+    },
+    {
+     "t": "The PPF Scheme caps annuity protection at S$100,000 of guaranteed benefits per life per insurer.",
+     "s": "sdic_ppf_caps"
+    }
+   ],
+   "watch": [
+    {
+     "t": "Check how much of the monthly payout is guaranteed and how much depends on bonuses."
+    }
+   ],
+   "compare": [
+    "Guaranteed monthly income",
+    "Payout start age and duration (fixed years vs life)",
+    "Inflation escalation",
+    "What happens on early death"
+   ],
+   "schemes": [
+    "cpf_life"
+   ],
+   "tools": [
+    "cpf_life"
+   ]
+  },
+  {
+   "id": "maternity_child",
+   "name": "Maternity and child",
+   "short": "Pregnancy complications, congenital conditions and cover for newborns.",
+   "what": "Maternity plans cover the mother and baby during pregnancy and early life; child plans cover hospitalisation, CI and accidents from birth.",
+   "facts": [
+    {
+     "t": "MediShield Life excludes routine maternity charges and Caesarean operations but covers a list of serious pregnancy and delivery complications.",
+     "s": "moh_mshl_benefits"
+    },
+    {
+     "t": "The MediSave Grant for Newborns rose to $5,000 from 1 April 2025 and fully covers a citizen baby's MediShield Life premiums up to age 21.",
+     "s": "moh_mshl_review"
+    }
+   ],
+   "watch": [
+    {
+     "t": "Maternity plans usually need to be bought by a set week of pregnancy. Check the cut-off early."
+    },
+    {
+     "t": "Buying a child's IP early locks in cover before any condition can be excluded."
+    }
+   ],
+   "compare": [
+    "Pregnancy week cut-off",
+    "Congenital conditions covered",
+    "Option to continue cover for the child without health checks"
+   ],
+   "schemes": [
+    "medishield_life"
+   ],
+   "tools": []
+  },
+  {
+   "id": "outpatient",
+   "name": "Outpatient, GP and dental",
+   "short": "Clinic visits, specialist consults and dental. Mostly outside MediShield Life.",
+   "what": "Plans or riders that reimburse GP, specialist, TCM or dental visits. Few insurers sell these to individuals.",
+   "facts": [
+    {
+     "t": "MediShield Life's outpatient benefits are limited to listed treatments such as cancer treatment, dialysis and long-term parenteral nutrition.",
+     "s": "moh_mshl_benefits"
+    },
+    {
+     "t": "Dental work is excluded from MediShield Life except treatment due to accidental injury.",
+     "s": "moh_mshl_benefits"
+    }
+   ],
+   "watch": [
+    {
+     "t": "Premiums often cost close to what you would claim. Work out your yearly clinic spend first."
+    }
+   ],
+   "compare": [
+    "Per-visit and yearly limits",
+    "Panel clinics only or any clinic",
+    "Dental limits"
+   ],
+   "schemes": [
+    "medishield_life"
+   ],
+   "tools": []
+  },
+  {
+   "id": "rider",
+   "name": "Riders (waiver, payor, CI add-ons)",
+   "short": "Add-ons to a main policy: waive premiums, add CI or TPD cover.",
+   "what": "For extra premium, a rider adds protection or enhances the main policy's benefits. Common ones waive future premiums if you (or the payer, for a child's policy) are diagnosed with CI or become disabled.",
+   "facts": [
+    {
+     "t": "A rider provides additional protection or enhances existing benefits for an extra premium.",
+     "s": "lia_ygtli"
+    }
+   ],
+   "watch": [
+    {
+     "t": "A rider usually ends when the main policy ends or lapses."
+    },
+    {
+     "t": "Accelerated CI riders pay from your death benefit, not on top of it."
+    }
+   ],
+   "compare": [
+    "Accelerated vs additional benefit",
+    "What triggers the waiver",
+    "Cost vs a standalone plan"
+   ],
+   "schemes": [],
+   "tools": []
+  }
+ ],
+ "rules_of_thumb": {
+  "source": "ms_bfpg",
+  "items": [
+   {
+    "k": "Death and TPD cover",
+    "v": "9x annual income"
+   },
+   {
+    "k": "Critical illness cover",
+    "v": "4x annual income"
+   },
+   {
+    "k": "Spend on protection",
+    "v": "at most 15% of income"
+   },
+   {
+    "k": "Emergency fund",
+    "v": "3 to 6 months of expenses"
+   }
+  ]
+ },
+ "faq": [
+  {
+   "q": "Can I cancel a new policy?",
+   "a": "Yes. You have 14 days from receiving the policy to cancel in writing. You get your premiums back minus medical and other costs the insurer paid. ILP refunds can be adjusted for unit price changes.",
+   "s": "lia_ygtli"
+  },
+  {
+   "q": "What if my insurer fails?",
+   "a": "The Policy Owners' Protection Scheme (run by SDIC) protects guaranteed benefits. For individual life policies it caps cover at S$500,000 of sum assured and S$100,000 of surrender value per life per insurer. Accident and health policies are protected without caps.",
+   "s": "sdic_ppf_caps"
+  },
+  {
+   "q": "How do I dispute a rejected claim?",
+   "a": "Go to the insurer first. If it is not resolved, file with FIDReC within six months of the insurer's final reply.",
+   "s": "moh_ip_compare"
+  },
+  {
+   "q": "Can I pay premiums with CPF?",
+   "a": "MediShield Life, CareShield Life and DPS premiums can be paid from CPF. IP top-ups are capped by MediSave Additional Withdrawal Limits, CareShield supplements by $600 a year.",
+   "s": "cpf_ip"
+  },
+  {
+   "q": "What is Direct Purchase Insurance?",
+   "a": "Simple term and whole life plans, with optional CI rider, sold directly without advice or commission. Their names start with \"DIRECT\" and you can compare them on compareFIRST.",
+   "s": "lia_ygtli"
+  },
+  {
+   "q": "Where do I see what I already have?",
+   "a": "Log in to the CPF Healthcare dashboard with Singpass to see your MediShield Life, IP, CareShield Life and ElderShield cover.",
+   "s": "moh_ip_about"
+  },
+  {
+   "q": "Is the grace period for late premiums fixed?",
+   "a": "Usually 30 days after the due date, during which the policy stays in force. Check your own policy.",
+   "s": "lia_ygtli"
+  }
+ ]
+}

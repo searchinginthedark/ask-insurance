@@ -1,0 +1,850 @@
+{
+  "id": "singlife",
+  "name": "Singlife",
+  "formerly": "Singapore Life Ltd; merged with Aviva Singapore in 2022",
+  "website": "https://singlife.com/en",
+  "products_index_url": "https://singlife.com/en/life-insurance",
+  "claims_url": "https://singlife.com/en/claims",
+  "contact_url": "https://singlife.com/en/contact-us",
+  "verified_on": "2026-10-13",
+  "products": [
+    {
+      "name": "Singlife Simple Term",
+      "category": "term_life",
+      "subtype": "yearly renewable term; online or adviser",
+      "summary": "Term life plan paying a lump sum on death, terminal illness or total and permanent disability, with up to two optional riders.",
+      "facts": [
+        "Coverage from S$150,000 to S$500,000",
+        "Continuous protection until you're 86 years old by renewing your plan yearly",
+        "Premiums start from S$0.37 per day for S$500,000 coverage",
+        "Optional riders: Personal Accident Cover (S$100,000 to S$500,000) and Critical Illness Cover (S$50,000 to S$350,000, 36 severe-stage conditions)"
+      ],
+      "channel": "mixed",
+      "url": "https://singlife.com/en/life-insurance/simple-term",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/life-insurance/singlife-simple-term/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-simple-term_brochure.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Singlife Simple Term An affordable term life insurance plan"
+    },
+    {
+      "name": "Singlife Elite Term II",
+      "category": "term_life",
+      "subtype": "regular pay and limited pay; also shown under Pinnacle at /en/pinnacle/elite-term-ii",
+      "summary": "Customisable term life plan with Regular Pay and Limited Pay options paying a lump sum on death or terminal illness.",
+      "facts": [
+        "Regular Pay coverage: 5 years, 10 years, from every one-year interval from the 11th year until age 85, or to age 99",
+        "Automatic renewal for the 5-year or 10-year coverage term",
+        "Option to increase basic policy coverage without medical check-ups at key milestones",
+        "Riders for total and permanent disability and critical illnesses available"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/life-insurance/elite-term-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/life-insurance/singlife-elite-term-ii/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-elite-term-ii_brochure.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Singlife Elite Term II Protect your family and leave an inheritance"
+    },
+    {
+      "name": "DIRECT – Singlife Term Life",
+      "category": "term_life",
+      "subtype": "direct purchase insurance (DPI); 5-year renewable, 20-year or to age 65",
+      "summary": "Term life plan you can buy directly without an adviser, paying out on death, terminal illness or total and permanent disability.",
+      "facts": [
+        "Sum assured from S$50,000 to S$400,000",
+        "Protection period: 5-year renewable term, 20 years or up to age 65",
+        "Apply if you reside in Singapore and are aged 19 to 65",
+        "Premiums start from S$0.32/day for S$400,000 sum assured",
+        "Optional rider for 30 covered critical illnesses"
+      ],
+      "channel": "direct-online",
+      "url": "https://singlife.com/en/life-insurance/direct-term-life",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Direct Purchase Insurance Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/life-insurance/direct-purchase-insurance/brochure.pdf",
+          "local": "research/pdf/singlife/direct-purchase-insurance_brochure.pdf"
+        },
+        {
+          "title": "DPI Fact Sheet and Checklist",
+          "url": "https://singlife.com/content/dam/public/sg/documents/life-insurance/direct-purchase-insurance/dpi-fact-sheet-and-checklist.pdf",
+          "local": "research/pdf/singlife/dpi-fact-sheet-and-checklist.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "With DIRECT – Singlife Term Life, you get value-for-money protection"
+    },
+    {
+      "name": "Singlife Whole Life Choice",
+      "category": "whole_life",
+      "subtype": "participating whole life with decreasing Additional Cover",
+      "summary": "Customisable whole life plan with lifelong cover against death and terminal illness, cash value and bonuses, plus Additional Cover that tapers after a chosen age.",
+      "facts": [
+        "Premium payment term: 10, 15, 20 or 25 years, or until age 65",
+        "Additional Cover of 100%, 200%, 300% or 400% of Base Sum Assured",
+        "Additional Cover Age: 65, 70, 75, 80 or 85, then reduces by 12.5% per year",
+        "Retrenchment Benefit waives premiums for up to 12 months",
+        "Income Payout Option converts the policy into monthly payouts"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/life-insurance/whole-life-choice",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/life-insurance/singlife-whole-life-choice/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-whole-life-choice_brochure.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Singlife Whole Life Choice is a customisable, comprehensive plan offering lifelong protection"
+    },
+    {
+      "name": "DIRECT – Singlife Whole Life",
+      "category": "whole_life",
+      "subtype": "direct purchase insurance (DPI); whole life with potential bonuses",
+      "summary": "Whole life plan you can buy directly without an adviser, covering death, terminal illness and total and permanent disability.",
+      "facts": [
+        "Sum assured from S$50,000 to S$200,000",
+        "Premiums payable till age 70 or 85",
+        "Total and Permanent Disability covered up to age 65",
+        "Apply if you reside in Singapore and are aged 19 to 65",
+        "Premiums start from S$4.13/day for S$200,000 sum assured"
+      ],
+      "channel": "direct-online",
+      "url": "https://singlife.com/en/life-insurance/direct-whole-life",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Direct Purchase Insurance Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/life-insurance/direct-purchase-insurance/brochure.pdf",
+          "local": "research/pdf/singlife/direct-purchase-insurance_brochure.pdf"
+        },
+        {
+          "title": "DPI Fact Sheet and Checklist",
+          "url": "https://singlife.com/content/dam/public/sg/documents/life-insurance/direct-purchase-insurance/dpi-fact-sheet-and-checklist.pdf",
+          "local": "research/pdf/singlife/dpi-fact-sheet-and-checklist.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "With DIRECT – Singlife Whole Life, you get value-for-money protection"
+    },
+    {
+      "name": "Singlife Legacy Indexed Universal Life",
+      "category": "whole_life",
+      "subtype": "indexed universal life (also called Legacy IUL)",
+      "summary": "Indexed universal life plan combining lifelong death and terminal illness cover with a Fixed Account and an Index Account.",
+      "facts": [
+        "Coverage starting from US$250,000",
+        "Fixed Account minimum guaranteed crediting rate of 2% p.a.",
+        "Index Account guaranteed floor rate of 0% p.a.",
+        "No Lapse Guarantee for the first five years regardless of market performance",
+        "Penalty free withdrawal of up to 5% of the account value once every policy year from the 6th Policy Year onwards"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/legacy-indexed-universal-life",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/legacy-indexed-universal-life/brochure.pdf",
+          "local": "research/pdf/singlife/legacy-indexed-universal-life_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Discover Singlife Legacy Indexed Universal Life (IUL), a combination of life protection"
+    },
+    {
+      "name": "Singlife Heritage Reserve",
+      "category": "whole_life",
+      "subtype": "USD participating whole of life (Pinnacle)",
+      "summary": "USD-denominated participating whole of life plan for long-term wealth accumulation, legacy planning and multi-generational transfer.",
+      "facts": [
+        "USD-denominated participating whole of life insurance plan",
+        "Policy term of up to 388 policy years"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/pinnacle/heritage-reserve",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/pinnacle/heritage-reserve/singlife-heritage-reserve-universal-life-brochure.pdf",
+          "local": "research/pdf/singlife/singlife-heritage-reserve-universal-life-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Heritage Reserve is a USD-denominated participating whole of life insurance plan"
+    },
+    {
+      "name": "Singlife Legacy Indexed Income",
+      "category": "whole_life",
+      "subtype": "indexed life insurance with customisable income (Pinnacle)",
+      "summary": "Life insurance plan whose income stream is linked to the performance of selected indices, with a built-in 0% floor.",
+      "facts": [
+        "Built-in floor rate of 0% per annum",
+        "Up to five different income phases, each with its own target amount and duration",
+        "Income linked to specially selected indices, including volatility-controlled indices"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/pinnacle/legacy-indexed-income",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/pinnacle/legacy-indexed-income/singlife-legacy-indexed-income-brochure.pdf",
+          "local": "research/pdf/singlife/singlife-legacy-indexed-income-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Legacy Indexed Income allows you to customise your income stream"
+    },
+    {
+      "name": "Singlife Heritage Income",
+      "category": "whole_life",
+      "subtype": "participating whole life savings plan, SGD and USD; also shown under Pinnacle at /en/pinnacle/heritage-income",
+      "summary": "Participating whole life savings plan giving Monthly or Yearly Income for life with Loyalty Bonuses, designed for legacy planning.",
+      "facts": [
+        "Available in both SGD and USD",
+        "Guaranteed breakeven from as early as end of 5th policy year",
+        "Choose Monthly or Yearly Income payouts",
+        "Pay with cash or Supplementary Retirement Scheme (SRS) funds"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/savings/heritage-income",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/savings/singlife-heritage-income/singlife-heritage-income-brochure.pdf",
+          "local": "research/pdf/singlife/singlife-heritage-income-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Heritage Income adapts to your needs"
+    },
+    {
+      "name": "Singlife Flexi Life Income II",
+      "category": "whole_life",
+      "subtype": "participating whole life savings plan with yearly income; also shown under Pinnacle at /en/pinnacle/flexi-life-income-ii",
+      "summary": "Participating whole life savings plan paying Yearly Income throughout your lifetime plus potential bonuses.",
+      "facts": [
+        "100% capital guaranteed",
+        "Choose your Premium Payment Term and Accumulation Period to set when Yearly Income starts",
+        "Protection against Death and Terminal Illness with no medical check-ups needed",
+        "Riders can be added"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/savings/flexi-life-income-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/savings/singlife-flexi-life-income-ii/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-flexi-life-income-ii_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Flexi Life Income II A participating whole life savings insurance plan"
+    },
+    {
+      "name": "Singlife Legacy Income",
+      "category": "whole_life",
+      "subtype": "whole life savings plan with guaranteed monthly income",
+      "summary": "Flexible whole life savings plan with guaranteed monthly payouts that rise across three tiers, plus non-guaranteed cash bonuses.",
+      "facts": [
+        "Payouts available from as early as the end of the 13th month",
+        "3 tiers of Income and Cash Bonus",
+        "Change of Life Assured to a spouse or children during the policy term",
+        "Centennial Benefit: 105% of the Total Premiums Paid and non-guaranteed terminal bonus if the Life Assured outlives the policy term",
+        "Covered for the whole of your life, capped at 100 policy years"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/savings/legacy-income",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/savings/singlife-legacy-income/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-legacy-income_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Legacy Income A flexible whole life savings insurance plan"
+    },
+    {
+      "name": "Singlife Smart Saver",
+      "category": "endowment",
+      "subtype": "capital guaranteed regular premium savings plan",
+      "summary": "Flexible capital guaranteed savings plan paying a maturity lump sum of sum assured and potential bonuses.",
+      "facts": [
+        "Policy term of 10 to 25 years, or until age 99",
+        "Single premium or regular premium payments from 3 to 25 years",
+        "100% capital guarantee",
+        "Waives up to 12 months' premium if unemployed",
+        "Legacy Distribution Option splits the policy among loved ones"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/savings/smart-saver",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/savings/singlife-smart-saver/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-smart-saver_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Smart Saver is a flexible savings plan that helps you achieve your financial goals"
+    },
+    {
+      "name": "Singlife Steadypay Saver",
+      "category": "endowment",
+      "subtype": "endowment with yearly guaranteed cash payout",
+      "summary": "Insurance savings plan paying yearly guaranteed cash amounts and a maturity benefit at the end of the policy term.",
+      "facts": [
+        "Yearly guaranteed cash payouts equivalent to 5% of sum assured from the end of the 2nd policy year",
+        "Policy duration of 12, 15, 18 or 25 years",
+        "Potential return of up to 2.83% per annum",
+        "Lump-sum payout on death or Terminal Illness, with an additional payout for accidental death"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/savings/steadypay-saver",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/savings/singlife-steadypay-saver/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-steadypay-saver_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife SteadypaySaver takes the hard work of saving out of your hands"
+    },
+    {
+      "name": "Singlife Account",
+      "category": "endowment",
+      "subtype": "insurance savings account (app-based) with life cover",
+      "summary": "Insurance savings solution that earns daily interest and gives life cover of up to 105% of the account value.",
+      "facts": [
+        "1.5% p.a. from the get-go on your first S$10,000",
+        "Base return of 1% p.a. for amounts above S$10,000, up to S$100,000",
+        "Minimum funding of S$100 to sign up",
+        "No lock-in period; withdraw anytime via FAST",
+        "Life insurance coverage up to 105% of your account value"
+      ],
+      "channel": "direct-online",
+      "url": "https://singlife.com/en/singlife-account",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary",
+          "url": "https://singlife.com/content/dam/public/sg/documents/singlife-account/singlife-account-product-summary-nov23.pdf",
+          "local": "research/pdf/singlife/singlife-account-product-summary-nov23.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "The Singlife Account Is Not Just a Savings Plan"
+    },
+    {
+      "name": "Singlife Savvy Invest II",
+      "category": "ilp",
+      "subtype": "whole life regular premium ILP",
+      "summary": "Whole life, regular premium investment-linked plan combining investment with death and terminal illness cover.",
+      "facts": [
+        "Welcome Bonus of up to 60% of your basic regular premium",
+        "Up to 105% of regular basic premiums paid invested in ILP sub-funds of your choice",
+        "Life Stage Benefit: withdraw up to 10% of account value penalty-free at key milestones",
+        "Single premium top-up available any time"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/investment-linked-plan/savvy-invest-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/investment-linked-plan/singlife-savvy-invest-ii/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-savvy-invest-ii_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Savvy Invest II is a whole life, regular premium investment-linked plan"
+    },
+    {
+      "name": "Singlife Legacy Invest",
+      "category": "ilp",
+      "subtype": "customisable ILP in SGD or USD (Pinnacle)",
+      "summary": "Customisable investment-linked plan with monthly charges limited to a fixed period.",
+      "facts": [
+        "Available in Singapore Dollars (SGD) or United States Dollars (USD)",
+        "Single premium or regular payments over 3, 5 or 10 years",
+        "Policy term of 10, 15, 20 or 25 years",
+        "Monthly charges apply only during the specified charge period"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/pinnacle/legacy-invest",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/legacy-invest/brochure.pdf",
+          "local": "research/pdf/singlife/legacy-invest_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Legacy Invest, a customisable investment-linked plan"
+    },
+    {
+      "name": "Singlife Flexi Retirement II",
+      "category": "annuity",
+      "subtype": "guaranteed monthly retirement income; also shown under Pinnacle at /en/pinnacle/flexi-retirement-ii",
+      "summary": "Retirement plan where you choose your Guaranteed Monthly Income, when it starts and how long it lasts, with a 100% capital guarantee.",
+      "facts": [
+        "Pay a single premium or regular premiums for 5, 10, 15, 20 or 25 years",
+        "100% capital guarantee at the end of the Accumulation Period",
+        "Guaranteed issuance: no medical underwriting required",
+        "Optional Singlife Care Income Plus Cover rider for disability and specified senior conditions"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/flexi-retirement-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/retirement/singlife-flexi-retirement-ii/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-flexi-retirement-ii_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Flexi Retirement II offers a range of flexible options"
+    },
+    {
+      "name": "Singlife Comprehensive Critical Illness II",
+      "category": "critical_illness",
+      "subtype": "single-payout, early to severe stage",
+      "summary": "Single-payout critical illness plan covering early, intermediate and severe stage conditions.",
+      "facts": [
+        "Lump-sum payout of 100% of Sum Assured on diagnosis of any of the covered 135 conditions across early, intermediate and severe stage",
+        "Choose coverage from 10 years up till age 99 (in one-year intervals)",
+        "Coverage amount currency: SGD, USD, GBP, EUR, AUD or HKD",
+        "S$5,000 lump-sum payout upon death"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/critical-illness-insurance/comprehensive-critical-illness-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/critical-illness-insurance/singlife-comprehensive-critical-illness-ii/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-comprehensive-critical-illness-ii_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Comprehensive Critical Illness II A single-payout plan"
+    },
+    {
+      "name": "Singlife Essential Critical Illness II",
+      "category": "critical_illness",
+      "subtype": "single-payout; accepts certain pre-existing conditions",
+      "summary": "Critical illness plan that covers you whether healthy or managing certain existing conditions, with a lump sum on diagnosis.",
+      "facts": [
+        "Coverage even with pre-existing conditions: Type 2 Diabetes, Pre-diabetes and/or the 3 Highs",
+        "Get covered with just 6 questions and no medical check-up needed",
+        "Coverage term of 15 years or up to age 85",
+        "20% of total premiums paid back if no claims are made during the coverage period"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/critical-illness-insurance/essential-critical-illness-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/critical-illness-insurance/singlife-essential-critical-illness-ii/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-essential-critical-illness-ii_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Essential Critical Illness II A critical illness plan that gives you assurance"
+    },
+    {
+      "name": "Singlife Multipay Critical Illness II",
+      "category": "critical_illness",
+      "subtype": "multi-pay CI; also shown under Pinnacle at /en/pinnacle/multipay-critical-illness-ii",
+      "summary": "Multiple-payout critical illness plan covering conditions across early, intermediate and severe stages, including recurrences.",
+      "facts": [
+        "Up to 900% of your Sum Assured in total payouts",
+        "135 conditions across early, intermediate and severe stages",
+        "Recurrent Illness Benefit: 150% of Sum Assured per eligible claim, up to 300% total"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/critical-illness-insurance/multipay-critical-illness-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/critical-illness-insurance/singlife-multipay-critical-illness-ii/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-multipay-critical-illness-ii_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Multipay Critical Illness II A multiple-payout plan"
+    },
+    {
+      "name": "Singlife Cancer Cover Plus II",
+      "category": "cancer",
+      "subtype": "cancer treatment medical plan, local and overseas",
+      "summary": "Medical plan covering cancer treatments, including outpatient cancer drug treatment, locally and overseas.",
+      "facts": [
+        "As-charged coverage of up to S$1.5 mil",
+        "Sign up by answering 3 simple health questions with no medical check-up needed",
+        "Covers outpatient cancer drug treatment and services, Proton Beam Therapy and Cell, Tissue and Gene Therapy",
+        "Medical claims covered both locally and overseas"
+      ],
+      "channel": "mixed",
+      "url": "https://singlife.com/en/medical-insurance/singlife-cancer-cover-plus-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/medical-insurance/singlife-cancer-cover-plus-ii/singlife-cancer-cover-plus-ii-product-brochure.pdf",
+          "local": "research/pdf/singlife/singlife-cancer-cover-plus-ii-product-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Cancer Cover Plus II is a medical plan that offers protection"
+    },
+    {
+      "name": "Singlife Shield",
+      "category": "hospitalisation",
+      "subtype": "Integrated Shield Plan; Plans 1 to 3 plus Standard Plan; Health Plus rider on same page",
+      "summary": "Integrated Shield Plan on top of MediShield Life reimbursing hospitalisation expenses.",
+      "facts": [
+        "Plan 1: any standard ward of a private hospital, up to S$2 million policy year limit",
+        "Plan 2: any standard ward (A) of a public hospital, up to S$1.2 million policy year limit",
+        "Plan 3: any 4-bed standard ward (B1) of a public hospital, up to S$500,000 policy year limit",
+        "Pre and post treatments hospitalisation coverage of up to 180 days and 365 days",
+        "Free newborn coverage benefit up till 6 months old"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/medical-insurance/shield",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Singlife Shield and Health Plus Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/medical-insurance/singlife-health-plus-and-singlife-shield-brochure.pdf",
+          "local": "research/pdf/singlife/singlife-health-plus-and-singlife-shield-brochure.pdf"
+        },
+        {
+          "title": "Policy Contract (effective Apr 2026)",
+          "url": "https://singlife.com/content/dam/public/sg/documents/medical-insurance/singlife-shield/singlife-shield-policy-contract-2026.pdf",
+          "local": "research/pdf/singlife/singlife-shield-policy-contract-2026.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Shield is a medical insurance plan that provides comprehensive medical coverage"
+    },
+    {
+      "name": "Singlife Health Plus",
+      "category": "ip_rider",
+      "subtype": "rider on Singlife Shield (Private / Public cover)",
+      "summary": "Rider that lowers your out-of-pocket costs on a Singlife Shield hospital bill.",
+      "facts": [
+        "Caps your out-of-pocket costs at S$9,500",
+        "Lump-sum payout for critical illnesses of up to S$10,000 per lifetime",
+        "Additional lump-sum payout of up to S$3,000 per lifetime for kidney dialysis due to kidney failure"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/medical-insurance/shield",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Singlife Shield and Health Plus Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/medical-insurance/singlife-health-plus-and-singlife-shield-brochure.pdf",
+          "local": "research/pdf/singlife/singlife-health-plus-and-singlife-shield-brochure.pdf"
+        },
+        {
+          "title": "Health Plus Policy Contract (effective Apr 2026)",
+          "url": "https://singlife.com/content/dam/public/sg/documents/medical-insurance/singlife-shield/singlife-health-plus-policy-contract-2026.pdf",
+          "local": "research/pdf/singlife/singlife-health-plus-policy-contract-2026.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Rider to minimise your out-of-pocket expenses"
+    },
+    {
+      "name": "Singlife Shield Starter",
+      "category": "hospitalisation",
+      "subtype": "affordable Integrated Shield Plan",
+      "summary": "Affordable Integrated Shield Plan with as-charged annual coverage, bundled with the Health Plus Starter rider.",
+      "facts": [
+        "As-charged annual coverage of S$20,000 at preferred medical providers",
+        "Out-of-pocket payment capped at S$3,500 for the deductibles plus 10% of the remaining hospital bill",
+        "Guaranteed conversion to Singlife Shield Plan 2 and Health Plus with up to S$1million coverage at age 40",
+        "Apply by answering five health underwriting questions; no medical check-up needed"
+      ],
+      "channel": "mixed",
+      "url": "https://singlife.com/en/medical-insurance/singlife-shield-starter-and-health-plus",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/medical-insurance/singlife-shield-starter-and-health-plus/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-shield-starter-and-health-plus_brochure.pdf"
+        },
+        {
+          "title": "Shield Starter Product Summary",
+          "url": "https://singlife.com/content/dam/public/sg/documents/medical-insurance/singlife-shield-starter-and-health-plus/singlife-shield-starter-product-summary.pdf",
+          "local": "research/pdf/singlife/singlife-shield-starter-product-summary.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Shield Starter with Health Plus Starter is an affordable Integrated Shield Plan"
+    },
+    {
+      "name": "Singlife Health Plus Starter",
+      "category": "ip_rider",
+      "subtype": "rider on Singlife Shield Starter",
+      "summary": "Rider that reduces the co-payment on Singlife Shield Starter hospital bills.",
+      "facts": [
+        "Co-payment reduced to just 5% of the hospital bills",
+        "S$1.00 add-on to your Shield plan"
+      ],
+      "channel": "mixed",
+      "url": "https://singlife.com/en/medical-insurance/singlife-shield-starter-and-health-plus",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Health Plus Starter Product Summary",
+          "url": "https://singlife.com/content/dam/public/sg/documents/medical-insurance/singlife-shield-starter-and-health-plus/health-plus-product-summary.pdf",
+          "local": "research/pdf/singlife/health-plus-product-summary.pdf"
+        },
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/medical-insurance/singlife-shield-starter-and-health-plus/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-shield-starter-and-health-plus_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "when you add-on Singlife Health Plus Starter"
+    },
+    {
+      "name": "Singlife Disability Income",
+      "category": "disability_income",
+      "subtype": "previously known as IdealIncome",
+      "summary": "Plan that replaces part of your monthly income if you become severely disabled.",
+      "facts": [
+        "Monthly replacement income of up to 75% of your declared income",
+        "Premium waiver while receiving disability payout",
+        "Partial Disability Benefit for a portion of monthly income if not fully recovered",
+        "Option to increase monthly payout by 3% per annum",
+        "Death Benefit of S$5,000 if you die while receiving disability income"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/disability-insurance/disability-income",
+      "url_status": "ok",
+      "pdfs": [],
+      "fact_source": "page",
+      "evidence": "Singlife Disability Income (Previously known as IdealIncome)"
+    },
+    {
+      "name": "Singlife CareShield Standard and Singlife CareShield Plus",
+      "category": "long_term_care",
+      "subtype": "supplement to CareShield Life / ElderShield",
+      "summary": "Two government-approved supplement plans that boost CareShield Life or ElderShield payouts for severe disability.",
+      "facts": [
+        "Additional payouts of S$200 to S$5,000 on top of basic severe disability payouts from the government",
+        "Plus pays when unable to perform at least two of six ADLs; Standard when unable to perform three",
+        "Add-on Benefit: additional monthly payout of up to 12 months if unable to perform any ADLs",
+        "Premium payment period up to the policy anniversary after you turn 98",
+        "Flexible payment with MediSave"
+      ],
+      "channel": "mixed",
+      "url": "https://singlife.com/en/disability-insurance/careshield",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/disability-insurance/singlife-careshield-standard-and-singlife-careshield-plus/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-careshield-standard-and-singlife-careshield-plus_brochure.pdf"
+        },
+        {
+          "title": "Product Summary",
+          "url": "https://singlife.com/content/dam/public/sg/documents/disability-insurance/singlife-careshield-standard-and-plus-and-eldershield-standard-and-plus/product-summary.pdf",
+          "local": "research/pdf/singlife/singlife-careshield-standard-and-plus-and-eldershield-standard-and-plus_product-summary.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife CareShield Standard and Plus Two government-approved supplement plans"
+    },
+    {
+      "name": "Singlife ElderShield Standard and Singlife ElderShield Plus",
+      "category": "long_term_care",
+      "subtype": "supplement to ElderShield",
+      "summary": "Two government-approved supplement plans that boost ElderShield monthly payouts for severe disability.",
+      "facts": [
+        "Monthly payouts of S$600 to S$5,000, for up to 12 years or for life",
+        "Pay premiums for life, or for 20 years or up to your 65th birthday, whichever is later",
+        "Lump-sum payout up to three times your first monthly benefit",
+        "Dependant Care Benefit of an additional S$200 monthly for up to 36 months if you have a child aged 22 and below"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/disability-insurance/eldershield",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/disability-insurance/singlife-eldershield-standard-and-singlife-eldershield-plus/singlife-eldershield-standard-and-plus-brochure-eng.pdf",
+          "local": "research/pdf/singlife/singlife-eldershield-standard-and-plus-brochure-eng.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife ElderShield Standard and Singlife ElderShield Plus"
+    },
+    {
+      "name": "Singlife Dementia Cover",
+      "category": "long_term_care",
+      "subtype": "dementia and mental health long-term care cover",
+      "summary": "Long-term care protection plan paying out for cognitive decline and mental health conditions, complementing CareShield/ElderShield supplements.",
+      "facts": [
+        "Payouts of up to S$100,000 paid out over 10 years for late Dementia",
+        "Cover for various other serious mental health conditions",
+        "Lump-sum payout for dementia related accidental burns or fractures",
+        "Premium payment relief once diagnosed with late-stage dementia"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/disability-insurance/dementia-cover",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/disability-insurance/singlife-dementia-cover/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-dementia-cover_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Dementia Cover A long-term care protection plan"
+    },
+    {
+      "name": "Singlife Accident Care",
+      "category": "personal_accident",
+      "subtype": "individual PA, annual renewal",
+      "summary": "Personal accident plan for individuals with worldwide protection and wide coverage options.",
+      "facts": [
+        "Coverage from S$250,000 to S$3 million for Accident Death and Dismemberment",
+        "Renew annually and stay covered up to the age of 99 years",
+        "Coverage for food poisoning and 21 infectious diseases",
+        "Annual Leave Compensation Benefit and Life Stage Event Benefit"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/accident-insurance/accident-care",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/accident-insurance/singlife-accident-care/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-accident-care_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Accident Care A personal accident plan tailored for individuals"
+    },
+    {
+      "name": "Singlife Family Accident Care",
+      "category": "personal_accident",
+      "subtype": "family PA, shared coverage under one policy",
+      "summary": "Personal accident plan with shared coverage for you and your family under a single policy.",
+      "facts": [
+        "Personal accident plan with shared coverage for your family under a single policy, up to six members",
+        "Coverage of up to S$1 million for accidental death and dismemberment",
+        "Up to 50% premium discount for your children"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/accident-insurance/accident-care#family-accident-care",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Singlife Accident Care and Family Accident Care Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/accident-insurance/singlife-accident-care/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-accident-care_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Family Accident Care"
+    },
+    {
+      "name": "Singlife Personal Accident",
+      "category": "personal_accident",
+      "subtype": "individual PA, online",
+      "summary": "Personal accident plan with free child cover, spouse discount and optional loan protection.",
+      "facts": [
+        "10% off premiums when you cover both you and your spouse",
+        "Free child cover up to 30% sum insured",
+        "Worldwide personal liability cover",
+        "Loan protector pays out for your loved ones should you die in an accident"
+      ],
+      "channel": "direct-online",
+      "url": "https://singlife.com/en/accident-insurance/personal-accident",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary (Summary of Cover)",
+          "url": "https://singlife.com/content/dam/public/sg/documents/accident-insurance/singlife-personal-accident/summary-of-cover.pdf",
+          "local": "research/pdf/singlife/singlife-personal-accident_summary-of-cover.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Personal Accident Stay protected and ease the pain of accidents"
+    },
+    {
+      "name": "Singlife Maternity Care",
+      "category": "maternity_child",
+      "subtype": "single-premium, three-year plan",
+      "summary": "Single-premium, three-year plan covering mother and baby through pregnancy and childbirth.",
+      "facts": [
+        "Covered for 10 types of pregnancy complications and 23 congenital illnesses",
+        "Cover for as many as 4 babies in a single pregnancy, including babies conceived through IVF",
+        "One-time payout if your child requires stem cell transplant surgery or shows developmental delay",
+        "Enrol your baby for selected Singlife plans without medical underwriting"
+      ],
+      "channel": "agent",
+      "url": "https://singlife.com/en/maternity-care",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://singlife.com/content/dam/public/sg/documents/maternity-insurance/singlife-maternity-care/brochure.pdf",
+          "local": "research/pdf/singlife/singlife-maternity-care_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Singlife Maternity Care A single-premium, three-year plan"
+    }
+  ],
+  "not_found": [
+    "hospital_cash",
+    "outpatient",
+    "rider (no standalone rider pages besides Health Plus / Health Plus Starter)"
+  ],
+  "notes": [
+    "Product menus are server-rendered; the sitemap at /sitemap.xml was used to confirm page paths. Category index pages are /life-insurance, /medical-insurance, /critical-illness-insurance, /disability-insurance, /accident-insurance, /investment-linked-plan, /savings, /pinnacle.",
+    "Several products have a second page under /en/pinnacle/ (Elite Term II, Multipay Critical Illness II, Flexi Life Income II, Flexi Retirement II, Heritage Income); listed once using the main page, variants named in subtype.",
+    "Singlife Shield and Singlife Health Plus share one page; Shield Starter and Health Plus Starter share another. Each pair is listed as two products (plan + rider) with the same URL. Family Accident Care shares the Accident Care page (anchor #family-accident-care).",
+    "Singlife Digital Saver Series (applications closed) and Singlife Secure Saver Series (next tranche 'back soon') are tranche-based endowments with no current offer; left out.",
+    "Singlife Care Income Plus Cover is a rider described only inside the Flexi Retirement II page; no own page or PDF, so not listed.",
+    "Channel values are inferred from page calls to action: 'Speak to us' = adviser (agent); 'Get a quote' or online application = mixed or direct-online.",
+    "Singlife Disability Income page has no brochure PDF; Singlife Account is an app-based insurance savings account, filed as endowment.",
+    "Group/corporate (MINDEF, MHA, business), car, home and travel pages were skipped per contract."
+  ]
+}

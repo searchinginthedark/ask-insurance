@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192" role="img" aria-label="askinsurance-b-bubble-shield">
+<rect x="0" y="0" width="192" height="192" rx="42.24" fill="#123A57"/>
+<rect x="28.8" y="34.56" width="134.4" height="96.0" rx="24.96" fill="#EAF2F8"/>
+<polygon points="57.6,119.04 88.32,126.72 51.84,157.44" fill="#EAF2F8"/>
+<polygon points="96.0,51.84 122.88,61.44 120.96,88.32 96.0,115.2 71.04,88.32 69.12,61.44" fill="#F0A23B"/>
+<line x1="84.48" y1="80.64" x2="94.08" y2="90.24" fill="none" stroke="#123A57" stroke-width="6.72" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="94.08" y1="90.24" x2="109.44" y2="71.04" fill="none" stroke="#123A57" stroke-width="6.72" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

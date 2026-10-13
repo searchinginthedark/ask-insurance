@@ -1,0 +1,797 @@
+{
+  "id": "etiqa",
+  "name": "Etiqa Insurance Singapore",
+  "formerly": null,
+  "website": "https://www.etiqa.com.sg",
+  "products_index_url": "https://www.etiqa.com.sg/personal/",
+  "claims_url": "https://www.etiqa.com.sg/claims-and-services/",
+  "contact_url": "https://www.etiqa.com.sg/contact-us/",
+  "verified_on": "2026-10-13",
+  "products": [
+    {
+      "name": "Essential term life cover",
+      "category": "term_life",
+      "subtype": "Term life with optional CI and disability riders",
+      "summary": "Term life plan with regular premiums; optional riders add critical illness, premium waiver and disability cover.",
+      "facts": [
+        "Policy term: 5 years (renewable), 10 years to until age 86 (every one year interval), or until 100 years old",
+        "For the 5-year plan, option to renew up till age 90 with no health checks required",
+        "Option to convert the policy to a new endowment or whole life plan without showing proof of good health",
+        "Early CI rider covers any of the 35 early, intermediate or severe-stage critical illnesses"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/life-critical-illness-protection/essential-term-life-cover/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure: Essential term life cover",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2022/04/Essential-term-life_brochure_060422-IFA.pdf",
+          "local": "research/pdf/etiqa/Essential-term-life_brochure_060422-IFA.pdf"
+        },
+        {
+          "title": "Policy Contract: Essential term life cover",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2024/01/Policy-Contract-for-Essential-term-life-cover-v1.23.pdf",
+          "local": "research/pdf/etiqa/Policy-Contract-for-Essential-term-life-cover-v1.23.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "For the times in your life when extra financial security comes in handy"
+    },
+    {
+      "name": "Essential critical secure",
+      "category": "critical_illness",
+      "subtype": "Term critical illness with continuous monthly payout and mental health benefits",
+      "summary": "Term plan covering critical illness across early, intermediate and severe stages, with a monthly Continuous Care Benefit.",
+      "facts": [
+        "Covers 104 critical illness conditions across early, intermediate and severe stages",
+        "Early and intermediate stage CI Benefit: 50% of the sum insured; severe stage CI Benefit: 100%",
+        "Continuous Care Benefit: monthly payout of 1% of the sum insured upon severe stage CI, up to 200% of the original sum insured",
+        "Policy term up to age 70, 75, 80, 85, 90, 95 and 100",
+        "Death benefit of S$5,000"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/life-critical-illness-protection/essential-critical-secure/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary: Essential critical secure",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2024/03/Product-Summary-for-Essential-critical-secure-Final.pdf",
+          "local": "research/pdf/etiqa/Product-Summary-for-Essential-critical-secure-Final.pdf"
+        },
+        {
+          "title": "Product Brochure: Essential critical secure",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2024/03/Essential-critical-secure-brochure_Final_050324.pdf",
+          "local": "research/pdf/etiqa/Essential-critical-secure-brochure_Final_050324.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Complete care for critical illness and mental health at an affordable cost"
+    },
+    {
+      "name": "Essential Cancer Care",
+      "category": "cancer",
+      "subtype": "Term cancer plan, all stages",
+      "summary": "Term plan paying out at early, intermediate and severe stages of cancer.",
+      "facts": [
+        "Policy term: 5 years (renewable), 10 years (renewable), 20 years, or until 65 years old",
+        "Cover for up to S$250,000",
+        "Pays 50% of the sum insured for early or intermediate-stage cancer and 100% for severe-stage cancer",
+        "Additional monthly payout of 1% of the sum insured for 12 months upon severe-stage cancer",
+        "Lump sum of S$3,000 upon death"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/life-critical-illness-protection/essential-cancer-care/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure: Essential Cancer Care",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2022/01/Essential-Cancer-Care3.pdf",
+          "local": "research/pdf/etiqa/Essential-Cancer-Care3.pdf"
+        },
+        {
+          "title": "Product Contract: Essential Cancer Care",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2024/01/Policy-Contract-for-Essential-Cancer-Care.pdf",
+          "local": "research/pdf/etiqa/Policy-Contract-for-Essential-Cancer-Care.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Get a peace of mind with all stages of cancer covered."
+    },
+    {
+      "name": "Essential whole life cover",
+      "category": "whole_life",
+      "subtype": "Whole life with optional protection multiplier and retirement income",
+      "summary": "Whole life plan with lifetime protection against death, total and permanent disability and terminal illness.",
+      "facts": [
+        "Premium term: 5, 10, 15 or 20 years",
+        "Option to multiply protection up to 400% of the basic sum insured, till age 65 or 80",
+        "Total and permanent disability cover until age 70",
+        "Option to receive regular income from the policy for 10 years after you turn 65"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/life-critical-illness-protection/essential-whole-life-cover/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure: Essential whole life cover",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2021/10/Product-brochure_Essential-whole-life-cover_Final.pdf",
+          "local": "research/pdf/etiqa/Product-brochure_Essential-whole-life-cover_Final.pdf"
+        },
+        {
+          "title": "Policy Contract: Essential whole life cover",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2023/09/Policy-Contract_Essential-whole-life-cover.pdf",
+          "local": "research/pdf/etiqa/Policy-Contract_Essential-whole-life-cover.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "comprehensive whole life insurance ensures financial security for you and your loved ones"
+    },
+    {
+      "name": "Essential lifetime secure",
+      "category": "whole_life",
+      "subtype": "Whole life with multiplier benefit and premium relief",
+      "summary": "Whole life plan with multiplier benefits, premium relief and optional CI riders.",
+      "facts": [
+        "Premium term: 5, 10, 15, 20, 25 or 30 years",
+        "Minimum death coverage of up to 5 times the basic sum insured",
+        "Premium relief benefit for situations such as intensive care admission or retrenchment",
+        "Early CI benefit rider covers diagnosis of any covered critical illness at any stage"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/life-critical-illness-protection/essential-lifetime-secure/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Policy Summary: Essential lifetime secure",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2024/11/Essential-lifetime-secure_Product-Summary.pdf",
+          "local": "research/pdf/etiqa/Essential-lifetime-secure_Product-Summary.pdf"
+        },
+        {
+          "title": "Product Brochure: Essential lifetime secure",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2024/11/Essential-lifetime-secure_Brochure.pdf",
+          "local": "research/pdf/etiqa/Essential-lifetime-secure_Brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Prepare for the future and ensure peace of mind with comprehensive riders and multiplier benefits."
+    },
+    {
+      "name": "ePROTECT mortgage",
+      "category": "term_life",
+      "subtype": "Decreasing term / mortgage protection",
+      "summary": "Mortgage protection paying a reducing lump sum on death, total and permanent disability or terminal illness.",
+      "facts": [
+        "Policy term: 6 to 40 years or until your 75th birthday, whichever is earlier",
+        "Interest rate selectable from 1% to 4%",
+        "Pay only 90% of your policy term",
+        "Optional eXTRA secure waiver add-on"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/home-insurance/eprotect-mortgage/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Find out more about ePROTECT mortgage",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2019/10/Etiqa-Insurance-Protection-MRTA-brochure.pdf",
+          "local": "research/pdf/etiqa/Etiqa-Insurance-Protection-MRTA-brochure.pdf"
+        },
+        {
+          "title": "Policy Contract",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2024/01/Policy-Contract-for-ePROTECT-mortgage-v1.23.pdf",
+          "local": "research/pdf/etiqa/Policy-Contract-for-ePROTECT-mortgage-v1.23.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Pay only 90% of your policy term and get covered for the remaining term."
+    },
+    {
+      "name": "DIRECT – Etiqa term life II",
+      "category": "term_life",
+      "subtype": "Direct purchase insurance (DPI), no standalone product page",
+      "summary": "Direct-purchase term life with life and total and permanent disability cover and an option to cover critical illnesses.",
+      "facts": [
+        "Insure yourself from S$50,000 up to S$400,000",
+        "Online purchase requires being between the age of 19 and 65 years old",
+        "Both DPI options come with Life and Total and Permanent Disability cover and an option to cover Critical Illnesses"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.etiqa.com.sg/personal/life-critical-illness-protection/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "DPI Fact Sheet (generic Direct Purchase Insurance fact sheet hosted by Etiqa)",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2023/02/Etiqa-Direct-Purchase-Insurance-Fact-Sheet.pdf",
+          "local": "research/pdf/etiqa/Etiqa-Direct-Purchase-Insurance-Fact-Sheet.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "two DPI options, namely DIRECT – Etiqa term life II"
+    },
+    {
+      "name": "DIRECT – Etiqa whole life",
+      "category": "whole_life",
+      "subtype": "Direct purchase insurance (DPI), no standalone product page",
+      "summary": "Direct-purchase whole life with life and total and permanent disability cover and an option to cover critical illnesses.",
+      "facts": [
+        "Insure yourself for up to S$200,000",
+        "Online purchase requires being between the age of 19 and 65 years old",
+        "Both DPI options come with Life and Total and Permanent Disability cover and an option to cover Critical Illnesses"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.etiqa.com.sg/personal/life-critical-illness-protection/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "DPI Fact Sheet (generic Direct Purchase Insurance fact sheet hosted by Etiqa)",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2023/02/Etiqa-Direct-Purchase-Insurance-Fact-Sheet.pdf",
+          "local": "research/pdf/etiqa/Etiqa-Direct-Purchase-Insurance-Fact-Sheet.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "up to S$200,000 for DIRECT – Etiqa whole life"
+    },
+    {
+      "name": "Etiqa Solitaire Protect",
+      "category": "personal_accident",
+      "subtype": "Personal accident, Silver / Gold / Platinum tiers",
+      "summary": "Personal accident plan covering injuries, accidental disability or death, with three benefit tiers.",
+      "facts": [
+        "Accidental death: S$100,000 (Silver), S$150,000 (Gold), S$200,000 (Platinum)",
+        "Accidental medical expenses reimbursement: S$2,000 (Silver), S$6,000 (Gold), S$8,000 (Platinum)",
+        "Daily hospital cash up to 180 days: S$100 per day (Silver), S$200 per day (Gold)",
+        "Credit relief: S$10,000 (Silver), S$20,000 (Gold), S$30,000 (Platinum)",
+        "Broken bones: S$5,000 (Silver), S$8,000 (Gold), S$10,000 (Platinum)"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/personal-accident/solitaire-protect/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure: Solitaire Protect",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2023/07/Etiqa-Solitaire-Protect-Brochure.pdf",
+          "local": "research/pdf/etiqa/Etiqa-Solitaire-Protect-Brochure.pdf"
+        },
+        {
+          "title": "Policy Wording: Solitaire Protect",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2023/12/Etiqa-Solitaire-Protect-Personal-Accident-Insurance.pdf",
+          "local": "research/pdf/etiqa/Etiqa-Solitaire-Protect-Personal-Accident-Insurance.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Introducing Etiqa Solitaire Protect - a Personal Accident Insurance"
+    },
+    {
+      "name": "Enrich assure",
+      "category": "endowment",
+      "subtype": "Endowment plan (participating), 7-year premium term",
+      "summary": "Endowment plan with capital guaranteed at the end of 12 policy years and flexible maturity payments.",
+      "facts": [
+        "Policy term: 12, 21 or 26 years; premium term: 7 years",
+        "Capital 100% guaranteed at the end of 12 policy years",
+        "Maturity payment as a lump sum at the end of the 12th policy year, or 10 or 15 yearly payments",
+        "No health checks required for the basic plan"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/savings-retirement/enrich-assure/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Find out more about Enrich assure",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2022/05/Enrich-Assure-brochure_26-May_Etiqa.pdf",
+          "local": "research/pdf/etiqa/Enrich-Assure-brochure_26-May_Etiqa.pdf"
+        },
+        {
+          "title": "Find out more about Enrich assure policy contract",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2023/09/Policy-Contract_Enrich-assure.pdf",
+          "local": "research/pdf/etiqa/Policy-Contract_Enrich-assure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Enjoy the assurance of your capital being fully guaranteed"
+    },
+    {
+      "name": "Enrich goal",
+      "category": "endowment",
+      "subtype": "Endowment plan (participating), 7-year premium term",
+      "summary": "Endowment plan with a choice of lump sum or yearly maturity payments.",
+      "facts": [
+        "Policy term: 15, 24 or 29 years; premium term: 7 years",
+        "Capital 100% guaranteed at the end of 15th policy year",
+        "Maturity payment: lump sum (15-year term), 10 yearly payments (24-year term) or 15 yearly payments (29-year term)",
+        "No health checks required for the basic plan"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/savings-retirement/enrich-goal/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Find out more about Enrich goal",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2023/03/Etiqa_Enrich-Goal_brochure_Final-270323.pdf",
+          "local": "research/pdf/etiqa/Etiqa_Enrich-Goal_brochure_Final-270323.pdf"
+        },
+        {
+          "title": "Find out more about Enrich goal policy contract",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2023/09/Policy-Contract_Enrich-goal.pdf",
+          "local": "research/pdf/etiqa/Policy-Contract_Enrich-goal.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "You can choose to receive maturity payment according to your needs"
+    },
+    {
+      "name": "Enrich rewards",
+      "category": "endowment",
+      "subtype": "Endowment plan, 3-year premium term",
+      "summary": "Endowment plan with yearly cash payouts and capital guaranteed at the end of 10 years.",
+      "facts": [
+        "Policy term: 10 years; premium term: 3 years",
+        "Choose to receive cash yearly from the third policy year, or reinvest",
+        "Capital fully guaranteed at the end of 10 years",
+        "No health check-up required"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/savings-retirement/enrich-rewards/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Find out more about Enrich rewards",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2023/03/Enrich-Rewards-brochure_Final-270323.pdf",
+          "local": "research/pdf/etiqa/Enrich-Rewards-brochure_Final-270323.pdf"
+        },
+        {
+          "title": "Find out more about Enrich rewards policy contract",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2023/09/Policy-Contract_Enrich-rewards.pdf",
+          "local": "research/pdf/etiqa/Policy-Contract_Enrich-rewards.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Choose to receive cash yearly from the third policy year"
+    },
+    {
+      "name": "Enrich saver",
+      "category": "endowment",
+      "subtype": "Endowment plan, 5-year premium term",
+      "summary": "Endowment plan paying a lump sum at the end of 10 years.",
+      "facts": [
+        "Policy term: 10 years; premium term: 5 years",
+        "Lump sum benefit after 10 years with a guaranteed and a non-guaranteed amount",
+        "Capital fully guaranteed at the end of 10 policy years",
+        "No health check-up required for the basic plan"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/savings-retirement/enrich-saver/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Find out more about Enrich saver",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2022/01/Enrich-saver-brochure_Final.pdf",
+          "local": "research/pdf/etiqa/Enrich-saver-brochure_Final.pdf"
+        },
+        {
+          "title": "Find out more about Enrich saver policy contract",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2023/09/Policy-Contract_Enrich-saver.pdf",
+          "local": "research/pdf/etiqa/Policy-Contract_Enrich-saver.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Pay for just 5 years and receive a lump sum payout after 10 years"
+    },
+    {
+      "name": "Enrich flex plus",
+      "category": "endowment",
+      "subtype": "Endowment plan, flexible premium term",
+      "summary": "Endowment plan with a guaranteed maturity yield and a lump sum at the policy anniversary before age 125.",
+      "facts": [
+        "Policy term up to age 125; premium term 3, 5, 10, 15 or 20 years",
+        "Guaranteed maturity yield of up to 1.65% p.a., potential total maturity yield of up to 3.95% p.a.",
+        "Hassle-free with no health checks required for this guaranteed issuance basic plan"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/savings-retirement/enrich-flex-plus/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Find out more about Enrich flex plus",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2023/03/Enrich-Flex-Plus-Brochure_v6.pdf",
+          "local": "research/pdf/etiqa/Enrich-Flex-Plus-Brochure_v6.pdf"
+        },
+        {
+          "title": "Find out more about Enrich flex plus policy contract",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2023/09/Policy-Contract_Enrich-flex-plus.pdf",
+          "local": "research/pdf/etiqa/Policy-Contract_Enrich-flex-plus.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Attractive returns for your saving needs"
+    },
+    {
+      "name": "Enrich Index Income",
+      "category": "endowment",
+      "subtype": "Index-linked endowment plan (SGD or USD)",
+      "summary": "Endowment plan whose Yearly Cash Benefits are linked to the Barclays RADAR 6% RC SGD and USD indices.",
+      "facts": [
+        "Policy term: 10 years; premium term: single premium or 3 years",
+        "Non-guaranteed Yearly Cash Benefits linked to the Barclays RADAR 6% RC SGD Index and Barclays RADAR 6% RC USD Index",
+        "0% floor rate and capital guaranteed at maturity",
+        "Choose a policy denominated in SGD or USD"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/savings-retirement/enrich-index-income/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure: Enrich Index Income",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2026/08/Enrich-Index-Income_Brochure.pdf",
+          "local": "research/pdf/etiqa/Enrich-Index-Income_Brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Grow through a dynamic investment approach"
+    },
+    {
+      "name": "Enrich income",
+      "category": "whole_life",
+      "subtype": "Whole life plan with lifetime monthly income",
+      "summary": "Whole life plan paying monthly income from as early as the 37th policy month, plus a lump sum on maturity.",
+      "facts": [
+        "Policy term up to age 125; premium term 3, 5, 10, 15 or 20 years",
+        "Monthly income from as early as the 37th policy month until the policy matures",
+        "Lump sum payout upon death or terminal illness during the policy term",
+        "No health checks required for this guaranteed issuance basic plan"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/savings-retirement/enrich-income/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure: Enrich income",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2026/04/Enrich-income_v12.1.pdf",
+          "local": "research/pdf/etiqa/Enrich-income_v12.1.pdf"
+        },
+        {
+          "title": "Policy Contract: Enrich income",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2023/09/Policy-Contract_Enrich-income.pdf",
+          "local": "research/pdf/etiqa/Policy-Contract_Enrich-income.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Secure your future with lifetime monthly income"
+    },
+    {
+      "name": "Enrich retirement",
+      "category": "annuity",
+      "subtype": "Endowment plan with monthly retirement income",
+      "summary": "Endowment plan paying guaranteed and non-guaranteed monthly income from a chosen retirement age.",
+      "facts": [
+        "Choose retirement age of 60 or 65 with 10 or 20 years of payouts",
+        "Premium term: 2, 5 or 10 years",
+        "Level payout, or inflated payout with an increment of 2% p.a.",
+        "Capital 100% guaranteed once you reach your selected retirement age"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/savings-retirement/enrich-retirement/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Find out more about Enrich retirement",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2022/01/enrich-retirement-brochure.pdf",
+          "local": "research/pdf/etiqa/enrich-retirement-brochure.pdf"
+        },
+        {
+          "title": "Find out more about Enrich retirement policy contract",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2023/09/Policy-Contract_Enrich-retirement.pdf",
+          "local": "research/pdf/etiqa/Policy-Contract_Enrich-retirement.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Live your dream retirement, with a guaranteed and non-guaranteed monthly income."
+    },
+    {
+      "name": "Invest flex prime II",
+      "category": "ilp",
+      "subtype": "Regular-premium ILP",
+      "summary": "Investment-linked plan with start-up, special and loyalty bonus units.",
+      "facts": [
+        "Policy term to 100; premium term 10 or 20 years (10 Years - Flexi 3, 10 Years - Flexi 5 and 20 Years)",
+        "Start-up bonus of up to 55% in the first year",
+        "3% special bonus of regular premium paid from as early as the sixth policy year",
+        "Loyalty bonus of 0.1% p.a. on account value once the premium term ends"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/investments/invest-flex-prime-ii/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary: Invest flex prime II",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2025/12/Product-Summary-for-Invest-flex-prime-II-v1.2-Final-20251107_Clean.pdf",
+          "local": "research/pdf/etiqa/Product-Summary-for-Invest-flex-prime-II-v1.2-Final-20251107_Clean.pdf"
+        },
+        {
+          "title": "Product Brochure: Invest flex prime II",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2025/12/Invest-flex-prime-II_brochure2.pdf",
+          "local": "research/pdf/etiqa/Invest-flex-prime-II_brochure2.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Begin strong with a start-up bonus of up to 55%"
+    },
+    {
+      "name": "Invest flex pro",
+      "category": "ilp",
+      "subtype": "Regular-premium ILP",
+      "summary": "Investment-linked plan with start-up, special and loyalty bonus units.",
+      "facts": [
+        "Policy term to 100; premium term 10 or 20 years",
+        "Start-up bonus of up to 55% in the first year of investment",
+        "3% special bonus of regular premium paid from as early as the 6th policy year",
+        "Loyalty bonus of 0.1% p.a. of account value at the end of the premium payment term"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/investments/invest-flex-pro/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary: Invest flex pro",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2025/12/Product-Summary-for-Invest-flex-pro-v5.2-20250926.pdf",
+          "local": "research/pdf/etiqa/Product-Summary-for-Invest-flex-pro-v5.2-20250926.pdf"
+        },
+        {
+          "title": "Product Brochure: Invest flex pro",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2025/05/Invest-flex-pro_Brochure.pdf",
+          "local": "research/pdf/etiqa/Invest-flex-pro_Brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Accelerate your returns with a start-up bonus of up to 55%"
+    },
+    {
+      "name": "Invest flex wealth II",
+      "category": "ilp",
+      "subtype": "Regular-premium ILP",
+      "summary": "Investment-linked plan with a larger start-up bonus and shorter premium term options.",
+      "facts": [
+        "Policy term to 100; premium term 3, 5, 10, 15 or 20 years",
+        "Start-up bonus of up to 75% in the first year",
+        "0.1% per annum loyalty bonus on account value once the premium term ends",
+        "Two free withdrawals from the fourth policy year onwards"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/investments/invest-flex-wealth-ii/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary: Invest flex wealth II",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2025/10/Product-Summary-for-Invest-flex-wealth-II.pdf",
+          "local": "research/pdf/etiqa/Product-Summary-for-Invest-flex-wealth-II.pdf"
+        },
+        {
+          "title": "Product Brochure: Invest flex wealth II",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2025/10/Invest-Flex-Wealth-II_brochure.pdf",
+          "local": "research/pdf/etiqa/Invest-Flex-Wealth-II_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Accelerate your investment early."
+    },
+    {
+      "name": "Invest smart flex II",
+      "category": "ilp",
+      "subtype": "Regular-premium ILP",
+      "summary": "Investment-linked plan with start-up bonus, premium-free period and free partial withdrawals.",
+      "facts": [
+        "Policy term to 100; premium term 10, 15 or 20 years",
+        "Start-up bonus of up to 60% in the first year",
+        "Make 2 free partial withdrawals from the 4th policy year"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/investments/invest-smart-flex-ii/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary: Invest smart flex II",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2025/10/Product-Summary-for-Invest-smart-flex-II.pdf",
+          "local": "research/pdf/etiqa/Product-Summary-for-Invest-smart-flex-II.pdf"
+        },
+        {
+          "title": "Product Brochure: Invest smart flex II",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2025/10/Invest-smart-flex-II_brochure.pdf",
+          "local": "research/pdf/etiqa/Invest-smart-flex-II_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Kickstart your journey with a start-up bonus of up to 60%"
+    },
+    {
+      "name": "Invest vista",
+      "category": "ilp",
+      "subtype": "Regular-premium ILP with Shariah-compliant funds",
+      "summary": "Investment-linked plan with access to Shariah-compliant funds.",
+      "facts": [
+        "Policy term to 100; premium term 10 or 20 years",
+        "Start from just S$200 a month",
+        "Start-up bonus of up to 55% in the first year",
+        "Access to Shariah-compliant funds"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/investments/invest-vista/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary: Invest vista",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2025/12/Product-Summary-for-Invest-vista-v4.0.pdf",
+          "local": "research/pdf/etiqa/Product-Summary-for-Invest-vista-v4.0.pdf"
+        },
+        {
+          "title": "Product Brochure: Invest vista",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2025/08/Invest-vista-brochure.pdf",
+          "local": "research/pdf/etiqa/Invest-vista-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Access to Shariah-compliant funds"
+    },
+    {
+      "name": "Invest Smart Vista",
+      "category": "ilp",
+      "subtype": "Regular-premium ILP with Shariah-compliant funds",
+      "summary": "Investment-linked plan with access to Shariah-compliant funds.",
+      "facts": [
+        "Policy term to 100; premium term 10, 15 or 20 years",
+        "Start from just S$200 a month",
+        "Start-up bonus of up to 60% in the first year",
+        "Access to Shariah-compliant funds"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/investments/invest-smart-vista/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary: Invest Smart Vista",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2025/12/Product-Summary-for-Invest-Smart-Vista.pdf",
+          "local": "research/pdf/etiqa/Product-Summary-for-Invest-Smart-Vista.pdf"
+        },
+        {
+          "title": "Product Brochure: Invest Smart Vista",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2025/12/Invest-Smart-Vista_Brochure.pdf",
+          "local": "research/pdf/etiqa/Invest-Smart-Vista_Brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Access to Shariah-compliant funds"
+    },
+    {
+      "name": "Invest Prime Purpose",
+      "category": "ilp",
+      "subtype": "Regular-premium ILP",
+      "summary": "Investment-linked plan with a start-up allocation, special bonus and loyalty bonus.",
+      "facts": [
+        "Policy term to age 100; premium term 10 or 20 years",
+        "Start-up allocation of up to 55% in the first year",
+        "Additional 3% special bonus on regular contributions from as early as the 6th policy year"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/investments/invest-prime-purpose/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary: Invest Prime Purpose",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2026/04/Product-Summary-for-Invest-Prime-Purpose.pdf",
+          "local": "research/pdf/etiqa/Product-Summary-for-Invest-Prime-Purpose.pdf"
+        },
+        {
+          "title": "Product Brochure: Invest Prime Purpose",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2026/04/Invest-Prime-Purpose-Brochure.pdf",
+          "local": "research/pdf/etiqa/Invest-Prime-Purpose-Brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Strengthen your investment journey"
+    },
+    {
+      "name": "Invest Wealth Purpose",
+      "category": "ilp",
+      "subtype": "Regular-premium ILP",
+      "summary": "Investment-linked plan with a larger start-up bonus and shorter premium term options.",
+      "facts": [
+        "Policy term to 100; premium term 3, 5, 10, 15 or 20 years",
+        "Start-up bonus of up to 75% in the first year",
+        "0.1% per annum loyalty bonus on account value once the premium term ends"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/investments/invest-wealth-purpose/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary: Invest Wealth Purpose",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2026/02/Product-Summary-for-Invest-Wealth-Purpose.pdf",
+          "local": "research/pdf/etiqa/Product-Summary-for-Invest-Wealth-Purpose.pdf"
+        },
+        {
+          "title": "Product Brochure: Invest Wealth Purpose",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2026/02/Invest-Wealth-Purpose-Brochure.pdf",
+          "local": "research/pdf/etiqa/Invest-Wealth-Purpose-Brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Staying invested deserves recognition."
+    },
+    {
+      "name": "Invest plus SP",
+      "category": "ilp",
+      "subtype": "Single-premium ILP",
+      "summary": "Single-premium investment-linked plan with power-up bonuses every 3 years.",
+      "facts": [
+        "Policy term to 100; single premium",
+        "Power-up bonus every 3 years of up to 1.20% of the average initial account value",
+        "Institutional funds from as low as S$10,000",
+        "No health check required for the basic plan"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/investments/invest-plus-sp/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary: Invest plus SP",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2026/09/Product-Summary-for-Invest-plus-SP_v1.4_15072026_clean.pdf",
+          "local": "research/pdf/etiqa/Product-Summary-for-Invest-plus-SP_v1.4_15072026_clean.pdf"
+        },
+        {
+          "title": "Product Brochure: Invest plus SP",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2022/06/Invest-plus-SP-brochure_Final_2-Jun-2022.pdf",
+          "local": "research/pdf/etiqa/Invest-plus-SP-brochure_Final_2-Jun-2022.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Enjoy a boost to your investment every 3 years with a power-up bonus"
+    },
+    {
+      "name": "Invest starter",
+      "category": "ilp",
+      "subtype": "Regular-premium ILP",
+      "summary": "Regular-premium investment-linked plan with a policy charge refund.",
+      "facts": [
+        "Policy term to age 100; regular premium",
+        "Policy charge refund of 0.8% of the Average Account Value from the start of the 4th policy year for every completed 3 years if no partial withdrawal is made",
+        "One-time reward of up to 10% of first year annual premium when buying an additional eligible plan"
+      ],
+      "channel": "mixed",
+      "url": "https://www.etiqa.com.sg/personal/investments/invest-starter/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary: Invest starter",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2024/01/Invest-starter-Product-Summary.pdf",
+          "local": "research/pdf/etiqa/Invest-starter-Product-Summary.pdf"
+        },
+        {
+          "title": "Product Brochure: Invest starter",
+          "url": "https://www.etiqa.com.sg/wp-content/uploads/2024/07/InvestStarter-brochure_25-July-2024.pdf",
+          "local": "research/pdf/etiqa/InvestStarter-brochure_25-July-2024.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "A policy charge refund of 0.8%"
+    }
+  ],
+  "not_found": [
+    "hospitalisation (no Integrated Shield Plan listed)",
+    "ip_rider",
+    "term_life beyond Essential term life cover and ePROTECT mortgage",
+    "disability_income",
+    "long_term_care",
+    "hospital_cash (only inside Solitaire Protect PA)",
+    "maternity_child",
+    "outpatient",
+    "standalone rider pages (riders are described on base product pages)"
+  ],
+  "notes": [
+    "Entry age ranges are not shown on the product pages or brochures retrieved, so no entry ages are recorded; Etiqa states age means age at next birthday.",
+    "Left out for lack of any product content on the page or PDFs: Tiq Invest, Tiq CashSaver, Tiq Personal Accident (pages are template shells) and Esteem eternity II (Premier Solutions).",
+    "Left out: ePROTECT family (free personal accident initiative with Maybank), Corporate Employee Scheme (employee benefit), Personal Cyber Insurance, Valuables & Collections Insurance, and general insurance lines (travel, motor, home, HDB fire, maid, pet).",
+    "DIRECT - Etiqa term life II and DIRECT - Etiqa whole life have no standalone page: they are named in the FAQ of the Life & Critical Illness Protection page and bought through the online quotation portal, which robots.txt disallows for scrapers. The DPI Fact Sheet PDF is generic.",
+    "The FAQ also mentions an ePROTECT term life policy with coverage up to S$2 million but no page or PDF for it was found, so it is not listed.",
+    "Policy wording PDFs for general insurance on /policy-wordings/ were not used.",
+    "Etiqa is the Singapore arm of Maybank Group; some pages show scheduled maintenance banners for 17-18 October.",
+    "Channel is marked mixed because each page offers both Get Advice and Buy Online."
+  ]
+}

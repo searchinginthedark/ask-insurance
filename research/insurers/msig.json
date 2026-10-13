@@ -1,0 +1,261 @@
+{
+  "id": "msig",
+  "name": "MSIG Singapore",
+  "formerly": null,
+  "website": "https://www.msig.com.sg/",
+  "products_index_url": "https://www.msig.com.sg/insurance/personal-insurance",
+  "claims_url": "https://www.msig.com.sg/claims/personal",
+  "contact_url": "https://www.msig.com.sg/help-support",
+  "verified_on": "2026-10-13",
+  "products": [
+    {
+      "name": "Prestige Healthcare",
+      "category": "hospitalisation",
+      "subtype": "standalone private hospital and surgical plan (Platinum / Deluxe / Elite); page does not describe it as an Integrated Shield Plan",
+      "summary": "Hospitalisation insurance with inpatient and outpatient treatment, overseas cover and optional maternity benefits, aimed partly at expatriates.",
+      "facts": [
+        "Overall maximum annual limit per insured person: Platinum $3,000,000, Deluxe $1,500,000, Elite $900,000",
+        "Latest entry age for an adult enrolment is 64 years old (age last birthday), renewable up to age 79",
+        "Waiting period: 30 days for hospitalisation for any illness; none for hospitalisation due to accidents",
+        "Overseas Medical Evacuation and Repatriation of up to $1 million (Platinum Plan)",
+        "The policy does not cover any pre-existing medical conditions"
+      ],
+      "channel": "unknown",
+      "url": "https://www.msig.com.sg/personal/prestige-healthcare",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure",
+          "url": "https://www.msig.com.sg/sites/msig_sg/files/2024-11/MSIG%20Prestige%20Healthcare%20Brochure_HIG021124.pdf",
+          "local": "research/pdf/msig/MSIG_Prestige_Healthcare_Brochure_HIG021124.pdf"
+        },
+        {
+          "title": "Policy Wordings",
+          "url": "https://www.msig.com.sg/sites/msig_sg/files/2023-01/Prestige%20Healthcare%20Policy%20Wordings_HIG062301.pdf",
+          "local": "research/pdf/msig/Prestige_Healthcare_Policy_Wordings_HIG062301.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Prestige Healthcare offers tailored solutions for those seeking expat health insurance in Singapore."
+    },
+    {
+      "name": "CriticalCare Plus",
+      "category": "critical_illness",
+      "subtype": "lump-sum CI (5 conditions) with early-stage cancer and angioplasty accelerated benefits",
+      "summary": "Critical illness plan paying a lump sum for five major illnesses, with accelerated payouts for early-stage cancer and coronary angioplasty.",
+      "facts": [
+        "Basic benefit sum insured: Primary $30,000, Silver $50,000, Gold $75,000, Platinum $100,000",
+        "Covers Major Cancer, Heart Attack of Specified Severity, Stroke with Permanent Neurological Deficit, Idiopathic Parkinson's Disease, Alzheimer's Disease / Severe Dementia",
+        "Early Stage Cancer: 50% of Sum Insured; Angioplasty & Other Invasive Treatment for Coronary Artery: 10% of Sum Insured",
+        "Adult aged between 18 years and 60 years old; coverage continues until insured reaches 65 years old at the end of the policy year",
+        "Premium is not guaranteed; claims for illnesses first diagnosed within ninety (90) days are not admissible"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.msig.com.sg/personal/criticalcare-plus",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure",
+          "url": "https://www.msig.com.sg/sites/msig_sg/files/2024-09/MSIG_CriticalCarePlus_Brochure_HCP010424B.pdf",
+          "local": "research/pdf/msig/MSIG_CriticalCarePlus_Brochure_HCP010424B.pdf"
+        },
+        {
+          "title": "Policy Wordings",
+          "url": "https://www.msig.com.sg/sites/msig_sg/files/2024-07/CriticalCare%20Plus%20Wordings_HCP010424.pdf",
+          "local": "research/pdf/msig/CriticalCare_Plus_Wordings_HCP010424.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "This critical illness plan covers for five major and common diseases"
+    },
+    {
+      "name": "CancerCare Plus",
+      "category": "cancer",
+      "subtype": "standalone cancer plan with early-stage accelerated benefit",
+      "summary": "Standalone cancer-specific plan paying a lump sum for Major Cancer, with an accelerated payout for Early Stage Cancer.",
+      "facts": [
+        "Major Cancer Benefit: $100,000",
+        "Early Stage Cancer accelerated benefit: $50,000 (50% of Basic Benefit)",
+        "Entry: yourself aged between twenty (20) years and below sixty-five (65) years old, residing in Singapore; renewable up to age 84",
+        "Waiting period 90 days; survival period 7 days",
+        "The cancer insurance premium is not guaranteed"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.msig.com.sg/personal/cancercare-plus",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure",
+          "url": "https://www.msig.com.sg/sites/msig_sg/files/2024-11/MSIG%20CancerCare%20Plus%20Brochure_CCM031124.pdf",
+          "local": "research/pdf/msig/MSIG_CancerCare_Plus_Brochure_CCM031124.pdf"
+        },
+        {
+          "title": "Policy Wordings",
+          "url": "https://www.msig.com.sg/sites/msig_sg/files/2023-10/CCM032310_CancerCare%20Plus_wordings.pdf",
+          "local": "research/pdf/msig/CCM032310_CancerCare_Plus_wordings.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "CancerCare Plus is a standalone cancer-specific insurance plan"
+    },
+    {
+      "name": "Essential Hospital Income",
+      "category": "hospital_cash",
+      "subtype": "Classic / Silver / Premier plans",
+      "summary": "Hospital cash plan paying a daily benefit while hospitalised, doubled in ICU, plus day surgery and get well cash.",
+      "facts": [
+        "Daily hospitalisation cash (up to 365 days per Disability): Classic $150, Silver $250, Premier $400 per day",
+        "ICU daily hospitalisation cash (up to 30 days per Disability): $300, $500, $800 per day",
+        "Day surgery cash: $150 per occurrence (up to 10 occurrences per Disability)",
+        "You and/or your legal spouse must be between 18 and below 60 years old; coverage ceases at age 70 on expiry of the policy year",
+        "Waiting period of thirty (30) days for illness"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.msig.com.sg/personal/essential-hospital-income",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Policy Wordings",
+          "url": "https://www.msig.com.sg/sites/msig_sg/files/2024-03/Essential%20Hospital%20Income%20Wordings_HEN020124.pdf",
+          "local": "research/pdf/msig/Essential_Hospital_Income_Wordings_HEN020124.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Relieve your financial burden with Essential Hospital Income insurance!"
+    },
+    {
+      "name": "ProtectionPlus",
+      "category": "personal_accident",
+      "subtype": "adult plan with free cover for up to 3 children (Silver / Gold / Platinum)",
+      "summary": "Personal accident plan with permanent and total disablement cover, daily hospital cash and a bereavement grant.",
+      "facts": [
+        "Platinum Plan: Death $250,000; Permanent and Total Disablement $375,000",
+        "Hospital cash benefit $200 daily for a maximum of 50 days (Platinum Plan)",
+        "Temporary total disablement: monthly income of $2,400 for up to 2 years (Platinum Plan)",
+        "Enrolment: any person aged between 18 years and 65 years",
+        "Up to 3 children covered free when you and your spouse enrol at the same time"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.msig.com.sg/personal/protectionplus",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure",
+          "url": "https://www.msig.com.sg/sites/msig_sg/files/2024-12/MSIG%20ProtectionPlus%20Brochure_QPA191224.pdf",
+          "local": "research/pdf/msig/MSIG_ProtectionPlus_Brochure_QPA191224.pdf"
+        },
+        {
+          "title": "Policy",
+          "url": "https://www.msig.com.sg/sites/msig_sg/files/2023-04/QPA52304_MSIG_ProtectionPlus.pdf",
+          "local": "research/pdf/msig/QPA52304_MSIG_ProtectionPlus.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Protection Plus is a personal accident insurance plan"
+    },
+    {
+      "name": "PA RecoveryPlus",
+      "category": "personal_accident",
+      "subtype": "family plan: adult, child and senior (parents) cover; Silver / Gold / Platinum",
+      "summary": "Personal accident plan with essential, recovery support and lifestyle support benefits, covering up to three generations on one policy.",
+      "facts": [
+        "Platinum Plan: Accidental death $300,000; Permanent disability $450,000 (per policy year)",
+        "Daily hospital income (Platinum): $150 per day up to 365 days",
+        "Adult Cover: you and your spouse aged 18 to 65 years old, renewable up to age 75",
+        "Child Cover: up to five children aged one month old to 25 years old; Senior Cover: parents and parents-in-law aged 50 to 70, renewable up to age 80",
+        "Home Modification for mobility (per lifetime): Silver $5,000, Gold $7,000, Platinum $10,000"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.msig.com.sg/personal/pa-recoveryplus",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure",
+          "url": "https://www.msig.com.sg/sites/msig_sg/files/2024-12/MSIG%20PA%20RecoveryPlus%20Brochure_PRP021224.pdf",
+          "local": "research/pdf/msig/MSIG_PA_RecoveryPlus_Brochure_PRP021224.pdf"
+        },
+        {
+          "title": "Policy",
+          "url": "https://www.msig.com.sg/sites/msig_sg/files/downloads/parecoveryplus_wording.pdf",
+          "local": "research/pdf/msig/parecoveryplus_wording.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "PA Recovery Plus insurance provides 360 protection"
+    },
+    {
+      "name": "PA PrimePlus (Series II)",
+      "category": "personal_accident",
+      "subtype": "high sum-insured accidental death / permanent disability (Silver / Gold)",
+      "summary": "Annually renewable personal accident plan paying a lump sum on accidental death or permanent disability, with optional medical expenses cover.",
+      "facts": [
+        "Accidental death / permanent disability (main insured 18 to 65): Silver $500,000, Gold $1,000,000",
+        "New applications aged between 18 and 65 years old; renewable up to 75 years old",
+        "Spouse (optional) at 50% of the main insured's sum insured; free child cover for unlimited number of children when both parents are insured in the same policy",
+        "Adventurous activities cover pays 50% of sums insured",
+        "Optional medical expenses for injury (per accident, 18 to 65): Silver $5,000, Gold $7,500"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.msig.com.sg/personal/pa-primeplus",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Factsheet",
+          "url": "https://www.msig.com.sg/sites/msig_sg/files/2025-09/PA_PrimePlus_Factsheet_Customer.pdf",
+          "local": "research/pdf/msig/PA_PrimePlus_Factsheet_Customer.pdf"
+        },
+        {
+          "title": "Policy",
+          "url": "https://www.msig.com.sg/sites/msig_sg/files/2025-07/QPE012506_PA%20PrimePlus%20%28Series%20II%29.pdf",
+          "local": "research/pdf/msig/QPE012506_PA_PrimePlus_Series_II_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "PA Prime Plus (Series II) is a personal accident insurance plan that renews annually"
+    },
+    {
+      "name": "DentiPlus",
+      "category": "outpatient",
+      "subtype": "dental (Classic / Platinum)",
+      "summary": "Dental insurance with cashless treatment at network clinics and immediate cover with no medical questionnaire.",
+      "facts": [
+        "Up to 100% coverage for emergency dental, preventive, and dental radiology services",
+        "Up to 90% coverage for tooth fillings and extraction",
+        "Up to 80% coverage for root canal treatment",
+        "Insured person aged between eighteen (18) years old and below sixty (60) years old at commencement, usual country of residence Singapore"
+      ],
+      "channel": "unknown",
+      "url": "https://www.msig.com.sg/dentiplus",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Policy Wording",
+          "url": "https://www.msig.com.sg/sites/msig_sg/files/2025-02/PW_DentiPlus_HDP022401.pdf",
+          "local": "research/pdf/msig/PW_DentiPlus_HDP022401.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "DentiPlus Benefits Select plans to compare"
+    }
+  ],
+  "not_found": [
+    "ip_rider",
+    "term_life",
+    "whole_life",
+    "disability_income",
+    "long_term_care",
+    "endowment",
+    "ilp",
+    "annuity",
+    "maternity_child",
+    "rider"
+  ],
+  "notes": [
+    "General insurer: no life, endowment, ILP or annuity products on the personal menu (Travel, Motor, Home & Maid, Health & PA, Critical Illnesses, Golf, Pet). Skipped travel, motor, home, maid, golf, pet.",
+    "No Integrated Shield Plan or IP rider found. Prestige Healthcare is the only hospitalisation product and its page never mentions MediShield Life or Integrated Shield.",
+    "Prestige Healthcare has an optional maternity benefit (Deluxe and Platinum only) but no separate maternity page, so it is not listed under maternity_child.",
+    "Premium/discount promotions and 'Corporate Employee Scheme' variants of the same products exist; ignored.",
+    "The /personal/ pages are linked from the personal-insurance hub only through JS-rendered cards; they were found via sitemap.xml and the homepage 'Learn more' links.",
+    "Essential Hospital Income page offers no brochure, only policy wordings. Page states 'up to $400' daily cash on the Premier plan, matching the table."
+  ]
+}

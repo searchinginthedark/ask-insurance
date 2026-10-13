@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-SG">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#123a57">
+<meta name="color-scheme" content="light dark">
+<title>Ask Insurance</title>
+<meta name="description" content="Every type of personal insurance in Singapore, who sells it, and what the official sources say. Every fact linked to its source.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/PlusJakartaSans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="#/">
+      <img src="icon.svg" alt="" width="32" height="32">
+      <span>Ask Insurance</span>
+    </a>
+    <form class="search" id="search-form" role="search">
+      <label for="q" class="sr">Search insurance types, plans and insurers</label>
+      <input id="q" type="search" placeholder="Search plans, insurers, topics" autocomplete="off" enterkeyhint="search">
+    </form>
+  </div>
+  <nav class="tabs wrap" aria-label="Sections">
+    <a href="#/" data-tab="types">Types</a>
+    <a href="#/insurers" data-tab="insurers">Insurers</a>
+    <a href="#/compare" data-tab="compare">Compare</a>
+    <a href="#/schemes" data-tab="schemes">National schemes</a>
+    <a href="#/check" data-tab="check">Cover check</a>
+    <a href="#/faq" data-tab="faq">FAQ</a>
+    <a href="#/sources" data-tab="sources">Sources</a>
+  </nav>
+</header>
+<main id="main" class="wrap" tabindex="-1">
+  <p class="loading">Loading…</p>
+</main>
+<footer class="foot wrap">
+  <p><strong>General information, not financial advice.</strong> Plans, prices and terms change. Read the insurer's product summary and policy wording, and speak to a licensed adviser before you buy or switch.</p>
+  <p id="foot-meta"></p>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

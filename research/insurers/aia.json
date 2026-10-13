@@ -1,0 +1,1150 @@
+{
+  "id": "aia",
+  "name": "AIA Singapore",
+  "formerly": null,
+  "website": "https://www.aia.com.sg",
+  "products_index_url": "https://www.aia.com.sg/en/sitemap",
+  "claims_url": "https://www.aia.com.sg/en/help-support/making-a-claim",
+  "contact_url": "https://www.aia.com.sg/en/help-support/contact-us",
+  "verified_on": "2026-10-13",
+  "products": [
+    {
+      "name": "AIA Absolute Critical Cover",
+      "category": "critical_illness",
+      "subtype": "multi-stage CI with optional cash value (coverage term to age 100)",
+      "summary": "Covers multi-stage critical illnesses, chronic, age-related and other conditions, with potential cash value on the to-age-100 term.",
+      "facts": [
+        "Be covered for 187 conditions including multi-stage critical illnesses, pre-early conditions and others",
+        "Choose a preferred coverage term of up to age 65, 75, or 100",
+        "150 multi-stage critical illnesses, with up to S$350,000 payout for early critical illness or intermediate critical illness",
+        "Safety net cover benefit: one-time payout of additional 20% of coverage amount for ICU admission (min. 4 days)",
+        "Death benefit: 5% of your coverage amount, including any surrender value"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-absolute-critical-cover",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-absolute-critical-cover-brochure.pdf",
+          "local": "research/pdf/aia/aia-absolute-critical-cover-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Cover multi-stage critical illnesses, chronic, age-related and other future diseases plus potential cash value."
+    },
+    {
+      "name": "AIA Beyond Critical Care",
+      "category": "critical_illness",
+      "subtype": "major-stage CI with premium refund at end of term",
+      "summary": "Critical illness plan with a refund of base-plan premiums at the end of the policy term and a mental well-being benefit.",
+      "facts": [
+        "Covered for 43 major stage CIs and 5 rediagnosed or recurred CIs and optional add-ons",
+        "Receive a 100% refund of the base plan's total annual premiums at the end of the policy term",
+        "Additional 20% of the coverage amount for 5 prominent mental illnesses until age 75",
+        "Up to $200 reimbursement for health screening once every 3 years starting from 4th policy year"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-beyond-critical-care",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-beyond-critical-care.pdf",
+          "local": "research/pdf/aia/aia-beyond-critical-care.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Receive premium refund on top of protection against major stage critical illnesses"
+    },
+    {
+      "name": "AIA Diabetes Care",
+      "category": "critical_illness",
+      "subtype": "diabetes-specific cover for pre-diabetics and Type 2 diabetics",
+      "summary": "Diabetes insurance for pre-diabetics and Type 2 diabetics, with no medical examination.",
+      "facts": [
+        "Plan for pre-diabetics and Type 2 diabetics aged 30 to 65 years old",
+        "Answer 5 simple questions for access to the coverage you need, with no need for medical examinations",
+        "Receive 20% coverage payout in the event of limb amputation due to diabetes-related complication",
+        "Guaranteed annual renewal of your policy with no change to your premium up to age 80",
+        "Cancer Cover add-on: 20% coverage payout upon early/intermediate stage cancer and 100% upon major cancer"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-diabetes-care",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-diabetes-care.pdf",
+          "local": "research/pdf/aia/aia-diabetes-care.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Get ground-breaking diabetes insurance coverage for pre-diabetics and Type 2 diabetics"
+    },
+    {
+      "name": "AIA Enhanced Cancer Protect",
+      "category": "cancer",
+      "subtype": "cancer-only; first diagnosis plus up to 2 major-stage relapses",
+      "summary": "Cancer-only cover from first diagnosis to two relapses, with optional add-on for early and intermediate stages.",
+      "facts": [
+        "High coverage of up to S$700,000",
+        "100% coverage amount each time for first diagnosis and up to 2 major stage relapses of major cancer",
+        "Premiums stay the same every year, whether you choose a 20-year coverage period or till age 65",
+        "Optional Enhanced Cancer Protect Plus add-on increases total coverage up to 400%"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-enhanced-cancer-protect",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-enhanced-cancer-protect-brochure.pdf",
+          "local": "research/pdf/aia/aia-enhanced-cancer-protect-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Cancer coverage from first diagnosis to two relapses."
+    },
+    {
+      "name": "AIA Glow of Life",
+      "category": "critical_illness",
+      "subtype": "CI for women",
+      "summary": "Critical illness cover tailored for women, including prevalent female cancers.",
+      "facts": [
+        "Entry age is 16 to 59 years old (age last birthday)",
+        "Coverage for illnesses such as osteoporosis, rheumatoid arthritis and breast cancer",
+        "Reimbursement for reconstructive surgery after an accident or burn, up to 100% of your coverage",
+        "Complimentary medical check-up every 2 years, starting from the 3rd policy year",
+        "Additional 5% coverage on each policy renewal for the first 5 years"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-glow-of-life",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-glow-of-life.pdf",
+          "local": "research/pdf/aia/aia-glow-of-life.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Stay protected with critical illness coverage tailored for women, including prevalent female cancers."
+    },
+    {
+      "name": "AIA Prime Critical Cover",
+      "category": "critical_illness",
+      "subtype": "CI for older adults, coverage to age 100",
+      "summary": "Regular premium critical illness plan for older adults with coverage to age 100 and no complicated medical examinations.",
+      "facts": [
+        "Regular premium critical illness plan for adults aged 40 to 70",
+        "Guaranteed coverage till age 100, with extra 50% coverage in your later years",
+        "Early payouts for 7 conditions including Parkinson's and Alzheimer's disease",
+        "Up to $250 reimbursement for health screening once every 3 years, from the 4th policy year"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-prime-critical-cover",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-prime-critical-cover.pdf",
+          "local": "research/pdf/aia/aia-prime-critical-cover.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Get easy access to affordable and comprehensive critical illness insurance coverage up to age 100."
+    },
+    {
+      "name": "AIA Ultimate Critical Cover",
+      "category": "critical_illness",
+      "subtype": "multi-pay CI (unlimited major-stage claims with 100% reset)",
+      "summary": "Critical illness plan with unlimited claims for major stage conditions and a full coverage reset every 12 months from the last claim.",
+      "facts": [
+        "Covered for 150 medical conditions across early, intermediate and major stages",
+        "Choose your preferred coverage term of up to age 65, 75, or 85",
+        "Fully reset your coverage every 12 months from the last claim",
+        "Maximum entry age is 55 age last birthday for To-Age-65, and 65 age last birthday for To-Age-75 and To-Age-85",
+        "Optional UCC Enhancer add-on covers relapses and additional payout for catastrophic critical illnesses"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-ultimate-critical-cover",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-ultimate-critical-cover-brochure.pdf",
+          "local": "research/pdf/aia/aia-ultimate-critical-cover-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Stay resilient with unlimited critical illness claims and 100% coverage reset to recover financially."
+    },
+    {
+      "name": "AIA Protect 3",
+      "category": "critical_illness",
+      "subtype": "early-to-major CI for cancer, heart attack and stroke; existing AIA customers only",
+      "summary": "Affordable cover for cancer, heart attack and stroke from early to major stages; offered exclusively to existing AIA customers and their spouses and children.",
+      "facts": [
+        "Available exclusively to existing AIA individual and corporate customers, and their spouses and children",
+        "Covers you up to age 85",
+        "Premiums from S$0.56/day",
+        "Stay claim-free and get 25% of your coverage back at age 65 or after 15 years, whichever is later",
+        "Get your coverage in minutes by simply answering 4 questions"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-protect-3",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-protect-3-brochure.pdf",
+          "local": "research/pdf/aia/aia-protect-3-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Cover yourself against cancer, heart attack and stroke from early to major stages"
+    },
+    {
+      "name": "AIA HealthShield Gold Max",
+      "category": "hospitalisation",
+      "subtype": "Integrated Shield Plan (Max A, Max B, Max B Lite; Special A and B variants)",
+      "summary": "MediSave-approved Integrated Shield Plan combining MediShield Life with private insurance coverage for private or public hospital treatment.",
+      "facts": [
+        "Last entry age 75 (next birthday); maximum coverage period lifetime",
+        "High coverage of up to S$2 million per policy year if hospitalised in an AIA Partner Facility",
+        "Up to 13 months of pre- and post-hospitalisation benefit if treated by AIA preferred provider",
+        "Your premiums will not change after a claim",
+        "Extra coverage for 30 critical illnesses: up to $100,000 extra coverage per policy year"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/health/medical-insurance/aia-healthshield-gold-max",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-healthshield-gold-max-english-brochure.pdf",
+          "local": "research/pdf/aia/aia-healthshield-gold-max-english-brochure.pdf"
+        },
+        {
+          "title": "FAQ on 1 Oct 2026 changes",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/help-support/healthshieldsupport/faqs-on-HSG-changes-effective-1oct2026.pdf",
+          "local": "research/pdf/aia/faqs-on-HSG-changes-effective-1oct2026.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "MediSave-approved Integrated Shield Plan consisting of MediShield Life and private insurance coverage"
+    },
+    {
+      "name": "AIA Max VitalHealth Pro",
+      "category": "ip_rider",
+      "subtype": "rider on AIA HealthShield Gold Max (Pro A, Pro B, Pro B Lite); no standalone page",
+      "summary": "Add-on to AIA HealthShield Gold Max to minimise out-of-pocket expenses regardless of the doctor consulted. Described on the AIA HealthShield Gold Max page and brochure.",
+      "facts": [
+        "Coverage for co-insurance, subject to co-payment capped at S$6,000 per policy year",
+        "Immediate family members' accommodation benefit",
+        "Post-hospitalisation home nursing benefit",
+        "Additional benefit for AIA Max VitalHealth Pro A: early detection screening benefit from age 40 onwards",
+        "Additional benefit for AIA Max VitalHealth Pro A: additional 60 days post-hospitalisation treatment if hospitalised in an AIA Partner Facility"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/health/medical-insurance/aia-healthshield-gold-max",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-healthshield-gold-max-english-brochure.pdf",
+          "local": "research/pdf/aia/aia-healthshield-gold-max-english-brochure.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "minimise your out-of-pocket expenses regardless of the doctor you consult"
+    },
+    {
+      "name": "AIA Platinum International Health",
+      "category": "hospitalisation",
+      "subtype": "international private medical insurance (not an Integrated Shield Plan)",
+      "summary": "Lifetime global medical coverage open to Singapore residents and non-residents, including outpatient and accidental dental treatment.",
+      "facts": [
+        "High lifetime limit of up to S$10 million",
+        "For Singapore residents and non-residents",
+        "Protected beyond hospital stays, including outpatient treatment and accidental dental treatment",
+        "Pre- and post-hospitalisation treatment benefits such as home nursing, physiotherapy and chiropractic treatment",
+        "Access to over 50,000 leading global specialists under Teladoc Health"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/health/medical-insurance/aia-platinum-international-health",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-international-health-brochure.pdf",
+          "local": "research/pdf/aia/aia-platinum-international-health-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Access the best care every time with lifetime global medical coverage."
+    },
+    {
+      "name": "AIA Hospital Income",
+      "category": "hospital_cash",
+      "subtype": "daily hospital cash on top of a hospitalisation plan",
+      "summary": "Daily hospital cash with extra for ICU stays, day surgeries and home rest after hospitalisation.",
+      "facts": [
+        "Premium from S$0.85 per day (Plan 1 premium rate for age 1 to 30)",
+        "Daily hospital cash, with extra for ICU stays, day surgeries and home rest after hospitalisation",
+        "20% discount on your AIA Hospital Income plan if you are covered by AIA HealthShield Gold Max"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/health/medical-insurance/aia-hospital-income",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-hospital-income-brochure.pdf",
+          "local": "research/pdf/aia/aia-hospital-income-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Enjoy a financial buffer on top of your hospitalisation plan"
+    },
+    {
+      "name": "AIA Mum2Baby Choices",
+      "category": "maternity_child",
+      "subtype": "maternity plan: Mum2Baby Protect (whole life base) or Mum2Baby (investment-linked base), each with a pre-natal rider",
+      "summary": "Maternity insurance protecting mother and child from the 13th week of pregnancy, with lifelong protection for the child up to age 100.",
+      "facts": [
+        "Protect both mother and child from as early as the 13th week of pregnancy",
+        "Guaranteed lifelong protection for your child up to age 100",
+        "Mum2Baby Protect = AIA Guaranteed Protect Plus (IV) base plan plus AIA Baby Protect Plus (III) pre-natal rider",
+        "Mum2Baby = AIA Pro Lifetime Protector (II) base plan plus AIA Baby Protector (III) pre-natal rider",
+        "Financial compensation if mum and/or baby die due to medical negligence"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/health/medical-insurance/aia-mum2baby-choices",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-mum2baby-choices.pdf",
+          "local": "research/pdf/aia/aia-mum2baby-choices.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Protect both mother and child from as early as the 13 th week of pregnancy"
+    },
+    {
+      "name": "AIA Pay Protector",
+      "category": "disability_income",
+      "subtype": "short-term income replacement to age 65",
+      "summary": "Fixed monthly payouts to replace income lost from injury, illness or mental conditions that pause your career, or from job loss.",
+      "facts": [
+        "Safeguard your income till age 65",
+        "Fixed monthly payouts (up to 5 years)",
+        "Premiums waived during monthly income payouts or until you recover, whichever is earlier",
+        "Fixed premiums that will not increase with time"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/health/disability-income-insurance/aia-pay-protector",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-pay-protector.pdf",
+          "local": "research/pdf/aia/aia-pay-protector.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Safeguard your income till age 65 against injury, illness or mental conditions"
+    },
+    {
+      "name": "AIA Premier Disability Cover",
+      "category": "disability_income",
+      "subtype": "monthly income until recovery or age 65",
+      "summary": "Disability income plan paying monthly income if you become unable to work.",
+      "facts": [
+        "Up to 75% of existing income payouts for disability till full recovery or age 65, whichever is earlier",
+        "24 times monthly payout for catastrophic disability and 12 times monthly payout should death occur",
+        "Rehabilitation benefit: up to 6 times the monthly payout per disability or illness",
+        "Payback benefit: up to twice the monthly payout during the deferment period"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/health/disability-income-insurance/aia-premier-disability-cover",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-premier-disability-cover.pdf",
+          "local": "research/pdf/aia/aia-premier-disability-cover.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Secure your family's finances with a disability insurance that ensures an ongoing income"
+    },
+    {
+      "name": "AIA Mortgage Reducing Term Assurance",
+      "category": "term_life",
+      "subtype": "decreasing term / mortgage",
+      "summary": "Mortgage insurance for homeowners covering the outstanding housing loan on death, disability or terminal illness.",
+      "facts": [
+        "Covered for your outstanding housing loan in event of death, disability or terminal illness",
+        "Only pay premiums for 75% of your mortgage payment term and enjoy the last 25% free",
+        "Coverage continues if you have repaid your loan or sold your home, up to your 75th birthday",
+        "Premium waiver on disability, terminal illness or critical illness"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/aia-mortgage-reducing-term-assurance",
+      "url_status": "ok",
+      "pdfs": [],
+      "fact_source": "page",
+      "evidence": "flexible protection home mortgage insurance plan created for homeowners"
+    },
+    {
+      "name": "AIA Secure Flexi Term",
+      "category": "term_life",
+      "subtype": "renewable or level term",
+      "summary": "Affordable and flexible term life insurance with guaranteed premiums.",
+      "facts": [
+        "Renewable term option for 5, 10, 20 or 30 years; or level term option up to age 65 or 75",
+        "Protection from just S$1.36 a day for S$1 million coverage",
+        "Premiums stay the same throughout the policy period, based on the age when you first sign up",
+        "Convert to selected AIA plan before age 70 with no further medical questions asked"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/aia-secure-flexi-term",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-secure-flexi-term-brochure.pdf",
+          "local": "research/pdf/aia/aia-secure-flexi-term-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Safeguard your loved ones' future with an affordable and flexible term life insurance plan"
+    },
+    {
+      "name": "DIRECT - AIA Term Cover",
+      "category": "term_life",
+      "subtype": "direct-purchase term (5-year renewable, 20-year, to age 65)",
+      "summary": "Direct Purchase Insurance term life plan paying the coverage amount on death, terminal illness or total and permanent disability.",
+      "facts": [
+        "Premiums stay unchanged for 5 years, 20 years, or up to age 65",
+        "Pays coverage amount on Death, Terminal Illness or Total and Permanent Disability (TPD); TPD cover is up to age 65",
+        "Guaranteed renewability for the 5-year term plan; last renewal age is 80",
+        "About S$0.33 a day for a 30-year-old male non-smoker, protection up to age 65, coverage S$100,000",
+        "Optional Critical Illness rider, coverage up to age 65"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/direct-aia-term-cover",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-direct-term-cover.pdf",
+          "local": "research/pdf/aia/aia-direct-term-cover.pdf"
+        },
+        {
+          "title": "Direct Purchase Insurance Fact Sheet and Checklist",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/direct-purchase-insurance-fact-sheet-and-checklist.pdf",
+          "local": "research/pdf/aia/direct-purchase-insurance-fact-sheet-and-checklist.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Protect your loved ones affordably | DIRECT - AIA Term Cover"
+    },
+    {
+      "name": "AIA Guaranteed Protect Plus (IV)",
+      "category": "whole_life",
+      "subtype": "participating whole life with boosted coverage; also listed under Participating Savings",
+      "summary": "Participating whole life plan with up to 5 times boosted coverage while accumulating cash value.",
+      "facts": [
+        "Offers up to 5 times boosted coverage",
+        "Premium payment options of 15, 20 or 25 years for whole-life protection",
+        "Option to defer premium payment for 12 consecutive months if you are involuntarily retrenched",
+        "Utilise 50% or 100% of your coverage amount for its cash value to boost your retirement income for 10 years"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/life-insurance/whole-life-insurance/aia-guaranteed-protect-plus-iv",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-guaranteed-protect-plus-iv.pdf",
+          "local": "research/pdf/aia/aia-guaranteed-protect-plus-iv.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "A whole life insurance single solution that offers up to 5 times boosted coverage"
+    },
+    {
+      "name": "AIA Life Dividends",
+      "category": "whole_life",
+      "subtype": "whole life with annual dividends",
+      "summary": "Whole life protection plan with annual dividends that can be withdrawn flexibly.",
+      "facts": [
+        "Currency S$/US$",
+        "Receive annual dividends from the end of the 5th policy year, withdraw or leave to accumulate interest",
+        "Pay for just 10 years with protection up to 100 years old",
+        "Coverage against death and Total and Permanent Disability",
+        "Optional Critical Cover Accelerator or Early Critical Cover Accelerator rider"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/life-insurance/whole-life-insurance/aia-life-dividends",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-life-dividends.pdf",
+          "local": "research/pdf/aia/aia-life-dividends.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "The only whole life protection plan with annual dividends which you can withdraw flexibly"
+    },
+    {
+      "name": "DIRECT - AIA Whole Life Cover (II)",
+      "category": "whole_life",
+      "subtype": "direct-purchase participating whole life",
+      "summary": "Direct Purchase whole life plan with coverage up to age 100 and discretionary bonuses.",
+      "facts": [
+        "Whole life protection against Death and Terminal Illness up to age 100",
+        "Pay premiums up to age 70 or 85, with protection continuing to age 100",
+        "Coverage amount plus potential cash bonuses paid on death, terminal illness or total and permanent disability (up to age 65)",
+        "Discretionary annual bonuses as well as potential one-off terminal bonus",
+        "Premiums are fixed and will not increase as you get older"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.aia.com.sg/en/our-products/life-insurance/whole-life-insurance/direct-aia-whole-life-cover-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-direct-whole-life-cover-ii.pdf",
+          "local": "research/pdf/aia/aia-direct-whole-life-cover-ii.pdf"
+        },
+        {
+          "title": "Direct Purchase Insurance Fact Sheet and Checklist",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/direct-purchase-insurance-fact-sheet-and-checklist.pdf",
+          "local": "research/pdf/aia/direct-purchase-insurance-fact-sheet-and-checklist.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "an affordable whole life insurance plan that provides coverage up to the age of 100"
+    },
+    {
+      "name": "AIA Retirement Saver (IV)",
+      "category": "annuity",
+      "subtype": "participating retirement income plan with guaranteed monthly income",
+      "summary": "Retirement plan with capital guaranteed at selected retirement age and a guaranteed monthly income stream.",
+      "facts": [
+        "Every dollar contributed is guaranteed at your selected retirement age",
+        "Guaranteed stream of monthly income over 15 or 20 years",
+        "Income can start from as early as age 50",
+        "Up to 4.17% p.a. potential yield upon policy maturity",
+        "No medical check-up required"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/save-and-invest/participating-savings/aia-retirement-saver-iv",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-retirement-saver-iv.pdf",
+          "local": "research/pdf/aia/aia-retirement-saver-iv.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Take charge of retirement planning with a retirement insurance plan"
+    },
+    {
+      "name": "AIA Smart Flexi Growth",
+      "category": "endowment",
+      "subtype": "participating savings; capital guaranteed at maturity",
+      "summary": "Regular-premium savings plan with flexible premium and policy term options.",
+      "facts": [
+        "Every dollar contributed is guaranteed upon policy maturity",
+        "Non-guaranteed reversionary bonus and terminal bonus upon policy maturity",
+        "Choose from a range of premium payment period and policy term options",
+        "Death benefit; optional riders to waive future premiums for yourself or your child"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/save-and-invest/participating-savings/aia-smart-flexi-growth",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-smart-flexi-growth.pdf",
+          "local": "research/pdf/aia/aia-smart-flexi-growth.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Set aside a fixed amount regularly and enjoy flexible premium and coverage period options"
+    },
+    {
+      "name": "AIA Smart Flexi Rewards (II)",
+      "category": "endowment",
+      "subtype": "participating savings with guaranteed yearly coupon",
+      "summary": "Savings plan with a guaranteed yearly coupon that can be withdrawn or accumulated.",
+      "facts": [
+        "Guaranteed yearly coupons from end of 2nd policy year until the year before policy matures",
+        "Capital 100% guaranteed at the end of the policy term",
+        "Guaranteed maturity amount plus any accumulated coupons and bonuses",
+        "Guaranteed acceptance with no health questions"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/save-and-invest/participating-savings/aia-smart-flexi-rewards-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-smart-flexi-rewards-ii.pdf",
+          "local": "research/pdf/aia/aia-smart-flexi-rewards-ii.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "AIA Smart Flexi Rewards (II) Build a flexible savings plan according to your preferred savings"
+    },
+    {
+      "name": "AIA Smart Wealth Builder Series",
+      "category": "endowment",
+      "subtype": "participating savings in S$ or US$",
+      "summary": "Series of savings plans for wealth accumulation with the flexibility to withdraw funds.",
+      "facts": [
+        "Currency S$/US$",
+        "Guaranteed cash value and non-guaranteed bonuses up to age 125",
+        "100% capital guaranteed: total premiums paid fully secured",
+        "Pay via single premium or spread payment over 5, 10, 15 or 20 years",
+        "Lifelong protection against death, total and permanent disability and terminal illness"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/save-and-invest/participating-savings/aia-smart-wealth-builder-series",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-smart-wealth-builder-series.pdf",
+          "local": "research/pdf/aia/aia-smart-wealth-builder-series.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Tap into a series of savings plans aimed at wealth accumulation"
+    },
+    {
+      "name": "AIA Pro Lifetime Protector (II)",
+      "category": "ilp",
+      "subtype": "whole life investment-linked with protection; also listed under Whole Life Insurance",
+      "summary": "Investment-linked protection plan with coverage against death, disability and multi-stage critical illnesses.",
+      "facts": [
+        "Issue Age 0 - 70 Years Old",
+        "Increase your basic coverage by up to S$200,000 without medical underwriting during key life milestones",
+        "Undisrupted protection in the first 10 years of your policy no matter how your investments perform",
+        "100% and 102% of your premiums are invested from the 5th and 10th policy year onwards respectively"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-pro-lifetime-protector-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-pro-lifetime-protector-ii.pdf",
+          "local": "research/pdf/aia/aia-pro-lifetime-protector-ii.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Get a protection and investment plan shaped to your family's needs"
+    },
+    {
+      "name": "AIA Pro Achiever 3.0",
+      "category": "ilp",
+      "subtype": "whole life investment-linked with welcome bonus",
+      "summary": "Investment-linked plan with 100% of premiums invested from day one and regular bonuses.",
+      "facts": [
+        "Up to 75% welcome bonus, and special bonus from the 10th year onwards",
+        "100% of premiums invested from the start",
+        "Initial Investment Period options of 10, 15 or 20 years",
+        "Take a break from paying premiums for up to 36 months, with no premium holiday charges"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-pro-achiever-iii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-pro-achiever-3.0.pdf",
+          "local": "research/pdf/aia/aia-pro-achiever-3.0.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Achieve higher growth with regular bonuses and 100% of your premiums invested from day one"
+    },
+    {
+      "name": "AIA Wealth Venture",
+      "category": "ilp",
+      "subtype": "whole life investment-linked with optional dividends",
+      "summary": "Investment-linked plan investing 100% of premiums from day one, with optional regular dividends.",
+      "facts": [
+        "Up to 35% welcome bonus",
+        "100% of your premiums invested from day one",
+        "Option to receive dividend payouts if you select a dividend paying fund",
+        "After Year 10, access your cash value at no charge"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-wealth-venture",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-wealth-venture.pdf",
+          "local": "research/pdf/aia/aia-wealth-venture.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Build stronger momentum with 100% of your premiums invested from day one"
+    },
+    {
+      "name": "AIA Invest Easy",
+      "category": "ilp",
+      "subtype": "single-premium lump-sum investment-linked",
+      "summary": "Lump-sum investment-linked plan with a range of funds and portfolios, with no medical questions.",
+      "facts": [
+        "Lump sum investment from just $12,000 via cash, SRS, CPF-OA or CPF-SA",
+        "No monthly policy fee and 0% and low premium charge for CPF and cash/SRS investments respectively",
+        "No medical questions asked",
+        "Regular income via dividend distribution when you invest in a dividend-paying fund"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-invest-easy",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-invest-easy-brochure.pdf",
+          "local": "research/pdf/aia/aia-invest-easy-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Easily maximise and grow your investments through a wide variety of funds and portfolios"
+    },
+    {
+      "name": "AIA Elite Secure Income",
+      "category": "ilp",
+      "subtype": "investment-linked with capital guaranteed on basic premiums and monthly income",
+      "summary": "Investment-linked plan with capital guaranteed on basic premiums and monthly income over 10 or 15 years.",
+      "facts": [
+        "Invest from $300 a month, with no medical questions",
+        "Every dollar of the basic premium paid is guaranteed",
+        "Receive your monthly income over 10 or 15 years",
+        "Up to 25% power-up bonus from the end of 10th policy year and every 5 years thereafter"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-elite-secure-income",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-elite-secure-income.pdf",
+          "local": "research/pdf/aia/aia-elite-secure-income.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "AIA Elite Secure Income The first affordable plan investment-linked plan with capital guaranteed"
+    },
+    {
+      "name": "AIA Platinum Retirement Elite",
+      "category": "ilp",
+      "subtype": "investment-linked retirement income plan (S$ or US$); Platinum tier",
+      "summary": "Investment-linked retirement plan where you choose target monthly income and retirement age.",
+      "facts": [
+        "Currency S$/US$",
+        "Choose your target monthly retirement income and retirement age, adjustable after the first policy year",
+        "Optional yearly stepped-up income from 0% - 5%",
+        "Single premium or regular premium payment terms over 5 years",
+        "Select from 3 different AIA Elite portfolios"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-platinum-retirement-elite",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-retirement-elite.pdf",
+          "local": "research/pdf/aia/aia-platinum-retirement-elite.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "AIA Platinum Retirement Elite A retirement plan expertly crafted for you"
+    },
+    {
+      "name": "AIA Platinum Wealth Elite 2.0",
+      "category": "ilp",
+      "subtype": "investment-linked whole life (S$ or US$); Platinum tier",
+      "summary": "Investment-linked plan with active portfolio management by AIA Investments and lifetime cover.",
+      "facts": [
+        "Currency S$/US$",
+        "From policy year 6, withdraw up to 5% of your policy value annually via the income withdrawal privilege",
+        "Lifetime cover with option for death benefit to be paid over 2 to 10 years without setting up trust fund",
+        "Flexible premium, 2 currency options and personalised accumulation horizons"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-platinum-wealth-elite-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-wealth-elite-2.0-brochure.pdf",
+          "local": "research/pdf/aia/aia-platinum-wealth-elite-2.0-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "A bespoke wealth solution that lets you tap on world-class institutional asset managers"
+    },
+    {
+      "name": "AIA Platinum Wealth Legacy",
+      "category": "ilp",
+      "subtype": "investment-linked whole life with no lapse privilege (S$ or US$); Platinum tier",
+      "summary": "Investment-linked plan balancing wealth accumulation with guaranteed long-term security for your family.",
+      "facts": [
+        "Currency S$/US$",
+        "No lapse privilege: guaranteed coverage up to age 85 or 100, regardless of fund performance",
+        "NLP till age 100 is only applicable for entry age of 40 years and above",
+        "Withdraw from policy value after 1st policy year with continued protection till your selected NLP age"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-platinum-wealth-legacy",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-wealth-legacy.pdf",
+          "local": "research/pdf/aia/aia-platinum-wealth-legacy.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Enjoy the ideal balance of wealth accumulation and guaranteed long-term security for your family"
+    },
+    {
+      "name": "AIA Platinum Wealth Venture 3.0",
+      "category": "ilp",
+      "subtype": "investment-linked with optional dividends; Platinum tier",
+      "summary": "Investment-linked plan investing 100% of premiums from day one with optional regular dividends.",
+      "facts": [
+        "100% of your premiums are invested from day one",
+        "Single premium (funded by SRS only) or premium terms of 2 or 5 years",
+        "Up to 12% welcome bonus in the first 3 yrs for 5-yr plan and up to 5% in first 2 yrs for 2-yr plan",
+        "Up to 10% investment bonus in year 8-11, plus annual performance bonus from year 8"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/save-and-invest/investment-linked/aia-platinum-wealth-venture-iii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-wealth-venture-iii.pdf",
+          "local": "research/pdf/aia/aia-platinum-wealth-venture-iii.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Stay agile with optional regular dividends as you grow your wealth."
+    },
+    {
+      "name": "AIA Platinum Gift for Life Series",
+      "category": "whole_life",
+      "subtype": "Platinum tier; Gift for Life Plus and Gift for Life Plus (II)",
+      "summary": "Whole life plans designed to supplement the lives of three generations, with guaranteed monthly coupon.",
+      "facts": [
+        "Currency S$/US$",
+        "Lifetime coverage for yourself (up to age 120), plus your child and grandchild",
+        "Guaranteed monthly coupon up to age 120 and non-guaranteed monthly dividend",
+        "No medical check-up required"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/platinum/wealth-accumulation/aia-platinum-gift-for-life-series",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-gift-for-life-series.pdf",
+          "local": "research/pdf/aia/aia-platinum-gift-for-life-series.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "pass on the fruits of your success with AIA Platinum Gift for Life series"
+    },
+    {
+      "name": "AIA Platinum Infinite Wealth (II)",
+      "category": "whole_life",
+      "subtype": "US$ wealth accumulation whole life; Platinum tier",
+      "summary": "US$ plan to grow wealth and pass it on across generations.",
+      "facts": [
+        "Currency US$",
+        "Single premium or regular premium over 5 years",
+        "Guaranteed return of capital as early as 7th policy year, plus potential bonuses",
+        "Pass on your wealth in three ways"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/platinum/wealth-accumulation/aia-platinum-infinite-wealth-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-infinite-wealth-ii.pdf",
+          "local": "research/pdf/aia/aia-platinum-infinite-wealth-ii.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Grow and share it across generations with infinite possibilities through flexibility"
+    },
+    {
+      "name": "AIA Platinum Generations (II)",
+      "category": "whole_life",
+      "subtype": "US$ participating whole life; Platinum tier",
+      "summary": "US$ whole life plan to protect, preserve and grow wealth across up to three generations.",
+      "facts": [
+        "Currency US$",
+        "Receive 2% of coverage amount as yearly cash coupons starting at 10th policy year-end, guaranteed",
+        "Pay premiums for only 10 years",
+        "Non-guaranteed annual dividends and a one-time terminal dividend"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/platinum/legacy-planning/aia-platinum-generations-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-generations-ii.pdf",
+          "local": "research/pdf/aia/aia-platinum-generations-ii.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Protect, preserve, and grow your wealth across not just one, but up to three generations"
+    },
+    {
+      "name": "AIA Platinum Heritage Wealth (II)",
+      "category": "whole_life",
+      "subtype": "US$ whole life; Platinum tier",
+      "summary": "US$ whole life plan generating stable wealth growth for a lasting legacy.",
+      "facts": [
+        "Currency US$",
+        "High guaranteed coverage against unforeseen death and terminal illness up to age 100",
+        "Additional 25% of the minimum death benefit in the event of accidental death before age 85"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/platinum/legacy-planning/aia-platinum-heritage-wealth-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-heritage-wealth-ii.pdf",
+          "local": "research/pdf/aia/aia-platinum-heritage-wealth-ii.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Protect everything you've worked for with a whole life plan"
+    },
+    {
+      "name": "AIA Platinum Legacy (IX)",
+      "category": "whole_life",
+      "subtype": "US$ legacy-planning whole life; Platinum tier",
+      "summary": "US$ legacy plan for estate transfer and wealth growth across generations.",
+      "facts": [
+        "Currency US$",
+        "Guaranteed crediting rate on your initial premium for the first 3 years and special bonuses",
+        "Legacy distributed to your family as per your wishes after your passing"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/platinum/legacy-planning/aia-platinum-legacy-ix",
+      "url_status": "ok",
+      "pdfs": [],
+      "fact_source": "page",
+      "evidence": "Grow and protect your wealth for generations"
+    },
+    {
+      "name": "AIA Platinum Indexed Legacy (III)",
+      "category": "whole_life",
+      "subtype": "Indexed Universal Life (IUL), US$; Platinum tier",
+      "summary": "Indexed Universal Life plan with a Fixed Account and index sub-accounts with downside protection.",
+      "facts": [
+        "Currency US$",
+        "Fixed Account offers a guaranteed minimum crediting rate of 2% p.a.",
+        "Guaranteed minimum floor rate of 0% for your Index Account",
+        "Spread premiums over 6 to 12 months into the Index Account (dollar-cost averaging)"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/platinum/legacy-planning/aia-platinum-indexed-legacy-iii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-indexed-legacy-iii-brochure.pdf",
+          "local": "research/pdf/aia/aia-platinum-indexed-legacy-iii-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "It is an Indexed Universal Life (IUL) plan that offers stability through the Fixed Account"
+    },
+    {
+      "name": "AIA Centurion PA",
+      "category": "personal_accident",
+      "subtype": "senior personal accident with optional dementia benefit",
+      "summary": "Personal accident plan for older adults with entry up to age 80 and an optional dementia benefit.",
+      "facts": [
+        "Entry ages from 40 to 80 years old; coverage until age 100",
+        "Optional Dementia benefit covers Dementia, Alzheimer's or Parkinson's Diseases",
+        "Last entry age to add on optional Dementia Benefit is 70 years old at last birthday",
+        "Answer only 2 health questions to be covered for optional dementia benefit"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/accident-protection/aia-centurion-pa",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-centurion-pa.pdf",
+          "local": "research/pdf/aia/aia-centurion-pa.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "AIA Centurion PA Age confidently with the first personal accident plan"
+    },
+    {
+      "name": "AIA #GenFit PA",
+      "category": "personal_accident",
+      "subtype": "adult personal accident, lifestyle-linked",
+      "summary": "Personal accident plan that also reimburses damaged devices, unused gym fees and missed events.",
+      "facts": [
+        "Premium from as little as S$0.33/day (Plan 1, ages 16 to 54 last birthday, occupational classes 1 and 2)",
+        "Worldwide coverage for accidental death, fractures, dislocations and accidental medical reimbursements",
+        "Up to S$105 off premiums for a new investment-linked, whole life or endowment plan if no claims"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/accident-protection/aia-genfit-pa",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-genfit-pa.pdf",
+          "local": "research/pdf/aia/aia-genfit-pa.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "AIA #GenFit PA The accident plan that protects you and the things you love"
+    },
+    {
+      "name": "AIA Platinum AccidentCare",
+      "category": "personal_accident",
+      "subtype": "high-limit adult personal accident; Platinum tier",
+      "summary": "Worldwide accident coverage with high limits, overseas and recovery support.",
+      "facts": [
+        "High coverage of up to S$5 million for accidental death, dismemberment and burns",
+        "Covered for accidents on commercial flights, as well as emergency medical evacuation or repatriation",
+        "Covered against acts of terrorism, natural disasters, as well as everyday risks like dengue fever",
+        "Optional weekly or monthly income support add-ons"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/accident-protection/aia-platinum-accidentcare",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-platinum-accidentcare.pdf",
+          "local": "research/pdf/aia/aia-platinum-accidentcare.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Enjoy optimal worldwide accident coverage so you can continue enjoying the lifestyle you have built"
+    },
+    {
+      "name": "AIA Prime Assured",
+      "category": "personal_accident",
+      "subtype": "senior personal accident",
+      "summary": "Worldwide personal accident insurance tailored for seniors.",
+      "facts": [
+        "Covered for accidental injuries, age-related illnesses (Alzheimer's or Parkinson's disease) and more",
+        "Up to 365 days of hospital cash if hospitalised due to accidents",
+        "Reimbursement for home care, mobility aids, Chinese bonesetter, or acupuncture expenses"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/accident-protection/aia-prime-assured",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-prime-assured-brochure.pdf",
+          "local": "research/pdf/aia/aia-prime-assured-brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "With worldwide personal accident insurance, you can enjoy your golden years"
+    },
+    {
+      "name": "AIA Solitaire PA (II)",
+      "category": "personal_accident",
+      "subtype": "adult personal accident",
+      "summary": "24/7 worldwide personal accident cover including dengue fever, medical and TCM treatment costs and food poisoning.",
+      "facts": [
+        "Premium from as low as S$0.62 a day (Plan 1, ages 16 to 65 last birthday, occupational classes 1 and 2)",
+        "Last entry age is 70 years old at last birthday; covered till 80 years old",
+        "Renewal bonus: additional 5% coverage every renewal for the first 6 years, up to 30%",
+        "Coverage from the first dollar for medical expenses incurred due to an accident"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/accident-protection/aia-solitaire-personal-accident",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-solitaire-personal-accident.pdf",
+          "local": "research/pdf/aia/aia-solitaire-personal-accident.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Enjoy 24/7 worldwide coverage for personal accidents, dengue fever, medical and TCM treatment costs"
+    },
+    {
+      "name": "AIA Star Protector Plus",
+      "category": "personal_accident",
+      "subtype": "child personal accident",
+      "summary": "Worldwide accident protection for children, plus cover for 16 common diseases.",
+      "facts": [
+        "Entry age is from 2 weeks to 16 years old (last birthday)",
+        "Reimbursement for treating 16 common diseases, including COVID-19",
+        "Double payout if your child becomes disabled or suffers burns due to an accident",
+        "Monthly cash payouts for up to 20 years if a catastrophic disability strikes",
+        "Optional child critical illness add-on covers 17 child critical illnesses, up to the age of 21"
+      ],
+      "channel": "unknown",
+      "url": "https://www.aia.com.sg/en/our-products/accident-protection/aia-star-protector-plus",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-star-protector-plus.pdf",
+          "local": "research/pdf/aia/aia-star-protector-plus.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Give your child worldwide protection against accidental injuries and burns"
+    }
+  ],
+  "not_found": [
+    "long_term_care",
+    "outpatient",
+    "rider (no standalone rider pages)"
+  ],
+  "notes": [
+    "Product menus on the category pages are JS-rendered; the list was taken from the official sitemap (https://www.aia.com.sg/en/sitemap.xml) and each page fetched with status 200.",
+    "AIA's server hangs on scripted requests that omit an Accept-Language header; fetch_page.py sends one and works.",
+    "AIA Pro Lifetime Protector (II) appears under both Whole Life and Investment-Linked menus, and AIA Guaranteed Protect Plus (IV) under both Whole Life and Participating Savings; each is listed once.",
+    "AIA Platinum Retirement Elite, Wealth Elite 2.0, Wealth Legacy and Wealth Venture 3.0 appear under both the Platinum and Investment-Linked menus; listed once with the Investment-Linked URL.",
+    "AIA Platinum AccidentCare and AIA Platinum International Health also appear under the Platinum Accident & Health menu with the same name; listed once.",
+    "AIA Max VitalHealth Pro riders have no page of their own; they are described on the AIA HealthShield Gold Max page. Other HealthShield riders named on the 1 Oct 2026 updates page (VitalHealth A / A Value, VitalCare, B, B Lite, Max A Cancer Care Booster) were not listed separately.",
+    "AIA HealthShield Gold Max has revisions effective 1 October 2026 (premium revisions, new high-cost drug and stereotactic radiosurgery benefits); see its oct2026-updates page. MOH rider revisions sit on a separate moh-updates-ip-riders page not reviewed here.",
+    "AIA Protect 3 is sold only to existing AIA customers and their spouses and children.",
+    "AIA Platinum International Health is an international private medical plan open to non-residents, not an Integrated Shield Plan; filed under hospitalisation as the nearest category.",
+    "Critical Cover Accelerator and Early Critical Cover Accelerator riders are mentioned on the AIA Life Dividends page but have no page or PDF of their own, so are not listed.",
+    "Skipped as out of scope: Employee Benefits, Corporate Medical, Corporate International Medical, Travel and Home pages; protectplus-cover, device-cover and wanderplus-cover are customer-support pages. Retirement Solutions and Plan360 pages are marketing/planning pages, not products.",
+    "Channel is recorded as unknown for non-Direct products because the pages do not state a channel; the two DIRECT plans are sold online via AIA's Direct Purchase platform.",
+    "Some Platinum-tier and savings plans are sold in US$ or S$/US$; noted in facts where the page shows it."
+  ]
+}

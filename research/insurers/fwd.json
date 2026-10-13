@@ -1,0 +1,604 @@
+{
+  "id": "fwd",
+  "name": "FWD Singapore",
+  "formerly": null,
+  "website": "https://www.fwd.com.sg/",
+  "products_index_url": "https://www.fwd.com.sg/",
+  "claims_url": "https://www.fwd.com.sg/claim-online/",
+  "contact_url": "https://www.fwd.com.sg/contact-us/",
+  "verified_on": "2026-10-13",
+  "products": [
+    {
+      "name": "FWD Term Life Plus",
+      "category": "term_life",
+      "subtype": "yearly renewable term, bought online; optional TPD and premium waiver",
+      "summary": "Online term life insurance with coverage up to S$1.5 million and no medical examination if in good health.",
+      "facts": [
+        "Coverage up to S$1.5 million",
+        "Premiums starting at S$3/month (female non-smoker aged 18, S$100k sum insured, yearly renewable term)",
+        "Spouse eligible for a complimentary policy of up to S$250,000 without underwriting for one year",
+        "No medical examination needed if in the pink of health",
+        "Optional Total and Permanent Disability Benefit and Premium Waiver Benefit"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.fwd.com.sg/life-insurance/term-life-plus/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product summary (2025)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2025/09/FWD-Term-Life-Plus-Product-Summary-2025.pdf",
+          "local": "research/pdf/fwd/FWD-Term-Life-Plus-Product-Summary-2025.pdf"
+        },
+        {
+          "title": "Product contract (2026)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2026/04/FWD-Term-Life-Plus-Product-Contract-v1-2026.pdf",
+          "local": "research/pdf/fwd/FWD-Term-Life-Plus-Product-Contract-v1-2026.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Why choose FWD Term Life Plus insurance?"
+    },
+    {
+      "name": "FWD DIRECT Term Life",
+      "category": "term_life",
+      "subtype": "direct purchase insurance; 5-year renewable or fixed 20-year / to age 65",
+      "summary": "Term life protection for death, terminal illness and total and permanent disability, purchased directly from FWD.",
+      "facts": [
+        "Renew every five years, or fixed premium for 20 years or up to age 65",
+        "Guaranteed renewal for another five years regardless of health, up to age 80",
+        "Covers death, terminal illness and total and permanent disability",
+        "Optional Critical Illness Benefit",
+        "Purchased directly by making an appointment with customer service consultants"
+      ],
+      "channel": "unknown",
+      "url": "https://www.fwd.com.sg/life-insurance/direct-purchase-term-life-insurance/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product summary (2025)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2025/09/FWD-Direct-Term-Life-Product-Summary-2025.pdf",
+          "local": "research/pdf/fwd/FWD-Direct-Term-Life-Product-Summary-2025.pdf"
+        },
+        {
+          "title": "Fact sheet (2025)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2025/09/FWD-Direct-Term-Life-Factsheet-2025.pdf",
+          "local": "research/pdf/fwd/FWD-Direct-Term-Life-Factsheet-2025.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Why choose FWD DIRECT Term Life insurance?"
+    },
+    {
+      "name": "FWD Future First",
+      "category": "term_life",
+      "subtype": "term life sold through financial advisers; optional CI, TPD and premium waiver riders",
+      "summary": "Customisable term life cover paying the full sum covered on death or terminal illness, with a Recovery programme.",
+      "facts": [
+        "Full sum covered paid to beneficiaries on death or diagnosis of terminal illness",
+        "Option to increase coverage at key life events (completing tertiary education, marriage, buying a home, birth or adoption of a child)",
+        "Choice of 4 currencies: SGD, AUD, GBP, USD",
+        "Optional riders: MultiCover CI, Early CI, CI, Total & Permanent Disability, CI Premium Waiver, Payer Premium Waiver"
+      ],
+      "channel": "agent",
+      "url": "https://www.fwd.com.sg/personalised-financial-advice/future-first/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure (2026-10-08)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2026/10/FWD-Future-First-Brochure-2026-10-08.pdf",
+          "local": "research/pdf/fwd/FWD-Future-First-Brochure-2026-10-08.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Why choose Future First?"
+    },
+    {
+      "name": "FWD Life Protection",
+      "category": "whole_life",
+      "subtype": "participating whole life; multiplier cover; premium term 5/10/15/20/25 years",
+      "summary": "A participating whole of life plan with boosted coverage and an option to convert policy value into an annual income stream.",
+      "facts": [
+        "Multiply coverage by 2x, 3x or 5x till a minimum protection level age of 75 or 85",
+        "Premium payment term of 5, 10, 15, 20 or 25 years",
+        "Convert up to 80% of the policy value into annual income payouts from as early as age 55",
+        "FWD Early CI Protection Rider covers 175 conditions; FWD CI Protection Rider covers 60 late-stage conditions",
+        "Premiums waived for 12 months upon retrenchment"
+      ],
+      "channel": "agent",
+      "url": "https://www.fwd.com.sg/personalised-financial-advice/life-protection/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure (2026-07-24)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2026/07/FWD-Life-Protection-Brochure-2026-07-24.pdf",
+          "local": "research/pdf/fwd/FWD-Life-Protection-Brochure-2026-07-24.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "FWD Life Protection is a participating whole of life insurance"
+    },
+    {
+      "name": "FWD MultiCover CI",
+      "category": "critical_illness",
+      "subtype": "multi-pay CI across early, intermediate and late stages; sold through financial advisers",
+      "summary": "A regular payment, non-participating critical illness plan that allows multiple claims across stages and recurrence.",
+      "facts": [
+        "Up to 900% of the Sum Insured across multiple claims",
+        "Covers up to 166 medical conditions across early-, intermediate- and late-stage critical illnesses",
+        "ICU Benefit: 20% of the Sum Insured (capped at S$25,000) for ICU stays of at least 4 consecutive days",
+        "Severe ICU Benefit: 100% of the Sum Insured for stays of at least 5 consecutive days with invasive life support",
+        "Coverage terms from 5 years up to age 100"
+      ],
+      "channel": "agent",
+      "url": "https://www.fwd.com.sg/personalised-financial-advice/multicover-critical-illness/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure (2026-07-28)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2026/09/FWD-MultiCover-CI-Brochure-2026-07-28-V1.pdf",
+          "local": "research/pdf/fwd/FWD-MultiCover-CI-Brochure-2026-07-28-V1.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "FWD MultiCover CI is a regular payment, non-participating critical illness insurance plan"
+    },
+    {
+      "name": "FWD Critical Illness Plus",
+      "category": "critical_illness",
+      "subtype": "early-to-late stage CI with auto reload, bought online",
+      "summary": "Online CI plan covering early and intermediate stages of cancer, heart attack and stroke plus 37 late-stage critical illnesses.",
+      "facts": [
+        "Covers early and intermediate stages of cancer, heart attack, stroke and 37 late-stage critical illnesses",
+        "Total sum insured payable 200% (100% per claim)",
+        "Answer 4 simple questions about your health, no medical checks",
+        "Optional ICU Benefit: 100% of sum insured on Intensive Care Unit admission",
+        "Optional Premium Waiver Benefit after the auto-reload period"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.fwd.com.sg/critical-illness-insurance/critical-illness-plus/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Policy contract (2025)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2025/09/FWD-Critical-Illness-Plus-Policy-Contract-2025.pdf",
+          "local": "research/pdf/fwd/FWD-Critical-Illness-Plus-Policy-Contract-2025.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Why choose FWD Critical Illness Plus insurance?"
+    },
+    {
+      "name": "FWD Big 3 Critical Illness",
+      "category": "critical_illness",
+      "subtype": "single-payout cancer, heart attack, stroke; yearly renewable to 85; bought online",
+      "summary": "Online plan covering all stages of cancer, late-stage heart attack and late-stage stroke.",
+      "facts": [
+        "100% sum insured or total premiums paid (whichever is higher) for all stages of cancer, late-stage heart attack or late-stage stroke",
+        "Up to S$200,000 in coverage",
+        "Option to renew yearly up to age 85",
+        "Optional Heart & Neurological Disorder Benefit",
+        "Buy online with no medical examination, by answering a simple health declaration"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.fwd.com.sg/critical-illness-insurance/big-3-critical-illness/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Policy contract (2024)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2024/07/FWD-Big-3-Critical-Illness-Policy-Contract.pdf",
+          "local": "research/pdf/fwd/FWD-Big-3-Critical-Illness-Policy-Contract.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Why choose FWD Big 3 Critical Illness insurance?"
+    },
+    {
+      "name": "FWD Cancer 2.0",
+      "category": "cancer",
+      "subtype": "cancer-only; all stages plus early tumour; reload for new or recurring late-stage cancer; bought online",
+      "summary": "Online cancer plan paying 100% sum insured for any stage of cancer, with continued cover for new or recurring late-stage cancer.",
+      "facts": [
+        "100% sum insured regardless of the stage of cancer diagnosed",
+        "Pre-early Cancer Benefit: additional 10% of sum insured or S$10,000 (whichever is lower)",
+        "Multiple payouts for new or recurring late-stage cancer after a first claim",
+        "Medical second opinion reimbursed up to S$1,000 per condition",
+        "Optional Early-stage Reload Benefit"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.fwd.com.sg/critical-illness-insurance/cancer-insurance/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Policy contract (2025)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2025/09/FWD-Cancer-2.0-Policy-Contract-2025.pdf",
+          "local": "research/pdf/fwd/FWD-Cancer-2.0-Policy-Contract-2025.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Why choose FWD Cancer 2.0 insurance?"
+    },
+    {
+      "name": "FWD Heart Attack",
+      "category": "critical_illness",
+      "subtype": "single-condition (heart attack); yearly renewable to 85; bought online",
+      "summary": "Online heart attack insurance paying a lump sum on heart attack diagnosis.",
+      "facts": [
+        "100% sum insured or total premiums paid (whichever is higher) for heart attack",
+        "S$200,000 coverage from as low as S$17 a month",
+        "Renewable yearly up to age 85",
+        "Optional Heart Disorder Benefit covers 13 additional heart disorders"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.fwd.com.sg/critical-illness-insurance/heart-attack-insurance/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Policy contract / rider (2024)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2024/07/Heart-Attack-Policy-Contract-Rider.pdf",
+          "local": "research/pdf/fwd/Heart-Attack-Policy-Contract-Rider.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Why choose FWD Heart Attack insurance?"
+    },
+    {
+      "name": "FWD Stroke",
+      "category": "critical_illness",
+      "subtype": "single-condition (stroke); yearly renewable to 85; bought online",
+      "summary": "Online stroke insurance paying a lump sum on stroke diagnosis.",
+      "facts": [
+        "100% sum insured or total premiums paid (whichever is higher) for stroke",
+        "S$200,000 of coverage from as low as S$17 a month",
+        "Renewable yearly up to age 85",
+        "Optional Neurological Disorders Benefit covers 11 neurological disorder procedures"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.fwd.com.sg/critical-illness-insurance/stroke-insurance/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Policy contract (2024)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2024/08/FWD-Stroke-insurance-policy-contract.pdf",
+          "local": "research/pdf/fwd/FWD-Stroke-insurance-policy-contract.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Why choose FWD Stroke insurance?"
+    },
+    {
+      "name": "FWD Flex",
+      "category": "critical_illness",
+      "subtype": "entry-level CI for cancer, heart attack, stroke; yearly renewable to 55; bought online",
+      "summary": "Online critical illness plan paying 100% on cancer (all stages), late-stage heart attack, late-stage stroke or death.",
+      "facts": [
+        "100% lump sum payout",
+        "Sum insured choices of S$20,000, S$30,000 and S$40,000",
+        "Renew coverage every year up to age 55",
+        "Buy online by answering a simple health declaration, no medical examination",
+        "Cover starting from S$3/month"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.fwd.com.sg/critical-illness-insurance/fwd-flex/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Policy summary (2025)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2025/09/FWD-Flex-Policy-Summary-2025.pdf",
+          "local": "research/pdf/fwd/FWD-Flex-Policy-Summary-2025.pdf"
+        },
+        {
+          "title": "Policy contract (2025)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2025/09/FWD-Flex-Policy-Contract-2025.pdf",
+          "local": "research/pdf/fwd/FWD-Flex-Policy-Contract-2025.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Why choose FWD Flex critical illness insurance?"
+    },
+    {
+      "name": "FWD Personal Accident",
+      "category": "personal_accident",
+      "subtype": "yearly renewable adult PA with optional enhanced benefits; bought online",
+      "summary": "Online personal accident plan covering accidental death, disability and medical expenses, including infectious diseases.",
+      "facts": [
+        "Up to S$1,000,000 cover against accidental death",
+        "Covers 24 infectious diseases, including COVID-19 and dengue, paying up to 50% of the benefit limit capped at S$150,000",
+        "Adventure sports coverage at no additional cost",
+        "Policy renewable annually up to age 75",
+        "Optional daily hospital income for up to 365 days and weekly income for up to 104 weeks"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.fwd.com.sg/personal-accident-insurance/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product summary",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2024/11/FWD-PA-product-summary-v3.pdf",
+          "local": "research/pdf/fwd/FWD-PA-product-summary-v3.pdf"
+        },
+        {
+          "title": "Policy wording",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2024/11/FWD-Personal-Accident-insurance-policy-wording.pdf",
+          "local": "research/pdf/fwd/FWD-Personal-Accident-insurance-policy-wording.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Why choose FWD Personal Accident insurance?"
+    },
+    {
+      "name": "FWD Life PA",
+      "category": "personal_accident",
+      "subtype": "lifelong yearly renewable PA to age 100 with lifetime no-claim discount; optional Income Support and Catch-All riders",
+      "summary": "A yearly renewable personal accident policy covering accidental death, disability and medical expenses to age 100.",
+      "facts": [
+        "Guaranteed renewals up till age 100 as long as premiums are paid",
+        "Lifetime 10% No Claim Discount after 3 consecutive claim-free policy years",
+        "Up to S$1.5m payout for accidents on commercial planes and up to S$1m on public transport",
+        "Covers 24 infectious diseases including Measles, Dengue Fever and HFMD",
+        "Optional Catch-All Rider: up to S$50,000 additional payout for ICU admission with invasive life support"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.fwd.com.sg/accident-health/life-pa",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product summary (2026-05-15)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2026/07/FWD-Life-PA-Product-Summary-2026-05-15.pdf",
+          "local": "research/pdf/fwd/FWD-Life-PA-Product-Summary-2026-05-15.pdf"
+        },
+        {
+          "title": "Brochure (2024)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2024/10/Life-PA-Brochure-2-10-2024-1.pdf",
+          "local": "research/pdf/fwd/Life-PA-Brochure-2-10-2024-1.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Why choose FWD Life PA insurance?"
+    },
+    {
+      "name": "FWD Life Income Secure",
+      "category": "annuity",
+      "subtype": "participating whole life paying lifetime Cash Benefit; single premium or 2-year premium term",
+      "summary": "A participating whole life policy providing a lifetime of regular Cash Benefit payouts with a short premium commitment.",
+      "facts": [
+        "Single Premium or a 2-year payment term",
+        "Cash Benefit payouts from as early as the end of Policy Year 2, up to the original Person Insured's 120th birthday",
+        "100% of total premiums paid guaranteed from the end of Policy Year 5 (subject to premiums paid)",
+        "Cash Benefit payable monthly or yearly, or accumulated with FWD at a non-guaranteed interest rate"
+      ],
+      "channel": "agent",
+      "url": "https://www.fwd.com.sg/personalised-financial-advice/life-income-secure/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure (2026)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2026/10/FWD-Life-Income-Secure-Brochure-2026-01-28-V1.pdf",
+          "local": "research/pdf/fwd/FWD-Life-Income-Secure-Brochure-2026-01-28-V1.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "FWD Life Income Secure is a participating whole life Policy"
+    },
+    {
+      "name": "FWD Life Income Plus",
+      "category": "annuity",
+      "subtype": "participating whole life paying lifetime Cash Benefit and Cash Benefit Plus",
+      "summary": "A participating whole of life plan providing regular Cash Benefit payouts up to the original person insured's 120th birthday.",
+      "facts": [
+        "100% of total premiums paid (excluding riders) guaranteed from as early as the end of the 3rd policy year",
+        "Cash Benefit payouts from as early as the end of the 5th policy year, up till age 120",
+        "Cash Benefit Plus payouts from the policy anniversary after the person insured turns 60 (or end of the 20th policy year after first payout, whichever is later)",
+        "Payouts received monthly or annually"
+      ],
+      "channel": "agent",
+      "url": "https://www.fwd.com.sg/personalised-financial-advice/life-income-plus/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure (2026-06-19)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2026/09/FWD-Life-Income-Plus-Brochure-2026-06-19-V1.pdf",
+          "local": "research/pdf/fwd/FWD-Life-Income-Plus-Brochure-2026-06-19-V1.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "FWD Life Income Plus is a participating whole of life plan"
+    },
+    {
+      "name": "FWD Invest Goal 1",
+      "category": "ilp",
+      "subtype": "single premium ILP (SGD or USD)",
+      "summary": "A single premium investment-linked plan with a constant on-going charge and penalty-free withdrawals.",
+      "facts": [
+        "On-going charge kept at 1% p.a.",
+        "Penalty-free withdrawals anytime, keeping a minimum balance of 10% of the single premium",
+        "Death Benefit of 105% of policy value",
+        "Over 50 curated funds with complimentary auto-rebalancing",
+        "Entry age 18 to 75 for the policy owner (30 days to 75 for the person insured)"
+      ],
+      "channel": "agent",
+      "url": "https://www.fwd.com.sg/personalised-financial-advice/invest-goal-1/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure (2026-08-24)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2026/09/FWD-Invest-Goal-1-Brochure-2026-08-24-V1.pdf",
+          "local": "research/pdf/fwd/FWD-Invest-Goal-1-Brochure-2026-08-24-V1.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Why choose Invest Goal 1?"
+    },
+    {
+      "name": "FWD Invest First Max",
+      "category": "ilp",
+      "subtype": "regular premium ILP with Booster, Loyalty and Accumulation bonuses",
+      "summary": "A regular premium investment-linked plan with bonuses and reducing charge rates.",
+      "facts": [
+        "Booster Bonus of up to 186% over the first 2 years of regular premium payments",
+        "Loyalty Bonus of up to 1.1% p.a. of Accumulation Units Account value from the 3rd policy year",
+        "Premium payment term of 10 to 30 years",
+        "Available in SGD, USD, GBP or AUD",
+        "Entry age: person insured 30 days to 45-65 (depending on premium payment term); policy owner 18 to 70"
+      ],
+      "channel": "agent",
+      "url": "https://www.fwd.com.sg/personalised-financial-advice/invest-first-max/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure (2026-08-24)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2026/09/FWD-Invest-First-Max-Brochure-2026-08-24-V1.pdf",
+          "local": "research/pdf/fwd/FWD-Invest-First-Max-Brochure-2026-08-24-V1.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "FWD Invest First Max is a regular premium investment-linked plan"
+    },
+    {
+      "name": "FWD Invest First Summit",
+      "category": "ilp",
+      "subtype": "regular premium ILP with Booster, Loyalty and Perpetual bonuses and capped charges",
+      "summary": "A regular premium investment-linked plan with bonuses, capped charges and flexibilities.",
+      "facts": [
+        "Booster Bonus of up to a total of 165% of Annualised Regular Premium over the first 3 years",
+        "Loyalty Bonus of up to 1.5% p.a. of AUA value from the 4th Policy Year",
+        "Premium Payment Term between 10 and 30 years",
+        "Available in SGD and USD",
+        "Entry age: person insured 30 days to 45-65 (depending on premium payment term); policy owner 18 to 70"
+      ],
+      "channel": "agent",
+      "url": "https://www.fwd.com.sg/personalised-financial-advice/invest-first-summit/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure (2026-08-24)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2026/09/FWD-Invest-First-Summit-Brochure-2026-08-24-V1.pdf",
+          "local": "research/pdf/fwd/FWD-Invest-First-Summit-Brochure-2026-08-24-V1.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "FWD Invest First Summit is a regular premium investment-linked plan"
+    },
+    {
+      "name": "FWD Invest Flexi Elite",
+      "category": "ilp",
+      "subtype": "regular premium ILP with 3 or 5-year premium commitment",
+      "summary": "A regular premium investment-linked plan with a short premium commitment and zero policy charges after policy year 10.",
+      "facts": [
+        "Premium commitment of just 3 or 5 years",
+        "Zero policy charges after policy year 10",
+        "Bonuses: Booster Bonus, Annual Premium Bonus and Contribution Bonus",
+        "Involuntary unemployment benefit and penalty-free withdrawals"
+      ],
+      "channel": "agent",
+      "url": "https://www.fwd.com.sg/personalised-financial-advice/invest-flexi-elite/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure (2026-08-24)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2026/09/FWD-Invest-Flexi-Elite-Brochure-2026-08-24-V1.pdf",
+          "local": "research/pdf/fwd/FWD-Invest-Flexi-Elite-Brochure-2026-08-24-V1.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "FWD Invest Flexi Elite is a regular premium investment-linked plan"
+    },
+    {
+      "name": "FWD Invest First Horizon",
+      "category": "ilp",
+      "subtype": "regular premium ILP with fixed charge structure",
+      "summary": "A regular premium investment-linked plan with a transparent, fixed charge structure.",
+      "facts": [
+        "Fixed charge structure",
+        "Dividend cash-out option from month 1 on curated dividend-paying funds",
+        "Booster Bonus of up to 60% over the first 2 years of Regular Premium payments",
+        "Entry age: person insured 30 days to 55 (depending on Premium Payment Term); policy owner 18 to 70"
+      ],
+      "channel": "agent",
+      "url": "https://www.fwd.com.sg/personalised-financial-advice/invest-first-horizon/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure (2026-08-24)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2026/09/FWD-Invest-First-Horizon-Brochure-2026-08-24-V1x-1-1.pdf",
+          "local": "research/pdf/fwd/FWD-Invest-First-Horizon-Brochure-2026-08-24-V1x-1-1.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "FWD Invest First Horizon is a Regular Premium investment-linked plan"
+    },
+    {
+      "name": "FWD Invest Flexi VII",
+      "category": "ilp",
+      "subtype": "regular premium ILP, minimum 7-year premium commitment",
+      "summary": "A regular premium investment-linked plan with a minimum 7-year premium commitment and a transparent charge structure.",
+      "facts": [
+        "Minimum 7-year premium commitment; Minimum Investment Term of 10 years",
+        "Booster Bonus of up to 42% for the first Policy Year of Regular Premium payments",
+        "Annual Premium Bonus of 1% p.a. during the first 7 Policy Years (annual payment frequency)",
+        "Dividend cash-out option from month 1",
+        "Available in SGD; entry age: person insured 30 days to 65, policy owner 18 to 70"
+      ],
+      "channel": "agent",
+      "url": "https://www.fwd.com.sg/personalised-financial-advice/invest-flexi-vii/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Brochure (2026-08-24)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2026/09/FWD-Invest-Flexi-VII-Brochure-2026-08-24-V1-1.pdf",
+          "local": "research/pdf/fwd/FWD-Invest-Flexi-VII-Brochure-2026-08-24-V1-1.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "FWD Invest Flexi VII is a Regular Premium investment-linked plan"
+    },
+    {
+      "name": "FWD Save Smart Series 9",
+      "category": "endowment",
+      "subtype": "2-year single premium short-term savings plan",
+      "summary": "A short-term savings plan with a guaranteed return when the plan matures at the end of 2 years.",
+      "facts": [
+        "Guaranteed return of 1.6% per annum at maturity after 2 years",
+        "Capital 100% guaranteed at maturity",
+        "One-time upfront payment from S$10,000 up to S$200,000 per policy",
+        "Entry ages from 18 up to 70 years old",
+        "No medical underwriting required"
+      ],
+      "channel": "unknown",
+      "url": "https://www.fwd.com.sg/savings-insurance/save-smart-series/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product summary (2026-01-21)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2026/01/FWD-Save-Smart-Series-9-Product-Summary-2026-01-21-V1.pdf",
+          "local": "research/pdf/fwd/FWD-Save-Smart-Series-9-Product-Summary-2026-01-21-V1.pdf"
+        },
+        {
+          "title": "Policy contract (2026-01-21)",
+          "url": "https://www.fwd.com.sg/wp-content/uploads/2026/01/FWD-Save-Smart-Series-9-Policy-Contract-2026-01-21-V1.pdf",
+          "local": "research/pdf/fwd/FWD-Save-Smart-Series-9-Policy-Contract-2026-01-21-V1.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "FWD Save Smart Series 9 insurance is a short-term savings plan"
+    }
+  ],
+  "not_found": [
+    "hospitalisation (no Integrated Shield Plan)",
+    "ip_rider",
+    "disability_income",
+    "long_term_care",
+    "hospital_cash (only optional daily hospital income inside the PA plans)",
+    "maternity_child",
+    "outpatient",
+    "rider (no standalone rider page)"
+  ],
+  "notes": [
+    "Product list taken from the FWD site's own product menu (Life, Critical illness, Accident & Health, Invest & Save) plus DIRECT Term Life and Flex, which are linked from other FWD pages.",
+    "FWD International Health page (/international-health-insurance/) loads with no product content for scripted requests (title only); left out as unverified.",
+    "Recover First (linked from the critical illness hub), Essential Life, and Save First Series 2 return an error or a generic search-results page; left out as unverifiable.",
+    "FWD HealthFirst (teleconsultation and MHC clinic rates) is described on FWD pages as an additional benefit, not part of the policy contract; not listed as a product.",
+    "Products labelled 'Get advice' are sold through financial advisory partners; channel set to agent. Products with 'Buy online' pages are direct-online.",
+    "FWD Heart Attack and FWD Stroke are sold as standalone pages; their policy contract PDFs are the only official documents linked from those pages.",
+    "The FWD PDF sitemap (sitemap_pdf.xml) is stale (2018-2019 files); PDFs were taken from the product pages instead."
+  ]
+}

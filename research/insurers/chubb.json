@@ -1,0 +1,87 @@
+{
+  "id": "chubb",
+  "name": "Chubb Singapore",
+  "formerly": null,
+  "website": "https://www.chubb.com/sg-en/",
+  "products_index_url": "https://www.chubb.com/sg-en/individuals-families.html",
+  "claims_url": "https://www.chubb.com/sg-en/claims.html",
+  "contact_url": "https://www.chubb.com/sg-en/contact-us.html",
+  "verified_on": "2026-10-13",
+  "products": [
+    {
+      "name": "Chubb PAL Protect II",
+      "category": "personal_accident",
+      "subtype": "adult / couple plan with dependent child cover",
+      "summary": "Personal accident plan (Chubb Personal Accident & Lifestyle Protect II) covering accident-related injuries and disabilities, plus up to 14 types of covered diseases.",
+      "facts": [
+        "Accidental Death: up to S$1,000,000 lump sum, doubled if the accident happens on a public conveyance",
+        "Accidental Permanent Disability: up to S$1,000,000 lump sum",
+        "Daily Income Relief: up to S$300 daily if hospitalised due to accidental injury",
+        "Covers 14 infectious diseases including Dengue Fever, Hand, Foot & Mouth Disease (HFMD), food poisoning",
+        "Free automatic dependent child(ren) cover for Couple Plan (up to 4 children)"
+      ],
+      "channel": "unknown",
+      "url": "https://www.chubb.com/sg-en/individuals-families/personal-accident-insurance.html",
+      "url_status": "ok",
+      "pdfs": [],
+      "fact_source": "page",
+      "evidence": "With Chubb PAL Protect ® II (Chubb Personal Accident & Lifestyle Protect ® II)"
+    },
+    {
+      "name": "Hospital Income Insurance",
+      "category": "hospital_cash",
+      "subtype": null,
+      "summary": "Daily hospital cash benefits for hospitalisation due to accidents or illnesses, distributed through partners and intermediaries.",
+      "facts": [
+        "Daily hospital cash benefit due to accidents or illnesses",
+        "ICU daily hospital cash benefit",
+        "Get well benefit",
+        "24-hour worldwide coverage"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chubb.com/sg-en/individuals-families/hospital-income-insurance.html",
+      "url_status": "ok",
+      "pdfs": [],
+      "fact_source": "page",
+      "evidence": "Chubb offers hospital income insurance, through our partners and intermediaries"
+    },
+    {
+      "name": "Dental Insurance",
+      "category": "outpatient",
+      "subtype": "dental",
+      "summary": "Dental cover for emergency treatments and routine visits, distributed through partners and intermediaries.",
+      "facts": [
+        "Coverage on emergency dental treatments, routine preventive treatments and X-rays",
+        "Coverage on teeth extractions and root canal treatments",
+        "Access to a wide network of dental clinics"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chubb.com/sg-en/individuals-families/dental-insurance.html",
+      "url_status": "ok",
+      "pdfs": [],
+      "fact_source": "page",
+      "evidence": "Chubb offers dental insurance, through our partners and intermediaries"
+    }
+  ],
+  "not_found": [
+    "hospitalisation",
+    "ip_rider",
+    "term_life",
+    "whole_life",
+    "critical_illness",
+    "cancer",
+    "disability_income",
+    "long_term_care",
+    "endowment",
+    "ilp",
+    "annuity",
+    "maternity_child",
+    "rider"
+  ],
+  "notes": [
+    "Individuals & Families menu lists Travel, Home, Accident, Personal (dental, hospital income, jewellery, mobile phone) and Pets only; skipped travel, home, pet, jewellery, mobile phone as out of scope.",
+    "No product PDFs (brochure, product summary, policy wording) are linked from the three product pages, so pdfs is empty for all.",
+    "Hospital Income and Dental pages name no product brand and give no limits; both say they are distributed through partners and intermediaries.",
+    "Life, health and CI plans may be sold by a separate Chubb life entity; none appear on chubb.com/sg-en, and chubblife.com.sg refused a scripted request, so nothing was confirmed there."
+  ]
+}

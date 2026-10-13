@@ -1,0 +1,702 @@
+{
+  "id": "china_life",
+  "name": "China Life Insurance (Singapore)",
+  "formerly": null,
+  "website": "https://www.chinalife.com.sg",
+  "products_index_url": "https://www.chinalife.com.sg/products/protection",
+  "claims_url": "https://www.chinalife.com.sg/forms/filing-claim",
+  "contact_url": "https://www.chinalife.com.sg/contact-us",
+  "verified_on": "2026-10-13",
+  "products": [
+    {
+      "name": "China Life FlexiCash Growth",
+      "category": "endowment",
+      "subtype": "guaranteed yearly cash benefit endowment",
+      "summary": "Savings plan with a guaranteed lump sum payout at maturity, a guaranteed yearly cash benefit and death coverage during the policy term.",
+      "facts": [
+        "Choice of Policy (5, 10 or 12 years) and Premium Payment (2, 5 or 7 years) Terms",
+        "100% Capital Guaranteed upon Maturity",
+        "Yearly guaranteed cash benefit of 10% of the annual premium starting from the end of second policy year",
+        "No medical questionnaire or medical check-up is needed to sign up"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/China-Life-FlexiCash-Growth",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/China%20Life%20FlexiCash%20Growth%20Brochure_1.pdf",
+          "local": "research/pdf/china_life/China_Life_FlexiCash_Growth_Brochure_1.pdf"
+        },
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/China%20Life%20FlexiCash%20Growth%20Brochure_1.pdf",
+          "local": "research/pdf/china_life/China_Life_FlexiCash_Growth_Brochure_1.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "guaranteed yearly cash benefit and get protected at the same time"
+    },
+    {
+      "name": "China Life SaveForward Endowment Plan",
+      "category": "endowment",
+      "subtype": "lump sum maturity endowment",
+      "summary": "Endowment plan with a lump sum maturity payout and death cover during the policy term.",
+      "facts": [
+        "Choice of Policy (8 to 20 years) and Premium Payment (5 to 15 years) Terms",
+        "100% Capital Guaranteed upon Maturity",
+        "Lump sum payout consists of a guaranteed amount and potential bonuses",
+        "No medical questionnaire or medical check-up is needed to sign up"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/China-Life-SaveForward-Endowment-Plan",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/China%20Life%20SaveForward%20Endowment%20Plan%20Brochure_1.pdf",
+          "local": "research/pdf/china_life/China_Life_SaveForward_Endowment_Plan_Brochure_1.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "China Life SaveForward Endowment Plan, you can choose when you want to receive"
+    },
+    {
+      "name": "China Life Prosperous Retirement",
+      "category": "annuity",
+      "subtype": "guaranteed monthly retirement income",
+      "summary": "Retirement plan that pays a guaranteed monthly income from a chosen payout age, with a capital guarantee and major cancer cover.",
+      "facts": [
+        "Guaranteed income paid over your choice of 10, 20 or 30 years",
+        "Every dollar paid is guaranteed 5 years after all your premiums are paid on time",
+        "Upon death or terminal illness, we will pay you 108% of all premiums paid, with an extra bonus",
+        "Lump sum payout on first diagnosis of major cancer; lump sum payout upon retrenchment"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/China-Life-Prosperous-Retirement",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/Prosperous%20Retirement_final_en_0.pdf",
+          "local": "research/pdf/china_life/Prosperous_Retirement_final_en_0.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Dream of a peaceful and carefree retirement after a lifetime of hard work?"
+    },
+    {
+      "name": "China Life Harvest Income Plan (USD)",
+      "category": "whole_life",
+      "subtype": "participating whole life, USD, lifetime yearly income (listed under Retirement on site)",
+      "summary": "Participating whole life plan in USD providing lifetime yearly income with a capital guarantee and a non-guaranteed loyalty bonus every five years.",
+      "facts": [
+        "Single, 5-year or 10-year payment term options",
+        "100% Capital Guarantee",
+        "Lifetime income from the end of 5th policy year at the earliest",
+        "Non-guaranteed loyalty bonus distributed every five years",
+        "No medical examination needed"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/china-life-harvest-income-plan-%28USD%29",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/China%20Life%20Harvest%20Income%20Plan%20%28USD%29_FINAL_ENG.pdf",
+          "local": "research/pdf/china_life/China_Life_Harvest_Income_Plan_USD__FINAL_ENG.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "China Life Harvest Income Plan (USD) is a participating whole life plan"
+    },
+    {
+      "name": "China Life Harvest Income Supreme Plan (USD)",
+      "category": "whole_life",
+      "subtype": "participating whole life, USD, lifetime yearly income (listed under Retirement on site)",
+      "summary": "Participating whole life insurance in USD for legacy and wealth planning, with guaranteed and non-guaranteed lifelong yearly income.",
+      "facts": [
+        "Single, 5-year or 10-year payment term options",
+        "Capital Guarantee",
+        "Contingent Life Insured(s) can be appointed for multi-generational income",
+        "Financial protection in case of death and terminal illness"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/insurance/china-life-harvest-income-supreme-plan-usd",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/China%20Life%20Harvest%20Income%20Supreme%20Plan%20%28USD%29_EN.pdf",
+          "local": "research/pdf/china_life/China_Life_Harvest_Income_Supreme_Plan_USD__EN.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "participating whole life insurance designed for legacy and wealth planning"
+    },
+    {
+      "name": "China Life Harvest Income Supreme Plan (USD) S2",
+      "category": "whole_life",
+      "subtype": "participating whole life, USD, three-year premium payment term (listed under Retirement on site)",
+      "summary": "Participating whole life plan in USD with a three-year premium payment term, lifetime yearly income and capital guarantee.",
+      "facts": [
+        "Three-year premium payment term",
+        "Lifetime yearly income",
+        "Capital guarantee",
+        "Contingent Life Insured Option"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/china-life-harvest-income-supreme-plan-usd-s2",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/China%20Life%20Harvest%20Income%20Supreme%20Plan%20%28USD%29%20S2.pdf",
+          "local": "research/pdf/china_life/China_Life_Harvest_Income_Supreme_Plan_USD_S2.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "participating whole life insurance plan designed to provide a stable approach to wealth growth"
+    },
+    {
+      "name": "China Life Lifetime Income Plan",
+      "category": "whole_life",
+      "subtype": "participating whole life, lifetime yearly income (listed under Retirement on site)",
+      "summary": "Participating whole life plan offering a lifetime of yearly income, capital guarantee, and protection against death and terminal illness.",
+      "facts": [
+        "Premium payment terms of 3, 5, 10, 15, 20, or 25 years",
+        "100% Capital Guarantee",
+        "Maximum entry age of life insured is subject to [entry age + premium payment term] is less than or equal to 70 (Age Last Birthday)",
+        "Optional riders can be added"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/china-life-lifetime-income-plan",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/EN_China%20Life%20Lifetime%20Income_2026_06_26.pdf",
+          "local": "research/pdf/china_life/EN_China_Life_Lifetime_Income_2026_06_26.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "China Life Lifetime Income is a participating whole life insurance plan"
+    },
+    {
+      "name": "China Life Lifetime Income Supreme Plan",
+      "category": "whole_life",
+      "subtype": "participating whole life, lifetime yearly income (listed under Retirement on site)",
+      "summary": "Participating whole life plan for wealth, retirement income and legacy, with capital guarantee and a lifetime yearly income.",
+      "facts": [
+        "Single or regular premium payment term of 5 or 10 years",
+        "Capital Guarantee",
+        "Lifetime Yearly Income",
+        "Contingent Life Insured Option",
+        "No medical check-up needed"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/china-life-lifetime-income-supreme-plan",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/EN_China%20Life%20Lifetime%20Income%20Supreme%20Plan_2026_06_26.pdf",
+          "local": "research/pdf/china_life/EN_China_Life_Lifetime_Income_Supreme_Plan_2026_06_26.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "China Life Lifetime Income Supreme Plan is a participating whole life plan"
+    },
+    {
+      "name": "China Life Lifetime Income Supreme Plan (RMB)",
+      "category": "whole_life",
+      "subtype": "RMB-denominated, lifetime yearly income (listed under Retirement on site)",
+      "summary": "RMB plan offering lifetime yearly income with a capital guarantee, plus death and terminal illness cover.",
+      "facts": [
+        "100% Capital Guarantee",
+        "Lifetime Yearly Income",
+        "Contingent Life Insured Option",
+        "For regular premium payment, maximum entry age is subject to [entry age + premium payment term] less than or equal to 70 Age Last Birthday"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/china-life-lifetime-income-supreme-plan%28rmb%29",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/China%20Life%20Lifetime%20Income%20Supreme%20Plan%20%28RMB%29.pdf",
+          "local": "research/pdf/china_life/China_Life_Lifetime_Income_Supreme_Plan_RMB_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "China Life Lifetime Income Supreme Plan (RMB) offers reliable lifetime yearly income"
+    },
+    {
+      "name": "China Life Eternal Wealth",
+      "category": "whole_life",
+      "subtype": "legacy / multi-generational wealth plan (participating)",
+      "summary": "Plan for multi-generational wealth accumulation and legacy, with a capital guarantee and unlimited changes of life insured.",
+      "facts": [
+        "Premium payment term: Single Premium, 5, 10, 15, 20, or 25 years",
+        "100% capital guarantee",
+        "Change of Life Insured, unlimited times",
+        "Contingent Life Insured Option and Premium Freeze Option",
+        "Covered for Death and Terminal Illness"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/china-life-eternal-wealth",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/China%20Life%20Eternal%20Wealth_en_Final.pdf",
+          "local": "research/pdf/china_life/China_Life_Eternal_Wealth_en_Final.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "China Life Eternal Wealth is designed to serve your wealth accumulation needs"
+    },
+    {
+      "name": "China Life Eternal Wealth / China Life Eternal Wealth Supreme (USD)",
+      "category": "whole_life",
+      "subtype": "legacy / multi-generational wealth plan, USD (two plan versions on one page)",
+      "summary": "USD plans for multi-generational wealth accumulation and legacy, with a capital guarantee, unlimited changes of life insured and a policy split option.",
+      "facts": [
+        "The maximum entry age of life insured is 65 (age last birthday)",
+        "100% Capital Guarantee",
+        "Change of Life Insured, Unlimited Times",
+        "Policy Split Option",
+        "Covered for Death and Terminal Illness"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/china-life-eternal-wealth-china-life-eternal-wealth-supreme-USD",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/China%20Life%20Eternal%20Wealth%20%28USD%29%20%26%20China%20Life%20Eternal%20Wealth%20Supreme%20%28USD%29.pdf",
+          "local": "research/pdf/china_life/China_Life_Eternal_Wealth_USD_China_Life_Eternal_Wealth_Supreme_USD_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "China Life Eternal Wealth (USD) and China Life Eternal Wealth Supreme (USD) are designed"
+    },
+    {
+      "name": "China Life Accident Guardian",
+      "category": "personal_accident",
+      "subtype": "yearly renewable, 6 plan types (Plan 0 to Plan 5)",
+      "summary": "Yearly renewable accident plan covering accidental death, permanent disablement, hospital cash and medical expenses, with double/triple indemnity.",
+      "facts": [
+        "Accidental Death Benefit from $10,000 (Plan 0) to $500,000 (Plan 5)",
+        "Daily Hospital Cash up to $250 for a maximum of 180 days",
+        "Double/Triple Indemnity Benefit: up to 3x of the Accidental Death Benefit or Major Permanent Disablement Benefit",
+        "Choose from 6 different types of plans"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/China-Life-Accident-Guardian",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/China%20Life%20Accident%20Guardian%20brochure_en_1.pdf",
+          "local": "research/pdf/china_life/China_Life_Accident_Guardian_brochure_en_1.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "China Life Accident Guardian is a yearly renewable plan"
+    },
+    {
+      "name": "China Life Cancer Guardian",
+      "category": "cancer",
+      "subtype": "cancer of all stages, guaranteed renewable",
+      "summary": "Plan that pays 100% of the sum insured on diagnosis of cancer at all stages, with a No Claim Discount in the following renewable year.",
+      "facts": [
+        "Coverage on cancer of all stages and death up to 100 years old",
+        "100% payout of sum insured on cancer diagnosis",
+        "No Claim Discount",
+        "Death benefit of SGD5,000 less amounts owing to us",
+        "Guaranteed renewable"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/China-Life-Cancer-Guardian",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/CLIS%20Cancer%20Guardian%20Plan%20Brochure_0_1.pdf",
+          "local": "research/pdf/china_life/CLIS_Cancer_Guardian_Plan_Brochure_0_1.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "China Life Cancer Guardian, it provides you with a peace of mind"
+    },
+    {
+      "name": "China Life MediCash Guardian",
+      "category": "hospital_cash",
+      "subtype": "yearly renewable, Plans 1 to 3",
+      "summary": "Yearly renewable plan paying a cash amount per day of hospital confinement due to illness or accident, to complement a hospitalisation plan.",
+      "facts": [
+        "Daily Hospital Cash Benefit (due to Illness): S$50 / S$100 / S$200 per day for Plan 1 / 2 / 3",
+        "Daily Hospital Cash Benefit (due to Accident): S$100 / S$200 / S$400 per day",
+        "Additional daily benefit in the Intensive Care Unit: S$150 / S$300 / S$600 per day",
+        "Recuperation benefit for non-surgical hospitalisation: S$50 / S$100 / S$150 per hospitalisation"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/China-Life-MediCash-Guardian",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/CLIS%20MediCash%20Guardian%20Brochure_0_1.pdf",
+          "local": "research/pdf/china_life/CLIS_MediCash_Guardian_Brochure_0_1.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "You can complement your existing hospitalisation plans with China Life MediCash Guardian"
+    },
+    {
+      "name": "China Life Multiplier Guardian Series",
+      "category": "whole_life",
+      "subtype": "whole life with critical illness cover; Multiplier Guardian and Multiplier Guardian Plus",
+      "summary": "Two whole life plans covering death, total and permanent disability, terminal illness and 38 critical illnesses, with coverage multipliers.",
+      "facts": [
+        "Coverage can be multiplied by 1, 2, 3 or 4 times of the sum insured",
+        "Protection against any of the 38 critical illnesses",
+        "Option to receive yearly retirement benefit as early as from age 55",
+        "Guaranteed and level premium rates (not applicable to Multiplier Guardian Plus)"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/China-Life-Multiplier-Guardian-Series",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/China%20Life%20Multiplier%20Guardian%20Series%20Brochure_3.pdf",
+          "local": "research/pdf/china_life/China_Life_Multiplier_Guardian_Series_Brochure_3.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "China Life Multiplier Guardian Series comprises of two whole life plans"
+    },
+    {
+      "name": "China Life Multiplier Guardian Supreme",
+      "category": "whole_life",
+      "subtype": "whole life with multi-stage critical illness cover",
+      "summary": "Whole life plan covering early, intermediate and major critical illnesses plus death, total and permanent disability and terminal illness.",
+      "facts": [
+        "Early Payouts for 104 Multi-Stage Critical Illness Conditions",
+        "Additional Payouts for 35 Special Conditions",
+        "Up to 4x coverage",
+        "Premium payment terms of 5, 10, 15 or 20 years",
+        "Option to receive Yearly Retirement Benefits"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/china-life-multiplier-guardian-supreme",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/China%20Life%20Multiplier%20Guardian%20Supreme%20brochure_ENG.pdf",
+          "local": "research/pdf/china_life/China_Life_Multiplier_Guardian_Supreme_brochure_ENG.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "A whole life plan offering comprehensive financial protection across various life stages."
+    },
+    {
+      "name": "China Life Term Guardian",
+      "category": "term_life",
+      "subtype": "level term; 5-year renewable, 20-year, or to age 64",
+      "summary": "Regular premium term plan covering death, terminal illness and total and permanent disability, with guaranteed and level premium rates.",
+      "facts": [
+        "Policy terms: 5-year renewable term, 20-year term, or term up to age 64 (last birthday)",
+        "5-year renewable: coverage up to age 84, subject to maximum renewable age of age 79",
+        "Guaranteed and Level Premium Rates",
+        "Riders can be added"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/China-Life-Term-Guardian",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/CLIS%20Term%20Guardian%20Brochure_0.pdf",
+          "local": "research/pdf/china_life/CLIS_Term_Guardian_Brochure_0.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "China Life Term Guardian is a regular premium term plan"
+    },
+    {
+      "name": "China Life Term Guardian Plus",
+      "category": "term_life",
+      "subtype": "non-participating level term with terminal cancer benefit",
+      "summary": "Non-participating regular premium term plan covering death, terminal illness, total and permanent disability and terminal cancer.",
+      "facts": [
+        "Terminal cancer benefit",
+        "Option to Purchase Additional Insurance",
+        "Conversion privilege to other life insurance plans",
+        "Long period coverage with guaranteed premiums"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/China-Life-Term-Guardian-Plus",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/Term%20Guardian%20Plus_en%20v5%E9%AB%98%E6%B8%85_1.pdf",
+          "local": "research/pdf/china_life/Term_Guardian_Plus_en_v5__1.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "China Life Term Guardian Plus is a non-participating regular premium term insurance plan"
+    },
+    {
+      "name": "China Life Whole Life Guardian",
+      "category": "whole_life",
+      "subtype": "participating whole life, limited premium payment",
+      "summary": "Whole life plan covering death, total and permanent disability and terminal illness, with non-guaranteed bonuses.",
+      "facts": [
+        "Choice of Limited Premium Payment Term: 5, 10, 15, 20 or 25 years",
+        "Non-guaranteed bonuses",
+        "Guaranteed and Level Premium Rates",
+        "Policy matures on the policy anniversary following the life insured's 100th birthday"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/China-Life-Whole-Life-Guardian",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/China%20Life%20Whole%20Life%20Guardian%20Brochure.pdf",
+          "local": "research/pdf/china_life/China_Life_Whole_Life_Guardian_Brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "China Life Whole Life Guardian is a whole life plan"
+    },
+    {
+      "name": "DIRECT – China Life Term Plan",
+      "category": "term_life",
+      "subtype": "direct purchase insurance (DPI); 5-year renewable, 20-year, or to age 64",
+      "summary": "Regular premium term plan sold directly by the insurer without a financial adviser, covering death, terminal illness and total and permanent disability.",
+      "facts": [
+        "Sum insured between SGD50,000 and SGD400,000",
+        "Entry age: minimum 18; maximum 64 (5 and 20 years) or 59 (up to age 64), last birthday",
+        "Policy terms: 5-year renewable term, 20-year term, or term up to age 64",
+        "5-year renewable: coverage up to age 84, maximum renewable age 79"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.chinalife.com.sg/products/DIRECT-China-Life-Term-Plan",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "DPI Fact Sheet and Checklist",
+          "url": "https://www.chinalife.com.sg/sites/default/files/2022-10/CLIS%20DPI%20Fact%20Sheet%20and%20Checklist_1.pdf",
+          "local": "research/pdf/china_life/CLIS_DPI_Fact_Sheet_and_Checklist_1.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "you may purchase the plan directly from us without seeking advice from a financial adviser"
+    },
+    {
+      "name": "DIRECT – China Life Whole Life Plan",
+      "category": "whole_life",
+      "subtype": "direct purchase insurance (DPI); participating whole life",
+      "summary": "Regular premium participating whole life plan sold directly by the insurer without a financial adviser.",
+      "facts": [
+        "Sum insured between SGD50,000 and SGD200,000",
+        "Premium payment term up to age 69 or age 84; policy term till the life insured is age 100",
+        "Entry age: minimum 18; maximum 59 (pay till 69) or 64 (pay till 84), last birthday",
+        "Non-guaranteed reversionary and terminal bonuses"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.chinalife.com.sg/products/DIRECT-China-Life-Whole-Life-Plan",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "DPI Fact Sheet and Checklist",
+          "url": "https://www.chinalife.com.sg/sites/default/files/2022-10/CLIS%20DPI%20Fact%20Sheet%20and%20Checklist_1.pdf",
+          "local": "research/pdf/china_life/CLIS_DPI_Fact_Sheet_and_Checklist_1.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "regular premium, participating whole life plan which provides financial protection"
+    },
+    {
+      "name": "SOPHY",
+      "category": "critical_illness",
+      "subtype": "yearly renewable, body-system-based CI",
+      "summary": "Yearly renewable critical illness plan with body-system-based coverage including cancers of all stages, cardiovascular and neurological systems.",
+      "facts": [
+        "Yearly renewable; renewed automatically until the life insured reaches age 85",
+        "Life insured entry age: 15 days after birth (or 15 days after hospital discharge) to 65 (ALB); policy owner minimum 18",
+        "Be protected against cancers of all stages",
+        "Lump sum benefit upon death"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/SOPHY",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/20221027_SOPHY_en.pdf",
+          "local": "research/pdf/china_life/20221027_SOPHY_en.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "introducing to you SOPHY"
+    },
+    {
+      "name": "China Life Critical Trio",
+      "category": "critical_illness",
+      "subtype": "yearly renewable, cancer / heart attack / stroke",
+      "summary": "Yearly renewable plan covering advanced-stage cancer, heart attack and stroke with a lump sum payout, plus a death benefit.",
+      "facts": [
+        "Sum insured plans from SGD 50,000 to SGD 300,000",
+        "Maximum entry age 65 (age last birthday); policy owner minimum 18",
+        "Yearly renewable term for coverage up to life insured's age of 100 years old, maximum renewable age 99",
+        "Covers Cancer, Heart Attack and Stroke"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/china-life-critical-trio",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/China%20Life%20Critical%20Trio%20Brochure_EN_0.pdf",
+          "local": "research/pdf/china_life/China_Life_Critical_Trio_Brochure_EN_0.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Introducing to you, China Life Critical Trio"
+    },
+    {
+      "name": "China Life Personal Accident Cashback Plan",
+      "category": "personal_accident",
+      "subtype": "5-year renewable with cashback",
+      "summary": "5-year renewable accident plan with accidental death, disability and daily hospital cash, plus cashback on premiums every 5 years.",
+      "facts": [
+        "Eligible life insured aged 21 to 59 last birthday",
+        "Accidental Death Benefit and Accidental Disability Benefit: S$100,000 (Plan 1) / S$150,000 (Plan 2)",
+        "Daily Hospital Cash: S$100 / S$150",
+        "Cashback on premiums at the end of every 5 years"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/products/personal-accident-cashback-plan",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.chinalife.com.sg/sites/default/files/product/CLIS%20Personal%20Accident%20Cashback%20Plan%20Brochure_0.pdf",
+          "local": "research/pdf/china_life/CLIS_Personal_Accident_Cashback_Plan_Brochure_0.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "China Life Personal Accident Cashback Plan is a 5-year renewable"
+    },
+    {
+      "name": "China Life Critical Care Rider/DIRECT-China Life Critical Care Rider",
+      "category": "rider",
+      "subtype": "CI acceleration rider",
+      "summary": "Rider that accelerates part or all of the basic plan's death benefit on diagnosis of a covered critical illness.",
+      "facts": [
+        "Accelerates part or all of the death benefit of the basic plan on diagnosis of a covered critical illness",
+        "Regular premium; rider term follows policy term of basic plan",
+        "Entry age follows minimum and maximum age of basic plan"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/riders/China-Life-Critical-Care-Rider/DIRECT-China-Life-Critical-Care-Rider",
+      "url_status": "ok",
+      "pdfs": [],
+      "fact_source": "page",
+      "evidence": "you will receive a lump sum death benefit of the basic plan"
+    },
+    {
+      "name": "China Life Early Critical Care Rider",
+      "category": "rider",
+      "subtype": "multi-stage CI rider",
+      "summary": "Rider giving early payouts from the basic policy on diagnosis of a critical illness from early to major stage, plus special conditions.",
+      "facts": [
+        "Early Payouts for 143 Multi-Stage Critical Illness Conditions",
+        "Additional Payouts for 25 Special Conditions, including 5 Mental Well-being Conditions"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/riders/china-life-early-critical-care-rider",
+      "url_status": "ok",
+      "pdfs": [],
+      "fact_source": "page",
+      "evidence": "you will receive early payouts from your basic policy"
+    },
+    {
+      "name": "China Life Enhanced Payer Benefit Rider",
+      "category": "rider",
+      "subtype": "payor benefit",
+      "summary": "Waives future premiums of the basic plan and riders if the policy owner dies, has TPD, or is diagnosed with a covered critical illness.",
+      "facts": [
+        "Waives premiums on death, TPD (diagnosed before the policy owner's 76th birthday) or any of the 36 critical illnesses",
+        "Rider term follows premium term of rider, or up to age 99 of the policy owner, whichever is earlier",
+        "Simplified underwriting: no health check, a few health questions"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/riders/china-life-enhanced-payer-benefit-rider",
+      "url_status": "ok",
+      "pdfs": [],
+      "fact_source": "page",
+      "evidence": "future premium payments due on your basic plan and its riders"
+    },
+    {
+      "name": "China Life Payer Benefit Rider",
+      "category": "rider",
+      "subtype": "payor benefit",
+      "summary": "Waives future premiums of the basic plan and riders upon the policy owner's death, TPD or terminal illness.",
+      "facts": [
+        "Waives premiums on death, TPD (diagnosed before the policy owner's 76th birthday) or terminal illness",
+        "Rider term follows premium term of rider, or up to age 99 of the policy owner, whichever is earlier",
+        "Simplified underwriting: no health check, a few health questions"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/riders/china-life-payer-benefit-rider",
+      "url_status": "ok",
+      "pdfs": [],
+      "fact_source": "page",
+      "evidence": "future premium payments will be waived for your basic plan and its riders"
+    },
+    {
+      "name": "China Life Premium Waiver Benefit Rider",
+      "category": "rider",
+      "subtype": "premium waiver",
+      "summary": "Waives future premiums of the basic plan and riders if the life insured is diagnosed with TPD or any of 36 critical illnesses.",
+      "facts": [
+        "Waives premiums on TPD or any of the 36 critical illnesses",
+        "Rider term follows premium term of rider, or up to age 75, whichever is earlier",
+        "Simplified underwriting: no health check, a few health questions"
+      ],
+      "channel": "mixed",
+      "url": "https://www.chinalife.com.sg/riders/china-life-premium-waiver-benefit-rider",
+      "url_status": "ok",
+      "pdfs": [],
+      "fact_source": "page",
+      "evidence": "future premiums will be waived for your basic plan and its riders"
+    }
+  ],
+  "not_found": [
+    "hospitalisation",
+    "ip_rider",
+    "disability_income",
+    "long_term_care",
+    "ilp",
+    "maternity_child",
+    "outpatient"
+  ],
+  "notes": [
+    "Products index is split across category pages: /products/endowment-plans, /retirement-annuity-plans, /legacy-planning, /protection, /riders. There is no single /products page (404).",
+    "Pages say products are distributed via the agency channel, bank partners and financial adviser partners; channel is marked mixed. Only the two DIRECT plans are sold directly by the insurer without advice.",
+    "Harvest Income, Lifetime Income and Eternal Wealth plans are described on their pages as participating whole life or legacy plans with lifetime yearly income; they are filed under whole_life although the site lists some under Retirement.",
+    "Three Harvest Income pages exist (Plan USD, Supreme USD, Supreme USD S2) and the Eternal Wealth USD/Supreme USD share one page; the Supreme USD page sits under the odd path /products/insurance/.",
+    "The home page links to /products/China-Life-Lifetime-Income-Plan-(RMB), which returns 404; omitted.",
+    "Rider pages live under /riders/ and have no PDF links; no rider PDFs were listed.",
+    "Multiplier Guardian Series and Multiplier Guardian Supreme are whole life plans with CI cover; filed as whole_life, not critical_illness.",
+    "Brochures for most plans do not state entry age or sum insured limits; facts are limited to what the page or brochure states."
+  ]
+}

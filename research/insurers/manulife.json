@@ -1,0 +1,833 @@
+{
+  "id": "manulife",
+  "name": "Manulife Singapore",
+  "formerly": null,
+  "website": "https://www.manulife.com.sg",
+  "products_index_url": "https://www.manulife.com.sg/en/solutions/view-all.html",
+  "claims_url": "https://www.manulife.com.sg/en/self-serve/file-a-claim.html",
+  "contact_url": "https://www.manulife.com.sg/en/customer-care.html",
+  "verified_on": "2026-10-13",
+  "products": [
+    {
+      "name": "ManuProtect Term (II)",
+      "category": "term_life",
+      "subtype": "renewable (5 or 10 years) or level (11 to 40 years), convertible",
+      "summary": "Regular premium term life plan covering death and terminal illness with a choice of coverage period and type.",
+      "facts": [
+        "Coverage to age 85 on renewable terms",
+        "5 or 10 years (renewable and convertible); 11 to 40 years (level and convertible)",
+        "For 5 or 10 year terms, renew for additional terms until age 85 without a medical examination",
+        "Convert to a whole life plan while the policy is in force without additional medical underwriting",
+        "Optional riders for total and permanent disability, critical illness and premium waiver"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/life/term-life-insurance/manuprotect-term.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/manuprotect-term/ManuProtect%20Term%20Brochure%20(English).pdf",
+          "local": "research/pdf/manulife/ManuProtect_Term_Brochure_English.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "ManuProtect Term (II) is a regular premium term life plan available in Singapore"
+    },
+    {
+      "name": "ManuProtect Decreasing (II) / ManuProtect Decreasing Lite (II)",
+      "category": "term_life",
+      "subtype": "decreasing term / mortgage",
+      "summary": "Mortgage-linked decreasing term plan paying out on death or terminal illness; the Lite version needs no health check-up.",
+      "facts": [
+        "Choose an interest rate of 1%, 2%, 3%, 4% or 5% to match your mortgage loan",
+        "Fixed and level premiums on the basic plan for the entire policy term",
+        "Covered against death and terminal illness",
+        "5% premium discount for joint lives on 1 application",
+        "ManuProtect Decreasing Lite (II) is available for applicants aged 50 and below"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/life/term-life-insurance/manuprotect-decreasing.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/manuprotect-decreasing/ManuProtect%20Decreasing%20Brochure%20(English).pdf",
+          "local": "research/pdf/manulife/ManuProtect_Decreasing_Brochure_English.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "A plan with decreasing coverage that allows you to choose your interest rate"
+    },
+    {
+      "name": "DIRECT-ManuAssure Term",
+      "category": "term_life",
+      "subtype": "direct-purchase term (5-year, 20-year, to age 65)",
+      "summary": "Direct Purchase Insurance term plan covering death, total and permanent disability and terminal illness.",
+      "facts": [
+        "Covers death, total and permanent disability and terminal illness",
+        "Death cover of up to S$400,000 in sum insured",
+        "Choose to be covered for 5 years, 20 years, or until age 65",
+        "For a 5 year policy term, the policy auto renews till age 80, regardless of your health condition"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.manulife.com.sg/en/solutions/life/term-life-insurance/direct-manuassure-term.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/direct-manuassure-term/Direct%20ManuAssure%20Term%20Brochure%20(English).pdf",
+          "local": "research/pdf/manulife/Direct_ManuAssure_Term_Brochure_English.pdf"
+        },
+        {
+          "title": "Fact Sheet",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/whole-life/direct-manuassure-life/direct_insurance_factsheet.pdf",
+          "local": "research/pdf/manulife/direct_insurance_factsheet.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "DIRECT-ManuAssure Term Insurance"
+    },
+    {
+      "name": "LifeReady Plus (II)",
+      "category": "whole_life",
+      "subtype": "whole life with cash value; coverage boost up to 5x",
+      "summary": "Regular premium whole life plan with guaranteed death benefit and cash value, with add-ons to boost coverage up to five times.",
+      "facts": [
+        "Boost your coverage up to 5x, till age 70 or 80",
+        "Lifelong coverage against death and terminal illness till age 99",
+        "Convert cash value into annual payouts over 10 years, boosted by an extra 5% interest",
+        "Enhance coverage at life milestones without a medical check-up",
+        "Health Advantage Benefit: upfront premium discounts for the first 2 policy years"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/life/whole-life-insurance/life-ready-plus.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/whole-life/life-ready-plus/LifeReady_Plus_(II)_English_brochure.pdf",
+          "local": "research/pdf/manulife/LifeReady_Plus_II_English_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "LifeReady Plus (II) is a regular premium whole life plan available in Singapore"
+    },
+    {
+      "name": "DIRECT-ManuAssure Life",
+      "category": "whole_life",
+      "subtype": "direct-purchase whole life",
+      "summary": "Direct Purchase Insurance whole life plan with possible non-guaranteed bonuses.",
+      "facts": [
+        "Choose to pay up to age 70 or 85",
+        "Receive declared non-guaranteed bonuses that help your cash value grow",
+        "Covered against death, terminal illness and total and permanent disability with up to S$200,000 in sum insured"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.manulife.com.sg/en/solutions/life/whole-life-insurance/direct-manuassure-life.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/whole-life/direct-manuassure-life/Direct%20ManuAssure%20Life%20Brochure%20(English).pdf",
+          "local": "research/pdf/manulife/Direct_ManuAssure_Life_Brochure_English.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "A whole life insurance plan that provides a lump sum payout should the unforeseen happen"
+    },
+    {
+      "name": "Critical SelectCare",
+      "category": "critical_illness",
+      "subtype": "selected major CIs and age-related conditions; ages 40 to 70",
+      "summary": "Cover for selected major critical illnesses and age-related conditions, open to people with common existing conditions.",
+      "facts": [
+        "You must be between 40 to 70 years old and pass the underwriting questions to qualify",
+        "Premium of less than S$1 a day (40 year old, non-smoker, male, sum insured S$25,000, annual premiums)",
+        "Simply answer 3 questions, with no medical check-ups",
+        "Special conditions: 25% of sum insured payable, capped at S$25,000 per life per condition",
+        "No claims payout of 25% of your total premiums paid at the end of your policy term"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/health/critical-illness/critical-selectcare.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/health/critical-illness/critical-selectcare/critical_selectcare_brochure_fa.pdf",
+          "local": "research/pdf/manulife/critical_selectcare_brochure_fa.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Crafted to protect you against selected major critical illnesses and age-related conditions."
+    },
+    {
+      "name": "Manulife Early CompleteCare",
+      "category": "critical_illness",
+      "subtype": "multi-claim CI (Classic or Deluxe plan)",
+      "summary": "Critical illness cover across early, intermediate and advanced stages, with a Deluxe option for multiple and recurring claims.",
+      "facts": [
+        "Cover for 126 critical illnesses across early, intermediate, and advanced stages",
+        "Select Classic or Deluxe plan and choose coverage up to age 65, 75, or 85",
+        "Cover Me Again Benefit: after the first claim, subsequent claims up to 4 times for different critical illnesses",
+        "Recurring/Relapse Major CI Benefit: after the first claim, claim up to 2 times for recurring major illnesses",
+        "Continuous Cancer Income Option: monthly payout of 4% of basic sum insured, for up to 60 months"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/health/critical-illness/manulife-early-completecare.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/health/critical-illness/early-completecare/early_completecare_en.pdf",
+          "local": "research/pdf/manulife/early_completecare_en.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Manulife Early CompleteCare is a critical illness insurance product available in Singapore"
+    },
+    {
+      "name": "Manulife EarlyCancer Protect",
+      "category": "cancer",
+      "subtype": "cancer-only; 100% payout for all stages",
+      "summary": "Cancer insurance paying 100% of sum insured on diagnosis across early, intermediate or advanced stages.",
+      "facts": [
+        "Entry Age 18 - 60 years old (based on your last birthday)",
+        "Sum insured ranging from S$50,000 to S$150,000 for cancer diagnosis across 3 plan types",
+        "Death benefit ranging from S$10,000 to S$30,000",
+        "Plan renews every 5 years without re-application; maximum age for guaranteed renewal is 70, coverage ends at age 75"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/health/critical-illness/manulife-earlycancer-protect.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/health/critical-illness/manulife-earlycancer-protect/manulife-earlycancer-protect-ENG.pdf",
+          "local": "research/pdf/manulife/manulife-earlycancer-protect-ENG.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "provides affordable protection with 100% payout for all stages of cancer"
+    },
+    {
+      "name": "ReadyMummy",
+      "category": "maternity_child",
+      "subtype": "3-year maternity plan covering mother and child",
+      "summary": "Three-year maternity plan covering the mother from 13 weeks of pregnancy and the child from birth.",
+      "facts": [
+        "Protection for the expecting mother from as early as 13 weeks into the pregnancy and the child from birth, to policy year 3",
+        "Covers the mother against 14 pregnancy complications at 100% of the sum insured",
+        "Covers the child against 24 congenital illnesses at 100% of the sum insured",
+        "Daily cash benefit at 1% of the sum insured for each day of hospital stay (up to 30 days)",
+        "Psychotherapy treatment for the mother at 10% of the sum insured"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/health/maternity/ready-mummy.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/health/maternity/readymummy/readymummy_english.pdf",
+          "local": "research/pdf/manulife/readymummy_english.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "ReadyMummy is a 3-year maternity plan"
+    },
+    {
+      "name": "Manulife ReadyProtect",
+      "category": "personal_accident",
+      "subtype": "adult and child personal accident, 5 plan types",
+      "summary": "Personal accident plan with five plan levels from Head Start to Signature.",
+      "facts": [
+        "5 plan types: Head Start, Accelerate, Advantage, Ultimate, Signature",
+        "Accidental death and dismemberment from S$50,000 to S$1,000,000, doubled on public transport",
+        "Accidental medical reimbursement per accident from up to S$1,000 to up to S$10,000, double while overseas",
+        "Annual premium rates for Class 1 & 2 for entry age between 15 days and 55 years",
+        "Optional add-on covers 21 infectious diseases, including Zika virus and Hand, Foot and Mouth Disease"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/health/accident/manulife-ready-protect.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/health/accident/manulife_readyprotect_english.pdf",
+          "local": "research/pdf/manulife/manulife_readyprotect_english.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Manulife ReadyProtect is a personal accident plan in Singapore"
+    },
+    {
+      "name": "RetireReady Plus (III)",
+      "category": "annuity",
+      "subtype": "regular premium retirement income plan (guaranteed monthly income for life)",
+      "summary": "Retirement savings plan that pays a Guaranteed Monthly Income for life from your chosen retirement age.",
+      "facts": [
+        "Guaranteed Monthly Income for life",
+        "Select your desired Guaranteed Monthly Income, preferred premium payment term and desired retirement age",
+        "Payout includes guaranteed monthly income and any non-guaranteed cash bonuses"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/save/retirement/retire-ready-plus.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/retirement/retire-ready-plus/retireready-plus-(iii)/RetireReady%20Plus%20Brochure%20(English).pdf",
+          "local": "research/pdf/manulife/RetireReady_Plus_Brochure_English.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "RetireReady Plus (III) is a regular premium retirement savings plan available in Singapore"
+    },
+    {
+      "name": "Manulife Goal 2026 (I)",
+      "category": "endowment",
+      "subtype": "single premium, 2-year short-term endowment",
+      "summary": "Single premium endowment with a 2-year policy term and death coverage during the term.",
+      "facts": [
+        "Single premium endowment plan with a 2-year policy term",
+        "Potential returns of up to 1.60% per year",
+        "At maturity, a lump sum of 100% of your single premium paid plus any bonuses (guaranteed and non-guaranteed)"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-goal.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-goal-brochure-ENG.pdf",
+          "local": "research/pdf/manulife/manulife-goal-brochure-ENG.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Manulife Goal 2026 (I) is a single premium endowment plan"
+    },
+    {
+      "name": "Manulife IncomeGen (II)",
+      "category": "endowment",
+      "subtype": "whole-life savings plan with monthly income up to age 120",
+      "summary": "Savings plan with life insurance coverage and a monthly income of guaranteed and non-guaranteed returns up to age 120.",
+      "facts": [
+        "Choose between a 3- or 5-year premium plan",
+        "Monthly income starts at the end of the 49th or 61st policy month (depending on the premium plan), up to age 120",
+        "Up to 12% first year premium discount (promotion)"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/save/savings-plans/Manulife-IncomeGen.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-income-gen/Income_Gen_EN.pdf",
+          "local": "research/pdf/manulife/Income_Gen_EN.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Manulife IncomeGen (II) is a whole-life insurance savings plan in Singapore"
+    },
+    {
+      "name": "Manulife GrowSecure",
+      "category": "endowment",
+      "subtype": "capital-guaranteed savings plan",
+      "summary": "Savings plan that guarantees your capital at policy maturity and waives premiums on total and permanent disability.",
+      "facts": [
+        "Get 100% of your capital return upon policy maturity",
+        "Choice of 3 premium payment terms: 5, 8 or 10 years",
+        "Choice of 2 policy terms: 16 or 18 years",
+        "Guaranteed acceptance with no health questions asked",
+        "Additional payout of 50% of total premiums paid to date on accidental death before age 80"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-growsecure.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-growsecure/manulife_growsecure_ENG.pdf",
+          "local": "research/pdf/manulife/manulife_growsecure_ENG.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Wealth accumulation with a lump sum payout at policy maturity"
+    },
+    {
+      "name": "Manulife IncomeSecure",
+      "category": "endowment",
+      "subtype": "savings plan with yearly income up to age 120",
+      "summary": "Savings plan paying a yearly income stream up to age 120, with option to change the life insured.",
+      "facts": [
+        "Receive yearly income up to age 120",
+        "Income from end of policy year 3 (premium payment term of 5 years) or from end of policy year 5 or 10 (premium payment term of 10 years)",
+        "Covered against death and terminal illness till age 120",
+        "Guaranteed acceptance with no health questions asked"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-incomesecure.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-incomesecure/manulife_incomesecure_ENG.pdf",
+          "local": "research/pdf/manulife/manulife_incomesecure_ENG.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Provides yearly income stream as you craft a meaningful gift for your loved ones."
+    },
+    {
+      "name": "Manulife WealthGen",
+      "category": "whole_life",
+      "subtype": "limited pay / single pay whole life, wealth accumulation and legacy planning",
+      "summary": "Limited pay or single pay whole life plan for wealth growth, flexible cash value access and legacy planning.",
+      "facts": [
+        "Entry Age 0 - 75 years old (based on your last birthday)",
+        "Premium term: single premium, 3, 5, 10 or 15 years",
+        "Guaranteed acceptance with no health checks required",
+        "Pay by Supplementary Retirement Scheme (SRS) or cash",
+        "Up to 15% premium discount (promotion)"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-wealthgen.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-wealthgen/manulife_wealthgen_english_brochure.pdf",
+          "local": "research/pdf/manulife/manulife_wealthgen_english_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Manulife WealthGen is a limited pay/single-pay whole life plan"
+    },
+    {
+      "name": "Manulife Indexed Income",
+      "category": "annuity",
+      "subtype": "index-linked lifetime income plan, SGD",
+      "summary": "Income plan combining S&P PRISM Index-linked growth with a 0% floor and potential lifetime income payouts.",
+      "facts": [
+        "Entry Age (Age Last Birthday) 0 - 75 years old; currency SGD; whole of life policy term",
+        "Potential monthly income from as early as Policy Year 2",
+        "0% floor rate protects against negative index returns",
+        "No administration charges after Policy Year 10 and no surrender charges after Policy Year 14"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-indexed-income.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-indexed-income/manulife_indexed_income_english_brochure.pdf",
+          "local": "research/pdf/manulife/manulife_indexed_income_english_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Manulife Indexed Income is an income plan designed to help you build potential lifetime income"
+    },
+    {
+      "name": "Manulife Indexed Wealth",
+      "category": "whole_life",
+      "subtype": "index-linked wealth accumulation, SGD",
+      "summary": "Wealth accumulation plan linked to the S&P PRISM Index or S&P 500 Index with built-in downside management.",
+      "facts": [
+        "Entry Age (Age Last Birthday) 0 - 75 years old; currency SGD; whole of life policy term",
+        "0% floor for the S&P PRISM Index; up to 10% downside absorption for the S&P 500 Index",
+        "Access your funds from year 3 and enjoy penalty-free withdrawals from year 5",
+        "Automatic Premium Spread option spreads premiums into the index account over 12 months"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/save/savings-plans/manulife-indexed-wealth.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/save/savings-plan/manulife-indexed-wealth/manulife_indexed_wealth_english_brochure.pdf",
+          "local": "research/pdf/manulife/manulife_indexed_wealth_english_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Manulife Indexed Wealth is a wealth accumulation plan that helps you build wealth"
+    },
+    {
+      "name": "Manulife InvestReady (III)",
+      "category": "ilp",
+      "subtype": "whole-life regular-premium ILP, SGD or USD",
+      "summary": "Regular-premium investment-linked plan with a choice of funds, bonuses and optional protection.",
+      "facts": [
+        "Whole-life regular-premium investment-linked plan (ILP)",
+        "100% of the regular basic premiums paid will be invested in fund units of your choice",
+        "Access to a diverse selection of funds in SGD or USD",
+        "Up to 45% additional Welcome bonus units in the first policy year",
+        "Minimum Investment Period: 5 /6/7/10/13 years"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/investready.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/invest/investment-linked-plans/investready/investready_en.pdf",
+          "local": "research/pdf/manulife/investready_en.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Manulife InvestReady (III) is a whole-life regular-premium investment-linked plan"
+    },
+    {
+      "name": "Manulife InvestReady Growth",
+      "category": "ilp",
+      "subtype": "whole-life regular-premium ILP for longer investment periods",
+      "summary": "Regular-premium investment-linked plan with bonuses throughout the policy, for a 15- or 20-year minimum investment period.",
+      "facts": [
+        "Whole-life regular-premium investment-linked policy (ILP)",
+        "100% of the premiums paid will be invested into the investment fund(s) of your choice",
+        "Up to 60% additional Welcome bonus units in the first policy year",
+        "Minimum Investment Period: 15 years/20 years"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/investready-growth.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/invest/investment-linked-plans/investready/investready-growth_english_brochure.pdf",
+          "local": "research/pdf/manulife/investready-growth_english_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Manulife InvestReady Growth is a whole-life regular-premium investment-linked policy"
+    },
+    {
+      "name": "Manulink Investor (II)",
+      "category": "ilp",
+      "subtype": "single premium ILP",
+      "summary": "Single premium investment-linked policy with a wide range of funds.",
+      "facts": [
+        "Starts from S$5,000",
+        "Pay via cash, SRS, CPF-OA or CPF-SA",
+        "Free, unlimited fund switches",
+        "Guaranteed acceptance with no health questions asked"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/manulink-investor.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/invest/investment-linked-plans/manulink-investor/Manulink%20Investor%20(II)%20Brochure_English.pdf",
+          "local": "research/pdf/manulife/Manulink_Investor_II_Brochure_English.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Investment-linked plan available for cash, SRS, CPF-OA and CPF-SA subscription."
+    },
+    {
+      "name": "ManuInvest Duo",
+      "category": "ilp",
+      "subtype": "regular premium ILP with protection",
+      "summary": "Flexible regular premium investment-linked policy combining wealth accumulation with a choice of protection amount.",
+      "facts": [
+        "Choose a Minimum Investment Period of 10, 15 or 20 years",
+        "Protection of up to 100x of your first year premium for death, terminal illness and total and permanent disability",
+        "100% of your regular basic premiums paid will be put to purchase fund units",
+        "From policy year 6, up to 20% of total basic premiums and top-up premiums paid in the previous policy year can be accessed at a transaction fee of S$50"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/manuinvestduo.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/invest/investment-linked-plans/manuinvestduo/ManuInvest%20Duo%20Brochure%20(English).pdf",
+          "local": "research/pdf/manulife/ManuInvest_Duo_Brochure_English.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "a flexible regular premium investment-linked policy that helps you achieve harmony"
+    },
+    {
+      "name": "Manulife SmartRetire (V)",
+      "category": "ilp",
+      "subtype": "whole-life regular-premium ILP for retirement",
+      "summary": "Investment-linked retirement plan where you can retire with a lump sum or stream of income.",
+      "facts": [
+        "Whole-life, regular-premium, investment-linked policy",
+        "Monthly premiums as low as S$300 via cash",
+        "Choose to retire with a lump sum or stream of income",
+        "Cost of Insurance charged is refunded to you if protection benefits are not utilised"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/invest/investment-linked-plans/smartretire.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/invest/investment-linked-plans/smartretire/manulife_smartretire_ENG.pdf",
+          "local": "research/pdf/manulife/manulife_smartretire_ENG.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "a whole-life, regular-premium, investment-linked policy"
+    },
+    {
+      "name": "Signature Life Series",
+      "category": "whole_life",
+      "subtype": "single premium whole life, SGD or USD",
+      "summary": "Single premium whole life plan with guaranteed cash value from day 1.",
+      "facts": [
+        "A single premium payment for lifetime coverage on death and terminal illness",
+        "Pay your premium in Singapore Dollars or U.S. Dollars",
+        "Cash value equivalent to at least 80% of your single premium paid on Day 1"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-life.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-life/Signature%20Life%20Brochure%20(English).pdf",
+          "local": "research/pdf/manulife/Signature_Life_Brochure_English.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Your legacy, preserved for generations to come"
+    },
+    {
+      "name": "Signature Life Elite & Prestige (USD)",
+      "category": "whole_life",
+      "subtype": "US$ whole life for legacy planning (Elite or Prestige)",
+      "summary": "US$ whole life plan to protect, preserve and pass on wealth; Elite for protection certainty, Prestige for long-term legacy growth.",
+      "facts": [
+        "Entry Age (Age Last Birthday) Single Premium: 0 - 75 years old",
+        "Regular Premium (5-Pay and 10-Pay): 0 - 70 years old",
+        "Lifelong death and terminal illness protection"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-life-elite-prestige.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-life-elite-prestige/signature-life-elite-prestige_english_brochure.pdf",
+          "local": "research/pdf/manulife/signature-life-elite-prestige_english_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Signature Life (Elite/Prestige) (USD) is a whole life insurance plan"
+    },
+    {
+      "name": "Heirloom (VII)",
+      "category": "whole_life",
+      "subtype": "US$ universal life",
+      "summary": "Universal life plan in US dollars with high insurance coverage and cash value accumulation.",
+      "facts": [
+        "Universal life insurance plan denominated in US dollars",
+        "Guaranteed loyalty bonus of 0.35% p.a. from policy year 11 to age 100",
+        "Maximum Cost of Insurance Rates capped at 110% of current rates"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/signature/signature/heirloom.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/heirloom/Heirloom_Brochure_(English).pdf",
+          "local": "research/pdf/manulife/Heirloom_Brochure_English.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "a universal life insurance plan denominated in US dollars"
+    },
+    {
+      "name": "Signature Legacy Growth (USD)",
+      "category": "whole_life",
+      "subtype": "US$ legacy plan with policy split and transfer options",
+      "summary": "US$ legacy plan to grow wealth, with options to split or transfer the policy and change the life insured.",
+      "facts": [
+        "Choose a single premium, or an annual payment spread over 5 years",
+        "Death and terminal illness coverage of the life insured",
+        "No medical examination required",
+        "Option to change the life insured multiple times after the 2nd policy anniversary"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-legacy-growth.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-legacy-growth/signature-legacy-growth_english_brochure.pdf",
+          "local": "research/pdf/manulife/signature-legacy-growth_english_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "the flexibility to pass on and distribute your wealth to loved ones seamlessly"
+    },
+    {
+      "name": "Signature Legacy Harvest",
+      "category": "whole_life",
+      "subtype": "US$ whole life",
+      "summary": "Whole life plan in US dollars to protect and potentially grow wealth across generations.",
+      "facts": [
+        "Whole life insurance plan in USD",
+        "Smart legacy planning solutions for policy management and wealth distribution",
+        "Up to 10% premium discount (promotion)"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-legacy-harvest.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-legacy-harvest/signature_legacy_harvest_english_brochure.pdf",
+          "local": "research/pdf/manulife/signature_legacy_harvest_english_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Signature Legacy Harvest is a whole life insurance plan in USD"
+    },
+    {
+      "name": "Signature Indexed Universal Life Select (III)",
+      "category": "whole_life",
+      "subtype": "indexed universal life",
+      "summary": "Universal life plan with Fixed Account and Index Account options referencing global indices, with a 0% floor.",
+      "facts": [
+        "Access to indices such as S&P 500, S&P PRISM, S&P GSCI Gold ER, Hang Seng and the Euro Stoxx 50",
+        "0% floor rate for the Index Account",
+        "Automatic Premium Spread option spreads Index Account premiums over 12 months",
+        "Whole life coverage for death and terminal illness"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/signature/signature/Signature-Indexed-Universal-Life-Select.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-indexed-universal-life-select/Signature%20Indexed%20Universal%20Life%20Select_Brochure%20(English).pdf",
+          "local": "research/pdf/manulife/Signature_Indexed_Universal_Life_Select_Brochure_English.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Signature Indexed Universal Life Select (III) is a universal life insurance plan in Singapore"
+    },
+    {
+      "name": "Signature Income Series",
+      "category": "annuity",
+      "subtype": "single premium whole life with lifetime monthly income, SGD or USD",
+      "summary": "Single premium plan with guaranteed and non-guaranteed monthly income up to age 120.",
+      "facts": [
+        "Guaranteed and non-guaranteed monthly income up to age 120",
+        "Lifetime coverage on death and terminal illness up to age 120 with a single premium payment",
+        "Pay your premium in SGD or USD",
+        "Monthly income from either the 37th or 49th policy month",
+        "Surrender value from day 1 of at least 80% of the single premium paid"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-income.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-income/Signature%20Income%20Series%20English%20Brochure%2013Dec2021.pdf",
+          "local": "research/pdf/manulife/Signature_Income_Series_English_Brochure_13Dec2021.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Elevating the growth and strength of your legacy to stretch across generations"
+    },
+    {
+      "name": "Signature Lifetime Rewards (II) (SGD)",
+      "category": "annuity",
+      "subtype": "single premium with lifetime monthly income, SGD",
+      "summary": "Single premium plan paying monthly income for life up to age 120 with a maturity benefit at age 120.",
+      "facts": [
+        "Covered for death and terminal illness up to age 120 with one single premium payment",
+        "Lifetime of monthly income from as early as the end of policy month 13, up to age 120",
+        "Lump sum maturity benefit payout when the policy matures at age 120",
+        "Surrender value of at least 80% of the single premium paid from day 1"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/signature/signature/Signature-Lifetime-Rewards.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-lifetime-rewards/Signature%20Lifetime%20Rewards%20English%20Brochure.pdf",
+          "local": "research/pdf/manulife/Signature_Lifetime_Rewards_English_Brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Cultivating a timeless legacy for you and your loved ones"
+    },
+    {
+      "name": "Signature Indexed Income",
+      "category": "annuity",
+      "subtype": "index-linked lifetime monthly income",
+      "summary": "Lifetime monthly income plan linked to the S&P 500 Index with a 0% floor and a minimum Fixed Account rate.",
+      "facts": [
+        "Potential of a lifetime of monthly income payouts",
+        "0% floor rate for Index Account",
+        "Minimum guaranteed crediting rate of 2% p.a. for Fixed Account",
+        "Guaranteed acceptance with no health questions asked"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-indexed-income.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-indexed-income/signature-indexed-income_english_brochure.pdf",
+          "local": "research/pdf/manulife/signature-indexed-income_english_brochure.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Enjoy a lifetime of monthly income while safeguarding your legacy"
+    },
+    {
+      "name": "Signature Wealth",
+      "category": "ilp",
+      "subtype": "variable universal life (investment-linked), USD or SGD",
+      "summary": "Variable universal life plan where you control the investment strategy of your assets, with whole life coverage.",
+      "facts": [
+        "Single premium via asset transfer and/or cash in a currency of your preference (USD or SGD)",
+        "Whole life coverage on death and terminal illness",
+        "Guaranteed cost of insurance charges; 0% premium charge",
+        "Control over the investment strategy of your assets"
+      ],
+      "channel": "unknown",
+      "url": "https://www.manulife.com.sg/en/solutions/signature/signature/signature-wealth.html",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/signature/signature-wealth/Signature%20Wealth%20Brochure%20(English).pdf",
+          "local": "research/pdf/manulife/Signature_Wealth_Brochure_English.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Your legacy deserves to withstand the test of time"
+    }
+  ],
+  "not_found": [
+    "hospitalisation (no Integrated Shield Plan on the official Health menu)",
+    "ip_rider",
+    "disability_income",
+    "long_term_care",
+    "hospital_cash",
+    "outpatient",
+    "rider (no standalone rider pages)"
+  ],
+  "notes": [
+    "Product list taken from the official sitemap (https://www.manulife.com.sg/sitemap.xml) under /en/solutions/ and cross-checked against the Life, Health, Save, Invest and Signature menu pages; every product page returned HTTP 200 to fetch_page-style requests.",
+    "Manulife returned 200 (not 403) to scripted requests that send a browser User-Agent plus an Accept-Language header; WebFetch alone got 403, so url_status is ok for all products.",
+    "Brochure PDFs sit behind '-brochure.html' lead-form pages in the sitemap but the English PDF links on those pages download directly; only English PDFs were kept.",
+    "The Health menu lists only Critical Illness (3 plans), Maternity (1) and Accident (1). No hospital or disability income plan is listed there.",
+    "Signature plans (Legacy Growth, Legacy Harvest, Heirloom, Signature Life Series and Elite/Prestige, Indexed Universal Life Select, Signature Wealth, income plans) target legacy planning and are largely US$-denominated; Signature Life Series, Signature Income Series, Signature Lifetime Rewards (II) (SGD) and Signature Wealth also offer SGD.",
+    "Category calls on ambiguous plans are explained in subtype: Manulife Indexed Wealth and WealthGen are filed as whole_life; RetireReady Plus (III), Manulife Indexed Income, Signature Income Series, Signature Lifetime Rewards (II) and Signature Indexed Income as annuity (lifetime income); IncomeGen (II) and IncomeSecure as endowment (savings with income); Signature Wealth (variable universal life) as ilp.",
+    "The Signature Income Series brochure on the site is dated 13 Dec 2021 and the DIRECT-ManuAssure pages carry a footer dated 2020; the pages remain live and listed.",
+    "Manulife Goal 2026 (I) is a 2-year single premium endowment named for its 2026 edition; check whether a newer edition replaces it.",
+    "Skipped pages: Manulife MOVE wellness, insights, campaigns, self-serve and the '-brochure' lead-form pages. Duplicate brochure page 'signature-life-brochure1.html' ignored.",
+    "Channel left as unknown except the two DIRECT-ManuAssure plans (direct purchase online); pages mention Manulife Financial Consultants and DBS/POSB branches as sales routes in footers but do not state a channel per product."
+  ]
+}

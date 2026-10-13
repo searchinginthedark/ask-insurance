@@ -1,0 +1,1279 @@
+{
+  "id": "income",
+  "name": "Income Insurance",
+  "formerly": "NTUC Income",
+  "website": "https://www.income.com.sg",
+  "products_index_url": "https://www.income.com.sg/sitemap",
+  "claims_url": "https://www.income.com.sg/claims",
+  "contact_url": "https://www.income.com.sg/support",
+  "verified_on": "2026-10-13",
+  "products": [
+    {
+      "name": "Enhanced IncomeShield",
+      "category": "hospitalisation",
+      "subtype": "Integrated Shield Plan: Enhanced Preferred (private hospitals), Enhanced Advantage (restructured hospital ward class A), Enhanced Basic (ward class B1)",
+      "summary": "MediShield Life-integrated hospital and surgical plan with unlimited lifetime coverage; offered in three plan tiers.",
+      "facts": [
+        "Up to $1.5 million limit in each policy year for medical treatment",
+        "Coverage with no lifetime limit",
+        "Enhanced Advantage: policy limit of up to $1,000,000 each policy year",
+        "Enhanced Basic: policy limit of up to $250,000 each policy year",
+        "Last entry age is 75 (based on age next birthday)"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/health-insurance/enhanced-incomeshield",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Enhanced IncomeShield Brochure",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/3b238fe7-c83e-4511-8381-c2b4c382f94f/Health_Enhanced%20IncomeShield_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/Health_Enhanced_IncomeShield_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Policy conditions for Enhanced IncomeShield",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/fffd70f9-fdf0-46f5-80e5-311a4d4ea40b/Enhanced%20IncomeShield%20Policy%20Conditions%201%20Oct%202026.pdf",
+          "local": "research/pdf/income/Enhanced_IncomeShield_Policy_Conditions_1_Oct_2026.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Get unlimited lifetime coverage for your medical and hospitalisation expenses"
+    },
+    {
+      "name": "IncomeShield Standard Plan",
+      "category": "hospitalisation",
+      "subtype": "Integrated Shield Plan, restructured hospital ward class B1 and below",
+      "summary": "Integrated Shield Plan covering medical and hospitalisation expenses in the Class B1 ward.",
+      "facts": [
+        "Up to $200,000 limit in each policy year for medical treatment",
+        "Coverage with no lifetime limit",
+        "No maximum entry age limit"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/health-insurance/incomeshield-standard-plan",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "IncomeShield Standard Plan brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/862c6b16-2540-4fbf-95c6-ca495e4af035/Health_IncomeShield%20Standard%20Plan_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/Health_IncomeShield_Standard_Plan_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Policy conditions for IncomeShield Standard Plan",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/9a2724b5-4e4d-4ea7-8ad2-0bd0ec83d3d8/IncomeShield%20Standard%20Plan%20Policy%20Conditions%201%20Apr%202026.pdf",
+          "local": "research/pdf/income/IncomeShield_Standard_Plan_Policy_Conditions_1_Apr_2026.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "affordable protection for your medical and hospitalisation expenses in the Class B1 ward"
+    },
+    {
+      "name": "Optima Care rider",
+      "category": "ip_rider",
+      "subtype": "IP rider for Enhanced IncomeShield / IncomeShield Standard Plan, launched 1 April 2026",
+      "summary": "Integrated Shield Plan rider with tiered co-payment depending on whether treatment is by Income panel, extended panel or others.",
+      "facts": [
+        "Co-payment 5% (our panel) or 8% (extended panel and others) of benefits due under the policy",
+        "Co-payment limit up to $6,000 each policy year for panel and extended panel treatment; no limit for others",
+        "Last entry age is 75 (based on age next birthday)",
+        "Autism Testing Benefit and Critical Care Benefit for insured up to age 18 (next birthday)"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/health-insurance/enhanced-incomeshield",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Conditions for Optima Care Rider 1 Apr 2026",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/889d72f1-0474-46d6-ad8a-f7de42043cf0/Conditions%20for%20Optima%20Care%20Rider%201%20Apr%202026.pdf",
+          "local": "research/pdf/income/Conditions_for_Optima_Care_Rider_1_Apr_2026.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Integrated Shield Plan (IP) riders – Optima Care rider and Essential Care rider"
+    },
+    {
+      "name": "Essential Care rider",
+      "category": "ip_rider",
+      "subtype": "IP rider for Enhanced IncomeShield / IncomeShield Standard Plan, launched 1 April 2026",
+      "summary": "Integrated Shield Plan rider with tiered co-payment depending on whether treatment is by Income panel, extended panel or others.",
+      "facts": [
+        "Launched 1 April 2026, on average 32% cheaper than existing riders",
+        "Co-payment limit of up to $6,000 each policy year if treatment is by our panel and extended panel",
+        "Last entry age is 75 (based on age next birthday)",
+        "Includes Cancer Drug Treatment Benefit"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/health-insurance/enhanced-incomeshield",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Conditions for Essential Care Rider 1 Apr 2026",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/30db0c90-3d82-4943-9e97-4ccf7b82d6c6/Conditions%20for%20Essential%20Care%20Rider%201%20Apr%202026.pdf",
+          "local": "research/pdf/income/Conditions_for_Essential_Care_Rider_1_Apr_2026.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Integrated Shield Plan (IP) riders – Optima Care rider and Essential Care rider"
+    },
+    {
+      "name": "Hospital Care Insurance",
+      "category": "hospital_cash",
+      "subtype": "Preferred Plan (three plan types)",
+      "summary": "Hospital cash plan with daily hospital cash benefit and ICU cover, plus day surgery, emergency outpatient and ambulance expenses.",
+      "facts": [
+        "Daily hospital cash up to $300 per day (up to 730 days for every injury or sickness)",
+        "ICU triple cover up to $900 per day (up to 60 days)",
+        "Entry between 30 days and 65 years old (last birthday)",
+        "Up to 20% family discount when family members are insured under the same policy"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/health-insurance/hospitalcare-insurance",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product summary",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/31715c5a-27e3-4e1a-a950-5a3c63706853/GHD%20Hospital%20Care%20Product%20Summary%202024%20%28A%29_202204F.pdf",
+          "local": "research/pdf/income/GHD_Hospital_Care_Product_Summary_2024_A__202204F.pdf"
+        },
+        {
+          "title": "Hospital Care brochure",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/15edfd95-7b21-465f-b38b-04496d46bc40/Hospital%20Care%20EN%202024.pdf",
+          "local": "research/pdf/income/Hospital_Care_EN_2024.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Buy online and get 24-hour global protection, with daily cash benefit"
+    },
+    {
+      "name": "Hospital CashAid rider",
+      "category": "hospital_cash",
+      "subtype": "Rider for Star Term Protect and Complete Life Secure",
+      "summary": "Rider paying the rider sum assured for each day in hospital, with extra ICU benefits.",
+      "facts": [
+        "Pays the rider sum assured for each day in hospital, up to 750 days for the same stay",
+        "Double the rider sum assured for each day in the ICU",
+        "Major Impact Benefit of 10 times the rider sum assured for an ICU stay of 5 days or more"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/life-insurance/complete-life-secure/coverage-for-hospital-cashaid-rider",
+      "url_status": "ok",
+      "pdfs": [],
+      "fact_source": "page",
+      "evidence": "Receive the sum assured of the rider for each day you stay in the hospital"
+    },
+    {
+      "name": "Care Secure Pro",
+      "category": "long_term_care",
+      "subtype": "CareShield Life and ElderShield supplement",
+      "summary": "Supplement to CareShield Life or ElderShield paying a monthly Disability Benefit from the first unmet Activity of Daily Living.",
+      "facts": [
+        "Open to Singapore Citizens and Permanent Residents with a CareShield Life or ElderShield policy",
+        "Lifetime monthly Disability Benefit for moderate and severe disability",
+        "Mild disability payout of 60% of the Disability Benefit for up to 60 months if unable to perform one ADL and not yet age 75",
+        "Premium term up to age 67 or 99 (last birthday); entry age 30 to 47 (to 67) or 30 to 69 (to 99)"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/health-insurance/care-secure-pro",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Care Secure Pro Brochure",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/6faf860d-39e1-4a52-8445-becfec132b77/Health_Care%20Secure%20Pro_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/Health_Care_Secure_Pro_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Policy conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/65433b86-5bb4-420b-a8b1-f53219f3714d/Contract%20-%20Care%20Secure%20Pro.pdf",
+          "local": "research/pdf/income/Contract_-_Care_Secure_Pro.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Provides comprehensive coverage across different stages of disability, from mild to severe"
+    },
+    {
+      "name": "Complete Critical Protect",
+      "category": "critical_illness",
+      "subtype": "Multi-claim term critical illness plan; options Protect Max, Protect Prime, Protect 100",
+      "summary": "Term plan paying lump sums on diagnosis of dread diseases from early to advanced stage, with multiple claims possible.",
+      "facts": [
+        "Up to 10 times the sum assured from early to advanced stage dread disease",
+        "Entry age (insured) 0 to 54 for term to age 64; 0 to 64 for terms to age 74, 84 or 100",
+        "Guaranteed option to buy a specified new term plan"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/life-insurance/complete-critical-protect",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Complete Critical Protect Brochure",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/cb1f0711-fa86-44ec-83d6-39b2264bf938/Term_Complete%20Critical%20Protect_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/Term_Complete_Critical_Protect_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Complete Critical Protect Policy Condition",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/05effb9c-3c54-4081-a63c-bcd6461563b4/_Final_%20Contract%20-%20Complete%20Critical%20Protect.pdf",
+          "local": "research/pdf/income/_Final__Contract_-_Complete_Critical_Protect.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Receive continuous protection against dread disease from diagnosis to recovery"
+    },
+    {
+      "name": "Complete Cancer Care",
+      "category": "cancer",
+      "subtype": "Cancer-focused term plan",
+      "summary": "Term plan with lump sum payouts at early, intermediate and advanced stages of major cancer, plus premium waiver.",
+      "facts": [
+        "Insured entry age 0 to 74 (last birthday)",
+        "Monthly payout of up to 1% of the sum assured for up to 24 months after advanced stage major cancer",
+        "Hospice care benefit of 10% of the sum assured upon terminal cancer",
+        "Future premiums waived for a specified period upon diagnosis of major cancer"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/life-insurance/complete-cancer-care",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Printed brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/2d153ea8-3ac8-4d4d-83e9-24adc6197480/Term_Complete%20Cancer%20Care_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/Term_Complete_Cancer_Care_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Policy Conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/c87adc1b-f616-4c2b-9a25-48b2e4416302/Policy%20Contract%20-%20Complete%20Cancer%20Care%20%28CBN3%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Complete_Cancer_Care_CBN3_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "A term life insurance plan that provides comprehensive support every step of the way"
+    },
+    {
+      "name": "Early Critical Secure",
+      "category": "rider",
+      "subtype": "Critical illness rider for Complete Life Secure",
+      "summary": "Rider covering dread diseases across early, intermediate and advanced stages.",
+      "facts": [
+        "Covers up to 120 dread diseases across early, intermediate and advanced stages",
+        "Advanced Restoration Benefit for major cancer, heart attack of specified severity and stroke"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/life-insurance/complete-life-secure/coverage-for-early-critical-secure-rider",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Early Critical Secure - Policy Conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/977f1343-f102-42c9-bb38-845250cce807/_Final_%20Contract%20-%20Early%20Critical%20Secure%20%28CSV11%29.pdf",
+          "local": "research/pdf/income/_Final__Contract_-_Early_Critical_Secure_CSV11_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "against up to 120 dread diseases across early, intermediate and advanced stages"
+    },
+    {
+      "name": "Advanced Critical Secure",
+      "category": "rider",
+      "subtype": "Critical illness rider for Complete Life Secure",
+      "summary": "Rider covering advanced stage dread diseases.",
+      "facts": [
+        "Covers 54 advanced stage dread disease conditions",
+        "Major Impact Benefit of 20% of the rider sum assured for an ICU stay of 4 days or more"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/life-insurance/complete-life-secure/coverage-for-advanced-critical-secure-rider",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Advanced Critical Secure - Policy Conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/7a9a3224-7d3f-43f3-b042-4c7d2d1a0d14/Policy%20Contract%20-%20Advanced%20Critical%20Secure%20%28CSV10%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Advanced_Critical_Secure_CSV10_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Enhance your protection for advanced stage dread diseases, covering 54 conditions"
+    },
+    {
+      "name": "Star Term Protect",
+      "category": "term_life",
+      "subtype": "Renewable term",
+      "summary": "Term cover against death, terminal illness, and total and permanent disability, with guaranteed renewal.",
+      "facts": [
+        "Guaranteed renewal up to a maximum coverage age of 84 (last birthday)",
+        "Coverage period 5 to 35 years in multiples of 5: entry age 0 to 79 (subject to max coverage age)",
+        "Coverage up to age 54, 64 or 74: entry age 0 to 49, 0 to 59 or 0 to 69"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/life-insurance/star-term-protect",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Printed brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/5880ac15-d464-470f-aa39-aff13c996c22/Star%20Term%20Protect%20Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/Star_Term_Protect_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Policy conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4fdc41f3-deea-42ea-acd7-7f1d625fb252/Policy%20Contract%20-%20Star%20Term%20Protect%20%28TAN19%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Star_Term_Protect_TAN19_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Term coverage against death, terminal illness, and total and permanent disability"
+    },
+    {
+      "name": "DIRECT Star Term",
+      "category": "term_life",
+      "subtype": "Direct purchase insurance (DPI); non-renewable and renewable variants",
+      "summary": "Direct-purchase term plan sold online or at Income branches without financial advice.",
+      "facts": [
+        "Sum assured between $50,000 and $400,000",
+        "Policy term of 5 years, 20 years or up to age 64 (last birthday)",
+        "Entry age 18 to 64 (5 and 20 years); 18 to 59 (up to age 64)",
+        "TPD cover before age 65"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.income.com.sg/life-insurance/direct-star-term",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product summary for DIRECT Star Term (renewable)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1c451505-2ed5-4486-9e4c-081a7e6bb5d6/DIRECT%20Star%20Term%20%28renewable%29%20%28TAN17%29.pdf",
+          "local": "research/pdf/income/DIRECT_Star_Term_renewable_TAN17_.pdf"
+        },
+        {
+          "title": "Product summary for DIRECT Star Term (non-renewable)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/755afdba-d2b3-4555-a27b-e7adaf7f23a0/DIRECT%20Star%20Term%20%28non-renewable%29%20%28TAN18%29.pdf",
+          "local": "research/pdf/income/DIRECT_Star_Term_non-renewable_TAN18_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Enjoy high coverage with affordable premiums"
+    },
+    {
+      "name": "Family Protect",
+      "category": "term_life",
+      "subtype": "Renewable term with dread disease cover; direct purchase",
+      "summary": "Direct-purchase term plan covering death, terminal illness, TPD and dread disease.",
+      "facts": [
+        "Insured entry age 18 to 64",
+        "Policy renewable up to a maximum coverage age of 74 (last birthday)",
+        "TPD before age 70"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.income.com.sg/life-insurance/family-protect",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Family Protect Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/b8063807-7c8e-489d-9db3-ba5d38d6a09f/Term_Family%20Protect_Brochure_ENG_Web%20%281%29.pdf",
+          "local": "research/pdf/income/Term_Family_Protect_Brochure_ENG_Web_1_.pdf"
+        },
+        {
+          "title": "Policy conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/9143df79-14e6-41d1-b7b3-d5929ea2d438/Policy%20Contract%20-%20Family%20Protect%20%28DSN%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Family_Protect_DSN_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "An affordable plan designed to support your loved ones if the unfavourable happens to you"
+    },
+    {
+      "name": "Mortgage Term",
+      "category": "term_life",
+      "subtype": "Mortgage term (cover for outstanding loan)",
+      "summary": "Term plan covering the outstanding balance of a mortgage loan.",
+      "facts": [
+        "Policy term 5 to 35 years",
+        "Loan interest rates from 1% to 7%",
+        "Insured entry age 18 to 64",
+        "TPD before age 70"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/life-insurance/mortgage-term",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Mortgage Term Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4c0c8bdb-02a1-4be9-8a55-b28d86b8020f/Mortgage%20Term%20Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/Mortgage_Term_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Policy conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/f2714141-f552-402e-be37-9ba80808cd1e/Policy%20Contract%20-%20Mortgage%20Term%20%28MPN2%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Mortgage_Term_MPN2_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Ease your financial liabilities against unexpected events"
+    },
+    {
+      "name": "Lady 360",
+      "category": "term_life",
+      "subtype": "Term life for women with female illness and surgery benefits",
+      "summary": "Term plan for women covering specific female illnesses and surgeries, with a death benefit.",
+      "facts": [
+        "Up to 100% of the sum assured for certain female-specific illnesses",
+        "Up to 50% of the sum assured for specific female surgeries",
+        "Death benefit of $10,000",
+        "Insured entry age 15 to 44 (10-year renewable term) or 15 to 59 (to age 64)"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/life-insurance/lady-360",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Printed brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/57599f66-9208-4a18-b46b-d612c1cd7f3d/Term_Lady%20360_Brochure_ENG_Web%20%281%29.pdf",
+          "local": "research/pdf/income/Term_Lady_360_Brochure_ENG_Web_1_.pdf"
+        },
+        {
+          "title": "Policy Conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/93f0171c-2b9b-463a-8f26-2f10aea1e282/Policy%20Contract%20-%20Lady%20360%20%28LPN%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Lady_360_LPN_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "A comprehensive yet affordable protection plan designed for women"
+    },
+    {
+      "name": "TermLife Solitaire",
+      "category": "term_life",
+      "subtype": "High sum assured term (Solitaire series)",
+      "summary": "High-coverage term plan with guaranteed renewal.",
+      "facts": [
+        "Sum assured of at least $500,000",
+        "Guaranteed renewal; may be covered up to age 100 (last birthday)",
+        "Entry age 18 to 74 for 10 to 25 year terms; 18 to 70 for 30 years; 18 to 65 for 35 years"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/life-insurance/termlife-solitaire",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "TermLife Solitaire Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4fb4315b-a33a-43f5-aaf3-ca1e11be4ae2/Solitaire_TermLife%20Solitaire_Brochure_ENG_Website.pdf",
+          "local": "research/pdf/income/Solitaire_TermLife_Solitaire_Brochure_ENG_Website.pdf"
+        },
+        {
+          "title": "Policy conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1041e269-ae5d-4bad-ad07-365aa5277e40/Policy%20Contract%20-%20TermLife%20Solitaire%20%28TBN4%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_TermLife_Solitaire_TBN4_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Enjoy higher coverage at affordable premiums"
+    },
+    {
+      "name": "HomeTeamNS Insurance Scheme and HomeTeamNS Living Policy",
+      "category": "term_life",
+      "subtype": "Affinity scheme for HomeTeamNS members; Living Policy adds critical illness and hospital benefit",
+      "summary": "Term cover for HomeTeamNS members and family.",
+      "facts": [
+        "Must be a HomeTeamNS member to apply",
+        "Premium rates from as low as $0.35 per day",
+        "Insurance Scheme: member and spouse entry age 16 to 64, maximum age of coverage 65",
+        "Protection against 30 critical illnesses"
+      ],
+      "channel": "unknown",
+      "url": "https://www.income.com.sg/life-insurance/hometeamns-insurance-scheme-and-living-policy",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product summary for HomeTeamNS Insurance Scheme",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a4629204-0447-43dd-9f00-c934bad7b438/HomeTeamNS%20Insurance%20Scheme%20Product%20Summary%20%28Jul%202024%29.pdf",
+          "local": "research/pdf/income/HomeTeamNS_Insurance_Scheme_Product_Summary_Jul_2024_.pdf"
+        },
+        {
+          "title": "Product summary for HomeTeamNS Living Policy",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1772cff1-29dc-41a7-99c4-2c650ee20540/Product%20summary%20for%20HomeTeamNS%20Living%20Policy%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf",
+          "local": "research/pdf/income/Product_summary_for_HomeTeamNS_Living_Policy_policy_start_date_after_01_June_2025_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Affordable insurance for HomeTeamNS members that provides coverage for death, permanent disablement and more"
+    },
+    {
+      "name": "LUV",
+      "category": "term_life",
+      "subtype": "Affinity group term plan for NTUC members",
+      "summary": "Term plan open to NTUC members and their families.",
+      "facts": [
+        "Only NTUC members may apply",
+        "Premium rates from as low as $0.70 per day",
+        "Member and spouse entry age 16 to 64; maximum age of coverage 70",
+        "Loyalty discount of 3% to 10% on premiums the longer you stay covered"
+      ],
+      "channel": "unknown",
+      "url": "https://www.income.com.sg/life-insurance/luv",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product summary for LUV",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/b4379630-fdd8-4d94-9f67-433d687e089e/Product%20summary%20for%20LUV%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf",
+          "local": "research/pdf/income/Product_summary_for_LUV_policy_start_date_after_01_June_2025_.pdf"
+        },
+        {
+          "title": "LUV Brochure",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1b381fe6-6ecf-4e93-a775-1d92592abf47/LUV_EN_2024%20web.pdf",
+          "local": "research/pdf/income/LUV_EN_2024_web.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Affordable Term Life Insurance for NTUC members that provides coverage for death, permanent disability"
+    },
+    {
+      "name": "SAFRA Essential Term and SAFRA Living Care",
+      "category": "term_life",
+      "subtype": "Affinity scheme for SAFRA members; Living Care adds critical illness and hospital cash",
+      "summary": "Term cover for SAFRA members and family.",
+      "facts": [
+        "Must be a SAFRA member to apply",
+        "Premiums at just $1 per month",
+        "Member and spouse entry age 16 to 60; maximum age of coverage 70",
+        "Living Care: protection against 37 critical illnesses"
+      ],
+      "channel": "unknown",
+      "url": "https://www.income.com.sg/life-insurance/safra-essential-term-and-safra-living-care",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product summary for SAFRA Essential Term",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/0b95f02b-8f12-42aa-a9ec-45dbc5e909a5/SAFRA%20Essential%20Term%20Product%20Summary%20%28Jul%202024%29.pdf",
+          "local": "research/pdf/income/SAFRA_Essential_Term_Product_Summary_Jul_2024_.pdf"
+        },
+        {
+          "title": "Product summary for SAFRA Living Care",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/52510d85-ff40-4747-b815-d5698a3563eb/Product%20summary%20for%20SAFRA%20Living%20Care%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf",
+          "local": "research/pdf/income/Product_summary_for_SAFRA_Living_Care_policy_start_date_after_01_June_2025_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Affordable insurance for SAFRA members that provides coverage for death, permanent disability and more"
+    },
+    {
+      "name": "OCBC Protect",
+      "category": "term_life",
+      "subtype": "Affinity plan for OCBC cardholders; Classic and Prime",
+      "summary": "Term plan for OCBC cardholders and family.",
+      "facts": [
+        "Must be the cardholder of an OCBC card",
+        "Cover for 52 cents a day",
+        "Cardholder and spouse entry age 16 to 60; maximum age of coverage 70",
+        "Sum assured in multiples of $10,000, up to $300,000 each"
+      ],
+      "channel": "bank",
+      "url": "https://www.income.com.sg/life-insurance/ocbc-protect",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product summary for OCBC Protect Classic",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1bc21c0d-02a6-4266-9c8b-cabdfd0950bb/Product%20summary%20for%20OCBC%20Protect%20Classic%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf",
+          "local": "research/pdf/income/Product_summary_for_OCBC_Protect_Classic_policy_start_date_after_01_June_2025_.pdf"
+        },
+        {
+          "title": "Product summary for OCBC Protect Prime",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/f3ecf5a1-4c23-4f9e-aede-ad187adfe590/Product%20summary%20for%20OCBC%20Protect%20Prime%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf",
+          "local": "research/pdf/income/Product_summary_for_OCBC_Protect_Prime_policy_start_date_after_01_June_2025_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "OCBC cardholders can get affordable insurance coverage"
+    },
+    {
+      "name": "Complete Life Secure",
+      "category": "whole_life",
+      "subtype": "Whole life with Multiplier Cover; riders available",
+      "summary": "Whole life plan with optional Multiplier Cover and critical illness riders.",
+      "facts": [
+        "Multiplier Cover of up to 500% of the sum assured until age 65, 75 or 80",
+        "Insured entry age 0 to 64 for premium terms of 5, 10, 15, 20 years",
+        "Flexi Cash Access from age 50",
+        "Up to 6 months of premiums waived if unemployed for 3 consecutive months"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/life-insurance/complete-life-secure",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Complete Life Secure Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/f578b1df-bba3-4745-9182-4b249beb434f/Whole%20Life_Complete%20Life%20Secure_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/Whole_Life_Complete_Life_Secure_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Complete Life Secure - Policy Conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/7874fa40-90ae-4526-af1f-5fcfe5ca5852/Policy%20Contract%20-%20Complete%20Life%20Secure%20%28VQMW%20_%20VQVW%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Complete_Life_Secure_VQMW___VQVW_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Navigate unpredictability with complete protection across various life stages and illnesses"
+    },
+    {
+      "name": "DIRECT Star Protect Pro",
+      "category": "whole_life",
+      "subtype": "Direct purchase insurance (DPI) whole life",
+      "summary": "Direct-purchase whole life plan sold online or at Income branches without financial advice.",
+      "facts": [
+        "Cover for death, terminal illness and TPD before age 65",
+        "Payment period until age 69: entry age 18 to 59",
+        "Payment period until age 84: entry age 18 to 64"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.income.com.sg/life-insurance/direct-star-protect-pro",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product summary for DIRECT Dread Disease Protect Pro",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/5888b1c6-f3f3-45c5-8558-117838d604b2/DIRECT%20Dread%20Disease%20Protect%20Pro%20%28CWV4%29.pdf",
+          "local": "research/pdf/income/DIRECT_Dread_Disease_Protect_Pro_CWV4_.pdf"
+        },
+        {
+          "title": "Product summary for DIRECT Star Protect Pro",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1ecc907f-db49-47de-9444-4d381a12ff7f/DIRECT%20Star%20Protect%20Pro%20%28DXMW%29.pdf",
+          "local": "research/pdf/income/DIRECT_Star_Protect_Pro_DXMW_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Be protected against life’s uncertainties with an affordable protection plan"
+    },
+    {
+      "name": "Provenance Solitaire",
+      "category": "whole_life",
+      "subtype": "Single-premium whole life (Solitaire series)",
+      "summary": "Single-premium whole life plan with high minimum protection value.",
+      "facts": [
+        "Immediate and guaranteed cash value of 80% of the single premium",
+        "Insured entry age 0 to 75",
+        "Single premium payment"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/life-insurance/provenance-solitaire",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Printed brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/73bf7016-e1cb-4943-945e-184a49a73fd6/Solitaire_Provenance%20Solitaire_Brochure_ENG_Web%20%281%29.pdf",
+          "local": "research/pdf/income/Solitaire_Provenance_Solitaire_Brochure_ENG_Web_1_.pdf"
+        },
+        {
+          "title": "Policy conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/65755d17-5b64-4d64-a051-a69cad5bc54c/Policy%20Contract%20-%20Provenance%20Solitaire%20and%20Protection%20Benefit%20%28VPMW%20_%20VPVW%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Provenance_Solitaire_and_Protection_Benefit_VPMW___VPVW_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Preserve your family’s heritage and safeguard your loved ones, with just a single premium"
+    },
+    {
+      "name": "Maternity 360",
+      "category": "maternity_child",
+      "subtype": "Single-premium maternity cover for mother and baby",
+      "summary": "Three years of maternity cover for the mother and baby for a single premium.",
+      "facts": [
+        "Can only be bought when the insured mother is 13 to 35 weeks pregnant",
+        "Insured entry age 17 to 44",
+        "Single premium payment"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/life-insurance/maternity-360",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Printed brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/369a4726-45c7-4ae7-9110-1cc9de493859/Term_Maternity%20360_Brochure_ENG_Web%20%281%29.pdf",
+          "local": "research/pdf/income/Term_Maternity_360_Brochure_ENG_Web_1_.pdf"
+        },
+        {
+          "title": "Policy conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/808a0a5f-8a29-44df-ad3f-cfc6100d8857/Contract%20-%20Maternity%20360%20%28MBN%29.pdf",
+          "local": "research/pdf/income/Contract_-_Maternity_360_MBN_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "three years of comprehensive maternity insurance for you and your baby"
+    },
+    {
+      "name": "PA Assurance",
+      "category": "personal_accident",
+      "subtype": "Comprehensive PA with infectious disease cover",
+      "summary": "Personal accident plan with optional cover against Dengue Fever and 25 other infectious diseases.",
+      "facts": [
+        "Up to $25,000 hospitalisation expenses coverage per accident",
+        "Coverage for up to 26 infectious diseases",
+        "Eligible if between 15 days old and 70 years old (last birthday)",
+        "$500 for each full week of temporary disability, up to 104 weeks in a row"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/personal-accident-insurance/pa-assurance",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/829f8fbe-e22f-4f8b-8bfc-04d3c0511c07/GPF%20PA%20Assurance%20Product%20Summary%202026%20%28A%29%20202602A.pdf",
+          "local": "research/pdf/income/GPF_PA_Assurance_Product_Summary_2026_A_202602A.pdf"
+        },
+        {
+          "title": "PA Assurance Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/5ce89e1b-dd2c-410f-a429-3fb80be9faf7/PA%20Assurance%20EN_web%202026.pdf",
+          "local": "research/pdf/income/PA_Assurance_EN_web_2026.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Buy comprehensive personal accident coverage, with optional protection against Dengue Fever"
+    },
+    {
+      "name": "PA Secure",
+      "category": "personal_accident",
+      "subtype": "Basic PA, family-oriented",
+      "summary": "Affordable personal accident plan with cover for 7 infectious diseases.",
+      "facts": [
+        "From $0.25 a day",
+        "Coverage for 7 infectious diseases",
+        "Up to $2,000 medical expenses coverage per accident or due to infectious diseases",
+        "Sign up between 15 days and 65 years old"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/personal-accident-insurance/pa-secure",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/0dde9999-7477-4730-bdd0-03f0dcb561cd/GPS%20PA%20Secure%20Product%20Summary%20%28D%29%2020240322B.pdf",
+          "local": "research/pdf/income/GPS_PA_Secure_Product_Summary_D_20240322B.pdf"
+        },
+        {
+          "title": "PA Secure Brochure",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/0e382dec-9432-4d75-913b-70e53196774a/PA%20Secure%20Brochure%2022032024.pdf",
+          "local": "research/pdf/income/PA_Secure_Brochure_22032024.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Affordable personal accident coverage, suitable for families with children aged 12 and below"
+    },
+    {
+      "name": "PA Fitness Protect",
+      "category": "personal_accident",
+      "subtype": "Sports and fitness PA",
+      "summary": "Personal accident plan for fitness activities with sports equipment and third-party liability cover.",
+      "facts": [
+        "2X coverage for medical expenses due to accidental tears, dislocations and fractures",
+        "Adventurous activities or extreme sports coverage",
+        "Eligible between 7 years old and 65 years old",
+        "Sports equipment rider available"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/personal-accident-insurance/pa-fitness-protect",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product summary",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/cd579840-cc93-41c5-beeb-56578bbf8095/GAL%20PA%20Fitness%20Protect%20Product%20Summary%20202306A.pdf",
+          "local": "research/pdf/income/GAL_PA_Fitness_Protect_Product_Summary_202306A.pdf"
+        },
+        {
+          "title": "PA Fitness Protect Brochure",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/e826c601-eac5-434c-9b51-fd305223d35d/PA%20Fitness%20Protect%20EN%20Web%202026.pdf",
+          "local": "research/pdf/income/PA_Fitness_Protect_EN_Web_2026.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Accident protection for fitness fanatics, plus third-party liability and sports equipment coverage"
+    },
+    {
+      "name": "SilverCare Insurance",
+      "category": "personal_accident",
+      "subtype": "Senior PA; Superior, Prestige and Platinum plans",
+      "summary": "Personal accident plan for seniors with infectious disease cover, renewable for life.",
+      "facts": [
+        "Entry age from 50 to 75, no medical check-up required",
+        "Renewable for life",
+        "Coverage for 25 infectious diseases",
+        "Up to $12,000 hospitalisation expenses coverage"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/personal-accident-insurance/silvercare-insurance",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product summary",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/ee90b8b8-d070-4854-b2e3-47c72f7f1ad7/GSD%20SilverCare%20Product%20Summary%20202501.pdf",
+          "local": "research/pdf/income/GSD_SilverCare_Product_Summary_202501.pdf"
+        },
+        {
+          "title": "SilverCare Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a6f7e820-5293-4ff6-bf99-698271a40c0a/SilverCare%20ENG_2026_web.pdf",
+          "local": "research/pdf/income/SilverCare_ENG_2026_web.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Enjoy comprehensive personal accident coverage for seniors"
+    },
+    {
+      "name": "SpecialCare (Autism) Insurance",
+      "category": "personal_accident",
+      "subtype": "PA for individuals with autism",
+      "summary": "Cover for medical expenses due to accidents and infectious diseases for individuals with autism.",
+      "facts": [
+        "Eligible between 15 days and 30 years old",
+        "24-hour global protection",
+        "Personal liability up to $5,000 each policy year"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/personal-accident-insurance/specialcare-(autism)-insurance",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/c1721e32-b869-45d5-b8a7-cbe1bba2537f/GAP%20SpecialCare%20%28Autism%29%20Product%20Summary%202024%20%28A%29%20202104E.pdf",
+          "local": "research/pdf/income/GAP_SpecialCare_Autism_Product_Summary_2024_A_202104E.pdf"
+        },
+        {
+          "title": "SpecialCare (Autism) Brochure",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/0daee9cc-9e65-4928-9135-fd499be5c6af/SpecialCare%20Autism%20EN%202024.pdf",
+          "local": "research/pdf/income/SpecialCare_Autism_EN_2024.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Get coverage for medical expenses due to accidents and infectious diseases for individuals with autism"
+    },
+    {
+      "name": "SpecialCare (Down Syndrome) Insurance",
+      "category": "personal_accident",
+      "subtype": "PA for individuals with Down Syndrome",
+      "summary": "Cover for medical expenses due to accidents and infectious diseases for individuals with Down Syndrome.",
+      "facts": [
+        "Eligible between 15 days and 30 years old",
+        "24-hour global protection",
+        "Personal liability up to $5,000 each policy year"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/personal-accident-insurance/specialcare-(down-syndrome)-insurance",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/10ef714b-93ab-4452-9304-bc41c981ae3c/GDS%20SpecialCare%20%28Down%20Syndrome%29%20Product%20Summary%202024%20%28A%29%20202104E.pdf",
+          "local": "research/pdf/income/GDS_SpecialCare_Down_Syndrome_Product_Summary_2024_A_202104E.pdf"
+        },
+        {
+          "title": "SpecialCare (Down Syndrome) Brochure",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/43854019-aba4-4778-96cd-f0f885a0e84c/SpecialCare%20Down%20Syndrome%20EN%202024.pdf",
+          "local": "research/pdf/income/SpecialCare_Down_Syndrome_EN_2024.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "coverage for medical expenses due to accidents and infectious diseases for individuals with Down Syndrome"
+    },
+    {
+      "name": "Gro Cash Flex Pro",
+      "category": "endowment",
+      "subtype": "Participating insurance savings plan with yearly cash payouts",
+      "summary": "Insurance savings plan with yearly cash payouts and capital guaranteed on maturity for policies paid yearly.",
+      "facts": [
+        "Yearly cash payouts from the end of the 2nd policy year",
+        "Premium terms of 5 to 30 years",
+        "Insured entry age 0 to 70 (5-year premium term) down to 0 to 45 (30-year premium term)"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/savings-and-investments/gro-cash-flex-pro",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Gro Cash Flex Pro Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/9e00dfa9-8b9c-4fc0-8432-64fe4aea7b35/Savings_Gro%20Cash%20Flex%20Pro_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/Savings_Gro_Cash_Flex_Pro_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Gro Cash Flex Pro - Policy Conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/80ccac2b-0ade-41f9-8faf-182bfd57bbd5/Policy%20Contract%20-%20Gro%20Cash%20Flex%20Pro%20%28GCME%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Gro_Cash_Flex_Pro_GCME_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Manifest your dream life and build your wealth, the way you want"
+    },
+    {
+      "name": "Gro Cash Plus",
+      "category": "endowment",
+      "subtype": "Regular-premium participating whole life savings plan, 3-year premium term",
+      "summary": "Insurance savings plan paying lifetime cash payouts with capital guaranteed.",
+      "facts": [
+        "Premium term: 3 years",
+        "Capital guaranteed from the end of the 3rd policy year",
+        "Lifetime cash payouts from the end of the 3rd policy year till age 120",
+        "Insured entry age 0 to 78 (last birthday)"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/savings-and-investments/gro-cash-plus",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Gro Cash Plus Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4ff71d67-eed6-4922-b7ef-40baac1d7626/Savings_Gro%20Cash%20Plus_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/Savings_Gro_Cash_Plus_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Gro Cash Plus Policy Conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/cc22ce34-8fdf-4086-8c9f-075f70845dac/Policy%20Contract%20-%20Gro%20Cash%20Plus%20%28GDMW%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Gro_Cash_Plus_GDMW_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Make your savings plus-sized with our insurance savings plan"
+    },
+    {
+      "name": "Gro Cash Sure",
+      "category": "endowment",
+      "subtype": "Regular-premium participating whole life savings plan, 5 or 10-year premium term",
+      "summary": "Insurance savings plan paying lifetime cash payouts from the end of the premium term.",
+      "facts": [
+        "Premium term of 5 or 10 years",
+        "Lifetime cash payouts from the end of the premium term till age 120",
+        "Insured entry age 0 to 75 (last birthday)"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/savings-and-investments/gro-cash-sure",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Gro Cash Sure Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/0c8b31b3-4c2c-4a7b-8f5f-f821268cc820/Savings_Gro%20Cash%20Sure_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/Savings_Gro_Cash_Sure_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Gro Cash Sure - Policy Conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/e9a36e32-e41e-44f8-92c4-494f716266d9/Policy%20Contract%20-%20Gro%20Cash%20Sure%20%28GCMW%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Gro_Cash_Sure_GCMW_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Enjoy a peace of mind as you build your wealth"
+    },
+    {
+      "name": "Gro Saver Flex Pro",
+      "category": "endowment",
+      "subtype": "Participating savings plan, single or regular premium",
+      "summary": "Customisable insurance savings plan with capital guaranteed on maturity for single premium and yearly-paid regular premium policies.",
+      "facts": [
+        "Premium term: single premium, or 5, 10, 15, 20, 25 or 30 years",
+        "Insured entry age 0 to 75 (single premium)",
+        "Minimum single premium is S$10,000"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/savings-and-investments/gro-saver-flex-pro",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Gro Saver Flex Pro brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/263d166f-c8fc-440c-8eb1-c8ed4cfe2915/Savings_Gro%20Saver%20Flex%20Pro_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/Savings_Gro_Saver_Flex_Pro_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Gro Saver Flex Pro - policy conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/de05ea72-6712-4a34-ab17-27e1e9159100/Policy%20Contract%20-%20Gro%20Saver%20Flex%20Pro%20%28GSME%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Gro_Saver_Flex_Pro_GSME_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Customise your insurance savings plan to best meet your financial needs"
+    },
+    {
+      "name": "Wealth Plus Solitaire II",
+      "category": "endowment",
+      "subtype": "Single-premium participating whole life wealth plan (Solitaire series)",
+      "summary": "Single-premium plan to build wealth.",
+      "facts": [
+        "Single premium, minimum $100,000",
+        "Insured entry age 0 to 75"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/savings-and-investments/wealth-plus-solitaire-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Wealth Plus Solitaire II Brochure",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/01446aed-5b2a-4bca-90cb-d89da6dd58bd/Solitaire_Wealth%20Plus%20Solitaire%20II_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/Solitaire_Wealth_Plus_Solitaire_II_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Wealth Plus Solitaire II Policy Conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/84c33dc2-169b-4fdf-b2a8-bde04570ae27/Policy%20Contract%20-%20Wealth%20Plus%20Solitaire%20II%20%28LTMW2%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Wealth_Plus_Solitaire_II_LTMW2_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Build enduring wealth with a single premium"
+    },
+    {
+      "name": "Gro Annuity Pro",
+      "category": "annuity",
+      "subtype": "Single-premium immediate annuity (participating)",
+      "summary": "Single-premium plan paying lifetime annuity income, with a death benefit.",
+      "facts": [
+        "Entry age 40 to 85 (last birthday)",
+        "Single premium only",
+        "Only immediate annuity is available",
+        "Provides coverage for death with a lump sum payout"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/savings-and-investments/gro-annuity-pro",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Gro Annuity Pro brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/3e2c97dc-fad6-42f9-a00b-68ce1cc54a8f/Savings_Gro%20Annuity%20Pro_Brochure_ENG_Web%20%281%29.pdf",
+          "local": "research/pdf/income/Savings_Gro_Annuity_Pro_Brochure_ENG_Web_1_.pdf"
+        },
+        {
+          "title": "Policy conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/20da1df9-12cc-4877-b8cb-987389f37ed5/Contract%20-%20Gro%20Annuity%20Pro%20%28GAMA%29.pdf",
+          "local": "research/pdf/income/Contract_-_Gro_Annuity_Pro_GAMA_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Enjoy lifetime income in your retirement years"
+    },
+    {
+      "name": "Gro Retire Flex Pro II",
+      "category": "annuity",
+      "subtype": "Retirement income savings plan with monthly payouts",
+      "summary": "Insurance savings plan paying monthly cash payouts in retirement.",
+      "facts": [
+        "Illustrated total yield at maturity of up to 4.08% p.a.",
+        "Choose to adjust when cash payouts begin by up to 5 years",
+        "Insured entry age 20 to 75 (single premium); 20 to 65 (5-year premium term)"
+      ],
+      "channel": "mixed",
+      "url": "https://www.income.com.sg/savings-and-investments/gro-retire-flex-pro-ii",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Gro Retire Flex Pro II Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a35485ee-78c1-4448-aca9-073a19a8d813/Savings_Gro%20Retire%20Flex%20Pro%20II_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/Savings_Gro_Retire_Flex_Pro_II_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Gro Retire Flex Pro II - Policy Conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/99a0bc5d-1a7d-4cea-9c1e-823490316a46/Policy%20Contract%20-%20Gro%20Retire%20Flex%20Pro%20II%20%28GRME2%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Gro_Retire_Flex_Pro_II_GRME2_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Retire freely on your own terms"
+    },
+    {
+      "name": "AstraLink",
+      "category": "ilp",
+      "subtype": "Whole life regular-premium investment-linked plan",
+      "summary": "Regular-premium investment-linked plan with protection based on a sum assured multiple.",
+      "facts": [
+        "Start from as little as $100 a month",
+        "Minimum Protection Value of 300% of the sum assured",
+        "Investment bonus of up to 67.0% of regular premiums paid in the 1st policy year",
+        "Entry age 0 to 64 (last birthday)"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/savings-and-investments/astralink",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "AstraLink Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/88cc39a2-459d-4267-978d-943e1095153e/ILP_AstraLink_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/ILP_AstraLink_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Policy conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/db7ec9b3-0f16-4243-aba8-ad4bafe59264/Policy%20Contract%20-%20AstraLink%20%28VA2%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_AstraLink_VA2_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Build your wealth from as little as $100 a month while staying protected"
+    },
+    {
+      "name": "Invest Flex",
+      "category": "ilp",
+      "subtype": "Regular-premium investment-linked plan",
+      "summary": "Flexible regular-premium investment-linked plan with premium holiday.",
+      "facts": [
+        "From as low as $200 a month",
+        "Investment bonus of up to 60% of regular premiums paid for the 1st policy year",
+        "Insured entry age 0 to 80 (last birthday)"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/savings-and-investments/invest-flex",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Invest Flex Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/f26a2008-f61d-4493-b0c3-ad42a58b50a9/ILP_Invest%20Flex_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/ILP_Invest_Flex_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Policy conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/e6b88b33-93c1-4cf6-b4d4-e9887bb2e641/Policy%20Contract%20-%20Invest%20Flex%20%28VS1%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Invest_Flex_VS1_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Build your wealth with a flexible investment-linked plan"
+    },
+    {
+      "name": "Invest Flex TriVantage",
+      "category": "ilp",
+      "subtype": "Regular-premium investment-linked plan, 10-year minimum investment period",
+      "summary": "Investment-linked plan with premium holiday and optional dividend-paying fund income stream.",
+      "facts": [
+        "Premium holiday at no charge for up to 7 years from the 3rd policy anniversary",
+        "Up to 105% of regular premiums paid used to purchase units",
+        "Insured entry age 0 to 80 (last birthday)"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/savings-and-investments/invest-flex-trivantage",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Invest Flex TriVantage Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/cc178342-1630-4319-a66a-56197bb7371e/ILP_Invest%20Flex%20TriVantage_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/ILP_Invest_Flex_TriVantage_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Invest Flex TriVantage Policy Conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/2917ec5c-e064-4947-b44d-1a381aa83e9f/Policy%20Contract%20-%20Invest%20Flex%20TriVantage%20%28VS3%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Invest_Flex_TriVantage_VS3_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Invest flexibly for 10 years minimally and make your financial goals a reality"
+    },
+    {
+      "name": "Invest Flex Vantage",
+      "category": "ilp",
+      "subtype": "Regular-premium investment-linked plan with dividend-paying fund income option",
+      "summary": "Investment-linked plan with an option to receive potential income streams from the 1st policy year.",
+      "facts": [
+        "From as low as $200 a month",
+        "Up to 105% of regular premiums paid used to purchase units",
+        "Insured entry age 0 to 80 (last birthday)"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/savings-and-investments/invest-flex-vantage",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Invest Flex Vantage Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a81f0dc1-b0c4-4648-b272-49f865cae25a/ILP_Invest%20Flex%20Vantage_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/ILP_Invest_Flex_Vantage_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Invest Flex Vantage Policy Conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/8370e939-4c56-4669-b649-f9ab328a245b/Policy%20Contract%20-%20Invest%20Flex%20Vantage%20%28VS2%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Invest_Flex_Vantage_VS2_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Invest flexibly and have the opportunity to receive potential income streams"
+    },
+    {
+      "name": "WealthLink",
+      "category": "ilp",
+      "subtype": "Single-premium investment-linked plan",
+      "summary": "Single-premium investment-linked plan with a range of funds and death protection.",
+      "facts": [
+        "Single premium investment from $5,000",
+        "Insured entry age 0 to 80 (last birthday)"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/savings-and-investments/wealthlink",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "WealthLink Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/9b66e3ea-a695-4f8e-b16b-9d1fd9acb25a/ILP_WealthLink_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/ILP_WealthLink_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "WealthLink Policy Conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/f703e9ca-50a6-46d6-b6a1-d33d2a94a696/Contract%20-%20WealthLink%20%28GL3%29.pdf",
+          "local": "research/pdf/income/Contract_-_WealthLink_GL3_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Begin with a single premium investment from $5,000"
+    },
+    {
+      "name": "Invest Wealth Vantage",
+      "category": "ilp",
+      "subtype": "Single-premium investment-linked plan with dividend-paying fund income option",
+      "summary": "Single-premium investment-linked plan with an option for an income stream from the 1st policy year.",
+      "facts": [
+        "Single premium investment from as low as $10,000",
+        "No policy fee",
+        "Insured entry age 0 to 80"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/savings-and-investments/invest-wealth-vantage",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Invest Wealth Vantage Brochure",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1b71e702-0a9a-4449-8160-2f3094da76b4/ILP_Invest%20Wealth%20Vantage_Brochure_ENG_web.pdf",
+          "local": "research/pdf/income/ILP_Invest_Wealth_Vantage_Brochure_ENG_web.pdf"
+        },
+        {
+          "title": "Invest Wealth Vantage Policy Conditions",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/42bc80cf-29d3-4d71-9c9d-851d4ce63d68/Policy%20Contract%20-%20Invest%20Wealth%20Vantage.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Invest_Wealth_Vantage.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Begin with a single premium investment from as low as $10,000"
+    },
+    {
+      "name": "Legacy Flex Solitaire",
+      "category": "ilp",
+      "subtype": "Investment-linked plan with high protection (Solitaire series)",
+      "summary": "Investment-linked plan with high protection cover and wealth accumulation.",
+      "facts": [
+        "High protection coverage from $500,000",
+        "Minimum single premium $6,000 (may be higher by insured profile and sum assured)",
+        "Insured entry age 0 to 75",
+        "Cash only; CPF and SRS cannot be used"
+      ],
+      "channel": "agent",
+      "url": "https://www.income.com.sg/savings-and-investments/legacy-flex-solitaire",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Legacy Flex Solitaire Brochure (English)",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a3262ada-212b-401d-82c1-d2cc7db72a76/Solitaire_Legacy%20Flex%20Solitaire_Brochure_ENG_Web.pdf",
+          "local": "research/pdf/income/Solitaire_Legacy_Flex_Solitaire_Brochure_ENG_Web.pdf"
+        },
+        {
+          "title": "Legacy Flex Solitaire Policy Condition",
+          "url": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/2b927c05-9c78-4495-b9df-5054a013b8ff/Policy%20Contract%20-%20Legacy%20Flex%20Solitaire%20%28VA3%29.pdf",
+          "local": "research/pdf/income/Policy_Contract_-_Legacy_Flex_Solitaire_VA3_.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Build enduring wealth with flexibility"
+    }
+  ],
+  "not_found": [
+    "disability_income (no standalone income-protection plan listed)",
+    "outpatient (Managed Healthcare System - Outpatient Plan is closed to new applications)",
+    "maternity_child beyond Maternity 360 (no separate juvenile/education plan listed)"
+  ],
+  "notes": [
+    "Formerly NTUC Income; the site and PDFs now use Income Insurance (some customer testimonials still say NTUC Income).",
+    "Left out as closed or withdrawn: Care Secure and PrimeShield (withdrawn from new policies 9 Sep 2025), IncomeShield (no longer open to new applications since 2013), Managed Healthcare System and its Outpatient Plan (no longer available for new applications), and the Deluxe Care, Classic Care, Plus and Assist IP riders (withdrawn 1 Apr 2026).",
+    "Left out: Gro Capital Ease (page only says register interest for next launch), Co-Pay Assist Plan (group policy for public service employees), Corporatised Entities Group Insurance Scheme (employee scheme), and group and commercial pages.",
+    "Integrated Shield Plans for Public Officers is a discounted-premium channel for Enhanced IncomeShield and IncomeShield Standard Plan, not listed separately.",
+    "Optima Care and Essential Care riders have no page of their own; they are described on the Enhanced IncomeShield page and have policy-conditions PDFs.",
+    "DIRECT Star Term has a separate page for the renewable variant (life-insurance/direct-star-term-(renewable)); listed once. Its product summaries cover both variants.",
+    "Gro Annuity Pro page says it is for policyholders who want to exercise the annuity option in their policies (immediate annuity only).",
+    "Affinity plans (HomeTeamNS, LUV, SAFRA, OCBC Protect) are individually bought by members or cardholders; channel marked unknown/bank because the pages do not say more.",
+    "Channel values are inferred from the page buttons: Buy now, Talk to us, and the DIRECT-only statement.",
+    "Enhanced IncomeShield page announces benefit changes from 1 Oct 2026 (new $500 annual outpatient deductible).",
+    "Solitaire-series pages exist under both /solitaire/ and /savings-and-investments/ or /life-insurance/; the latter URLs are used.",
+    "PDFs are hosted on Income CDN assets-au-01.kc-usercontent.com, linked from the product pages."
+  ]
+}

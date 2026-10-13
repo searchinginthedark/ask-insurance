@@ -1,0 +1,33 @@
+{
+  "id": "directasia",
+  "name": "DirectAsia Singapore",
+  "formerly": null,
+  "website": "https://www.directasia.com/",
+  "products_index_url": "https://www.directasia.com/",
+  "claims_url": "https://www.directasia.com/claims",
+  "contact_url": "https://www.directasia.com/contact",
+  "verified_on": "2026-10-13",
+  "products": [],
+  "not_found": [
+    "hospitalisation",
+    "ip_rider",
+    "term_life",
+    "whole_life",
+    "critical_illness",
+    "cancer",
+    "disability_income",
+    "long_term_care",
+    "personal_accident",
+    "hospital_cash",
+    "endowment",
+    "ilp",
+    "annuity",
+    "maternity_child",
+    "outpatient",
+    "rider"
+  ],
+  "notes": [
+    "DirectAsia Singapore sells only motor (car), motorcycle and travel insurance; no personal accident, health, CI or life product appears in the menu or sitemap.xml.",
+    "Travel insurance pages include overseas medical cover as a trip benefit; travel is out of scope so it is not listed."
+  ]
+}

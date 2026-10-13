@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.tmp
+*.log
+
+# Session brief: never goes to the remote (snapshotted to the workspace memory repo).
+CLAUDE.md
+.planning/
+memory/
+
+# Research working files. Downloaded insurer PDFs are the insurers' copyright and large; the
+# app links to the official copies instead. Extracted facts live in research/insurers/*.json.
+research/pdf/
+research/raw/
+research/scratch/
+research/fact_report.json

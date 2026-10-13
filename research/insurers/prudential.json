@@ -1,0 +1,999 @@
+{
+  "id": "prudential",
+  "name": "Prudential Singapore",
+  "formerly": null,
+  "website": "https://www.prudential.com.sg",
+  "products_index_url": "https://www.prudential.com.sg/en/products/",
+  "claims_url": "https://www.prudential.com.sg/en/services-and-claims/file-claims/how-to-submit-a-claim/",
+  "contact_url": "https://www.prudential.com.sg/en/contact-us/",
+  "verified_on": "2026-10-13",
+  "products": [
+    {
+      "name": "PRUShield",
+      "category": "hospitalisation",
+      "subtype": "MediSave-approved Integrated Shield Plan (Standard, Plus and Premier plans)",
+      "summary": "A MediSave-approved Integrated Shield Plan designed to complement MediShield Life. Also available to foreigners as private health insurance.",
+      "facts": [
+        "Annual coverage up to S$2 million including cancer treatment and risk-based loading",
+        "Pre- and post-hospitalisation coverage up to 180 days and up to 365 days, respectively",
+        "Premiums can be paid with Medisave (up to the Additional Withdrawal Limits)",
+        "PRUShield Plus covers restructured hospitals (up to class A wards); PRUShield Premier covers restructured and private hospitals",
+        "PRUExtra supplementary plans can be added on top"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/health/medical/prushield/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure (English)",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruextra/PRUShield-Premium-Tables.pdf",
+          "local": "research/pdf/prudential/PRUShield-Premium-Tables.pdf"
+        },
+        {
+          "title": "Premium Tables",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prushield/prushield-eBrochure-english.pdf",
+          "local": "research/pdf/prudential/prushield-eBrochure-english.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "PRUShield is a MediSave-approved Integrated Shield Plan"
+    },
+    {
+      "name": "PRUExtra",
+      "category": "ip_rider",
+      "subtype": "Supplementary plan (rider) for PRUShield: Plus Care, Premier Care, Preferred Care",
+      "summary": "A supplementary plan that adds an extra level of protection to a PRUShield plan. Described on the PRUShield page.",
+      "facts": [
+        "PRUExtra Plus Care attaches to PRUShield Plus; PRUExtra Premier Care and Preferred Care attach to PRUShield Premier",
+        "Covers 95% of the deductible above S$3,500 under panel and non-panel providers",
+        "Covers 50% of PRUShield co-insurance",
+        "S$6,000 stop-loss per policy year",
+        "Covers S$150,000 per policy year for cancer drug treatment (not on the CDL)"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/health/medical/prushield/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "PRUShield Product Brochure (English)",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruextra/PRUShield-Premium-Tables.pdf",
+          "local": "research/pdf/prudential/PRUShield-Premium-Tables.pdf"
+        },
+        {
+          "title": "PRUShield Premium Tables",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prushield/prushield-eBrochure-english.pdf",
+          "local": "research/pdf/prudential/prushield-eBrochure-english.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "PRUExtra is a supplementary plan that provides an extra level of protection."
+    },
+    {
+      "name": "PRUHospital Care360",
+      "category": "hospital_cash",
+      "subtype": "Hospital income plan, three coverage options",
+      "summary": "A hospital income plan paying income support when you cannot work during hospitalisation, with access to 360 Care Services.",
+      "facts": [
+        "Get paid for each day of hospitalisation, with additional payouts for Intensive Care Unit (ICU) admissions",
+        "Lump sum for each hospitalisation or for day surgery without hospitalisation",
+        "Three coverage options, starting as low as S$23.63/month",
+        "Sign up by answering only three simple health questions",
+        "Extra daily income benefits for hospitalisations due to accidents and infectious diseases"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/health/medical/pruhospital-care360/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/phc360/PRUHospital-Care360_Brochure-EN.pdf",
+          "local": "research/pdf/prudential/PRUHospital-Care360_Brochure-EN.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "This hospital income plan is designed to provide income support when you can't work"
+    },
+    {
+      "name": "PRUPersonal Accident",
+      "category": "personal_accident",
+      "subtype": "Adult, child and family cover; also sold as the Accident Assist supplementary benefit",
+      "summary": "A personal accident plan with 24-hour worldwide cover that complements existing hospitalisation or medical insurance.",
+      "facts": [
+        "Entry ages 1 to 40 and 41 to 65 (age next birthday) in the brochure premium tables",
+        "24-hour worldwide coverage against accidents, accidental death and up to 21 infectious diseases",
+        "Triple payout for accidental injury while on public transport",
+        "No-claim bonus: up to 25% more coverage in the first five years if no claims are made"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/health/accident/prupersonal-accident/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prupersonal-accident/prupersonal-accident-eBrochure-english.pdf",
+          "local": "research/pdf/prudential/prupersonal-accident-eBrochure-english.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "personal accident insurance plan that complements existing hospitalisation or medical insurance"
+    },
+    {
+      "name": "PRUActive Protect Series",
+      "category": "critical_illness",
+      "subtype": "Customisable CI; PRUActive Protect (36 severe stage CIs) and PRUActive Protect II (64)",
+      "summary": "A customisable critical illness plan with optional add-ons for pre-critical, recurring and relapse conditions.",
+      "facts": [
+        "Policy term from 10 years up to 99 years",
+        "PRUActive Protect covers 36 severe stage critical illnesses; PRUActive Protect II covers 64",
+        "Crisis care accelerator benefit pays 50% of coverage on major surgery on vital organs and ICU admission",
+        "Maximum age to add on riders is 65 and subject to a remaining policy term of 10 years"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/health/critical-illness/pruactive-protect/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-protect/PRUActive-Protect-Brochure-en.pdf",
+          "local": "research/pdf/prudential/PRUActive-Protect-Brochure-en.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "customisable critical illness insurance plan that allows you to choose a policy term"
+    },
+    {
+      "name": "PRUActive Crisis Guard",
+      "category": "critical_illness",
+      "subtype": "Treatment-based payouts; 5-year renewable term",
+      "summary": "A protection plan with payouts based on serious medical treatments rather than disease definitions.",
+      "facts": [
+        "100% payout upon open surgery on major organs, organ transplant, or diagnosis of cancer, heart attack or stroke",
+        "50% payout upon receiving cancer treatment or admittance to the ICU for at least 5 continuous days",
+        "Guaranteed renewability at the end of each policy term of 5 years regardless of health condition",
+        "Maximum renewal age is 70 age next birthday",
+        "Guaranteed convertibility to a new whole life or endowment policy without evidence of good health"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/health/critical-illness/pruactive-crisis-guard/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-crisis-guard/PRUActive-Crisis-Guard-Brochure-ENG.pdf",
+          "local": "research/pdf/prudential/PRUActive-Crisis-Guard-Brochure-ENG.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "first-in-market protection plan that provides clear coverage with payouts based on serious medical treatments"
+    },
+    {
+      "name": "PRUEarly Stage Crisis Cover",
+      "category": "critical_illness",
+      "subtype": "Early stage CI",
+      "summary": "Covers a broad list of early stage critical illnesses and selected intermediate and advanced stage ones.",
+      "facts": [
+        "Coverage against 84 medical conditions",
+        "S$3,000 death benefit",
+        "Payout of 20% of sum assured for selected diabetic complications",
+        "Waiver of future premiums after the first successful claim made under the 50% severity payout"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/health/critical-illness/pruearly-stage-crisis-cover/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruearly-stage-crisis/PRUEarly-Stage-Crisis-eBrochure-ENG-Final.pdf",
+          "local": "research/pdf/prudential/PRUEarly-Stage-Crisis-eBrochure-ENG-Final.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "covers a broad and extensive list of early stage critical illnesses"
+    },
+    {
+      "name": "PRULady",
+      "category": "critical_illness",
+      "subtype": "Women-specific CI; four plans",
+      "summary": "A critical illness plan tailored to illnesses that affect women, with optional pregnancy cover.",
+      "facts": [
+        "Choice of four plans",
+        "Preventive health screening once every two years",
+        "Premium waiver for up to 36 months when a female illness claim is made",
+        "Optional Maternity Cover Plus add-on during pregnancy"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/health/critical-illness/prulady/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prulady/prulady-eBrochure-EN.pdf",
+          "local": "research/pdf/prudential/prulady-eBrochure-EN.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "A unique critical illness insurance plan crafted specially for women"
+    },
+    {
+      "name": "PRUMan",
+      "category": "critical_illness",
+      "subtype": "Men-specific CI; four coverage options",
+      "summary": "A critical illness plan tailored to illnesses that affect men.",
+      "facts": [
+        "Four coverage options: S$25,000, S$50,000, S$75,000 or S$100,000",
+        "Premium waiver for 36 months upon diagnosis of male illnesses",
+        "Preventive health screening every two years",
+        "Up to 300% coverage for male-related conditions and procedures"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/health/critical-illness/pruman/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruman/pruman-eBrochure-EN.pdf",
+          "local": "research/pdf/prudential/pruman-eBrochure-EN.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "A unique critical illness insurance plan specially tailored for men"
+    },
+    {
+      "name": "PRUCancer 360",
+      "category": "cancer",
+      "subtype": "Cancer-only, all stages",
+      "summary": "A regular premium cancer insurance plan covering all stages of cancer.",
+      "facts": [
+        "Sum assured from $10,000 up to $300,000, in multiples of $10,000",
+        "Maximum sum assured for age 1 - 16 is $100,000",
+        "100% payout for all cancer stages",
+        "Coverage from age 1 up till 100; maximum renewal age is 95",
+        "Application requires answering 1 health question"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/health/critical-illness/prucancer-360/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prucancer-360/PRUCancer360-Brochures-EN.pdf",
+          "local": "research/pdf/prudential/PRUCancer360-Brochures-EN.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "A cancer insurance plan with a regular premium term"
+    },
+    {
+      "name": "PRUActive Term",
+      "category": "term_life",
+      "subtype": "Level term with incremental sum assured option",
+      "summary": "A non-participating protection term plan with flexible policy terms and an option to raise coverage annually.",
+      "facts": [
+        "Policy term 10 to 82 years; premium payment term 5 to 82 years",
+        "Incremental Sum Assured: increase basic coverage by 1% to 10% annually without medical examination",
+        "Death and terminal illness cover up to age 100; total and permanent disability cover up to age 70",
+        "Optional Crisis Care III covers up to 36 critical illness conditions"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/life/term-life/pruactive-term/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-term/pruactive_term_eBrochure_english.pdf",
+          "local": "research/pdf/prudential/pruactive_term_eBrochure_english.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "PRU Active Term is a non-participating protection term insurance plan"
+    },
+    {
+      "name": "PRUVital Cover",
+      "category": "term_life",
+      "subtype": "Term for people with existing conditions; simplified underwriting",
+      "summary": "A regular premium term plan that provides coverage even with existing medical conditions such as Type 2 diabetes, high cholesterol, high blood pressure or high BMI.",
+      "facts": [
+        "Simplified underwriting with no medical examination",
+        "Death and terminal illness coverage up to S$500,000",
+        "Premium guaranteed throughout the policy term",
+        "Optional coverage for 5 critical illnesses and optional disability cover up to age 70"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/life/term-life/pruvital-cover/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvital-cover/PRUVital-Cover-eBrochure-ENG-Final.pdf",
+          "local": "research/pdf/prudential/PRUVital-Cover-eBrochure-ENG-Final.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "provides coverage even if you have existing medical conditions"
+    },
+    {
+      "name": "DIRECT - PRUProtect Term",
+      "category": "term_life",
+      "subtype": "Direct-purchase term; variants PRUProtect Term (5 years, 20 years or to age 65) and PRUProtect Term 5 (renew every 5 years)",
+      "summary": "A direct-purchase regular premium term plan paying a lump sum on death, terminal illness or total and permanent disability. A second page covers the Term 5 variant.",
+      "facts": [
+        "Sum assured between S$50,000 and S$400,000",
+        "Minimum entry age is 19 age next birthday",
+        "PRUProtect Term: coverage of 5 or 20 years or up to age 65; PRUProtect Term 5: renew every 5 years",
+        "Optional DIRECT - Crisis Cover for protection against 30 critical illnesses"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.prudential.com.sg/en/products/life/term-life/direct-pruprotect-term/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure (PRUProtect Term and Term 5)",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/prudential/pdf/ebrochures/pruprotect_term_and_pruprotect_term_5_eBrochure.pdf",
+          "local": "research/pdf/prudential/pruprotect_term_and_pruprotect_term_5_eBrochure.pdf"
+        },
+        {
+          "title": "Direct Purchase Factsheet and Checklist",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/direct-pruprotect-life-ii/dpi_factsheet_and_checklist_new.pdf",
+          "local": "research/pdf/prudential/dpi_factsheet_and_checklist_new.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "direct purchase regular premium term insurance plan that provides financial protection"
+    },
+    {
+      "name": "PRUMortgage",
+      "category": "term_life",
+      "subtype": "Decreasing (reducing) term mortgage insurance",
+      "summary": "A non-participating, regular premium reducing term mortgage insurance plan covering outstanding mortgage payments.",
+      "facts": [
+        "Policy term of 10 to 35 years",
+        "Interest rates from 1% - 7% to determine the sum assured for the outstanding loan",
+        "Lump sum on death and terminal illness; option to add total and permanent disability protection",
+        "Available as a joint-life policy"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/life/mortgage/prumortgage/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prumortgage/prumortgage-eBrochure-english.pdf",
+          "local": "research/pdf/prudential/prumortgage-eBrochure-english.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "non-participating, regular premium reducing term mortgage insurance plan"
+    },
+    {
+      "name": "PRUActive Life V",
+      "category": "whole_life",
+      "subtype": "Whole life with Multiplier Benefit and optional critical illness cover",
+      "summary": "A whole life plan with permanent protection and optional multiplied coverage and critical illness protection.",
+      "facts": [
+        "Permanent protection for Death, Terminal Illness, Total and Permanent Disability",
+        "Boost coverage by up to five times until age 80 (Multiplier Benefit factors 2x to 5x; ages 65, 70, 75 or 80)",
+        "Crisis Care and Early Crisis Care offer protection across 182 conditions",
+        "From age 60, part of the cash value can be converted into yearly payouts over 10 years"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/life/whole-life/pruactive-life-v/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-life-v/PRUActive-Life-V-Brochure-EN.pdf",
+          "local": "research/pdf/prudential/PRUActive-Life-V-Brochure-EN.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Lifelong promise of protection"
+    },
+    {
+      "name": "PRUActive Family Care",
+      "category": "whole_life",
+      "subtype": "Whole life with built-in Parent Guard Benefit",
+      "summary": "A whole life plan that includes embedded protection for the policyholder's parents alongside critical illness options.",
+      "facts": [
+        "Whole-of-life protection for Death, Terminal Illness, Total and Permanent Disability",
+        "Parent Guard Benefit provides embedded protection for parents until Age 100, with no separate application or medical underwriting",
+        "Multiply coverage by up to five times until age 80",
+        "Supplementary benefits offer protection across 182 conditions"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/life/whole-life/pruactive-family-care/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-family-care/pruactive-family-care-brochure-en.pdf",
+          "local": "research/pdf/prudential/pruactive-family-care-brochure-en.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "One plan that stands behind your ageing parent's care"
+    },
+    {
+      "name": "DIRECT - PRUProtect Life II",
+      "category": "whole_life",
+      "subtype": "Direct-purchase participating whole life",
+      "summary": "A direct-purchase participating whole life plan covering death, terminal illness and total and permanent disability.",
+      "facts": [
+        "Sum assured from a minimum of $50,000 up to $200,000",
+        "Minimum entry age is 19 age next birthday",
+        "Premium payment term up to age 70 or 85",
+        "Optional DIRECT - Crisis Cover II for protection against 30 critical illnesses"
+      ],
+      "channel": "direct-online",
+      "url": "https://www.prudential.com.sg/en/products/life/whole-life/direct-pruprotect-life-ii/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/direct-pruprotect-life-ii/PRUProtectLifeII_ENBrochure_AD.pdf",
+          "local": "research/pdf/prudential/PRUProtectLifeII_ENBrochure_AD.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "direct purchase participating whole life insurance plan"
+    },
+    {
+      "name": "PRULife Vantage Achiever Prime Series",
+      "category": "whole_life",
+      "subtype": "Participating legacy whole life, SGD or USD, single or regular premium",
+      "summary": "A participating whole life plan offering high coverage for life to build a legacy. Also usable for keyman insurance.",
+      "facts": [
+        "Multiplier Benefit until age 85 or 100",
+        "Policy denominated in SGD or USD, single or regular premium",
+        "Regular payments across 3 to 30 years",
+        "Capital guaranteed for single premium policy after the 20th year (USD) and 25th year (SGD)"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/legacy-planning/prulife-vantage-achiever-prime-series/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvantage-achiever-prime-series/PRULife-Vantage-Achiever-Prime-Series-Brochure-EN.pdf",
+          "local": "research/pdf/prudential/PRULife-Vantage-Achiever-Prime-Series-Brochure-EN.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "participating whole life plan that enables you to have financial security throughout your lifetime"
+    },
+    {
+      "name": "PRUApex Legacy Index II",
+      "category": "whole_life",
+      "subtype": "Indexed Universal Life (IUL), USD",
+      "summary": "A bespoke Indexed Universal Life plan combining high lifetime coverage with index-linked growth.",
+      "facts": [
+        "High coverage against death and terminal illness for lifetime",
+        "Choose up to three of a curated suite of seven indices for the Index Account",
+        "Guaranteed 0% floor rate for the Index Account",
+        "Option for death benefit to be paid out in instalments"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/legacy-planning/pruapex-legacy-index-ii/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruapex-legacy-index/pruapex-legacy-index-ii-brochure-en.pdf",
+          "local": "research/pdf/prudential/pruapex-legacy-index-ii-brochure-en.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "A bespoke Indexed Universal Life (IUL) plan"
+    },
+    {
+      "name": "PRUWealth Income",
+      "category": "whole_life",
+      "subtype": "Single premium participating whole life with lifetime monthly income; SGD or USD",
+      "summary": "A single premium participating whole life plan paying a lifetime of monthly income from the second policy year.",
+      "facts": [
+        "Single premium participating whole life insurance plan",
+        "Monthly cash benefit from as early as the second policy year; payout increases from fourth policy year onwards",
+        "Choice of Singapore or United States Dollar",
+        "Death cover, accidental disability cover and a one-time retrenchment benefit payout"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruwealth-income/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruwealth-income/pruwealth-income-ebrochure-eng.pdf",
+          "local": "research/pdf/prudential/pruwealth-income-ebrochure-eng.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "a single premium participating whole life insurance plan"
+    },
+    {
+      "name": "PRUWealth Income II (USD)",
+      "category": "whole_life",
+      "subtype": "Regular premium participating whole life with lifetime monthly income, USD",
+      "summary": "A regular premium participating whole life plan that pays monthly income from accumulated wealth.",
+      "facts": [
+        "Regular premium participating whole life insurance plan",
+        "Monthly income starts from policy year 4; the income increase can be deferred from policy year 6 to 11",
+        "Premium term of 3, 5, or 8 years",
+        "Death benefit can be distributed in instalments of up to 10 years"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruwealth-income-ii-usd/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruwealth-income-ii-usd/pruwealth-income-ii-usd-ebrochure-eng.pdf",
+          "local": "research/pdf/prudential/pruwealth-income-ii-usd-ebrochure-eng.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "regular premium participating whole life insurance plan"
+    },
+    {
+      "name": "PRULifetime Income Plus",
+      "category": "whole_life",
+      "subtype": "Participating whole life with lifetime monthly cash benefit, SGD",
+      "summary": "A participating whole life plan providing regular monthly cash benefits for life plus death and other protection.",
+      "facts": [
+        "Monthly cash benefit from the 49th policy month onwards for as long as the life assured lives",
+        "Regular premium of 4 or 10 years",
+        "Retrenchment benefit: one-time lump sum payout during the premium payment term",
+        "Option to accumulate monthly income with the insurer for an annual interest"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/savings/prulifetime-income-plus/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prulifetime-income-plus/prulifetime-income-plus-english.pdf",
+          "local": "research/pdf/prudential/prulifetime-income-plus-english.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "participating whole life insurance plan that provides you a lifetime of regular monthly cash benefits"
+    },
+    {
+      "name": "PRUIndex Lifetime Income",
+      "category": "whole_life",
+      "subtype": "Index-linked participating whole life with lifetime income; SGD or USD",
+      "summary": "A first-in-market index-linked whole life participating plan generating lifelong income with potential for higher payouts linked to an Index.",
+      "facts": [
+        "Guaranteed Monthly Cash Benefits of 0.50% p.a. for lifetime from the 1st month",
+        "From the 13th month, Monthly Cash Benefit rides on uncapped Index growth",
+        "Floor rate of 0.0%, so the policy never decreases in value",
+        "Choose SGD or USD; premium term of 5, 7, 10, or 15 years"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruindex-lifetime-income/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruindex-lifetime-income/pruindex-lifetime-income_brochure_en.pdf",
+          "local": "research/pdf/prudential/pruindex-lifetime-income_brochure_en.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "index-linked whole life participating plan designed to generate lifelong guaranteed income stream"
+    },
+    {
+      "name": "PRUApex MultiGen Wealth",
+      "category": "whole_life",
+      "subtype": "Whole-of-life USD participating plan with no maturity date",
+      "summary": "A whole-of-life USD-denominated participating plan with no maturity date and policy continuity options for passing wealth across generations.",
+      "facts": [
+        "USD-denominated participating whole-of-life plan with no maturity date",
+        "Capital guaranteed as early as after 7 years",
+        "Policy continuity options include Wealth Share, Change of Life Assured, Secondary Life Assured and Joint Ownership"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruapex-multigen-wealth/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruapex-multigen-wealth/pruapex-multigen-wealth-brochure-en.pdf",
+          "local": "research/pdf/prudential/pruapex-multigen-wealth-brochure-en.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "whole-of-life USD-denominated participating plan has no maturity date"
+    },
+    {
+      "name": "PRUActive Cash",
+      "category": "endowment",
+      "subtype": "Savings plan with yearly cash benefit",
+      "summary": "An insurance savings plan with a guaranteed yearly cash benefit and a maturity benefit.",
+      "facts": [
+        "Premium term of 5, 10, 15, 20 or 25 years and policy term between 15 to 25 years",
+        "Guaranteed yearly cash benefit payouts from the 2nd policy anniversary, or let them accumulate",
+        "Maturity benefit payable at the end of the chosen policy term",
+        "Death benefit for loved ones"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruactive-cash/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-cash/PRUActive-Cash-Brochure_AD.pdf",
+          "local": "research/pdf/prudential/PRUActive-Cash-Brochure_AD.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "An insurance savings plan with yearly cash benefit"
+    },
+    {
+      "name": "PRUActive Saver III",
+      "category": "endowment",
+      "subtype": "Capital-guaranteed savings plan with lump-sum maturity",
+      "summary": "A customisable insurance savings plan with capital guaranteed and a lump-sum payout at maturity.",
+      "facts": [
+        "Single premium or regular premium term of 5 to 30 years",
+        "Policy term ranging from 10 to 30 years",
+        "Capital guaranteed upon maturity, with lump-sum maturity benefit",
+        "Lump-sum payout upon death"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruactive-saver-iii/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-saver-iii/PRUActive_20Saver_20III_20SGD_ENG.pdf",
+          "local": "research/pdf/prudential/PRUActive_20Saver_20III_20SGD_ENG.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "customisable insurance savings plan"
+    },
+    {
+      "name": "PRUWealth Plus (SGD)",
+      "category": "endowment",
+      "subtype": "Savings plan, SGD; single or regular premium",
+      "summary": "A flexible SGD savings plan with withdrawals and death benefits.",
+      "facts": [
+        "Single premium or regular premium of 5, 10, 15 and 20 years; single premium payable with cash or SRS funds",
+        "Capital guaranteed after the 10th year",
+        "Option to defer premium payments for up to 2 years",
+        "One-time payout of up to 50% of annual premium in case of job loss"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruwealth-plus-sgd/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruwealth-plus-sgd/pruwealth-plus-sgd-ebrochure-eng.pdf",
+          "local": "research/pdf/prudential/pruwealth-plus-sgd-ebrochure-eng.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Grow your savings to meet your family's needs with a flexible plan"
+    },
+    {
+      "name": "PRUWealth (USD)",
+      "category": "endowment",
+      "subtype": "Insurance savings plan, USD",
+      "summary": "An insurance savings plan in US dollars with capital guaranteed and withdrawal flexibility.",
+      "facts": [
+        "Capital guaranteed after the 10th policy year (single premium payment term)",
+        "Single premium or regular premium of 5 or 10 years",
+        "Policy value can grow up to 100 years old"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruwealth-usd/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruwealth-usd/pruwealth_usd_ebrochure_english.pdf",
+          "local": "research/pdf/prudential/pruwealth_usd_ebrochure_english.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "an insurance savings plan that enables you to grow and diversify your wealth"
+    },
+    {
+      "name": "PRUIndex Income Boost",
+      "category": "endowment",
+      "subtype": "Regular premium participating endowment, index-linked, SGD",
+      "summary": "A regular premium participating endowment plan that uses Index growth to generate income while safeguarding savings.",
+      "facts": [
+        "Guaranteed Monthly Cash Benefits from month 1 to month 12; from month 13 linked to uncapped Index growth",
+        "Floor rate of 0.0% and capital guaranteed at maturity in fifteen years",
+        "Premium term of 5 or 10 years",
+        "Non-guaranteed maturity bonus"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruindex-incomeboost/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruindex-income-boost/PRUIndex-Income-Boost_Brochure_EN.pdf",
+          "local": "research/pdf/prudential/PRUIndex-Income-Boost_Brochure_EN.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "regular premium participating endowment plan that harnesses Index growth to generate income"
+    },
+    {
+      "name": "PRUAssure Income (USD)",
+      "category": "endowment",
+      "subtype": "Single premium, 9-year guaranteed income, USD; available only with purchase of an eligible plan",
+      "summary": "A single premium plan paying guaranteed yearly USD income for 9 years with capital returned at maturity. Offer valid until 31 December 2026 or while tranche lasts.",
+      "facts": [
+        "Guaranteed income of 5.0% p.a. for 9 years",
+        "Capital guaranteed at maturity in 9 years",
+        "Funded through a one-time single premium payment",
+        "Available only with the purchase of an eligible plan"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/savings/pruassure-income-promo/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruassure-income-promo/pruassure-income-usd-brochure-en.pdf",
+          "local": "research/pdf/prudential/pruassure-income-usd-brochure-en.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "guaranteed stream of USD income at 5.0% p.a. for 9 years"
+    },
+    {
+      "name": "PRUActive Retirement II",
+      "category": "annuity",
+      "subtype": "Retirement income plan, single or regular premium",
+      "summary": "A customisable retirement insurance plan providing a steady cumulative retirement income.",
+      "facts": [
+        "Guarantee to receive the same or more monthly income year on year",
+        "Single premium or regular premium term of 4 years up to selected payout age",
+        "Payout period adjustable from age 50 for up to 30 years",
+        "SRS funds can be used for the Single Premium Payment Option"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/retirement/pruactive-retirement-ii/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-retirement-ii/PRUActive%20Retirement%20II_eBrochure_ENG_AD.pdf",
+          "local": "research/pdf/prudential/PRUActive_Retirement_II_eBrochure_ENG_AD.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "highly customisable retirement insurance plan"
+    },
+    {
+      "name": "PRULink InvestGrowth",
+      "category": "ilp",
+      "subtype": "Investment-linked; single premium and recurrent single premium",
+      "summary": "An investment-linked plan with flexible top-ups, withdrawals and fund choices.",
+      "facts": [
+        "Single premium and recurrent single premium (RSP) payment options",
+        "Pay using CPF-Ordinary Account, CPF-Special Account, SRS or cash",
+        "Investments via CPF enjoy 0% premium charge; via SRS or cash a 3% premium charge",
+        "Withdrawals without penalty"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/investments/prulink-investgrowth/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prulinkinvestgrowth/PRULink-InvestGrowth_Brochure.pdf",
+          "local": "research/pdf/prudential/PRULink-InvestGrowth_Brochure.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "PRU Link InvestGrowth is an investment-linked plan"
+    },
+    {
+      "name": "PRUVantage Assure Series",
+      "category": "ilp",
+      "subtype": "Investment-linked with Wealth Assure feature",
+      "summary": "An investment-linked plan that protects and grows wealth, with a feature that locks in coverage at the highest point of the policy value.",
+      "facts": [
+        "Wealth Assure feature locks in coverage at the highest point of your policy value",
+        "Protection applies in the event of death or accidental disability"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/investments/pruvantage-assure-series/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvantage-assure-series/ebrochure-en.pdf",
+          "local": "research/pdf/prudential/ebrochure-en.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "PRUVantage Assure Series allows you to invest and protect your wealth"
+    },
+    {
+      "name": "PRUVantage Prosper",
+      "category": "ilp",
+      "subtype": "Whole of life investment-linked plan",
+      "summary": "A Whole of Life investment-linked plan for growth, additional income and a legacy.",
+      "facts": [
+        "Whole of Life Investment-Linked Plan",
+        "Death benefit of up to 105% of total premiums paid or account value, whichever is higher"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/investments/pruvantage-prosper/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvantage-prosper/PRUVantage_20Prosper_Brochure_EN.pdf",
+          "local": "research/pdf/prudential/PRUVantage_20Prosper_Brochure_EN.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "PRU Vantage Prosper is a Whole of Life Investment-Linked Plan"
+    },
+    {
+      "name": "PRUVantage Wealth II (USD)",
+      "category": "ilp",
+      "subtype": "Investment-linked, USD",
+      "summary": "A USD investment-linked plan enabling regular monthly income and wealth transfer.",
+      "facts": [
+        "Investment-linked plan available in United States Dollar",
+        "Enables ease of access to regular monthly income"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/investments/pruvantage-wealth-ii/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvantage-wealth-ii/PRUVantage-Wealth-II-Brochure-EN.pdf",
+          "local": "research/pdf/prudential/PRUVantage-Wealth-II-Brochure-EN.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "A resolute investment-linked plan made to grow, gain and give your wealth"
+    },
+    {
+      "name": "PRUVantage Wealth III (SGD)",
+      "category": "ilp",
+      "subtype": "Investment-linked, SGD",
+      "summary": "A Singapore-dollar investment-linked plan with access to PRUPrime CIO Funds and PRULink Funds.",
+      "facts": [
+        "Singapore-dollar-denominated investment-linked plan",
+        "Access to PRUPrime CIO Funds, with the option of investing in PRULink Funds",
+        "Provides income when needed"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/wealth/investments/pruvantage-wealth-iii/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvantage-wealth-iii/pruvantage-wealth-iii-brochure-en.pdf",
+          "local": "research/pdf/prudential/pruvantage-wealth-iii-brochure-en.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "a Singapore-dollar-denominated investment-linked plan"
+    },
+    {
+      "name": "PRUActive LinkGuard",
+      "category": "ilp",
+      "subtype": "Investment-linked whole life with Multiplier Benefit",
+      "summary": "A customisable investment-linked whole life plan offering double coverage while growing savings in PRULink funds.",
+      "facts": [
+        "Double coverage with Multiplier Benefit against death, terminal illness and total permanent disability before age 50",
+        "Premiums start from S$75 per month",
+        "10 years guaranteed coverage",
+        "Regular or lump sum top-ups and partial withdrawals"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/life/whole-life/pruactive-linkguard/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-linkguard/PRUActive-LinkGuard_brochure_en.pdf",
+          "local": "research/pdf/prudential/PRUActive-LinkGuard_brochure_en.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "customisable investment-linked whole life insurance plan"
+    },
+    {
+      "name": "PRUMum",
+      "category": "maternity_child",
+      "subtype": "Maternity term protection, single premium 4-year",
+      "summary": "A single premium 4-year maternity term protection plan covering mum and baby, from the 13th week of pregnancy.",
+      "facts": [
+        "Single premium 4-year maternity term protection plan",
+        "Covers mums-to-be from as early as the 13th week of pregnancy",
+        "Protection for up to 17 pregnancy complications and 25 congenital illnesses",
+        "Four sum assured coverage options; covers assisted pregnancies such as IVF"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/life/maternity/prumum/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prumum/prumum_eBrochure_english.pdf",
+          "local": "research/pdf/prudential/prumum_eBrochure_english.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "A single premium 4-year maternity insurance term protection plan"
+    },
+    {
+      "name": "PRUFirst Promise",
+      "category": "maternity_child",
+      "subtype": "Bundled maternity plan: PRUMum + PRUActive Life V",
+      "summary": "A bundled maternity plan for expecting mums between 13 to 36 weeks of pregnancy; the whole life cover can be transferred to baby without underwriting.",
+      "facts": [
+        "For expecting mums between 13 to 36 weeks of their pregnancy",
+        "Bundle of PRUMum and PRUActive Life V",
+        "Transfer of PRUActive Life V from mum to baby without underwriting",
+        "Covers assisted pregnancies such as IVF"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/life/maternity/prufirst-promise/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prufirst-promise-life-protection/prufirst-promise_ebrochure_english.pdf",
+          "local": "research/pdf/prudential/prufirst-promise_ebrochure_english.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "bundled maternity insurance plan comprising of PRU Mum and PRU Active Life V"
+    },
+    {
+      "name": "PRUFirst Gift II",
+      "category": "maternity_child",
+      "subtype": "Bundled maternity plan: PRUMum + PRUActive LinkGuard",
+      "summary": "A bundled maternity plan protecting mum and baby from pregnancy up to childbirth and beyond; the investment-linked whole life cover transfers to baby without underwriting.",
+      "facts": [
+        "Bundle of PRUMum and PRUActive LinkGuard",
+        "Option to begin coverage as early as 13 weeks and until the end of fourth policy year",
+        "Coverage for up to 17 pregnancy complications",
+        "Transfer of PRUActive LinkGuard from mum to baby without underwriting"
+      ],
+      "channel": "agent",
+      "url": "https://www.prudential.com.sg/en/products/life/maternity/pfg2/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Brochure",
+          "url": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pfg2/prufirst-gift-ii-brochure-en.pdf",
+          "local": "research/pdf/prudential/prufirst-gift-ii-brochure-en.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "bundled maternity plan comprising of PRU Mum and PRU Active LinkGuard"
+    }
+  ],
+  "not_found": [
+    "disability_income",
+    "outpatient",
+    "rider (no standalone rider pages other than PRUExtra, listed as ip_rider)"
+  ],
+  "notes": [
+    "Product list taken from the rendered Health, Life and Legacy Planning hub pages plus the Wealth hub (savings, retirement, investments), then every page confirmed with HTTP 200 and the product name in title/h1.",
+    "Care Secure is underwritten and issued by Income Insurance Limited and only distributed by Prudential; its second PDF (contract on income.com.sg) returned 404 and is omitted.",
+    "DIRECT - PRUProtect Term and DIRECT - PRUProtect Term 5 have separate pages and are listed once; Term 5 page: https://www.prudential.com.sg/en/products/life/term-life/direct-pruprotect-term-5/",
+    "PRUExtra has no page of its own; it is described on the PRUShield page (same URL). PRUExtra Plus Lite / Premier Lite / Plus Lite CoPay are marked withdrawn there and left out.",
+    "Pages in the sitemap but not in any hub menu were left out: PRULink ActiveInvest Portfolio (fund), PRUWealth Plus xsell variants, PRUVantage Assure/Wealth xsell (redirect to homepage), PRULink FlexGrowth xsell, PRURetirement Growth (redirects to homepage), claims-based-pricing pages (rider withdrawn notice).",
+    "Categorisation: lifetime-income participating plans (PRUWealth Income, PRUWealth Income II, PRULifetime Income Plus, PRUIndex Lifetime Income) are described by Prudential as whole life, so they are whole_life; only PRUActive Retirement II is annuity.",
+    "Channel: pages route enquiries through Prudential Financial Representatives; DIRECT plans are labelled direct purchase. Purchase channel for Care Secure not stated.",
+    "PRUActive Family Care page shows an early-bird promotion ending 31 October; promotions are not recorded as facts.",
+    "2026-10-13: removed Care Secure (issued by Income). Income's own page says it was withdrawn from new policies as of 9 September 2025; Prudential's distribution page is stale."
+  ]
+}

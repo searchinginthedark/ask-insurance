@@ -1,0 +1,292 @@
+{
+  "id": "raffles",
+  "name": "Raffles Health Insurance",
+  "formerly": null,
+  "website": "https://www.raffleshealthinsurance.com",
+  "products_index_url": "https://www.raffleshealthinsurance.com/products/personal/singapore-medical-cover/",
+  "claims_url": "https://www.raffleshealthinsurance.com/claims/file-a-claim/personal-insurance-claim/",
+  "contact_url": "https://www.raffleshealthinsurance.com/contact-us/",
+  "verified_on": "2026-10-13",
+  "products": [
+    {
+      "name": "Raffles Shield",
+      "category": "hospitalisation",
+      "subtype": "MediSave-approved Integrated Shield Plan with 4 base plans: Standard, B, A, Private (options: Raffles Hospital Option, High Deductible Option)",
+      "summary": "Integrated Shield Plan that complements MediShield Life, paid by MediSave, with four basic plans from B1 ward in restructured hospitals to private hospitals.",
+      "facts": [
+        "Four basic plans: Raffles Shield Standard, B, A and Private",
+        "Policy Year Limit is $300,000 for Plan B and $600,000 for Plan A",
+        "Minimum entry age is 1 year and last entry age is 75 years (age next birthday); the last entry age limit does not apply to Raffles Shield Standard",
+        "High Deductible Option: opt for a $10,000 deductible to enjoy lower premiums",
+        "Foreigners are only eligible for Raffles Shield Private"
+      ],
+      "channel": "mixed",
+      "url": "https://www.raffleshealthinsurance.com/products/raffles-shield/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Raffles Shield and Riders Product Summary (1 Apr 2026)",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2026/06/Raffles-Shield-and-Riders-Product-Summary-1-Apr-2026-18-June-2026.pdf",
+          "local": "research/pdf/raffles/Raffles-Shield-and-Riders-Product-Summary-1-Apr-2026-18-June-2026.pdf"
+        },
+        {
+          "title": "Raffles Shield Policy Conditions (1 April 2026)",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2026/03/Raffles-Shield-Policy-Conditions-1-April-2026.pdf",
+          "local": "research/pdf/raffles/Raffles-Shield-Policy-Conditions-1-April-2026.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Raffles Shield is a medical insurance plan in Singapore that protects you"
+    },
+    {
+      "name": "Raffles Choice Rider",
+      "category": "ip_rider",
+      "subtype": "co-payment rider for Raffles Shield B, A, Private (replaces Raffles Key Rider from 1 April 2026)",
+      "summary": "Rider that replaces the 10% co-insurance with a lower 5% co-payment, capped per policy year, and adds cover for some cancer drugs not on the Cancer Drug List.",
+      "facts": [
+        "Replaces the 10% co-insurance (after deductible) with a lower 5% co-payment",
+        "Co-payment capped at $6,000 per policy year when treated by RHI Panel / Extended Panel specialists or GRH",
+        "Covers cancer drug treatments not on the Cancer Drug List, with benefits of up to $5,000",
+        "Applicable for Raffles Shield B, A, Private Plans (without High Deductibles)"
+      ],
+      "channel": "unknown",
+      "url": "https://www.raffleshealthinsurance.com/products/raffles-shield/learn-more/raffles-shield-plans/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Raffles Choice Rider Policy Conditions (1 April 2026)",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2026/03/Raffles-Choice-Rider-Policy-Conditions-1-April-2026.pdf",
+          "local": "research/pdf/raffles/Raffles-Choice-Rider-Policy-Conditions-1-April-2026.pdf"
+        },
+        {
+          "title": "Raffles Shield and Riders Product Summary (1 Apr 2026)",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2026/06/Raffles-Shield-and-Riders-Product-Summary-1-Apr-2026-18-June-2026.pdf",
+          "local": "research/pdf/raffles/Raffles-Shield-and-Riders-Product-Summary-1-Apr-2026-18-June-2026.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Choice Rider Reduces your out-of-pocket costs by replacing the 10% co-insurance"
+    },
+    {
+      "name": "Raffles Cancer Guard Rider",
+      "category": "ip_rider",
+      "subtype": "cancer drug rider for Raffles Shield B, A, Private",
+      "summary": "Rider adding cancer drug treatment cover (Cancer Drug List and non-CDL), cancer drug services, TCM from Raffles Chinese Medicine and psychological counselling.",
+      "facts": [
+        "Cancer Drug List drugs: monthly limit of up to 18 times the MediShield Life limit, in addition to base plan limit",
+        "Non-CDL drugs: annual limit of up to $250,000/year",
+        "Cancer drug services: annual limit of up to 15 times the MediShield Life limit",
+        "Applicable for Raffles Shield B, A, Private Plans"
+      ],
+      "channel": "unknown",
+      "url": "https://www.raffleshealthinsurance.com/products/raffles-shield/learn-more/raffles-cancer-guard/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Raffles Cancer Guard Rider Brochure (Dec 2023)",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2023/12/Raffles-Cancer-Guard-Rider-Brochure-Dec-2023.pdf",
+          "local": "research/pdf/raffles/Raffles-Cancer-Guard-Rider-Brochure-Dec-2023.pdf"
+        },
+        {
+          "title": "Raffles Cancer Guard Rider Policy Conditions (1 April 2026)",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2026/03/Raffles-Cancer-Guard-Rider-Policy-Conditions-1-April-2026.pdf",
+          "local": "research/pdf/raffles/Raffles-Cancer-Guard-Rider-Policy-Conditions-1-April-2026.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Raffles Cancer Guard Rider Your Ultimate Protection Against the Financial Burden of Cancer"
+    },
+    {
+      "name": "Raffles Premier Rider",
+      "category": "ip_rider",
+      "subtype": "extra-benefits rider for Raffles Shield B, A, Private",
+      "summary": "Rider providing additional benefits such as family accommodation, post-hospitalisation TCM and home care, emergency accident outpatient treatment and ambulance services.",
+      "facts": [
+        "Accommodation expenses for an Immediate Family Member",
+        "Post-Hospitalisation Traditional Chinese Medicine and home care",
+        "Emergency outpatient treatment due to accident; ambulance services",
+        "Applicable for Raffles Shield B, A, Private Plans"
+      ],
+      "channel": "unknown",
+      "url": "https://www.raffleshealthinsurance.com/products/raffles-shield/learn-more/raffles-shield-plans/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Raffles Premier Rider Policy Conditions (1 April 2026)",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2026/03/Raffles-Premier-Rider-Policy-Conditions-1-April-2026.pdf",
+          "local": "research/pdf/raffles/Raffles-Premier-Rider-Policy-Conditions-1-April-2026.pdf"
+        },
+        {
+          "title": "Raffles Shield and Riders Product Summary (1 Apr 2026)",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2026/06/Raffles-Shield-and-Riders-Product-Summary-1-Apr-2026-18-June-2026.pdf",
+          "local": "research/pdf/raffles/Raffles-Shield-and-Riders-Product-Summary-1-Apr-2026-18-June-2026.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Premier Rider Premier rider provides additional benefits such as"
+    },
+    {
+      "name": "Raffles Critical Illness Plan",
+      "category": "critical_illness",
+      "subtype": "yearly or 5-year renewable term CI plan, simple health declaration (3 questions)",
+      "summary": "Critical illness plan paying a lump sum on diagnosis of 37 major stage critical illnesses, with a choice of yearly or 5-year renewable term.",
+      "facts": [
+        "Covers 37 critical illnesses with 100% lump sum payout",
+        "Choice of yearly or 5-year renewable term plan",
+        "Minimum entry age is 19 years old, and last entry age is 60 (age next birthday)",
+        "3 simple health declaration questions; no medical examination at application",
+        "Eligible: Singapore Citizen, Permanent Resident or foreigner with a valid pass and FIN"
+      ],
+      "channel": "unknown",
+      "url": "https://www.raffleshealthinsurance.com/products/raffles-critical-illness-plan/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Product Summary - Raffles Critical Illness with Early CI Rider (11 Feb 2025)",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2025/12/Product-Summary-Raffles-Critical-Illness-with-Early-CI-Rider-11-Feb-2025.pdf",
+          "local": "research/pdf/raffles/Product-Summary-Raffles-Critical-Illness-with-Early-CI-Rider-11-Feb-2025.pdf"
+        },
+        {
+          "title": "Raffles Critical Illness Brochure (9 May 2024)",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2024/05/CCD24010013-Critical-Illness-Brochure_9-May-2024.pdf",
+          "local": "research/pdf/raffles/CCD24010013-Critical-Illness-Brochure_9-May-2024.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Raffles Critical Illness Plan Safeguard your financial future against the unexpected challenges of Critical Illness"
+    },
+    {
+      "name": "Raffles Critical Illness - Early Critical Illness Rider",
+      "category": "rider",
+      "subtype": "early and intermediate stage CI rider for Raffles Critical Illness Plan",
+      "summary": "Optional rider adding a lump sum for early and intermediate stage critical illnesses; its payout does not reduce the base plan sum assured.",
+      "facts": [
+        "Additional sum assured of 50% to 100% of the plan sum assured for 9 common Early and Intermediate Stage critical illnesses",
+        "Payout does not reduce the Raffles Critical Illness Plan's sum assured",
+        "In the page example the rider ends after its payout and the basic plan continues"
+      ],
+      "channel": "unknown",
+      "url": "https://www.raffleshealthinsurance.com/products/raffles-critical-illness-plan/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Raffles Critical Illness - Early Critical Illness Rider Policy Wording (23 Apr 2024)",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2024/05/Policy-Wording_ECI-23-Apr-2024-1.pdf",
+          "local": "research/pdf/raffles/Policy-Wording_ECI-23-Apr-2024-1.pdf"
+        },
+        {
+          "title": "Product Summary - Raffles Critical Illness with Early CI Rider (11 Feb 2025)",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2025/12/Product-Summary-Raffles-Critical-Illness-with-Early-CI-Rider-11-Feb-2025.pdf",
+          "local": "research/pdf/raffles/Product-Summary-Raffles-Critical-Illness-with-Early-CI-Rider-11-Feb-2025.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Raffles Critical Illness - Early Critical Illness Rider Policy Wording"
+    },
+    {
+      "name": "Raffles Elite Care",
+      "category": "hospitalisation",
+      "subtype": "non-MediSave regional hospital and surgical plan (Gold / Silver / Bronze), not an Integrated Shield Plan",
+      "summary": "Comprehensive hospital and surgical medical plan for living or working in Singapore, ASEAN, China (excl. Hong Kong), India and South Korea, with an optional outpatient rider.",
+      "facts": [
+        "Three plans (Gold, Silver, Bronze) with an annual limit of up to S$1,000,000",
+        "Policyholder aged between 19 and 60 (age next birthday); renewal up to and including 75",
+        "First dollar coverage: no deductible and co-payment required",
+        "Daily Hospital Cash Benefit of up to S$200 per day for admissions to Raffles Hospital, Singapore",
+        "Outpatient Rider adds up to S$2,000 annual medical coverage within the Raffles Medical Group network in Singapore"
+      ],
+      "channel": "unknown",
+      "url": "https://www.raffleshealthinsurance.com/products/personal/regional-medical-cover/raffles-elite-care/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Raffles Elite Care Brochure (English, 15 May 2025)",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2025/05/Raffles-Elite-Care-15-May-25-V2.pdf",
+          "local": "research/pdf/raffles/Raffles-Elite-Care-15-May-25-V2.pdf"
+        },
+        {
+          "title": "Raffles Elite Care Product Summary (15 May 2025)",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2021/07/Raffles-Elite-Care-Product-Summary-15052025.pdf",
+          "local": "research/pdf/raffles/Raffles-Elite-Care-Product-Summary-15052025.pdf"
+        }
+      ],
+      "fact_source": "both",
+      "evidence": "Raffles Elite Care is a comprehensive medical plan designed to take care"
+    },
+    {
+      "name": "Lifeline",
+      "category": "hospitalisation",
+      "subtype": "international private medical insurance (Essential / Classic / Gold), insured by RHI, administered by Bupa Global; not MediSave-approved",
+      "summary": "Premium international health plan with three levels of cover, worldwide treatment choice and optional US cover, evacuation or repatriation assistance and deductibles.",
+      "facts": [
+        "Essential: overall annual maximum SGD 4,450,000 / USD 3,200,000",
+        "Classic: overall annual maximum SGD 6,650,000 / USD 4,800,000",
+        "Gold: unlimited overall annual maximum",
+        "Maternity cover after 10 months' membership (Classic and Gold)",
+        "Bupa International Health Plans are not MediSave-approved"
+      ],
+      "channel": "unknown",
+      "url": "https://www.raffleshealthinsurance.com/products/personal/global-medical-cover/lifeline-3/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Lifeline Brochure",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2023/04/SGP-LIFE-SALE-EN-XXXX-2301-0041414-LR.pdf",
+          "local": "research/pdf/raffles/SGP-LIFE-SALE-EN-XXXX-2301-0041414-LR.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Lifeline A premium international health plan that helps give you peace of mind"
+    },
+    {
+      "name": "Worldwide Health Options",
+      "category": "hospitalisation",
+      "subtype": "modular international private medical insurance, insured by RHI, administered by Bupa Global",
+      "summary": "Customisable international health plan for individuals and families built from a core hospital plan plus optional outpatient, medicines, wellbeing and evacuation modules.",
+      "facts": [
+        "Core Worldwide Medical Insurance: overall annual maximum SGD 4,000,000 / USD 2,890,000",
+        "Optional modules: Worldwide Medical Plus, Medicines and Equipment, Wellbeing, Evacuation",
+        "Optional U.S. Cover and cover for pre-existing conditions (outside the U.S.) subject to underwriting",
+        "Direct settlement with a network of over 2.1 million providers"
+      ],
+      "channel": "unknown",
+      "url": "https://www.raffleshealthinsurance.com/worldwide-health-options/",
+      "url_status": "ok",
+      "pdfs": [
+        {
+          "title": "Worldwide Health Options Brochure",
+          "url": "https://www.raffleshealthinsurance.com/wp-content/uploads/2025/12/SGP-BWHO-SALE-EN-XXXX-2510-0060995-LR.pdf",
+          "local": "research/pdf/raffles/SGP-BWHO-SALE-EN-XXXX-2510-0060995-LR.pdf"
+        }
+      ],
+      "fact_source": "page",
+      "evidence": "Worldwide Health Options A modular international health insurance plan for individuals and families"
+    }
+  ],
+  "not_found": [
+    "term_life",
+    "whole_life",
+    "cancer (only as the Raffles Cancer Guard Rider on Raffles Shield)",
+    "disability_income",
+    "long_term_care",
+    "personal_accident",
+    "hospital_cash (only as a benefit inside Raffles Elite Care)",
+    "endowment",
+    "ilp",
+    "annuity",
+    "maternity_child",
+    "outpatient (only as an optional rider on Raffles Elite Care)"
+  ],
+  "notes": [
+    "Individual product menu (Singapore, Regional and Global coverage) lists only Raffles Shield, Raffles Critical Illness Plan, Raffles Elite Care, Lifeline and Worldwide Health Options; the other categories were checked against that menu and the sitemap page.",
+    "Raffles Key Rider is not listed: sales ceased from 1 April 2026 and it is replaced by Raffles Choice Rider (site FAQ dated 2026).",
+    "Raffles Hospital Option and High Deductible Option are options on Raffles Shield, not riders, and are described in the Raffles Shield entry.",
+    "Raffles Choice Rider and Raffles Premier Rider have no standalone web page; they are described on the Raffles Shield Plans page and have their own policy conditions PDFs. Raffles Cancer Guard Rider has its own page.",
+    "Raffles Elite Care is a non-MediSave regional hospital and surgical plan, tagged hospitalisation as the nearest category; Lifeline and Worldwide Health Options are international plans insured by RHI and administered by Bupa Global.",
+    "Lifeline is also served at /products/personal/global-medical-cover/lifeline/ and /lifeline/; the lifeline-3 page is used.",
+    "The Raffles Critical Illness product summary PDF is image-only (no extractable text), so its figures are not used; facts come from the product page.",
+    "Business products (Raffles Corporate Care, Customised Group Insurance, Foreign Workers Medical Insurance, Oil and Gas, Maritime, TPA) were skipped as group/corporate.",
+    "The Raffles Elite Care brochure and product summary sit under upload paths dated 2021 and 2025 but carry 15 May 2025 version stamps.",
+    "No page was bot-blocked; all product URLs returned HTTP 200 to scripted requests."
+  ]
+}
