@@ -321,6 +321,8 @@ def build():
                 bands.append(b)
     data = {
         "category": "hospitalisation",
+        "kind": "moh",
+        "na": "Not in MOH's table",
         "source": {"publisher": "MOH", "title": "Comparison of Integrated Shield Plans", "url": PAGE,
                    "as_at": sorted(a for a in as_ats if a)},
         "notes": NOTES,

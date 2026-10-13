@@ -1,0 +1,197 @@
+{
+  "insurer": "singlife",
+  "checked_on": "2026-10-13",
+  "extra_pdfs": [],
+  "products": {
+    "Singlife Simple Term": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "Yearly renewable, with cover until age 86",
+          "quote": "You can get continuous protection until you’re 86 years old by simply renewing your plan yearly",
+          "src": "https://singlife.com/en/life-insurance/simple-term"
+        },
+        "tpd": {
+          "v": "Yes, pays the sum assured on total and permanent disability",
+          "quote": "We’ll make a lump-sum payout of the sum assured if you die; become terminally ill or diagnosed with total and permanent disability.",
+          "src": "https://singlife.com/en/life-insurance/simple-term"
+        },
+        "ti": {
+          "v": "Yes, pays the sum assured on terminal illness",
+          "quote": "We’ll make a lump-sum payout of the sum assured if you die; become terminally ill or diagnosed with total and permanent disability.",
+          "src": "https://singlife.com/en/life-insurance/simple-term"
+        },
+        "premium": {
+          "v": "Not guaranteed; the renewal premium rises with age",
+          "quote": "the renewal premium will be based on the life assured’s age at the policy renewal date and the premium increases with age. The premium rates are non-guaranteed.",
+          "src": "https://singlife.com/en/life-insurance/simple-term"
+        }
+      }
+    },
+    "Singlife Elite Term II": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "5 or 10 years, any whole number of years from the 11th to age 85, or to age 99",
+          "quote": "Choose to be covered for 5 years, 10 years, from every one-year interval from the 11 th year until age 85 or cover to age 99.",
+          "src": "https://singlife.com/en/life-insurance/elite-term-ii"
+        },
+        "tpd": {
+          "v": "Optional rider: TPD Advance Cover Plus III",
+          "quote": "Rider for total and permanent disability: TPD Advance Cover Plus III",
+          "src": "https://singlife.com/content/dam/public/sg/documents/life-insurance/singlife-elite-term-ii/brochure.pdf"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "Receive a lump-sum payout if you die or are diagnosed with a terminal illness.",
+          "src": "https://singlife.com/en/life-insurance/elite-term-ii"
+        },
+        "no_medical": {
+          "v": "Yes, can convert to a new endowment or whole life plan without further medical underwriting",
+          "quote": "There’s the option to convert your term life insurance plan into a new endowment or whole life plan without further medical underwriting",
+          "src": "https://singlife.com/en/life-insurance/elite-term-ii"
+        }
+      }
+    },
+    "DIRECT – Singlife Term Life": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "5-year renewable, 20 years, or term up to age 65",
+          "quote": "You may choose from three different coverage periods for your term life DPI: (a) 5-year renewable (b) 20 years (c) Term up to age 65",
+          "src": "https://singlife.com/content/dam/public/sg/documents/life-insurance/direct-purchase-insurance/dpi-fact-sheet-and-checklist.pdf"
+        },
+        "entry_age": {
+          "v": "19 to 65",
+          "quote": "you’re aged 19 to 65",
+          "src": "https://singlife.com/en/life-insurance/direct-term-life"
+        },
+        "tpd": {
+          "v": "Yes, for the coverage period or until age 65, whichever is earlier",
+          "quote": "Covers you for death and Terminal Illness for the duration of the chosen coverage period; and for Total and Permanent Disability for the duration of the chosen coverage period or until age 65, whichever is earlier.",
+          "src": "https://singlife.com/content/dam/public/sg/documents/life-insurance/direct-purchase-insurance/brochure.pdf"
+        },
+        "ti": {
+          "v": "Yes, for the chosen coverage period",
+          "quote": "Covers you for death and Terminal Illness for the duration of the chosen coverage period",
+          "src": "https://singlife.com/content/dam/public/sg/documents/life-insurance/direct-purchase-insurance/brochure.pdf"
+        }
+      }
+    },
+    "Singlife Comprehensive Critical Illness II": {
+      "category": "critical_illness",
+      "metrics": {
+        "stages": {
+          "v": "Early, intermediate and severe stage",
+          "quote": "any of the covered 135 conditions across early, intermediate and severe stage",
+          "src": "https://singlife.com/en/critical-illness-insurance/comprehensive-critical-illness-ii"
+        },
+        "conditions": {
+          "v": "135 conditions",
+          "quote": "any of the covered 135 conditions across early, intermediate and severe stage",
+          "src": "https://singlife.com/en/critical-illness-insurance/comprehensive-critical-illness-ii"
+        },
+        "claims": {
+          "v": "Single payout",
+          "quote": "A single-payout plan that gives you the financial support to tackle various stages of critical illness",
+          "src": "https://singlife.com/en/critical-illness-insurance/comprehensive-critical-illness-ii"
+        },
+        "term": {
+          "v": "Any length from 10 years to age 99, in one-year steps",
+          "quote": "Choose to be protected from 10 years up till you’re 99 years old (in one-year intervals)",
+          "src": "https://singlife.com/en/critical-illness-insurance/comprehensive-critical-illness-ii"
+        }
+      }
+    },
+    "Singlife Essential Critical Illness II": {
+      "category": "critical_illness",
+      "metrics": {
+        "conditions": {
+          "v": "14 critical illnesses, plus 4 diabetic conditions",
+          "quote": "14 Critical Illnesses 4 Diabetic Conditions6",
+          "src": "https://singlife.com/content/dam/public/sg/documents/critical-illness-insurance/singlife-essential-critical-illness-ii/brochure.pdf"
+        },
+        "term": {
+          "v": "15 years, or up to age 85",
+          "quote": "Get protected for 15 years or up to age 85 – it’s your call.",
+          "src": "https://singlife.com/en/critical-illness-insurance/essential-critical-illness-ii"
+        }
+      }
+    },
+    "Singlife Multipay Critical Illness II": {
+      "category": "critical_illness",
+      "metrics": {
+        "stages": {
+          "v": "Early, intermediate and severe stages",
+          "quote": "Get protection for 135 conditions across early, intermediate and severe stages of critical illnesses",
+          "src": "https://singlife.com/en/critical-illness-insurance/multipay-critical-illness-ii"
+        },
+        "conditions": {
+          "v": "135 conditions",
+          "quote": "Get protection for 135 conditions across early, intermediate and severe stages of critical illnesses",
+          "src": "https://singlife.com/en/critical-illness-insurance/multipay-critical-illness-ii"
+        },
+        "claims": {
+          "v": "Multiple payouts, up to 900% of the Sum Assured",
+          "quote": "Get up to 900% of your Sum Assured with multiple payouts across different critical illnesses.",
+          "src": "https://singlife.com/en/critical-illness-insurance/multipay-critical-illness-ii"
+        },
+        "term": {
+          "v": "10 years to age 99, in one-year steps",
+          "quote": "Choose coverage from 10 years to age 99 (in one-year intervals)",
+          "src": "https://singlife.com/en/critical-illness-insurance/multipay-critical-illness-ii"
+        }
+      }
+    },
+    "Singlife Health Plus": {
+      "category": "ip_rider",
+      "metrics": {
+        "pairs_with": {
+          "v": "Singlife Shield: some options for Plan 1 only, others for Plan 2/3 only",
+          "quote": "Singlife Health Plus options attachable to Singlife Shield Plan 1 only Singlife Health Plus options attachable to Singlife Shield Plan 2/3 only",
+          "src": "https://singlife.com/content/dam/public/sg/documents/medical-insurance/singlife-shield/singlife-health-plus-policy-contract-2026.pdf"
+        },
+        "copay": {
+          "v": "5% co-insurance (10% on Singlife Shield alone)",
+          "quote": "Adding a rider reduces your co-insurance from 10% (Singlife Shield only) to 5% (Singlife Shield and Singlife Health Plus)",
+          "src": "https://singlife.com/content/dam/public/sg/documents/medical-insurance/singlife-health-plus-and-singlife-shield-brochure.pdf"
+        },
+        "entry_age": {
+          "v": "75 or below at the cover start date",
+          "quote": "age 75 years old or below at the cover start date",
+          "src": "https://singlife.com/content/dam/public/sg/documents/medical-insurance/singlife-shield/singlife-health-plus-policy-contract-2026.pdf"
+        }
+      }
+    },
+    "Singlife Health Plus Starter": {
+      "category": "ip_rider",
+      "metrics": {
+        "pairs_with": {
+          "v": "Singlife Shield Starter",
+          "quote": "Singlife Health Plus Starter is a rider to Singlife Shield Starter",
+          "src": "https://singlife.com/content/dam/public/sg/documents/medical-insurance/singlife-shield-starter-and-health-plus/health-plus-product-summary.pdf"
+        },
+        "copay": {
+          "v": "5% of the claimable amount",
+          "quote": "you will only need to co-pay 5% of the claimable amount",
+          "src": "https://singlife.com/content/dam/public/sg/documents/medical-insurance/singlife-shield-starter-and-health-plus/health-plus-product-summary.pdf"
+        },
+        "entry_age": {
+          "v": "39 age next birthday (ANB) or below at the cover start date",
+          "quote": "39 ANB or below at the cover start date",
+          "src": "https://singlife.com/content/dam/public/sg/documents/medical-insurance/singlife-shield-starter-and-health-plus/health-plus-product-summary.pdf"
+        }
+      }
+    }
+  },
+  "notes": [
+    "Singlife Simple Term: entry age and medical-free renewal/conversion are not stated on the page or brochure (no product summary on file), so left out.",
+    "Singlife Elite Term II: term cell is the Regular Pay choice; Limited Pay covers to age 99 (page: \"Coverage up to age 99\"). Premium guarantee is not stated for the base plan (the \"not guaranteed\" footnote in the brochure attaches to the CI rider premium only). no_medical gives the conversion option only; the page also offers a Guaranteed Issuance Option to raise cover at key life events without medical check-ups (limited to 50% of the sum assured or S$500,000 per life, whichever is lower), but one quote cannot support both. Entry age not stated.",
+    "DIRECT term life: premium left out on purpose. The page says premiums stay the same throughout the premium payment period, but the brochure says a 5-year renewable term is re-priced by age at each renewal (maximum renewal age 80, cover to 85), and the DPI fact sheet says TPD pricing may change premiums. entry_age 19 to 65 is the page figure for DPI generally; the brochure says the exact limit depends on the coverage period. No health-check-free renewal/conversion is stated.",
+    "Singlife Comprehensive CI II: entry age and waiting period length are not stated (only \"waiting period and survival period are applicable\"). The plan also pays 20% extras for tumour surgery, ICU stay and 27 Special Benefit conditions.",
+    "Singlife Essential CI II: stages not stated as such (list of 14 illnesses plus 4 diabetic conditions); claims cell left out because CI payout is an early payout of the Death Benefit with a separate diabetic-conditions benefit and a 10% coronary procedure payout. Entry age and waiting period not stated.",
+    "Singlife Multipay CI II: waiting periods stated are between claims (1 year between CI claims, 2 years between recurrent claims), not after cover starts, so waiting is left out. Entry age not stated.",
+    "Singlife Health Plus: copay_cap and panel left out because the sources disagree. The brochure (accurate as at 26 August 2026) shows 5% capped at S$6,000 a policy year for treatment at A&E or preferred medical providers; the policy contract effective 1 April 2026 shows maximum S$3,000 a policy year in a cell that spans all four options. Resolve against the current product summary before showing a figure. The rider has Private and Public options (Prime/Lite) tied to Shield Plan 1 or Plan 2/3 respectively.",
+    "Singlife Health Plus Starter: no yearly co-payment cap stated for the rider; the preferred-provider condition is described on the Shield Starter plan, not the rider, so panel is left out. The Starter summary PDF file is named health-plus-product-summary.pdf and contains both the Shield Starter and Health Plus Starter summaries."
+  ]
+}

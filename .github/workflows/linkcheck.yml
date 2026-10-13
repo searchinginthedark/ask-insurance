@@ -25,6 +25,10 @@ jobs:
       # government figure changed (CareShield payouts rise each year) and the guide needs updating.
       - if: always()
         run: python tools/verify_guide.py
+      # Every term life / critical illness / rider cell on the Compare tab quotes the insurer's own
+      # page or PDF. Red means a quote is no longer on its page: re-check that plan.
+      - if: always()
+        run: python tools/verify_metrics.py
       # The Compare tab's Shield plan table is copied from MOH's comparison PDFs. A red run here
       # means MOH published new figures: run tools/moh_ip.py locally and commit the new file.
       # PyMuPDF is pinned because its table detection changes between versions.

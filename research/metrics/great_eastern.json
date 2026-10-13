@@ -1,0 +1,195 @@
+{
+  "insurer": "great_eastern",
+  "checked_on": "2026-10-13",
+  "extra_pdfs": [],
+  "products": {
+    "DIRECT - GREAT Term": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "DIRECT - GREAT Term: up to 20 years or up to age 65; 5yr Term: renewable every 5 years up to age 80",
+          "quote": "Select DIRECT – GREAT Term for a fixed coverage term up to 20 years or up to age 65, or DIRECT – GREAT 5yr Term for renewable coverage every 5 years up to age 80.",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/direct-great-term.html"
+        },
+        "tpd": {
+          "v": "Yes, if it occurs before the policy anniversary at age 65 next birthday",
+          "quote": "The TPD benefit is only applicable if TPD occurs before the policy anniversary on which the Life Assured is age 65 next birthday.",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/direct-great-term.html"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "Cover yourself against Death, Terminal Illness 1 , and Total and Permanent Disability 2 .",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/direct-great-term.html"
+        }
+      }
+    },
+    "GoGreat Term Life": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "Yearly renewable up to age 65",
+          "quote": "GoGreat Term Life is yearly renewable up to age 65.",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/gogreat-term-life.html"
+        },
+        "entry_age": {
+          "v": "16 to 64 age last birthday (DPS policyholders only)",
+          "quote": "All DPS policyholders between 16 and 64 age last birthday can purchase GoGreat Term Life.",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/gogreat-term-life.html"
+        },
+        "tpd": {
+          "v": "Yes",
+          "quote": "GoGreat Term Life is a non-participating, yearly renewable term insurance plan that provides protection against death, terminal illness and total permanent disability.",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/gogreat-term-life.html"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "GoGreat Term Life is a non-participating, yearly renewable term insurance plan that provides protection against death, terminal illness and total permanent disability.",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/gogreat-term-life.html"
+        },
+        "premium": {
+          "v": "Not guaranteed: based on attained age at each renewal and may be adjusted",
+          "quote": "At each policy renewal, your premiums will be based on your attained age as shown in the premiums table. The premiums may be adjusted according to future experience.",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/gogreat-term-life.html"
+        }
+      }
+    },
+    "GREAT Term 2": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "5 options: up to age 65, 70, 75, 80 or 85 next birthday",
+          "quote": "provides 5 options of policy terms, up to age 65, 70, 75, 80 and 85 next birthday.",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/great-term.html"
+        },
+        "tpd": {
+          "v": "Optional rider",
+          "quote": "optional riders for total and permanent disability, early, intermediate and/or late-stage critical illness, accident and premium waivers",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/great-term.html"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "This plan provides basic coverage against death and terminal illness",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/great-term.html"
+        },
+        "premium": {
+          "v": "Premiums do not increase with age",
+          "quote": "Enjoy premiums that do not increase with age.",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/great-term.html"
+        },
+        "no_medical": {
+          "v": "Yes, can convert to a life policy with cash value without medical underwriting",
+          "quote": "Conversion Privilege allows policyholders to convert their GREAT Term 2 policy (together with the eligible supplementary rider(s) that offers this privilege, if applicable) to a life policy with cash value, without requiring medical underwriting",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/great-term.html"
+        }
+      }
+    },
+    "Great Eastern Cares Term Plan": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "Up to age 85 or up to age 100",
+          "quote": "Decide between coverage terms of up to age 85 or up to age 100",
+          "src": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/life-insurance-/great-eastern-cares-term-plan/2026/gels-pdt-pd-gectp-eng-brochure.pdf"
+        },
+        "entry_age": {
+          "v": "17 to 75 age next birthday (life assured)",
+          "quote": "Age Next Birthday Minimum Entry Age Maximum Entry Age Life Assured 17 75",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/great-eastern-cares-term-plan.html"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "Get basic protection against death and terminal illness.",
+          "src": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/life-insurance-/great-eastern-cares-term-plan/2026/gels-pdt-pd-gectp-eng-brochure.pdf"
+        }
+      }
+    },
+    "Dependants' Protection Scheme": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "Cover until the end of the policy year in which you turn 65",
+          "quote": "From the policy anniversary in which they are 60 age last birthday up to the end of the policy year during which they turn 65 years old, the sum assured is $55,000",
+          "src": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/homepage/personal-insurance/our-products/life-insurance/dps/dps.pdf"
+        },
+        "entry_age": {
+          "v": "Can apply from 16 and above but below 65",
+          "quote": "You can also apply for DPS as long as you are aged 16 and above but below 65.",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/dependants-protection-scheme.html"
+        },
+        "tpd": {
+          "v": "Yes",
+          "quote": "It provides coverage against Death, Terminal Illness 1 and Total Permanent Disability 2 .",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/dependants-protection-scheme.html"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "It provides coverage against Death, Terminal Illness 1 and Total Permanent Disability 2 .",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/dependants-protection-scheme.html"
+        },
+        "no_medical": {
+          "v": "Yes, renewals need no health checks",
+          "quote": "Enjoy hassle-free enrollment with no health checks for renewals.",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/dependants-protection-scheme.html"
+        }
+      }
+    },
+    "GREAT Critical Cover Series": {
+      "category": "critical_illness",
+      "metrics": {
+        "stages": {
+          "v": "Critical illnesses at all stages (100% lump sum payout)",
+          "quote": "Receive 100% lump sum payout 1 upon diagnosis of critical illnesses at all stages.",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/health-insurance/great-critical-cover.html"
+        },
+        "conditions": {
+          "v": "53 critical illnesses, or the top 3 conditions such as cancer, heart attack and stroke",
+          "quote": "Get protected against 53 critical illnesses or focus on the top 3 conditions such as cancer, heart attack and stroke.",
+          "src": "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/health-insurance/great-critical-cover.html"
+        },
+        "claims": {
+          "v": "Up to 2 additional payouts for a later, different CI diagnosis, with the Protect Me Again rider",
+          "quote": "Up to 2 additional payouts for a subsequent CI diagnosis which is different from previously diagnosed CI",
+          "src": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/homepage/personal-insurance/our-products/health-insurance/great-critical-cover/gcc-table-of-comparison.pdf"
+        },
+        "term": {
+          "v": "Up to age 65 or 85 on the Complete plan; up to age 85 on the top-conditions plan",
+          "quote": "Policy term Up to age 65 or 85 Up to age 85",
+          "src": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/homepage/personal-insurance/our-products/health-insurance/great-critical-cover/gcc-table-of-comparison.pdf"
+        }
+      }
+    },
+    "GREAT TotalCare 2": {
+      "category": "ip_rider",
+      "metrics": {
+        "pairs_with": {
+          "v": "GREAT SupremeHealth Plan Types P PLUS, P PRIME, A PLUS and B PLUS",
+          "quote": "If GREAT TotalCare 2 is attached to GREAT SupremeHealth Plan Type P PLUS, P PRIME, A PLUS or B PLUS",
+          "src": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/health-insurance-/great-supremehealth/april-2026/gels-pdt-pd-gsh-gtc-tob-eng.pdf"
+        },
+        "copay": {
+          "v": "Rider covers 50% of the plan's co-insurance at a Restructured Hospital",
+          "quote": "Co-insurance incurred under the Life Assured's corresponding GREAT SupremeHealth plan At Restructured Hospital [2] Covers 50% of Co-insurance",
+          "src": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/health-insurance-/great-supremehealth/april-2026/gels-pdt-pd-gsh-gtc-tob-eng.pdf"
+        },
+        "copay_cap": {
+          "v": "S$6,000 per Period of Insurance for treatment at a Restructured Hospital",
+          "quote": "Co-payment Cap (per Period of Insurance), applicable to Co-insurance and Co-payment incurred At Restructured Hospital [2] $6,000",
+          "src": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/health-insurance-/great-supremehealth/april-2026/gels-pdt-pd-gsh-gtc-tob-eng.pdf"
+        },
+        "entry_age": {
+          "v": "Age 75 next birthday",
+          "quote": "Maximum entry age for GREAT SupremeHealth P PLUS, P PRIME, A PLUS and B PLUS, GREAT TotalCare 2 and GREAT TotalCare Plus 2 rider is age 75 years next birthday.",
+          "src": "https://www.greateasternlife.com/content/dam/corp-site/great-eastern/sg/gels-ftrp-imc-cm/health-insurance-/great-supremehealth/april-2026/gels-pdt-pd-gsh-gtc-tob-eng.pdf"
+        }
+      }
+    }
+  },
+  "notes": [
+    "DIRECT - GREAT Term: premium left out. The brochure says the premium is guaranteed for GREAT Term but its closing note says the premium charged is not guaranteed and may be revised, with no indication of which plan type that note covers. No entry age or no-medical-renewal statement was found.",
+    "DIRECT - GREAT Term covers two plan types (GREAT Term and GREAT 5yr Term); term, TPD and TI cells cover both. TPD/TI cells are for the base plan without the Critical Care rider.",
+    "Great Eastern Cares Term Plan: no TPD cell; the page and brochure list death and terminal illness only, which does not state 'No' to TPD. Offered only to Special Needs Trust Company clients.",
+    "GREAT Critical Cover Series: entry age and waiting period are not in text sources (brochure pages 3-4 are images; the page only states 12/24-month gaps between rider claims). Complete and Top 3 CIs are two base plans; the claims cell describes the Protect Me Again rider. The comparison table's 'No. of CI conditions' row reads '121 CI conditions' / '9 CI conditions', which looks like a footnote digit fused into the number, so it was not used.",
+    "GREAT TotalCare 2 is the Great Eastern Shield-style rider (attached to GREAT SupremeHealth). Its panel and non-panel co-payment cap cells in the benefit table are blank or N.A. in the extracted text, so panel is left out; the 5% / 10% co-payments in the table apply to special benefits, not to the Shield co-insurance.",
+    "GREAT Term 2: no entry age found; the 5% premium discount promotion is ignored."
+  ]
+}

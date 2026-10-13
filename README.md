@@ -11,6 +11,7 @@ Static site in `public/`, no build step and no backend. Data is JSON compiled fr
 | `public/` | The site: `index.html`, `app.js`, `app.css`, `data/*.json` (built) |
 | `data/guide.json` | Insurance types, national schemes, FAQ. Every fact cites a source id |
 | `research/insurers/*.json` | One file per insurer, written to `research/CONTRACT.md` |
+| `research/metrics/*.json` | Compare-tab cells for term life, critical illness and Shield riders, one file per insurer, written to `research/CONTRACT-metrics.md`. Each cell is `{v, quote, src}` |
 | `data/compare/*.json` | Plan-by-plan comparison tables. `hospitalisation.json` is generated from MOH's Shield plan comparison by `tools/moh_ip.py`; never edit it by hand |
 | `data/link_report.json` | Last link-check result |
 | `data/browser_verified.json` | Links on bot-walled sites, checked by hand in a browser (valid 30 days) |
@@ -24,6 +25,7 @@ python tools/check_links.py      # every link: dead, soft-404, wrong page, or bo
 python tools/build_data.py       # validate research files and write public/data/
 python tools/verify_facts.py     # every numeric fact must appear in its cited page or PDF
 python tools/verify_guide.py     # same for guide.json: key figures, pain points, FAQ (plus quotes)
+python tools/verify_metrics.py   # every Compare cell's quote is on its source; its numbers are in the quote
 python tools/moh_ip.py           # rebuild data/compare/hospitalisation.json from MOH's PDFs
 python tools/moh_ip.py --check   # exit 1 if MOH's live tables differ from the committed file
 python tools/contrast.py         # WCAG contrast for the colour tokens, light and dark

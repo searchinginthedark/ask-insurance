@@ -1,0 +1,143 @@
+{
+  "insurer": "hsbc_life",
+  "checked_on": "2026-10-13",
+  "extra_pdfs": [],
+  "products": {
+    "HSBC Life Term Protect Secure": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "To age 50, 55, 60, 65, 70, 75, 80, 85 or 100",
+          "quote": "Coverage: You can choose your coverage term to age 50, 55, 60, 65, 70, 75, 80, 85 or 100.",
+          "src": "https://www.insurance.hsbc.com.sg/life-and-critical-illness/products/term-protect-secure/"
+        },
+        "entry_age": {
+          "v": "1 month to 70 for the life insured; 18 to 99 for the policy owner",
+          "quote": "1 month[@age-attained] to 70[@age-nearest] for life insured • 18 years[@age-attained] to 99[@age-nearest] years for policy owner",
+          "src": "https://www.insurance.hsbc.com.sg/life-and-critical-illness/products/term-protect-secure/"
+        },
+        "tpd": {
+          "v": "Optional rider",
+          "quote": "Opt for riders covering up to 170 critical illness conditions, total and permanent disability, and more.",
+          "src": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/protection/hsbc-life-term-protect-secure-brochure.pdf"
+        },
+        "no_medical": {
+          "v": "Convert the policy and eligible riders to another plan without further health assessments",
+          "quote": "You can convert your policy and eligible riders to another insurance plan without further health assessments.",
+          "src": "https://www.insurance.hsbc.com.sg/life-and-critical-illness/products/term-protect-secure/"
+        }
+      }
+    },
+    "HSBC Life Term Protect Advantage": {
+      "category": "term_life",
+      "metrics": {
+        "tpd": {
+          "v": "Optional rider (Disability Cover)",
+          "quote": "Add these supplementary benefits (riders) to your plan for a more holistic coverage 6 : Disability Cover Provides you with financial support should you suffer total and permanent disability.",
+          "src": "https://www.insurance.hsbc.com.sg/life-and-critical-illness/products/term-protect-advantage/"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "an affordable policy, which protects you against death and terminal illness, so you can allocate your money to where you need it most.",
+          "src": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/protection/term-protect-advantage/product-brochure.pdf"
+        },
+        "no_medical": {
+          "v": "Convert to a whole life or endowment plan without evidence of health, before the life insured's 65th birthday",
+          "quote": "convert the original policy without evidence of health, to any available regular premium life insurance plan (whole life or endowment). It can be converted at any time while the policy is in-force and before the life insured’s 65th birthday.",
+          "src": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/protection/term-protect-advantage/product-brochure.pdf"
+        }
+      }
+    },
+    "DIRECT – HSBC Life – Term Lite": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "5 years (renewable), or 20 years or up to age 65 (non-renewable)",
+          "quote": "5 years (renewable); or 20 years (non-renewable); or up to age 65 (non-renewable)",
+          "src": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/life/direct-hsbclife-term-lite-brochure-english.pdf"
+        },
+        "entry_age": {
+          "v": "18 to 65 (5-year and 20-year terms); 18 to 60 (term to age 65)",
+          "quote": "Policy term of 5 years (renewable)[@direct-renewable]: 18[@age-attained] to 65[@age-nearest] years Policy term of 20 years (non-renewable): 18[@age-attained] to 65[@age-nearest] years Policy term to age 65: 18[@age-attained] to 60[@age-nearest] years",
+          "src": "https://www.insurance.hsbc.com.sg/life-and-critical-illness/products/direct-term-lite/"
+        },
+        "tpd": {
+          "v": "Yes, up to age 65",
+          "quote": "Total and permanent disability up to age 65",
+          "src": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/life/direct-hsbclife-term-lite-brochure-english.pdf"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "Upon diagnosis of terminal illness, this plan will pay the chosen protection coverage in advance.",
+          "src": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/life/direct-hsbclife-term-lite-brochure-english.pdf"
+        },
+        "no_medical": {
+          "v": "5-year term renews automatically every 5 years regardless of health condition",
+          "quote": "If you sign up for a 5-year policy term, your policy will be automatically renewed every 5 years1 regardless of your health condition.",
+          "src": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/life/direct-hsbclife-term-lite-brochure-english.pdf"
+        }
+      }
+    },
+    "HSBC Life Super CritiCare": {
+      "category": "critical_illness",
+      "metrics": {
+        "stages": {
+          "v": "Early, intermediate and advanced stage",
+          "quote": "the multiple coverage for early, intermediate and advanced stage critical illness",
+          "src": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/life/super-criticare-brochure-english.pdf"
+        },
+        "claims": {
+          "v": "Multiple claims up to 600% of sum assured; cancers, heart attack and stroke together capped at 300%",
+          "quote": [
+            "this critical illness plan offers multiple claims up to 600% of your sum assured",
+            "The total amount payable for all cancers, heart attack and stroke is capped at 300% of sum assured of the basic plan/rider."
+          ],
+          "src": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/life/super-criticare-brochure-english.pdf"
+        },
+        "term": {
+          "v": "To age 50, 55, 60, 65, 70 or 75; or renewable 5, 10, 15, 20, 25 or 30 years",
+          "quote": "To age term: to age 50, 55, 60, 65, 70, or 75 Renewable8 term: 5, 10, 15, 20, 25, or 30 years",
+          "src": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/life/super-criticare-brochure-english.pdf"
+        },
+        "entry_age": {
+          "v": "1 month to 70 for the insured person; 18 to 99 for the policyholder",
+          "quote": "1 month[@age-attained] to 70[@age-nearest] years, for the insured person 18[@age-attained] to 99[@age-nearest] years, for the policyholder",
+          "src": "https://www.insurance.hsbc.com.sg/life-and-critical-illness/products/super-criticare/"
+        }
+      }
+    },
+    "HSBC Life Enhanced Care II": {
+      "category": "ip_rider",
+      "metrics": {
+        "pairs_with": {
+          "v": "Added on as a rider to an HSBC Life Shield plan",
+          "quote": "HSBC Life Enhanced Care II can be added on as a rider if you have purchased an HSBC Life Shield plan.",
+          "src": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/health/hsbc-life-shield-brochure.pdf"
+        },
+        "copay": {
+          "v": "5% co-insurance, with or without a panel specialist",
+          "quote": "Private hospital (treated by HSBC Life panel of specialists) 5% S$6,000 Private hospital (not treated by HSBC Life panel of specialists) 5% N/A",
+          "src": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/health/hsbc-life-shield-brochure.pdf"
+        },
+        "copay_cap": {
+          "v": "S$6,000 out-of-pocket (plus any deductible) with HSBC Life panel specialists or at a restructured hospital",
+          "quote": "Your out-of-pocket expenses are capped at S$6,000 plus any deductible when treated by HSBC Life panel specialists or at a restructured hospital",
+          "src": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/health/hsbc-life-shield-brochure.pdf"
+        },
+        "panel": {
+          "v": "No co-insurance cap if treated by a non-panel specialist",
+          "quote": "5% co-insurance (no cap for non-panel specialists)",
+          "src": "https://www.insurance.hsbc.com.sg/content/dam/hsbc/insn/documents/health/hsbc-life-shield-brochure.pdf"
+        }
+      }
+    }
+  },
+  "notes": [
+    "Term Protect Secure, Super CritiCare and DIRECT Term Lite entry ages exist only on the product pages, whose extracted text carries footnote tokens such as [@age-attained]; quotes keep them verbatim so they match the source. The footnote text is not on the page, so the age basis (attained / nearest birthday) is unknown and is not stated in v.",
+    "Super CritiCare: brochure headline says up to 600% of the sum assured but its footnote 5 says the cap for all cancers, heart attack and stroke is 300%; the product page and Term Protect Secure brochure (Sep 2026) say 600%, so 600% is used. Conditions count and waiting period after cover starts are not stated (only 11 special and 10 juvenile conditions, and a 12/24-month gap between successive claims), so both are left out.",
+    "Term Protect Advantage: policy term and entry age are not stated in the brochure or page (only a 35-year example), so left out. Its premium guarantee is not stated.",
+    "Term Protect Secure: terminal illness benefit and premium guarantee are not stated in its brochure or page, so left out.",
+    "DIRECT Term Lite: footnote 1 of the brochure limits renewal to the last applicable renewal age of 80. Premium guarantee not stated.",
+    "HSBC Life Enhanced Care II: the Shield brochure gives no rider-specific last entry age (the 75-year entry age shown belongs to the Shield table), so entry_age is left out. The 5% co-insurance and S$6,000 cap come from the rider benefit schedule, which does not split Plan A and Plan B for these rows. The page notes HSBC Life is being sold to Allianz (completion expected first half of 2027)."
+  ]
+}

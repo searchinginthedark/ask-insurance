@@ -1,0 +1,274 @@
+{
+  "insurer": "aia",
+  "checked_on": "2026-10-13",
+  "extra_pdfs": [],
+  "products": {
+    "AIA Secure Flexi Term": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "Renewable: 5, 10, 20 or 30 years; level: up to age 65 or 75",
+          "quote": "(a) Renewable term option for 5, 10, 20 or 30 years; or (b) Level term option up to age 65 or 75",
+          "src": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/aia-secure-flexi-term"
+        },
+        "tpd": {
+          "v": "Optional add-on; pays on disability before the age of 70",
+          "quote": "In the unfortunate event that you become disabled before the age of 70, the optional Total and Permanent Disability add-on advances your coverage amount.",
+          "src": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/aia-secure-flexi-term"
+        },
+        "ti": {
+          "v": "Yes, terminal illness and terminal cancer",
+          "quote": "provides financial protection for a specified period against death, terminal illness and terminal cancer",
+          "src": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/aia-secure-flexi-term"
+        },
+        "premium": {
+          "v": "Guaranteed for the original term; on a renewable plan, the renewal premium is not guaranteed",
+          "quote": [
+            "Guaranteed premiums Your premiums will stay the same throughout the policy period, based on the age when you first sign up.",
+            "For renewable term plans, the policy period refers to the original policy term. If the policy is renewed for the same coverage amount at the end of the original policy term, the renewal premium is not guaranteed"
+          ],
+          "src": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/aia-secure-flexi-term"
+        },
+        "no_medical": {
+          "v": "Convert to selected AIA plans before age 70 with no further medical questions",
+          "quote": "Flexible plan conversion Convert to selected AIA plan before age 70 with no further medical questions asked.",
+          "src": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/aia-secure-flexi-term"
+        }
+      }
+    },
+    "AIA Mortgage Reducing Term Assurance": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "Up to the 75th birthday, even after the loan is repaid or the home sold",
+          "quote": "Enjoy coverage even if you have repaid your loan or decided to sell your home, up to your 75th birthday.",
+          "src": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/aia-mortgage-reducing-term-assurance"
+        },
+        "tpd": {
+          "v": "Pays the coverage amount and waives the premium if disability strikes before age 65",
+          "quote": "We will pay the coverage amount and waive the premium should a disability strike before the age of 65.",
+          "src": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/aia-mortgage-reducing-term-assurance"
+        },
+        "ti": {
+          "v": "Yes, covers the outstanding housing loan on terminal illness",
+          "quote": "Be covered for your outstanding housing loan in event of death, disability or terminal illness.",
+          "src": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/aia-mortgage-reducing-term-assurance"
+        }
+      }
+    },
+    "DIRECT - AIA Term Cover": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "5 or 20 years, or up to the age of 65",
+          "quote": "Choose the length of coverage to suit your needs, whether for 5 or 20 years, or up to the age of 65.",
+          "src": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/direct-aia-term-cover"
+        },
+        "tpd": {
+          "v": "Yes, up to age 65",
+          "quote": "Coverage amount will be paid out in the event of death, diagnosis of a terminal illness or total and permanent disability (up to age 65).",
+          "src": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/direct-aia-term-cover"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "Coverage amount will be paid out in the event of death, diagnosis of a terminal illness or total and permanent disability (up to age 65).",
+          "src": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/direct-aia-term-cover"
+        },
+        "premium": {
+          "v": "Unchanged during the term; on renewal of the 5-year plan, based on age (last birthday) at renewal",
+          "quote": "Premiums will only remain unchanged during the term of the basic plan. Upon renewal of a 5-year term plan, the premiums will be based on the insured's age (last birthday) at the time of renewal.",
+          "src": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/direct-aia-term-cover"
+        },
+        "no_medical": {
+          "v": "Renewal of the 5-year plan up to age 85, regardless of health",
+          "quote": "Guaranteed renewal Enjoy renewable term life insurance on the 5-year plan up to age 85, regardless of your health.",
+          "src": "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/direct-aia-term-cover"
+        }
+      }
+    },
+    "AIA Absolute Critical Cover": {
+      "category": "critical_illness",
+      "metrics": {
+        "stages": {
+          "v": "Early, intermediate and major stage, plus chronic and age-related conditions",
+          "quote": "Be safeguarded against not only early, intermediate, and major stage critical illnesses, but also chronic diseases, age-related conditions, and even future unknown diseases.",
+          "src": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-absolute-critical-cover-brochure.pdf"
+        },
+        "conditions": {
+          "v": "187 conditions, including multi-stage critical illnesses and pre-early conditions",
+          "quote": "Be covered for 187 conditions including multi-stage critical illnesses, pre-early conditions and others.",
+          "src": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-absolute-critical-cover"
+        },
+        "claims": {
+          "v": "Multiple critical illnesses and relapse covered through the ASCC Booster",
+          "quote": "Enjoy continual protection with the ASCC Booster1 that further extends your coverage for multiple critical illnesses and relapse.",
+          "src": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-absolute-critical-cover-brochure.pdf"
+        },
+        "term": {
+          "v": "Up to age 65, 75 or 100",
+          "quote": "Choose a preferred coverage term of up to age 65, 75, or 100, that best fits your needs.",
+          "src": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-absolute-critical-cover"
+        }
+      }
+    },
+    "AIA Beyond Critical Care": {
+      "category": "critical_illness",
+      "metrics": {
+        "stages": {
+          "v": "Major stage in the base plan; early and intermediate stages only through optional add-ons",
+          "quote": "AIA Beyond Critical Care offers protection against major stage CIs and relapse as well as mental illnesses. It also comes with optional add-ons that offer more coverage for 104 early, intermediate, and major CIs",
+          "src": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-beyond-critical-care.pdf"
+        },
+        "conditions": {
+          "v": "43 major stage critical illnesses plus 5 rediagnosed or recurred critical illnesses",
+          "quote": "covers you against 43 major stage critical illnesses and 5 rediagnosed or recurred critical illnesses",
+          "src": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-beyond-critical-care.pdf"
+        },
+        "claims": {
+          "v": "Up to 200% of coverage amount: 100% paid on first diagnosis, then restored to 100%",
+          "quote": "up to 200% of the coverage amount. Upon the first diagnosis, 100% of the coverage amount will be paid out, allowing you to focus solely on recovery. Your coverage amount will be restored to 100%",
+          "src": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-beyond-critical-care"
+        },
+        "term": {
+          "v": "Until age 85 or for at least 30 years, whichever is later",
+          "quote": "until age 85 or for at least 30 years, whichever is later",
+          "src": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-beyond-critical-care.pdf"
+        }
+      }
+    },
+    "AIA Diabetes Care": {
+      "category": "critical_illness",
+      "metrics": {
+        "conditions": {
+          "v": "5 key diabetes-related conditions",
+          "quote": "Guaranteed coverage for 5 key diabetes-related conditions",
+          "src": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-diabetes-care.pdf"
+        },
+        "term": {
+          "v": "Guaranteed annual renewal up to age 80",
+          "quote": "Enjoy guaranteed annual renewal of your policy with no change to your premium up to age 80.",
+          "src": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-diabetes-care"
+        },
+        "entry_age": {
+          "v": "30 to 65 years old (pre-diabetics and Type 2 diabetics)",
+          "quote": "A groundbreaking plan for pre-diabetics and Type 2 diabetics aged 30 to 65 years old",
+          "src": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-diabetes-care.pdf"
+        }
+      }
+    },
+    "AIA Glow of Life": {
+      "category": "critical_illness",
+      "metrics": {
+        "entry_age": {
+          "v": "16 to 59 years old (age last birthday)",
+          "quote": "Entry age is 16 to 59 years old (age last birthday).",
+          "src": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-glow-of-life.pdf"
+        }
+      }
+    },
+    "AIA Prime Critical Cover": {
+      "category": "critical_illness",
+      "metrics": {
+        "conditions": {
+          "v": "43 conditions",
+          "quote": "AIA Prime Critical Cover is designed to provide adults aged 40 to 70 years with long-term and comprehensive protection against 43 conditions, up to age 100.",
+          "src": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-prime-critical-cover.pdf"
+        },
+        "term": {
+          "v": "Up to age 100",
+          "quote": "AIA Prime Critical Cover is designed to provide adults aged 40 to 70 years with long-term and comprehensive protection against 43 conditions, up to age 100.",
+          "src": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-prime-critical-cover.pdf"
+        },
+        "entry_age": {
+          "v": "Adults aged 40 to 70 years",
+          "quote": "AIA Prime Critical Cover is designed to provide adults aged 40 to 70 years with long-term and comprehensive protection against 43 conditions, up to age 100.",
+          "src": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-prime-critical-cover.pdf"
+        }
+      }
+    },
+    "AIA Ultimate Critical Cover": {
+      "category": "critical_illness",
+      "metrics": {
+        "stages": {
+          "v": "Early, intermediate and major stages",
+          "quote": "Get covered for 150 medical conditions across early, intermediate and major stages.",
+          "src": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-ultimate-critical-cover"
+        },
+        "conditions": {
+          "v": "150 medical conditions",
+          "quote": "Get covered for 150 medical conditions across early, intermediate and major stages.",
+          "src": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-ultimate-critical-cover"
+        },
+        "claims": {
+          "v": "Unlimited claims for major stage; one claim per stage, all stages of one illness capped at 100%",
+          "quote": "Unlimited claims apply to major stage of critical illnesses. Only one claim is payable for each stage of a critical illness. The total amounts payable for all stages of a critical illness shall not exceed 100% of the coverage amount.",
+          "src": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-ultimate-critical-cover"
+        },
+        "term": {
+          "v": "Up to age 65, 75 or 85",
+          "quote": "Choose your preferred coverage term of up to age 65, 75, or 85, whichever best suits your needs.",
+          "src": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-ultimate-critical-cover"
+        }
+      }
+    },
+    "AIA Protect 3": {
+      "category": "critical_illness",
+      "metrics": {
+        "stages": {
+          "v": "Early, intermediate and major stages of the top 3 critical illnesses",
+          "quote": "Three coverage options to protect you against early, intermediate and major stages of the top 3 CIs",
+          "src": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-protect-3"
+        },
+        "conditions": {
+          "v": "Cancer, heart attack and stroke",
+          "quote": "Cover yourself against cancer, heart attack and stroke from early to major stages",
+          "src": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-protect-3"
+        },
+        "term": {
+          "v": "Up to age 85",
+          "quote": "Enjoy peace of mind with a plan that covers you up to age 85",
+          "src": "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-protect-3"
+        }
+      }
+    },
+    "AIA Max VitalHealth Pro": {
+      "category": "ip_rider",
+      "metrics": {
+        "pairs_with": {
+          "v": "Pro A with AIA HealthShield Gold Max A; Pro B with Max B",
+          "quote": "AIA HSG Max A AIA Max VitalHealth Pro A Covers private or public hospital treatment Co-insurance (i) Deductibles; and (ii) 5% co-payment, capped at S$6,0005 AIA HSG Max B AIA Max VitalHealth Pro B",
+          "src": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-healthshield-gold-max-english-brochure.pdf"
+        },
+        "copay": {
+          "v": "5% co-payment on every claim",
+          "quote": "There will be a 5% co-payment for every claim, capped at 6,000 per policy year if:",
+          "src": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-healthshield-gold-max-english-brochure.pdf"
+        },
+        "copay_cap": {
+          "v": "S$6,000 a policy year, if treated by an AIA preferred provider, pre-authorised, or an emergency via A&E",
+          "quote": "6,000 per policy year if: (a) the treatment is provided by an AIA preferred provider13; (b) there is a certificate of pre-authorisation relating to the treatment; or (c) it is an emergency treatment referred by a Singapore hospital's A&E department.",
+          "src": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-healthshield-gold-max-english-brochure.pdf"
+        },
+        "panel": {
+          "v": "Cap applies if: AIA preferred provider, pre-authorised treatment, or emergency referred by an A&E department",
+          "quote": "(a) the treatment is provided by an AIA preferred provider13; (b) there is a certificate of pre-authorisation relating to the treatment; or (c) it is an emergency treatment referred by a Singapore hospital's A&E department.",
+          "src": "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-healthshield-gold-max-english-brochure.pdf"
+        }
+      }
+    }
+  },
+  "notes": [
+    "Secure Flexi Term premium cell: the page's footnote says the renewal premium is NOT guaranteed and is recalculated for age at renewal (renewable option); the guarantee covers the original policy term.",
+    "Secure Flexi Term also states 'Guaranteed renewal up to age 101 regardless of health condition' (brochure, dated 1 April 2021) for the renewable term option; the no_medical cell uses the current page's conversion wording instead.",
+    "Secure Flexi Term and Mortgage Reducing Term: no entry-age range stated on the page or brochure, so entry_age is omitted.",
+    "Mortgage Reducing Term Assurance has no PDF; the page says 'disability', not 'total and permanent disability', and does not describe the premium basis.",
+    "Absolute Critical Cover: the ASCC Booster is an add-on; with it multiple claims up to 500% of coverage amount (Power Reset Benefit) plus Power Relapse up to 200%. Waiting and survival periods are mentioned but no length is stated.",
+    "Beyond Critical Care: 12-month wait between claims and 24 months for the same illness's relapse are stated, but no waiting period after cover starts is given, so waiting is omitted.",
+    "Diabetes Care: brochure dated 20 August 2020 (page confirms 5-question access, age 80 renewal). Eligibility also needs a non-smoker whose diabetes was diagnosed after age 25. Stages and claims not stated, so omitted.",
+    "Glow of Life: brochure states annual renewal is not guaranteed and premiums are not guaranteed; term/claims/stages not stated per metric definitions, so omitted.",
+    "Prime Critical Cover: special-condition benefits are one-time claims per condition (7 conditions) and reduce cover; an extra 50% applies after age 85. Stages and claims cell omitted as the main-claim count is not stated plainly.",
+    "Ultimate Critical Cover: early/intermediate stage claims are capped at 500% of coverage amount and S$350,000 per life (brochure footnotes). Coverage resets 100% after 12 months.",
+    "Protect 3: the product page says it is available exclusively to existing AIA individual and corporate customers and their spouses and children. No entry age range stated.",
+    "AIA Max VitalHealth Pro has three tiers: Pro A (private or public hospital), Pro B (public A-class), Pro B Lite (public B1 or lower), paired with AIA HealthShield Gold Max A, B and B Lite. The 5% co-payment and S$6,000 cap wording is identical across the three tiers in the brochure. No last entry age is stated for the rider itself."
+  ]
+}

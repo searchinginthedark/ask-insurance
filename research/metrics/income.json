@@ -1,0 +1,386 @@
+{
+  "insurer": "income",
+  "checked_on": "2026-10-13",
+  "extra_pdfs": [],
+  "products": {
+    "Optima Care rider": {
+      "category": "ip_rider",
+      "metrics": {
+        "copay": {
+          "v": "5% with Income's panel; 8% for extended panel and others",
+          "quote": "Treatment provided by Our panel Extended panel Others Co-payment 5% co-payment of the benefits due under your policy 8% co-payment of the benefits due under your policy 8% co-payment of the benefits due under your policy",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/889d72f1-0474-46d6-ad8a-f7de42043cf0/Conditions%20for%20Optima%20Care%20Rider%201%20Apr%202026.pdf"
+        },
+        "copay_cap": {
+          "v": "Capped at S$6,000 a policy year for treatment by Income's panel or extended panel",
+          "quote": "exceed the co-payment limit of $6,000 for each policy year, no further co-payment shall be payable by you for the insured's treatment provided by our panel or extended panel for the remainder of the same policy year.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/889d72f1-0474-46d6-ad8a-f7de42043cf0/Conditions%20for%20Optima%20Care%20Rider%201%20Apr%202026.pdf"
+        },
+        "panel": {
+          "v": "Cap applies if treatment is by Income's panel or extended panel",
+          "quote": "If the treatment is provided by our panel or extended panel, we will apply a co-payment limit as shown in table 1.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/889d72f1-0474-46d6-ad8a-f7de42043cf0/Conditions%20for%20Optima%20Care%20Rider%201%20Apr%202026.pdf"
+        }
+      }
+    },
+    "Essential Care rider": {
+      "category": "ip_rider",
+      "metrics": {
+        "copay": {
+          "v": "7% with Income's panel; 10% for extended panel and others",
+          "quote": "Treatment provided by Our panel Extended panel Others Co-payment 7% co-payment of the benefits due under your policy 10% co-payment of the benefits due under your policy 10% co-payment of the benefits due under your policy",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/30db0c90-3d82-4943-9e97-4ccf7b82d6c6/Conditions%20for%20Essential%20Care%20Rider%201%20Apr%202026.pdf"
+        },
+        "copay_cap": {
+          "v": "Capped at S$6,000 a policy year for treatment by Income's panel or extended panel",
+          "quote": "exceed the co-payment limit of $6,000 for each policy year, no further co-payment shall be payable by you for the insured's treatment provided by our panel or extended panel for the remainder of the same policy year.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/30db0c90-3d82-4943-9e97-4ccf7b82d6c6/Conditions%20for%20Essential%20Care%20Rider%201%20Apr%202026.pdf"
+        },
+        "panel": {
+          "v": "Cap applies if treatment is by Income's panel or extended panel",
+          "quote": "If the treatment is provided by our panel or extended panel, we will apply a co-payment limit as shown in table 1.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/30db0c90-3d82-4943-9e97-4ccf7b82d6c6/Conditions%20for%20Essential%20Care%20Rider%201%20Apr%202026.pdf"
+        }
+      }
+    },
+    "Complete Critical Protect": {
+      "category": "critical_illness",
+      "metrics": {
+        "stages": {
+          "v": "Early, intermediate and advanced stage dread disease",
+          "quote": "Dread disease consists of early stage, intermediate stage and advanced stage dread disease.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/05effb9c-3c54-4081-a63c-bcd6461563b4/_Final_%20Contract%20-%20Complete%20Critical%20Protect.pdf"
+        },
+        "conditions": {
+          "v": "158 conditions across various stages of dread disease and benefits",
+          "quote": "a critical illness plan that covers 158 conditions across various stages of dread disease and benefits",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/cb1f0711-fa86-44ec-83d6-39b2264bf938/Term_Complete%20Critical%20Protect_Brochure_ENG_Web.pdf"
+        },
+        "claims": {
+          "v": "Depends on the option: up to 10x or 3x the sum assured with multiple claims, or 1x with only 1 claim",
+          "quote": [
+            "Up to 10× (or 1000%) of the sum assured (Multiple claims may be made) Up to 3× (or 300%) of the sum assured (Multiple claims may be made)",
+            "Up to 1× (or 100%) of the sum assured (Only 1 claim may be made from either Dread Disease Benefit or Vital Function Benefit)"
+          ],
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/cb1f0711-fa86-44ec-83d6-39b2264bf938/Term_Complete%20Critical%20Protect_Brochure_ENG_Web.pdf"
+        },
+        "term": {
+          "v": "Up to age 64, 74, 84 or 100 (last birthday)",
+          "quote": "Choose your policy term – up to age 64, 74, 84 or 100 last birthday",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/cb1f0711-fa86-44ec-83d6-39b2264bf938/Term_Complete%20Critical%20Protect_Brochure_ENG_Web.pdf"
+        },
+        "waiting": {
+          "v": "90 days from cover start for major cancer, heart attack of specified severity and coronary artery conditions",
+          "quote": "an advanced stage dread disease under major cancer, heart attack of specified severity, coronary artery by-pass surgery or other serious coronary artery disease, where the insured was diagnosed with the disease within 90 days from the cover start date",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/05effb9c-3c54-4081-a63c-bcd6461563b4/_Final_%20Contract%20-%20Complete%20Critical%20Protect.pdf"
+        }
+      }
+    },
+    "Star Term Protect": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "5, 10, 15, 20, 25, 30 or 35 years, or up to age 54, 64 or 74 (last birthday)",
+          "quote": "You can choose a policy term of 5, 10, 15, 20, 25, 30 or 35 years. Alternatively, you can choose a policy term of up to age 54, 64 or 74 (last birthday).",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/5880ac15-d464-470f-aa39-aff13c996c22/Star%20Term%20Protect%20Brochure_ENG_Web.pdf"
+        },
+        "entry_age": {
+          "v": "Age 79 (last birthday) and below",
+          "quote": "As long as you are age 79 (last birthday) and below, you can apply to enjoy protection with Star Term Protect.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/5880ac15-d464-470f-aa39-aff13c996c22/Star%20Term%20Protect%20Brochure_ENG_Web.pdf"
+        },
+        "tpd": {
+          "v": "Yes, TPD before the anniversary immediately after age 70",
+          "quote": "If the insured becomes totally and permanently disabled (before the anniversary immediately after insured reaches the age of 70), becomes terminally ill, or dies, during the term of the policy, we will pay the sum assured.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4fdc41f3-deea-42ea-acd7-7f1d625fb252/Policy%20Contract%20-%20Star%20Term%20Protect%20%28TAN19%29.pdf"
+        },
+        "ti": {
+          "v": "Yes, pays the sum assured",
+          "quote": "If the insured becomes totally and permanently disabled (before the anniversary immediately after insured reaches the age of 70), becomes terminally ill, or dies, during the term of the policy, we will pay the sum assured.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4fdc41f3-deea-42ea-acd7-7f1d625fb252/Policy%20Contract%20-%20Star%20Term%20Protect%20%28TAN19%29.pdf"
+        },
+        "premium": {
+          "v": "Not guaranteed; rates may be reviewed from time to time",
+          "quote": "Premium rates are non-guaranteed and may be reviewed from time to time.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/5880ac15-d464-470f-aa39-aff13c996c22/Star%20Term%20Protect%20Brochure_ENG_Web.pdf"
+        },
+        "no_medical": {
+          "v": "Guaranteed renewal if no claim was made and the insured is age 79 (last birthday) or below",
+          "quote": "Guaranteed renewal is applicable only if there is no claim on your policy during the policy term and the insured is age 79 (last birthday) and below.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/5880ac15-d464-470f-aa39-aff13c996c22/Star%20Term%20Protect%20Brochure_ENG_Web.pdf"
+        }
+      }
+    },
+    "DIRECT Star Term": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "Non-renewable version: 20 years, or up to age 64 (last birthday)",
+          "quote": "The policy terms and entry ages are as follow: Policy Term Minimum Entry Age (Last Birthday) Maximum Entry Age (Last Birthday) 20 years 18 64 Up to age 64 (Last Birthday) 18 59",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/755afdba-d2b3-4555-a27b-e7adaf7f23a0/DIRECT%20Star%20Term%20%28non-renewable%29%20%28TAN18%29.pdf"
+        },
+        "entry_age": {
+          "v": "Non-renewable version: 18 to 64 for the 20-year term; 18 to 59 for the term to age 64 (last birthday)",
+          "quote": "The policy terms and entry ages are as follow: Policy Term Minimum Entry Age (Last Birthday) Maximum Entry Age (Last Birthday) 20 years 18 64 Up to age 64 (Last Birthday) 18 59",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/755afdba-d2b3-4555-a27b-e7adaf7f23a0/DIRECT%20Star%20Term%20%28non-renewable%29%20%28TAN18%29.pdf"
+        },
+        "tpd": {
+          "v": "Yes, TPD before the age of 65",
+          "quote": "It provides protection against death, total and permanent disability (TPD before the age of 65), and terminal illness (TI) during the term of the policy.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1c451505-2ed5-4486-9e4c-081a7e6bb5d6/DIRECT%20Star%20Term%20%28renewable%29%20%28TAN17%29.pdf"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "It provides protection against death, total and permanent disability (TPD before the age of 65), and terminal illness (TI) during the term of the policy.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1c451505-2ed5-4486-9e4c-081a7e6bb5d6/DIRECT%20Star%20Term%20%28renewable%29%20%28TAN17%29.pdf"
+        },
+        "premium": {
+          "v": "Guaranteed throughout the policy term",
+          "quote": "Premium rates are guaranteed throughout the policy term and applicable to standard lives.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1c451505-2ed5-4486-9e4c-081a7e6bb5d6/DIRECT%20Star%20Term%20%28renewable%29%20%28TAN17%29.pdf"
+        },
+        "no_medical": {
+          "v": "Renewable version: renews up to age 84 (last birthday) if no claim was made",
+          "quote": "The policy can be renewed up to a maximum of age 84 (last birthday) at its prevailing sum assured, if there is no claim on this policy during the policy term.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1c451505-2ed5-4486-9e4c-081a7e6bb5d6/DIRECT%20Star%20Term%20%28renewable%29%20%28TAN17%29.pdf"
+        }
+      }
+    },
+    "Family Protect": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "10-year policy term with guaranteed renewability",
+          "quote": "10 year policy term with guaranteed renewability",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/b8063807-7c8e-489d-9db3-ba5d38d6a09f/Term_Family%20Protect_Brochure_ENG_Web%20%281%29.pdf"
+        },
+        "tpd": {
+          "v": "Yes, TPD before age 70",
+          "quote": "Family Protect provides you with coverage in the event of a diagnosis of specified dread diseases, death, total and permanent disability (TPD before age 70) or terminal illness during the term of the policy.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/b8063807-7c8e-489d-9db3-ba5d38d6a09f/Term_Family%20Protect_Brochure_ENG_Web%20%281%29.pdf"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "Family Protect provides you with coverage in the event of a diagnosis of specified dread diseases, death, total and permanent disability (TPD before age 70) or terminal illness during the term of the policy.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/b8063807-7c8e-489d-9db3-ba5d38d6a09f/Term_Family%20Protect_Brochure_ENG_Web%20%281%29.pdf"
+        },
+        "premium": {
+          "v": "Not guaranteed; six months' notice before any change",
+          "quote": "The premium that you pay for this policy is not guaranteed. We will give you six months’ notice before we make any change.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/9143df79-14e6-41d1-b7b3-d5929ea2d438/Policy%20Contract%20-%20Family%20Protect%20%28DSN%29.pdf"
+        },
+        "no_medical": {
+          "v": "Yes: 10-year term with guaranteed renewability",
+          "quote": "10 year policy term with guaranteed renewability",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/b8063807-7c8e-489d-9db3-ba5d38d6a09f/Term_Family%20Protect_Brochure_ENG_Web%20%281%29.pdf"
+        }
+      }
+    },
+    "Mortgage Term": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "5 to 35 years, up to a maximum coverage age of 84",
+          "quote": "select a policy term that suits your loan liability period from a range of 5 to 35 years, up to a maximum coverage age of 84.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4c0c8bdb-02a1-4be9-8a55-b28d86b8020f/Mortgage%20Term%20Brochure_ENG_Web.pdf"
+        },
+        "tpd": {
+          "v": "Yes, TPD before age 70",
+          "quote": "In the event of death, total and permanent disability (TPD before age 70) or terminal illness",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4c0c8bdb-02a1-4be9-8a55-b28d86b8020f/Mortgage%20Term%20Brochure_ENG_Web.pdf"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "In the event of death, total and permanent disability (TPD before age 70) or terminal illness",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4c0c8bdb-02a1-4be9-8a55-b28d86b8020f/Mortgage%20Term%20Brochure_ENG_Web.pdf"
+        }
+      }
+    },
+    "Lady 360": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "10-year renewable term, or up to age 64 (last birthday)",
+          "quote": "You can also choose a 10-year renewable policy term, or a policy term of up till age 64 (last birthday).",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/57599f66-9208-4a18-b46b-d612c1cd7f3d/Term_Lady%20360_Brochure_ENG_Web%20%281%29.pdf"
+        },
+        "premium": {
+          "v": "Not guaranteed; at least six months' notice before any change",
+          "quote": "The premium that you pay for this policy is not guaranteed. We will give you at least six months’ notice before we make any change.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/93f0171c-2b9b-463a-8f26-2f10aea1e282/Policy%20Contract%20-%20Lady%20360%20%28LPN%29.pdf"
+        },
+        "no_medical": {
+          "v": "Renewable term renews for the same term and sum assured if no claim was made",
+          "quote": "renew the policy for the same contract term and sum assured, if there is no claim under your policy during the contract term",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/93f0171c-2b9b-463a-8f26-2f10aea1e282/Policy%20Contract%20-%20Lady%20360%20%28LPN%29.pdf"
+        }
+      }
+    },
+    "TermLife Solitaire": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "Renewable; renewal cannot go beyond the anniversary after the insured's 100th birthday",
+          "quote": "This means the renewal term will neither go beyond the original policy term, nor the anniversary immediately after the insured's 100th birthday.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4fb4315b-a33a-43f5-aaf3-ca1e11be4ae2/Solitaire_TermLife%20Solitaire_Brochure_ENG_Website.pdf"
+        },
+        "entry_age": {
+          "v": "Age 74 (last birthday) and below",
+          "quote": "As long as you are aged 74 (last birthday) and below, you can apply to protect your wealth and enjoy coverage up to age 100 (last birthday).",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4fb4315b-a33a-43f5-aaf3-ca1e11be4ae2/Solitaire_TermLife%20Solitaire_Brochure_ENG_Website.pdf"
+        },
+        "tpd": {
+          "v": "Optional rider (Disability Accelerator): TPD before the anniversary after age 70",
+          "quote": "Disability Accelerator rider pays the sum assured under this rider if the insured becomes totally and permanently disabled (before the anniversary immediately after the insured reaches the age of 70) during the term of the rider.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4fb4315b-a33a-43f5-aaf3-ca1e11be4ae2/Solitaire_TermLife%20Solitaire_Brochure_ENG_Website.pdf"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "TermLife Solitaire provides you with coverage in the event of death or terminal illness during the term of the policy",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4fb4315b-a33a-43f5-aaf3-ca1e11be4ae2/Solitaire_TermLife%20Solitaire_Brochure_ENG_Website.pdf"
+        },
+        "no_medical": {
+          "v": "Renews for the same term at its prevailing sum assured if the policy has not ended through a claim",
+          "quote": "If your policy has not ended as a result of a claim during its term, when it ends, we will renew it for the same policy term at its prevailing sum assured.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/4fb4315b-a33a-43f5-aaf3-ca1e11be4ae2/Solitaire_TermLife%20Solitaire_Brochure_ENG_Website.pdf"
+        }
+      }
+    },
+    "HomeTeamNS Insurance Scheme and HomeTeamNS Living Policy": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "Insurance Scheme: cover ends when the principal member reaches age 65",
+          "quote": "you, as the HomeTeamNS Principal member, reaches age 65;",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a4629204-0447-43dd-9f00-c934bad7b438/HomeTeamNS%20Insurance%20Scheme%20Product%20Summary%20%28Jul%202024%29.pdf"
+        },
+        "entry_age": {
+          "v": "Insurance Scheme: member and spouse can apply up to age 64",
+          "quote": "The oldest you and your husband or wife can apply for this policy is age 64.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a4629204-0447-43dd-9f00-c934bad7b438/HomeTeamNS%20Insurance%20Scheme%20Product%20Summary%20%28Jul%202024%29.pdf"
+        },
+        "tpd": {
+          "v": "Yes (Insurance Scheme): sum assured plus 1% of it monthly for the next 24 months or until age 65, whichever is earlier",
+          "quote": "Permanent and total disablement Sum assured and a further monthly payout of 1% of the sum assured for the next 24 months or until the insured reaches the age of 65, whichever is earlier",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a4629204-0447-43dd-9f00-c934bad7b438/HomeTeamNS%20Insurance%20Scheme%20Product%20Summary%20%28Jul%202024%29.pdf"
+        },
+        "ti": {
+          "v": "Living Policy: Terminal Illness is one of its listed critical illnesses",
+          "quote": "28. Blindness (Irreversible Loss of Sight) 29. Paralysis (Irreversible Loss of Use of Limbs) 30. Terminal Illness",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1772cff1-29dc-41a7-99c4-2c650ee20540/Product%20summary%20for%20HomeTeamNS%20Living%20Policy%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf"
+        },
+        "premium": {
+          "v": "Not guaranteed; may be reviewed from time to time",
+          "quote": "Premium rates are not guaranteed and may be reviewed from time to time.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a4629204-0447-43dd-9f00-c934bad7b438/HomeTeamNS%20Insurance%20Scheme%20Product%20Summary%20%28Jul%202024%29.pdf"
+        },
+        "no_medical": {
+          "v": "Insurance Scheme renews automatically on the same terms if no claim was made and premium is paid",
+          "quote": "The policy will be renewed automatically for the same terms, conditions, exclusions, plan type and sum assured if there is no claim during the term of the policy and premium is paid.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/a4629204-0447-43dd-9f00-c934bad7b438/HomeTeamNS%20Insurance%20Scheme%20Product%20Summary%20%28Jul%202024%29.pdf"
+        }
+      }
+    },
+    "LUV": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "Covered to age 70 if taken up at or before age 60; to age 65 if taken up after age 60",
+          "quote": "at or before the age of 60, you will be covered till you reach the age of 70. If you take up the policy after the age of 60, you will be covered till you reach the age of 65.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1b381fe6-6ecf-4e93-a775-1d92592abf47/LUV_EN_2024%20web.pdf"
+        },
+        "entry_age": {
+          "v": "Member and spouse can apply up to age 64",
+          "quote": "The oldest you and your husband or wife can apply for this policy is age 64.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/b4379630-fdd8-4d94-9f67-433d687e089e/Product%20summary%20for%20LUV%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf"
+        },
+        "tpd": {
+          "v": "Yes, before age 65: sum assured plus 1% of it monthly for the next 12 months or until age 65",
+          "quote": "Total and permanent disability before the age of 65 Sum assured and a further monthly payout of 1% of the sum assured for the next 12 months or until the insured reaches the age of 65",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/b4379630-fdd8-4d94-9f67-433d687e089e/Product%20summary%20for%20LUV%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf"
+        },
+        "premium": {
+          "v": "Not guaranteed; may be reviewed from time to time",
+          "quote": "Premium rates are not guaranteed and may be reviewed from time to time.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/b4379630-fdd8-4d94-9f67-433d687e089e/Product%20summary%20for%20LUV%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf"
+        },
+        "no_medical": {
+          "v": "Renews automatically on the same terms if no claim was made and premium is paid",
+          "quote": "The policy will be renewed automatically at the same terms, conditions, exclusions, cover type and plan type (sum assured) if there is no claim during the term of the policy and premium is paid.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/b4379630-fdd8-4d94-9f67-433d687e089e/Product%20summary%20for%20LUV%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf"
+        }
+      }
+    },
+    "SAFRA Essential Term and SAFRA Living Care": {
+      "category": "term_life",
+      "metrics": {
+        "entry_age": {
+          "v": "Essential Term: member and spouse can apply up to age 60",
+          "quote": "The oldest you and your husband or wife can apply for this policy is age 60.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/0b95f02b-8f12-42aa-a9ec-45dbc5e909a5/SAFRA%20Essential%20Term%20Product%20Summary%20%28Jul%202024%29.pdf"
+        },
+        "tpd": {
+          "v": "Yes (Essential Term): sum assured plus 1% of it monthly for the next 24 months or until age 65",
+          "quote": "Total and permanent disability before the age of 65 Sum assured and a further monthly payout of 1% of the sum assured for the next 24 months or until the insured member reaches the age of 65",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/0b95f02b-8f12-42aa-a9ec-45dbc5e909a5/SAFRA%20Essential%20Term%20Product%20Summary%20%28Jul%202024%29.pdf"
+        },
+        "ti": {
+          "v": "Living Care: Terminal Illness is one of its listed critical illnesses",
+          "quote": "30. Paralysis (Irreversible Loss of Use of Limbs) 31. Terminal Illness",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/52510d85-ff40-4747-b815-d5698a3563eb/Product%20summary%20for%20SAFRA%20Living%20Care%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf"
+        },
+        "premium": {
+          "v": "Not guaranteed; may be reviewed from time to time",
+          "quote": "Premium rates are not guaranteed and may be reviewed from time to time.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/0b95f02b-8f12-42aa-a9ec-45dbc5e909a5/SAFRA%20Essential%20Term%20Product%20Summary%20%28Jul%202024%29.pdf"
+        },
+        "no_medical": {
+          "v": "Essential Term renews automatically on the same terms if no claim was made and premium is paid",
+          "quote": "The policy will be renewed automatically for the same terms, conditions, exclusions, plan type and sum assured if there is no claim during the term of the policy and premium is paid.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/0b95f02b-8f12-42aa-a9ec-45dbc5e909a5/SAFRA%20Essential%20Term%20Product%20Summary%20%28Jul%202024%29.pdf"
+        }
+      }
+    },
+    "OCBC Protect": {
+      "category": "term_life",
+      "metrics": {
+        "entry_age": {
+          "v": "Cardholder and spouse can apply up to age 60",
+          "quote": "The oldest you and your husband or wife can apply for this policy is age 60.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1bc21c0d-02a6-4266-9c8b-cabdfd0950bb/Product%20summary%20for%20OCBC%20Protect%20Classic%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf"
+        },
+        "tpd": {
+          "v": "Yes (Classic): pays the sum assured if TPD occurs before age 65",
+          "quote": "Total and permanent disability before the age of 65 Sum assured",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1bc21c0d-02a6-4266-9c8b-cabdfd0950bb/Product%20summary%20for%20OCBC%20Protect%20Classic%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf"
+        },
+        "ti": {
+          "v": "Yes (Classic): pays the sum assured",
+          "quote": "Terminal illness Sum assured",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1bc21c0d-02a6-4266-9c8b-cabdfd0950bb/Product%20summary%20for%20OCBC%20Protect%20Classic%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf"
+        },
+        "premium": {
+          "v": "Not guaranteed; may be reviewed from time to time",
+          "quote": "Premium rates are not guaranteed and may be reviewed from time to time.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1bc21c0d-02a6-4266-9c8b-cabdfd0950bb/Product%20summary%20for%20OCBC%20Protect%20Classic%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf"
+        },
+        "no_medical": {
+          "v": "Renews automatically on the same terms if no claim was made and premium is paid",
+          "quote": "The policy will be renewed automatically at the same terms, conditions, exclusions, plan type and sum assured if there is no claim during the term of the policy and premium is paid.",
+          "src": "https://assets-au-01.kc-usercontent.com:443/8acbd32f-b7e0-0294-6b7d-a2bc72d6b30c/1bc21c0d-02a6-4266-9c8b-cabdfd0950bb/Product%20summary%20for%20OCBC%20Protect%20Classic%20%28policy%20start%20date%20after%2001%20June%202025%29.pdf"
+        }
+      }
+    }
+  },
+  "notes": [
+    "Optima Care / Essential Care riders: pairs_with and entry_age left out. The Enhanced IncomeShield brochure says the riders attach to the Enhanced Preferred or Enhanced Advantage plan, but the riders conditions also carry Enhanced Basic columns, and the rider-specific last entry age 75 is not on any allowed rider source (the 75 in the brochure is the main plan).",
+    "Complete Critical Protect: claims cell covers Protect Max (up to 10x, multiple claims) and Protect Prime (up to 3x); Protect 100 allows only 1 claim (up to 1x). Waiting cell covers the 90-day clauses only; other benefits have their own survival and waiting rules. Entry age not found in the brochure or policy conditions, so left out.",
+    "DIRECT Star Term: renewable (TAN17, 5-year terms renewing to age 84, entry 18 to 64) and non-renewable (TAN18, 20 years or to age 64) differ; term and entry_age cells describe the non-renewable version, the others are labelled.",
+    "Family Protect: entry age and a premium-guarantee statement for the term not stated in the brochure; the premium cell comes from the policy conditions. Renewal needs no claim and the insured aged 64 (last birthday) or below.",
+    "Mortgage Term: no entry age, premium or renewal statements on its brochure or conditions, so those cells are left out.",
+    "Lady 360: TPD and terminal illness are not stated as benefits (female illnesses, surgeries, support benefits and a S$10,000 death benefit), so left out rather than marked No. Entry age is not in the brochure.",
+    "TermLife Solitaire: TPD is only through the Disability Accelerator rider. Premium guarantee not stated.",
+    "HomeTeamNS, SAFRA and OCBC Protect each combine two products or covers; cells name the variant. OCBC cells come from the Classic summary; Prime shows the same TPD and terminal illness rows. LUV terminal illness is part of the Deluxe cover only.",
+    "Star Term Protect brochure is dated 20 Aug 2024; the policy conditions (TAN19, 202510) were used for TPD and terminal illness."
+  ]
+}

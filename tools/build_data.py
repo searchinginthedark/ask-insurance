@@ -176,6 +176,51 @@ def check_compare(comp, insurers):
     return errors
 
 
+INSURER_NOTES = [
+    "Each cell is quoted from the insurer's own page or product summary. Tap Source to read it there.",
+    "“Not on the insurer's page” means the insurer's material does not state it, not that the plan lacks it. Ask the insurer.",
+    "Premiums depend on your age, health, smoking status and cover amount, so they are not shown. Get quotes from each insurer.",
+]
+
+
+def insurer_compare(cat, defs, insurers, metrics_files):
+    """Compare table for a type with no official like-for-like table: one column per plan, cells
+    from research/metrics/<insurer>.json (checked against their sources by tools/verify_metrics.py).
+    Every plan of the type gets a column, filled or not, so none silently drops out."""
+    errors = []
+    ids = {m["id"] for m in defs}
+    units = []
+    for i in insurers:
+        cells = (metrics_files.get(i["id"]) or {}).get("products", {})
+        for p in i["products"]:
+            if p["category"] != cat:
+                continue
+            entry = cells.get(p["name"]) or {}
+            values, srcs = {}, {}
+            for mid, cell in (entry.get("metrics") or {}).items():
+                tag = "metrics/%s: %s %s" % (i["id"], p["name"], mid)
+                if mid not in ids:
+                    errors.append(tag + ": unknown metric")
+                elif not (cell.get("v") and cell.get("quote") and cell.get("src")):
+                    errors.append(tag + ": needs v, quote and src")
+                elif not (cell["src"].startswith("https://") and on_domain(cell["src"], i["id"])):
+                    errors.append(tag + ": src off-domain: " + cell["src"])
+                else:
+                    values[mid] = cell["v"].strip()
+                    srcs[mid] = cell["src"]
+            units.append({"id": p["id"], "pid": p["id"], "insurer": i["id"], "product": p["name"],
+                          "name": p["name"], "values": values, "src": srcs})
+    for iid, f in metrics_files.items():
+        names = {p["name"] for i in insurers if i["id"] == iid for p in i["products"]}
+        for name in f.get("products", {}):
+            if name not in names:
+                errors.append("metrics/%s: %r is not a built plan" % (iid, name))
+    comp = {"category": cat, "kind": "insurer", "na": "Not on the insurer's page",
+            "source": {"publisher": "Each insurer's own page or product summary"},
+            "metrics": defs, "units": units, "notes": INSURER_NOTES}
+    return comp, errors
+
+
 def load(path):
     with open(path, encoding="utf-8") as f:
         return json.load(f)
@@ -297,6 +342,17 @@ def main():
         comp = load(path)
         errors += check_compare(comp, insurers)
         compare[comp.get("category")] = comp
+    metrics_files = {}
+    for path in sorted(glob.glob(os.path.join(ROOT, "research", "metrics", "*.json"))):
+        f = load(path)
+        metrics_files[f.get("insurer")] = f
+    for c in guide["categories"]:
+        if c.get("metrics") and c["id"] not in compare:
+            comp, errs = insurer_compare(c["id"], c["metrics"], insurers, metrics_files)
+            errors += errs
+            # Ship the table only once some cells exist; until then the type keeps plan cards.
+            if any(u["values"] for u in comp["units"]):
+                compare[c["id"]] = comp
     if errors:
         print("BUILD FAILED, %d problem(s):" % len(errors))
         for e in errors:

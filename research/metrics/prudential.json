@@ -1,0 +1,251 @@
+{
+  "insurer": "prudential",
+  "checked_on": "2026-10-13",
+  "extra_pdfs": [],
+  "products": {
+    "PRUActive Term": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "10 to 82 years",
+          "quote": "Customise your plan's policy term from 10 to 82 years",
+          "src": "https://www.prudential.com.sg/en/products/life/term-life/pruactive-term/"
+        },
+        "tpd": {
+          "v": "Yes, ends on the policy anniversary before age 70",
+          "quote": "during the policy term. The life assured can only claim either death, terminal illness or total and permanent disability and not all. The total and permanent disability benefit ends on the policy anniversary before the life assured attains age 70.",
+          "src": "https://www.prudential.com.sg/en/products/life/term-life/pruactive-term/"
+        },
+        "ti": {
+          "v": "Yes, one benefit only: death, terminal illness or total and permanent disability",
+          "quote": "The life assured can only claim either death, terminal illness or total and permanent disability and not all.",
+          "src": "https://www.prudential.com.sg/en/products/life/term-life/pruactive-term/"
+        },
+        "no_medical": {
+          "v": "Yes, raise basic cover by 1% to 10% a year without a medical examination",
+          "quote": "Choose to increase your basic coverage by an incremental rate from 1% to 10% annually without medical examination",
+          "src": "https://www.prudential.com.sg/en/products/life/term-life/pruactive-term/"
+        }
+      }
+    },
+    "PRUVital Cover": {
+      "category": "term_life",
+      "metrics": {
+        "tpd": {
+          "v": "Optional, up to age 70",
+          "quote": "Optional coverage for Total Permanent Disability up to age 70.",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvital-cover/PRUVital-Cover-eBrochure-ENG-Final.pdf"
+        },
+        "ti": {
+          "v": "Yes, with death cover, up to S$500,000",
+          "quote": "Choose to be covered for up to S$500,000 for Death or Terminal Illness.",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvital-cover/PRUVital-Cover-eBrochure-ENG-Final.pdf"
+        },
+        "premium": {
+          "v": "Guaranteed the same throughout the policy term (death and terminal illness cover)",
+          "quote": "Your premium for Death and Terminal Illness will be guaranteed the same throughout the policy term.",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruvital-cover/PRUVital-Cover-eBrochure-ENG-Final.pdf"
+        }
+      }
+    },
+    "DIRECT - PRUProtect Term": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "5 years (renewable), 20 years, or to age 65",
+          "quote": "You may choose from three different coverage periods for your term life DPI: (a) 5 year renewable (b) 20 years (c) Term up to age 65",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/direct-pruprotect-life-ii/dpi_factsheet_and_checklist_new.pdf"
+        },
+        "entry_age": {
+          "v": "Minimum 19 age next birthday",
+          "quote": "The minimum entry age is 19 age next birthday.",
+          "src": "https://www.prudential.com.sg/en/products/life/term-life/direct-pruprotect-term/"
+        },
+        "tpd": {
+          "v": "Yes, if it occurs before cover expiry or the policy anniversary prior to age 65, whichever is earlier",
+          "quote": "The benefit provides coverage against Total and Permanent Disability provided the condition occurs before its cover expiry date or before the policy anniversary prior to the life assured attaining age 65, whichever is earlier.",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/prudential/pdf/ebrochures/pruprotect_term_and_pruprotect_term_5_eBrochure.pdf"
+        },
+        "ti": {
+          "v": "Yes, lump sum on death, terminal illness or total and permanent disability",
+          "quote": "Lump sum payment on death, terminal illness or total and permanent disability",
+          "src": "https://www.prudential.com.sg/en/products/life/term-life/direct-pruprotect-term/"
+        },
+        "premium": {
+          "v": "Guaranteed on PRUProtect Term; Term 5 renews every 5 years at a new premium",
+          "quote": "the premium is guaranteed. You may also opt for DIRECT - PRUProtect Term 51 – a 5-year renewable term plan. You will have the flexibility to renew your coverage every 5 years at a new premium",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/prudential/pdf/ebrochures/pruprotect_term_and_pruprotect_term_5_eBrochure.pdf"
+        }
+      }
+    },
+    "PRUMortgage": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "10 to 35 years",
+          "quote": "You can choose your policy term between 10 to 35 years",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prumortgage/prumortgage-eBrochure-english.pdf"
+        },
+        "tpd": {
+          "v": "Optional",
+          "quote": "You can also opt for protection against Total and Permanent Disability.",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prumortgage/prumortgage-eBrochure-english.pdf"
+        },
+        "ti": {
+          "v": "Yes, lump sum on Death and Terminal Illness",
+          "quote": "You will receive a lump sum payout in the event of Death and Terminal Illness during the policy term.",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prumortgage/prumortgage-eBrochure-english.pdf"
+        },
+        "premium": {
+          "v": "Premium amount stays the same throughout the policy term",
+          "quote": "your premium amount remains the same throughout the policy term",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prumortgage/prumortgage-eBrochure-english.pdf"
+        }
+      }
+    },
+    "PRUActive Protect Series": {
+      "category": "critical_illness",
+      "metrics": {
+        "stages": {
+          "v": "Severe stage critical illnesses",
+          "quote": "provides coverage against a range of severe stage critical illnesses",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-protect/PRUActive-Protect-Brochure-en.pdf"
+        },
+        "conditions": {
+          "v": "PRUActive Protect: 36 severe stage; PRUActive Protect II: 64",
+          "quote": "you can choose between PRUActive Protect , covering 36 severe stage critical illnesses and PRUActive Protect II , covering 64 severe stage critical illnesses",
+          "src": "https://www.prudential.com.sg/en/products/health/critical-illness/pruactive-protect/"
+        },
+        "claims": {
+          "v": "With the Protect Plus benefit: claim up to 500% of basic critical illness cover",
+          "quote": "Protect Plus Claim up to 500% 4 of your basic critical illness coverage by restoring your basic critical illness coverage to 100% after a critical illness benefit claim",
+          "src": "https://www.prudential.com.sg/en/products/health/critical-illness/pruactive-protect/"
+        },
+        "term": {
+          "v": "10 years up to 99 years",
+          "quote": "allows you to choose a policy term from 10 years up to 99 years",
+          "src": "https://www.prudential.com.sg/en/products/health/critical-illness/pruactive-protect/"
+        }
+      }
+    },
+    "PRUActive Crisis Guard": {
+      "category": "critical_illness",
+      "metrics": {
+        "stages": {
+          "v": "Advanced stage critical illnesses (cancer, heart attack, stroke)",
+          "quote": "Cancer Heart Attack Stroke Covered Advanced Stage Critical Illnesses",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-crisis-guard/PRUActive-Crisis-Guard-Brochure-ENG.pdf"
+        },
+        "conditions": {
+          "v": "Major cancer, heart attack of specified severity, stroke with permanent neurological deficit",
+          "quote": "Covered critical illnesses under the Critical Illness Benefit are major cancer, heart attack of specified severity and stroke with permanent neurological deficit.",
+          "src": "https://www.prudential.com.sg/en/products/health/critical-illness/pruactive-crisis-guard/"
+        },
+        "claims": {
+          "v": "Each benefit is paid once only",
+          "quote": "We pay each benefit once only and payout is subject to the definitions stated in the product summary.",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-crisis-guard/PRUActive-Crisis-Guard-Brochure-ENG.pdf"
+        },
+        "term": {
+          "v": "5-year terms, renewing automatically",
+          "quote": "Your policy will automatically renew at the end of each 5-year policy term",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-crisis-guard/PRUActive-Crisis-Guard-Brochure-ENG.pdf"
+        },
+        "waiting": {
+          "v": "90 days from issue or reinstatement (whichever is later) for certain medical conditions",
+          "quote": "For certain medical conditions, there is a waiting period of 90 days from the date of issuance or reinstatement whichever is later.",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruactive-crisis-guard/PRUActive-Crisis-Guard-Brochure-ENG.pdf"
+        }
+      }
+    },
+    "PRUEarly Stage Crisis Cover": {
+      "category": "critical_illness",
+      "metrics": {
+        "stages": {
+          "v": "Early stage, intermediate stage and critical illnesses (50% or 100% severity payout)",
+          "quote": "Early Stage Medical Conditions (50% Severity Payout) Intermediate Stage Medical Conditions (100% Severity Payout) Critical Illnesses (100% Severity Payout)",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruearly-stage-crisis/PRUEarly-Stage-Crisis-eBrochure-ENG-Final.pdf"
+        },
+        "conditions": {
+          "v": "84 medical conditions",
+          "quote": "Extensive coverage against 84 medical conditions",
+          "src": "https://www.prudential.com.sg/en/products/health/critical-illness/pruearly-stage-crisis-cover/"
+        },
+        "claims": {
+          "v": "50% and 100% severity payouts combined cannot exceed 100% of sum assured",
+          "quote": "The maximum claimable benefit combined under the 50% Severity Payout and 100% Severity Payout cannot exceed 100% of the sum assured.",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruearly-stage-crisis/PRUEarly-Stage-Crisis-eBrochure-ENG-Final.pdf"
+        },
+        "waiting": {
+          "v": "90 days from issue or reinstatement (whichever is later) for certain medical conditions",
+          "quote": "For certain medical conditions, there is a waiting period of 90 days from the date of issue or reinstatement whichever is later.",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruearly-stage-crisis/PRUEarly-Stage-Crisis-eBrochure-ENG-Final.pdf"
+        }
+      }
+    },
+    "PRULady": {
+      "category": "critical_illness",
+      "metrics": {
+        "term": {
+          "v": "Up to the policy anniversary preceding age 65 or 75",
+          "quote": "Life assured is covered up to before the policy anniversary preceding 65 or 75 years old.",
+          "src": "https://www.prudential.com.sg/en/products/health/critical-illness/prulady/"
+        },
+        "claims": {
+          "v": "Each covered illness, procedure, surgery and support benefit is payable once only",
+          "quote": "each covered female illness, medical procedure, reconstructive surgery or skin grafting and post diagnosis support shall be payable once only",
+          "src": "https://www.prudential.com.sg/en/products/health/critical-illness/prulady/"
+        }
+      }
+    },
+    "PRUMan": {
+      "category": "critical_illness",
+      "metrics": {
+        "term": {
+          "v": "Up to the policy anniversary preceding age 65 or 75",
+          "quote": "Life assured is covered up to before the policy anniversary preceding 65 or 75 years old.",
+          "src": "https://www.prudential.com.sg/en/products/health/critical-illness/pruman/"
+        },
+        "claims": {
+          "v": "Up to 300% coverage, by claiming the male illnesses, medical procedures and reconstructive surgery benefits in full",
+          "quote": "To claim 300%, the life assured will need to make a full claim for the male illnesses benefit, medical procedures benefit and reconstructive surgery or skin grafting.",
+          "src": "https://www.prudential.com.sg/en/products/health/critical-illness/pruman/"
+        }
+      }
+    },
+    "PRUExtra": {
+      "category": "ip_rider",
+      "metrics": {
+        "copay": {
+          "v": "Covers up to 50% of PRUShield co-insurance",
+          "quote": "coverage of up to 50% of PRUShield's co-insurance",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prushield/prushield-eBrochure-english.pdf"
+        },
+        "copay_cap": {
+          "v": "S$6,000 stop-loss per policy year, excluding the deductible",
+          "quote": "S$6,000 stop-loss per policy year (exclude deductible)",
+          "src": "https://www.prudential.com.sg/en/products/health/medical/prushield/"
+        },
+        "panel": {
+          "v": "Stop-loss applies only with Panel Providers, Extended Panel (EP) Specialists or in emergency cases",
+          "quote": "The S$6,000 stop-loss applies only to co-insurance amounts paid, excluding any deductible amounts. It is applicable only when treatment is received from Panel Providers, Extended Panel (EP) Specialists, or in emergency cases.",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/prushield/prushield-eBrochure-english.pdf"
+        },
+        "entry_age": {
+          "v": "75 age next birthday",
+          "quote": "Maximum entry age is 75 age next birthday for the Life Assured who is a Singapore Citizen / Permanent Resident / Foreigner (Type 1 or 2).",
+          "src": "https://www.prudential.com.sg/content/dam/prudential-aem-lbu/pacs/en/project/prudential/pdf/ebrochures/pruextra/PRUShield-Premium-Tables.pdf"
+        }
+      }
+    }
+  },
+  "notes": [
+    "DIRECT - PRUProtect Term: term, tpd and premium cells describe PRUProtect Term (5 or 20 years, or to age 65); PRUProtect Term 5 is the 5-year renewable variant. The term cell quotes Prudential's Direct Purchase factsheet (a general term-life DPI document). Maximum entry age is not stated in the brochure or page.",
+    "PRUActive Protect Series: pre-critical, recurring and relapse cover are optional supplementary benefits (Early Protect, Early Protect Plus, Protect Plus); the stages and conditions cells describe the base severe stage plans. Entry age and a waiting period after cover starts are not stated on the page or brochure (only a 12 or 24 month gap between repeat claims).",
+    "PRUActive Crisis Guard: pays on treatments (open surgery, organ transplant, cancer treatment, ICU) as well as three advanced stage critical illnesses. Maximum renewal age is 70 age next birthday and conversion to a whole life or endowment plan is allowed under age 55 (page footnotes 6 and 7). Entry age is not stated.",
+    "PRUEarly Stage Crisis Cover: the page states cancer cover from age 1 up till 100 only, not a policy term for all benefits; the brochure policy terms (45 and 35 years) are premium illustrations. Term and entry age are therefore left out.",
+    "PRULady and PRUMan: illness, procedure and surgery lists are given per benefit, not as one condition count, so conditions is left out. Both pages say cover runs up to before the policy anniversary preceding 65 or 75 years old (two options, not specified which applies to which plan type).",
+    "PRUExtra: pairs_with left out because no single contiguous Prudential sentence names all three plans against both tiers. Prudential's pages show Plus Care with PRUShield Plus, and Premier Care and Preferred Care with PRUShield Premier. For Preferred Care, co-insurance coverage does not apply at Non-Panel and No Access Providers (brochure footnote). The 75 age next birthday maximum entry age comes from the footnotes of the PRUExtra premium tables and applies to Singapore Citizens, PRs and Foreigners (Type 1 or 2). PRUExtra Premier/Plus Lite and CoPay variants are withdrawn.",
+    "PRUActive Term, PRUVital Cover, PRUMortgage: entry age not stated on the page or brochure. PRUActive Term and PRUMortgage premium guarantee is not stated for the main benefit (only that Crisis Care III premiums are not guaranteed, for PRUActive Term). PRUVital Cover term is not stated."
+  ]
+}

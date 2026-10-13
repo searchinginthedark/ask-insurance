@@ -190,7 +190,7 @@ function viewType(id, params) {
     h("option", { value: "", text: `All insurers (${sellers.length})` }),
     sellers.map(s => h("option", { value: s, selected: s === pick, text: insName(s) })));
   out.push(h("div", { class: "filters" }, h("label", { for: "f-ins", text: "Insurer" }), sel,
-    h("a", { href: "#/compare/" + id + (pick ? "?ins=" + pick : ""), text: state.compare[id] ? "Compare them side by side on MOH's figures" : "Compare them side by side" })));
+    h("a", { href: "#/compare/" + id + (pick ? "?ins=" + pick : ""), text: (state.compare[id] || {}).kind === "moh" ? "Compare them side by side on MOH's figures" : "Compare them side by side" })));
   out.push(h("div", { class: "grid" }, list.map(p => productCard(p, true))));
   return out;
 }
@@ -247,8 +247,9 @@ function viewCompare() {
   return [
     h("h1", { text: "Compare plans" }),
     h("p", { class: "lede", text: "Tap a type to put its plans side by side, or a number to start with one insurer's plans. You can then tick exactly the plans you want." }),
-    Object.keys(state.compare).length ? h("p", null, "Shield plans are compared on MOH's official figures: ",
-      Object.keys(state.compare).map(id => h("a", { href: "#/compare/" + id, text: state.cats[id].name }))) : null,
+    Object.keys(state.compare).length ? h("p", null, "Side-by-side tables of the key terms: ",
+      Object.keys(state.compare).map((id, i) => [i ? ", " : "", h("a", { href: "#/compare/" + id, text: state.cats[id].name })]),
+      state.compare.hospitalisation ? ". Shield plans use MOH's own figures." : ".") : null,
     h("div", { class: "matrix-wrap" }, table),
     h("p", { class: "meta mt8", text: "A dash means none was found on that insurer's website, not that it can never be arranged through an adviser." }),
   ];
@@ -294,20 +295,25 @@ function viewCompareType(cat, params) {
 function compareTable(cat, comp, params, head) {
   const c = state.cats[cat];
   const byId = Object.fromEntries(comp.units.map(u => [u.id, u]));
+  // Two kinds of table: "moh" (MOH's Shield plan tiers, with ward classes and age bands) and
+  // "insurer" (one column per plan, each cell quoted from the insurer's own material).
+  const moh = comp.kind === "moh";
+  const groups = comp.groups || [], bands = comp.bands || [];
   const ofGroup = g => comp.units.filter(u => u.group === g).map(u => u.id);
   const ins = params.get("ins");
   let picked = (params.get("p") || "").split(",").filter(id => byId[id]);
-  if (!picked.length) picked = ins ? comp.units.filter(u => u.insurer === ins).map(u => u.id) : ofGroup(comp.groups[0].id);
-  let band = comp.bands.includes(params.get("age")) ? params.get("age") : comp.default_band;
-  const groupName = Object.fromEntries(comp.groups.map(g => [g.id, g.name]));
+  if (!picked.length) picked = ins ? comp.units.filter(u => u.insurer === ins).map(u => u.id)
+    : groups.length ? ofGroup(groups[0].id) : comp.units.map(u => u.id);
+  let band = bands.includes(params.get("age")) ? params.get("age") : comp.default_band;
+  const groupName = Object.fromEntries(groups.map(g => [g.id, g.name]));
   const prod = Object.fromEntries(state.products.map(p => [p.id, p]));
 
-  const quick = comp.groups.map(g => h("button", { type: "button", class: "btn", "data-g": g.id, title: g.name,
+  const quick = groups.map(g => h("button", { type: "button", class: "btn", "data-g": g.id, title: g.name,
     onclick: () => { picked = ofGroup(g.id); changed(); } }, g.short, h("span", { class: "n", text: ` (${ofGroup(g.id).length})` })));
   const pick = picker(comp.units.map(u => ({ id: u.id, insurer: u.insurer, label: u.name, sub: groupName[u.group] })), picked,
     ids => { picked = comp.units.map(u => u.id).filter(id => ids.includes(id)); changed(); });
-  const age = h("select", { id: "c-age", onchange: e => { band = e.target.value; changed(); } },
-    comp.bands.map(b => h("option", { value: b, selected: b === band, text: b === "Premiums above age 90" ? "Above 90" : b })));
+  const age = bands.length ? h("select", { id: "c-age", onchange: e => { band = e.target.value; changed(); } },
+    bands.map(b => h("option", { value: b, selected: b === band, text: b === "Premiums above age 90" ? "Above 90" : b }))) : null;
   const body = h("div");
   const status = h("p", { class: "sr", role: "status" });
 
@@ -323,8 +329,14 @@ function compareTable(cat, comp, params, head) {
     return u.values[m.id] ?? null;
   }
   function why(m) {
-    const when = m.id === "claims" && Object.values(comp.insurer_values).map(x => x.claims && x.claims.when).find(Boolean);
+    const when = m.id === "claims" && Object.values(comp.insurer_values || {}).map(x => x.claims && x.claims.when).find(Boolean);
     return m.why + (when ? " " + when + "." : "");
+  }
+  function cell(m, u, v) {
+    // A gap, not a "No": a neutral tag, so it never reads as the plan lacking the benefit.
+    if (v == null) return h("td", null, h("span", { class: "tag na", text: comp.na }));
+    const src = u.src && u.src[m.id];
+    return h("td", null, v, src ? [" ", ext(src, "Source", "src")] : null);
   }
   function draw() {
     pick.update(picked);
@@ -333,11 +345,11 @@ function compareTable(cat, comp, params, head) {
       b.setAttribute("aria-pressed", String(ids.length === picked.length && ids.every(id => picked.includes(id))));
     }
     const cols = picked.map(id => byId[id]);
-    status.textContent = `Comparing ${cols.length} plan${cols.length === 1 ? "" : "s"}${cols.length ? ", premiums at age " + band : ""}.`;
+    status.textContent = `Comparing ${cols.length} plan${cols.length === 1 ? "" : "s"}${cols.length && age ? ", premiums at age " + band : ""}.`;
     if (!cols.length) { body.replaceChildren(h("p", { class: "notice", text: "Tick at least one plan above to compare." })); return; }
-    const sameGroups = [...new Set(cols.map(u => u.group))].filter(g => comp.same_benefits[g]);
+    const sameGroups = [...new Set(cols.map(u => u.group))].filter(g => (comp.same_benefits || {})[g]);
     const table = h("table", { class: "cmp" },
-      h("caption", { class: "sr", text: `${c.name}: ${cols.length} plans compared on MOH's figures` }),
+      h("caption", { class: "sr", text: `${c.name}: ${cols.length} plans compared` }),
       h("thead", null, h("tr", null, h("th", { scope: "col", class: "corner", text: "Plan" }), cols.map(u => {
         const p = prod[u.pid];
         return h("th", { scope: "col" }, h("span", { class: "ins", text: insName(u.insurer) }), h("span", { class: "tier", text: u.name }),
@@ -350,7 +362,7 @@ function compareTable(cat, comp, params, head) {
         return h("tr", { class: same ? "same" : null },
           h("th", { scope: "row" }, h("span", { class: "lab", text: label }), h("span", { class: "why", text: why(m) }),
             same ? h("span", { class: "tag", text: "Same for all" }) : null),
-          vals.map(v => v == null ? h("td", null, h("span", { class: "tag warn", text: "Not in MOH's table" })) : h("td", { text: v })));
+          vals.map((v, i) => cell(m, cols[i], v)));
       })));
     // replaceChildren does not flatten arrays or drop nulls: it would print them as text.
     body.replaceChildren(...[
@@ -382,18 +394,19 @@ function compareTable(cat, comp, params, head) {
   draw();
   return [
     ...head,
-    h("p", { class: "lede" }, `MOH's own figures for every Shield plan tier, as at ${comp.source.as_at.join(", ")}, copied word for word. Amounts in S$.`),
-    h("p", { class: "meta mt8", id: "quick-h", text: "Compare all plans for one ward class:" }),
-    h("div", { class: "quick", role: "group", "aria-labelledby": "quick-h" }, quick),
+    moh ? h("p", { class: "lede", text: `MOH's own figures for every Shield plan tier, as at ${comp.source.as_at.join(", ")}, copied word for word. Amounts in S$.` })
+        : h("p", { class: "lede", text: `All ${comp.units.length} plans of this type from the insurers here. Each cell is quoted from the insurer's own page or product summary, with a link to check it.` }),
+    groups.length ? [h("p", { class: "meta mt8", id: "quick-h", text: "Compare all plans for one ward class:" }),
+      h("div", { class: "quick", role: "group", "aria-labelledby": "quick-h" }, quick)] : null,
     pick.el,
-    h("div", { class: "filters" }, h("label", { for: "c-age", text: "Age next birthday" }), age),
+    age ? h("div", { class: "filters" }, h("label", { for: "c-age", text: "Age next birthday" }), age) : null,
     status,
     body,
     notInTable(),
     h("h2", { text: "How to read this" }),
     h("ul", { class: "checklist" }, comp.notes.map(t => h("li", { text: t }))),
-    h("p", { class: "links mt8" }, ext(comp.source.url, "MOH: " + comp.source.title),
-      comp.groups.map(g => ext(g.pdf, "MOH table: " + g.name + " (PDF)"))),
+    moh ? h("p", { class: "links mt8" }, ext(comp.source.url, "MOH: " + comp.source.title),
+      groups.map(g => ext(g.pdf, "MOH table: " + g.name + " (PDF)"))) : null,
     h("p", null, h("a", { href: "#/type/" + cat, text: "Guide to " + c.name + ": pitfalls and what to check" })),
     disclaimerNote(),
   ];

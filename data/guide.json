@@ -217,6 +217,13 @@
         {"t": "A rider sits on that insurer's own Shield plan. If you switch Shield plans to another insurer, the old rider does not come with you."}
       ],
       "compare": ["Which ward class it pairs with", "Co-payment cap and whether it needs panel doctors", "Premium at your age and how fast it rises"],
+      "metrics": [
+        {"id": "pairs_with", "label": "Attaches to", "why": "The Shield plan or tier it must sit on."},
+        {"id": "copay", "label": "Your co-payment", "why": "Your share of each claim."},
+        {"id": "copay_cap", "label": "Co-payment cap", "why": "Most you pay in co-payment a year."},
+        {"id": "panel", "label": "Panel condition", "why": "When the cap or cover needs the insurer's doctors."},
+        {"id": "entry_age", "label": "Last entry age", "why": "Oldest age to add it."}
+      ],
       "schemes": ["medishield_life"],
       "tools": ["moh_ip_riders"]
     },
@@ -255,6 +262,14 @@
         "Whether TPD and terminal illness are included",
         "Guaranteed vs non-guaranteed premium rates",
         "Option to convert or increase cover without health checks"
+      ],
+      "metrics": [
+        {"id": "term", "label": "Cover term or end age", "why": "How long the cover lasts."},
+        {"id": "entry_age", "label": "Entry age", "why": "Ages at which you can start it."},
+        {"id": "tpd", "label": "Total and permanent disability", "why": "Pays if you can never work again."},
+        {"id": "ti", "label": "Terminal illness", "why": "Pays early on a terminal diagnosis."},
+        {"id": "premium", "label": "Premium rates", "why": "Guaranteed means they cannot be raised."},
+        {"id": "no_medical", "label": "Renew, convert or increase without health checks", "why": "Keeps cover if your health changes."}
       ],
       "schemes": ["dps", "hps"],
       "tools": ["comparefirst"]
@@ -322,6 +337,14 @@
         {"t": "Conditions you had before buying are usually excluded."}
       ],
       "compare": ["Severe-only vs early/multi-stage", "Number of claims allowed and waiting periods between them", "Cover end age", "Standalone vs accelerated rider"],
+      "metrics": [
+        {"id": "stages", "label": "Stages covered", "why": "Early-stage cover pays sooner than severe-only."},
+        {"id": "conditions", "label": "Conditions covered", "why": "Count as the insurer states it."},
+        {"id": "claims", "label": "Number of claims", "why": "One payout, or several and up to what cap."},
+        {"id": "term", "label": "Cover term or end age", "why": "How long the cover lasts."},
+        {"id": "entry_age", "label": "Entry age", "why": "Ages at which you can start it."},
+        {"id": "waiting", "label": "Waiting period", "why": "Time after cover starts before some claims count."}
+      ],
       "schemes": [],
       "tools": ["lia_ci_2024"]
     },

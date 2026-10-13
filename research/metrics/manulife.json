@@ -1,0 +1,147 @@
+{
+  "insurer": "manulife",
+  "checked_on": "2026-10-13",
+  "extra_pdfs": [],
+  "products": {
+    "ManuProtect Term (II)": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "5 or 10 years (renewable), 11 to 40 years (level), or to age 65, 75 or 85 (level)",
+          "quote": "5 or 10 years (renewable and convertible) - 11 to 40 years (level and convertible) - To age 65, 75 or 85 (level and convertible)",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/manuprotect-term/ManuProtect%20Term%20Brochure%20(English).pdf"
+        },
+        "tpd": {
+          "v": "Optional rider",
+          "quote": "Optional Add-Ons Get additional protection with riders for total and permanent disability, critical illness and premium waiver",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/manuprotect-term/ManuProtect%20Term%20Brochure%20(English).pdf"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "Coverage Be covered against death and terminal illness",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/manuprotect-term/ManuProtect%20Term%20Brochure%20(English).pdf"
+        },
+        "no_medical": {
+          "v": "Yes: 5 or 10 year terms renew automatically to age 85, regardless of health",
+          "quote": "Policy terms of 5 or 10 years are automatically renewable1 to age 85, regardless of your health condition",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/manuprotect-term/ManuProtect%20Term%20Brochure%20(English).pdf"
+        }
+      }
+    },
+    "ManuProtect Decreasing (II) / ManuProtect Decreasing Lite (II)": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "Chosen by you to match your repayment plans",
+          "quote": "Choose a policy term that best matches your repayment plans",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/manuprotect-decreasing/ManuProtect%20Decreasing%20Brochure%20(English).pdf"
+        },
+        "entry_age": {
+          "v": "Lite version (no health check-ups): applicants aged 50 and below; standard version not stated",
+          "quote": "Easy Application with No Health Check-ups ManuProtect Decreasing Lite (II) is available for applicants aged 50 and below",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/manuprotect-decreasing/ManuProtect%20Decreasing%20Brochure%20(English).pdf"
+        },
+        "tpd": {
+          "v": "Optional rider",
+          "quote": "Optional Add-Ons Get additional protection with riders for total and permanent disability and critical illness",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/manuprotect-decreasing/ManuProtect%20Decreasing%20Brochure%20(English).pdf"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "Coverage Be covered against death and terminal illness",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/manuprotect-decreasing/ManuProtect%20Decreasing%20Brochure%20(English).pdf"
+        },
+        "premium": {
+          "v": "Guaranteed: fixed and level for the whole policy term (basic plan)",
+          "quote": "Guaranteed Premiums Enjoy ﬁxed and level premiums on the basic plan for your entire policy term",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/manuprotect-decreasing/ManuProtect%20Decreasing%20Brochure%20(English).pdf"
+        }
+      }
+    },
+    "DIRECT-ManuAssure Term": {
+      "category": "term_life",
+      "metrics": {
+        "term": {
+          "v": "5 years (renewable), 20 years, or up to age 65",
+          "quote": "Flexibility to choose policy term of 5 years renewable, 20 years or up to age 65",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/direct-manuassure-term/Direct%20ManuAssure%20Term%20Brochure%20(English).pdf"
+        },
+        "tpd": {
+          "v": "Yes",
+          "quote": "Covers death, total and permanent disability and terminal illness",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/direct-manuassure-term/Direct%20ManuAssure%20Term%20Brochure%20(English).pdf"
+        },
+        "ti": {
+          "v": "Yes",
+          "quote": "Covers death, total and permanent disability and terminal illness",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/direct-manuassure-term/Direct%20ManuAssure%20Term%20Brochure%20(English).pdf"
+        },
+        "premium": {
+          "v": "Guaranteed: fixed for the 20-year and to-age-65 terms (basic plan)",
+          "quote": "Guaranteed Enjoy ﬁxed premiums on the basic plan for policy term of 20 years or up to age 65",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/direct-manuassure-term/Direct%20ManuAssure%20Term%20Brochure%20(English).pdf"
+        },
+        "no_medical": {
+          "v": "Yes: the 5-year term auto renews to age 80 regardless of health condition",
+          "quote": "For 5 years policy term, your policy will auto renew till age 80, regardless of your health condition",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/life/term-life/direct-manuassure-term/Direct%20ManuAssure%20Term%20Brochure%20(English).pdf"
+        }
+      }
+    },
+    "Critical SelectCare": {
+      "category": "critical_illness",
+      "metrics": {
+        "conditions": {
+          "v": "Selected major critical illnesses and age-related conditions (number not stated)",
+          "quote": "to cover you against selected major critical illnesses and age-related conditions",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/health/critical-illness/critical-selectcare/critical_selectcare_brochure_fa.pdf"
+        },
+        "claims": {
+          "v": "Special conditions: each can be claimed once, at 25% of sum insured, without reducing the sum insured",
+          "quote": "25% of sum insured will be payable upon diagnosis of a special condition. Each condition can be claimed once during the policy term. A claim on any of the special conditions will not reduce the sum insured of the policy.",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/health/critical-illness/critical-selectcare/critical_selectcare_brochure_fa.pdf"
+        },
+        "entry_age": {
+          "v": "40 to 70 years old (must pass the underwriting questions)",
+          "quote": "You must be between 40 to 70 years old and pass the underwriting questions to qualify.",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/health/critical-illness/critical-selectcare/critical_selectcare_brochure_fa.pdf"
+        }
+      }
+    },
+    "Manulife Early CompleteCare": {
+      "category": "critical_illness",
+      "metrics": {
+        "stages": {
+          "v": "Early, intermediate and advanced stages",
+          "quote": "Covers 126 CI conditions across early, intermediate and advanced stages.",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/health/critical-illness/early-completecare/early_completecare_en.pdf"
+        },
+        "conditions": {
+          "v": "126 CI conditions across early, intermediate and advanced stages",
+          "quote": "Covers 126 CI conditions across early, intermediate and advanced stages.",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/health/critical-illness/early-completecare/early_completecare_en.pdf"
+        },
+        "claims": {
+          "v": "Deluxe plan: maximum payout of up to 840% of basic sum insured",
+          "quote": "Deluxe: Maximum payout of up to 840% basic sum insured.",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/health/critical-illness/early-completecare/early_completecare_en.pdf"
+        },
+        "term": {
+          "v": "To age 65, 75 or 85",
+          "quote": "3 coverage terms: Up to 65, 75 or 85 years old",
+          "src": "https://www.manulife.com.sg/content/dam/insurance/sg/solutions/our-solutions/health/critical-illness/early-completecare/early_completecare_en.pdf"
+        }
+      }
+    }
+  },
+  "notes": [
+    "Manulife has no ip_rider products in public/data/insurers.json (no Shield riders), so that category is empty.",
+    "Manulife pages return 403 to scripts; every cell cites the plan's brochure PDF.",
+    "Brochures are dated 2020 (term plans, Critical SelectCare) and 14 Sep 2025 (Early CompleteCare); entry ages, premium guarantees and waiting periods are mostly not stated in them, so those cells are left out.",
+    "ManuProtect Term (II): the brochure does not say whether premiums are guaranteed (it says only that renewal premiums follow the age at renewal), so premium is omitted.",
+    "ManuProtect Decreasing: the brochure gives no entry age for the standard version, only the Lite version (50 and below).",
+    "Critical SelectCare: the brochure does not state the critical illness claim count; the example shows the policy ending on a critical illness payout. Cover term (age 85) appears only in the worked example, so term is omitted.",
+    "Early CompleteCare: Classic vs Deluxe differ (Deluxe adds Cover Me Again, recurring/relapse and cancer income benefits); claims cell is for Deluxe only. The '1 year / 2 years waiting period' in the example is the claim-free gap between claims, not a waiting period after cover starts, so waiting is omitted.",
+    "Quotes keep the PDF's own ligature characters (e.g. the fi ligature in 'fixed') because the verifier matches the PDF text as extracted."
+  ]
+}

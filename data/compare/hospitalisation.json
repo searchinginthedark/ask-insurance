@@ -1,5 +1,7 @@
 {
  "category": "hospitalisation",
+ "kind": "moh",
+ "na": "Not in MOH's table",
  "source": {
   "publisher": "MOH",
   "title": "Comparison of Integrated Shield Plans",

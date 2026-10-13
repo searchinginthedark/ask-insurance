@@ -224,6 +224,7 @@ table.cmp { border-collapse: separate; border-spacing: 0; font-size: .88rem; }
 .cmp th[scope="row"] .why { display: block; color: var(--muted); font-size: .78rem; font-weight: 500; line-height: 1.35; margin-top: 2px; }
 .cmp th[scope="row"] .tag { margin-top: 4px; }
 .cmp tr.same td { color: var(--muted); }
+.cmp .tag.na { font-weight: 600; background: transparent; border: 1px dashed var(--edge); color: var(--muted); }
 .cmp tbody tr:last-child > * { border-bottom: 0; }
 @media (min-width: 720px) {
   .narrow-only { display: none; }
