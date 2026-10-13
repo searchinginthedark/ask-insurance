@@ -48,6 +48,14 @@ def collect():
     for sid, s in guide["sources"].items():
         links[s["url"]] = {"kind": "source", "label": s["title"], "name": None, "owner": "guide"}
     import glob
+    # Plan-comparison tables (data/compare/*.json, e.g. MOH's Shield plan PDFs).
+    for path in glob.glob(os.path.join(ROOT, "data", "compare", "*.json")):
+        with open(path, encoding="utf-8") as f:
+            c = json.load(f)
+        links.setdefault(c["source"]["url"], {"kind": "source", "label": c["source"]["title"], "name": None, "owner": "guide"})
+        for g in c.get("groups", []):
+            if g.get("pdf"):
+                links.setdefault(g["pdf"], {"kind": "source", "label": c["source"]["title"] + ": " + g["name"], "name": None, "owner": "guide"})
     for path in glob.glob(os.path.join(ROOT, "research", "insurers", "*.json")):
         with open(path, encoding="utf-8") as f:
             d = json.load(f)

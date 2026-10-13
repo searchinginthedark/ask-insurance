@@ -25,3 +25,8 @@ jobs:
       # government figure changed (CareShield payouts rise each year) and the guide needs updating.
       - if: always()
         run: python tools/verify_guide.py
+      # The Compare tab's Shield plan table is copied from MOH's comparison PDFs. A red run here
+      # means MOH published new figures: run tools/moh_ip.py locally and commit the new file.
+      # PyMuPDF is pinned because its table detection changes between versions.
+      - if: always()
+        run: pip install PyMuPDF==1.26.5 && python tools/moh_ip.py --check

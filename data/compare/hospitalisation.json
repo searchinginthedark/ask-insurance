@@ -1,0 +1,2418 @@
+{
+ "category": "hospitalisation",
+ "source": {
+  "publisher": "MOH",
+  "title": "Comparison of Integrated Shield Plans",
+  "url": "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/integrated-shield-plans/comparision-of-integrated-shield-plans/",
+  "as_at": [
+   "1 Jun 2026"
+  ]
+ },
+ "notes": [
+  "Premiums are for Singapore Citizens and PRs, by age next birthday, and rise as you move into the next age band. MOH shows a range where the premium changes within the band.",
+  "The premium rise is MOH's average yearly growth over the last 3 years of the private part of the premium, MediShield Life left out. It shows how fast prices have moved, not what they will do.",
+  "Many plans pay more, or for longer, when you use the insurer's panel or preferred doctors. The conditions are in each cell, word for word from MOH.",
+  "Riders are not included: a rider changes what you pay out of your own pocket, and costs extra."
+ ],
+ "same_benefits": {
+  "standard": {
+   "t": "Standard plans have the same coverage at every insurer, so their benefit rows match; the premium and the insurer rows differ.",
+   "quote": "With the exception of Standard IPs, other IPs may differ in coverage across insurers"
+  }
+ },
+ "groups": [
+  {
+   "id": "private",
+   "name": "Private hospital",
+   "short": "Private",
+   "pdf": "https://isomer-user-content.by.gov.sg/3/d81f31f8-66af-44d3-af98-297be8ccbee8/Comparison of Private Hospital IPs (Jun 2026).pdf",
+   "as_at": "1 Jun 2026"
+  },
+  {
+   "id": "a",
+   "name": "Public hospital, class A",
+   "short": "Class A",
+   "pdf": "https://isomer-user-content.by.gov.sg/3/d409a8ee-f73e-4590-9f08-9f2ac48b18d2/Comparison of Class A IPs (Jun 2026).pdf",
+   "as_at": "1 Jun 2026"
+  },
+  {
+   "id": "b1",
+   "name": "Public hospital, class B1",
+   "short": "Class B1",
+   "pdf": "https://isomer-user-content.by.gov.sg/3/b59e888b-7c4b-4b55-bd3d-979f92b7c1d2/Comparison of Class B1 IPs (Jun 2026).pdf",
+   "as_at": "1 Jun 2026"
+  },
+  {
+   "id": "standard",
+   "name": "Standard plan (class B1)",
+   "short": "Standard",
+   "pdf": "https://isomer-user-content.by.gov.sg/3/a4407b11-a942-4a91-aa46-68aec5a61569/Comparison of Standard IPs (for Class B1 coverage) (Jun 2026).pdf",
+   "as_at": "1 Jun 2026"
+  }
+ ],
+ "bands": [
+  "1 to 20",
+  "21 to 30",
+  "31 to 40",
+  "41 to 50",
+  "51 to 60",
+  "61 to 65",
+  "66 to 70",
+  "71 to 73",
+  "74 to 75",
+  "76 to 78",
+  "79 to 80",
+  "81 to 83",
+  "84 to 85",
+  "86 to 90",
+  "Premiums above age 90"
+ ],
+ "default_band": "31 to 40",
+ "metrics": [
+  {
+   "id": "ward",
+   "label": "Ward class",
+   "why": "The ward the plan is built to pay for."
+  },
+  {
+   "id": "premium",
+   "label": "Yearly premium",
+   "per": "band",
+   "why": "S$, incl. MediShield Life and GST."
+  },
+  {
+   "id": "premium_change",
+   "label": "Yearly rise, last 3 years",
+   "per": "band",
+   "why": "Private part of the premium, same age band."
+  },
+  {
+   "id": "deductible",
+   "label": "Deductible",
+   "why": "S$ you pay first each policy year, in its ward class."
+  },
+  {
+   "id": "coins",
+   "label": "Co-insurance",
+   "why": "Your share of the bill after the deductible."
+  },
+  {
+   "id": "year_limit",
+   "label": "Yearly claim limit",
+   "why": "Most it pays in a policy year, S$."
+  },
+  {
+   "id": "ward_limit",
+   "label": "Ward and treatment, normal ward",
+   "why": "“As Charged” means no daily cap."
+  },
+  {
+   "id": "pre",
+   "label": "Before admission",
+   "why": "Tests and specialist visits before a stay."
+  },
+  {
+   "id": "post",
+   "label": "After discharge",
+   "why": "Follow-up treatment after a stay."
+  },
+  {
+   "id": "entry_age",
+   "label": "Last entry age",
+   "why": "Oldest age (next birthday) to start."
+  },
+  {
+   "id": "claims",
+   "label": "Claims processing",
+   "per": "insurer",
+   "why": "Across all the insurer's Shield plans."
+  },
+  {
+   "id": "preauth",
+   "label": "Pre-authorisation",
+   "per": "insurer",
+   "why": "Check what will be paid before treatment."
+  }
+ ],
+ "units": [
+  {
+   "id": "income-enhanced-incomeshield-preferred",
+   "insurer": "income",
+   "product": "Enhanced IncomeShield",
+   "name": "Enhanced IncomeShield Preferred",
+   "group": "private",
+   "values": {
+    "ward": "Private hospital",
+    "ward_limit": "As Charged",
+    "pre": "As Charged Not provided by our Panel: Up to 100 days before admission Provided by our Panel: Up to 180 days before admission",
+    "post": "As Charged Not provided by our Panel: Up to 100 days after discharge Provided by our Panel: Up to 365 days after discharge",
+    "coins": "10%",
+    "year_limit": "1,500,000",
+    "entry_age": "75",
+    "deductible": "3,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "499 - 513",
+     "excl": "299 - 313",
+     "change": "18.8% to 19.2%"
+    },
+    "21 to 30": {
+     "incl": "616 - 642",
+     "excl": "321 - 347",
+     "change": "16.7% to 16.9%"
+    },
+    "31 to 40": {
+     "incl": "987 - 1,005",
+     "excl": "484 - 502",
+     "change": "18.3% to 18.4%"
+    },
+    "41 to 50": {
+     "incl": "1,614 - 1,777",
+     "excl": "977 - 1,140",
+     "change": "11.0% to 11.7%"
+    },
+    "51 to 60": {
+     "incl": "2,618 - 3,095",
+     "excl": "1,715 - 2,192",
+     "change": "16.3% to 16.3%"
+    },
+    "61 to 65": {
+     "incl": "4,067",
+     "excl": "2,936",
+     "change": "0"
+    },
+    "66 to 70": {
+     "incl": "4,883",
+     "excl": "3,557",
+     "change": "0"
+    },
+    "71 to 73": {
+     "incl": "6,779",
+     "excl": "5,136",
+     "change": "0"
+    },
+    "74 to 75": {
+     "incl": "7,682",
+     "excl": "5,866",
+     "change": "0"
+    },
+    "76 to 78": {
+     "incl": "8,638",
+     "excl": "6,611",
+     "change": "0"
+    },
+    "79 to 80": {
+     "incl": "9,633",
+     "excl": "7,446",
+     "change": "0"
+    },
+    "81 to 83": {
+     "incl": "10,129",
+     "excl": "7,826",
+     "change": "0"
+    },
+    "84 to 85": {
+     "incl": "11,505",
+     "excl": "8,889",
+     "change": "0"
+    },
+    "86 to 90": {
+     "incl": "12,526 - 13,460",
+     "excl": "9,741 - 10,675",
+     "change": "0"
+    },
+    "Premiums above age 90": {
+     "incl": "13,601 - 15,327",
+     "excl": "10,775 - 12,501",
+     "change": "11.0% to 14.6%"
+    }
+   }
+  },
+  {
+   "id": "aia-healthshield-gold-max-a",
+   "insurer": "aia",
+   "product": "AIA HealthShield Gold Max",
+   "name": "HealthShield Gold Max A",
+   "group": "private",
+   "values": {
+    "ward": "Private hospital",
+    "ward_limit": "As Charged",
+    "pre": "As Charged Up to 100 days If admitted to / treated by AIA Preferred Providers: Up to 13 months",
+    "post": "As Charged (Up to 100 days, with additional 100 days for 30 critical illnesses) If admitted to / treated by AIA Preferred Providers: Up to 13 months (the additional 100 days for 30 Critical Illnesses is not applicable)",
+    "coins": "10%",
+    "year_limit": "1,000,000 or 2,000,000 (If admitted to / treated by AIA Preferred Providers)",
+    "entry_age": "75",
+    "deductible": "3,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "510",
+     "excl": "310",
+     "change": "7.1%"
+    },
+    "21 to 30": {
+     "incl": "605 - 694",
+     "excl": "310 - 399",
+     "change": "7.0% to 7.1%"
+    },
+    "31 to 40": {
+     "incl": "987 - 1,042",
+     "excl": "484 - 539",
+     "change": "6.9% to 7.0%"
+    },
+    "41 to 50": {
+     "incl": "1,853 - 1,956",
+     "excl": "1,216 - 1,319",
+     "change": "6.9%"
+    },
+    "51 to 60": {
+     "incl": "2,782 - 3,290",
+     "excl": "1,879 - 2,387",
+     "change": "6.9%"
+    },
+    "61 to 65": {
+     "incl": "4,356",
+     "excl": "3,225",
+     "change": "6.9%"
+    },
+    "66 to 70": {
+     "incl": "6,065",
+     "excl": "4,739",
+     "change": "6.9%"
+    },
+    "71 to 73": {
+     "incl": "7,938",
+     "excl": "6,295",
+     "change": "6.9%"
+    },
+    "74 to 75": {
+     "incl": "8,788",
+     "excl": "6,972",
+     "change": "6.9%"
+    },
+    "76 to 78": {
+     "incl": "10,745",
+     "excl": "8,718",
+     "change": "6.9%"
+    },
+    "79 to 80": {
+     "incl": "11,908",
+     "excl": "9,721",
+     "change": "6.9%"
+    },
+    "81 to 83": {
+     "incl": "12,636",
+     "excl": "10,333",
+     "change": "6.9%"
+    },
+    "84 to 85": {
+     "incl": "13,053",
+     "excl": "10,437",
+     "change": "6.9%"
+    },
+    "86 to 90": {
+     "incl": "13,326 - 13,432",
+     "excl": "10,541 - 10,647",
+     "change": "6.9%"
+    },
+    "Premiums above age 90": {
+     "incl": "14,006 - 15,513",
+     "excl": "11,180 - 12,687",
+     "change": "6.9%"
+    }
+   }
+  },
+  {
+   "id": "great-eastern-great-supremehealth-p-plus",
+   "insurer": "great_eastern",
+   "product": "GREAT SupremeHealth",
+   "name": "GREAT SupremeHealth P PLUS",
+   "group": "private",
+   "values": {
+    "ward": "Private hospital",
+    "ward_limit": "As Charged",
+    "pre": "(i) As Charged Up to 90 days (ii) As Charged Up to 180 days for Restructured Hospital, or private hospitals under Panel Providers",
+    "post": "(i) As Charged Up to 180 days (ii) As Charged Up to 365 days for Restructured Hospital, or private hospitals under Panel Providers",
+    "coins": "10%",
+    "year_limit": "1,500,000",
+    "entry_age": "75",
+    "deductible": "3,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "513 - 544",
+     "excl": "313 - 344",
+     "change": "14.6% to 20.5%"
+    },
+    "21 to 30": {
+     "incl": "686 - 752",
+     "excl": "391 - 457",
+     "change": "23.5% to 23.9%"
+    },
+    "31 to 40": {
+     "incl": "1,134 - 1,183",
+     "excl": "631 - 680",
+     "change": "24.8% to 27.9%"
+    },
+    "41 to 50": {
+     "incl": "1,931 - 1,994",
+     "excl": "1,294 - 1,357",
+     "change": "25.5% to 27.5%"
+    },
+    "51 to 60": {
+     "incl": "3,010 - 3,602",
+     "excl": "2,107 - 2,699",
+     "change": "20.0% to 27.5%"
+    },
+    "61 to 65": {
+     "incl": "5,093 - 5,120",
+     "excl": "3,962 - 3,989",
+     "change": "27.2% to 27.5%"
+    },
+    "66 to 70": {
+     "incl": "6,882 - 7,330",
+     "excl": "5,556 - 6,004",
+     "change": "24.2% to 27.5%"
+    },
+    "71 to 73": {
+     "incl": "8,398",
+     "excl": "6,755",
+     "change": "21.4% to 23.5%"
+    },
+    "74 to 75": {
+     "incl": "10,189",
+     "excl": "8,373",
+     "change": "24.0% to 27.9%"
+    },
+    "76 to 78": {
+     "incl": "11,647",
+     "excl": "9,620",
+     "change": "22.1% to 27.9%"
+    },
+    "79 to 80": {
+     "incl": "13,794",
+     "excl": "11,607",
+     "change": "24.6% to 28.1%"
+    },
+    "81 to 83": {
+     "incl": "14,717",
+     "excl": "12,414",
+     "change": "18.5% to 24.7%"
+    },
+    "84 to 85": {
+     "incl": "15,736",
+     "excl": "13,120",
+     "change": "18.7% to 18.8%"
+    },
+    "86 to 90": {
+     "incl": "15,972 - 16,115",
+     "excl": "13,187 - 13,330",
+     "change": "18.6% to 18.6%"
+    },
+    "Premiums above age 90": {
+     "incl": "16,299 - 16,625",
+     "excl": "13,473 - 13,799",
+     "change": "13.2% to 17.1%"
+    }
+   }
+  },
+  {
+   "id": "great-eastern-great-supremehealth-p-prime",
+   "insurer": "great_eastern",
+   "product": "GREAT SupremeHealth",
+   "name": "GREAT SupremeHealth P PRIME",
+   "group": "private",
+   "values": {
+    "ward": "Private hospital",
+    "ward_limit": "As Charged",
+    "pre": "(i) As Charged Up to 90 days (ii) As Charged Up to 180 days for Restructured Hospital, or private hospitals under Panel Providers",
+    "post": "(i) As Charged Up to 180 days (ii) As Charged Up to 365 days for Restructured Hospital, or private hospitals under Panel Providers",
+    "coins": "10% (restructured hospital & panel provider at Partnering Medical Institution) 40% (non-panel provider and/or Non-Partnering Medical Institution)",
+    "year_limit": "1,500,000 or 2,500,000 (the additional 1,000,000 above 1,500,000 is only applicable for expenses incurred at restructured hospital & panel provider at partnering medical institutions)",
+    "entry_age": "75",
+    "deductible": "3,500 (Class A) 5,000 (panel provider at Partnering Medical Institution) 6,000 (non-panel provider and/or Non-Partnering Medical Institution)"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "374 - 393",
+     "excl": "174 - 193",
+     "change": "N.A. (Note: GREAT SupremeHealth P PRIME was only launched in Oct 2025)"
+    },
+    "21 to 30": {
+     "incl": "514 - 550",
+     "excl": "219 - 255",
+     "change": "N.A. (Note: GREAT SupremeHealth P PRIME was only launched in Oct 2025)"
+    },
+    "31 to 40": {
+     "incl": "855 - 882",
+     "excl": "352 - 379",
+     "change": "N.A. (Note: GREAT SupremeHealth P PRIME was only launched in Oct 2025)"
+    },
+    "41 to 50": {
+     "incl": "1,359 - 1,395",
+     "excl": "722 - 758",
+     "change": "N.A. (Note: GREAT SupremeHealth P PRIME was only launched in Oct 2025)"
+    },
+    "51 to 60": {
+     "incl": "2,079 - 2,409",
+     "excl": "1,176 - 1,506",
+     "change": "N.A. (Note: GREAT SupremeHealth P PRIME was only launched in Oct 2025)"
+    },
+    "61 to 65": {
+     "incl": "3,342 - 3,357",
+     "excl": "2,211 - 2,226",
+     "change": "N.A. (Note: GREAT SupremeHealth P PRIME was only launched in Oct 2025)"
+    },
+    "66 to 70": {
+     "incl": "4,426 - 4,677",
+     "excl": "3,100 - 3,351",
+     "change": "N.A. (Note: GREAT SupremeHealth P PRIME was only launched in Oct 2025)"
+    },
+    "71 to 73": {
+     "incl": "5,412",
+     "excl": "3,769",
+     "change": "N.A. (Note: GREAT SupremeHealth P PRIME was only launched in Oct 2025)"
+    },
+    "74 to 75": {
+     "incl": "6,489",
+     "excl": "4,673",
+     "change": "N.A. (Note: GREAT SupremeHealth P PRIME was only launched in Oct 2025)"
+    },
+    "76 to 78": {
+     "incl": "7,395",
+     "excl": "5,368",
+     "change": "N.A. (Note: GREAT SupremeHealth P PRIME was only launched in Oct 2025)"
+    },
+    "79 to 80": {
+     "incl": "8,665",
+     "excl": "6,478",
+     "change": "N.A. (Note: GREAT SupremeHealth P PRIME was only launched in Oct 2025)"
+    },
+    "81 to 83": {
+     "incl": "9,231",
+     "excl": "6,928",
+     "change": "N.A. (Note: GREAT SupremeHealth P PRIME was only launched in Oct 2025)"
+    },
+    "84 to 85": {
+     "incl": "9,938",
+     "excl": "7,322",
+     "change": "N.A. (Note: GREAT SupremeHealth P PRIME was only launched in Oct 2025)"
+    },
+    "86 to 90": {
+     "incl": "10,144 - 10,223",
+     "excl": "7,359 - 7,438",
+     "change": "N.A. (Note: GREAT SupremeHealth P PRIME was only launched in Oct 2025)"
+    },
+    "Premiums above age 90": {
+     "incl": "10,345 - 10,527",
+     "excl": "7,519 - 7,701",
+     "change": "N.A. (Note: GREAT SupremeHealth P PRIME was only launched in Oct 2025)"
+    }
+   }
+  },
+  {
+   "id": "prudential-prushield-premier",
+   "insurer": "prudential",
+   "product": "PRUShield",
+   "name": "PRUShield Premier",
+   "group": "private",
+   "values": {
+    "ward": "Private hospital",
+    "ward_limit": "As Charged",
+    "pre": "As Charged (Up to 180 days)",
+    "post": "As Charged (Up to 365 days)",
+    "coins": "10%",
+    "year_limit": "1,200,000 or 2,000,000 (if admitted to and treated by Panel Providers)",
+    "entry_age": "75",
+    "deductible": "3,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "472 - 500",
+     "excl": "272 - 300",
+     "change": "9.6% to 13.1%"
+    },
+    "21 to 30": {
+     "incl": "595 - 602",
+     "excl": "300 - 307",
+     "change": "6.1% to 10.7%"
+    },
+    "31 to 40": {
+     "incl": "935 - 1,019",
+     "excl": "432 - 516",
+     "change": "8.3% to 14.2%"
+    },
+    "41 to 50": {
+     "incl": "1,540 - 1,667",
+     "excl": "903 - 1,030",
+     "change": "9.3% to 14.2%"
+    },
+    "51 to 60": {
+     "incl": "2,410 - 3,161",
+     "excl": "1,507 - 2,258",
+     "change": "10.6% to 13.9%"
+    },
+    "61 to 65": {
+     "incl": "3,870 - 4,125",
+     "excl": "2,739 - 2,994",
+     "change": "10.9% to 13.9%"
+    },
+    "66 to 70": {
+     "incl": "5,182 - 5,819",
+     "excl": "3,856 - 4,493",
+     "change": "11.0% to 13.9%"
+    },
+    "71 to 73": {
+     "incl": "6,789 - 7,161",
+     "excl": "5,146 - 5,518",
+     "change": "12.7% to 13.4%"
+    },
+    "74 to 75": {
+     "incl": "7,558 - 8,115",
+     "excl": "5,742 - 6,299",
+     "change": "12.7% to 12.8%"
+    },
+    "76 to 78": {
+     "incl": "8,539 - 9,276",
+     "excl": "6,512 - 7,249",
+     "change": "11.1% to 12.3%"
+    },
+    "79 to 80": {
+     "incl": "9,688 - 10,208",
+     "excl": "7,501 - 8,021",
+     "change": "10.1% to 10.7%"
+    },
+    "81 to 83": {
+     "incl": "10,740 - 11,883",
+     "excl": "8,437 - 9,580",
+     "change": "8.7% to 9.6%"
+    },
+    "84 to 85": {
+     "incl": "12,574 - 12,930",
+     "excl": "9,958 - 10,314",
+     "change": "8.1% to 8.4%"
+    },
+    "86 to 90": {
+     "incl": "13,359 - 14,427",
+     "excl": "10,574 - 11,846",
+     "change": "7.3% to 8.0%"
+    },
+    "Premiums above age 90": {
+     "incl": "14,835 - 15,901",
+     "excl": "12,009 - 13,075",
+     "change": "6.8% to 8.2%"
+    }
+   }
+  },
+  {
+   "id": "singlife-singlife-shield-plan-1",
+   "insurer": "singlife",
+   "product": "Singlife Shield",
+   "name": "Singlife Shield Plan 1",
+   "group": "private",
+   "values": {
+    "ward": "Private hospital",
+    "ward_limit": "As Charged",
+    "pre": "(i) As Charged (Up to 90 days) [for non-panel specialist in a private hospital] (ii) As Charged (Up to 180 days) [for A&E and preferred medical providers]",
+    "post": "(i) As Charged (Up to 180 days) [for non-panel specialist in a private hospital] (ii) As Charged (Up to 365 days) [for A&E and preferred medical providers]",
+    "coins": "10% (max 25,500/yr for A&E and preferred medical providers)",
+    "year_limit": "1,000,000 or 2,000,000 (for A&E or preferred medical providers)",
+    "entry_age": "75",
+    "deductible": "3,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "442 - 467",
+     "excl": "242 - 267",
+     "change": "7.7% to 11.3%"
+    },
+    "21 to 30": {
+     "incl": "565 - 613",
+     "excl": "270 - 318",
+     "change": "4.9% to 10.7%"
+    },
+    "31 to 40": {
+     "incl": "917 - 935",
+     "excl": "414 - 432",
+     "change": "0.1% to 1.5%"
+    },
+    "41 to 50": {
+     "incl": "1,509 - 1,874",
+     "excl": "872 - 1,237",
+     "change": "6.6% to 9.9%"
+    },
+    "51 to 60": {
+     "incl": "2,399 - 2,987",
+     "excl": "1,496 - 2,084",
+     "change": "8.3% to 11.7%"
+    },
+    "61 to 65": {
+     "incl": "3,555 - 4,221",
+     "excl": "2,424 - 3,090",
+     "change": "7.1% to 16.1%"
+    },
+    "66 to 70": {
+     "incl": "4,983 - 5,245",
+     "excl": "3,657 - 3,919",
+     "change": "9.3% to 11.9%"
+    },
+    "71 to 73": {
+     "incl": "6,302 - 6,794",
+     "excl": "4,659 - 5,151",
+     "change": "7.2% to 10.8%"
+    },
+    "74 to 75": {
+     "incl": "7,333 - 7,699",
+     "excl": "5,517 - 5,883",
+     "change": "7.5% to 9.8%"
+    },
+    "76 to 78": {
+     "incl": "8,033 - 8,571",
+     "excl": "6,006 - 6,544",
+     "change": "6.7% to 9.8%"
+    },
+    "79 to 80": {
+     "incl": "9,298 - 9,598",
+     "excl": "7,111 - 7,411",
+     "change": "8.3% to 9.8%"
+    },
+    "81 to 83": {
+     "incl": "10,392 - 10,667",
+     "excl": "8,089 - 8,364",
+     "change": "7.1% to 8.3%"
+    },
+    "84 to 85": {
+     "incl": "11,197 - 11,282",
+     "excl": "8,581 - 8,666",
+     "change": "5.9% to 6.3%"
+    },
+    "86 to 90": {
+     "incl": "12,070 - 12,388",
+     "excl": "9,285 - 9,603",
+     "change": "5.9% to 6.0%"
+    },
+    "Premiums above age 90": {
+     "incl": "12,440 - 12,802",
+     "excl": "9,614 - 9,976",
+     "change": "2.8% to 5.0%"
+    }
+   }
+  },
+  {
+   "id": "hsbc-life-hsbc-life-shield-plan-a",
+   "insurer": "hsbc_life",
+   "product": "HSBC Life Shield",
+   "name": "HSBC Life Shield Plan A",
+   "group": "private",
+   "values": {
+    "ward": "Private hospital",
+    "ward_limit": "As Charged",
+    "pre": "(i) As Charged (Up to 90 days) [for non-panel specialists and day surgery] (ii) As Charged (Up to 180 days) [for panel specialists and restructured hospital]",
+    "post": "(i) As Charged (Up to 180 days) [for non-panel specialists and day surgery] (ii) As Charged (Up to 365 days) [for panel specialists and restructured hospital]",
+    "coins": "10%",
+    "year_limit": "1,000,000 or 2,500,000 (If treated by HSBC Life Panel of specialists or at Restructured Hospital)",
+    "entry_age": "75",
+    "deductible": "3,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "500",
+     "excl": "300",
+     "change": "17.1% - 20.5%"
+    },
+    "21 to 30": {
+     "incl": "595",
+     "excl": "300",
+     "change": "8.9% - 17.1%"
+    },
+    "31 to 40": {
+     "incl": "1,013",
+     "excl": "510",
+     "change": "16.30%"
+    },
+    "41 to 50": {
+     "incl": "1,712 - 1,852",
+     "excl": "1,075 - 1,215",
+     "change": "18% - 22.9%"
+    },
+    "51 to 60": {
+     "incl": "2,838 - 3,329",
+     "excl": "1,935 - 2,426",
+     "change": "19.7% - 22.2%"
+    },
+    "61 to 65": {
+     "incl": "4,402",
+     "excl": "3,271",
+     "change": "19.50%"
+    },
+    "66 to 70": {
+     "incl": "5,432 - 5,527",
+     "excl": "4,106 - 4,201",
+     "change": "16.20%"
+    },
+    "71 to 73": {
+     "incl": "6,996",
+     "excl": "5,353",
+     "change": "12.30%"
+    },
+    "74 to 75": {
+     "incl": "7,935",
+     "excl": "6,119",
+     "change": "13%"
+    },
+    "76 to 78": {
+     "incl": "8,756",
+     "excl": "6,729",
+     "change": "8.40%"
+    },
+    "79 to 80": {
+     "incl": "9,776",
+     "excl": "7,589",
+     "change": "10.70%"
+    },
+    "81 to 83": {
+     "incl": "10,272",
+     "excl": "7,969",
+     "change": "10.80%"
+    },
+    "84 to 85": {
+     "incl": "11,667",
+     "excl": "9,051",
+     "change": "9.70%"
+    },
+    "86 to 90": {
+     "incl": "12,708 - 13,680",
+     "excl": "9,923 - 10,895",
+     "change": "12.1% - 12.2%"
+    },
+    "Premiums above age 90": {
+     "incl": "14,432 - 15,973",
+     "excl": "11,606 - 13,147",
+     "change": "3.3% - 9.5%"
+    }
+   }
+  },
+  {
+   "id": "income-enhanced-incomeshield-advantage",
+   "insurer": "income",
+   "product": "Enhanced IncomeShield",
+   "name": "Enhanced IncomeShield Advantage",
+   "group": "a",
+   "values": {
+    "ward": "Public hospital, class A",
+    "ward_limit": "As Charged",
+    "pre": "As Charged (Up to 100 days)",
+    "post": "As Charged (Up to 100 days)",
+    "coins": "10%",
+    "year_limit": "1,000,000",
+    "entry_age": "75",
+    "deductible": "3,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "251 - 275",
+     "excl": "51 - 75",
+     "change": "19.1% to 20.3%"
+    },
+    "21 to 30": {
+     "incl": "372 - 379",
+     "excl": "77 - 84",
+     "change": "20.1% to 23.7%"
+    },
+    "31 to 40": {
+     "incl": "632 - 664",
+     "excl": "129 - 161",
+     "change": "14.6% to 15.5%"
+    },
+    "41 to 50": {
+     "incl": "911 - 921",
+     "excl": "274 - 284",
+     "change": "9.9% to 10.5%"
+    },
+    "51 to 60": {
+     "incl": "1,348 - 1,396",
+     "excl": "445 - 493",
+     "change": "9.8% to 9.8%"
+    },
+    "61 to 65": {
+     "incl": "1,924",
+     "excl": "793",
+     "change": "10.1%"
+    },
+    "66 to 70": {
+     "incl": "2,541",
+     "excl": "1,215",
+     "change": "10.1%"
+    },
+    "71 to 73": {
+     "incl": "3,322",
+     "excl": "1,679",
+     "change": "9.0%"
+    },
+    "74 to 75": {
+     "incl": "3,795",
+     "excl": "1,979",
+     "change": "8.6%"
+    },
+    "76 to 78": {
+     "incl": "4,436",
+     "excl": "2,409",
+     "change": "8.6%"
+    },
+    "79 to 80": {
+     "incl": "5,029",
+     "excl": "2,842",
+     "change": "9.3%"
+    },
+    "81 to 83": {
+     "incl": "5,192",
+     "excl": "2,889",
+     "change": "8.6%"
+    },
+    "84 to 85": {
+     "incl": "5,914",
+     "excl": "3,298",
+     "change": "8.6%"
+    },
+    "86 to 90": {
+     "incl": "6,581 - 6,845",
+     "excl": "3,796 - 4,060",
+     "change": "8.6% to 9.9%"
+    },
+    "Premiums above age 90": {
+     "incl": "7,319 - 9,250",
+     "excl": "4,493 - 6,424",
+     "change": "8.6%"
+    }
+   }
+  },
+  {
+   "id": "aia-healthshield-gold-max-b",
+   "insurer": "aia",
+   "product": "AIA HealthShield Gold Max",
+   "name": "HealthShield Gold Max B",
+   "group": "a",
+   "values": {
+    "ward": "Public hospital, class A",
+    "ward_limit": "As Charged",
+    "pre": "(i) As Charged Up to 100 days under a private hospital (ii) As Charged Up to 12 months under a public hospital",
+    "post": "(i) As Charged Up to 100 days under a private hospital (ii) As Charged Up to 12 months under a public hospital",
+    "coins": "10%",
+    "year_limit": "1,000,000 or 1,200,000 (If admitted to / treated by AIA Preferred Providers)",
+    "entry_age": "75",
+    "deductible": "3,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "320",
+     "excl": "120",
+     "change": "5.2%"
+    },
+    "21 to 30": {
+     "incl": "423",
+     "excl": "128",
+     "change": "5.2%"
+    },
+    "31 to 40": {
+     "incl": "700",
+     "excl": "197",
+     "change": "5.1%"
+    },
+    "41 to 50": {
+     "incl": "1,022",
+     "excl": "385",
+     "change": "5.2%"
+    },
+    "51 to 60": {
+     "incl": "1,442 - 1,490",
+     "excl": "539 - 587",
+     "change": "5.1%"
+    },
+    "61 to 65": {
+     "incl": "1,987",
+     "excl": "856",
+     "change": "5.1%"
+    },
+    "66 to 70": {
+     "incl": "2,924",
+     "excl": "1,598",
+     "change": "5.1%"
+    },
+    "71 to 73": {
+     "incl": "3,853",
+     "excl": "2,210",
+     "change": "5.1%"
+    },
+    "74 to 75": {
+     "incl": "4,205",
+     "excl": "2,389",
+     "change": "5.1%"
+    },
+    "76 to 78": {
+     "incl": "5,427",
+     "excl": "3,400",
+     "change": "5.1%"
+    },
+    "79 to 80": {
+     "incl": "5,601",
+     "excl": "3,414",
+     "change": "5.1%"
+    },
+    "81 to 83": {
+     "incl": "5,782",
+     "excl": "3,479",
+     "change": "5.1%"
+    },
+    "84 to 85": {
+     "incl": "6,183",
+     "excl": "3,567",
+     "change": "5.1%"
+    },
+    "86 to 90": {
+     "incl": "6,471 - 6,671",
+     "excl": "3,686 - 3,886",
+     "change": "5.1%"
+    },
+    "Premiums above age 90": {
+     "incl": "7,042 - 8,301",
+     "excl": "4,216 - 5,475",
+     "change": "5.1%"
+    }
+   }
+  },
+  {
+   "id": "great-eastern-great-supremehealth-a-plus",
+   "insurer": "great_eastern",
+   "product": "GREAT SupremeHealth",
+   "name": "GREAT SupremeHealth A PLUS",
+   "group": "a",
+   "values": {
+    "ward": "Public hospital, class A",
+    "ward_limit": "As Charged",
+    "pre": "(i) As Charged Up to 90 days (ii) As Charged Up to 180 days for Restructured Hospital, or private hospitals under Panel Provider",
+    "post": "(i) As Charged Up to 180 days (ii) As Charged Up to 365 days for Restructured Hospital, or private hospitals under Panel Provider",
+    "coins": "10%",
+    "year_limit": "1,200,000",
+    "entry_age": "75",
+    "deductible": "3,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "285 - 287",
+     "excl": "85 - 87",
+     "change": "0.5% to 6.4%"
+    },
+    "21 to 30": {
+     "incl": "399",
+     "excl": "104",
+     "change": "0.2% to 7.3%"
+    },
+    "31 to 40": {
+     "incl": "637 - 656",
+     "excl": "134 - 153",
+     "change": "2.6% to 7.8%"
+    },
+    "41 to 50": {
+     "incl": "895 - 917",
+     "excl": "258 - 280",
+     "change": "3.2% to 9.5%"
+    },
+    "51 to 60": {
+     "incl": "1,288 - 1,439",
+     "excl": "385 - 536",
+     "change": "0.8% to 10.5%"
+    },
+    "61 to 65": {
+     "incl": "1,825 - 2,014",
+     "excl": "694 - 883",
+     "change": "2.3% to 7.4%"
+    },
+    "66 to 70": {
+     "incl": "2,486 - 2,791",
+     "excl": "1,160 - 1,465",
+     "change": "1.5% to 8.8%"
+    },
+    "71 to 73": {
+     "incl": "3,303",
+     "excl": "1,660",
+     "change": "0.3% to 4.7%"
+    },
+    "74 to 75": {
+     "incl": "3,913",
+     "excl": "2,097",
+     "change": "3.9% to 6.2%"
+    },
+    "76 to 78": {
+     "incl": "4,488",
+     "excl": "2,461",
+     "change": "2.8% to 7.3%"
+    },
+    "79 to 80": {
+     "incl": "5,058",
+     "excl": "2,871",
+     "change": "3.7% to 6.0%"
+    },
+    "81 to 83": {
+     "incl": "5,271",
+     "excl": "2,968",
+     "change": "1.3% to 3.6%"
+    },
+    "84 to 85": {
+     "incl": "5,888",
+     "excl": "3,272",
+     "change": "2.3% to 3.4%"
+    },
+    "86 to 90": {
+     "incl": "6,450 - 6,589",
+     "excl": "3,665 - 3,804",
+     "change": "1.6% to 5.0%"
+    },
+    "Premiums above age 90": {
+     "incl": "6,888 - 7,990",
+     "excl": "4,062 - 5,164",
+     "change": "0.3% to 2.6%"
+    }
+   }
+  },
+  {
+   "id": "prudential-prushield-plus",
+   "insurer": "prudential",
+   "product": "PRUShield",
+   "name": "PRUShield Plus",
+   "group": "a",
+   "values": {
+    "ward": "Public hospital, class A",
+    "ward_limit": "As Charged",
+    "pre": "As Charged (Up to 180 days)",
+    "post": "As Charged (Up to 365 days)",
+    "coins": "10%",
+    "year_limit": "1,000,000",
+    "entry_age": "75",
+    "deductible": "3,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "285",
+     "excl": "85",
+     "change": "4.4% to 7.9%"
+    },
+    "21 to 30": {
+     "incl": "372",
+     "excl": "77",
+     "change": "9.6%"
+    },
+    "31 to 40": {
+     "incl": "616 - 655",
+     "excl": "113 - 152",
+     "change": "9.2% to 10.4%"
+    },
+    "41 to 50": {
+     "incl": "845 - 888",
+     "excl": "208 - 251",
+     "change": "11.2% to 11.9%"
+    },
+    "51 to 60": {
+     "incl": "1,222 - 1,260",
+     "excl": "319 - 357",
+     "change": "11.4% to 12.0%"
+    },
+    "61 to 65": {
+     "incl": "1,615 - 1,731",
+     "excl": "484 - 600",
+     "change": "11.8% to 12.0%"
+    },
+    "66 to 70": {
+     "incl": "2,298 - 2,401",
+     "excl": "972 - 1,075",
+     "change": "11.2% to 11.8%"
+    },
+    "71 to 73": {
+     "incl": "3,176",
+     "excl": "1,533",
+     "change": "11.9%"
+    },
+    "74 to 75": {
+     "incl": "3,592 - 3,765",
+     "excl": "1,776 - 1,949",
+     "change": "10.9% to 12.0%"
+    },
+    "76 to 78": {
+     "incl": "4,369 - 4,761",
+     "excl": "2,342 - 2,734",
+     "change": "10.9%"
+    },
+    "79 to 80": {
+     "incl": "4,959",
+     "excl": "2,772",
+     "change": "10.9%"
+    },
+    "81 to 83": {
+     "incl": "5,366",
+     "excl": "3,063",
+     "change": "10.9%"
+    },
+    "84 to 85": {
+     "incl": "6,170",
+     "excl": "3,554",
+     "change": "10.9%"
+    },
+    "86 to 90": {
+     "incl": "6,597",
+     "excl": "3,812",
+     "change": "10.9%"
+    },
+    "Premiums above age 90": {
+     "incl": "6,746 - 7,652",
+     "excl": "3,920 - 4,826",
+     "change": "8.4% to 10.7%"
+    }
+   }
+  },
+  {
+   "id": "singlife-singlife-shield-plan-2",
+   "insurer": "singlife",
+   "product": "Singlife Shield",
+   "name": "Singlife Shield Plan 2",
+   "group": "a",
+   "values": {
+    "ward": "Public hospital, class A",
+    "ward_limit": "As Charged",
+    "pre": "(i) As Charged (Up to 90 days) [for non-panel specialist in a private hospital] (ii) As Charged (Up to 180 days) [for A&E and preferred medical providers]",
+    "post": "(i) As Charged (Up to 180 days) [for non-panel specialist in a private hospital] (ii) As Charged (Up to 365 days) [for A&E and preferred medical providers]",
+    "coins": "10% (max 25,500/yr for A&E and preferred medical providers)",
+    "year_limit": "1,200,000",
+    "entry_age": "75",
+    "deductible": "3,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "289 - 310",
+     "excl": "89 - 110",
+     "change": "0.8% to 8.2%"
+    },
+    "21 to 30": {
+     "incl": "407 - 416",
+     "excl": "112 - 121",
+     "change": "3.9% to 6.6%"
+    },
+    "31 to 40": {
+     "incl": "685 - 696",
+     "excl": "182 - 193",
+     "change": "2.4% to 4.4%"
+    },
+    "41 to 50": {
+     "incl": "956 - 989",
+     "excl": "319 - 352",
+     "change": "0.4% to 0.8%"
+    },
+    "51 to 60": {
+     "incl": "1,381 - 1,413",
+     "excl": "478 - 510",
+     "change": "0.4% to 0.8%"
+    },
+    "61 to 65": {
+     "incl": "1,862 - 2,003",
+     "excl": "731 - 872",
+     "change": "-2.1% to 3.8%"
+    },
+    "66 to 70": {
+     "incl": "2,341 - 2,634",
+     "excl": "1,015 - 1,308",
+     "change": "-6.2% to 2.1%"
+    },
+    "71 to 73": {
+     "incl": "3,452 - 3,597",
+     "excl": "1,809 - 1,954",
+     "change": "-0.3% to 2.3%"
+    },
+    "74 to 75": {
+     "incl": "3,843 - 3,916",
+     "excl": "2,027 - 2,100",
+     "change": "-1.6% to -0.4%"
+    },
+    "76 to 78": {
+     "incl": "4,840 - 4,966",
+     "excl": "2,813 - 2,939",
+     "change": "0.6% to 2.1%"
+    },
+    "79 to 80": {
+     "incl": "5,189 - 5,217",
+     "excl": "3,002 - 3,030",
+     "change": "0.1% to 0.4%"
+    },
+    "81 to 83": {
+     "incl": "5,342 - 5,383",
+     "excl": "3,039 - 3,080",
+     "change": "-6.8% to -6.4%"
+    },
+    "84 to 85": {
+     "incl": "5,981 - 6,042",
+     "excl": "3,365 - 3,426",
+     "change": "-4.2% to -3.6%"
+    },
+    "86 to 90": {
+     "incl": "6,375 - 6,627",
+     "excl": "3,590 - 3,842",
+     "change": "-7.6% to -6.2%"
+    },
+    "Premiums above age 90": {
+     "incl": "6,675 - 7,525",
+     "excl": "3,849 - 4,699",
+     "change": "-6.4% to -2.5%"
+    }
+   }
+  },
+  {
+   "id": "hsbc-life-hsbc-life-shield-plan-b",
+   "insurer": "hsbc_life",
+   "product": "HSBC Life Shield",
+   "name": "HSBC Life Shield Plan B",
+   "group": "a",
+   "values": {
+    "ward": "Public hospital, class A",
+    "ward_limit": "As Charged",
+    "pre": "(i) As Charged (Up to 90 days) [for non-panel specialists and day surgery] (ii) As Charged (Up to 180 days) [for panel specialists and restructured hospital]",
+    "post": "(i) As Charged (Up to 180 days) [for non-panel specialists and day surgery] (ii) As Charged (Up to 365 days) [for panel specialists and restructured hospital]",
+    "coins": "10%",
+    "year_limit": "1,000,000",
+    "entry_age": "75",
+    "deductible": "3,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "291",
+     "excl": "91",
+     "change": "5.1%"
+    },
+    "21 to 30": {
+     "incl": "396",
+     "excl": "101",
+     "change": "3.5%"
+    },
+    "31 to 40": {
+     "incl": "673",
+     "excl": "170",
+     "change": "2.5%"
+    },
+    "41 to 50": {
+     "incl": "882 - 1,003",
+     "excl": "245 - 366",
+     "change": "2% - 5.1%"
+    },
+    "51 to 60": {
+     "incl": "1,385 - 1,451",
+     "excl": "482 - 548",
+     "change": "5.1%"
+    },
+    "61 to 65": {
+     "incl": "1,902",
+     "excl": "771",
+     "change": "4.6%"
+    },
+    "66 to 70": {
+     "incl": "2,387",
+     "excl": "1,061",
+     "change": "3.5%"
+    },
+    "71 to 73": {
+     "incl": "3,005",
+     "excl": "1,362",
+     "change": "1.8%"
+    },
+    "74 to 75": {
+     "incl": "3,564",
+     "excl": "1,748",
+     "change": "3.5%"
+    },
+    "76 to 78": {
+     "incl": "3,981",
+     "excl": "1,954",
+     "change": "3.5%"
+    },
+    "79 to 80": {
+     "incl": "4,380",
+     "excl": "2,193",
+     "change": "3.5%"
+    },
+    "81 to 83": {
+     "incl": "4,647",
+     "excl": "2,344",
+     "change": "1.9%"
+    },
+    "84 to 85": {
+     "incl": "5,291",
+     "excl": "2,675",
+     "change": "2.6%"
+    },
+    "86 to 90": {
+     "incl": "5,865 - 6,080",
+     "excl": "3,080 - 3,295",
+     "change": "2% - 3.5%"
+    },
+    "Premiums above age 90": {
+     "incl": "7,508 - 7,932",
+     "excl": "4,682 - 5,106",
+     "change": "1.4% - 2.1%"
+    }
+   }
+  },
+  {
+   "id": "income-enhanced-incomeshield-basic",
+   "insurer": "income",
+   "product": "Enhanced IncomeShield",
+   "name": "Enhanced IncomeShield Basic",
+   "group": "b1",
+   "values": {
+    "ward": "Public hospital, class B1",
+    "ward_limit": "As Charged",
+    "pre": "As Charged (up to 100 days)",
+    "post": "As Charged (up to 100 days)",
+    "coins": "10%",
+    "year_limit": "250,000",
+    "entry_age": "75",
+    "deductible": "2,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "245 - 253",
+     "excl": "45 - 53",
+     "change": "11.3% to 22.9%"
+    },
+    "21 to 30": {
+     "incl": "355 - 357",
+     "excl": "60 - 62",
+     "change": "22.9% to 24.3%"
+    },
+    "31 to 40": {
+     "incl": "594 - 606",
+     "excl": "91 - 103",
+     "change": "11.8% to 12.7%"
+    },
+    "41 to 50": {
+     "incl": "801 - 838",
+     "excl": "164 - 201",
+     "change": "12.9% to 15.3%"
+    },
+    "51 to 60": {
+     "incl": "1,148 - 1,152",
+     "excl": "245 - 249",
+     "change": "16% to 18.5%"
+    },
+    "61 to 65": {
+     "incl": "1,572",
+     "excl": "441",
+     "change": "13.7%"
+    },
+    "66 to 70": {
+     "incl": "1,923",
+     "excl": "597",
+     "change": "8.0%"
+    },
+    "71 to 73": {
+     "incl": "2,644 or 2,664 (MOH's two tables differ)",
+     "excl": "1,001",
+     "change": "11.5%"
+    },
+    "74 to 75": {
+     "incl": "2,876",
+     "excl": "1,060",
+     "change": "7.4%"
+    },
+    "76 to 78": {
+     "incl": "3,295",
+     "excl": "1,268",
+     "change": "7.4%"
+    },
+    "79 to 80": {
+     "incl": "3,630",
+     "excl": "1,443",
+     "change": "7.4%"
+    },
+    "81 to 83": {
+     "incl": "3,997",
+     "excl": "1,694",
+     "change": "9.8%"
+    },
+    "84 to 85": {
+     "incl": "4,481",
+     "excl": "1,865",
+     "change": "7.4%"
+    },
+    "86 to 90": {
+     "incl": "4,843 - 5,182",
+     "excl": "2,058 - 2,397",
+     "change": "7.4%"
+    },
+    "Premiums above age 90": {
+     "incl": "5,446 - 5,795",
+     "excl": "2,620 - 2,969",
+     "change": "-4.5% to 4.2%"
+    }
+   }
+  },
+  {
+   "id": "aia-healthshield-gold-max-b-lite",
+   "insurer": "aia",
+   "product": "AIA HealthShield Gold Max",
+   "name": "HealthShield Gold Max B Lite",
+   "group": "b1",
+   "values": {
+    "ward": "Public hospital, class B1",
+    "ward_limit": "As Charged",
+    "pre": "As Charged (Up to 100 days)",
+    "post": "As Charged (Up to 100 days)",
+    "coins": "10%",
+    "year_limit": "300,000",
+    "entry_age": "75",
+    "deductible": "2,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "269",
+     "excl": "69",
+     "change": "0.3%"
+    },
+    "21 to 30": {
+     "incl": "366",
+     "excl": "71",
+     "change": "0.3%"
+    },
+    "31 to 40": {
+     "incl": "607",
+     "excl": "104",
+     "change": "0.3%"
+    },
+    "41 to 50": {
+     "incl": "802 - 840",
+     "excl": "165 - 203",
+     "change": "0.3%"
+    },
+    "51 to 60": {
+     "incl": "1122 - 1145",
+     "excl": "219 - 242",
+     "change": "0.3%"
+    },
+    "61 to 65": {
+     "incl": "1,498",
+     "excl": "367",
+     "change": "0.3%"
+    },
+    "66 to 70": {
+     "incl": "1,917",
+     "excl": "591",
+     "change": "0.3%"
+    },
+    "71 to 73": {
+     "incl": "2,519",
+     "excl": "876",
+     "change": "0.3%"
+    },
+    "74 to 75": {
+     "incl": "2,845",
+     "excl": "1,029",
+     "change": "0.3%"
+    },
+    "76 to 78": {
+     "incl": "3,422",
+     "excl": "1,395",
+     "change": "0.3%"
+    },
+    "79 to 80": {
+     "incl": "3,582",
+     "excl": "1,395",
+     "change": "0.3%"
+    },
+    "81 to 83": {
+     "incl": "3,748",
+     "excl": "1,445",
+     "change": "0.3%"
+    },
+    "84 to 85": {
+     "incl": "4,110",
+     "excl": "1,494",
+     "change": "0.3%"
+    },
+    "86 to 90": {
+     "incl": "4,445 - 4,715",
+     "excl": "1,660 - 1,930",
+     "change": "0.3%"
+    },
+    "Premiums above age 90": {
+     "incl": "4,936 - 5,640",
+     "excl": "2,110 - 2,814",
+     "change": "0.3%"
+    }
+   }
+  },
+  {
+   "id": "great-eastern-great-supremehealth-b-plus",
+   "insurer": "great_eastern",
+   "product": "GREAT SupremeHealth",
+   "name": "GREAT SupremeHealth B PLUS",
+   "group": "b1",
+   "values": {
+    "ward": "Public hospital, class B1",
+    "ward_limit": "As Charged",
+    "pre": "(i) As Charged Up to 90 days (ii) As Charged Up to 180 days for Restructured Hospital, or private hospitals under Panel Provider",
+    "post": "(i) As Charged Up to 180 days (ii) As Charged Up to 365 days for Restructured Hospital, or private hospitals under Panel Provider",
+    "coins": "10%",
+    "year_limit": "500,000",
+    "entry_age": "75",
+    "deductible": "2,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "261",
+     "excl": "61",
+     "change": "2.0% to 8.0%"
+    },
+    "21 to 30": {
+     "incl": "372",
+     "excl": "77",
+     "change": "0.3% to 9.7%"
+    },
+    "31 to 40": {
+     "incl": "596 - 608",
+     "excl": "93 - 105",
+     "change": "1.6% to 8.6%"
+    },
+    "41 to 50": {
+     "incl": "803 - 812",
+     "excl": "166 - 175",
+     "change": "3.7% to 6.5%"
+    },
+    "51 to 60": {
+     "incl": "1193 - 1247",
+     "excl": "290 - 344",
+     "change": "3.0% to 8.5%"
+    },
+    "61 to 65": {
+     "incl": "1,587 - 1,719",
+     "excl": "456 - 588",
+     "change": "1.9% to 9.3%"
+    },
+    "66 to 70": {
+     "incl": "2,085 - 2,316",
+     "excl": "759 - 990",
+     "change": "1.3% to 8.7%"
+    },
+    "71 to 73": {
+     "incl": "2,832",
+     "excl": "1,189",
+     "change": "2.8% to 7.4%"
+    },
+    "74 to 75": {
+     "incl": "3,217",
+     "excl": "1,401",
+     "change": "3.9% to 6.2%"
+    },
+    "76 to 78": {
+     "incl": "3,672",
+     "excl": "1,645",
+     "change": "2.6% to 7.2%"
+    },
+    "79 to 80": {
+     "incl": "4,123",
+     "excl": "1,936",
+     "change": "3.6% to 5.9%"
+    },
+    "81 to 83": {
+     "incl": "4,444",
+     "excl": "2,141",
+     "change": "4.0% to 6.0%"
+    },
+    "84 to 85": {
+     "incl": "4,924",
+     "excl": "2,308",
+     "change": "4.5% to 5.6%"
+    },
+    "86 to 90": {
+     "incl": "5,255 - 5,461",
+     "excl": "2470 - 2676",
+     "change": "3.8% to 5.9%"
+    },
+    "Premiums above age 90": {
+     "incl": "5,689 - 6,428",
+     "excl": "2863 - 3602",
+     "change": "3.8% to 6.1%"
+    }
+   }
+  },
+  {
+   "id": "singlife-singlife-shield-plan-3",
+   "insurer": "singlife",
+   "product": "Singlife Shield",
+   "name": "Singlife Shield Plan 3",
+   "group": "b1",
+   "values": {
+    "ward": "Public hospital, class B1",
+    "ward_limit": "As Charged",
+    "pre": "(i) As Charged (Up to 90 days) [for non-panel specialist in a private hospital] (ii) As Charged (Up to 180 days) [for A&E and preferred medical providers]",
+    "post": "(i) As Charged (Up to 180 days) [for non-panel specialist in a private hospital] (ii) As Charged (Up to 365 days) [for A&E and preferred medical providers]",
+    "coins": "10% (max 25,500/yr for A&E and preferred medical providers)",
+    "year_limit": "500,000",
+    "entry_age": "75",
+    "deductible": "2,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "271 - 292",
+     "excl": "71 - 92",
+     "change": "0.2% to 9.2%"
+    },
+    "21 to 30": {
+     "incl": "388 - 397",
+     "excl": "93 - 102",
+     "change": "8.1% to 11.5%"
+    },
+    "31 to 40": {
+     "incl": "607 - 618",
+     "excl": "104 - 115",
+     "change": "1.0% to 4.4%"
+    },
+    "41 to 50": {
+     "incl": "821 - 858",
+     "excl": "184 - 221",
+     "change": "0.4% to 3.8%"
+    },
+    "51 to 60": {
+     "incl": "1191 - 1227",
+     "excl": "288 - 324",
+     "change": "0.9% to 3.9%"
+    },
+    "61 to 65": {
+     "incl": "1,624 - 1,644",
+     "excl": "493 - 513",
+     "change": "0.6% to 1.9%"
+    },
+    "66 to 70": {
+     "incl": "1,921 - 1,925",
+     "excl": "595 - 599",
+     "change": "-6.4% to -6.2%"
+    },
+    "71 to 73": {
+     "incl": "2,621 - 2,682",
+     "excl": "978 - 1,039",
+     "change": "-5.6% to -3.7%"
+    },
+    "74 to 75": {
+     "incl": "2,885 - 2,915",
+     "excl": "1,069 - 1,099",
+     "change": "-7.6% to -6.7%"
+    },
+    "76 to 78": {
+     "incl": "3,226 - 3,406",
+     "excl": "1,199 - 1,379",
+     "change": "-14.7% to -10.6%"
+    },
+    "79 to 80": {
+     "incl": "3,646 - 3,726",
+     "excl": "1,459 - 1,539",
+     "change": "-9.1% to -7.5%"
+    },
+    "81 to 83": {
+     "incl": "3,922 - 4,102",
+     "excl": "1,619 - 1,799",
+     "change": "-14.3% to -11.3%"
+    },
+    "84 to 85": {
+     "incl": "4,515 - 4,614",
+     "excl": "1,899 - 1,998",
+     "change": "-9.9% to -8.3%"
+    },
+    "86 to 90": {
+     "incl": "4,884 - 5,284",
+     "excl": "2,099 - 2,499",
+     "change": "-11.7% to -7.7%"
+    },
+    "Premiums above age 90": {
+     "incl": "5,425 - 5,825",
+     "excl": "2,599 - 2,999",
+     "change": "-8.9% to -8.2%"
+    }
+   }
+  },
+  {
+   "id": "income-incomeshield-standard-plan",
+   "insurer": "income",
+   "product": "IncomeShield Standard Plan",
+   "name": "IncomeShield Standard Plan",
+   "group": "standard",
+   "values": {
+    "ward": "Standard plan (class B1)",
+    "ward_limit": "2,250/day (An additional claim limit of $300 per day applies for the first two inpatient days)",
+    "coins": "10%",
+    "year_limit": "200,000",
+    "entry_age": "None (no maximum)",
+    "deductible": "2,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "238 - 239",
+     "excl": "38 - 39",
+     "change": "6.5% to 6.7%"
+    },
+    "21 to 30": {
+     "incl": "344",
+     "excl": "49",
+     "change": "6.7%"
+    },
+    "31 to 40": {
+     "incl": "576",
+     "excl": "73",
+     "change": "6.4%"
+    },
+    "41 to 50": {
+     "incl": "765 - 790",
+     "excl": "128 - 153",
+     "change": "6.6% to 6.8%"
+    },
+    "51 to 60": {
+     "incl": "1,069 - 1,095",
+     "excl": "166 - 192",
+     "change": "6.5% to 6.6%"
+    },
+    "61 to 65": {
+     "incl": "1,395",
+     "excl": "264",
+     "change": "6.6%"
+    },
+    "66 to 70": {
+     "incl": "1,762",
+     "excl": "436",
+     "change": "3.6%"
+    },
+    "71 to 73": {
+     "incl": "2,321",
+     "excl": "678",
+     "change": "3.6%"
+    },
+    "74 to 75": {
+     "incl": "2,619",
+     "excl": "803",
+     "change": "3.5%"
+    },
+    "76 to 78": {
+     "incl": "2,957",
+     "excl": "930",
+     "change": "3.5%"
+    },
+    "79 to 80": {
+     "incl": "3,178",
+     "excl": "991",
+     "change": "3.6%"
+    },
+    "81 to 83": {
+     "incl": "3,375",
+     "excl": "1,072",
+     "change": "3.5%"
+    },
+    "84 to 85": {
+     "incl": "3,943",
+     "excl": "1,327",
+     "change": "3.6%"
+    },
+    "86 to 90": {
+     "incl": "4,357 - 4,517",
+     "excl": "1,572 - 1,732",
+     "change": "3.5%"
+    },
+    "Premiums above age 90": {
+     "incl": "4,697 - 5,260",
+     "excl": "1,871 - 2,434",
+     "change": "3.6%"
+    }
+   }
+  },
+  {
+   "id": "aia-healthshield-gold-max-standard-plan",
+   "insurer": "aia",
+   "product": "AIA HealthShield Gold Max",
+   "name": "HealthShield Gold Max Standard Plan",
+   "group": "standard",
+   "values": {
+    "ward": "Standard plan (class B1)",
+    "ward_limit": "2,250/day (An additional claim limit of $300 per day applies for the first two inpatient days)",
+    "coins": "10%",
+    "year_limit": "200,000",
+    "entry_age": "None (no maximum)",
+    "deductible": "2,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "261",
+     "excl": "61",
+     "change": "0.3%"
+    },
+    "21 to 30": {
+     "incl": "360",
+     "excl": "65",
+     "change": "0.3%"
+    },
+    "31 to 40": {
+     "incl": "591",
+     "excl": "88",
+     "change": "0.3%"
+    },
+    "41 to 50": {
+     "incl": "774 - 798",
+     "excl": "137 - 161",
+     "change": "0.3%"
+    },
+    "51 to 60": {
+     "incl": "1,093 - 1,133",
+     "excl": "190 - 230",
+     "change": "0.3%"
+    },
+    "61 to 65": {
+     "incl": "1,473",
+     "excl": "342",
+     "change": "0.3%"
+    },
+    "66 to 70": {
+     "incl": "1,839",
+     "excl": "513",
+     "change": "0.3%"
+    },
+    "71 to 73": {
+     "incl": "2,413",
+     "excl": "770",
+     "change": "0.3%"
+    },
+    "74 to 75": {
+     "incl": "2,780",
+     "excl": "964",
+     "change": "0.3%"
+    },
+    "76 to 78": {
+     "incl": "3,193",
+     "excl": "1,166",
+     "change": "0.3%"
+    },
+    "79 to 80": {
+     "incl": "3,479",
+     "excl": "1,292",
+     "change": "0.3%"
+    },
+    "81 to 83": {
+     "incl": "3,740",
+     "excl": "1,437",
+     "change": "0.3%"
+    },
+    "84 to 85": {
+     "incl": "4,168",
+     "excl": "1,552",
+     "change": "0.3%"
+    },
+    "86 to 90": {
+     "incl": "4,629 - 4,800",
+     "excl": "1,844 - 2,015",
+     "change": "0.3%"
+    },
+    "Premiums above age 90": {
+     "incl": "5,027 - 5,762",
+     "excl": "2,201 - 2,936",
+     "change": "0.3%"
+    }
+   }
+  },
+  {
+   "id": "great-eastern-great-supremehealth-standard",
+   "insurer": "great_eastern",
+   "product": "GREAT SupremeHealth",
+   "name": "GREAT SupremeHealth STANDARD",
+   "group": "standard",
+   "values": {
+    "ward": "Standard plan (class B1)",
+    "ward_limit": "2,250/day (An additional claim limit of $300 per day applies for the first two inpatient days)",
+    "coins": "10%",
+    "year_limit": "200,000",
+    "entry_age": "None (no maximum)",
+    "deductible": "2,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "231 - 236",
+     "excl": "31 - 36",
+     "change": "0.3%"
+    },
+    "21 to 30": {
+     "incl": "331",
+     "excl": "36",
+     "change": "0.3%"
+    },
+    "31 to 40": {
+     "incl": "557",
+     "excl": "54",
+     "change": "0.3%"
+    },
+    "41 to 50": {
+     "incl": "723",
+     "excl": "86",
+     "change": "0.3%"
+    },
+    "51 to 60": {
+     "incl": "1,018",
+     "excl": "115",
+     "change": "0.3%"
+    },
+    "61 to 65": {
+     "incl": "1,366",
+     "excl": "235",
+     "change": "0.3%"
+    },
+    "66 to 70": {
+     "incl": "1,700",
+     "excl": "374",
+     "change": "0.3%"
+    },
+    "71 to 73": {
+     "incl": "2,241",
+     "excl": "598",
+     "change": "0.3%"
+    },
+    "74 to 75": {
+     "incl": "2,498",
+     "excl": "682",
+     "change": "0.3%"
+    },
+    "76 to 78": {
+     "incl": "2,759",
+     "excl": "732",
+     "change": "0.3%"
+    },
+    "79 to 80": {
+     "incl": "2,969",
+     "excl": "782",
+     "change": "0.3%"
+    },
+    "81 to 83": {
+     "incl": "3,121",
+     "excl": "818",
+     "change": "0.3%"
+    },
+    "84 to 85": {
+     "incl": "3,640",
+     "excl": "1,024",
+     "change": "0.3%"
+    },
+    "86 to 90": {
+     "incl": "4,061 - 4,115",
+     "excl": "1,276 - 1,330",
+     "change": "0.3%"
+    },
+    "Premiums above age 90": {
+     "incl": "4,262 - 4,724",
+     "excl": "1,436 - 1,898",
+     "change": "0.3%"
+    }
+   }
+  },
+  {
+   "id": "prudential-prushield-standard-plan",
+   "insurer": "prudential",
+   "product": "PRUShield",
+   "name": "PRUShield Standard Plan",
+   "group": "standard",
+   "values": {
+    "ward": "Standard plan (class B1)",
+    "ward_limit": "2,250/day (An additional claim limit of $300 per day applies for the first two inpatient days)",
+    "coins": "10%",
+    "year_limit": "200,000",
+    "entry_age": "None (no maximum)",
+    "deductible": "2,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "242",
+     "excl": "42",
+     "change": "0.3%"
+    },
+    "21 to 30": {
+     "incl": "344",
+     "excl": "49",
+     "change": "0.3%"
+    },
+    "31 to 40": {
+     "incl": "567",
+     "excl": "64",
+     "change": "0.3%"
+    },
+    "41 to 50": {
+     "incl": "747",
+     "excl": "110",
+     "change": "0.3%"
+    },
+    "51 to 60": {
+     "incl": "1,047 - 1,085",
+     "excl": "144 - 182",
+     "change": "0.3%"
+    },
+    "61 to 65": {
+     "incl": "1,386",
+     "excl": "255",
+     "change": "0.3%"
+    },
+    "66 to 70": {
+     "incl": "1,729",
+     "excl": "403",
+     "change": "0.3%"
+    },
+    "71 to 73": {
+     "incl": "2,264",
+     "excl": "621",
+     "change": "0.3%"
+    },
+    "74 to 75": {
+     "incl": "2,576",
+     "excl": "760",
+     "change": "0.3%"
+    },
+    "76 to 78": {
+     "incl": "2,987",
+     "excl": "960",
+     "change": "0.3%"
+    },
+    "79 to 80": {
+     "incl": "3,220",
+     "excl": "1,033",
+     "change": "0.3%"
+    },
+    "81 to 83": {
+     "incl": "3,482",
+     "excl": "1,179",
+     "change": "0.3%"
+    },
+    "84 to 85": {
+     "incl": "3,841",
+     "excl": "1,225",
+     "change": "0.3%"
+    },
+    "86 to 90": {
+     "incl": "4,227 - 4,406",
+     "excl": "1,442 - 1,621",
+     "change": "0.3%"
+    },
+    "Premiums above age 90": {
+     "incl": "4,605 - 5,242",
+     "excl": "1,779 - 2,416",
+     "change": "0.3%"
+    }
+   }
+  },
+  {
+   "id": "singlife-singlife-shield-standard-plan",
+   "insurer": "singlife",
+   "product": "Singlife Shield",
+   "name": "Singlife Shield Standard Plan",
+   "group": "standard",
+   "values": {
+    "ward": "Standard plan (class B1)",
+    "ward_limit": "2,250/day (An additional claim limit of $300 per day applies for the first two inpatient days)",
+    "coins": "10%",
+    "year_limit": "200,000",
+    "entry_age": "None (no maximum)",
+    "deductible": "2,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "247",
+     "excl": "47",
+     "change": "0.3%"
+    },
+    "21 to 30": {
+     "incl": "346",
+     "excl": "51",
+     "change": "0.3%"
+    },
+    "31 to 40": {
+     "incl": "574",
+     "excl": "71",
+     "change": "0.3%"
+    },
+    "41 to 50": {
+     "incl": "746 - 775",
+     "excl": "109 - 138",
+     "change": "0.3%"
+    },
+    "51 to 60": {
+     "incl": "1,069 - 1,072",
+     "excl": "166 - 169",
+     "change": "0.3%"
+    },
+    "61 to 65": {
+     "incl": "1,423",
+     "excl": "292",
+     "change": "0.3%"
+    },
+    "66 to 70": {
+     "incl": "1,732",
+     "excl": "406",
+     "change": "0.3%"
+    },
+    "71 to 73": {
+     "incl": "2,290",
+     "excl": "647",
+     "change": "0.3%"
+    },
+    "74 to 75": {
+     "incl": "2,568",
+     "excl": "752",
+     "change": "0.3%"
+    },
+    "76 to 78": {
+     "incl": "3,032",
+     "excl": "1,005",
+     "change": "0.3%"
+    },
+    "79 to 80": {
+     "incl": "3,196",
+     "excl": "1,009",
+     "change": "0.3%"
+    },
+    "81 to 83": {
+     "incl": "3,540",
+     "excl": "1,237",
+     "change": "0.3%"
+    },
+    "84 to 85": {
+     "incl": "3,859",
+     "excl": "1,243",
+     "change": "0.3%"
+    },
+    "86 to 90": {
+     "incl": "4,581 - 4,655",
+     "excl": "1,796 - 1,870",
+     "change": "0.3%"
+    },
+    "Premiums above age 90": {
+     "incl": "4,850 - 5,100",
+     "excl": "2,024 - 2,274",
+     "change": "0.3%"
+    }
+   }
+  },
+  {
+   "id": "hsbc-life-hsbc-life-shield-standard-plan",
+   "insurer": "hsbc_life",
+   "product": "HSBC Life Shield",
+   "name": "HSBC Life Shield Standard Plan",
+   "group": "standard",
+   "values": {
+    "ward": "Standard plan (class B1)",
+    "ward_limit": "2,250/day (An additional claim limit of $300 per day applies for the first two inpatient days)",
+    "coins": "10%",
+    "year_limit": "200,000",
+    "entry_age": "None (no maximum)",
+    "deductible": "2,500"
+   },
+   "premium": {
+    "1 to 20": {
+     "incl": "241",
+     "excl": "41",
+     "change": "0.2%"
+    },
+    "21 to 30": {
+     "incl": "346",
+     "excl": "51",
+     "change": "0.3%"
+    },
+    "31 to 40": {
+     "incl": "566",
+     "excl": "63",
+     "change": "0.3%"
+    },
+    "41 to 50": {
+     "incl": "746",
+     "excl": "109",
+     "change": "0.3%"
+    },
+    "51 to 60": {
+     "incl": "1,048 - 1,067",
+     "excl": "145 - 164",
+     "change": "0.3%"
+    },
+    "61 to 65": {
+     "incl": "1,415",
+     "excl": "284",
+     "change": "0.3%"
+    },
+    "66 to 70": {
+     "incl": "1,753",
+     "excl": "427",
+     "change": "0.3%"
+    },
+    "71 to 73": {
+     "incl": "2,308",
+     "excl": "665",
+     "change": "0.3%"
+    },
+    "74 to 75": {
+     "incl": "2,626",
+     "excl": "810",
+     "change": "0.3%"
+    },
+    "76 to 78": {
+     "incl": "3,156",
+     "excl": "1,129",
+     "change": "0.3%"
+    },
+    "79 to 80": {
+     "incl": "3,394",
+     "excl": "1,207",
+     "change": "0.3%"
+    },
+    "81 to 83": {
+     "incl": "3,548",
+     "excl": "1,245",
+     "change": "0.3%"
+    },
+    "84 to 85": {
+     "incl": "4,015",
+     "excl": "1,399",
+     "change": "0.3%"
+    },
+    "86 to 90": {
+     "incl": "4,357 - 4,560",
+     "excl": "1,572 - 1,775",
+     "change": "0.3%"
+    },
+    "Premiums above age 90": {
+     "incl": "5,431 - 6,079",
+     "excl": "2,605 - 3,253",
+     "change": "0.3%"
+    }
+   }
+  }
+ ],
+ "insurer_values": {
+  "aia": {
+   "claims": {
+    "v": "Half the same day, 75% within 1 day",
+    "when": "1 Apr to 30 Jun 2026",
+    "cells": [
+     "0 (Same Day)",
+     "1"
+    ]
+   },
+   "preauth": {
+    "v": "Yes, via App, Website, Phone"
+   }
+  },
+  "great_eastern": {
+   "claims": {
+    "v": "Half the same day, 75% within 1 day",
+    "when": "1 Apr to 30 Jun 2026",
+    "cells": [
+     "0 (Same Day)",
+     "1"
+    ]
+   },
+   "preauth": {
+    "v": "Yes, via Web Portal"
+   }
+  },
+  "hsbc_life": {
+   "claims": {
+    "v": "Half the same day, 75% within 1 day",
+    "when": "1 Apr to 30 Jun 2026",
+    "cells": [
+     "0 (Same Day)",
+     "1"
+    ]
+   },
+   "preauth": {
+    "v": "Yes via Phone"
+   }
+  },
+  "income": {
+   "claims": {
+    "v": "Half the same day, 75% within 1 day",
+    "when": "1 Apr to 30 Jun 2026",
+    "cells": [
+     "0 (Same Day)",
+     "1"
+    ]
+   },
+   "preauth": {
+    "v": "Not offered",
+    "quote": "Income does not offer pre-authorisation"
+   }
+  },
+  "prudential": {
+   "claims": {
+    "v": "Half within 1 day, 75% within 3 days",
+    "when": "1 Apr to 30 Jun 2026",
+    "cells": [
+     "1",
+     "3"
+    ]
+   },
+   "preauth": {
+    "v": "Yes, via Website and Email"
+   }
+  },
+  "singlife": {
+   "claims": {
+    "v": "Half within 1 day, 75% within 4 days",
+    "when": "1 Apr to 30 Jun 2026",
+    "cells": [
+     "1",
+     "4"
+    ]
+   },
+   "preauth": {
+    "v": "Not needed at its preferred providers (stopped 9 Sep 2023)",
+    "quote": "Singlife has ceased offering pre-authorisation as of 9 September 2023 as they no longer require pre-authorisation for preferred medical providers"
+   }
+  }
+ },
+ "closed": [
+  {
+   "insurer": "income",
+   "name": "IncomeShield Plan P",
+   "group": "private"
+  },
+  {
+   "insurer": "great_eastern",
+   "name": "GREAT SupremeHealth A",
+   "group": "private"
+  },
+  {
+   "insurer": "singlife",
+   "name": "Singlife Shield Starter",
+   "group": "private"
+  },
+  {
+   "insurer": "income",
+   "name": "IncomeShield Plan A",
+   "group": "a"
+  },
+  {
+   "insurer": "prudential",
+   "name": "PRUShield A",
+   "group": "a"
+  },
+  {
+   "insurer": "income",
+   "name": "IncomeShield Plan B",
+   "group": "b1"
+  },
+  {
+   "insurer": "aia",
+   "name": "HealthShield Gold Max C",
+   "group": "b1"
+  },
+  {
+   "insurer": "great_eastern",
+   "name": "GREAT SupremeHealth B",
+   "group": "b1"
+  },
+  {
+   "insurer": "prudential",
+   "name": "PRUShield B",
+   "group": "b1"
+  }
+ ]
+}

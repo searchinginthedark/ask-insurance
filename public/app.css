@@ -193,6 +193,43 @@ table.matrix { border-collapse: separate; border-spacing: 0; font-size: .88rem; 
 .matrix td a { display: inline-flex; min-width: 32px; min-height: 32px; align-items: center; justify-content: center; border-radius: var(--r-tag); background: var(--tag-bg); color: var(--tag-fg); font-weight: 700; text-decoration: none; }
 .matrix td.none { color: var(--muted); }
 
+/* Compare one type: ward-class shortcuts, plan picker, metrics x plans table */
+.quick { display: flex; flex-wrap: wrap; gap: 8px; margin: .75rem 0 .5rem; }
+.btn {
+  min-height: 44px; padding: 6px 12px; font: inherit; font-size: .92rem; font-weight: 650; color: var(--text);
+  background: var(--surface); border: 1px solid var(--edge); border-radius: var(--r-ctl); cursor: pointer;
+}
+.btn .n { font-weight: 500; }
+.btn[aria-pressed="true"] { background: var(--brand); border-color: var(--brand); color: var(--on-brand); }
+details.picker { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-ctl); margin: .5rem 0 .75rem; }
+details.picker summary { cursor: pointer; min-height: 44px; padding: 10px 14px; font-weight: 700; }
+details.picker summary span { font-weight: 500; color: var(--muted); }
+.picker-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0 12px; padding: 0 14px 10px; }
+.picker fieldset { border: 0; margin: 0 0 6px; padding: 0; min-width: 0; }
+.picker legend { font-weight: 700; font-size: .9rem; padding: 6px 0 0; }
+.picker .check { font-weight: 500; min-height: 40px; }
+.picker .sub { display: block; color: var(--muted); font-size: .8rem; line-height: 1.3; }
+table.cmp { border-collapse: separate; border-spacing: 0; font-size: .88rem; }
+.cmp th, .cmp td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; min-width: 10rem; max-width: 15rem; }
+/* The box scrolls both ways so the plan names (top) and the row labels (left) stay in view. */
+.cmp-wrap { max-height: 78vh; overflow: auto; }
+.cmp-wrap:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.cmp thead th { vertical-align: bottom; background: var(--surface); position: sticky; top: 0; z-index: 2; }
+.cmp thead .ins { display: block; color: var(--muted); font-size: .8rem; font-weight: 600; }
+.cmp thead .tier { display: block; font-weight: 750; }
+.cmp .pl { display: inline-flex; align-items: center; min-height: 32px; font-size: .82rem; font-weight: 600; }
+.cmp th[scope="row"], .cmp th.corner { position: sticky; left: 0; z-index: 1; background: var(--surface); min-width: 8rem; max-width: 9.5rem; border-right: 1px solid var(--line); }
+.cmp th.corner { z-index: 3; }
+.cmp th[scope="row"] .lab { display: block; font-weight: 700; }
+.cmp th[scope="row"] .why { display: block; color: var(--muted); font-size: .78rem; font-weight: 500; line-height: 1.35; margin-top: 2px; }
+.cmp th[scope="row"] .tag { margin-top: 4px; }
+.cmp tr.same td { color: var(--muted); }
+.cmp tbody tr:last-child > * { border-bottom: 0; }
+@media (min-width: 720px) {
+  .narrow-only { display: none; }
+  .cmp th[scope="row"], .cmp th.corner { min-width: 11rem; max-width: 13rem; }
+}
+
 /* Cover check */
 .form { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-bottom: 1rem; }
 .field { display: grid; gap: 4px; }

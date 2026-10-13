@@ -12,7 +12,7 @@ const GROUPS = [
 ];
 const UNVERIFIED = new Set(["blocked", null, undefined]);
 
-const state = { guide: null, insurers: [], products: [], cats: {}, schemes: {} };
+const state = { guide: null, insurers: [], products: [], cats: {}, schemes: {}, compare: {} };
 const main = document.getElementById("main");
 
 // ---------- tiny DOM helper ----------
@@ -189,7 +189,8 @@ function viewType(id, params) {
   const sel = h("select", { id: "f-ins", onchange: e => { location.hash = "#/type/" + id + (e.target.value ? "?insurer=" + e.target.value : ""); } },
     h("option", { value: "", text: `All insurers (${sellers.length})` }),
     sellers.map(s => h("option", { value: s, selected: s === pick, text: insName(s) })));
-  out.push(h("div", { class: "filters" }, h("label", { for: "f-ins", text: "Insurer" }), sel));
+  out.push(h("div", { class: "filters" }, h("label", { for: "f-ins", text: "Insurer" }), sel,
+    h("a", { href: "#/compare/" + id + (pick ? "?ins=" + pick : ""), text: state.compare[id] ? "Compare them side by side on MOH's figures" : "Compare them side by side" })));
   out.push(h("div", { class: "grid" }, list.map(p => productCard(p, true))));
   return out;
 }
@@ -228,23 +229,203 @@ function viewInsurer(id) {
   return out;
 }
 
+function shortIns(name) { return name.replace(/ (Singapore|Insurance|Life Insurance)$/, ""); }
+
 function viewCompare() {
   const ins = state.insurers.filter(i => i.products.length);
+  const cats = Object.values(state.cats).filter(c => state.products.some(p => p.category === c.id));
   const table = h("table", { class: "matrix" },
     h("caption", { class: "sr", text: "Number of plans per insurance type and insurer" }),
-    h("thead", null, h("tr", null, h("th", { scope: "col", text: "Type" }), ins.map(i => h("th", { scope: "col", text: i.name.replace(/ (Singapore|Insurance|Life Insurance)$/,"") })))),
-    h("tbody", null, Object.values(state.cats).map(c => h("tr", null,
-      h("th", { scope: "row" }, h("a", { href: "#/type/" + c.id, text: c.name })),
+    h("thead", null, h("tr", null, h("th", { scope: "col", text: "Type" }), ins.map(i => h("th", { scope: "col", text: shortIns(i.name) })))),
+    h("tbody", null, cats.map(c => h("tr", null,
+      h("th", { scope: "row" }, h("a", { href: "#/compare/" + c.id, text: c.name })),
       ins.map(i => {
         const n = i.products.filter(p => p.category === c.id).length;
-        return n ? h("td", null, h("a", { href: `#/type/${c.id}?insurer=${i.id}`, "aria-label": `${n} ${c.name} plans from ${i.name}`, text: String(n) }))
+        return n ? h("td", null, h("a", { href: `#/compare/${c.id}?ins=${i.id}`, "aria-label": `Compare ${n} ${c.name} plans from ${i.name}`, text: String(n) }))
                  : h("td", { class: "none", "aria-label": "none", text: "–" });
       })))));
   return [
-    h("h1", { text: "Compare: who sells what" }),
-    h("p", { class: "lede", text: "Number of plans each insurer lists for each type. Tap a number to see those plans." }),
+    h("h1", { text: "Compare plans" }),
+    h("p", { class: "lede", text: "Tap a type to put its plans side by side, or a number to start with one insurer's plans. You can then tick exactly the plans you want." }),
+    Object.keys(state.compare).length ? h("p", null, "Shield plans are compared on MOH's official figures: ",
+      Object.keys(state.compare).map(id => h("a", { href: "#/compare/" + id, text: state.cats[id].name }))) : null,
     h("div", { class: "matrix-wrap" }, table),
-    h("p", { class: "meta", text: "A dash means none was found on that insurer's website, not that it can never be arranged through an adviser." }),
+    h("p", { class: "meta mt8", text: "A dash means none was found on that insurer's website, not that it can never be arranged through an adviser." }),
+  ];
+}
+
+// Picked plans live in the URL (?p=a,b), so a comparison can be shared and survives a reload.
+// replaceState keeps ticking boxes from re-rendering the page or jumping the scroll position.
+function setCompareUrl(cat, params) {
+  const qs = new URLSearchParams();
+  for (const [k, v] of Object.entries(params)) if (v) qs.set(k, v);
+  history.replaceState(null, "", "#/compare/" + cat + (qs.toString() ? "?" + qs : ""));
+}
+
+// Checkboxes grouped by insurer. items: [{id, insurer, label, sub}]
+function picker(items, picked, onChange) {
+  const boxes = {};
+  const count = h("span");
+  const el = h("details", { class: "picker" },
+    h("summary", null, "Choose plans ", count),
+    h("div", { class: "picker-grid" }, state.insurers.filter(i => items.some(x => x.insurer === i.id)).map(i =>
+      h("fieldset", null, h("legend", { text: shortIns(i.name) }),
+        items.filter(x => x.insurer === i.id).map(x => {
+          boxes[x.id] = h("input", { type: "checkbox", value: x.id, onchange: () => onChange(Object.keys(boxes).filter(id => boxes[id].checked)) });
+          return h("label", { class: "check" }, boxes[x.id], h("span", null, x.label, x.sub ? h("span", { class: "sub", text: x.sub }) : null));
+        })))));
+  function update(ids) {
+    for (const [id, b] of Object.entries(boxes)) b.checked = ids.includes(id);
+    count.textContent = `(${ids.length} of ${items.length} chosen)`;
+  }
+  update(picked);
+  return { el, update };
+}
+
+function viewCompareType(cat, params) {
+  const c = state.cats[cat];
+  if (!c) return viewMissing();
+  const head = [h("p", { class: "crumb" }, h("a", { href: "#/compare", text: "Compare" })), h("h1", { text: "Compare: " + c.name })];
+  const plans = state.products.filter(p => p.category === cat);
+  if (!plans.length) return [...head, h("p", { text: "None of the insurers covered here lists a plan of this type." }), h("p", null, h("a", { href: "#/type/" + cat, text: "Read the guide to " + c.name }))];
+  return state.compare[cat] ? compareTable(cat, state.compare[cat], params, head) : comparePlans(cat, plans, params, head);
+}
+
+function compareTable(cat, comp, params, head) {
+  const c = state.cats[cat];
+  const byId = Object.fromEntries(comp.units.map(u => [u.id, u]));
+  const ofGroup = g => comp.units.filter(u => u.group === g).map(u => u.id);
+  const ins = params.get("ins");
+  let picked = (params.get("p") || "").split(",").filter(id => byId[id]);
+  if (!picked.length) picked = ins ? comp.units.filter(u => u.insurer === ins).map(u => u.id) : ofGroup(comp.groups[0].id);
+  let band = comp.bands.includes(params.get("age")) ? params.get("age") : comp.default_band;
+  const groupName = Object.fromEntries(comp.groups.map(g => [g.id, g.name]));
+  const prod = Object.fromEntries(state.products.map(p => [p.id, p]));
+
+  const quick = comp.groups.map(g => h("button", { type: "button", class: "btn", "data-g": g.id, title: g.name,
+    onclick: () => { picked = ofGroup(g.id); changed(); } }, g.short, h("span", { class: "n", text: ` (${ofGroup(g.id).length})` })));
+  const pick = picker(comp.units.map(u => ({ id: u.id, insurer: u.insurer, label: u.name, sub: groupName[u.group] })), picked,
+    ids => { picked = comp.units.map(u => u.id).filter(id => ids.includes(id)); changed(); });
+  const age = h("select", { id: "c-age", onchange: e => { band = e.target.value; changed(); } },
+    comp.bands.map(b => h("option", { value: b, selected: b === band, text: b === "Premiums above age 90" ? "Above 90" : b })));
+  const body = h("div");
+  const status = h("p", { class: "sr", role: "status" });
+
+  function value(m, u) {
+    if (m.per === "band") {
+      const row = u.premium[band];
+      return row ? (m.id === "premium" ? row.incl : row.change) : null;
+    }
+    if (m.per === "insurer") {
+      const x = (comp.insurer_values[u.insurer] || {})[m.id];
+      return x ? x.v : null;
+    }
+    return u.values[m.id] ?? null;
+  }
+  function why(m) {
+    const when = m.id === "claims" && Object.values(comp.insurer_values).map(x => x.claims && x.claims.when).find(Boolean);
+    return m.why + (when ? " " + when + "." : "");
+  }
+  function draw() {
+    pick.update(picked);
+    for (const b of quick) {
+      const ids = ofGroup(b.dataset.g);
+      b.setAttribute("aria-pressed", String(ids.length === picked.length && ids.every(id => picked.includes(id))));
+    }
+    const cols = picked.map(id => byId[id]);
+    status.textContent = `Comparing ${cols.length} plan${cols.length === 1 ? "" : "s"}${cols.length ? ", premiums at age " + band : ""}.`;
+    if (!cols.length) { body.replaceChildren(h("p", { class: "notice", text: "Tick at least one plan above to compare." })); return; }
+    const sameGroups = [...new Set(cols.map(u => u.group))].filter(g => comp.same_benefits[g]);
+    const table = h("table", { class: "cmp" },
+      h("caption", { class: "sr", text: `${c.name}: ${cols.length} plans compared on MOH's figures` }),
+      h("thead", null, h("tr", null, h("th", { scope: "col", class: "corner", text: "Plan" }), cols.map(u => {
+        const p = prod[u.pid];
+        return h("th", { scope: "col" }, h("span", { class: "ins", text: insName(u.insurer) }), h("span", { class: "tier", text: u.name }),
+          p ? ext(p.url, "Plan page", "pl") : null);
+      }))),
+      h("tbody", null, comp.metrics.map(m => {
+        const vals = cols.map(u => value(m, u));
+        const same = cols.length > 1 && vals[0] != null && vals.every(v => v === vals[0]);
+        const label = m.id === "premium" ? `${m.label}, age ${band === "Premiums above age 90" ? "above 90" : band}` : m.label;
+        return h("tr", { class: same ? "same" : null },
+          h("th", { scope: "row" }, h("span", { class: "lab", text: label }), h("span", { class: "why", text: why(m) }),
+            same ? h("span", { class: "tag", text: "Same for all" }) : null),
+          vals.map(v => v == null ? h("td", null, h("span", { class: "tag warn", text: "Not in MOH's table" })) : h("td", { text: v })));
+      })));
+    // replaceChildren does not flatten arrays or drop nulls: it would print them as text.
+    body.replaceChildren(...[
+      sameGroups.map(g => h("p", { class: "notice" }, comp.same_benefits[g].t, " ", ext(comp.source.url, "MOH", "src"))),
+      cols.length > 2 ? h("p", { class: "meta narrow-only", text: `Swipe the table sideways to see all ${cols.length} plans.` }) : null,
+      // Focusable so keyboard users can scroll the box itself, not only reach links inside it.
+      h("div", { class: "matrix-wrap cmp-wrap", role: "region", tabindex: "0", "aria-label": "Comparison table, scrolls both ways" }, table),
+    ].flat().filter(Boolean));
+  }
+  function changed() {
+    setCompareUrl(cat, { p: picked.join(","), age: band === comp.default_band ? "" : band });
+    draw();
+  }
+  // Plans of this type that MOH's table does not cover, named so none silently disappears.
+  function notInTable() {
+    const covered = new Set(comp.units.map(u => u.pid));
+    const rest = state.products.filter(p => p.category === cat && !covered.has(p.id));
+    if (!rest.length) return null;
+    const closed = new Set((comp.closed || []).map(t => t.insurer + "|" + t.name));
+    return [
+      h("h2", { text: "Also sold under this type, not in MOH's table" }),
+      h("p", { class: "meta", text: "MOH compares Shield plans still open to new members. These are other plans, or plans MOH lists as closed." }),
+      h("ul", { class: "facts" }, rest.map(p => h("li", null,
+        h("a", { href: `#/type/${cat}?insurer=${p.insurer}`, text: p.name }), " · " + insName(p.insurer),
+        closed.has(p.insurer + "|" + p.name) ? [" ", h("span", { class: "tag warn", text: "MOH: no longer offered to new members" })]
+          : p.flags.includes("not_ip") ? [" ", h("span", { class: "tag", text: "Not a Shield plan" })] : null))),
+    ];
+  }
+  draw();
+  return [
+    ...head,
+    h("p", { class: "lede" }, `MOH's own figures for every Shield plan tier, as at ${comp.source.as_at.join(", ")}, copied word for word. Amounts in S$.`),
+    h("p", { class: "meta mt8", id: "quick-h", text: "Compare all plans for one ward class:" }),
+    h("div", { class: "quick", role: "group", "aria-labelledby": "quick-h" }, quick),
+    pick.el,
+    h("div", { class: "filters" }, h("label", { for: "c-age", text: "Age next birthday" }), age),
+    status,
+    body,
+    notInTable(),
+    h("h2", { text: "How to read this" }),
+    h("ul", { class: "checklist" }, comp.notes.map(t => h("li", { text: t }))),
+    h("p", { class: "links mt8" }, ext(comp.source.url, "MOH: " + comp.source.title),
+      comp.groups.map(g => ext(g.pdf, "MOH table: " + g.name + " (PDF)"))),
+    h("p", null, h("a", { href: "#/type/" + cat, text: "Guide to " + c.name + ": pitfalls and what to check" })),
+    disclaimerNote(),
+  ];
+}
+
+// Types with no standard comparison table yet: the picked plans' own facts, side by side.
+function comparePlans(cat, plans, params, head) {
+  const ins = params.get("ins");
+  const ids = plans.map(p => p.id);
+  let picked = (params.get("p") || "").split(",").filter(id => ids.includes(id));
+  if (!picked.length) picked = ins ? plans.filter(p => p.insurer === ins).map(p => p.id) : ids;
+  const grid = h("div", { class: "grid" });
+  const pick = picker(plans.map(p => ({ id: p.id, insurer: p.insurer, label: p.name })), picked, sel => {
+    picked = ids.filter(id => sel.includes(id));
+    setCompareUrl(cat, { p: picked.length === ids.length ? "" : picked.join(",") });
+    draw();
+  });
+  function draw() {
+    pick.update(picked);
+    grid.replaceChildren(...(picked.length ? plans.filter(p => picked.includes(p.id)).map(p => productCard(p, true))
+      : [h("p", { class: "notice", text: "Tick at least one plan above to compare." })]));
+  }
+  draw();
+  return [
+    ...head,
+    h("p", { class: "lede", text: "There is no official like-for-like table for this type yet, so each plan shows the facts from its insurer's own page. Use the questions below to compare them." }),
+    pick.el,
+    h("h2", { text: "Questions to compare plans on" }),
+    h("ul", { class: "checklist" }, state.cats[cat].compare.map(q => h("li", { text: q }))),
+    h("h2", { text: "The plans" }),
+    grid,
+    disclaimerNote(),
   ];
 }
 
@@ -405,7 +586,7 @@ function route() {
     case "top5": view = viewTop5(); break;
     case "insurers": view = viewInsurers(); break;
     case "insurer": view = viewInsurer(decodeURIComponent(arg || "")); break;
-    case "compare": view = viewCompare(); break;
+    case "compare": view = arg ? viewCompareType(decodeURIComponent(arg), params) : viewCompare(); break;
     case "schemes": view = viewSchemes(); break;
     case "check": view = viewCheck(); break;
     case "faq": view = viewFaq(); break;
@@ -436,11 +617,10 @@ document.getElementById("search-form").addEventListener("submit", e => {
 
 async function load() {
   try {
-    const [g, i] = await Promise.all([
-      fetch("data/guide.json", { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
-      fetch("data/insurers.json", { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
-    ]);
+    const get = f => fetch("data/" + f, { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+    const [g, i, cmp] = await Promise.all([get("guide.json"), get("insurers.json"), get("compare.json")]);
     state.guide = g;
+    state.compare = cmp;
     state.insurers = i.insurers;
     state.products = i.insurers.flatMap(ins => ins.products.map(p => Object.assign({ insurer: ins.id }, p)));
     for (const c of g.categories) state.cats[c.id] = c;

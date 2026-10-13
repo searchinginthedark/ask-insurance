@@ -983,6 +983,42 @@
    "status": "ok"
   },
   {
+   "url": "https://isomer-user-content.by.gov.sg/3/a4407b11-a942-4a91-aa46-68aec5a61569/Comparison of Standard IPs (for Class B1 coverage) (Jun 2026).pdf",
+   "kind": "source",
+   "label": "Comparison of Integrated Shield Plans: Standard plan (class B1)",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://isomer-user-content.by.gov.sg/3/a4407b11-a942-4a91-aa46-68aec5a61569/Comparison%20of%20Standard%20IPs%20(for%20Class%20B1%20coverage)%20(Jun%202026).pdf",
+   "status": "pdf"
+  },
+  {
+   "url": "https://isomer-user-content.by.gov.sg/3/b59e888b-7c4b-4b55-bd3d-979f92b7c1d2/Comparison of Class B1 IPs (Jun 2026).pdf",
+   "kind": "source",
+   "label": "Comparison of Integrated Shield Plans: Public hospital, class B1",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://isomer-user-content.by.gov.sg/3/b59e888b-7c4b-4b55-bd3d-979f92b7c1d2/Comparison%20of%20Class%20B1%20IPs%20(Jun%202026).pdf",
+   "status": "pdf"
+  },
+  {
+   "url": "https://isomer-user-content.by.gov.sg/3/d409a8ee-f73e-4590-9f08-9f2ac48b18d2/Comparison of Class A IPs (Jun 2026).pdf",
+   "kind": "source",
+   "label": "Comparison of Integrated Shield Plans: Public hospital, class A",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://isomer-user-content.by.gov.sg/3/d409a8ee-f73e-4590-9f08-9f2ac48b18d2/Comparison%20of%20Class%20A%20IPs%20(Jun%202026).pdf",
+   "status": "pdf"
+  },
+  {
+   "url": "https://isomer-user-content.by.gov.sg/3/d81f31f8-66af-44d3-af98-297be8ccbee8/Comparison of Private Hospital IPs (Jun 2026).pdf",
+   "kind": "source",
+   "label": "Comparison of Integrated Shield Plans: Private hospital",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://isomer-user-content.by.gov.sg/3/d81f31f8-66af-44d3-af98-297be8ccbee8/Comparison%20of%20Private%20Hospital%20IPs%20(Jun%202026).pdf",
+   "status": "pdf"
+  },
+  {
    "url": "https://www.comparefirst.sg/wap/homeEvent.action",
    "kind": "source",
    "label": "compareFIRST product comparison portal",

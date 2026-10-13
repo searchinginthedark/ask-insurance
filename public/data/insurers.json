@@ -16,6 +16,7 @@
    ],
    "products": [
     {
+     "id": "aia-aia-absolute-critical-cover",
      "name": "AIA Absolute Critical Cover",
      "category": "critical_illness",
      "subtype": "multi-stage CI with optional cash value (coverage term to age 100)",
@@ -40,6 +41,7 @@
      ]
     },
     {
+     "id": "aia-aia-beyond-critical-care",
      "name": "AIA Beyond Critical Care",
      "category": "critical_illness",
      "subtype": "major-stage CI with premium refund at end of term",
@@ -63,6 +65,7 @@
      ]
     },
     {
+     "id": "aia-aia-diabetes-care",
      "name": "AIA Diabetes Care",
      "category": "critical_illness",
      "subtype": "diabetes-specific cover for pre-diabetics and Type 2 diabetics",
@@ -87,6 +90,7 @@
      ]
     },
     {
+     "id": "aia-aia-enhanced-cancer-protect",
      "name": "AIA Enhanced Cancer Protect",
      "category": "cancer",
      "subtype": "cancer-only; first diagnosis plus up to 2 major-stage relapses",
@@ -110,6 +114,7 @@
      ]
     },
     {
+     "id": "aia-aia-glow-of-life",
      "name": "AIA Glow of Life",
      "category": "critical_illness",
      "subtype": "CI for women",
@@ -134,6 +139,7 @@
      ]
     },
     {
+     "id": "aia-aia-prime-critical-cover",
      "name": "AIA Prime Critical Cover",
      "category": "critical_illness",
      "subtype": "CI for older adults, coverage to age 100",
@@ -157,6 +163,7 @@
      ]
     },
     {
+     "id": "aia-aia-ultimate-critical-cover",
      "name": "AIA Ultimate Critical Cover",
      "category": "critical_illness",
      "subtype": "multi-pay CI (unlimited major-stage claims with 100% reset)",
@@ -181,6 +188,7 @@
      ]
     },
     {
+     "id": "aia-aia-protect-3",
      "name": "AIA Protect 3",
      "category": "critical_illness",
      "subtype": "early-to-major CI for cancer, heart attack and stroke; existing AIA customers only",
@@ -205,6 +213,7 @@
      ]
     },
     {
+     "id": "aia-aia-healthshield-gold-max",
      "name": "AIA HealthShield Gold Max",
      "category": "hospitalisation",
      "subtype": "Integrated Shield Plan (Max A, Max B, Max B Lite; Special A and B variants)",
@@ -234,6 +243,7 @@
      ]
     },
     {
+     "id": "aia-aia-max-vitalhealth-pro",
      "name": "AIA Max VitalHealth Pro",
      "category": "ip_rider",
      "subtype": "rider on AIA HealthShield Gold Max (Pro A, Pro B, Pro B Lite); no standalone page",
@@ -258,6 +268,7 @@
      ]
     },
     {
+     "id": "aia-aia-platinum-international-health",
      "name": "AIA Platinum International Health",
      "category": "hospitalisation",
      "subtype": "international private medical insurance (not an Integrated Shield Plan)",
@@ -284,6 +295,7 @@
      ]
     },
     {
+     "id": "aia-aia-hospital-income",
      "name": "AIA Hospital Income",
      "category": "hospital_cash",
      "subtype": "daily hospital cash on top of a hospitalisation plan",
@@ -305,6 +317,7 @@
      ]
     },
     {
+     "id": "aia-aia-mum2baby-choices",
      "name": "AIA Mum2Baby Choices",
      "category": "maternity_child",
      "subtype": "maternity plan: Mum2Baby Protect (whole life base) or Mum2Baby (investment-linked base), each with a pre-natal rider",
@@ -329,6 +342,7 @@
      ]
     },
     {
+     "id": "aia-aia-pay-protector",
      "name": "AIA Pay Protector",
      "category": "disability_income",
      "subtype": "short-term income replacement to age 65",
@@ -352,6 +366,7 @@
      ]
     },
     {
+     "id": "aia-aia-premier-disability-cover",
      "name": "AIA Premier Disability Cover",
      "category": "disability_income",
      "subtype": "monthly income until recovery or age 65",
@@ -375,6 +390,7 @@
      ]
     },
     {
+     "id": "aia-aia-mortgage-reducing-term-assurance",
      "name": "AIA Mortgage Reducing Term Assurance",
      "category": "term_life",
      "subtype": "decreasing term / mortgage",
@@ -392,6 +408,7 @@
      "pdfs": []
     },
     {
+     "id": "aia-aia-secure-flexi-term",
      "name": "AIA Secure Flexi Term",
      "category": "term_life",
      "subtype": "renewable or level term",
@@ -414,6 +431,7 @@
      ]
     },
     {
+     "id": "aia-direct-aia-term-cover",
      "name": "DIRECT - AIA Term Cover",
      "category": "term_life",
      "subtype": "direct-purchase term (5-year renewable, 20-year, to age 65)",
@@ -443,6 +461,7 @@
      ]
     },
     {
+     "id": "aia-aia-guaranteed-protect-plus-iv",
      "name": "AIA Guaranteed Protect Plus (IV)",
      "category": "whole_life",
      "subtype": "participating whole life with boosted coverage; also listed under Participating Savings",
@@ -466,6 +485,7 @@
      ]
     },
     {
+     "id": "aia-direct-aia-whole-life-cover-ii",
      "name": "DIRECT - AIA Whole Life Cover (II)",
      "category": "whole_life",
      "subtype": "direct-purchase participating whole life",
@@ -495,6 +515,7 @@
      ]
     },
     {
+     "id": "aia-aia-centurion-pa",
      "name": "AIA Centurion PA",
      "category": "personal_accident",
      "subtype": "senior personal accident with optional dementia benefit",
@@ -518,6 +539,7 @@
      ]
     },
     {
+     "id": "aia-aia-genfit-pa",
      "name": "AIA #GenFit PA",
      "category": "personal_accident",
      "subtype": "adult personal accident, lifestyle-linked",
@@ -540,6 +562,7 @@
      ]
     },
     {
+     "id": "aia-aia-platinum-accidentcare",
      "name": "AIA Platinum AccidentCare",
      "category": "personal_accident",
      "subtype": "high-limit adult personal accident; Platinum tier",
@@ -563,6 +586,7 @@
      ]
     },
     {
+     "id": "aia-aia-prime-assured",
      "name": "AIA Prime Assured",
      "category": "personal_accident",
      "subtype": "senior personal accident",
@@ -585,6 +609,7 @@
      ]
     },
     {
+     "id": "aia-aia-solitaire-pa-ii",
      "name": "AIA Solitaire PA (II)",
      "category": "personal_accident",
      "subtype": "adult personal accident",
@@ -608,6 +633,7 @@
      ]
     },
     {
+     "id": "aia-aia-star-protector-plus",
      "name": "AIA Star Protector Plus",
      "category": "personal_accident",
      "subtype": "child personal accident",
@@ -648,6 +674,7 @@
    ],
    "products": [
     {
+     "id": "great-eastern-direct-great-term",
      "name": "DIRECT - GREAT Term",
      "category": "term_life",
      "subtype": "level term and 5-year renewable term, direct purchase online",
@@ -676,6 +703,7 @@
      ]
     },
     {
+     "id": "great-eastern-gogreat-term-life",
      "name": "GoGreat Term Life",
      "category": "term_life",
      "subtype": "yearly renewable term, exclusive to Dependants' Protection Scheme policyholders",
@@ -696,6 +724,7 @@
      "pdfs": []
     },
     {
+     "id": "great-eastern-great-term-2",
      "name": "GREAT Term 2",
      "category": "term_life",
      "subtype": "level term, regular premium",
@@ -719,6 +748,7 @@
      ]
     },
     {
+     "id": "great-eastern-great-eastern-cares-term-plan",
      "name": "Great Eastern Cares Term Plan",
      "category": "term_life",
      "subtype": "term life for clients of selected charities and non-profit organisations",
@@ -744,6 +774,7 @@
      ]
     },
     {
+     "id": "great-eastern-dependants-protection-scheme",
      "name": "Dependants' Protection Scheme",
      "category": "term_life",
      "subtype": "national basic term life scheme (CPF-funded), also see GoGreat Term Life",
@@ -767,6 +798,7 @@
      ]
     },
     {
+     "id": "great-eastern-direct-great-life-ii",
      "name": "DIRECT - GREAT Life II",
      "category": "whole_life",
      "subtype": "whole life with premium to age 70 or 85, direct purchase online",
@@ -794,6 +826,7 @@
      ]
     },
     {
+     "id": "great-eastern-great-life-multiplier",
      "name": "GREAT Life Multiplier",
      "category": "whole_life",
      "subtype": "limited-pay participating whole life with multiplier benefit",
@@ -817,6 +850,7 @@
      ]
     },
     {
+     "id": "great-eastern-prestige-life-gold-sgd-usd",
      "name": "Prestige Life Gold (SGD/USD)",
      "category": "whole_life",
      "subtype": "single-premium whole life with multiplier benefit (Prestige series)",
@@ -839,6 +873,7 @@
      ]
     },
     {
+     "id": "great-eastern-great-supremehealth",
      "name": "GREAT SupremeHealth",
      "category": "hospitalisation",
      "subtype": "MediSave-approved Integrated Shield Plan (P Plus, P Prime, A Plus, B Plus, Standard)",
@@ -868,6 +903,7 @@
      ]
     },
     {
+     "id": "great-eastern-great-totalcare-2",
      "name": "GREAT TotalCare 2",
      "category": "ip_rider",
      "subtype": "supplementary plan to GREAT SupremeHealth (GTC2 P, Prime, A, B); optional GREAT TotalCare Plus 2 rider",
@@ -891,6 +927,7 @@
      ]
     },
     {
+     "id": "great-eastern-prestige-global-health-options",
      "name": "Prestige Global Health Options",
      "category": "hospitalisation",
      "subtype": "international private medical insurance (not an Integrated Shield Plan), Prestige series",
@@ -910,6 +947,7 @@
      "pdfs": []
     },
     {
+     "id": "great-eastern-cancer-guard",
      "name": "Cancer Guard",
      "category": "cancer",
      "subtype": "term plan, lump sum on diagnosis at any stage",
@@ -933,6 +971,7 @@
      ]
     },
     {
+     "id": "great-eastern-great-critical-cover-series",
      "name": "GREAT Critical Cover Series",
      "category": "critical_illness",
      "subtype": "all-stage CI: Top 3 CIs or Complete (53 CIs); optional Protect Me Again recurrence rider",
@@ -961,6 +1000,7 @@
      ]
     },
     {
+     "id": "great-eastern-great-hospital-cash",
      "name": "GREAT Hospital Cash",
      "category": "hospital_cash",
      "subtype": "cash payout on top of a hospital and surgical plan",
@@ -984,6 +1024,7 @@
      ]
     },
     {
+     "id": "great-eastern-great-careshield",
      "name": "GREAT CareShield",
      "category": "long_term_care",
      "subtype": "CareShield Life supplement (MediSave-approved)",
@@ -1008,6 +1049,7 @@
      ]
     },
     {
+     "id": "great-eastern-lifesecure",
      "name": "LifeSecure",
      "category": "disability_income",
      "subtype": "lifetime disability monthly benefit (TPD or 2 of 6 ADLs)",
@@ -1031,6 +1073,7 @@
      ]
     },
     {
+     "id": "great-eastern-payassure",
      "name": "PayAssure",
      "category": "disability_income",
      "subtype": "income protection",
@@ -1054,6 +1097,7 @@
      ]
     },
     {
+     "id": "great-eastern-maternity-protect-series",
      "name": "Maternity Protect Series",
      "category": "maternity_child",
      "subtype": "maternity term plan (Maternity Protect and Maternity Protect Bundle)",
@@ -1083,6 +1127,7 @@
      ]
     },
     {
+     "id": "great-eastern-accidentcare-plus-ii",
      "name": "AccidentCare Plus II",
      "category": "personal_accident",
      "subtype": "customisable adult plan",
@@ -1106,6 +1151,7 @@
      ]
     },
     {
+     "id": "great-eastern-great-protector-active",
      "name": "GREAT Protector Active",
      "category": "personal_accident",
      "subtype": "adult, yearly renewable",
@@ -1129,6 +1175,7 @@
      ]
     },
     {
+     "id": "great-eastern-great-junior-protector",
      "name": "GREAT Junior Protector",
      "category": "personal_accident",
      "subtype": "child",
@@ -1152,6 +1199,7 @@
      ]
     },
     {
+     "id": "great-eastern-great-golden-protector",
      "name": "GREAT Golden Protector",
      "category": "personal_accident",
      "subtype": "senior",
@@ -1175,6 +1223,7 @@
      ]
     },
     {
+     "id": "great-eastern-pa-supreme",
      "name": "PA Supreme",
      "category": "personal_accident",
      "subtype": "worldwide adult, 4 plan types",
@@ -1199,6 +1248,7 @@
      ]
     },
     {
+     "id": "great-eastern-prestige-pacare",
      "name": "Prestige PACare",
      "category": "personal_accident",
      "subtype": "premium worldwide plan (Prestige series)",
@@ -1243,6 +1293,7 @@
    ],
    "products": [
     {
+     "id": "prudential-prushield",
      "name": "PRUShield",
      "category": "hospitalisation",
      "subtype": "MediSave-approved Integrated Shield Plan (Standard, Plus and Premier plans)",
@@ -1272,6 +1323,7 @@
      ]
     },
     {
+     "id": "prudential-pruextra",
      "name": "PRUExtra",
      "category": "ip_rider",
      "subtype": "Supplementary plan (rider) for PRUShield: Plus Care, Premier Care, Preferred Care",
@@ -1301,6 +1353,7 @@
      ]
     },
     {
+     "id": "prudential-pruhospital-care360",
      "name": "PRUHospital Care360",
      "category": "hospital_cash",
      "subtype": "Hospital income plan, three coverage options",
@@ -1324,6 +1377,7 @@
      ]
     },
     {
+     "id": "prudential-prupersonal-accident",
      "name": "PRUPersonal Accident",
      "category": "personal_accident",
      "subtype": "Adult, child and family cover; also sold as the Accident Assist supplementary benefit",
@@ -1347,6 +1401,7 @@
      ]
     },
     {
+     "id": "prudential-pruactive-protect-series",
      "name": "PRUActive Protect Series",
      "category": "critical_illness",
      "subtype": "Customisable CI; PRUActive Protect (36 severe stage CIs) and PRUActive Protect II (64)",
@@ -1370,6 +1425,7 @@
      ]
     },
     {
+     "id": "prudential-pruactive-crisis-guard",
      "name": "PRUActive Crisis Guard",
      "category": "critical_illness",
      "subtype": "Treatment-based payouts; 5-year renewable term",
@@ -1394,6 +1450,7 @@
      ]
     },
     {
+     "id": "prudential-pruearly-stage-crisis-cover",
      "name": "PRUEarly Stage Crisis Cover",
      "category": "critical_illness",
      "subtype": "Early stage CI",
@@ -1417,6 +1474,7 @@
      ]
     },
     {
+     "id": "prudential-prulady",
      "name": "PRULady",
      "category": "critical_illness",
      "subtype": "Women-specific CI; four plans",
@@ -1440,6 +1498,7 @@
      ]
     },
     {
+     "id": "prudential-pruman",
      "name": "PRUMan",
      "category": "critical_illness",
      "subtype": "Men-specific CI; four coverage options",
@@ -1463,6 +1522,7 @@
      ]
     },
     {
+     "id": "prudential-prucancer-360",
      "name": "PRUCancer 360",
      "category": "cancer",
      "subtype": "Cancer-only, all stages",
@@ -1487,6 +1547,7 @@
      ]
     },
     {
+     "id": "prudential-pruactive-term",
      "name": "PRUActive Term",
      "category": "term_life",
      "subtype": "Level term with incremental sum assured option",
@@ -1510,6 +1571,7 @@
      ]
     },
     {
+     "id": "prudential-pruvital-cover",
      "name": "PRUVital Cover",
      "category": "term_life",
      "subtype": "Term for people with existing conditions; simplified underwriting",
@@ -1533,6 +1595,7 @@
      ]
     },
     {
+     "id": "prudential-direct-pruprotect-term",
      "name": "DIRECT - PRUProtect Term",
      "category": "term_life",
      "subtype": "Direct-purchase term; variants PRUProtect Term (5 years, 20 years or to age 65) and PRUProtect Term 5 (renew every 5 years)",
@@ -1561,6 +1624,7 @@
      ]
     },
     {
+     "id": "prudential-prumortgage",
      "name": "PRUMortgage",
      "category": "term_life",
      "subtype": "Decreasing (reducing) term mortgage insurance",
@@ -1584,6 +1648,7 @@
      ]
     },
     {
+     "id": "prudential-pruactive-life-v",
      "name": "PRUActive Life V",
      "category": "whole_life",
      "subtype": "Whole life with Multiplier Benefit and optional critical illness cover",
@@ -1607,6 +1672,7 @@
      ]
     },
     {
+     "id": "prudential-pruactive-family-care",
      "name": "PRUActive Family Care",
      "category": "whole_life",
      "subtype": "Whole life with built-in Parent Guard Benefit",
@@ -1630,6 +1696,7 @@
      ]
     },
     {
+     "id": "prudential-direct-pruprotect-life-ii",
      "name": "DIRECT - PRUProtect Life II",
      "category": "whole_life",
      "subtype": "Direct-purchase participating whole life",
@@ -1653,6 +1720,7 @@
      ]
     },
     {
+     "id": "prudential-prumum",
      "name": "PRUMum",
      "category": "maternity_child",
      "subtype": "Maternity term protection, single premium 4-year",
@@ -1676,6 +1744,7 @@
      ]
     },
     {
+     "id": "prudential-prufirst-promise",
      "name": "PRUFirst Promise",
      "category": "maternity_child",
      "subtype": "Bundled maternity plan: PRUMum + PRUActive Life V",
@@ -1699,6 +1768,7 @@
      ]
     },
     {
+     "id": "prudential-prufirst-gift-ii",
      "name": "PRUFirst Gift II",
      "category": "maternity_child",
      "subtype": "Bundled maternity plan: PRUMum + PRUActive LinkGuard",
@@ -1739,6 +1809,7 @@
    ],
    "products": [
     {
+     "id": "income-enhanced-incomeshield",
      "name": "Enhanced IncomeShield",
      "category": "hospitalisation",
      "subtype": "Integrated Shield Plan: Enhanced Preferred (private hospitals), Enhanced Advantage (restructured hospital ward class A), Enhanced Basic (ward class B1)",
@@ -1768,6 +1839,7 @@
      ]
     },
     {
+     "id": "income-incomeshield-standard-plan",
      "name": "IncomeShield Standard Plan",
      "category": "hospitalisation",
      "subtype": "Integrated Shield Plan, restructured hospital ward class B1 and below",
@@ -1795,6 +1867,7 @@
      ]
     },
     {
+     "id": "income-optima-care-rider",
      "name": "Optima Care rider",
      "category": "ip_rider",
      "subtype": "IP rider for Enhanced IncomeShield / IncomeShield Standard Plan, launched 1 April 2026",
@@ -1818,6 +1891,7 @@
      ]
     },
     {
+     "id": "income-essential-care-rider",
      "name": "Essential Care rider",
      "category": "ip_rider",
      "subtype": "IP rider for Enhanced IncomeShield / IncomeShield Standard Plan, launched 1 April 2026",
@@ -1841,6 +1915,7 @@
      ]
     },
     {
+     "id": "income-hospital-care-insurance",
      "name": "Hospital Care Insurance",
      "category": "hospital_cash",
      "subtype": "Preferred Plan (three plan types)",
@@ -1868,6 +1943,7 @@
      ]
     },
     {
+     "id": "income-hospital-cashaid-rider",
      "name": "Hospital CashAid rider",
      "category": "hospital_cash",
      "subtype": "Rider for Star Term Protect and Complete Life Secure",
@@ -1884,6 +1960,7 @@
      "pdfs": []
     },
     {
+     "id": "income-care-secure-pro",
      "name": "Care Secure Pro",
      "category": "long_term_care",
      "subtype": "CareShield Life and ElderShield supplement",
@@ -1912,6 +1989,7 @@
      ]
     },
     {
+     "id": "income-complete-critical-protect",
      "name": "Complete Critical Protect",
      "category": "critical_illness",
      "subtype": "Multi-claim term critical illness plan; options Protect Max, Protect Prime, Protect 100",
@@ -1939,6 +2017,7 @@
      ]
     },
     {
+     "id": "income-complete-cancer-care",
      "name": "Complete Cancer Care",
      "category": "cancer",
      "subtype": "Cancer-focused term plan",
@@ -1967,6 +2046,7 @@
      ]
     },
     {
+     "id": "income-early-critical-secure",
      "name": "Early Critical Secure",
      "category": "rider",
      "subtype": "Critical illness rider for Complete Life Secure",
@@ -1988,6 +2068,7 @@
      ]
     },
     {
+     "id": "income-advanced-critical-secure",
      "name": "Advanced Critical Secure",
      "category": "rider",
      "subtype": "Critical illness rider for Complete Life Secure",
@@ -2009,6 +2090,7 @@
      ]
     },
     {
+     "id": "income-star-term-protect",
      "name": "Star Term Protect",
      "category": "term_life",
      "subtype": "Renewable term",
@@ -2036,6 +2118,7 @@
      ]
     },
     {
+     "id": "income-direct-star-term",
      "name": "DIRECT Star Term",
      "category": "term_life",
      "subtype": "Direct purchase insurance (DPI); non-renewable and renewable variants",
@@ -2064,6 +2147,7 @@
      ]
     },
     {
+     "id": "income-family-protect",
      "name": "Family Protect",
      "category": "term_life",
      "subtype": "Renewable term with dread disease cover; direct purchase",
@@ -2091,6 +2175,7 @@
      ]
     },
     {
+     "id": "income-mortgage-term",
      "name": "Mortgage Term",
      "category": "term_life",
      "subtype": "Mortgage term (cover for outstanding loan)",
@@ -2119,6 +2204,7 @@
      ]
     },
     {
+     "id": "income-lady-360",
      "name": "Lady 360",
      "category": "term_life",
      "subtype": "Term life for women with female illness and surgery benefits",
@@ -2147,6 +2233,7 @@
      ]
     },
     {
+     "id": "income-termlife-solitaire",
      "name": "TermLife Solitaire",
      "category": "term_life",
      "subtype": "High sum assured term (Solitaire series)",
@@ -2174,6 +2261,7 @@
      ]
     },
     {
+     "id": "income-hometeamns-insurance-scheme-and-hometeamns-living-policy",
      "name": "HomeTeamNS Insurance Scheme and HomeTeamNS Living Policy",
      "category": "term_life",
      "subtype": "Affinity scheme for HomeTeamNS members; Living Policy adds critical illness and hospital benefit",
@@ -2202,6 +2290,7 @@
      ]
     },
     {
+     "id": "income-luv",
      "name": "LUV",
      "category": "term_life",
      "subtype": "Affinity group term plan for NTUC members",
@@ -2229,6 +2318,7 @@
      ]
     },
     {
+     "id": "income-safra-essential-term-and-safra-living-care",
      "name": "SAFRA Essential Term and SAFRA Living Care",
      "category": "term_life",
      "subtype": "Affinity scheme for SAFRA members; Living Care adds critical illness and hospital cash",
@@ -2257,6 +2347,7 @@
      ]
     },
     {
+     "id": "income-ocbc-protect",
      "name": "OCBC Protect",
      "category": "term_life",
      "subtype": "Affinity plan for OCBC cardholders; Classic and Prime",
@@ -2285,6 +2376,7 @@
      ]
     },
     {
+     "id": "income-complete-life-secure",
      "name": "Complete Life Secure",
      "category": "whole_life",
      "subtype": "Whole life with Multiplier Cover; riders available",
@@ -2313,6 +2405,7 @@
      ]
     },
     {
+     "id": "income-provenance-solitaire",
      "name": "Provenance Solitaire",
      "category": "whole_life",
      "subtype": "Single-premium whole life (Solitaire series)",
@@ -2340,6 +2433,7 @@
      ]
     },
     {
+     "id": "income-maternity-360",
      "name": "Maternity 360",
      "category": "maternity_child",
      "subtype": "Single-premium maternity cover for mother and baby",
@@ -2367,6 +2461,7 @@
      ]
     },
     {
+     "id": "income-pa-assurance",
      "name": "PA Assurance",
      "category": "personal_accident",
      "subtype": "Comprehensive PA with infectious disease cover",
@@ -2395,6 +2490,7 @@
      ]
     },
     {
+     "id": "income-pa-secure",
      "name": "PA Secure",
      "category": "personal_accident",
      "subtype": "Basic PA, family-oriented",
@@ -2422,6 +2518,7 @@
      ]
     },
     {
+     "id": "income-pa-fitness-protect",
      "name": "PA Fitness Protect",
      "category": "personal_accident",
      "subtype": "Sports and fitness PA",
@@ -2450,6 +2547,7 @@
      ]
     },
     {
+     "id": "income-silvercare-insurance",
      "name": "SilverCare Insurance",
      "category": "personal_accident",
      "subtype": "Senior PA; Superior, Prestige and Platinum plans",
@@ -2478,6 +2576,7 @@
      ]
     },
     {
+     "id": "income-specialcare-autism-insurance",
      "name": "SpecialCare (Autism) Insurance",
      "category": "personal_accident",
      "subtype": "PA for individuals with autism",
@@ -2505,6 +2604,7 @@
      ]
     },
     {
+     "id": "income-specialcare-down-syndrome-insurance",
      "name": "SpecialCare (Down Syndrome) Insurance",
      "category": "personal_accident",
      "subtype": "PA for individuals with Down Syndrome",
@@ -2549,6 +2649,7 @@
    ],
    "products": [
     {
+     "id": "singlife-singlife-simple-term",
      "name": "Singlife Simple Term",
      "category": "term_life",
      "subtype": "yearly renewable term; online or adviser",
@@ -2572,6 +2673,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-elite-term-ii",
      "name": "Singlife Elite Term II",
      "category": "term_life",
      "subtype": "regular pay and limited pay; also shown under Pinnacle at /en/pinnacle/elite-term-ii",
@@ -2595,6 +2697,7 @@
      ]
     },
     {
+     "id": "singlife-direct-singlife-term-life",
      "name": "DIRECT – Singlife Term Life",
      "category": "term_life",
      "subtype": "direct purchase insurance (DPI); 5-year renewable, 20-year or to age 65",
@@ -2624,6 +2727,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-whole-life-choice",
      "name": "Singlife Whole Life Choice",
      "category": "whole_life",
      "subtype": "participating whole life with decreasing Additional Cover",
@@ -2648,6 +2752,7 @@
      ]
     },
     {
+     "id": "singlife-direct-singlife-whole-life",
      "name": "DIRECT – Singlife Whole Life",
      "category": "whole_life",
      "subtype": "direct purchase insurance (DPI); whole life with potential bonuses",
@@ -2677,6 +2782,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-comprehensive-critical-illness-ii",
      "name": "Singlife Comprehensive Critical Illness II",
      "category": "critical_illness",
      "subtype": "single-payout, early to severe stage",
@@ -2700,6 +2806,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-essential-critical-illness-ii",
      "name": "Singlife Essential Critical Illness II",
      "category": "critical_illness",
      "subtype": "single-payout; accepts certain pre-existing conditions",
@@ -2723,6 +2830,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-multipay-critical-illness-ii",
      "name": "Singlife Multipay Critical Illness II",
      "category": "critical_illness",
      "subtype": "multi-pay CI; also shown under Pinnacle at /en/pinnacle/multipay-critical-illness-ii",
@@ -2745,6 +2853,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-cancer-cover-plus-ii",
      "name": "Singlife Cancer Cover Plus II",
      "category": "cancer",
      "subtype": "cancer treatment medical plan, local and overseas",
@@ -2767,6 +2876,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-shield",
      "name": "Singlife Shield",
      "category": "hospitalisation",
      "subtype": "Integrated Shield Plan; Plans 1 to 3 plus Standard Plan; Health Plus rider on same page",
@@ -2796,6 +2906,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-health-plus",
      "name": "Singlife Health Plus",
      "category": "ip_rider",
      "subtype": "rider on Singlife Shield (Private / Public cover)",
@@ -2823,6 +2934,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-shield-starter",
      "name": "Singlife Shield Starter",
      "category": "hospitalisation",
      "subtype": "affordable Integrated Shield Plan",
@@ -2851,6 +2963,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-health-plus-starter",
      "name": "Singlife Health Plus Starter",
      "category": "ip_rider",
      "subtype": "rider on Singlife Shield Starter",
@@ -2877,6 +2990,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-disability-income",
      "name": "Singlife Disability Income",
      "category": "disability_income",
      "subtype": "previously known as IdealIncome",
@@ -2895,6 +3009,7 @@
      "pdfs": []
     },
     {
+     "id": "singlife-singlife-careshield-standard-and-singlife-careshield-plus",
      "name": "Singlife CareShield Standard and Singlife CareShield Plus",
      "category": "long_term_care",
      "subtype": "supplement to CareShield Life / ElderShield",
@@ -2924,6 +3039,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-eldershield-standard-and-singlife-eldershield-plus",
      "name": "Singlife ElderShield Standard and Singlife ElderShield Plus",
      "category": "long_term_care",
      "subtype": "supplement to ElderShield",
@@ -2947,6 +3063,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-dementia-cover",
      "name": "Singlife Dementia Cover",
      "category": "long_term_care",
      "subtype": "dementia and mental health long-term care cover",
@@ -2970,6 +3087,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-accident-care",
      "name": "Singlife Accident Care",
      "category": "personal_accident",
      "subtype": "individual PA, annual renewal",
@@ -2993,6 +3111,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-family-accident-care",
      "name": "Singlife Family Accident Care",
      "category": "personal_accident",
      "subtype": "family PA, shared coverage under one policy",
@@ -3014,6 +3133,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-personal-accident",
      "name": "Singlife Personal Accident",
      "category": "personal_accident",
      "subtype": "individual PA, online",
@@ -3036,6 +3156,7 @@
      ]
     },
     {
+     "id": "singlife-singlife-maternity-care",
      "name": "Singlife Maternity Care",
      "category": "maternity_child",
      "subtype": "single-premium, three-year plan",
@@ -3078,6 +3199,7 @@
    ],
    "products": [
     {
+     "id": "hsbc-life-hsbc-life-shield",
      "name": "HSBC Life Shield",
      "category": "hospitalisation",
      "subtype": "Integrated Shield Plan (Plan A, Plan B, Standard plan)",
@@ -3101,6 +3223,7 @@
      ]
     },
     {
+     "id": "hsbc-life-hsbc-life-enhanced-care-ii",
      "name": "HSBC Life Enhanced Care II",
      "category": "ip_rider",
      "subtype": "rider for HSBC Life Shield Plan A or Plan B",
@@ -3124,6 +3247,7 @@
      ]
     },
     {
+     "id": "hsbc-life-hsbc-life-prime-care",
      "name": "HSBC Life Prime Care",
      "category": "hospital_cash",
      "subtype": "hospitalisation allowance with first major cancer lump sum",
@@ -3147,6 +3271,7 @@
      ]
     },
     {
+     "id": "hsbc-life-hsbc-life-smartcare-executive",
      "name": "HSBC Life SmartCare Executive",
      "category": "hospitalisation",
      "subtype": "standalone private medical plan, not an Integrated Shield Plan; 6 plans (private A-C, public D-F)",
@@ -3177,6 +3302,7 @@
      ]
     },
     {
+     "id": "hsbc-life-hsbc-life-smartcare-optimum-enhanced",
      "name": "HSBC Life SmartCare Optimum Enhanced",
      "category": "hospitalisation",
      "subtype": "standalone private medical plan with optional GP, specialist and dental cover; not an Integrated Shield Plan; 4 plans (Platinum, Gold, Silver, Bronze)",
@@ -3206,6 +3332,7 @@
      ]
     },
     {
+     "id": "hsbc-life-hsbc-life-international-exclusive",
      "name": "HSBC Life International Exclusive",
      "category": "hospitalisation",
      "subtype": "international private medical plan (worldwide, worldwide excluding USA, or Asia); not an Integrated Shield Plan",
@@ -3237,6 +3364,7 @@
      ]
     },
     {
+     "id": "hsbc-life-hsbc-life-globalcare-health-plan",
      "name": "HSBC Life GlobalCare Health Plan",
      "category": "hospitalisation",
      "subtype": "international private medical plan, 5 plans; not an Integrated Shield Plan",
@@ -3263,6 +3391,7 @@
      ]
     },
     {
+     "id": "hsbc-life-hsbc-life-term-protect-secure",
      "name": "HSBC Life Term Protect Secure",
      "category": "term_life",
      "subtype": "term to age 50 to 100; optional CI, TPD, premium waiver and survival riders",
@@ -3287,6 +3416,7 @@
      ]
     },
     {
+     "id": "hsbc-life-hsbc-life-term-protect-advantage",
      "name": "HSBC Life Term Protect Advantage",
      "category": "term_life",
      "subtype": "limited-pay term with guaranteed cash value; shown on HSBC bank site, not on HSBC Life product listing",
@@ -3311,6 +3441,7 @@
      ]
     },
     {
+     "id": "hsbc-life-hsbc-life-valuelife",
      "name": "HSBC Life ValueLife",
      "category": "whole_life",
      "subtype": "limited-pay (15 years) whole life, non-participating; shown on HSBC bank site, not on HSBC Life product listing",
@@ -3335,6 +3466,7 @@
      ]
     },
     {
+     "id": "hsbc-life-hsbc-life-life-treasure-iii",
      "name": "HSBC Life – Life Treasure III",
      "category": "whole_life",
      "subtype": "whole life with multiplier coverage; optional CI riders",
@@ -3359,6 +3491,7 @@
      ]
     },
     {
+     "id": "hsbc-life-direct-hsbc-life-term-lite",
      "name": "DIRECT – HSBC Life – Term Lite",
      "category": "term_life",
      "subtype": "direct purchase insurance; renewable 5-year or non-renewable 20-year / to age 65",
@@ -3382,6 +3515,7 @@
      ]
     },
     {
+     "id": "hsbc-life-direct-hsbc-life-protector-ii",
      "name": "DIRECT – HSBC Life Protector II",
      "category": "whole_life",
      "subtype": "direct purchase insurance, participating whole life",
@@ -3400,6 +3534,7 @@
      "pdfs": []
     },
     {
+     "id": "hsbc-life-hsbc-life-super-criticare",
      "name": "HSBC Life Super CritiCare",
      "category": "critical_illness",
      "subtype": "multi-pay CI (standalone or rider); renewable or to-age term",
@@ -3424,6 +3559,7 @@
      ]
     },
     {
+     "id": "hsbc-life-hsbc-life-cancer-recover",
      "name": "HSBC Life Cancer ReCover",
      "category": "cancer",
      "subtype": "cancer plan for survivors in remission, covering recurrent or new primary cancer",
@@ -3448,6 +3584,7 @@
      ]
     },
     {
+     "id": "hsbc-life-hsbc-life-happymummy",
      "name": "HSBC Life HappyMummy",
      "category": "maternity_child",
      "subtype": "prenatal bundle (EmpoweredMum plus Flexi Protector or Life Treasure III)",
@@ -3472,6 +3609,7 @@
      ]
     },
     {
+     "id": "hsbc-life-hsbc-life-band-aid",
      "name": "HSBC Life Band Aid",
      "category": "personal_accident",
      "subtype": "adult personal accident with free child cover on Package 3; 3 suggested packages",
@@ -3517,6 +3655,7 @@
    ],
    "products": [
     {
+     "id": "manulife-manuprotect-term-ii",
      "name": "ManuProtect Term (II)",
      "category": "term_life",
      "subtype": "renewable (5 or 10 years) or level (11 to 40 years), convertible",
@@ -3541,6 +3680,7 @@
      ]
     },
     {
+     "id": "manulife-manuprotect-decreasing-ii-manuprotect-decreasing-lite-ii",
      "name": "ManuProtect Decreasing (II) / ManuProtect Decreasing Lite (II)",
      "category": "term_life",
      "subtype": "decreasing term / mortgage",
@@ -3564,6 +3704,7 @@
      ]
     },
     {
+     "id": "manulife-direct-manuassure-term",
      "name": "DIRECT-ManuAssure Term",
      "category": "term_life",
      "subtype": "direct-purchase term (5-year, 20-year, to age 65)",
@@ -3592,6 +3733,7 @@
      ]
     },
     {
+     "id": "manulife-lifeready-plus-ii",
      "name": "LifeReady Plus (II)",
      "category": "whole_life",
      "subtype": "whole life with cash value; coverage boost up to 5x",
@@ -3616,6 +3758,7 @@
      ]
     },
     {
+     "id": "manulife-direct-manuassure-life",
      "name": "DIRECT-ManuAssure Life",
      "category": "whole_life",
      "subtype": "direct-purchase whole life",
@@ -3638,6 +3781,7 @@
      ]
     },
     {
+     "id": "manulife-critical-selectcare",
      "name": "Critical SelectCare",
      "category": "critical_illness",
      "subtype": "selected major CIs and age-related conditions; ages 40 to 70",
@@ -3662,6 +3806,7 @@
      ]
     },
     {
+     "id": "manulife-manulife-early-completecare",
      "name": "Manulife Early CompleteCare",
      "category": "critical_illness",
      "subtype": "multi-claim CI (Classic or Deluxe plan)",
@@ -3686,6 +3831,7 @@
      ]
     },
     {
+     "id": "manulife-manulife-earlycancer-protect",
      "name": "Manulife EarlyCancer Protect",
      "category": "cancer",
      "subtype": "cancer-only; 100% payout for all stages",
@@ -3709,6 +3855,7 @@
      ]
     },
     {
+     "id": "manulife-readymummy",
      "name": "ReadyMummy",
      "category": "maternity_child",
      "subtype": "3-year maternity plan covering mother and child",
@@ -3733,6 +3880,7 @@
      ]
     },
     {
+     "id": "manulife-manulife-readyprotect",
      "name": "Manulife ReadyProtect",
      "category": "personal_accident",
      "subtype": "adult and child personal accident, 5 plan types",
@@ -3757,6 +3905,7 @@
      ]
     },
     {
+     "id": "manulife-signature-life-series",
      "name": "Signature Life Series",
      "category": "whole_life",
      "subtype": "single premium whole life, SGD or USD",

@@ -119,6 +119,63 @@ def check_highlights(guide):
     return errors
 
 
+def slug(s):
+    return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+
+
+# Where plan-comparison figures may come from: the regulator's own site and its file host, pinned
+# to MOH's site folder on that host.
+COMPARE_HOSTS = ["www.moh.gov.sg/", "isomer-user-content.by.gov.sg/3/"]
+
+
+def check_compare(comp, insurers):
+    """data/compare/<category>.json: every unit must map to a built plan, every value to a defined
+    metric, and every link to an allowed host. Values themselves are checked by their own tool
+    (tools/moh_ip.py --check for the MOH tables)."""
+    errors = []
+    cat = comp.get("category")
+    where = "compare/%s" % cat
+    if cat not in SHOWN:
+        return [where + ": unknown category"]
+    plans = {(i["id"], p["name"]): p for i in insurers for p in i["products"] if p["category"] == cat}
+    metrics = [m["id"] for m in comp.get("metrics", [])]
+    if len(set(metrics)) != len(metrics) or not metrics:
+        errors.append(where + ": metric ids missing or repeated")
+    groups = {g["id"] for g in comp.get("groups", [])}
+    urls = [comp["source"]["url"]] + [g["pdf"] for g in comp.get("groups", [])]
+    for u in urls:
+        p = urlparse(u)
+        if p.scheme != "https" or not any((p.hostname + p.path).startswith(h) for h in COMPARE_HOSTS):
+            errors.append(where + ": link not on an allowed host: " + u)
+    seen = set()
+    per = {m["id"]: m.get("per", "unit") for m in comp.get("metrics", [])}
+    for u in comp.get("units", []):
+        tag = "%s: %s" % (where, u.get("id"))
+        if u["id"] in seen:
+            errors.append(tag + ": duplicate id")
+        seen.add(u["id"])
+        plan = plans.get((u["insurer"], u["product"]))
+        if not plan:
+            errors.append(tag + ": no built %s plan %r from %s" % (cat, u["product"], u["insurer"]))
+        else:
+            u["pid"] = plan["id"]
+        if u.get("group") not in groups:
+            errors.append(tag + ": unknown group")
+        for k, v in u.get("values", {}).items():
+            if per.get(k) != "unit":
+                errors.append(tag + ": value for unknown or non-unit metric " + k)
+            if not (isinstance(v, str) and v.strip()):
+                errors.append(tag + ": empty value for " + k)
+        for band, row in u.get("premium", {}).items():
+            if band not in comp.get("bands", []) or not all(isinstance(row.get(x), str) and row[x].strip() for x in ("incl", "excl", "change")):
+                errors.append(tag + ": bad premium row " + band)
+    for iid, vals in comp.get("insurer_values", {}).items():
+        for k, v in vals.items():
+            if per.get(k) != "insurer" or not (v.get("v") or "").strip():
+                errors.append("%s: insurer value %s.%s invalid" % (where, iid, k))
+    return errors
+
+
 def load(path):
     with open(path, encoding="utf-8") as f:
         return json.load(f)
@@ -188,6 +245,9 @@ def main():
             if LIMITED.search(sub + " " + (p.get("summary") or "")):
                 flags.append("limited")
             products.append({
+                # Stable id for links that pick plans (#/compare/<type>?p=...). Insurer + name, so a
+                # renamed plan gets a new id rather than silently pointing at another plan.
+                "id": slug(iid + "-" + name),
                 "name": name,
                 "category": p.get("category"),
                 "subtype": sub or None,
@@ -229,6 +289,14 @@ def main():
             if not c.get(key):
                 errors.append("guide: %s has no %s" % (c["id"], key))
     errors += check_highlights(guide)
+    ids = [p["id"] for i in insurers for p in i["products"]]
+    for dup in sorted({x for x in ids if ids.count(x) > 1}):
+        errors.append("product id %s is not unique" % dup)
+    compare = {}
+    for path in sorted(glob.glob(os.path.join(ROOT, "data", "compare", "*.json"))):
+        comp = load(path)
+        errors += check_compare(comp, insurers)
+        compare[comp.get("category")] = comp
     if errors:
         print("BUILD FAILED, %d problem(s):" % len(errors))
         for e in errors:
@@ -236,7 +304,7 @@ def main():
         return 1
     out_dir = os.path.join(ROOT, "public", "data")
     os.makedirs(out_dir, exist_ok=True)
-    for name, obj in (("insurers.json", {"insurers": insurers}), ("guide.json", guide)):
+    for name, obj in (("insurers.json", {"insurers": insurers}), ("guide.json", guide), ("compare.json", compare)):
         with open(os.path.join(out_dir, name), "w", encoding="utf-8", newline="\n") as f:
             json.dump(obj, f, ensure_ascii=False, indent=1)
             f.write("\n")
