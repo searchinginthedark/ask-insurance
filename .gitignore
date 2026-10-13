@@ -14,3 +14,6 @@ research/pdf/
 research/raw/
 research/scratch/
 research/fact_report.json
+
+.vercel
+.env*
