@@ -17,6 +17,8 @@ import sys
 import requests
 from bs4 import BeautifulSoup
 
+from scope import in_scope
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, "research", "raw", "pages")
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -71,7 +73,7 @@ def main(ids):
     urls = set()
     for path in files:
         with open(path, encoding="utf-8") as f:
-            urls.update(p["url"] for p in json.load(f).get("products", []))
+            urls.update(p["url"] for p in json.load(f).get("products", []) if in_scope(p))
     with cf.ThreadPoolExecutor(max_workers=12) as ex:
         list(ex.map(page_text, sorted(urls)))
     for path in files:
@@ -80,6 +82,8 @@ def main(ids):
         if ids and d["id"] not in ids:
             continue
         for p in d.get("products", []):
+            if not in_scope(p):
+                continue
             raw = page_text(p["url"]) + " " + " ".join(pdf_text(x.get("local")) for x in p.get("pdfs") or [])
             corpus = flat(raw)
             # The agent's evidence quote must really be in the cited source (whitespace/punctuation-insensitive).

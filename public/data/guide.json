@@ -1,5 +1,14 @@
 {
  "updated": "2026-10-13",
+ "disclaimer": [
+  "General information only, not financial advice. Nothing here considers your income, health, family or the policies you already hold.",
+  "This site is independent. It is not run by, paid by or affiliated with any insurer, adviser or government agency, and earns nothing from any plan.",
+  "The plain-English explanations simplify on purpose. The policy contract, its definitions and its exclusions decide every claim, not this summary.",
+  "Pitfalls and caveats without a source link are general guidance written for this site, not official statements. Items with a link come from that source.",
+  "Plans, premiums and government rules change. Facts were checked on the date shown at the bottom of each page and may be out of date when you read them.",
+  "Savings, endowment, investment-linked, annuity and wealth or legacy plans are left out on purpose. A plan missing here may still be sold.",
+  "Before you buy, switch or cancel a policy, read the insurer's product summary and policy wording, and speak to a licensed financial adviser. Do not cancel existing cover until the new policy is in force."
+ ],
  "sources": {
   "moh_ip_riders": {
    "title": "New requirements for Integrated Shield Plan riders (press release, 26 Nov 2025)",
@@ -75,11 +84,6 @@
    "title": "Protecting against losing your home (Home Protection Scheme)",
    "publisher": "CPF Board",
    "url": "https://www.cpf.gov.sg/member/home-ownership/protecting-against-losing-your-home"
-  },
-  "cpf_life": {
-   "title": "CPF LIFE",
-   "publisher": "CPF Board",
-   "url": "https://www.cpf.gov.sg/member/retirement-income/monthly-payouts/cpf-life"
   },
   "sdic_ppf_scope": {
    "title": "Scope of PPF Scheme coverage",
@@ -294,27 +298,6 @@
     }
    ],
    "link": "cpf_hps"
-  },
-  {
-   "id": "cpf_life",
-   "name": "CPF LIFE",
-   "kind": "National life annuity",
-   "who": "CPF members reaching their payout age.",
-   "facts": [
-    {
-     "t": "Gives monthly payouts for life.",
-     "s": "cpf_life"
-    },
-    {
-     "t": "You can start payouts any time from 65 to one month before turning 80.",
-     "s": "cpf_life"
-    },
-    {
-     "t": "The Escalating Plan starts lower and grows payouts by 2% a year for life.",
-     "s": "cpf_life"
-    }
-   ],
-   "link": "cpf_life"
   }
  ],
  "categories": [
@@ -322,6 +305,8 @@
    "id": "hospitalisation",
    "name": "Hospitalisation (Shield and medical plans)",
    "short": "Pays large hospital bills. Upgrades MediShield Life to A/B1 wards or private hospitals.",
+   "plain": "If you are warded in hospital, this pays most of the bill. Every Singapore Citizen and PR already has MediShield Life, which is sized for subsidised B2 and C wards in public hospitals. A Shield plan adds a private layer on top, so a bigger bill from an A ward or a private hospital is still mostly covered. Example: you choose a private hospital for an operation. With MediShield Life alone you would pay most of the difference yourself. A private-hospital Shield plan is built for that bill, though you still pay a deductible and a co-payment.",
+   "who": "Almost everyone. It is the cover that protects you from a very large hospital bill. Pick the ward class you would really use: a higher class costs more every year, and the gap grows as you age.",
    "what": "An Integrated Shield Plan (IP) is MediShield Life plus a private top-up from an insurer. The private part targets higher ward classes or private hospitals and lets you choose your doctor. Some insurers also sell international or regional medical plans that are not Shield plans; those are tagged, and are not on MOH's list of MediSave-approved Shield plans.",
    "facts": [
     {
@@ -360,6 +345,30 @@
     },
     {
      "t": "Switching IPs can mean new underwriting and new exclusions. Do not cancel the old plan until the new one is in force."
+    },
+    {
+     "t": "Choosing a plan you cannot afford in your 60s and 70s. Premiums rise with age, MediSave covers only part of the private premium, and the rest is cash.",
+     "s": "cpf_ip"
+    },
+    {
+     "t": "Letting the plan lapse over a missed payment. Buying again later means new health checks, and anything you developed in between can be excluded."
+    }
+   ],
+   "caveats": [
+    {
+     "t": "It pays back real bills, up to its limits. It does not give you cash for being ill."
+    },
+    {
+     "t": "You pay a deductible and a co-payment on each claim. From 1 April 2026, new riders cannot cover the minimum deductible.",
+     "s": "moh_ip_riders"
+    },
+    {
+     "t": "Overseas treatment is excluded from MediShield Life, so any overseas cover depends entirely on the insurer's private part.",
+     "s": "moh_mshl_benefits"
+    },
+    {
+     "t": "Plans tagged \"Not a Shield plan\" are international or regional medical plans. They are not on MOH's list of MediSave-approved Shield plans.",
+     "s": "moh_ip_compare"
     }
    ],
    "compare": [
@@ -381,6 +390,8 @@
    "id": "ip_rider",
    "name": "IP riders",
    "short": "Optional add-on to an IP that pays part of your co-payment.",
+   "plain": "Even with a Shield plan, you pay part of each hospital bill yourself: first a deductible, then a co-payment on the rest. A rider is an add-on that pays some of your share. Under the rules for riders sold from 1 April 2026, you still pay the deductible and at least 5% of the rest, but your yearly co-payment is capped if you use panel doctors or get pre-authorisation.",
+   "who": "People who want a predictable worst-case hospital bill and can afford a yearly premium paid in cash on top of the Shield plan.",
    "what": "A rider sits on top of your Integrated Shield Plan and reduces what you pay yourself after a claim. Rules changed for riders sold from 1 April 2026.",
    "facts": [
     {
@@ -412,6 +423,26 @@
     {
      "t": "Riders bought before 27 November 2025 are left to each insurer to decide. Ask yours what will happen.",
      "s": "moh_ip_riders"
+    },
+    {
+     "t": "Dropping an older rider to save money is usually one-way. New riders sold from 1 April 2026 cannot cover the minimum deductible, so the old design cannot be bought again.",
+     "s": "moh_ip_riders"
+    },
+    {
+     "t": "Paying for a rider and then using non-panel doctors without pre-authorisation. The co-payment cap applies only to panel or pre-authorised claims.",
+     "s": "moh_ip_riders"
+    }
+   ],
+   "caveats": [
+    {
+     "t": "From 1 April 2026, new riders cannot cover the minimum deductible of $1,500 to $3,500 a year, depending on ward class.",
+     "s": "moh_ip_riders"
+    },
+    {
+     "t": "Rider premiums are paid in cash, not MediSave, and they rise with age."
+    },
+    {
+     "t": "A rider sits on that insurer's own Shield plan. If you switch Shield plans to another insurer, the old rider does not come with you."
     }
    ],
    "compare": [
@@ -430,6 +461,8 @@
    "id": "term_life",
    "name": "Term life",
    "short": "Lump sum to your family if you die or are totally disabled within a set period.",
+   "plain": "You pay a premium for a fixed period, for example until age 65. If you die or become totally and permanently disabled in that period, your family gets a lump sum. If nothing happens, the cover simply ends and you get nothing back. That is why it is the cheapest way to buy a large amount of cover. Example: a parent with young children and a home loan buys cover that lasts until the youngest child is grown up and the loan is paid off.",
+   "who": "Anyone whose death would leave others short of money: children, a partner, parents you support, or debts shared with someone. If nobody relies on your income, you may need little or none.",
    "what": "Protection for a fixed period, usually to an age like 65 or 75. It pays only if a claim happens in that period and has no cash value.",
    "facts": [
     {
@@ -456,6 +489,30 @@
     },
     {
      "t": "Renewable term plans re-price at each renewal and can get expensive late in life."
+    },
+    {
+     "t": "Buying cover that ends too early. A plan to 65 pays nothing at 66, so match the end age to when your family stops depending on you."
+    },
+    {
+     "t": "Forgetting cover you already have. DPS counts; cover from an employer usually stops when you leave the job.",
+     "s": "cpf_dps"
+    },
+    {
+     "t": "Leaving out health facts on the application. For the first one or two years the insurer can treat the policy as if it was never issued, and after that it can still end it if fraud is proven.",
+     "s": "lia_ygtli"
+    }
+   ],
+   "caveats": [
+    {
+     "t": "There is no cash value. If you stop paying, the cover ends and nothing is returned.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "Suicide within a period stated in the policy is not paid.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "What counts as total and permanent disability differs between insurers and can change at older ages. Read the policy's definition."
     }
    ],
    "compare": [
@@ -474,9 +531,11 @@
   },
   {
    "id": "whole_life",
-   "name": "Whole life and universal life",
-   "short": "Lifelong cover with a cash value. Pricier than term.",
-   "what": "Whole life covers you for life and builds cash value. Universal life is an interest-sensitive version aimed at larger sums, often for legacy planning.",
+   "name": "Whole life",
+   "short": "Lifelong cover that pays out whenever you die. Costs much more than term.",
+   "plain": "Cover that lasts your whole life, so it will pay out one day as long as you keep the policy going. Part of each premium builds a cash value inside the policy, which is why it costs much more than term cover for the same payout. Many plans add a \"multiplier\" that boosts your cover up to an age such as 70, then drops back to the basic amount.",
+   "who": "People who want a payout whenever they die, for example to leave money to someone, and can afford the higher premium for many years. If your main aim is protecting your family during your working years, term cover gives far more cover for the money.",
+   "what": "Whole life covers you for life and builds a cash value. Plans sold mainly as savings, income, wealth or legacy products, including universal and indexed universal life, are left out of this site.",
    "facts": [
     {
      "t": "Whole life pays the sum insured plus bonuses on death or TPD; premiums can be limited to a set period.",
@@ -484,10 +543,6 @@
     },
     {
      "t": "Bonuses are non-guaranteed: your return can underperform expectations.",
-     "s": "lia_ygtli"
-    },
-    {
-     "t": "Universal life credits interest at a declared rate that can change, usually with a guaranteed minimum.",
      "s": "lia_ygtli"
     },
     {
@@ -503,6 +558,33 @@
     {
      "t": "The Policy Owners' Protection Scheme only protects guaranteed benefits, capped at S$500,000 sum assured and S$100,000 surrender value per life per insurer.",
      "s": "sdic_ppf_caps"
+    },
+    {
+     "t": "Treating it as a savings account. The cash value grows slowly, may not be guaranteed, and taking it out ends or shrinks your cover.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "Multiplier cover drops after the multiplier age, often when your health makes new cover hard to buy. Know what cover remains after that age."
+    },
+    {
+     "t": "Committing to a premium you cannot keep up for decades. Stopping early is where whole life loses the most money."
+    }
+   ],
+   "caveats": [
+    {
+     "t": "If you miss a premium after the grace period, the insurer may pay it with a loan against your cash value. That loan charges interest.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "A policy loan against the cash value charges interest and reduces what is paid out if it is not repaid.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "Suicide within a period stated in the policy is not paid.",
+     "s": "lia_ygtli"
+    },
+    {
+     "t": "In the Policy Illustration, look at the guaranteed figures. The higher projected figures depend on non-guaranteed bonuses."
     }
    ],
    "compare": [
@@ -522,6 +604,8 @@
    "id": "critical_illness",
    "name": "Critical illness (CI)",
    "short": "Lump sum on diagnosis of a listed serious illness, to replace income while you recover.",
+   "plain": "If you are diagnosed with a serious illness on the policy's list, such as a major cancer, heart attack or stroke, it pays you a lump sum. The money is yours to use however you need: living costs while you cannot work, treatment your Shield plan does not cover, or care at home. It does not depend on your hospital bill.",
+   "who": "People whose household would struggle if they could not earn for a year or more while recovering.",
    "what": "CI plans pay a lump sum on diagnosis, not a reimbursement of bills. Some pay only at the severe stage; early or multi-stage plans pay earlier; multi-pay plans pay more than once.",
    "facts": [
     {
@@ -548,6 +632,24 @@
     },
     {
      "t": "A CI benefit that accelerates your life policy reduces your death cover when it pays."
+    },
+    {
+     "t": "Treating it as hospital cover. CI pays a lump sum to you; your Shield plan pays the bills. Most people need both."
+    },
+    {
+     "t": "Buying multi-pay cover without checking the waiting time between claims and whether a relapse of the same illness counts."
+    }
+   ],
+   "caveats": [
+    {
+     "t": "It pays only when the diagnosis meets the policy's definition and stage. Being seriously ill is not enough on its own.",
+     "s": "lia_ci_2024"
+    },
+    {
+     "t": "Most plans have a waiting period after you buy for some illnesses, cancer especially. A diagnosis inside it is not covered."
+    },
+    {
+     "t": "Conditions you had before buying are usually excluded."
     }
    ],
    "compare": [
@@ -565,6 +667,8 @@
    "id": "cancer",
    "name": "Cancer plans",
    "short": "Lump sum (or yearly payouts) on cancer diagnosis only.",
+   "plain": "A cheaper, narrower kind of critical illness cover that pays only if you are diagnosed with cancer. Many pay from an early stage, and some pay every year while treatment continues. It pays nothing for a heart attack, stroke or any other illness.",
+   "who": "People who already have hospital cover and want a cash buffer for cancer specifically, or who cannot afford full critical illness cover yet.",
    "what": "A narrower, cheaper form of critical illness cover that pays only for cancer, often from early stage.",
    "facts": [
     {
@@ -582,6 +686,22 @@
     },
     {
      "t": "Many cancer plans are yearly renewable and their premiums are not guaranteed."
+    },
+    {
+     "t": "Buying it instead of full critical illness cover to save money, then falling ill with something that is not cancer."
+    }
+   ],
+   "caveats": [
+    {
+     "t": "What counts as early-stage cancer is set by each insurer, not by a common standard.",
+     "s": "lia_ci_2024"
+    },
+    {
+     "t": "MediShield Life pays for outpatient cancer drugs only if they are on MOH's Cancer Drug List. Cash from a cancer plan can help with drugs outside it.",
+     "s": "moh_mshl_benefits"
+    },
+    {
+     "t": "A waiting period after you buy is common. A diagnosis inside it is not covered."
     }
    ],
    "compare": [
@@ -601,6 +721,8 @@
    "id": "disability_income",
    "name": "Disability income",
    "short": "Monthly income if illness or injury stops you working.",
+   "plain": "If illness or injury stops you working for a long time, this pays you a monthly income, usually a share of your earnings, until you recover or the benefit period ends. Think of it as insuring your salary rather than your life.",
+   "who": "People who live on their own earnings and have little savings to fall back on, especially the self-employed, who have no employer sick leave.",
    "what": "Replaces part of your income if you become totally or partially disabled and cannot work, under the policy's conditions.",
    "facts": [
     {
@@ -618,6 +740,23 @@
     },
     {
      "t": "There is usually a waiting period of a few months before payouts start."
+    },
+    {
+     "t": "Assuming TPD cover does the same job. TPD pays once, and only if the disability is total and permanent."
+    },
+    {
+     "t": "Insuring more than you earn. Payouts are capped at a share of your actual income, so extra cover cannot be claimed."
+    }
+   ],
+   "caveats": [
+    {
+     "t": "Payouts usually stop at a set age stated in the policy, even if you are still disabled."
+    },
+    {
+     "t": "Some plans reduce the payout by other disability income you receive."
+    },
+    {
+     "t": "Few of the insurers here sell it to individuals. See \"Who sells it\" below."
     }
    ],
    "compare": [
@@ -635,6 +774,8 @@
    "id": "long_term_care",
    "name": "Long-term care (CareShield supplements)",
    "short": "Monthly cash if you become severely disabled, on top of CareShield Life.",
+   "plain": "If you become so disabled that you need help with daily basics like washing, dressing or eating, this pays you monthly cash for as long as that lasts. CareShield Life already does this for most Singaporeans born in 1980 or later. A supplement raises the monthly amount, and some start paying at a milder level of disability.",
+   "who": "People who want more than CareShield Life's base payout of $689 a month for a 2026 claim, for example to afford a helper or a nursing home.",
    "what": "Supplements top up CareShield Life or ElderShield with higher monthly payouts, and some pay at milder disability levels.",
    "facts": [
     {
@@ -658,6 +799,25 @@
     {
      "t": "CareShield Life only pays at 3 of 6 activities of daily living. Supplements that pay at 1 or 2 ADLs cost more.",
      "s": "cpf_careshield"
+    },
+    {
+     "t": "Waiting until you are older to buy. Health checks get harder and some conditions will be excluded."
+    },
+    {
+     "t": "Assuming the monthly payout will cover care costs in full. Work out what a helper or nursing home costs first."
+    }
+   ],
+   "caveats": [
+    {
+     "t": "You must stay covered by CareShield Life or ElderShield for a supplement.",
+     "s": "moh_supplements"
+    },
+    {
+     "t": "MediSave pays at most $600 a year per insured person towards supplement premiums. Anything above is cash.",
+     "s": "moh_supplements"
+    },
+    {
+     "t": "Payouts start only after your disability is assessed and certified, which takes time."
     }
    ],
    "compare": [
@@ -678,6 +838,8 @@
    "id": "personal_accident",
    "name": "Personal accident (PA)",
    "short": "Pays for accidental death, disability and accident medical bills.",
+   "plain": "Cheap yearly cover for accidents only. It pays a lump sum if an accident kills or permanently disables you, and usually pays back medical bills from the accident, such as a clinic visit for a sprain, physiotherapy or TCM.",
+   "who": "Active people, people in jobs or hobbies with injury risk, and anyone who wants small accident bills covered. A Shield plan's deductible makes small bills hard to claim there.",
    "what": "Cheap yearly cover for accidents only: a lump sum for accidental death or permanent disability, plus reimbursement of accident medical costs, often including TCM and physiotherapy.",
    "facts": [
     {
@@ -691,6 +853,17 @@
     },
     {
      "t": "Many plans exclude or limit infectious diseases, high-risk sports and some occupations. Check the exclusions."
+    },
+    {
+     "t": "Relying on it as your life or disability cover. Most deaths and disabilities come from illness, which it never pays for."
+    }
+   ],
+   "caveats": [
+    {
+     "t": "It is renewed yearly, and the insurer can change the terms or premium at renewal."
+    },
+    {
+     "t": "Partial disability pays a set percentage from a table in the policy, not the full sum."
     }
    ],
    "compare": [
@@ -706,6 +879,8 @@
    "id": "hospital_cash",
    "name": "Hospital cash (hospital income)",
    "short": "Fixed daily cash for each day you are warded.",
+   "plain": "Pays you a fixed amount for each day you are warded, whatever the bill. The money is for the extras around a hospital stay: lost income, transport, someone to look after the children.",
+   "who": "People who would lose income while in hospital, such as the self-employed. It is a small extra on top of a Shield plan, never a replacement for one.",
    "what": "Pays a set amount per day in hospital, whatever the bill. Useful for lost income or extras, not for paying the bill itself.",
    "facts": [
     {
@@ -716,6 +891,17 @@
    "watch": [
     {
      "t": "Short stays and day surgery often pay little or nothing. It does not replace an IP."
+    },
+    {
+     "t": "Paying for it when paid sick leave already covers your income."
+    }
+   ],
+   "caveats": [
+    {
+     "t": "Many plans set a minimum stay or a maximum number of days a year."
+    },
+    {
+     "t": "Conditions you had before buying are usually excluded."
     }
    ],
    "compare": [
@@ -729,116 +915,11 @@
    "tools": []
   },
   {
-   "id": "endowment",
-   "name": "Endowment and savings plans",
-   "short": "Save for a set goal (education, a lump sum at a date) with some protection.",
-   "what": "Pays a sum at maturity, or earlier on death or TPD. Part of the return is usually non-guaranteed bonuses.",
-   "facts": [
-    {
-     "t": "Endowment pays the sum insured plus bonuses at maturity, or on death or TPD during the term.",
-     "s": "lia_ygtli"
-    },
-    {
-     "t": "Returns can underperform expectations, as with all investment products.",
-     "s": "lia_ygtli"
-    },
-    {
-     "t": "compareFIRST lists endowment policies for side-by-side comparison.",
-     "s": "comparefirst"
-    }
-   ],
-   "watch": [
-    {
-     "t": "Early surrender usually loses money. Only commit money you will not need before maturity."
-    }
-   ],
-   "compare": [
-    "Guaranteed vs illustrated maturity value",
-    "Premium term vs policy term",
-    "Breakeven year",
-    "Capital guarantee, if any"
-   ],
-   "schemes": [],
-   "tools": [
-    "comparefirst"
-   ]
-  },
-  {
-   "id": "ilp",
-   "name": "Investment-linked plans (ILPs)",
-   "short": "Insurance plus investment in funds. Value goes up and down with markets.",
-   "what": "Premiums buy both insurance cover and units in funds you pick. What it pays depends on unit prices at the time of claim or surrender.",
-   "facts": [
-    {
-     "t": "Cover charges generally rise with age; poor fund returns plus high cover can drain the units needed to pay those charges.",
-     "s": "lia_ygtli"
-    },
-    {
-     "t": "Benefits tied directly to fund value are not guaranteed, so the PPF Scheme does not protect them.",
-     "s": "sdic_ppf_caps"
-    },
-    {
-     "t": "Within the 14-day free-look, an ILP refund can be adjusted for changes in unit value.",
-     "s": "lia_ygtli"
-    }
-   ],
-   "watch": [
-    {
-     "t": "Ask for every charge in writing: premium, fund management, policy and cover charges."
-    }
-   ],
-   "compare": [
-    "Total charges",
-    "Fund choices and track record",
-    "Cover charges by age",
-    "Surrender charges and lock-in"
-   ],
-   "schemes": [],
-   "tools": [
-    "comparefirst"
-   ]
-  },
-  {
-   "id": "annuity",
-   "name": "Annuities and retirement income",
-   "short": "Turns a lump sum or savings into monthly income in retirement.",
-   "what": "Private retirement plans pay monthly income from a set age, on top of CPF LIFE.",
-   "facts": [
-    {
-     "t": "A life annuity usually takes a lump sum and pays monthly in return.",
-     "s": "lia_ygtli"
-    },
-    {
-     "t": "CPF LIFE pays monthly for life; you can start payouts any time from 65 to one month before turning 80.",
-     "s": "cpf_life"
-    },
-    {
-     "t": "The PPF Scheme caps annuity protection at S$100,000 of guaranteed benefits per life per insurer.",
-     "s": "sdic_ppf_caps"
-    }
-   ],
-   "watch": [
-    {
-     "t": "Check how much of the monthly payout is guaranteed and how much depends on bonuses."
-    }
-   ],
-   "compare": [
-    "Guaranteed monthly income",
-    "Payout start age and duration (fixed years vs life)",
-    "Inflation escalation",
-    "What happens on early death"
-   ],
-   "schemes": [
-    "cpf_life"
-   ],
-   "tools": [
-    "cpf_life"
-   ]
-  },
-  {
    "id": "maternity_child",
    "name": "Maternity and child",
    "short": "Pregnancy complications, congenital conditions and cover for newborns.",
+   "plain": "Maternity plans cover serious pregnancy complications and the baby's congenital conditions, which MediShield Life covers only partly. Bought during pregnancy, many let the baby keep cover after birth without health checks. Child plans are ordinary hospital, critical illness or accident plans taken out on a child.",
+   "who": "Expectant parents, ideally early in the pregnancy, and parents who want their child covered before any condition can show up.",
    "what": "Maternity plans cover the mother and baby during pregnancy and early life; child plans cover hospitalisation, CI and accidents from birth.",
    "facts": [
     {
@@ -856,6 +937,18 @@
     },
     {
      "t": "Buying a child's IP early locks in cover before any condition can be excluded."
+    },
+    {
+     "t": "Some maternity plans come bundled with an investment-linked or whole life policy for the child. Check what you will keep paying for years after the birth; you may only want the maternity part."
+    }
+   ],
+   "caveats": [
+    {
+     "t": "MediShield Life does not pay for a normal delivery or a Caesarean.",
+     "s": "moh_mshl_benefits"
+    },
+    {
+     "t": "Problems already known before you buy, including in the current pregnancy, are usually excluded."
     }
    ],
    "compare": [
@@ -872,6 +965,8 @@
    "id": "outpatient",
    "name": "Outpatient, GP and dental",
    "short": "Clinic visits, specialist consults and dental. Mostly outside MediShield Life.",
+   "plain": "Pays part of everyday clinic bills: GP visits, specialist consultations, and sometimes dental or TCM. Hospital plans mostly do not cover these.",
+   "who": "Mainly people without outpatient benefits from an employer who see a doctor often. For most people, paying clinic bills from savings works out cheaper.",
    "what": "Plans or riders that reimburse GP, specialist, TCM or dental visits. Few insurers sell these to individuals.",
    "facts": [
     {
@@ -886,6 +981,17 @@
    "watch": [
     {
      "t": "Premiums often cost close to what you would claim. Work out your yearly clinic spend first."
+    },
+    {
+     "t": "Paying for cover you already get from your employer."
+    }
+   ],
+   "caveats": [
+    {
+     "t": "Per-visit and yearly limits are low, and many plans pay only at panel clinics."
+    },
+    {
+     "t": "Regular check-ups for a long-term condition may be excluded."
     }
    ],
    "compare": [
@@ -902,6 +1008,8 @@
    "id": "rider",
    "name": "Riders (waiver, payor, CI add-ons)",
    "short": "Add-ons to a main policy: waive premiums, add CI or TPD cover.",
+   "plain": "A rider is an optional add-on to a main policy. Common ones: a premium waiver, where your remaining premiums are paid for you if you get a critical illness or become disabled; a payor rider, which does the same on a child's policy if the parent paying for it is hit; and critical illness riders that add CI cover to a life plan.",
+   "who": "Useful when the main plan is long-term and would lapse if you could not pay. Compare the price with a standalone plan first.",
    "what": "For extra premium, a rider adds protection or enhances the main policy's benefits. Common ones waive future premiums if you (or the payer, for a child's policy) are diagnosed with CI or become disabled.",
    "facts": [
     {
@@ -915,6 +1023,17 @@
     },
     {
      "t": "Accelerated CI riders pay from your death benefit, not on top of it."
+    },
+    {
+     "t": "Adding riders until the policy costs more than separate plans for the same cover would."
+    }
+   ],
+   "caveats": [
+    {
+     "t": "Riders often end at an earlier age than the main policy."
+    },
+    {
+     "t": "Some rider premiums are not guaranteed and can be raised."
     }
    ],
    "compare": [

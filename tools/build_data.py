@@ -13,12 +13,17 @@ import re
 import sys
 from urllib.parse import urlparse
 
+from scope import SAVINGS_CATEGORIES, in_scope
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATEGORIES = [
     "hospitalisation", "ip_rider", "term_life", "whole_life", "critical_illness", "cancer",
     "disability_income", "long_term_care", "personal_accident", "hospital_cash", "endowment",
     "ilp", "annuity", "maternity_child", "outpatient", "rider",
 ]
+# Categories the app shows, in display order (data/guide.json must match). Savings categories stay
+# valid in research files but are dropped from the build: see tools/scope.py.
+SHOWN = [c for c in CATEGORIES if c not in SAVINGS_CATEGORIES]
 # Official domains per insurer. A URL outside these fails the build: the contract allows
 # product facts and PDFs from the insurer's own site only.
 DOMAINS = {
@@ -76,6 +81,7 @@ def main():
     if os.path.exists(rp):
         report = {r["url"]: r for r in load(rp)["links"]}
     insurers = []
+    dropped = 0
     for path in sorted(glob.glob(os.path.join(ROOT, "research", "insurers", "*.json"))):
         d = load(path)
         iid = d.get("id")
@@ -97,6 +103,10 @@ def main():
                 continue
             if p.get("category") not in CATEGORIES:
                 errors.append(tag + ": bad category %r" % p.get("category"))
+                continue
+            if not in_scope(p):
+                dropped += 1
+                continue
             url = p.get("url") or ""
             if not (url.startswith("https://") and on_domain(url, iid)):
                 errors.append(tag + ": url off-domain or not https: " + url)
@@ -153,15 +163,20 @@ def main():
     insurers.sort(key=lambda i: ORDER.index(i["id"]) if i["id"] in ORDER else 99)
     guide = load(os.path.join(ROOT, "data", "guide.json"))
     for c in guide["categories"]:
-        for f in c["facts"] + c["watch"]:
+        for f in c["facts"] + c["watch"] + c.get("caveats", []):
             if f.get("s") and f["s"] not in guide["sources"]:
                 errors.append("guide: unknown source %s in %s" % (f["s"], c["id"]))
     for s in guide["schemes"]:
         for f in s["facts"]:
             if f["s"] not in guide["sources"]:
                 errors.append("guide: unknown source %s in %s" % (f["s"], s["id"]))
-    if [c["id"] for c in guide["categories"]] != CATEGORIES:
-        errors.append("guide: category ids/order differ from CATEGORIES")
+    if [c["id"] for c in guide["categories"]] != SHOWN:
+        errors.append("guide: category ids/order differ from SHOWN")
+    # Every type page must explain itself in plain words and carry its pitfalls and caveats.
+    for c in guide["categories"]:
+        for key in ("plain", "who", "watch", "caveats"):
+            if not c.get(key):
+                errors.append("guide: %s has no %s" % (c["id"], key))
     if errors:
         print("BUILD FAILED, %d problem(s):" % len(errors))
         for e in errors:
@@ -174,7 +189,7 @@ def main():
             json.dump(obj, f, ensure_ascii=False, indent=1)
             f.write("\n")
     n = sum(len(i["products"]) for i in insurers)
-    print("built %d insurers, %d products" % (len(insurers), n))
+    print("built %d insurers, %d products (%d savings or investment plans left out)" % (len(insurers), n, dropped))
     return 0
 
 

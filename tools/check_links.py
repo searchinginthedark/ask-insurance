@@ -21,6 +21,8 @@ from urllib.parse import urlparse
 import requests
 from bs4 import BeautifulSoup
 
+from scope import in_scope
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/141.0 Safari/537.36")
@@ -53,6 +55,8 @@ def collect():
             if d.get(key):
                 links.setdefault(d[key], {"kind": key, "label": d["name"], "name": None, "owner": d["id"]})
         for p in d.get("products", []):
+            if not in_scope(p):
+                continue
             if p.get("url"):
                 links[p["url"]] = {"kind": "product", "label": p["name"], "name": p["name"], "owner": d["id"]}
             for pdf in p.get("pdfs") or []:

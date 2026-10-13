@@ -8,7 +8,6 @@ const GROUPS = [
   ["Death and long-term income", ["term_life", "whole_life", "disability_income"]],
   ["Serious illness and care", ["critical_illness", "cancer", "long_term_care"]],
   ["Accidents", ["personal_accident"]],
-  ["Savings and retirement", ["endowment", "ilp", "annuity"]],
   ["Life stages and add-ons", ["maternity_child", "rider"]],
 ];
 const UNVERIFIED = new Set(["blocked", null, undefined]);
@@ -54,6 +53,14 @@ function factList(items, cls) {
     items.map(f => h("li", null, f.t, f.s ? [" ", srcLink(f.s)] : null)));
 }
 
+// Short form of the disclaimer, shown where people decide; the full list is on the Sources page.
+function disclaimerNote() {
+  return h("p", { class: "notice mt16" },
+    h("strong", { text: "General information, not advice." }),
+    " Simplified for clarity: the policy wording decides every claim. Check the insurer's documents and speak to a licensed adviser before you buy, switch or cancel. ",
+    h("a", { href: "#/sources#disclaimer", text: "Full disclaimer" }));
+}
+
 function catName(id) { return state.cats[id] ? state.cats[id].name : id; }
 function insName(id) { const i = state.insurers.find(x => x.id === id); return i ? i.name : id; }
 
@@ -61,7 +68,8 @@ function insName(id) { const i = state.insurers.find(x => x.id === id); return i
 function viewTypes() {
   const out = [
     h("h1", { text: "Singapore personal insurance, sourced" }),
-    h("p", { class: "lede", text: "Every type of personal insurance except travel: what it does, what the Government already gives you, and which insurers sell it. Every figure links to its official source." }),
+    h("p", { class: "lede", text: "Every type of protection insurance except travel, explained in plain words: what it does, what can go wrong, what the Government already gives you, and which insurers sell it. Every official figure links to its source." }),
+    disclaimerNote(),
   ];
   for (const [title, ids] of GROUPS) {
     out.push(h("h2", { class: "group-title", text: title }));
@@ -105,11 +113,18 @@ function viewType(id, params) {
   const out = [
     h("p", { class: "crumb" }, h("a", { href: "#/", text: "All types" })),
     h("h1", { text: c.name }),
-    h("p", { class: "lede", text: c.what }),
+    h("h2", { text: "In simple terms" }),
+    h("p", { class: "lede", text: c.plain }),
+    h("h2", { text: "Who it is for" }),
+    h("p", { text: c.who }),
     h("h2", { text: "Key facts" }),
+    h("p", { text: c.what }),
     factList(c.facts),
+    h("h2", { text: "Pitfalls to avoid" }),
+    factList(c.watch, "watch"),
+    h("h2", { text: "Caveats and fine print" }),
+    factList(c.caveats),
   ];
-  if (c.watch.length) out.push(h("h2", { text: "Watch out for" }), factList(c.watch, "watch"));
   if (c.schemes.length) {
     out.push(h("h2", { text: "What the Government already covers" }),
       h("div", { class: "grid" }, c.schemes.map(s => {
@@ -119,6 +134,7 @@ function viewType(id, params) {
   }
   out.push(h("h2", { text: "Questions to compare plans on" }), h("ul", { class: "checklist" }, c.compare.map(q => h("li", { text: q }))));
   if (c.tools.length) out.push(h("p", { class: "links" }, c.tools.map(t => ext(state.guide.sources[t].url, state.guide.sources[t].title))));
+  out.push(disclaimerNote());
   out.push(h("h2", { text: `Who sells it (${all.length})` }));
   if (!all.length) {
     out.push(h("p", { class: "meta", text: "None of the insurers covered here lists a standalone plan of this type on its website. See the national schemes above." }));
@@ -264,7 +280,9 @@ function viewSources() {
     h("h1", { text: "Sources and method" }),
     h("p", { text: `${n} plans from ${state.insurers.length} insurers, with ${pdfs} official PDFs. Plan details come only from each insurer's own website and documents. Government and industry figures come from the official pages below.` }),
     h("p", { text: `Every link is re-checked by script: it must load, must not redirect to a home or error page, and a plan page must name the plan. ${unv ? unv + " plan link(s) sit on sites that block scripts and are marked \"Check link\"." : "All plan links passed the last check."}` }),
-    h("p", { text: "Time-limited promotions are deliberately left out." }),
+    h("p", { text: "Time-limited promotions are deliberately left out, and so are savings, endowment, investment-linked, annuity and wealth or legacy plans: this site covers protection only." }),
+    h("h2", { id: "disclaimer", text: "Disclaimer" }),
+    h("ul", { class: "facts" }, state.guide.disclaimer.map(t => h("li", { text: t }))),
     h("h2", { text: "Official sources" }),
     h("ul", { class: "facts" }, Object.values(state.guide.sources).map(s => h("li", null, ext(s.url, s.title), h("span", { class: "meta", text: " · " + s.publisher })))),
     h("h2", { text: "If something goes wrong" }),
@@ -275,7 +293,7 @@ function viewSources() {
 function viewSearch(q) {
   const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
   const hit = s => terms.every(t => s.toLowerCase().includes(t));
-  const cats = Object.values(state.cats).filter(c => hit([c.name, c.short, c.what].join(" ")));
+  const cats = Object.values(state.cats).filter(c => hit([c.name, c.short, c.plain, c.who, c.what].join(" ")));
   const prods = state.products.filter(p => hit([p.name, insName(p.insurer), catName(p.category), p.subtype || "", p.summary, p.facts.join(" ")].join(" ")));
   const ins = state.insurers.filter(i => hit(i.name + " " + (i.formerly || "")));
   const faq = state.guide.faq.filter(f => hit(f.q + " " + f.a));
