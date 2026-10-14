@@ -34,7 +34,7 @@ def main(base):
     expect(rb.status_code == 200 and "Disallow: /" in rb.text, "robots.txt disallows all")
 
     # Served files must match the committed bytes (catches a stale or wrong deployment).
-    for rel in ("app.js", "app.css", "data/insurers.json", "data/guide.json", "icon-192.png"):
+    for rel in ("app.js", "app.css", "data/insurers.json", "data/guide.json", "data/compare.json", "icon-192.png"):
         live = requests.get(base + "/" + rel, timeout=30)
         with open(os.path.join(ROOT, "public", rel), "rb") as f:
             local = f.read()
