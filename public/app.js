@@ -518,6 +518,8 @@ function comparePlans(cat, plans, params, head) {
   let picked = fromUrl.ids;
   if (!picked.length && !fromUrl.none) picked = ins ? plans.filter(p => p.insurer === ins).map(p => p.id) : ids;
   const grid = h("div", { class: "grid" });
+  // The plan cards sit below the questions, out of view, so a screen reader hears what changed.
+  const status = h("p", { class: "sr", role: "status" });
   const pick = picker(plans.map(p => ({ id: p.id, insurer: p.insurer, label: p.name })), picked, sel => {
     picked = ids.filter(id => sel.includes(id));
     setCompareUrl(cat, { p: picked.length === ids.length ? "" : picked.length ? picked.join(",") : NONE });
@@ -525,6 +527,7 @@ function comparePlans(cat, plans, params, head) {
   });
   function draw() {
     pick.update(picked);
+    status.textContent = `Comparing ${picked.length} of ${ids.length} plan${ids.length === 1 ? "" : "s"}.`;
     grid.replaceChildren(...(picked.length ? plans.filter(p => picked.includes(p.id)).map(p => productCard(p, true))
       : [h("p", { class: "notice", text: "Tick at least one plan above to compare." })]));
   }
@@ -533,6 +536,7 @@ function comparePlans(cat, plans, params, head) {
     ...head,
     h("p", { class: "lede", text: "There is no official like-for-like table for this type yet, so each plan shows the facts from its insurer's own page. Use the questions below to compare them." }),
     pick.el,
+    status,
     h("h2", { text: "Questions to compare plans on" }),
     h("ul", { class: "checklist" }, state.cats[cat].compare.map(q => h("li", { text: q }))),
     h("h2", { text: "The plans" }),
