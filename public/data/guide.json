@@ -121,9 +121,19 @@
    "url": "https://www.moneysense.gov.sg/insurance-basics/"
   },
   "lia_ci_2024": {
-   "title": "LIA Critical Illness Framework 2024 (MU 58/24)",
+   "title": "LIA Critical Illness Framework 2024 (MU 58/25, amended 13 May 2025)",
    "publisher": "LIA",
-   "url": "https://www.lia.org.sg/media/4326/amended-for-lia-mu-5824-part-1-of-4-_lia-ci-framework-2024.pdf"
+   "url": "https://www.lia.org.sg/media/4549/lia-ci-framework-2024-part-1-of-4.pdf"
+  },
+  "lia_ci_changes": {
+   "title": "LIA critical illness definitions: Version 2019 compared with Version 2024",
+   "publisher": "LIA",
+   "url": "https://www.lia.org.sg/media/4551/lia-ci-framework-2024-part-3-of-4-comparison-of-lia-definitions-2019-and-2024.pdf"
+  },
+  "lia_ci_faq": {
+   "title": "LIA Critical Illness Framework: industry FAQ (11 Oct 2024)",
+   "publisher": "LIA",
+   "url": "https://www.lia.org.sg/media/4366/lia-ci-framework_industry-faq.pdf"
   },
   "comparefirst": {
    "title": "compareFIRST product comparison portal",
@@ -189,6 +199,36 @@
    "title": "Understanding disability income insurance",
    "publisher": "MoneySense",
    "url": "https://www.moneysense.gov.sg/understanding-disability-income-insurance/"
+  },
+  "ms_term": {
+   "title": "Understanding term insurance",
+   "publisher": "MoneySense",
+   "url": "https://www.moneysense.gov.sg/term-insurance/"
+  },
+  "ms_ci": {
+   "title": "Understanding critical illness insurance",
+   "publisher": "MoneySense",
+   "url": "https://www.moneysense.gov.sg/critical-illness-insurance/"
+  },
+  "ms_docs": {
+   "title": "Interpreting your insurance documents",
+   "publisher": "MoneySense",
+   "url": "https://www.moneysense.gov.sg/interpreting-your-insurance-documents/"
+  },
+  "lia_preauth": {
+   "title": "Good practices on pre-authorisation for Integrated Shield Plans (Jan 2018)",
+   "publisher": "LIA",
+   "url": "https://www.lia.org.sg/media/1457/good-practices-on-pre-authorisation-20180108.pdf"
+  },
+  "moh_cancer_faq": {
+   "title": "FAQs on cancer treatment financing",
+   "publisher": "MOH",
+   "url": "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/faqs-on-cancer-treatment-financing/"
+  },
+  "moe_ges": {
+   "title": "Graduate Employment Survey 2025: NUS, NTU, SMU, SUTD, SIT and SUSS",
+   "publisher": "MOE",
+   "url": "https://www.moe.gov.sg/api/media/b26f8eed-8a89-47e3-b82f-c2c239786342/Joint-Web-Publication-GES-2025.pdf"
   }
  },
  "schemes": [
@@ -397,8 +437,12 @@
    ],
    "facts": [
     {
-     "t": "Pays off the outstanding HDB housing loan, up to the insured sum, on death, terminal illness or total permanent disability.",
-     "s": "cpf_hps"
+     "t": "Pays off the outstanding housing loan on your HDB flat, up to the insured sum, on death, terminal illness or total permanent disability. It covers an HDB loan or a bank loan.",
+     "s": "cpf_hps",
+     "quote": [
+      "settle the outstanding housing loan, up to the insured sum, with HDB or the mortgagee directly",
+      "If you're taking a bank loan, you can submit an online application to apply for HPS"
+     ]
     },
     {
      "t": "Covers you until age 65 or until the loan is paid off.",
@@ -426,7 +470,7 @@
    "id": "hospitalisation",
    "name": "Hospitalisation (Shield and medical plans)",
    "short": "Pays large hospital bills. Upgrades MediShield Life to A/B1 wards or private hospitals.",
-   "plain": "If you are warded in hospital, this pays most of the bill. Every Singapore Citizen and PR already has MediShield Life, which is sized for subsidised B2 and C wards in public hospitals. A Shield plan adds a private layer on top, so a bigger bill from an A ward or a private hospital is still mostly covered. Example: you choose a private hospital for an operation. With MediShield Life alone you would pay most of the difference yourself. A private-hospital Shield plan is built for that bill, though you still pay a deductible and a co-payment.",
+   "plain": "If you are warded in hospital, this pays most of the bill. Every Singapore Citizen and PR already has MediShield Life, which is sized for subsidised B2 and C wards in public hospitals. A Shield plan adds a private layer on top, so a bigger bill from an A ward or a private hospital is still mostly covered. Example: you choose a private hospital for an operation. With MediShield Life alone you would pay most of the difference yourself. A private-hospital Shield plan is built for that bill, though you still pay a {{deductible}} and a {{co-payment}}.",
    "who": "Almost everyone. It is the cover that protects you from a very large hospital bill. Pick the ward class you would really use: a higher class costs more every year, and the gap grows as you age.",
    "key": [
     {
@@ -481,7 +525,7 @@
      "quote": "even if your pre-existing conditions are not covered under the additional portion"
     },
     {
-     "t": "Using an insurer's panel doctors usually means lower co-payment and pre-authorisation. Check the panel before you need it.",
+     "t": "Using an insurer's {{panel-doctor|panel doctors}} usually means lower co-payment and {{pre-authorisation}}. Check the panel before you need it.",
      "s": "moh_ip_about"
     },
     {
@@ -537,7 +581,7 @@
    "id": "ip_rider",
    "name": "IP riders",
    "short": "Optional add-on to an IP that pays part of your co-payment.",
-   "plain": "Even with a Shield plan, you pay part of each hospital bill yourself: first a deductible, then a co-payment on the rest. A rider is an add-on that pays some of your share. Under the rules for riders sold from 1 April 2026, you still pay the deductible and at least 5% of the rest, but your yearly co-payment is capped if you use panel doctors or get pre-authorisation.",
+   "plain": "Even with a Shield plan, you pay part of each hospital bill yourself: first a {{deductible}}, then a {{co-payment}} on the rest. A rider is an add-on that pays some of your share. Under the rules for riders sold from 1 April 2026, you still pay the deductible and at least 5% of the rest, but your yearly co-payment is capped if you use panel doctors or get pre-authorisation.",
    "who": "People who want a predictable worst-case hospital bill and can afford a yearly premium paid in cash on top of the Shield plan.",
    "key": [
     {
@@ -652,19 +696,21 @@
    "id": "term_life",
    "name": "Term life",
    "short": "Lump sum to your family if you die or are totally disabled within a set period.",
-   "plain": "You pay a premium for a fixed period, for example until age 65. If you die or become totally and permanently disabled in that period, your family gets a lump sum. If nothing happens, the cover simply ends and you get nothing back. That is why it is the cheapest way to buy a large amount of cover. Example: a parent with young children and a home loan buys cover that lasts until the youngest child is grown up and the loan is paid off.",
+   "plain": "You pay a premium for a fixed period, for example until age 65. If you die or become {{tpd|totally and permanently disabled}} in that period, your family gets a lump sum. If nothing happens, the cover simply ends and you get nothing back. That is why it is the cheapest way to buy a large amount of cover. Example: a parent with young children and a home loan buys cover that lasts until the youngest child is grown up and the loan is paid off.",
    "who": "Anyone whose death would leave others short of money: children, a partner, parents you support, or debts shared with someone. If nobody relies on your income, you may need little or none.",
    "key": [
     {
      "v": "9x income",
      "l": "death and TPD cover: the MoneySense rule of thumb",
-     "s": "ms_bfpg"
+     "s": "ms_bfpg",
+     "kind": "target"
     },
     {
      "v": "3.6x income",
      "l": "average death cover per policyholder in 2022 (LIA study)",
      "s": "lia_pgs",
-     "quote": "approximately 3.6 times of average annual income"
+     "quote": "approximately 3.6 times of average annual income",
+     "kind": "actual"
     },
     {
      "v": "S$70,000",
@@ -693,8 +739,21 @@
    ],
    "watch": [
     {
-     "t": "Decreasing (mortgage) term cover falls with your loan. HPS already covers HDB loans paid by CPF.",
-     "s": "cpf_hps"
+     "t": "{{decreasing-term|Decreasing (mortgage) term}} cover shrinks over the term and reaches zero at the end, so it is built for a debt that shrinks, such as a home loan.",
+     "s": "ms_term",
+     "quote": [
+      "will reduce and become zero by the end of the term",
+      "those used to cover the default of a housing loan"
+     ]
+    },
+    {
+     "t": "Paying twice for mortgage cover. On an HDB flat, {{hps|HPS}} pays off the housing loan, whether from HDB or a bank, and it is required if you pay the instalments with CPF. Check what you already hold first. HPS does not cover private property or ECs.",
+     "s": "cpf_hps",
+     "quote": [
+      "If you're using CPF savings to pay your monthly housing instalments, HPS is required",
+      "If you're taking a bank loan, you can submit an online application to apply for HPS",
+      "HPS does not cover private residential properties, such as executive condominiums"
+     ]
     },
     {
      "t": "Renewable term plans re-price at each renewal and can get expensive late in life."
@@ -725,6 +784,11 @@
     },
     {
      "t": "What counts as total and permanent disability differs between insurers and can change at older ages. Read the policy's definition."
+    },
+    {
+     "t": "TPD cover is not an income. Disability income insurance works differently.",
+     "link": "#/type/disability_income#versus",
+     "label": "Compare TPD with disability income"
     }
    ],
    "compare": [
@@ -870,13 +934,15 @@
     {
      "v": "4x income",
      "l": "critical illness cover: the MoneySense rule of thumb",
-     "s": "ms_bfpg"
+     "s": "ms_bfpg",
+     "kind": "target"
     },
     {
      "v": "2.1x income",
      "l": "average CI cover per policyholder in 2022 (LIA study)",
      "s": "lia_pgs",
-     "quote": "approximately 2.1 times of average annual income"
+     "quote": "approximately 2.1 times of average annual income",
+     "kind": "actual"
     },
     {
      "v": "90 days",
@@ -884,15 +950,52 @@
      "s": "lia_ygthi"
     }
    ],
-   "what": "CI plans pay a lump sum on diagnosis, not a reimbursement of bills. Some pay only at the severe stage; early or multi-stage plans pay earlier; multi-pay plans pay more than once.",
+   "what": "CI plans pay a lump sum on diagnosis, not a reimbursement of bills. Some pay only at the severe stage; {{early-stage-ci|early or multi-stage}} plans pay earlier; {{multi-pay}} plans pay more than once.",
    "facts": [
     {
      "t": "LIA standardises the severe-stage definitions of 37 critical illnesses so claims are judged the same way at every insurer.",
      "s": "lia_ci_2024"
     },
     {
-     "t": "From 1 July 2025, only products using the Version 2024 definitions may be sold.",
-     "s": "lia_ci_2024"
+     "t": "LIA updated these definitions in 2024. From 1 October 2025, plans using the older Version 2019 definitions may no longer be sold, so a CI plan you buy now uses Version 2024 for those illnesses.",
+     "s": "lia_ci_2024",
+     "quote": "Starting from 1 October 2025, products using the Version 2019 definitions may no longer be sold in Singapore"
+    },
+    {
+     "t": "The 2024 review changed 7 of the 37 definitions and left 30 unchanged, to keep up with medical practice and remove unclear wording.",
+     "s": "lia_ci_2024",
+     "quote": [
+      "The definitions of 7 CIs were updated whilst 30 definitions remained unchanged",
+      "aligned with advances made in medical technology and medical practice as well as to address areas of ambiguity"
+     ]
+    },
+    {
+     "t": "Two changes a buyer may notice: Major Cancer now names pituitary tumours (PitNET) as excluded, which LIA says were never meant to be covered; and heart valve surgery no longer needs the chest wall to be opened, though keyhole and catheter procedures are still not covered.",
+     "s": "lia_ci_changes",
+     "quote": [
+      "PitNET covers pituitary adenoma which was not classified previously as Cancer and never intended to be covered under Major Cancer definition",
+      "This revised definition no longer requires opening of chest wall",
+      "The operation or procedure performed via endoscopic or keyhole surgery",
+      "The operation or procedure performed via catheterisation"
+     ]
+    },
+    {
+     "t": "A policy you already hold keeps the definitions in its own contract, and you cannot ask for it to be moved to the new ones. When you renew or increase cover, the insurer may apply the new definitions: ask yours.",
+     "s": "lia_ci_faq",
+     "quote": [
+      "your existing policy contract is not impacted",
+      "such an update is not possible",
+      "Insurers can choose to apply the latest definitions in respect of existing policy renewals",
+      "Insurers can choose to apply the latest definitions to the increased coverage portion"
+     ]
+    },
+    {
+     "t": "LIA's example: a $100,000 policy bought in 2020 and topped up by $50,000 in 2026. A claim in 2028 is assessed on Version 2019 for the $100,000 and Version 2024 for the $50,000.",
+     "s": "lia_ci_2024",
+     "quote": [
+      "Applying Version 2019 to $100,000",
+      "Applying Version 2024 to $50,000"
+     ]
     },
     {
      "t": "Early and intermediate stages are not defined by LIA; each insurer sets its own.",
@@ -1016,7 +1119,7 @@
    ],
    "caveats": [
     {
-     "t": "What counts as early-stage cancer is set by each insurer, not by a common standard.",
+     "t": "What counts as {{early-stage-ci|early-stage}} cancer is set by each insurer, not by a common standard.",
      "s": "lia_ci_2024"
     },
     {
@@ -1078,12 +1181,14 @@
      "quote": "The most important thing to consider when taking up disability income insurance is the definition of disability used in the policy"
     },
     {
-     "t": "Payouts usually start only after a deferred period, and only if you are still disabled then.",
+     "t": "Payouts usually start only after a {{deferred-period|deferred period}}, and only if you are still disabled then.",
      "s": "ms_di",
      "quote": "Benefits are payable only if you're continuously disabled after the deferred period"
     },
     {
-     "t": "Assuming TPD cover does the same job. TPD pays once, and only if the disability is total and permanent."
+     "t": "Assuming {{tpd|TPD}} cover does the same job. A TPD definition such as DPS's needs the inability to take part in any employment permanently, so a long illness you recover from would not count.",
+     "s": "ge_dps",
+     "quote": "the inability to take part in any employment permanently"
     },
     {
      "t": "Insuring more than you earn. Payouts are capped at a share of your actual income, so extra cover cannot be claimed.",
@@ -1108,6 +1213,172 @@
     "Benefit period and maximum % of income",
     "Partial disability benefit"
    ],
+   "versus": {
+    "title": "Disability income or TPD cover?",
+    "intro": "Both can pay when illness or injury stops you working, but they are built differently. This sets them side by side as the official guides describe them. Your policy's own wording decides any claim.",
+    "cols": [
+     "Disability income",
+     "TPD cover in a life plan"
+    ],
+    "rows": [
+     {
+      "k": "What it pays",
+      "a": [
+       {
+        "t": "A fixed amount each month, to replace part of the income you lose.",
+        "s": "lia_terms",
+        "quote": "it pays a fixed amount each month to replace part of the income you would lose"
+       }
+      ],
+      "b": [
+       {
+        "t": "The plan's sum insured, if you become totally and permanently disabled during the cover period.",
+        "s": "lia_ygtli",
+        "quote": "It pays the sum insured only if you die or become totally and permanently disabled"
+       },
+       {
+        "t": "How the payout is scheduled varies by product and insurer.",
+        "s": "ms_term",
+        "quote": "Payment schedules and definitions of disability vary across products and insurers"
+       }
+      ]
+     },
+     {
+      "k": "How much",
+      "a": [
+       {
+        "t": "Usually no more than 80% of your average monthly salary.",
+        "s": "lia_ygthi",
+        "quote": "usually pays no more than 80% of your average monthly salary"
+       }
+      ],
+      "b": [
+       {
+        "t": "The amount you chose. The MoneySense rule of thumb for death and TPD cover together is 9 times annual income.",
+        "s": "ms_bfpg",
+        "quote": "death & TPD (9x annual income)"
+       }
+      ]
+     },
+     {
+      "k": "What disability counts",
+      "a": [
+       {
+        "t": "Depends on the policy: some pay if you cannot do your usual work, others only if you cannot do any work at all.",
+        "s": "lia_ygthi",
+        "quote": "Some policies define disability as not being able to perform your usual work, while others define it as not being able to do any work at all"
+       }
+      ],
+      "b": [
+       {
+        "t": "Total and permanent. DPS, for example, needs the inability to take part in any employment permanently, or the permanent loss of use of both eyes, two limbs, or one eye and one limb.",
+        "s": "ge_dps",
+        "quote": [
+         "the inability to take part in any employment permanently",
+         "the total permanent loss of physical function of both eyes, or two limbs, or one eye and one limb"
+        ]
+       }
+      ]
+     },
+     {
+      "k": "When it starts",
+      "a": [
+       {
+        "t": "After the deferred period, and only if you are still disabled then.",
+        "s": "ms_di",
+        "quote": "Benefits are payable only if you're continuously disabled after the deferred period"
+       }
+      ],
+      "b": [
+       {
+        "t": "For DPS, once a registered medical practitioner certifies the disability. Other plans set their own claim rules.",
+        "s": "ge_dps",
+        "quote": "certified by a registered medical practitioner"
+       }
+      ]
+     },
+     {
+      "k": "How long",
+      "a": [
+       {
+        "t": "Usually up to 5 or 10 years, or until 60 or 65. It stops or falls once you can work again.",
+        "s": "ms_di",
+        "quote": [
+         "The monthly income may be paid for up to 5 or 10 years, or until you are 60 or 65",
+         "Payment will stop or reduce once you can start work again"
+        ]
+       }
+      ],
+      "b": [
+       {
+        "t": "Only for a disability that happens while the plan is in force. A term plan pays nothing for one after its term ends.",
+        "s": "lia_ygtli",
+        "quote": "become totally and permanently disabled (if this benefit is provided) during this period"
+       }
+      ]
+     }
+    ],
+    "scenarios_note": "Made-up situations, to show how the rules above apply. Real outcomes depend on the policy wording.",
+    "scenarios": [
+     {
+      "title": "Off work for 18 months with a long illness, then back at work",
+      "items": [
+       {
+        "k": "Disability income",
+        "t": "Pays monthly once the deferred period has passed, then stops or falls when you can work again.",
+        "s": "ms_di",
+        "quote": [
+         "Payment of benefits usually starts if you are disabled after the deferred period",
+         "Payment will stop or reduce once you can start work again"
+        ]
+       },
+       {
+        "k": "TPD cover",
+        "t": "A disability that ends is not permanent, so it would not meet a definition like DPS's.",
+        "s": "ge_dps",
+        "quote": "the inability to take part in any employment permanently"
+       }
+      ]
+     },
+     {
+      "title": "Can no longer do your own job, but could do other work",
+      "items": [
+       {
+        "k": "Disability income",
+        "t": "Turns on the definition: a policy that pays when you cannot do your usual work can pay; one that needs you unable to do any work may not.",
+        "s": "lia_ygthi",
+        "quote": "Some policies define disability as not being able to perform your usual work, while others define it as not being able to do any work at all"
+       },
+       {
+        "k": "TPD cover",
+        "t": "A definition like DPS's needs you permanently unable to take part in any employment, unless you have lost the use of both eyes, two limbs, or one eye and one limb.",
+        "s": "ge_dps",
+        "quote": [
+         "the inability to take part in any employment permanently",
+         "the total permanent loss of physical function of both eyes, or two limbs, or one eye and one limb"
+        ]
+       }
+      ]
+     },
+     {
+      "title": "Permanently unable to work at all",
+      "items": [
+       {
+        "k": "Disability income",
+        "t": "Can pay monthly until its benefit period ends, which may be 5 or 10 years, or age 60 or 65, even though you never recover.",
+        "s": "ms_di",
+        "quote": "The monthly income may be paid for up to 5 or 10 years, or until you are 60 or 65"
+       },
+       {
+        "k": "TPD cover",
+        "t": "Can pay the plan's sum insured, as the disability is total and permanent.",
+        "s": "lia_ygtli",
+        "quote": "It pays the sum insured only if you die or become totally and permanently disabled"
+       }
+      ]
+     }
+    ]
+   },
    "schemes": [],
    "tools": [
     "lia_ygtli"
@@ -1399,7 +1670,7 @@
    "id": "rider",
    "name": "Riders (waiver, payor, CI add-ons)",
    "short": "Add-ons to a main policy: waive premiums, add CI or TPD cover.",
-   "plain": "A rider is an optional add-on to a main policy. Common ones: a premium waiver, where your remaining premiums are paid for you if you get a critical illness or become disabled; a payor rider, which does the same on a child's policy if the parent paying for it is hit; and critical illness riders that add CI cover to a life plan.",
+   "plain": "A rider is an optional add-on to a main policy. Common ones: a premium waiver, where your remaining premiums are paid for you if you get a critical illness or become disabled; a {{payor-rider|payor rider}}, which does the same on a child's policy if the parent paying for it is hit; and critical illness riders that add CI cover to a life plan.",
    "who": "Useful when the main plan is long-term and would lapse if you could not pay. Compare the price with a standalone plan first.",
    "key": [
     {
@@ -1467,6 +1738,429 @@
    }
   ]
  },
+ "starting_pay": {
+  "s": "moe_ges",
+  "who": "Median gross monthly pay of fresh graduates from NUS, NTU, SMU, SUTD, SIT and SUSS in full-time permanent jobs, surveyed in November 2025, about six months after their final exams. Before employee CPF; bonuses are not included.",
+  "quote": [
+   "Gross monthly salary pertains only to full-time permanently employed graduates",
+   "bonuses, stock options, lump sum payments, and payments-in-kind are excluded",
+   "approximately six months after completing their final examinations"
+  ],
+  "items": [
+   {
+    "k": "Arts, Design & Media",
+    "v": 3840
+   },
+   {
+    "k": "Built Environment",
+    "v": 4268
+   },
+   {
+    "k": "Business",
+    "v": 4400
+   },
+   {
+    "k": "Engineering",
+    "v": 4600
+   },
+   {
+    "k": "Health Sciences",
+    "v": 4050
+   },
+   {
+    "k": "Humanities & Social Sciences",
+    "v": 4350
+   },
+   {
+    "k": "Information & Digital Technologies",
+    "v": 5500
+   },
+   {
+    "k": "Sciences",
+    "v": 4200
+   }
+  ]
+ },
+ "glossary_groups": [
+  {
+   "id": "hospital",
+   "name": "Hospital bills and Shield plans"
+  },
+  {
+   "id": "life",
+   "name": "Life, disability and home loans"
+  },
+  {
+   "id": "ci",
+   "name": "Critical illness"
+  }
+ ],
+ "glossary": [
+  {
+   "id": "deductible",
+   "term": "Deductible",
+   "group": "hospital",
+   "lines": [
+    {
+     "t": "The first part of a medical bill that you pay yourself before the insurance pays anything. You pay it once a policy year, not on every bill. Plans with lower premiums usually have higher deductibles.",
+     "s": "ms_health_terms",
+     "quote": [
+      "A deductible is the initial amount you have to pay for your medical expenses before your health insurance makes a payout",
+      "You usually only need to pay the deductible once in a policy year",
+      "Plans with lower premiums usually have higher deductibles"
+     ]
+    },
+    {
+     "t": "For a Shield plan it is $1,500 to $3,500 a policy year, depending on the ward class.",
+     "s": "ms_ip",
+     "quote": "ranging from $1,500 to $3,500, depending on ward class"
+    }
+   ],
+   "example": {
+    "t": "MOH's example: Mr A has a knee replacement in a private hospital and the bill is $56,900. With a new rider he pays the $3,500 deductible, then 5% of the rest of the bill: $6,170 in all, which MediSave covers within its limits.",
+    "s": "moh_ip_riders",
+    "quote": [
+     "incurs a bill of $56,900",
+     "pays the IP deductible of $3,500, followed by 5% of the remaining bill amount, totalling $6,170",
+     "This is entirely covered by MediSave, based on the applicable withdrawal limits"
+    ]
+   }
+  },
+  {
+   "id": "co-payment",
+   "term": "Co-payment (co-insurance)",
+   "group": "hospital",
+   "aliases": [
+    "co-insurance",
+    "co-pay"
+   ],
+   "lines": [
+    {
+     "t": "After the deductible, the share of the rest of the bill that you still pay, usually a percentage. It is also called co-insurance.",
+     "s": "ms_health_terms",
+     "quote": [
+      "Co-insurance is how much you have to co-pay or split the cost with the insurer after you pay the deductible",
+      "It is usually expressed as a percentage"
+     ]
+    },
+    {
+     "t": "Even with a Shield rider you still pay a co-payment: 5% of the bill, with a yearly cap of at least $6,000.",
+     "s": "ms_ip",
+     "quote": [
+      "Even with a rider, you will need to pay a deductible and a co-payment when you make a claim",
+      "The co-payment is 5% of the bill, capped at a minimum of $6,000 per year"
+     ]
+    },
+    {
+     "t": "That cap applies only to panel or pre-authorised claims.",
+     "s": "moh_ip_riders",
+     "quote": "Co-payment cap only applies to eligible claims such as panel or pre-authorised claims"
+    }
+   ],
+   "example": {
+    "t": "MoneySense's example: with a co-insurance of 10%, you pay 10% of the cost after the deductible.",
+    "s": "ms_health_terms",
+    "quote": "if you have a co-insurance of 10%, you will pay 10% of the cost after the deductible"
+   }
+  },
+  {
+   "id": "as-charged",
+   "term": "As charged",
+   "group": "hospital",
+   "aliases": [
+    "as-charged"
+   ],
+   "lines": [
+    {
+     "t": "A benefit paid on the actual bill, with no claim limit for that benefit.",
+     "s": "moh_cancer_faq",
+     "quote": "on an as-charged basis (i.e. no claim limit)"
+    },
+    {
+     "t": "You will see \"As charged\" in MOH's Shield plan tables on the Compare tab."
+    }
+   ],
+   "example": {
+    "t": "MOH's example: before 1 September 2022, MediShield Life paid up to $3,000 a month for cancer drugs, and Shield plans often paid the cost above that as charged, with a small co-payment. That has since changed.",
+    "s": "moh_cancer_faq",
+    "quote": [
+     "MediShield Life paid up to $3,000/month for all cancer drugs and Integrated Shield Plans (IPs) often covered costs above that on an as-charged basis",
+     "with a small co-payment"
+    ]
+   }
+  },
+  {
+   "id": "panel-doctor",
+   "term": "Panel doctor",
+   "group": "hospital",
+   "aliases": [
+    "panel",
+    "main panel"
+   ],
+   "lines": [
+    {
+     "t": "The doctors and hospitals that work closely with your Shield insurer, called its main panel. Using them can mean pre-authorisation of claims and a lower co-payment.",
+     "s": "moh_ip_about",
+     "quote": [
+      "is referred to as an insurer's main panel",
+      "Policyholders can enjoy additional benefits like pre-authorisation of claims and lower co-payment when using these providers"
+     ]
+    },
+    {
+     "t": "Under the Extended Panel, some specialists outside the main panel also give key panel benefits. Each insurer lists its panel on its website.",
+     "s": "moh_ip_about",
+     "quote": [
+      "policyholders can enjoy key panel benefits even if they seek treatment from selected specialists who are not on their insurer's main panel",
+      "can be found on their respective websites"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pre-authorisation",
+   "term": "Pre-authorisation",
+   "group": "hospital",
+   "aliases": [
+    "pre-authorised"
+   ],
+   "lines": [
+    {
+     "t": "Asking your insurer to review and approve a planned treatment before it happens. Emergencies are excluded.",
+     "s": "lia_preauth",
+     "quote": [
+      "Pre-authorisation is a process by which the policyholder obtains a review and approval of a medical treatment from the insurer prior to the actual procedure",
+      "they are excluded from the pre-authorisation process"
+     ]
+    },
+    {
+     "t": "It tells you the amount covered before treatment. Not every Shield insurer offers it: Income does not, and Singlife stopped on 9 September 2023.",
+     "s": "moh_ip_compare",
+     "quote": [
+      "This allows policyholders to know the amount that is covered by the insurer prior to undergoing treatment",
+      "Income does not offer pre-authorisation",
+      "Singlife has ceased offering pre-authorisation as of 9 September 2023"
+     ]
+    },
+    {
+     "t": "A rider's yearly co-payment cap applies only to panel or pre-authorised claims.",
+     "s": "moh_ip_riders",
+     "quote": "Co-payment cap only applies to eligible claims such as panel or pre-authorised claims"
+    }
+   ]
+  },
+  {
+   "id": "tpd",
+   "term": "Total and permanent disability (TPD)",
+   "group": "life",
+   "aliases": [
+    "TPD"
+   ],
+   "lines": [
+    {
+     "t": "A disability expected to last for good. DPS, for example, defines it as the inability to take part in any employment permanently, or the permanent loss of use of both eyes, two limbs, or one eye and one limb.",
+     "s": "ge_dps",
+     "quote": [
+      "the inability to take part in any employment permanently",
+      "the total permanent loss of physical function of both eyes, or two limbs, or one eye and one limb"
+     ]
+    },
+    {
+     "t": "A term or whole life plan that includes TPD benefit pays its sum insured if you become TPD.",
+     "s": "lia_terms",
+     "quote": "Pays the sum insured when you die or become “Totally and Permanently Disabled” if TPD benefit is provided"
+    },
+    {
+     "t": "Definitions and payment schedules vary across products and insurers, so read your policy's own.",
+     "s": "ms_term",
+     "quote": "Payment schedules and definitions of disability vary across products and insurers"
+    }
+   ],
+   "link": "#/type/disability_income#versus",
+   "label": "How TPD differs from disability income"
+  },
+  {
+   "id": "deferred-period",
+   "term": "Deferred period",
+   "group": "life",
+   "aliases": [
+    "deferment period"
+   ],
+   "lines": [
+    {
+     "t": "In disability income insurance, how long you must stay disabled before the monthly payouts start. Nothing is paid for that time.",
+     "s": "lia_terms",
+     "quote": [
+      "There may be a deferment period of time during which nothing is payable from the policy",
+      "Payment usually starts after you have been continuously disabled for longer than the deferment period"
+     ]
+    },
+    {
+     "t": "It is not the same as a waiting period, which counts from the day the cover starts: typically 90 days for some critical illnesses.",
+     "s": "lia_terms",
+     "quote": "A waiting period, typically 90 days from start date of coverage"
+    }
+   ],
+   "example": {
+    "t": "A plan with a 3-month deferred period. Off work for 2 months: nothing is paid. Off work for a year: payouts cover the time after the first 3 months."
+   }
+  },
+  {
+   "id": "decreasing-term",
+   "term": "Decreasing (mortgage) term",
+   "group": "life",
+   "aliases": [
+    "mortgage reducing term",
+    "MRTA"
+   ],
+   "lines": [
+    {
+     "t": "Term cover whose sum assured falls over the term and reaches zero at the end. It is often used to cover a housing loan. The other kind of term cover is fixed: the same amount throughout.",
+     "s": "ms_term",
+     "quote": [
+      "Two types of term insurance: fixed or decreasing coverage",
+      "will reduce and become zero by the end of the term",
+      "those used to cover the default of a housing loan"
+     ]
+    },
+    {
+     "t": "MoneySense lists mortgage reducing term assurance as cover that pays off the home loan if the main borrower dies.",
+     "s": "ms_needs",
+     "quote": "pays off the mortgage if the mortgagor passes away"
+    },
+    {
+     "t": "For an HDB flat, HPS is CPF's own mortgage-reducing insurance.",
+     "s": "cpf_hps",
+     "quote": "a mortgage-reducing insurance"
+    }
+   ],
+   "example": {
+    "t": "You owe $400,000 on a 25-year home loan. A decreasing plan starts at about $400,000 and falls on a schedule meant to track the loan. A fixed term plan for $400,000 would still pay $400,000 in year 20, when much less is owed."
+   }
+  },
+  {
+   "id": "hps",
+   "term": "Home Protection Scheme (HPS)",
+   "group": "life",
+   "aliases": [
+    "HPS"
+   ],
+   "lines": [
+    {
+     "t": "CPF's mortgage-reducing insurance for HDB flat owners. On death, terminal illness or total permanent disability, it pays off the outstanding housing loan, up to the insured sum, to HDB or the bank.",
+     "s": "cpf_hps",
+     "quote": [
+      "a mortgage-reducing insurance",
+      "settle the outstanding housing loan, up to the insured sum, with HDB or the mortgagee directly"
+     ]
+    },
+    {
+     "t": "It covers an HDB loan or a bank loan on an HDB flat. It is required if you pay the instalments with CPF, and strongly encouraged if you pay cash.",
+     "s": "cpf_hps",
+     "quote": [
+      "If you're taking a bank loan, you can submit an online application to apply for HPS",
+      "If you're using CPF savings to pay your monthly housing instalments, HPS is required",
+      "If you're using cash, we strongly encourage you to apply"
+     ]
+    },
+    {
+     "t": "It does not cover private property, ECs or privatised HUDC flats, and it ends at 65 or when the loan is paid off. For a loan on private property, or one running past 65, CPF suggests private insurance.",
+     "s": "cpf_hps",
+     "quote": [
+      "It insures members until he/she turns 65, or until the housing loans are paid up",
+      "If you've an outstanding housing loan for a private property, consider purchasing private insurance coverage",
+      "do consider getting private insurance coverage after your HPS cover ends at 65"
+     ]
+    },
+    {
+     "t": "Each owner's share of cover should at least match their share of the instalments, and a household's shares should add up to at least 100%. Acceptance depends on your health.",
+     "s": "cpf_hps",
+     "quote": [
+      "Your share of the HPS cover should at least match the proportion of the monthly housing instalment",
+      "The total share of cover per household should add up to at least 100%",
+      "Your eligibility for an HPS cover is subject to approval and you being in good health"
+     ]
+    }
+   ],
+   "example": {
+    "t": "Two owners each pay half the instalments with CPF and each take half the cover. If one dies, HPS pays off half of what is still owed, and the other owner keeps paying the rest."
+   }
+  },
+  {
+   "id": "payor-rider",
+   "term": "Payor rider",
+   "group": "life",
+   "aliases": [
+    "payer benefit"
+   ],
+   "lines": [
+    {
+     "t": "A waiver of premium rider lets you stop paying a policy's premiums if you become disabled.",
+     "s": "lia_terms",
+     "quote": "disability waiver of premium, which allows you to stop paying premiums for a policy if you become disabled"
+    },
+    {
+     "t": "When a parent buys a policy for a child, the parent is the policyholder and the child is the insured.",
+     "s": "ms_docs",
+     "quote": "The parent is the policyholder and the child, the insured"
+    },
+    {
+     "t": "A payor rider puts the waiver on the parent who pays, so the child's premiums stop if the parent dies or becomes disabled (some riders also cover critical illness), and the child stays covered. Insurers name it differently, such as \"payer benefit\": read the rider's own wording."
+    }
+   ]
+  },
+  {
+   "id": "early-stage-ci",
+   "term": "Early-stage critical illness",
+   "group": "ci",
+   "aliases": [
+    "early stage",
+    "multi-stage"
+   ],
+   "lines": [
+    {
+     "t": "LIA standardises only the severe stage of 37 common critical illnesses.",
+     "s": "lia_ci_2024",
+     "quote": "The LIA's common definitions describe the respective medical conditions at the “severe” stage"
+    },
+    {
+     "t": "Earlier, milder stages are worded by each insurer, so claims are not judged on identical definitions across insurers.",
+     "s": "lia_ygthi",
+     "quote": [
+      "are not standardised and are worded by each insurer",
+      "Claims assessment across insurers will not be based on identical definitions"
+     ]
+    },
+    {
+     "t": "Some plans pay a smaller amount for an earlier stage of cancer.",
+     "s": "ms_ci",
+     "quote": "Some critical illness policies pay a smaller amount for earlier stages of cancer"
+    },
+    {
+     "t": "LIA's 2024 update to the severe-stage definitions does not change an early-stage policy or rider you already hold.",
+     "s": "lia_ci_faq",
+     "quote": "your existing early stage CI policy or rider is not impacted"
+    }
+   ]
+  },
+  {
+   "id": "multi-pay",
+   "term": "Multi-pay critical illness",
+   "group": "ci",
+   "aliases": [
+    "multi-pay"
+   ],
+   "lines": [
+    {
+     "t": "A plan that can pay more than once, for example on diagnosis of different covered illnesses, up to the sum insured or the policy's limits.",
+     "s": "ms_ci",
+     "quote": "make several payments upon diagnosis of different insured critical illnesses, subject to the sum insured or policy limits"
+    },
+    {
+     "t": "Before buying, check how long you must wait between claims and whether a relapse of the same illness counts."
+    }
+   ]
+  }
+ ],
  "faq": [
   {
    "q": "Can I cancel a new policy?",

@@ -1,5 +1,5 @@
 {
- "checked_on": "2026-10-13",
+ "checked_on": "2026-10-14",
  "links": [
   {
    "url": "https://www.aia.com.sg/en/help-support/making-a-claim",
@@ -1100,6 +1100,15 @@
    "status": "pdf"
   },
   {
+   "url": "https://www.lia.org.sg/media/1457/good-practices-on-pre-authorisation-20180108.pdf",
+   "kind": "source",
+   "label": "Good practices on pre-authorisation for Integrated Shield Plans (Jan 2018)",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.lia.org.sg/media/1457/good-practices-on-pre-authorisation-20180108.pdf",
+   "status": "pdf"
+  },
+  {
    "url": "https://www.lia.org.sg/media/2329/07171027_lia-singapore-comment-on-rejected-claims-due-to-medical-conditions-st-forum.pdf",
    "kind": "source",
    "label": "Comment on claims rejected over medical conditions (27 Oct 2017)",
@@ -1136,12 +1145,30 @@
    "status": "pdf"
   },
   {
-   "url": "https://www.lia.org.sg/media/4326/amended-for-lia-mu-5824-part-1-of-4-_lia-ci-framework-2024.pdf",
+   "url": "https://www.lia.org.sg/media/4366/lia-ci-framework_industry-faq.pdf",
    "kind": "source",
-   "label": "LIA Critical Illness Framework 2024 (MU 58/24)",
+   "label": "LIA Critical Illness Framework: industry FAQ (11 Oct 2024)",
    "owner": "guide",
    "code": 200,
-   "final": "https://www.lia.org.sg/media/4326/amended-for-lia-mu-5824-part-1-of-4-_lia-ci-framework-2024.pdf",
+   "final": "https://www.lia.org.sg/media/4366/lia-ci-framework_industry-faq.pdf",
+   "status": "pdf"
+  },
+  {
+   "url": "https://www.lia.org.sg/media/4549/lia-ci-framework-2024-part-1-of-4.pdf",
+   "kind": "source",
+   "label": "LIA Critical Illness Framework 2024 (MU 58/25, amended 13 May 2025)",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.lia.org.sg/media/4549/lia-ci-framework-2024-part-1-of-4.pdf",
+   "status": "pdf"
+  },
+  {
+   "url": "https://www.lia.org.sg/media/4551/lia-ci-framework-2024-part-3-of-4-comparison-of-lia-definitions-2019-and-2024.pdf",
+   "kind": "source",
+   "label": "LIA critical illness definitions: Version 2019 compared with Version 2024",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.lia.org.sg/media/4551/lia-ci-framework-2024-part-3-of-4-comparison-of-lia-definitions-2019-and-2024.pdf",
    "status": "pdf"
   },
   {
@@ -1152,6 +1179,15 @@
    "code": 200,
    "final": "https://www.lia.org.sg/tools-and-resources/insurance-terms/",
    "status": "ok"
+  },
+  {
+   "url": "https://www.moe.gov.sg/api/media/b26f8eed-8a89-47e3-b82f-c2c239786342/Joint-Web-Publication-GES-2025.pdf",
+   "kind": "source",
+   "label": "Graduate Employment Survey 2025: NUS, NTU, SMU, SUTD, SIT and SUSS",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.moe.gov.sg/api/media/b26f8eed-8a89-47e3-b82f-c2c239786342/Joint-Web-Publication-GES-2025.pdf",
+   "status": "pdf"
   },
   {
    "url": "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/careshield-life/careshield-life-and-eldershield-supplements/",
@@ -1178,6 +1214,15 @@
    "owner": "guide",
    "code": 200,
    "final": "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/integrated-shield-plans/comparision-of-integrated-shield-plans/",
+   "status": "ok"
+  },
+  {
+   "url": "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/faqs-on-cancer-treatment-financing/",
+   "kind": "source",
+   "label": "FAQs on cancer treatment financing",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/faqs-on-cancer-treatment-financing/",
    "status": "ok"
   },
   {
@@ -1244,6 +1289,15 @@
    "status": "ok"
   },
   {
+   "url": "https://www.moneysense.gov.sg/critical-illness-insurance/",
+   "kind": "source",
+   "label": "Understanding critical illness insurance",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.moneysense.gov.sg/critical-illness-insurance/",
+   "status": "ok"
+  },
+  {
    "url": "https://www.moneysense.gov.sg/health-insurance-terms-know-what-you-re-paying-for/",
    "kind": "source",
    "label": "Health insurance terms: know what you're paying for",
@@ -1271,6 +1325,15 @@
    "status": "ok"
   },
   {
+   "url": "https://www.moneysense.gov.sg/interpreting-your-insurance-documents/",
+   "kind": "source",
+   "label": "Interpreting your insurance documents",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.moneysense.gov.sg/interpreting-your-insurance-documents/",
+   "status": "ok"
+  },
+  {
    "url": "https://www.moneysense.gov.sg/life-insurance/",
    "kind": "source",
    "label": "Understanding life insurance",
@@ -1286,6 +1349,15 @@
    "owner": "guide",
    "code": 200,
    "final": "https://www.moneysense.gov.sg/planning-your-finances-well/",
+   "status": "ok"
+  },
+  {
+   "url": "https://www.moneysense.gov.sg/term-insurance/",
+   "kind": "source",
+   "label": "Understanding term insurance",
+   "owner": "guide",
+   "code": 200,
+   "final": "https://www.moneysense.gov.sg/term-insurance/",
    "status": "ok"
   },
   {

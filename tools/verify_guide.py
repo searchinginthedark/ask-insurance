@@ -16,6 +16,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 
 import requests
 from bs4 import BeautifulSoup
@@ -33,8 +34,20 @@ def numbers(s):
     return {n.replace(",", "").rstrip(".") for n in NUM.findall(s)}
 
 
+# Some PDFs (LIA's CI FAQ) extract Calibri ligatures as stray letters: "deﬁniƟons" for "definitions".
+# NFKC repairs ﬁ/ﬂ/ﬀ; the other three are mapped by hand. Without this a correct quote fails.
+LIGATURES = str.maketrans({"Ɵ": "ti", "Ʃ": "tt", "Ō": "ft"})
+TERM = re.compile(r"\{\{([a-z-]+)(?:\|([^}]+))?\}\}")
+
+
 def letters(s):
+    s = unicodedata.normalize("NFKC", s).translate(LIGATURES)
     return re.sub(r"[^a-z0-9]", "", s.lower())
+
+
+def plain(s):
+    """Glossary marks {{id|label}} read as their label ({{id}} as the id)."""
+    return TERM.sub(lambda m: m.group(2) or m.group(1), s)
 
 
 def source_text(url, fresh):
@@ -63,9 +76,25 @@ def items(guide):
     for c in guide["categories"]:
         for key in ("facts", "watch", "caveats"):
             for f in c.get(key, []):
-                yield "%s.%s" % (c["id"], key), f, f["t"]
+                yield "%s.%s" % (c["id"], key), f, plain(f["t"])
         for k in c.get("key", []):
             yield "%s.key" % c["id"], k, k["v"] + " " + k["l"]
+        vs = c.get("versus")
+        if vs:
+            for r in vs["rows"]:
+                for f in r["a"] + r["b"]:
+                    yield "%s.versus.%s" % (c["id"], r["k"]), f, f["t"]
+            for sc in vs["scenarios"]:
+                for f in sc["items"]:
+                    yield "%s.scenario" % c["id"], f, f["t"]
+    for g in guide.get("glossary", []):
+        for f in g["lines"]:
+            yield "glossary.%s" % g["id"], f, f["t"]
+        if g.get("example"):
+            yield "glossary.%s.example" % g["id"], g["example"], g["example"]["t"]
+    sp = guide.get("starting_pay")
+    if sp:
+        yield "starting_pay", sp, sp["who"]
     for s in guide["schemes"]:
         for f in s["facts"]:
             yield "%s.facts" % s["id"], f, f["t"]
@@ -79,7 +108,21 @@ def items(guide):
                 yield "pain.%s.%s" % (p["id"], field), f, f["t"]
     for q in guide["faq"]:
         # The one-line answer is checked against the same source as the full one.
-        yield "faq", q, q["a"] + " " + q.get("short", "")
+        yield "faq", q, plain(q["a"]) + " " + q.get("short", "")
+
+
+def starting_pay_rows(guide, raw):
+    """Each MOE figure must be the LAST of the three yearly medians on its own course row: the
+    table runs 2023, 2024, 2025, so a figure from the wrong year or row is caught, not just one
+    that appears somewhere on the page."""
+    bad = []
+    flat = re.sub(r"\s+", " ", raw)
+    for it in guide["starting_pay"]["items"]:
+        # A row starts right after the previous number, so "Sciences" cannot match "Health Sciences".
+        m = re.search(r"(?<=\d )" + re.escape(it["k"]) + r" \d[^$]*?\$([\d,]+) \$([\d,]+) \$([\d,]+)", flat)
+        if not m or int(m.group(3).replace(",", "")) != it["v"]:
+            bad.append(("starting_pay", it["k"], "not the 2025 median on its MOE row"))
+    return bad
 
 
 def main(argv):
@@ -119,6 +162,13 @@ def main(argv):
         checked += 1
         if missing:
             bad.append((where, text, "not in %s: %s" % (sid, ", ".join(missing))))
+    sp = guide.get("starting_pay")
+    if sp:
+        try:
+            bad += starting_pay_rows(guide, source_text(guide["sources"][sp["s"]]["url"], False))
+            checked += len(sp["items"])
+        except requests.RequestException as e:
+            bad.append(("starting_pay", sp["s"], "source unreadable: %s" % type(e).__name__))
     print("guide items checked: %d, problems: %d" % (checked, len(bad)))
     for where, text, why in bad:
         print("  %-28s %s | %s" % (where, why, text[:110]))

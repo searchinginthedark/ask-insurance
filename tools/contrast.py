@@ -13,7 +13,9 @@ PAIRS = [("text", "bg", 4.5), ("text", "surface", 4.5), ("muted", "bg", 4.5), ("
          ("ok-fg", "ok-bg", 4.5), ("tag-fg", "tag-bg", 4.5), ("muted", "tag-bg", 4.5), ("focus", "surface", 3),
          ("focus", "bg", 3), ("edge", "surface", 3.0), ("edge", "bg", 3.0),
          # "Must know" flag text, and the accent edge that marks key figures and flagged items.
-         ("accent", "surface", 4.5), ("accent", "bg", 3.0), ("brand", "surface", 3.0)]
+         ("accent", "surface", 4.5), ("accent", "bg", 3.0), ("brand", "surface", 3.0),
+         # Target key figures' edge, and the dotted underline of a glossary word inside a pitfall.
+         ("ok-fg", "surface", 3.0), ("ok-fg", "bg", 3.0), ("link", "warn-bg", 3.0)]
 
 
 def lum(hexv):

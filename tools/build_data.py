@@ -89,6 +89,10 @@ def check_highlights(guide):
             # A figure strip is for a glance: the value must stay short enough to read as one.
             elif len(k["v"]) > 22 or len(k["l"]) > 140:
                 errors.append("guide: %s key figure %r is too long" % (owner, k["v"]))
+            # A target (rule of thumb) and an actual (what people hold) side by side must not look
+            # alike; the app tags each. Absent means a plain fact.
+            if k.get("kind") not in (None, "target", "actual"):
+                errors.append("guide: %s key figure %r has unknown kind %r" % (owner, k.get("v"), k["kind"]))
 
     for c in guide["categories"]:
         keys(c["id"], c.get("key"), c["id"] not in NO_KEY)
@@ -114,8 +118,106 @@ def check_highlights(guide):
             for f in p.get(field) or []:
                 if f.get("s") and f["s"] not in src:
                     errors.append("guide: %s unknown source %s" % (where, f["s"]))
-                if f.get("link") and not (re.match(r"^#/[a-z0-9/_-]*$", f["link"]) and f.get("label")):
+                if f.get("link") and not (IN_APP.match(f["link"]) and f.get("label")):
                     errors.append("guide: %s link must be an in-app #/ route with a label: %s" % (where, f["link"]))
+    for c in guide["categories"]:
+        for f in c["facts"] + c["watch"] + c["caveats"]:
+            if f.get("link") and not (IN_APP.match(f["link"]) and f.get("label")):
+                errors.append("guide: %s link must be an in-app #/ route with a label: %s" % (c["id"], f["link"]))
+    return errors
+
+
+IN_APP = re.compile(r"^#/[a-z0-9/_-]*(#[a-z0-9_-]+)?$")
+# Publishers the guide may cite (user ruling 2026-10-13; MOE added 2026-10-14 for graduate starting
+# pay only). Great Eastern is here as the DPS administrator, never as a seller.
+GUIDE_HOSTS = ("moh.gov.sg", "cpf.gov.sg", "lia.org.sg", "sdic.org.sg", "moneysense.gov.sg",
+               "comparefirst.sg", "fidrec.com.sg", "moe.gov.sg")
+GE_DPS = "https://www.greateasternlife.com/sg/en/personal-insurance/our-products/life-insurance/dependants-protection-scheme.html"
+TERM = re.compile(r"\{\{([^}|]*)(?:\|([^}]*))?\}\}")
+NUM = re.compile(r"\d[\d,]*(?:\.\d+)?")
+
+
+def guide_texts(guide):
+    """(page, text) for every guide string that may carry {{term}} marks. Page groups what one
+    screen shows, so a term is marked at most once per page."""
+    for c in guide["categories"]:
+        page = "type/" + c["id"]
+        for key in ("plain", "who", "what"):
+            yield page, c.get(key) or ""
+        for f in c["facts"] + c["watch"] + c["caveats"]:
+            yield page, f["t"]
+    for p in guide["pain_points"]:
+        for f in p["why"] + p["fix"]:
+            yield "top5/" + p["id"], f["t"]
+    for q in guide["faq"]:
+        yield "faq/" + q["q"], q["a"]
+
+
+def check_glossary(guide):
+    errors = []
+    src = guide["sources"]
+    for sid, s in src.items():
+        host = (urlparse(s["url"]).hostname or "").lower()
+        if not (s["url"] == GE_DPS or any(host == d or host.endswith("." + d) for d in GUIDE_HOSTS)):
+            errors.append("guide: source %s is not from an allowed publisher: %s" % (sid, s["url"]))
+    groups = {g["id"] for g in guide.get("glossary_groups", [])}
+    terms = {}
+    for g in guide.get("glossary", []):
+        where = "glossary %s" % g.get("id")
+        if not re.match(r"^[a-z][a-z-]*$", g.get("id") or "") or g["id"] in terms:
+            errors.append("guide: %s: id missing, malformed or repeated" % where)
+        terms[g.get("id")] = g
+        if not g.get("term") or g.get("group") not in groups or not g.get("lines"):
+            errors.append("guide: %s needs term, a known group and lines" % where)
+        for f in g.get("lines", []) + ([g["example"]] if g.get("example") else []):
+            if not f.get("t") or (f.get("s") and f["s"] not in src):
+                errors.append("guide: %s has an empty line or unknown source" % where)
+        if g.get("link") and not (IN_APP.match(g["link"]) and g.get("label")):
+            errors.append("guide: %s link must be an in-app route with a label" % where)
+    # A made-up example (no source) must not borrow a real figure, or it would pass on a scheme
+    # amount with no link to check it. Real figures go in a sourced line or a sourced example.
+    real = set()
+    for c in guide["categories"]:
+        for f in c["facts"] + c["watch"] + c["caveats"] + c.get("key", []):
+            if f.get("s"):
+                real |= {n.replace(",", "") for n in NUM.findall(f.get("t") or f.get("v", ""))}
+    for s in guide["schemes"]:
+        for f in s["facts"] + s.get("key", []):
+            real |= {n.replace(",", "") for n in NUM.findall(f.get("t") or f.get("v", ""))}
+    for g in guide.get("glossary", []):
+        ex = g.get("example")
+        if ex and not ex.get("s"):
+            clash = sorted({n.replace(",", "") for n in NUM.findall(ex["t"])
+                            if float(n.replace(",", "")) >= 100} & real)
+            if clash:
+                errors.append("guide: glossary %s made-up example uses real figure(s) %s" % (g["id"], ", ".join(clash)))
+    seen = {}
+    for page, text in guide_texts(guide):
+        for m in TERM.finditer(text):
+            tid = m.group(1)
+            if tid not in terms:
+                errors.append("guide: unknown glossary term {{%s}} on %s" % (tid, page))
+            elif (page, tid) in seen:
+                errors.append("guide: {{%s}} marked twice on %s; mark only the first use" % (tid, page))
+            seen[(page, tid)] = True
+    for c in guide["categories"]:
+        vs = c.get("versus")
+        if not vs:
+            continue
+        if len(vs.get("cols") or []) != 2 or not vs.get("rows") or not vs.get("scenarios"):
+            errors.append("guide: %s versus needs 2 cols, rows and scenarios" % c["id"])
+        for r in vs.get("rows", []):
+            for f in (r.get("a") or []) + (r.get("b") or []):
+                if not f.get("s") or f["s"] not in src:
+                    errors.append("guide: %s versus row %r: every cell needs a source" % (c["id"], r.get("k")))
+        for sc in vs.get("scenarios", []):
+            for f in sc.get("items") or []:
+                if not f.get("s") or f["s"] not in src:
+                    errors.append("guide: %s scenario %r: every line needs a source" % (c["id"], sc.get("title")))
+    sp = guide.get("starting_pay")
+    if sp and (sp.get("s") not in src or not sp.get("items")
+               or not all(isinstance(i.get("v"), int) and i.get("k") for i in sp["items"])):
+        errors.append("guide: starting_pay needs a source and items of {k, integer v}")
     return errors
 
 
@@ -334,6 +436,7 @@ def main():
             if not c.get(key):
                 errors.append("guide: %s has no %s" % (c["id"], key))
     errors += check_highlights(guide)
+    errors += check_glossary(guide)
     ids = [p["id"] for i in insurers for p in i["products"]]
     for dup in sorted({x for x in ids if ids.count(x) > 1}):
         errors.append("product id %s is not unique" % dup)

@@ -12,7 +12,7 @@ const GROUPS = [
 ];
 const UNVERIFIED = new Set(["blocked", null, undefined]);
 
-const state = { guide: null, insurers: [], products: [], cats: {}, schemes: {}, compare: {} };
+const state = { guide: null, insurers: [], products: [], cats: {}, schemes: {}, compare: {}, gloss: {} };
 const main = document.getElementById("main");
 
 // ---------- tiny DOM helper ----------
@@ -50,9 +50,21 @@ function srcLink(id) {
 
 // Amounts, percentages, multiples and durations in bold so a skimming eye lands on them.
 const FIGURE = /(S?\$[\d,]+(?:\.\d+)?|\b\d[\d,]*(?:\.\d+)?%|\b\d+(?:\.\d+)?(?:x\b| times\b)|\b\d+ (?:days|weeks|months|years)\b)/;
-function rich(text) {
+// Glossary marks in guide text: {{id}} or {{id|words shown}}. Marked by hand on the first use per
+// page (the build enforces it), never matched automatically: "payer" is not "payor".
+const TERM = /\{\{([a-z-]+)(?:\|([^}]+))?\}\}/;
+function figures(text) {
   return text.split(FIGURE).map((part, i) => i % 2 ? h("strong", { class: "num", text: part }) : part);
 }
+function rich(text, bold = true) {
+  const out = [], p = text.split(TERM);
+  for (let i = 0; i < p.length; i += 3) {
+    out.push(...(bold ? figures(p[i]) : [p[i]]));
+    if (i + 1 < p.length) out.push(termButton(p[i + 1], p[i + 2] || p[i + 1]));
+  }
+  return out;
+}
+function plainText(text) { return text.replace(new RegExp(TERM.source, "g"), (m, id, label) => label || id); }
 
 function factList(items, cls) {
   // Must-know items first, marked; the rest keep their order.
@@ -60,16 +72,69 @@ function factList(items, cls) {
   return h("ul", { class: "facts" + (cls ? " " + cls : "") },
     sorted.map(f => h("li", { class: f.top ? "top" : null },
       f.top ? h("span", { class: "flag", text: "Must know" }) : null,
-      rich(f.t), f.s ? [" ", srcLink(f.s)] : null)));
+      rich(f.t), f.s ? [" ", srcLink(f.s)] : null,
+      f.link ? [" ", h("a", { href: f.link, text: f.label })] : null)));
 }
 
-// The one to three figures that matter most on a page, each with its own source.
+// The one to three figures that matter most on a page, each with its own source. A rule-of-thumb
+// target and an average people actually hold are tagged in words, not only by colour, so 9x and
+// 3.6x side by side cannot read as two targets.
+const KIND = { target: "Rule of thumb", actual: "Actual average, not a target" };
 function glance(keys) {
   if (!keys || !keys.length) return null;
   return h("div", { class: "glance", role: "list", "aria-label": "At a glance" },
-    keys.map(k => h("div", { class: "fig", role: "listitem" },
+    keys.map(k => h("div", { class: "fig" + (k.kind ? " " + k.kind : ""), role: "listitem" },
+      k.kind ? h("p", { class: "kind", text: KIND[k.kind] }) : null,
       h("p", { class: "v", text: k.v }),
       h("p", { class: "l" }, k.l, " ", srcLink(k.s)))));
+}
+
+// ---------- glossary: one shared popover, filled on demand ----------
+const POPOVER = typeof HTMLElement.prototype.showPopover === "function";
+const pop = h("div", { id: "term-pop", class: "term-pop", popover: "auto", role: "dialog", "aria-labelledby": "term-pop-h" });
+let popFrom = null;
+document.body.append(pop);
+pop.addEventListener("toggle", e => {
+  // Hand focus back to the word that opened it, unless the reader has already moved on (tapped
+  // another term, or a link inside the popover).
+  if (e.newState !== "closed" || pop.matches(":popover-open")) return;
+  const a = document.activeElement;
+  if (popFrom && document.contains(popFrom) && (a === document.body || pop.contains(a))) popFrom.focus();
+});
+
+function termButton(id, label) {
+  if (!state.gloss[id]) return label;
+  return h("button", { type: "button", class: "term", "aria-haspopup": "dialog", onclick: e => openTerm(id, e.currentTarget) }, label);
+}
+
+function openTerm(id, from) {
+  // Without the Popover API (older browsers), the glossary page shows the same entry.
+  if (!POPOVER) { location.hash = "#/glossary#term-" + id; return; }
+  const g = state.gloss[id];
+  popFrom = from;
+  pop.replaceChildren(
+    h("div", { class: "pop-head" },
+      h("h2", { id: "term-pop-h", class: "mt0", tabindex: "-1", text: g.term }),
+      h("button", { type: "button", class: "btn pop-x", "aria-label": "Close", onclick: () => pop.hidePopover() }, "✕")),
+    ...termBody(g),
+    h("p", { class: "mt8" }, h("a", { href: "#/glossary#term-" + g.id, text: "All key terms" })));
+  if (pop.matches(":popover-open")) pop.hidePopover();
+  // source: Tab from the popover's last link continues after the word that opened it, not at the
+  // end of the page. Browsers without the option ignore it.
+  pop.showPopover({ source: from });
+  pop.scrollTop = 0;
+  pop.querySelector("h2").focus();
+}
+
+function termBody(g) {
+  const ex = g.example;
+  return [
+    ...g.lines.map(f => h("p", null, rich(f.t), f.s ? [" ", srcLink(f.s)] : null)),
+    ex ? h("div", { class: "example" },
+      h("p", { class: "ex-label", text: ex.s ? "Example from " + state.guide.sources[ex.s].publisher : "Made-up example, not from a source" }),
+      h("p", null, rich(ex.t), ex.s ? [" ", srcLink(ex.s)] : null)) : null,
+    g.link ? h("p", null, h("a", { href: g.link, text: g.label })) : null,
+  ].filter(Boolean);
 }
 
 // Must-know items from all three lists, pulled to the top of a type page with what kind each is.
@@ -153,11 +218,11 @@ function viewType(id, params) {
     glance(c.key),
     mustKnow(c),
     h("h2", { text: "In simple terms" }),
-    h("p", { class: "lede", text: c.plain }),
+    h("p", { class: "lede" }, rich(c.plain, false)),
     h("h2", { text: "Who it is for" }),
-    h("p", { text: c.who }),
+    h("p", null, rich(c.who, false)),
     h("h2", { text: "Key facts" }),
-    h("p", { text: c.what }),
+    h("p", null, rich(c.what, false)),
   ];
   // Must-know items already sit at the top; the sections below hold the rest.
   const sections = [
@@ -171,6 +236,7 @@ function viewType(id, params) {
     if (title) out.push(h("h2", { text: items.length < c[key].length ? moreTitle : title }));
     out.push(factList(items, cls));
   }
+  if (c.versus) out.push(versus(c.versus));
   if (c.schemes.length) {
     out.push(h("h2", { text: "What the Government already covers" }),
       h("div", { class: "grid" }, c.schemes.map(s => {
@@ -193,6 +259,26 @@ function viewType(id, params) {
     h("a", { href: "#/compare/" + id + (pick ? "?ins=" + pick : ""), text: (state.compare[id] || {}).kind === "moh" ? "Compare them side by side on MOH's figures" : "Compare them side by side" })));
   out.push(h("div", { class: "grid" }, list.map(p => productCard(p, true))));
   return out;
+}
+
+// Two covers side by side, row by row, then made-up situations. Every line carries its source;
+// nothing here says which to buy.
+function versus(vs) {
+  const lines = items => items.map(f => h("p", null, rich(f.t), " ", srcLink(f.s)));
+  return h("section", { id: "versus", class: "versus", "aria-labelledby": "versus-h" },
+    h("h2", { id: "versus-h", text: vs.title }),
+    h("p", { class: "lede", text: vs.intro }),
+    vs.rows.map(r => h("div", { class: "vs-row" },
+      h("h3", { text: r.k }),
+      h("div", { class: "vs-cols" },
+        h("div", { class: "vs-cell" }, h("p", { class: "vs-col", text: vs.cols[0] }), lines(r.a)),
+        h("div", { class: "vs-cell" }, h("p", { class: "vs-col", text: vs.cols[1] }), lines(r.b))))),
+    h("h3", { class: "mt16", text: "How they play out" }),
+    h("p", { class: "meta", text: vs.scenarios_note }),
+    h("div", { class: "grid" }, vs.scenarios.map(sc => h("div", { class: "card scenario" },
+      h("p", { class: "ex-label", text: "Made-up situation" }),
+      h("h4", { text: sc.title }),
+      sc.items.map(f => h("p", null, h("strong", { text: f.k + ": " }), rich(f.t), " ", srcLink(f.s)))))));
 }
 
 function viewInsurers() {
@@ -257,6 +343,12 @@ function viewCompare() {
 
 // Picked plans live in the URL (?p=a,b), so a comparison can be shared and survives a reload.
 // replaceState keeps ticking boxes from re-rendering the page or jumping the scroll position.
+// "?p=-" means "none ticked": no ?p means the view's default, so an empty list needs its own value.
+const NONE = "-";
+function pickedFromUrl(params, valid) {
+  const raw = params.get("p");
+  return { none: raw === NONE, ids: raw && raw !== NONE ? raw.split(",").filter(valid) : [] };
+}
 function setCompareUrl(cat, params) {
   const qs = new URLSearchParams();
   for (const [k, v] of Object.entries(params)) if (v) qs.set(k, v);
@@ -267,14 +359,19 @@ function setCompareUrl(cat, params) {
 function picker(items, picked, onChange) {
   const boxes = {};
   const count = h("span");
-  const el = h("details", { class: "picker" },
-    h("summary", null, "Choose plans ", count),
-    h("div", { class: "picker-grid" }, state.insurers.filter(i => items.some(x => x.insurer === i.id)).map(i =>
-      h("fieldset", null, h("legend", { text: shortIns(i.name) }),
-        items.filter(x => x.insurer === i.id).map(x => {
-          boxes[x.id] = h("input", { type: "checkbox", value: x.id, onchange: () => onChange(Object.keys(boxes).filter(id => boxes[id].checked)) });
-          return h("label", { class: "check" }, boxes[x.id], h("span", null, x.label, x.sub ? h("span", { class: "sub", text: x.sub }) : null));
-        })))));
+  // Outside the collapsed list, so "clear, then tick a few" works without opening it first.
+  const all = h("button", { type: "button", class: "btn", onclick: () => onChange(items.map(x => x.id)) }, "Select all");
+  const none = h("button", { type: "button", class: "btn", onclick: () => onChange([]) }, "Clear all");
+  const el = h("div", { class: "picker-wrap" },
+    h("div", { class: "quick", role: "group", "aria-label": "Select plans" }, all, none),
+    h("details", { class: "picker" },
+      h("summary", null, "Choose plans ", count),
+      h("div", { class: "picker-grid" }, state.insurers.filter(i => items.some(x => x.insurer === i.id)).map(i =>
+        h("fieldset", null, h("legend", { text: shortIns(i.name) }),
+          items.filter(x => x.insurer === i.id).map(x => {
+            boxes[x.id] = h("input", { type: "checkbox", value: x.id, onchange: () => onChange(Object.keys(boxes).filter(id => boxes[id].checked)) });
+            return h("label", { class: "check" }, boxes[x.id], h("span", null, x.label, x.sub ? h("span", { class: "sub", text: x.sub }) : null));
+          }))))));
   function update(ids) {
     for (const [id, b] of Object.entries(boxes)) b.checked = ids.includes(id);
     count.textContent = `(${ids.length} of ${items.length} chosen)`;
@@ -301,8 +398,9 @@ function compareTable(cat, comp, params, head) {
   const groups = comp.groups || [], bands = comp.bands || [];
   const ofGroup = g => comp.units.filter(u => u.group === g).map(u => u.id);
   const ins = params.get("ins");
-  let picked = (params.get("p") || "").split(",").filter(id => byId[id]);
-  if (!picked.length) picked = ins ? comp.units.filter(u => u.insurer === ins).map(u => u.id)
+  const fromUrl = pickedFromUrl(params, id => byId[id]);
+  let picked = fromUrl.ids;
+  if (!picked.length && !fromUrl.none) picked = ins ? comp.units.filter(u => u.insurer === ins).map(u => u.id)
     : groups.length ? ofGroup(groups[0].id) : comp.units.map(u => u.id);
   let band = bands.includes(params.get("age")) ? params.get("age") : comp.default_band;
   const groupName = Object.fromEntries(groups.map(g => [g.id, g.name]));
@@ -373,7 +471,7 @@ function compareTable(cat, comp, params, head) {
     ].flat().filter(Boolean));
   }
   function changed() {
-    setCompareUrl(cat, { p: picked.join(","), age: band === comp.default_band ? "" : band });
+    setCompareUrl(cat, { p: picked.length ? picked.join(",") : NONE, age: band === comp.default_band ? "" : band });
     draw();
   }
   // Plans of this type that MOH's table does not cover, named so none silently disappears.
@@ -416,12 +514,13 @@ function compareTable(cat, comp, params, head) {
 function comparePlans(cat, plans, params, head) {
   const ins = params.get("ins");
   const ids = plans.map(p => p.id);
-  let picked = (params.get("p") || "").split(",").filter(id => ids.includes(id));
-  if (!picked.length) picked = ins ? plans.filter(p => p.insurer === ins).map(p => p.id) : ids;
+  const fromUrl = pickedFromUrl(params, id => ids.includes(id));
+  let picked = fromUrl.ids;
+  if (!picked.length && !fromUrl.none) picked = ins ? plans.filter(p => p.insurer === ins).map(p => p.id) : ids;
   const grid = h("div", { class: "grid" });
   const pick = picker(plans.map(p => ({ id: p.id, insurer: p.insurer, label: p.name })), picked, sel => {
     picked = ids.filter(id => sel.includes(id));
-    setCompareUrl(cat, { p: picked.length === ids.length ? "" : picked.join(",") });
+    setCompareUrl(cat, { p: picked.length === ids.length ? "" : picked.length ? picked.join(",") : NONE });
     draw();
   });
   function draw() {
@@ -457,23 +556,57 @@ function viewSchemes() {
 
 function money(n) { return "S$" + Math.round(n).toLocaleString("en-SG"); }
 
+// Home-loan choices. HPS covers an HDB or bank loan on an HDB flat (required when paid with CPF,
+// encouraged when paid in cash) and never private property or ECs: CPF's own HPS page.
+const HOMES = [
+  ["none", "No home loan"],
+  ["hdb_cpf", "HDB flat, instalments paid with CPF"],
+  ["hdb_cash", "HDB flat, instalments paid in cash"],
+  ["private", "Private property or EC"],
+];
+
 function viewCheck() {
-  const r = state.guide.rules_of_thumb;
+  const r = state.guide.rules_of_thumb, sp = state.guide.starting_pay;
   const f = {
     age: h("input", { id: "c-age", type: "number", inputmode: "numeric", min: 0, max: 100, value: "35" }),
     income: h("input", { id: "c-inc", type: "number", inputmode: "numeric", min: 0, step: 1000, value: "60000" }),
     prem: h("input", { id: "c-prem", type: "number", inputmode: "numeric", min: 0, step: 100, value: "" , placeholder: "optional" }),
     work: h("input", { id: "c-work", type: "checkbox", checked: true }),
-    hdb: h("input", { id: "c-hdb", type: "checkbox" }),
+    home: h("select", { id: "c-home" }, HOMES.map(([v, t]) => h("option", { value: v, text: t }))),
+    loan: h("input", { id: "c-loan", type: "number", inputmode: "numeric", min: 0, step: 1000, value: "", placeholder: "optional" }),
+    share: h("input", { id: "c-share", type: "number", inputmode: "numeric", min: 0, max: 100, step: 10, value: "100" }),
   };
+  // Fresh graduates: MOE's median starting pay by course area, copied into the income box only
+  // when the reader asks, with the sum shown, so the figure in use is always visible.
+  const grad = h("select", { id: "c-grad" }, h("option", { value: "", text: "Choose your course area" }),
+    sp.items.map((it, i) => h("option", { value: String(i), text: it.k })));
+  const gradOut = h("div", { "aria-live": "polite" });
+  grad.addEventListener("change", () => {
+    const it = sp.items[grad.value];
+    if (!it) { gradOut.replaceChildren(); return; }
+    gradOut.replaceChildren(
+      h("p", null, h("strong", { text: `${money(it.v)} a month × 12 = ${money(it.v * 12)} a year` }), ` (${it.k}).`),
+      h("button", { type: "button", class: "btn", onclick: () => { f.income.value = String(it.v * 12); calc(); f.income.focus(); } }, "Use this as my income"));
+  });
+  const loanField = h("label", { class: "field" }, h("span", { text: "Home loan still owed (S$)" }), f.loan);
+  const shareField = h("label", { class: "field" }, h("span", { text: "Your share of HPS cover (%)" }), f.share);
   const res = h("div", { "aria-live": "polite" });
   function calc() {
     // min/max on the inputs do not stop typed values, so clamp here.
     const age = Math.min(120, Math.max(0, Math.floor(Number(f.age.value) || 0)));
     const inc = Math.max(0, Number(f.income.value) || 0), prem = Math.max(0, Number(f.prem.value) || 0);
+    const home = f.home.value, hdb = home.startsWith("hdb");
+    const loan = Math.max(0, Number(f.loan.value) || 0), share = Math.min(100, Math.max(0, Number(f.share.value) || 0));
+    loanField.hidden = home === "none";
+    shareField.hidden = !hdb;
     const year = new Date().getFullYear(), born = year - age;
     const tiles = [
-      h("div", { class: "card" }, h("p", { class: "meta", text: "Death and TPD cover (9x)" }), h("p", { class: "big", text: money(inc * 9) })),
+      h("div", { class: "card" }, h("p", { class: "meta", text: "Death and TPD cover (9x)" }), h("p", { class: "big", text: money(inc * 9) }),
+        home !== "none" && loan ? h("p", { class: "meta mt8" }, "Beside it, not added: your home loan of ", h("strong", { text: money(loan) }), ". ",
+          !hdb ? "HPS does not cover it."
+            : age >= 65 ? "HPS cover ends at 65."
+            : [home === "hdb_cash" ? "If you have HPS, it pays" : "HPS pays", " up to your ", h("strong", { text: share + "%" }),
+              " share of what is owed: about ", h("strong", { text: money(loan * share / 100) }), " today."]) : null),
       h("div", { class: "card" }, h("p", { class: "meta", text: "Critical illness cover (4x)" }), h("p", { class: "big", text: money(inc * 4) })),
       h("div", { class: "card" }, h("p", { class: "meta", text: "Protection budget (15% max)" }), h("p", { class: "big", text: money(inc * .15) + "/yr" }),
         f.prem.value !== "" ? h("p", { class: "meta" }, prem <= inc * .15 ? h("span", { class: "tag ok", text: "Within" }) : h("span", { class: "tag warn", text: "Above" }), ` You entered ${money(prem)}/yr.`) : null),
@@ -484,14 +617,17 @@ function viewCheck() {
     else if (born >= 1980) have.push(["careshield_life", `CareShield Life starts automatically at 30 (in about ${30 - age} year${30 - age === 1 ? "" : "s"}).`]);
     else have.push(["careshield_life", "CareShield Life is optional for those born 1979 or earlier. You may have ElderShield instead."]);
     if (f.work.checked && age >= 21 && age < 65) have.push(["dps", "DPS: S$70,000 term cover up to 59, S$55,000 to 64, unless you opted out."]);
-    if (f.hdb.checked && age < 65) have.push(["hps", "HPS pays off your HDB loan (up to the insured sum) until 65 or the loan ends."]);
-    res.replaceChildren(
+    if (home === "hdb_cpf" && age < 65) have.push(["hps", "HPS: required when you pay HDB flat instalments with CPF. It pays off the housing loan, up to your share of cover, until 65 or the loan ends."]);
+    if (home === "hdb_cash" && age < 65) have.push(["hps", "HPS only if you applied: it is not required when you pay in cash, though CPF strongly encourages it."]);
+    res.replaceChildren(...[
       h("div", { class: "result" }, tiles),
       h("p", { class: "meta mt8" }, "Rule of thumb from the ", ext(state.guide.sources[r.source].url, "MoneySense Basic Financial Planning Guide"), ". Count what you already hold, including the schemes below, before buying more."),
       h("h2", { text: "What you likely already have" }),
-      h("ul", { class: "facts" }, have.map(([id, t]) => h("li", null, t, " ", h("a", { href: "#/schemes#" + id, text: "Details" })))));
+      h("ul", { class: "facts" }, have.map(([id, t]) => h("li", null, t, " ", h("a", { href: "#/schemes#" + id, text: "Details" })))),
+      home !== "none" ? homeNote(home, age) : null,
+    ].filter(Boolean));
   }
-  for (const el of Object.values(f)) el.addEventListener("input", calc);
+  for (const el of [...Object.values(f)]) el.addEventListener("input", calc);
   calc();
   return [
     h("h1", { text: "Cover check" }),
@@ -500,11 +636,39 @@ function viewCheck() {
       h("label", { class: "field" }, h("span", { text: "Your age" }), f.age),
       h("label", { class: "field" }, h("span", { text: "Annual income (S$)" }), f.income),
       h("label", { class: "field" }, h("span", { text: "Yearly protection premiums (S$)" }), f.prem),
-      h("label", { class: "check" }, f.work, "Working, with CPF contributions"),
-      h("label", { class: "check" }, f.hdb, "Paying an HDB loan with CPF")),
+      h("label", { class: "check" }, f.work, "Working, with CPF contributions")),
+    h("details", { class: "faq grad" },
+      h("summary", null, h("span", { class: "q", text: "Just started work? Use a typical starting pay" }),
+        h("span", { class: "short", text: "Your offer letter is better if you have one. This is MOE's median for university graduates." })),
+      h("div", null,
+        h("label", { class: "field" }, h("span", { text: "Course area" }), grad),
+        gradOut,
+        h("p", { class: "meta mt8" }, sp.who, " ", srcLink(sp.s)))),
+    h("div", { class: "form mt16" },
+      h("label", { class: "field" }, h("span", { text: "Home loan" }), f.home),
+      loanField,
+      shareField),
     res,
     h("p", { class: "notice mt16", text: "These multiples are general guidance, not a recommendation for you. Dependants, debts, savings and existing policies change the right amount." }),
   ];
+}
+
+// What the official sources say about the home loan the reader chose. No source used here adds a
+// home loan to the 9x rule, so the loan is shown beside it and this note says so.
+function homeNote(home, age) {
+  const t = (id, label) => termButton(id, label);
+  const items = home === "private" ? [
+    [t("hps", "HPS"), " does not cover private property or ECs. For a private property loan, CPF suggests private insurance. ", srcLink("cpf_hps")],
+    ["MoneySense lists ", t("decreasing-term", "mortgage reducing term assurance"), " as cover that pays off the home loan if the main borrower dies. It names the kind of cover, not an amount or a plan. ", srcLink("ms_needs")],
+  ] : [
+    [t("hps", "HPS"), " covers an HDB loan or a bank loan on an HDB flat. It does not cover private property or ECs. ", srcLink("cpf_hps")],
+    age >= 65 ? ["HPS cover ends at 65. CPF suggests private insurance for a loan running past it. ", srcLink("cpf_hps")]
+      : ["If your loan runs past 65, CPF suggests private insurance for after HPS ends. ", srcLink("cpf_hps")],
+  ];
+  return h("section", { "aria-labelledby": "home-h" },
+    h("h2", { id: "home-h", text: "Your home loan" }),
+    h("ul", { class: "facts" }, items.map(x => h("li", null, x))),
+    h("p", { class: "meta mt8", text: "None of the official sources used here gives a rule for adding a home loan to the 9x figure, or recommends a particular mortgage plan, so the loan is shown beside the figure rather than added to it." }));
 }
 
 // The short answer sits in the summary, so the page answers every question without a tap.
@@ -518,6 +682,22 @@ function viewFaq() {
   return [
     h("h1", { text: "Common questions" }),
     state.guide.faq.map(faqItem),
+  ];
+}
+
+function viewGlossary() {
+  const g = state.guide;
+  return [
+    h("h1", { text: "Key terms" }),
+    h("p", { class: "lede", text: "The insurance words this site uses, in plain English, each linked to the official page it comes from. Tap an underlined word anywhere on the site to see its entry without leaving the page." }),
+    // flatMap: route() flattens only three levels, and this nests one deeper than other views.
+    g.glossary_groups.flatMap(gr => [
+      h("h2", { text: gr.name }),
+      g.glossary.filter(t => t.group === gr.id).map(t => h("section", { class: "card term-card", id: "term-" + t.id, "aria-labelledby": "th-" + t.id },
+        h("h3", { id: "th-" + t.id, class: "mt0", text: t.term }),
+        termBody(t))),
+    ]),
+    disclaimerNote(),
   ];
 }
 
@@ -559,16 +739,18 @@ function viewSources() {
 function viewSearch(q) {
   const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
   const hit = s => terms.every(t => s.toLowerCase().includes(t));
-  const cats = Object.values(state.cats).filter(c => hit([c.name, c.short, c.plain, c.who, c.what].join(" ")));
+  const cats = Object.values(state.cats).filter(c => hit(plainText([c.name, c.short, c.plain, c.who, c.what].join(" "))));
+  const gloss = state.guide.glossary.filter(t => hit([t.term, ...(t.aliases || []), ...t.lines.map(l => l.t)].join(" ")));
   const prods = state.products.filter(p => hit([p.name, insName(p.insurer), catName(p.category), p.subtype || "", p.summary, p.facts.join(" ")].join(" ")));
   const ins = state.insurers.filter(i => hit(i.name + " " + (i.formerly || "")));
-  const faq = state.guide.faq.filter(f => hit(f.q + " " + f.a));
-  const pains = state.guide.pain_points.filter(p => hit([p.title, ...p.why.map(f => f.t), ...p.fix.map(f => f.t)].join(" ")));
+  const faq = state.guide.faq.filter(f => hit(plainText(f.q + " " + f.a)));
+  const pains = state.guide.pain_points.filter(p => hit(plainText([p.title, ...p.why.map(f => f.t), ...p.fix.map(f => f.t)].join(" "))));
   const schemes = state.guide.schemes.filter(s => hit([s.name, s.kind, s.who, s.facts.map(f => f.t).join(" ")].join(" ")));
   const out = [h("h1", { text: `Results for “${q}”` })];
-  if (!cats.length && !prods.length && !ins.length && !faq.length && !schemes.length && !pains.length) {
+  if (!cats.length && !prods.length && !ins.length && !faq.length && !schemes.length && !pains.length && !gloss.length) {
     out.push(h("p", { text: "Nothing matched. Try a plan name, an insurer, or a word like “cancer” or “hospital”." }));
   }
+  if (gloss.length) out.push(h("h2", { text: "Key terms" }), h("div", { class: "grid" }, gloss.map(t => h("a", { class: "card", href: "#/glossary#term-" + t.id }, h("h3", { text: t.term }), h("p", { class: "meta", text: t.lines[0].t })))));
   if (ins.length) out.push(h("h2", { text: "Insurers" }), h("div", { class: "grid" }, ins.map(i => h("a", { class: "card", href: "#/insurer/" + i.id }, h("h3", { text: i.name })))));
   if (cats.length) out.push(h("h2", { text: "Insurance types" }), h("div", { class: "grid" }, cats.map(c => h("a", { class: "card", href: "#/type/" + c.id }, h("h3", { text: c.name }), h("p", { text: c.short })))));
   if (schemes.length) out.push(h("h2", { text: "National schemes" }), h("div", { class: "grid" }, schemes.map(s => h("a", { class: "card", href: "#/schemes#" + s.id }, h("h3", { text: s.name }), h("p", { class: "meta", text: s.kind })))));
@@ -584,9 +766,10 @@ function viewMissing() {
 }
 
 // ---------- router ----------
-const TAB_OF = { "": "types", type: "types", top5: "top5", insurers: "insurers", insurer: "insurers", compare: "compare", schemes: "schemes", check: "check", faq: "faq", sources: "sources" };
+const TAB_OF = { "": "types", type: "types", top5: "top5", insurers: "insurers", insurer: "insurers", compare: "compare", schemes: "schemes", check: "check", glossary: "glossary", faq: "faq", sources: "sources" };
 
 function route() {
+  if (POPOVER && pop.matches(":popover-open")) { popFrom = null; pop.hidePopover(); }
   const raw = location.hash.replace(/^#\/?/, "");
   const [pathPart, anchor] = raw.split("#");
   const [path, qs] = pathPart.split("?");
@@ -602,6 +785,7 @@ function route() {
     case "compare": view = arg ? viewCompareType(decodeURIComponent(arg), params) : viewCompare(); break;
     case "schemes": view = viewSchemes(); break;
     case "check": view = viewCheck(); break;
+    case "glossary": view = viewGlossary(); break;
     case "faq": view = viewFaq(); break;
     case "sources": view = viewSources(); break;
     case "search": view = viewSearch(params.get("q") || ""); break;
@@ -638,6 +822,7 @@ async function load() {
     state.products = i.insurers.flatMap(ins => ins.products.map(p => Object.assign({ insurer: ins.id }, p)));
     for (const c of g.categories) state.cats[c.id] = c;
     for (const s of g.schemes) state.schemes[s.id] = s;
+    for (const t of g.glossary) state.gloss[t.id] = t;
     document.getElementById("foot-meta").textContent =
       `Government facts checked ${g.updated}. ${state.products.length} plans from ${state.insurers.length} insurers.`;
     window.addEventListener("hashchange", route);
