@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.10.19.3
+
+- Cute theme: shield mascot, category icons, softer palette
+
 ## v2026.10.19.2
 
 - Weekly local verifier run for the sources GitHub cannot read
