@@ -14,6 +14,8 @@ research/pdf/
 research/raw/
 research/scratch/
 research/fact_report.json
+# The user's own reference notes, kept locally only.
+/Key terms to explain simply with simple examples.pdf
 
 .vercel
 .env*
