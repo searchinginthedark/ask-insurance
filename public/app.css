@@ -6,51 +6,71 @@
 }
 
 :root {
-  /* Cool blue-grey paper, not cream (cream/off-white is on the fleet's avoid list). */
-  --bg: #e9eff5;
+  /* Soft lavender paper with warm amber, coral and mint accents: friendly, never cream/off-white
+     (on the fleet's avoid list). Every text pair is checked by tools/contrast.py. */
+  --bg: #ebe8f7;
   --surface: #ffffff;
-  --text: #15232f;
-  --muted: #4a5b69;
-  --line: #d3dde7;
-  --edge: #7a8b9b;
-  --brand: #123a57;
+  --text: #1e1a3c;
+  --muted: #514b74;
+  --line: #dbd6ee;
+  --edge: #7f78a6;
+  --brand: #372f7d;
   --on-brand: #ffffff;
   --accent: #9a5804;      /* amber from the icon, darkened to clear 4.5:1 as text (tools/contrast.py) */
-  --link: #1557a6;
-  --focus: #1a5fb4;
-  --warn-bg: #fff1d6;
+  --link: #3346b0;
+  --focus: #5a3fd0;
+  --warn-bg: #fff0d4;
   --warn-fg: #5a3b00;
-  --ok-bg: #dff3e6;
+  --ok-bg: #dcf3e6;
   --ok-fg: #145a31;
-  --tag-bg: #e6edf4;
-  --tag-fg: #2b3d4c;
-  --shadow: 0 1px 0 rgba(21, 35, 47, .06);
-  /* No pills: controls 10px, inline tags 6px, like the rest of the fleet. */
-  --r-card: 14px;
-  --r-ctl: 10px;
-  --r-tag: 6px;
+  --tag-bg: #ebe7fa;
+  --tag-fg: #342e5e;
+  --shadow: 0 1px 0 rgba(55, 47, 125, .05), 0 6px 16px -10px rgba(55, 47, 125, .35);
+  --shadow-up: 0 2px 0 rgba(55, 47, 125, .06), 0 12px 24px -12px rgba(55, 47, 125, .45);
+  /* Mascot: the icon's amber shield, a darker amber for its arms, ink for the face. */
+  --m-body: #f0a23b;
+  --m-body-dk: #d9831c;
+  --m-ink: #2a2350;
+  --m-cheek: #f6a0b4;
+  /* Category chips, one soft tint per group: background and icon ink (>= 3:1 for the icon). */
+  --c0-bg: #d8f1e5; --c0-fg: #17694a;
+  --c1-bg: #e4ddfb; --c1-fg: #4b36a8;
+  --c2-bg: #fbdde6; --c2-fg: #a12d50;
+  --c3-bg: #d8eafb; --c3-fg: #1f5c96;
+  --c4-bg: #fde2cb; --c4-fg: #8a4a0f;
+  /* Rounder than before, but still no pills: controls 14px, inline tags 8px. */
+  --r-card: 22px;
+  --r-ctl: 14px;
+  --r-tag: 8px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0e171f;
-    --surface: #17232d;
-    --text: #e6eef5;
-    --muted: #a3b4c2;
-    --line: #273642;
-    --edge: #66798a;
-    --brand: #9cc6ea;
-    --on-brand: #0e171f;
+    --bg: #15132a;
+    --surface: #211e3b;
+    --text: #ece9fb;
+    --muted: #b6b0d8;
+    --line: #34305a;
+    --edge: #7d76ab;
+    --brand: #bcb3ff;
+    --on-brand: #15132a;
     --accent: #f0a23b;
-    --link: #8ec2ff;
-    --focus: #7db3ff;
+    --link: #aab8ff;
+    --focus: #b9a4ff;
     --warn-bg: #43330f;
     --warn-fg: #ffdf9e;
     --ok-bg: #173a27;
     --ok-fg: #9fe3b8;
-    --tag-bg: #22313d;
-    --tag-fg: #d3e0ea;
+    --tag-bg: #2d2952;
+    --tag-fg: #ddd8f7;
     --shadow: none;
+    --shadow-up: 0 10px 24px -14px rgba(0, 0, 0, .8);
+    --m-ink: #2a2350;
+    --c0-bg: #17392b; --c0-fg: #8fe0bd;
+    --c1-bg: #2e2763; --c1-fg: #c6b9ff;
+    --c2-bg: #47202f; --c2-fg: #ffadc4;
+    --c3-bg: #182f49; --c3-fg: #9cccff;
+    --c4-bg: #45290f; --c4-fg: #ffc27f;
   }
 }
 
@@ -104,6 +124,7 @@ p { margin: 0 0 .75rem; }
   flex: none; display: inline-flex; align-items: center; min-height: 40px; padding: 0 12px;
   border-radius: var(--r-ctl); color: var(--muted); text-decoration: none; font-weight: 600; font-size: .93rem;
 }
+.tabs a:hover { background: var(--tag-bg); color: var(--text); }
 .tabs a[aria-current="page"] { background: var(--brand); color: var(--on-brand); }
 
 main { padding-top: 20px; padding-bottom: 32px; min-height: 60vh; }
@@ -119,8 +140,8 @@ main:focus { outline: none; }
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-card);
   padding: 14px 16px; box-shadow: var(--shadow); min-width: 0;
 }
-a.card { display: block; color: inherit; text-decoration: none; }
-a.card:hover { border-color: var(--edge); }
+a.card { display: block; color: inherit; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
+a.card:hover { border-color: var(--edge); transform: translateY(-2px); box-shadow: var(--shadow-up); }
 a.card h3 { color: var(--link); }
 .card .meta { color: var(--muted); font-size: .88rem; margin: 0; }
 .group-title { font-size: .95rem; color: var(--muted); font-weight: 700; margin: 1.5rem 0 .6rem; }
@@ -299,6 +320,43 @@ details.faq div { padding: 0 14px 12px; }
 .notice a { color: inherit; }
 
 .foot { color: var(--muted); font-size: .88rem; padding-top: 16px; padding-bottom: 32px; border-top: 1px solid var(--line); }
+
+/* Mascot and category icons. Decorative: they sit beside text, never on top of figures or warnings. */
+.mascot { flex: none; display: block; overflow: visible; }
+/* Phone: mascot beside the title, intro full width below. Wider: the intro sits under the title. */
+.hero { display: grid; grid-template-columns: auto 1fr; grid-template-areas: "m h" "l l"; gap: 4px 14px; align-items: center; }
+.hero .mascot { grid-area: m; width: 88px; height: 88px; }
+.hero h1 { grid-area: h; margin: 0; }
+.hero .lede { grid-area: l; margin: .5rem 0 0; }
+@media (min-width: 640px) {
+  .hero { grid-template-areas: "m h" "m l"; align-items: start; }
+  .hero h1 { align-self: end; }
+}
+.say { display: flex; gap: 10px; align-items: flex-start; margin: 0 0 1rem; }
+.say .lede {
+  position: relative; margin: 6px 0 0; padding: 10px 14px; color: var(--text);
+  background: var(--surface); border: 1px solid var(--line); border-radius: 4px var(--r-card) var(--r-card) var(--r-card);
+  box-shadow: var(--shadow);
+}
+.must-head { display: flex; gap: 8px; align-items: center; margin-bottom: .5rem; }
+.must-head h2 { margin: 0; }
+.pop-head .mascot { margin-top: 4px; }
+.pop-head h2 { flex: 1; }
+.empty { display: flex; gap: 12px; align-items: center; background: var(--surface); border: 1px dashed var(--edge); border-radius: var(--r-card); padding: 12px 16px; margin: .5rem 0 1rem; }
+.empty p { margin: 0; }
+.chip { flex: none; display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: var(--r-ctl); }
+.g0 .chip { background: var(--c0-bg); color: var(--c0-fg); }
+.g1 .chip { background: var(--c1-bg); color: var(--c1-fg); }
+.g2 .chip { background: var(--c2-bg); color: var(--c2-fg); }
+.g3 .chip { background: var(--c3-bg); color: var(--c3-fg); }
+.g4 .chip { background: var(--c4-bg); color: var(--c4-fg); }
+.card-head { display: flex; gap: 12px; align-items: center; margin-bottom: .5rem; }
+.card-head h3 { margin: 0; }
+h1.with-chip { display: flex; gap: 12px; align-items: center; }
+@media (max-width: 560px) {
+  .hero .mascot { width: 64px; height: 64px; }
+  .say .mascot { width: 40px; height: 40px; }
+}
 
 @media (max-width: 560px) {
   .top-row { flex-wrap: wrap; }

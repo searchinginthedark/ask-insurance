@@ -32,6 +32,72 @@ function h(tag, attrs, ...kids) {
   return el;
 }
 
+// ---------- mascot and category icons: decorative only, hidden from screen readers ----------
+// Colours come from CSS custom properties so both themes restyle them without new markup.
+function svg(tag, attrs, ...kids) {
+  const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs || {})) el.setAttribute(k, v);
+  el.append(...kids.flat(3).filter(Boolean));
+  return el;
+}
+
+// The shield from the app icon, with a face. Poses change only the eyes, mouth and arms.
+const POSES = {
+  happy: { mouth: "M27.5 36 Q32 40.5 36.5 36", arms: ["M11 31 Q5.5 34 7 40", "M53 31 Q58.5 34 57 40"] },
+  wave: { mouth: "M27.5 36 Q32 40.5 36.5 36", arms: ["M11 31 Q5.5 34 7 40", "M53 29 Q60 24 58.5 16"] },
+  think: { mouth: "o", eyesUp: true, arms: ["M11 31 Q5.5 34 7 40", "M53 31 Q50 40 41 40"] },
+  alert: { mouth: "o", arms: ["M11 29 Q5 25 6 19", "M53 29 Q59 25 58 19"] },
+  oops: { mouth: "M27 37.5 Q29.5 35 32 37.5 Q34.5 40 37 37.5", arms: ["M11 29 Q4 27 4.5 21", "M53 31 Q58.5 34 57 40"] },
+  read: { mouth: "M28.5 36 Q32 39 35.5 36", eyesDown: true, arms: ["M11 33 Q14 44 21 44", "M53 33 Q50 44 43 44"], book: true },
+};
+function mascot(pose = "happy", size = 44) {
+  const p = POSES[pose] || POSES.happy;
+  const ey = p.eyesUp ? 25.5 : p.eyesDown ? 29.5 : 28;
+  const ink = { fill: "none", stroke: "var(--m-ink)", "stroke-width": "2.4", "stroke-linecap": "round", "stroke-linejoin": "round" };
+  return svg("svg", { class: "mascot m-" + pose, viewBox: "0 0 64 64", width: size, height: size, "aria-hidden": "true", focusable: "false" },
+    p.arms.map(d => svg("path", { d, fill: "none", stroke: "var(--m-body-dk)", "stroke-width": "4.5", "stroke-linecap": "round" })),
+    svg("path", { d: "M32 5 Q45 9.5 54 10 Q57 39 32 58.5 Q7 39 10 10 Q19 9.5 32 5 Z", fill: "var(--m-body)", stroke: "var(--m-body)", "stroke-width": "3", "stroke-linejoin": "round" }),
+    svg("ellipse", { cx: "21", cy: "17", rx: "5", ry: "3", fill: "#fff", opacity: ".45", transform: "rotate(-25 21 17)" }),
+    [24, 40].map(x => [svg("ellipse", { cx: x, cy: ey, rx: "2.7", ry: "3.4", fill: "var(--m-ink)" }),
+      svg("circle", { cx: x + 0.9, cy: ey - 1.2, r: "0.95", fill: "#fff" })]),
+    [18.5, 45.5].map(x => svg("ellipse", { cx: x, cy: "35", rx: "3.6", ry: "2.2", fill: "var(--m-cheek)" })),
+    p.mouth === "o" ? svg("ellipse", { cx: "32", cy: "37", rx: "1.9", ry: "2.3", fill: "var(--m-ink)" }) : svg("path", Object.assign({ d: p.mouth }, ink)),
+    p.book ? [svg("rect", { x: "20", y: "43", width: "24", height: "12", rx: "2.5", fill: "var(--brand)" }),
+      svg("path", { d: "M32 44.5 V53.5", stroke: "var(--on-brand)", "stroke-width": "1.6", "stroke-linecap": "round" })] : null);
+}
+// The mascot "says" a page's intro: a speech bubble beside it, the text itself unchanged.
+function say(pose, bubble) { return h("div", { class: "say" }, mascot(pose, 48), bubble); }
+function empty(pose, ...kids) { return h("div", { class: "empty" }, mascot(pose, 64), h("div", null, ...kids)); }
+
+// One line-drawn icon per insurance type, 24x24, stroked in the chip's ink colour.
+const ICONS = {
+  hospitalisation: ["M5 21V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v13", "M3 21h18", "M12 8.5v6M9 11.5h6"],
+  ip_rider: ["M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z", "M12 9v6M9 12h6"],
+  hospital_cash: ["C12 12 8.5", "M14.5 9.6c-.6-.8-1.5-1.1-2.5-1.1-1.4 0-2.4.7-2.4 1.7 0 2.5 5 1.3 5 3.9 0 1-1.1 1.8-2.6 1.8-1 0-2-.4-2.6-1.1", "M12 7v1.5M12 15.9v1.4"],
+  outpatient: ["M6 3v5a4 4 0 0 0 8 0V3", "M10 12v3a5 5 0 0 0 10 0v-2", "C20 11 2"],
+  term_life: ["M6.5 3h11M6.5 21h11", "M8 3c0 5 8 6 8 9s-8 4-8 9", "M16 3c0 5-8 6-8 9s8 4 8 9"],
+  whole_life: ["M12 21v-9", "M12 12c0-4.4 3-7 7.5-7 0 4.4-3 7-7.5 7z", "M12 15c0-3.3-2.3-5.5-6.5-5.5 0 3.3 2.3 5.5 6.5 5.5z"],
+  disability_income: ["M4 8h15a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z", "M4 8l11-4 1.5 4", "M16 14h2"],
+  critical_illness: ["M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.6A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z", "M7.5 12h2.5l1.5-2.5 2 4 1.3-1.5h1.7"],
+  cancer: ["M9.2 9.8C8 8 8.3 4 12 4s4 4 2.8 5.8L8 20", "M10.5 13.4L16 20"],
+  long_term_care: ["M4 11l8-7 8 7v8.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19.5z", "M12 17.5s-3.2-1.9-3.2-4a1.6 1.6 0 0 1 3.2-.6 1.6 1.6 0 0 1 3.2.6c0 2.1-3.2 4-3.2 4z"],
+  personal_accident: ["M4.2 14.6l10.4-10.4a3.5 3.5 0 0 1 5 5L9.2 19.6a3.5 3.5 0 0 1-5-5z", "M9.5 9.5l5 5", "M11 13h.01M13 11h.01"],
+  maternity_child: ["C12 13 7.5", "M9.6 12h.01M14.4 12h.01", "M10 15.2q2 1.6 4 0", "M12 5.5c0-1.6 1.2-2.5 2.6-2"],
+  rider: ["M8.5 13l6.4-6.4a3 3 0 0 1 4.2 4.2l-8.5 8.5a5 5 0 0 1-7.1-7.1l7.4-7.4"],
+};
+function catIcon(id) {
+  const ds = ICONS[id];
+  if (!ds) return null;
+  return h("span", { class: "chip", "aria-hidden": "true" },
+    svg("svg", { viewBox: "0 0 24 24", width: "26", height: "26", fill: "none", stroke: "currentColor", "stroke-width": "1.9", "stroke-linecap": "round", "stroke-linejoin": "round", focusable: "false" },
+      ds.map(d => {
+        if (!d.startsWith("C")) return svg("path", { d });
+        const [cx, cy, r] = d.slice(1).trim().split(/\s+/);
+        return svg("circle", { cx, cy, r });
+      })));
+}
+const GROUP_OF = Object.fromEntries(GROUPS.flatMap(([, ids], g) => ids.map(id => [id, g])));
+
 function safeUrl(u) {
   return typeof u === "string" && /^https:\/\//.test(u) ? u : null;
 }
@@ -113,7 +179,7 @@ function openTerm(id, from) {
   const g = state.gloss[id];
   popFrom = from;
   pop.replaceChildren(
-    h("div", { class: "pop-head" },
+    h("div", { class: "pop-head" }, mascot("read", 40),
       h("h2", { id: "term-pop-h", class: "mt0", tabindex: "-1", text: g.term }),
       h("button", { type: "button", class: "btn pop-x", "aria-label": "Close", onclick: () => pop.hidePopover() }, "✕")),
     ...termBody(g),
@@ -143,7 +209,7 @@ function mustKnow(c) {
   const items = kinds.flatMap(([key, label]) => c[key].filter(f => f.top).map(f => [label, f]));
   if (!items.length) return null;
   return h("section", { class: "must", "aria-labelledby": "must-h" },
-    h("h2", { id: "must-h", class: "mt0", text: "Must know" }),
+    h("div", { class: "must-head" }, mascot("alert", 36), h("h2", { id: "must-h", class: "mt0", text: "Must know" })),
     h("ul", null, items.map(([label, f]) => h("li", null,
       h("span", { class: "tag" + (label === "Pitfall" ? " warn" : ""), text: label }), " ",
       rich(f.t), f.s ? [" ", srcLink(f.s)] : null))));
@@ -165,11 +231,12 @@ function insName(id) { const i = state.insurers.find(x => x.id === id); return i
 // ---------- views ----------
 function viewTypes() {
   const out = [
-    h("h1", { text: "Singapore personal insurance, sourced" }),
-    h("p", { class: "lede", text: "Every type of protection insurance except travel, explained in plain words: what it does, what can go wrong, what the Government already gives you, and which insurers sell it. Every official figure links to its source." }),
+    h("div", { class: "hero" }, mascot("wave", 88),
+      h("h1", { text: "Singapore personal insurance, sourced" }),
+      h("p", { class: "lede", text: "Every type of protection insurance except travel, explained in plain words: what it does, what can go wrong, what the Government already gives you, and which insurers sell it. Every official figure links to its source." })),
     disclaimerNote(),
     h("section", { class: "must", "aria-labelledby": "top5-h" },
-      h("h2", { id: "top5-h", class: "mt0", text: "Top 5 ways people get caught out" }),
+      h("div", { class: "must-head" }, mascot("alert", 36), h("h2", { id: "top5-h", class: "mt0", text: "Top 5 ways people get caught out" })),
       h("ol", { class: "top5" }, state.guide.pain_points.map(p =>
         h("li", null, h("a", { href: "#/top5#" + p.id, text: p.title }))))),
   ];
@@ -179,8 +246,8 @@ function viewTypes() {
       const c = state.cats[id];
       const prods = state.products.filter(p => p.category === id);
       const sellers = new Set(prods.map(p => p.insurer)).size;
-      return h("a", { class: "card", href: "#/type/" + id },
-        h("h3", { text: c.name }),
+      return h("a", { class: "card type g" + GROUP_OF[id], href: "#/type/" + id },
+        h("div", { class: "card-head" }, catIcon(id), h("h3", { text: c.name })),
         h("p", { text: c.short }),
         h("p", { class: "meta", text: prods.length ? `${prods.length} plans from ${sellers} insurer${sellers === 1 ? "" : "s"}` : "National schemes and guidance" }));
     })));
@@ -214,7 +281,7 @@ function viewType(id, params) {
   const list = pick ? all.filter(p => p.insurer === pick) : all;
   const out = [
     h("p", { class: "crumb" }, h("a", { href: "#/", text: "All types" })),
-    h("h1", { text: c.name }),
+    h("h1", { class: "with-chip g" + GROUP_OF[id] }, catIcon(id), h("span", { text: c.name })),
     glance(c.key),
     mustKnow(c),
     h("h2", { text: "In simple terms" }),
@@ -249,7 +316,7 @@ function viewType(id, params) {
   out.push(disclaimerNote());
   out.push(h("h2", { text: `Who sells it (${all.length})` }));
   if (!all.length) {
-    out.push(h("p", { class: "meta", text: "None of the insurers covered here lists a standalone plan of this type on its website. See the national schemes above." }));
+    out.push(empty("think", h("p", { class: "meta", text: "None of the insurers covered here lists a standalone plan of this type on its website. See the national schemes above." })));
     return out;
   }
   const sel = h("select", { id: "f-ins", onchange: e => { location.hash = "#/type/" + id + (e.target.value ? "?insurer=" + e.target.value : ""); } },
@@ -444,7 +511,7 @@ function compareTable(cat, comp, params, head) {
     }
     const cols = picked.map(id => byId[id]);
     status.textContent = `Comparing ${cols.length} plan${cols.length === 1 ? "" : "s"}${cols.length && age ? ", premiums at age " + band : ""}.`;
-    if (!cols.length) { body.replaceChildren(h("p", { class: "notice", text: "Tick at least one plan above to compare." })); return; }
+    if (!cols.length) { body.replaceChildren(empty("think", h("p", { text: "Tick at least one plan above to compare." }))); return; }
     const sameGroups = [...new Set(cols.map(u => u.group))].filter(g => (comp.same_benefits || {})[g]);
     const table = h("table", { class: "cmp" },
       h("caption", { class: "sr", text: `${c.name}: ${cols.length} plans compared` }),
@@ -529,7 +596,7 @@ function comparePlans(cat, plans, params, head) {
     pick.update(picked);
     status.textContent = `Comparing ${picked.length} of ${ids.length} plan${ids.length === 1 ? "" : "s"}.`;
     grid.replaceChildren(...(picked.length ? plans.filter(p => picked.includes(p.id)).map(p => productCard(p, true))
-      : [h("p", { class: "notice", text: "Tick at least one plan above to compare." })]));
+      : [empty("think", h("p", { text: "Tick at least one plan above to compare." }))]));
   }
   draw();
   return [
@@ -752,11 +819,11 @@ function viewSearch(q) {
   const schemes = state.guide.schemes.filter(s => hit([s.name, s.kind, s.who, s.facts.map(f => f.t).join(" ")].join(" ")));
   const out = [h("h1", { text: `Results for “${q}”` })];
   if (!cats.length && !prods.length && !ins.length && !faq.length && !schemes.length && !pains.length && !gloss.length) {
-    out.push(h("p", { text: "Nothing matched. Try a plan name, an insurer, or a word like “cancer” or “hospital”." }));
+    out.push(empty("think", h("p", { text: "Nothing matched. Try a plan name, an insurer, or a word like “cancer” or “hospital”." })));
   }
   if (gloss.length) out.push(h("h2", { text: "Key terms" }), h("div", { class: "grid" }, gloss.map(t => h("a", { class: "card", href: "#/glossary#term-" + t.id }, h("h3", { text: t.term }), h("p", { class: "meta", text: t.lines[0].t })))));
   if (ins.length) out.push(h("h2", { text: "Insurers" }), h("div", { class: "grid" }, ins.map(i => h("a", { class: "card", href: "#/insurer/" + i.id }, h("h3", { text: i.name })))));
-  if (cats.length) out.push(h("h2", { text: "Insurance types" }), h("div", { class: "grid" }, cats.map(c => h("a", { class: "card", href: "#/type/" + c.id }, h("h3", { text: c.name }), h("p", { text: c.short })))));
+  if (cats.length) out.push(h("h2", { text: "Insurance types" }), h("div", { class: "grid" }, cats.map(c => h("a", { class: "card type g" + GROUP_OF[c.id], href: "#/type/" + c.id }, h("div", { class: "card-head" }, catIcon(c.id), h("h3", { text: c.name })), h("p", { text: c.short })))));
   if (schemes.length) out.push(h("h2", { text: "National schemes" }), h("div", { class: "grid" }, schemes.map(s => h("a", { class: "card", href: "#/schemes#" + s.id }, h("h3", { text: s.name }), h("p", { class: "meta", text: s.kind })))));
   if (pains.length) out.push(h("h2", { text: "Top 5 ways people get caught out" }), h("div", { class: "grid" }, pains.map(p => h("a", { class: "card", href: "#/top5#" + p.id }, h("h3", { text: p.title })))));
   if (faq.length) out.push(h("h2", { text: "Questions" }), faq.map(faqItem));
@@ -766,10 +833,11 @@ function viewSearch(q) {
 }
 
 function viewMissing() {
-  return [h("h1", { text: "Page not found" }), h("p", null, h("a", { href: "#/", text: "Back to all insurance types" }))];
+  return [h("h1", { text: "Page not found" }), empty("oops", h("p", null, "This page has wandered off. ", h("a", { href: "#/", text: "Back to all insurance types" })))];
 }
 
 // ---------- router ----------
+const LEDE_POSE = { top5: "alert", insurers: "wave", glossary: "read", sources: "read", faq: "think" };
 const TAB_OF = { "": "types", type: "types", top5: "top5", insurers: "insurers", insurer: "insurers", compare: "compare", schemes: "schemes", check: "check", glossary: "glossary", faq: "faq", sources: "sources" };
 
 function route() {
@@ -796,6 +864,9 @@ function route() {
     default: view = viewMissing();
   }
   main.replaceChildren(...[view].flat(3).filter(Boolean));
+  // On every page but home (which has its own hero), the mascot "says" the intro paragraph.
+  const lede = seg !== "" && main.querySelector(":scope > .lede");
+  if (lede) { const at = h("span"); lede.replaceWith(at); at.replaceWith(say(LEDE_POSE[seg] || "happy", lede)); }
   const tab = TAB_OF[seg];
   document.querySelectorAll(".tabs a").forEach(a => {
     if (a.dataset.tab === tab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
@@ -832,7 +903,7 @@ async function load() {
     window.addEventListener("hashchange", route);
     route();
   } catch (err) {
-    main.replaceChildren(h("h1", { text: "Could not load the data" }), h("p", { text: "Check your connection and reload. (" + err.message + ")" }));
+    main.replaceChildren(h("h1", { text: "Could not load the data" }), empty("oops", h("p", { text: "Check your connection and reload. (" + err.message + ")" })));
   }
 }
 

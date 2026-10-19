@@ -15,7 +15,10 @@ PAIRS = [("text", "bg", 4.5), ("text", "surface", 4.5), ("muted", "bg", 4.5), ("
          # "Must know" flag text, and the accent edge that marks key figures and flagged items.
          ("accent", "surface", 4.5), ("accent", "bg", 3.0), ("brand", "surface", 3.0),
          # Target key figures' edge, and the dotted underline of a glossary word inside a pitfall.
-         ("ok-fg", "surface", 3.0), ("ok-fg", "bg", 3.0), ("link", "warn-bg", 3.0)]
+         ("ok-fg", "surface", 3.0), ("ok-fg", "bg", 3.0), ("link", "warn-bg", 3.0),
+         # Category icons on their chips, and the mascot's face on its body (graphics: 3:1).
+         ("c0-fg", "c0-bg", 3.0), ("c1-fg", "c1-bg", 3.0), ("c2-fg", "c2-bg", 3.0), ("c3-fg", "c3-bg", 3.0),
+         ("c4-fg", "c4-bg", 3.0), ("m-ink", "m-body", 3.0)]
 
 
 def lum(hexv):
