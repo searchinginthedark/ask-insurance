@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.10.19.2
+
+- Weekly local verifier run for the sources GitHub cannot read
+
 ## v2026.10.19
 
 - gitignore: keep the local key-terms reference PDF out of the repo
