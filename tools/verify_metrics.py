@@ -34,6 +34,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NUM = re.compile(r"\d[\d,]*(?:\.\d+)?")
 # --remote ignores local PDF copies and reads each PDF from its official URL, as CI must.
 REMOTE = "--remote" in sys.argv
+# --fresh refetches downloaded PDFs too; without it a changed brochure is read from a stale cache.
+FRESH = "--fresh" in sys.argv
 
 
 def numbers(s):
@@ -57,7 +59,7 @@ def pdf_text(local, url):
                 return f.read()
     if local and os.path.exists(p):
         return "\n".join(pg.get_text("text") for pg in fitz.open(p))
-    return fetch.text(url, CACHE, prefix="pdf-", timeout=60)
+    return fetch.text(url, CACHE, prefix="pdf-", fresh=FRESH, timeout=60)
 
 
 def main(argv):
