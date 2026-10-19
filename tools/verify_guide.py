@@ -9,9 +9,10 @@ claim like "the policy may not be valid", and a one-digit number matches almost 
 Sources are fetched live and cached in research/raw/guide/ (gitignored); pass --fresh to refetch.
 
 Usage: python tools/verify_guide.py [--fresh]
-Exit 1 if any number or quote is not in its source, or a source could not be read.
+Exit 1 if any number or quote is not in its source, or a source is broken (a 404 and the like).
+A source whose site refuses the request (timeout, 403, bot wall) is a warning, not a failure: its
+items are reported as unchecked. See tools/fetch.py.
 """
-import hashlib
 import json
 import os
 import re
@@ -19,12 +20,11 @@ import sys
 import unicodedata
 
 import requests
-from bs4 import BeautifulSoup
+
+import fetch
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, "research", "raw", "guide")
-UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-      "(KHTML, like Gecko) Chrome/141.0 Safari/537.36")
 NUM = re.compile(r"\d[\d,]*(?:\.\d+)?")
 
 
@@ -51,24 +51,7 @@ def plain(s):
 
 
 def source_text(url, fresh):
-    os.makedirs(CACHE, exist_ok=True)
-    path = os.path.join(CACHE, hashlib.sha1(url.encode()).hexdigest()[:16] + ".txt")
-    if os.path.exists(path) and not fresh:
-        with open(path, encoding="utf-8") as f:
-            return f.read()
-    r = requests.get(url, headers={"User-Agent": UA, "Accept-Language": "en-SG,en;q=0.9"}, timeout=45)
-    r.raise_for_status()
-    if r.content.startswith(b"%PDF"):
-        import fitz
-        text = "\n".join(p.get_text("text") for p in fitz.open(stream=r.content, filetype="pdf"))
-    else:
-        soup = BeautifulSoup(r.content, "html.parser")
-        for t in soup(["script", "style", "noscript", "svg"]):
-            t.decompose()
-        text = soup.get_text(" ")
-    with open(path, "w", encoding="utf-8", newline="\n") as f:
-        f.write(text)
-    return text
+    return fetch.text(url, CACHE, fresh=fresh, timeout=45)
 
 
 def items(guide):
@@ -130,7 +113,7 @@ def main(argv):
     fresh = "--fresh" in argv
     with open(os.path.join(ROOT, "data", "guide.json"), encoding="utf-8") as f:
         guide = json.load(f)
-    texts, bad, checked = {}, [], 0
+    texts, bad, checked, refused, skipped = {}, [], 0, {}, 0
     # A FAQ one-liner summarises its answer, so it may not carry a number the answer lacks. The page
     # check alone cannot see "28 days" as wrong when the page also says "updated 28 September".
     for q in guide["faq"]:
@@ -148,10 +131,14 @@ def main(argv):
             try:
                 raw = source_text(guide["sources"][sid]["url"], fresh)
                 texts[sid] = (numbers(raw), letters(raw))
+            except fetch.Blocked as e:
+                texts[sid] = None
+                refused[sid] = str(e)
             except (requests.RequestException, KeyError) as e:
                 texts[sid] = None
                 bad.append((where, sid, "source unreadable: %s" % type(e).__name__))
         if texts[sid] is None:
+            skipped += sid in refused
             continue
         corpus, words = texts[sid]
         missing = sorted(numbers(text) - corpus)
@@ -167,9 +154,13 @@ def main(argv):
         try:
             bad += starting_pay_rows(guide, source_text(guide["sources"][sp["s"]]["url"], False))
             checked += len(sp["items"])
+        except fetch.Blocked as e:
+            refused[sp["s"]] = str(e)
+            skipped += len(sp["items"])
         except requests.RequestException as e:
             bad.append(("starting_pay", sp["s"], "source unreadable: %s" % type(e).__name__))
-    print("guide items checked: %d, problems: %d" % (checked, len(bad)))
+    print("guide items checked: %d, problems: %d, unchecked because the site refused: %d" % (checked, len(bad), skipped))
+    fetch.warn("%s refused: %s (%s)" % (sid, why, guide["sources"][sid]["url"]) for sid, why in sorted(refused.items()))
     for where, text, why in bad:
         print("  %-28s %s | %s" % (where, why, text[:110]))
     return 1 if bad else 0

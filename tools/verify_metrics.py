@@ -14,7 +14,9 @@ Page text is cached in research/raw/pages/ (shared with verify_facts.py); PDFs a
 local copy in research/pdf/. Pass --fresh to refetch pages.
 
 Usage: python tools/verify_metrics.py [INSURER_ID ...] [--fresh] [--remote]
-Exit 1 on any problem, or if a source cannot be read.
+Exit 1 on any problem, or if a source is broken (a 404 and the like). A source whose site refuses
+the request (timeout, 403, bot wall) is a warning, not a failure: its cells are reported as
+unchecked. See tools/fetch.py.
 """
 import glob
 import json
@@ -22,8 +24,11 @@ import os
 import re
 import sys
 
+import requests
+
+import fetch
 from build_data import on_domain
-from verify_facts import CACHE, page_text
+from verify_facts import CACHE
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NUM = re.compile(r"\d[\d,]*(?:\.\d+)?")
@@ -52,24 +57,7 @@ def pdf_text(local, url):
                 return f.read()
     if local and os.path.exists(p):
         return "\n".join(pg.get_text("text") for pg in fitz.open(p))
-    import hashlib
-    import requests
-    from verify_facts import UA
-    os.makedirs(CACHE, exist_ok=True)
-    cp = os.path.join(CACHE, "pdf-" + hashlib.sha1(url.encode()).hexdigest()[:16] + ".txt")
-    if os.path.exists(cp):
-        with open(cp, encoding="utf-8") as f:
-            return f.read()
-    try:
-        r = requests.get(url, headers={"User-Agent": UA}, timeout=60)
-        if not r.content.startswith(b"%PDF"):
-            return None
-        text = "\n".join(pg.get_text("text") for pg in fitz.open(stream=r.content, filetype="pdf"))
-    except requests.RequestException:
-        return None
-    with open(cp, "w", encoding="utf-8", newline="\n") as f:
-        f.write(text)
-    return text
+    return fetch.text(url, CACHE, prefix="pdf-", timeout=60)
 
 
 def main(argv):
@@ -79,7 +67,7 @@ def main(argv):
     with open(os.path.join(ROOT, "data", "guide.json"), encoding="utf-8") as f:
         guide = json.load(f)
     defined = {c["id"]: {m["id"] for m in c.get("metrics", [])} for c in guide["categories"] if c.get("metrics")}
-    bad, checked = [], 0
+    bad, checked, refused, skipped = [], 0, {}, 0
     for path in sorted(glob.glob(os.path.join(ROOT, "research", "metrics", "*.json"))):
         with open(path, encoding="utf-8") as f:
             d = json.load(f)
@@ -127,16 +115,22 @@ def main(argv):
                     continue
                 if src not in texts:
                     local = sources[src]
-                    if local or src.lower().split("?")[0].endswith(".pdf"):
-                        texts[src] = pdf_text(local, src)
-                    else:
-                        if fresh:
-                            import hashlib
-                            cp = os.path.join(CACHE, hashlib.sha1(src.encode()).hexdigest()[:16] + ".txt")
-                            if os.path.exists(cp):
-                                os.remove(cp)
-                        texts[src] = page_text(src)
+                    try:
+                        if local or src.lower().split("?")[0].endswith(".pdf"):
+                            texts[src] = pdf_text(local, src)
+                        else:
+                            texts[src] = fetch.text(src, CACHE, fresh=fresh, timeout=20)
+                    except fetch.Blocked as e:
+                        texts[src] = None
+                        refused[src] = str(e)
+                    except requests.RequestException as e:
+                        texts[src] = None
+                        bad.append(where + ("source broken (%s): %s" % (type(e).__name__, src),))
+                        continue
                 text = texts[src]
+                if src in refused:
+                    skipped += 1
+                    continue
                 if not text or len(text) < 200:
                     bad.append(where + ("source text unreadable (blocked page or missing local PDF): %s" % src,))
                     continue
@@ -146,9 +140,10 @@ def main(argv):
                 extra_nums = sorted(numbers(v) - set().union(*(numbers(q) for q in qs)))
                 if extra_nums:
                     bad.append(where + ("numbers in v but not in quote: %s" % ", ".join(extra_nums),))
-    print("metric cells checked: %d, problems: %d" % (checked, len(bad)))
+    print("metric cells checked: %d, problems: %d, unchecked because the site refused: %d" % (checked - skipped, len(bad), skipped))
     for iid, name, mid, why in bad:
         print("  %-13s %-32s %-10s %s" % (iid, (name or "")[:32], mid, why))
+    fetch.warn("refused: %s (%s)" % (why, src) for src, why in sorted(refused.items()))
     return 1 if bad else 0
 
 
