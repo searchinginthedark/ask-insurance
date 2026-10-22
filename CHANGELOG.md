@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.10.23
+
+- Fix Compare intro showing raw URLs instead of links
+
 ## v2026.10.19.3
 
 - Cute theme: shield mascot, category icons, softer palette
