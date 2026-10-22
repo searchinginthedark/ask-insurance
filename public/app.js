@@ -25,7 +25,9 @@ function h(tag, attrs, ...kids) {
     else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
     else el.setAttribute(k, v === true ? "" : v);
   }
-  for (const kid of kids.flat()) {
+  // Infinity: a kid built with .map() returning [sep, el] pairs nests two deep, and a
+  // one-level flat stringified the inner pair into ",https://..." (Compare intro).
+  for (const kid of kids.flat(Infinity)) {
     if (kid == null || kid === false) continue;
     el.append(kid instanceof Node ? kid : document.createTextNode(String(kid)));
   }
