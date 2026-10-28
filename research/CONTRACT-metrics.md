@@ -19,7 +19,7 @@ guess.** The app then shows "Not on the insurer's page", which is honest. Today 
   Prefer the product summary PDF: it is stable and states terms precisely.
 - No blogs, comparison sites, compareFIRST, agents' sites or memory.
 
-## Tools (run from `C:\Users\Toh_Z\Documents\Claude Projects\AskInsurance`)
+## Tools (run from `C:\Users\Toh_Z\Documents\Claude Projects\ask-insurance`)
 - `python tools/fetch_page.py <url> --text` for a page; `python tools/pdf_extract.py <pdf_url> <insurer_id>` for a PDF.
 - Grep `.txt` files rather than reading them whole.
 - Never `python -c` or heredocs; write any script to `research/scratch/<insurer_id>/` and run it.

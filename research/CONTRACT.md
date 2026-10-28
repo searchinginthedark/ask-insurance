@@ -9,7 +9,7 @@ never guessed. Today is 2026-10-13.
 - compareFIRST (comparefirst.sg) may be used to discover product names, never as the product URL.
 - No blogs, comparison sites, forums, agents' sites, or your own memory for any fact.
 
-## Tools (run from the project root `C:\Users\Toh_Z\Documents\Claude Projects\AskInsurance`)
+## Tools (run from the project root `C:\Users\Toh_Z\Documents\Claude Projects\ask-insurance`)
 - `python tools/fetch_page.py <url> [--links REGEX] [--text]` prints final URL, HTTP status, <title>,
   <h1>s, optional matching links, optional visible text (first 6000 chars). Use it instead of raw curl.
 - `python tools/pdf_extract.py <pdf_url> <insurer_id>` downloads an official PDF into
