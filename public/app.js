@@ -60,7 +60,7 @@ function mascot(pose = "happy", size = 44) {
     p.arms.map(d => svg("path", { d, fill: "none", stroke: "var(--m-body-dk)", "stroke-width": "4.5", "stroke-linecap": "round" })),
     svg("path", { d: "M32 5 Q45 9.5 54 10 Q57 39 32 58.5 Q7 39 10 10 Q19 9.5 32 5 Z", fill: "var(--m-body)", stroke: "var(--m-body)", "stroke-width": "3", "stroke-linejoin": "round" }),
     svg("ellipse", { cx: "21", cy: "17", rx: "5", ry: "3", fill: "#fff", opacity: ".45", transform: "rotate(-25 21 17)" }),
-    [24, 40].map(x => [svg("ellipse", { cx: x, cy: ey, rx: "2.7", ry: "3.4", fill: "var(--m-ink)" }),
+    [24, 40].map(x => [svg("ellipse", { class: "eye", cx: x, cy: ey, rx: "2.7", ry: "3.4", fill: "var(--m-ink)" }),
       svg("circle", { cx: x + 0.9, cy: ey - 1.2, r: "0.95", fill: "#fff" })]),
     [18.5, 45.5].map(x => svg("ellipse", { cx: x, cy: "35", rx: "3.6", ry: "2.2", fill: "var(--m-cheek)" })),
     p.mouth === "o" ? svg("ellipse", { cx: "32", cy: "37", rx: "1.9", ry: "2.3", fill: "var(--m-ink)" }) : svg("path", Object.assign({ d: p.mouth }, ink)),
@@ -296,7 +296,8 @@ function youTag() { return h("span", { class: "tag you", text: "You" }); }
 // Re-draw the page in place after a setting changes, keeping the reader where they were.
 function rerender(focusId) {
   const y = window.scrollY;
-  route();
+  helper.redraw = true;
+  try { route(); } finally { helper.redraw = false; }
   window.scrollTo(0, y);
   const el = focusId && document.getElementById(focusId);
   if (el) el.focus({ preventScroll: true });
@@ -413,7 +414,7 @@ function viewWhen(params) {
 // Questions about one type, answered on its own page. Same shape and checks as the main FAQ.
 function qaSection(c) {
   if (!c.qa || !c.qa.length) return null;
-  return [h("h2", { text: "Common questions" }), c.qa.map(faqItem)];
+  return [h("h2", { id: "qa-h", text: "Common questions" }), c.qa.map(faqItem)];
 }
 
 // One official worked example told as a short story, every step with its own source.
@@ -1055,6 +1056,101 @@ function viewMissing() {
 const LEDE_POSE = { when: "think", top5: "alert", insurers: "wave", glossary: "read", sources: "read", faq: "think" };
 const TAB_OF = { "": "types", type: "types", when: "when", top5: "top5", insurers: "insurers", insurer: "insurers", compare: "compare", schemes: "schemes", check: "check", glossary: "glossary", faq: "faq", sources: "sources" };
 
+// ---------- Shieldy, the helper ----------
+// A small mascot in the corner that now and then offers a navigation hint. Rules that keep it
+// from being a nuisance: at most one tip per page view, each tip shown once ever, never in the
+// first moments of a page or while you type, gone by itself after 8 seconds, hidden while you
+// scroll down, and one tap turns it off for good. It only points at parts of this site: it never
+// states an insurance fact, so it cannot say anything unsourced.
+const HELPER_OFF = "ai-helper-off", TIPS_SEEN = "ai-tips-seen";
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { if (v == null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch { /* not saved */ } },
+};
+const helper = { el: null, bubble: null, timer: 0, shownThisPage: false, lastKey: 0 };
+
+function seenTips() { try { return new Set(JSON.parse(store.get(TIPS_SEEN) || "[]")); } catch { return new Set(); } }
+function markSeen(id) { const s = seenTips(); s.add(id); store.set(TIPS_SEEN, JSON.stringify([...s])); }
+
+function helperSay(text, action, opts = {}) {
+  if (!helper.el || helper.el.hidden) return;
+  clearTimeout(helper.timer);
+  const close = () => { helper.bubble.hidden = true; helper.el.classList.remove("talking"); };
+  helper.bubble.replaceChildren(
+    h("p", { text }),
+    h("div", { class: "hb-row" },
+      action ? h("a", { class: "btn", href: action.href || "#", onclick: e => { if (action.run) { e.preventDefault(); action.run(); } close(); } }, action.label) : null,
+      h("button", { type: "button", class: "btn ghost", text: "OK", onclick: close }),
+      opts.offer ? h("button", { type: "button", class: "hb-off", text: "Turn helper off", onclick: () => { store.set(HELPER_OFF, "1"); helper.el.hidden = true; } }) : null));
+  helper.bubble.hidden = false;
+  helper.el.classList.add("talking");
+  hop();
+  helper.timer = setTimeout(close, 8000);
+}
+
+function hop() {
+  const m = helper.el && helper.el.querySelector(".mascot");
+  if (!m) return;
+  m.classList.remove("hop"); void m.getBoundingClientRect(); m.classList.add("hop");
+}
+
+// One contextual tip for the page just shown, if it has not been seen before.
+function helperTip(seg, arg) {
+  if (!helper.el || helper.el.hidden || helper.shownThisPage) return;
+  const seen = seenTips();
+  const tips = [
+    { id: "welcome", when: seg === "", text: "Hi, I'm Shieldy! New here? \"What pays when\" shows how the different covers fit together.", action: { label: "Show me", href: "#/when" } },
+    { id: "age", when: seg === "type" && arg === "hospitalisation" && !getAge(), text: "Tell me your age next birthday and I'll show what a Shield plan would cost you.", action: { label: "Enter my age", run: () => { const i = document.getElementById("my-age"); if (i) { i.scrollIntoView({ block: "center" }); i.focus({ preventScroll: true }); } } } },
+    { id: "qa", when: seg === "type" && !!document.getElementById("qa-h"), text: "There are common questions about this type further down the page.", action: { label: "Take me there", run: () => document.getElementById("qa-h").scrollIntoView({ block: "start" }) } },
+    { id: "sources", when: seg === "type", text: "Every official figure links to its source. Tap the little arrow to check it yourself." },
+  ];
+  const tip = tips.find(t => t.when && !seen.has(t.id));
+  if (!tip) return;
+  helper.shownThisPage = true;
+  const tipHash = location.hash;
+  setTimeout(() => {
+    // Typing means a key pressed in the last 4 seconds, not just a focused search box.
+    if (Date.now() - helper.lastKey < 4000 || location.hash !== tipHash) return;
+    markSeen(tip.id);
+    helperSay(tip.text, tip.action, { offer: seen.size >= 1 });
+  }, 2500);
+}
+
+function helperOnRoute(seg, arg) {
+  if (!helper.el || helper.redraw) return;
+  helper.shownThisPage = false;
+  clearTimeout(helper.timer);
+  helper.bubble.hidden = true;
+  helper.el.classList.remove("talking");
+  helperTip(seg, arg);
+}
+
+function mountHelper() {
+  if (store.get(HELPER_OFF)) return;
+  helper.bubble = h("div", { class: "hb", role: "status", "aria-live": "polite", hidden: true });
+  const btn = h("button", { type: "button", class: "hbtn", "aria-label": "Shieldy, the helper. Tap for a hint.", onclick: () => {
+      if (!helper.bubble.hidden) { helper.bubble.hidden = true; helper.el.classList.remove("talking"); return; }
+      const lines = ["Hi, I'm Shieldy! I point you to the right part of this site. I don't give advice.",
+        "Your age, if you enter it, stays in this browser only.",
+        "Lost? \"What pays when\" is a good place to start."];
+      helperSay(lines[Math.floor(Math.random() * lines.length)], null, { offer: true });
+    } }, mascot("wave", 52));
+  helper.el = h("div", { class: "helper" }, helper.bubble, btn);
+  document.body.append(helper.el);
+  document.body.classList.add("has-helper");
+  document.addEventListener("keydown", () => { helper.lastKey = Date.now(); }, true);
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !helper.bubble.hidden) { helper.bubble.hidden = true; helper.el.classList.remove("talking"); } });
+  document.addEventListener("ai:age", e => { if (e.detail && !seenTips().has("age-set")) { markSeen("age-set"); setTimeout(() => helperSay(`Got it! I've marked age ${e.detail} in every by-age chart. Change or clear it any time.`), 400); } });
+  // Like an iOS toolbar: out of the way while you read down the page, back when you scroll up.
+  let lastY = window.scrollY;
+  window.addEventListener("scroll", () => {
+    const y = window.scrollY;
+    if (Math.abs(y - lastY) < 8) return;
+    helper.el.classList.toggle("tucked", y > lastY && y > 120 && helper.bubble.hidden);
+    lastY = y;
+  }, { passive: true });
+}
+
 function route() {
   if (POPOVER && pop.matches(":popover-open")) { popFrom = null; pop.hidePopover(); }
   const raw = location.hash.replace(/^#\/?/, "");
@@ -1091,10 +1187,11 @@ function route() {
   document.title = (seg === "" || !t ? "" : t.textContent + " · ") + "Ask Insurance";
   if (anchor) {
     const el = document.getElementById(anchor);
-    if (el) { el.scrollIntoView(); return; }
+    if (el) { el.scrollIntoView(); helperOnRoute(seg, arg); return; }
   }
   window.scrollTo(0, 0);
   if (seg !== "") main.focus({ preventScroll: true });
+  helperOnRoute(seg, arg);
 }
 
 document.getElementById("search-form").addEventListener("submit", e => {
@@ -1117,6 +1214,7 @@ async function load() {
     document.getElementById("foot-meta").textContent =
       `Government facts checked ${g.updated}. ${state.products.length} plans from ${state.insurers.length} insurers.`;
     window.addEventListener("hashchange", route);
+    mountHelper();
     route();
   } catch (err) {
     main.replaceChildren(h("h1", { text: "Could not load the data" }), empty("oops", h("p", { text: "Check your connection and reload. (" + err.message + ")" })));
