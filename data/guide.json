@@ -47,6 +47,7 @@
     "ms_health_terms": {"title": "Health insurance terms: know what you're paying for", "publisher": "MoneySense", "url": "https://www.moneysense.gov.sg/health-insurance-terms-know-what-you-re-paying-for/"},
     "ms_life": {"title": "Understanding life insurance", "publisher": "MoneySense", "url": "https://www.moneysense.gov.sg/life-insurance/"},
     "ms_ask_life": {"title": "What to ask before buying life insurance", "publisher": "MoneySense", "url": "https://www.moneysense.gov.sg/what-to-ask-before-buying-life-insurance/"},
+    "ms_term_vs_bundled": {"title": "Life insurance: Comparing term and bundled products", "publisher": "MoneySense", "url": "https://www.moneysense.gov.sg/term-vs-whole-life/"},
     "ms_whole_life": {"title": "Understanding whole life insurance", "publisher": "MoneySense", "url": "https://www.moneysense.gov.sg/understanding-whole-life-insurance/"},
     "ms_di": {"title": "Understanding disability income insurance", "publisher": "MoneySense", "url": "https://www.moneysense.gov.sg/understanding-disability-income-insurance/"},
     "ms_term": {"title": "Understanding term insurance", "publisher": "MoneySense", "url": "https://www.moneysense.gov.sg/term-insurance/"},
@@ -335,7 +336,11 @@
       ],
       "compare": ["Guaranteed vs projected cash value", "Premium term (to 65, 20 years, whole life)", "Multiplier: extra cover until a set age", "Early CI acceleration options"],
       "schemes": ["dps"],
-      "tools": ["comparefirst"]
+      "tools": ["comparefirst"],
+      "qa": [
+        {"q": "Why not buy term cover and invest the difference instead?", "short": "No official verdict. Term costs least; whole life costs more and carries investment risk.", "a": "No official source decides this for you, and this site does not recommend cover. MoneySense says term insurance is usually the most affordable protection and typically has no cash value. Participating whole life costs more than term, and its cash value includes future bonuses that are not guaranteed, so you bear the investment risk of those bonuses. MoneySense suggests first asking yourself why you want to be insured, then choosing the features that match your needs.", "s": "ms_term_vs_bundled", "quote": ["Term insurance is the simplest protection product that is usually the most affordable", "Cash value Typically none", "Cost of Premiums More than term", "You bear investment risks of the non-guaranteed bonuses", "Before asking which product is right for you, ask yourself why you want to be insured"]},
+        {"q": "What do I lose if I stop a whole life policy early?", "short": "Money. Cash value builds slowly, and projected bonuses are not guaranteed.", "a": "MoneySense says early termination causes you to lose money. Cash value builds up only after a minimum period, which differs from product to product, and the bonuses projected by participating policies are not guaranteed and may fluctuate. If you borrow against the cash value, the loan has to be repaid with interest. It calls buying a life policy a long-term commitment, and asks whether you can afford the premium.", "s": "ms_whole_life", "quote": ["Early termination causes you to lose money", "Whole life policies have cash values which will build up after a minimum period, and this differs from product to product", "Bonuses projected by participating policies are not guaranteed and may fluctuate", "If you take a loan from your cash value, it has to be repaid with interest", "Buying a life insurance policy is a long-term commitment", "Can you afford the premium?"]}
+      ]
     },
     {
       "id": "critical_illness",
@@ -414,7 +419,10 @@
       ],
       "compare": ["Stage at which it pays", "Waiting period after purchase", "Renewability and premium guarantee", "Whether it also pays for Cancer Drug List gaps"],
       "schemes": ["medishield_life"],
-      "tools": ["moh_mshl_benefits"]
+      "tools": ["moh_mshl_benefits"],
+      "qa": [
+        {"q": "My Shield plan already covers cancer. Why would I need a cancer plan?", "short": "Check the Cancer Drug List first: outpatient drugs off the list get no MediShield Life or Shield payout.", "a": "Check what your Shield plan pays first. Since 1 September 2022, MediShield Life and MediSave cover only outpatient cancer drug treatments on the Cancer Drug List, each with its own claim limit, and the list applies to Shield plans from their renewal on or after 1 April 2023. An outpatient cancer drug treatment that is not on the list gets no MediShield Life, MediSave or Shield plan payout. The list does not apply to cancer drugs given while you are warded, which fall under the inpatient claim limits. Some Shield plan riders cover selected treatments beyond the list, but coverage varies. Whether a separate cancer plan is worth it is your call: this site does not recommend cover.", "s": "moh_cancer_faq", "quote": ["MediShield Life and MediSave will only cover treatments on the Cancer Drug List (CDL) from 1 September 2022", "Each cancer drug treatment on the CDL will have its own MediShield Life claim limits and MediSave withdrawal limits", "The CDL will only come into effect for Integrated Shield Plans (IPs) on 1 Apr 2023, upon renewal or application", "If the patient had received a non-CDL treatment before the treatment was listed / after the treatment was delisted, there would be no MediShield Life, MediSave or Integrated Shield Plan payout", "the Cancer Drug List does not apply to inpatient cancer drug treatments", "IP riders may also cover selected treatments beyond the CDL, though the extend of coverage may vary"]}
+      ]
     },
     {
       "id": "disability_income",
@@ -482,7 +490,11 @@
         ]
       },
       "schemes": [],
-      "tools": ["lia_ygtli"]
+      "tools": ["lia_ygtli"],
+      "qa": [
+        {"q": "Will disability income insurance replace my whole salary?", "short": "No. It pays up to 80% of your average monthly salary, after a waiting period.", "a": "No. MoneySense says it eases the loss but will not completely replace your income: it pays up to 80% of your average monthly salary. Payments usually start only if you are continuously disabled after the deferred period, and run for up to 5 or 10 years, or until you are 60 or 65. They stop or reduce once you can start work again.", "s": "ms_di", "quote": ["will not completely replace your income before the accident or illness", "Pays up to 80% of your average monthly salary", "Benefits are payable only if you're continuously disabled after the deferred period", "The monthly income may be paid for up to 5 or 10 years, or until you are 60 or 65", "Payment will stop or reduce once you can start work again"]},
+        {"q": "Does \"disability\" mean the same thing at every insurer?", "short": "No. The definition varies, and it changes the premium.", "a": "No. MoneySense says the definition of disability may vary from insurer to insurer, and that the premium depends on many things, including the definition used. Ask the insurer which definition your policy uses before you buy.", "s": "ms_di", "quote": ["how \"disability\" is defined in the policy as it may vary from insurer to insurer", "Premium payable depends on many things, including the definition of disability used", "Check with your insurer for the definitions used in your policy"]}
+      ]
     },
     {
       "id": "long_term_care",
@@ -513,7 +525,11 @@
       ],
       "compare": ["ADLs needed to claim", "Monthly payout and how it grows", "Lump-sum or dependant benefits", "Premium payment term"],
       "schemes": ["careshield_life", "eldershield"],
-      "tools": ["moh_supplements"]
+      "tools": ["moh_supplements"],
+      "qa": [
+        {"q": "CareShield Life already pays out. Why would I need a supplement?", "short": "No official verdict. A supplement adds to CareShield Life, for example with higher payouts.", "a": "This site does not say whether you need one. MOH describes supplements as plans that add to your basic CareShield Life or ElderShield cover, for example with higher monthly payouts, and you must already be covered by one of those to buy a supplement. Premiums can be paid in cash, or from your own or a family member's MediSave up to $600 per calendar year per person insured. The plans differ in coverage and benefits, and MOH publishes comparisons of them.", "s": "moh_supplements", "quote": ["complement your basic CareShield Life or ElderShield plan by offering additional benefits, such as higher monthly payout amounts", "You need to be an existing policyholder under ElderShield or CareShield Life to purchase Supplement plans", "up to a limit of $600 per calendar year per person insured", "The plans differ in their coverage and benefits"]},
+        {"q": "When does CareShield Life actually pay, and how much?", "short": "Monthly for life, once you cannot do 3 of 6 daily activities. The amount depends on when you claim.", "a": "It pays monthly cash for life once an MOH-accredited assessor finds you unable to carry out 3 of the 6 activities of daily living, such as washing and dressing, and it keeps paying for as long as you remain unable to do 3 or more. The amount depends on when you claim: CPF's example for someone born in 1980 is $624 a month for a claim in 2022, and $689 a month for a claim in 2026. Payouts rise each year until you turn 67 or make a successful claim, whichever is earlier.", "s": "cpf_careshield", "quote": ["unable to carry out 3 of the 6 activities of daily living", "Monthly payouts will continue as long as you're unable to perform 3 or more ADL", "A successful claim in 2022 (at age 42) provides you with $624 per month for life", "A successful claim in 2026 (at age 46) provides you with $689 per month for life", "Payouts will increase annually until a policyholder turns 67 or whenever a successful claim is made, whichever is earlier"]}
+      ]
     },
     {
       "id": "personal_accident",
@@ -561,7 +577,10 @@
       ],
       "compare": ["Daily amount and ICU multiplier", "Maximum days per year", "Day-surgery benefit"],
       "schemes": ["medishield_life"],
-      "tools": []
+      "tools": [],
+      "qa": [
+        {"q": "Do I need hospital cash if my Shield plan already pays the bill?", "short": "No official verdict. It pays a fixed daily sum on top, whatever the bill.", "a": "No official source says whether you need it, and this site does not recommend cover. LIA describes hospital cash as a fixed amount for each day you are in hospital, regardless of the actual expenses, paid in addition to any medical expense policy you have. So the total paid may be more or less than your actual expenses. A policy may have a waiting period, and benefits may be paid only for a set number of days each year, or over the life of the policy.", "s": "lia_ygthi", "quote": ["pays a fixed amount of benefit for each day you are hospitalised for medical treatment or surgery, regardless of the actual expenses incurred", "is in addition to any medical expense policy that you may have", "the total amount paid under the hospital cash insurance may be more or less than your actual expenses", "A hospital cash policy may have a waiting period", "The benefits may also be paid for only a set number of days each year, or for the life of the policy"]}
+      ]
     },
     {
       "id": "maternity_child",
