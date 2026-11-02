@@ -515,6 +515,17 @@
      "s": "cpf_ip"
     },
     {
+     "t": "A Shield plan has two parts, and MediSave pays them differently. The MediShield Life part is paid from MediSave in full. The private part is paid from MediSave only up to a limit set by your age next birthday, and anything above that limit is paid in cash.",
+     "s": "cpf_ip",
+     "top": true,
+     "quote": [
+      "which consists of two components",
+      "MediShield Life component Fully payable from your MediSave",
+      "Additional private insurance component Payable from MediSave up to the Additional Withdrawal Limit Any amount exceeding this limit must be paid in cash",
+      "The Additional Withdrawal Limit is based on your age next birthday"
+     ]
+    },
+    {
      "t": "MediSave pays the private part only up to $300 a year (age 40 and below next birthday), $600 (41 to 70) or $900 (71 and above). The rest is cash.",
      "s": "cpf_ip"
     },
