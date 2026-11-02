@@ -1321,6 +1321,55 @@
    "schemes": [],
    "tools": [
     "lia_ci_2024"
+   ],
+   "qa": [
+    {
+     "q": "Which is better if I am careful with money: severe-stage only, early-stage or multi-stage cover?",
+     "short": "No official verdict. Only severe-stage definitions are standard; compare the rest yourself.",
+     "a": "No official source picks one, and this site does not recommend cover. LIA explains that most critical illness policies cover the severe stage, and some also cover the mild-moderate stage, the extremely severe stage, or both. Only the severe stage has standard definitions. The other stages are worded by each insurer, so claims are not judged on identical definitions across insurers. LIA's advice is to study those definitions, consider whether they meet your needs, and compare how much each policy pays at each stage.",
+     "s": "lia_ygthi",
+     "quote": [
+      "While most critical illness policies cover critical illness conditions under the severe stage, some may also include coverage for critical illness under the mild-moderate stage and/or extremely severe stage",
+      "The definitions for critical illnesses falling under the mild-moderate stage or extremely severe stage are not standardised and are worded by each insurer",
+      "Claims assessment across insurers will not be based on identical definitions",
+      "Consumers should study these definitions and consider if the definitions meet their needs",
+      "Consumers should also take into account the amount payable at the different stages of a critical illness, when making comparisons"
+     ]
+    },
+    {
+     "q": "What do multi-pay plans add?",
+     "short": "More than one payout, for different covered illnesses, within the policy's limits.",
+     "a": "MoneySense's summary is that the payout is a one-time lump sum and the policy ends once it has paid, but some policies instead pay a smaller amount for earlier stages of cancer, or make several payments on diagnosis of different covered illnesses, always within the sum insured or the policy's limits. So read those limits: how many claims the policy pays, and for which illnesses.",
+     "s": "ms_ci",
+     "quote": [
+      "Payout is a one-time lump sum and the policy ends when it's paid out",
+      "Some critical illness policies pay a smaller amount for earlier stages of cancer or make several payments upon diagnosis of different insured critical illnesses, subject to the sum insured or policy limits"
+     ]
+    },
+    {
+     "q": "How much critical illness cover is enough?",
+     "short": "LIA's guide: 4 times your annual income for standard critical illness.",
+     "a": "LIA recommends cover of 4 times your annual income for standard critical illness, alongside 9 times for death and total permanent disability. Its guide also suggests spending at most 15% of your income, after CPF contributions, on insurance protection.",
+     "s": "lia_bfpg",
+     "quote": [
+      "4x annual income for standard critical illness",
+      "9x annual income for death and total permanent disability",
+      "Spend at most 15%",
+      "After deducting CPF contributions"
+     ]
+    },
+    {
+     "q": "Up to what age should my critical illness cover last? Should it match my term life or Shield plan?",
+     "short": "No official age. CI does a different job from both, so choose its length on its own.",
+     "a": "No official source gives an age. LIA says some health insurance policies cover you for life and others only up to a certain age, and that you should choose a length of cover that suits your needs. Premiums may increase as you grow older, and LIA suggests taking up health insurance at an early age while you are still healthy. Critical illness cover pays you a lump sum on diagnosis, in addition to any medical expense policy such as a Shield plan, so it does a different job from both your Shield plan and your term life cover.",
+     "s": "lia_ygthi",
+     "quote": [
+      "Some health insurance policies provide cover for your whole life, but others cover you only up to a certain age. You should choose a policy with a length of cover that suits your needs",
+      "The amount of the premiums may increase as you grow older",
+      "health insurance at an early age while you are still healthy",
+      "is in addition to any medical expense policy that you may have"
+     ]
+    }
    ]
   },
   {
