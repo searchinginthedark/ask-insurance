@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.11.03.5
+
+- feat: critical illness Q&As (severe vs early vs multi-pay, how much, how long)
+
 ## v2026.11.03.4
 
 - style: worked-example cards stand apart (amber step numbers and label, soft shadow)
