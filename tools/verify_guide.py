@@ -70,6 +70,10 @@ def items(guide):
             for sc in vs["scenarios"]:
                 for f in sc["items"]:
                     yield "%s.scenario" % c["id"], f, f["t"]
+        for q in c.get("qa", []):
+            yield "%s.qa" % c["id"], q, plain(q["a"]) + " " + q["short"]
+        for f in (c.get("story") or {}).get("steps", []):
+            yield "%s.story" % c["id"], f, plain(f["t"])
     for g in guide.get("glossary", []):
         for f in g["lines"]:
             yield "glossary.%s" % g["id"], f, f["t"]
@@ -116,7 +120,7 @@ def main(argv):
     texts, bad, checked, refused, skipped = {}, [], 0, {}, 0
     # A FAQ one-liner summarises its answer, so it may not carry a number the answer lacks. The page
     # check alone cannot see "28 days" as wrong when the page also says "updated 28 September".
-    for q in guide["faq"]:
+    for q in guide["faq"] + [q for c in guide["categories"] for q in c.get("qa", [])]:
         extra = sorted(numbers(q.get("short", "")) - numbers(q["a"]))
         if extra:
             bad.append(("faq.short", q["short"], "numbers not in its answer: " + ", ".join(extra)))

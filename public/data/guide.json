@@ -475,9 +475,23 @@
    "key": [
     {
      "v": "$300 / $600 / $900",
-     "l": "most MediSave pays a year for the private part, by age next birthday: 40 and below / 41 to 70 / 71 up. Rest is cash.",
+     "l": "most MediSave pays a year for the private part, by age next birthday: 40 and below / 41 to 70 / 71 and above. Rest is cash.",
      "s": "cpf_ip",
-     "quote": "based on your age next birthday"
+     "quote": "based on your age next birthday",
+     "bands": [
+      [
+       "40 and below",
+       300
+      ],
+      [
+       "41 to 70",
+       600
+      ],
+      [
+       "71 and above",
+       900
+      ]
+     ]
     },
     {
      "v": "Up to five times",

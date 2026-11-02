@@ -104,6 +104,24 @@ def check_highlights(guide):
     for q in guide["faq"]:
         if not q.get("short"):
             errors.append("guide: FAQ %r has no short answer" % q["q"])
+    for c in guide["categories"]:
+        # A by-age chart only redraws its key figure: every amount must already be in v and every
+        # age label in l, so the chart can never state a number the verified figure does not.
+        for k in c.get("key") or []:
+            for label, amount in k.get("bands") or []:
+                if "$%s" % format(amount, ",") not in k["v"] or label not in k["l"]:
+                    errors.append("guide: %s band %r / %r is not in its key figure" % (c["id"], label, amount))
+        for q in c.get("qa") or []:
+            if not (q.get("q") and q.get("short") and q.get("a")) or q.get("s") not in src:
+                errors.append("guide: %s question %r needs q, short, a and a valid source" % (c["id"], q.get("q")))
+        story = c.get("story")
+        if story:
+            # A worked example comes from a source, line by line; made-up stories are not allowed here.
+            if not story.get("who") or not story.get("steps"):
+                errors.append("guide: %s story needs who and steps" % c["id"])
+            for f in story.get("steps") or []:
+                if f.get("s") not in src:
+                    errors.append("guide: %s story step has no valid source: %r" % (c["id"], f.get("t", "")[:40]))
     pains = guide.get("pain_points") or []
     if len(pains) != 5:
         errors.append("guide: expected 5 pain points, found %d" % len(pains))

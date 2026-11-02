@@ -219,6 +219,46 @@ function mustKnow(c) {
 
 function rest(items) { return items.filter(f => !f.top); }
 
+// A key figure that steps with age, redrawn as one bar per age band. The build checks that every
+// amount and label is already in the figure, so this adds no claim of its own. Bars are decoration;
+// each row also says its amount in words.
+function bandsChart(keys) {
+  const k = (keys || []).find(x => x.bands);
+  if (!k) return null;
+  const max = Math.max(...k.bands.map(([, n]) => n));
+  return h("section", { class: "bands", "aria-labelledby": "bands-h" },
+    h("h2", { id: "bands-h", class: "mt0", text: "MediSave vs cash, by age" }),
+    h("p", { class: "meta" }, "For the private part of a Shield plan, by your age next birthday. Source: ", srcLink(k.s)),
+    h("ul", null, k.bands.map(([label, n]) => {
+      // CSP is style-src 'self', so a style attribute is refused; setting it through the DOM is not.
+      const bar = h("span", { class: "band-bar", "aria-hidden": "true" });
+      bar.style.width = Math.round(n / max * 100) + "%";
+      return h("li", null,
+        h("span", { class: "band-age", text: "Age " + label }),
+        h("span", { class: "band-track", "aria-hidden": "true" }, bar),
+        h("span", { class: "band-v" }, h("strong", { text: "MediSave: up to $" + n.toLocaleString("en-SG") + " a year" }), ", then ",
+          h("span", { class: "tag warn", text: "cash" }), " for the rest"));
+    })));
+}
+
+// Questions about one type, answered on its own page. Same shape and checks as the main FAQ.
+function qaSection(c) {
+  if (!c.qa || !c.qa.length) return null;
+  return [h("h2", { text: "Common questions" }), c.qa.map(faqItem)];
+}
+
+// One official worked example told as a short story, every step with its own source.
+function storyCard(c) {
+  const st = c.story;
+  if (!st) return null;
+  const pubs = [...new Set(st.steps.map(f => state.guide.sources[f.s].publisher))].join(", ");
+  return h("section", { class: "story", "aria-labelledby": "story-h" },
+    h("div", { class: "must-head" }, mascot("read", 36), h("h2", { id: "story-h", class: "mt0", text: "A worked example" })),
+    h("p", { class: "ex-label", text: "Example from " + pubs }),
+    h("p", { class: "story-who" }, rich(st.who, false)),
+    h("ol", null, st.steps.map(f => h("li", null, rich(f.t), " ", srcLink(f.s)))));
+}
+
 // Short form of the disclaimer, shown where people decide; the full list is on the Sources page.
 function disclaimerNote() {
   return h("p", { class: "notice mt16" },
@@ -286,6 +326,7 @@ function viewType(id, params) {
     h("h1", { class: "with-chip g" + GROUP_OF[id] }, catIcon(id), h("span", { text: c.name })),
     glance(c.key),
     mustKnow(c),
+    bandsChart(c.key),
     h("h2", { text: "In simple terms" }),
     h("p", { class: "lede" }, rich(c.plain, false)),
     h("h2", { text: "Who it is for" }),
@@ -306,6 +347,7 @@ function viewType(id, params) {
     out.push(factList(items, cls));
   }
   if (c.versus) out.push(versus(c.versus));
+  out.push(storyCard(c), qaSection(c));
   if (c.schemes.length) {
     out.push(h("h2", { text: "What the Government already covers" }),
       h("div", { class: "grid" }, c.schemes.map(s => {
