@@ -1151,8 +1151,40 @@ function mountHelper() {
   }, { passive: true });
 }
 
+// ---------- phone chrome: iOS-style tab bar, "More" sheet and a title bar that appears on scroll ----------
+// All of it is hidden from 720px up, where the top tabs show instead (see app.css).
+const MORE_TABS = new Set(["top5", "insurers", "schemes", "glossary", "faq", "sources"]);
+const moreSheet = document.getElementById("more-sheet");
+const moreBtn = document.getElementById("more-btn");
+function closeMore() {
+  if (!moreSheet) return;
+  if (POPOVER) { if (moreSheet.matches(":popover-open")) moreSheet.hidePopover(); } else moreSheet.classList.remove("open");
+  if (moreBtn) moreBtn.setAttribute("aria-expanded", "false");
+}
+if (moreBtn && moreSheet) {
+  moreBtn.addEventListener("click", () => {
+    if (POPOVER) moreSheet.togglePopover(); else moreSheet.classList.toggle("open");
+    moreBtn.setAttribute("aria-expanded", String(POPOVER ? moreSheet.matches(":popover-open") : moreSheet.classList.contains("open")));
+  });
+  if (POPOVER) moreSheet.addEventListener("toggle", e => moreBtn.setAttribute("aria-expanded", String(e.newState === "open")));
+}
+// The page's large title scrolls away like an iOS large title; the slim bar then shows it.
+let titleWatch = null;
+function phoneChrome(tab) {
+  if (moreBtn) moreBtn.classList.toggle("is-current", MORE_TABS.has(tab));
+  const t = main.querySelector("h1"), bar = document.getElementById("navtitle");
+  if (bar) bar.textContent = t ? t.textContent : "";
+  document.body.classList.remove("scrolled");
+  if (titleWatch) titleWatch.disconnect();
+  if (t && "IntersectionObserver" in window) {
+    titleWatch = new IntersectionObserver(([e]) => document.body.classList.toggle("scrolled", !e.isIntersecting && e.boundingClientRect.top < 0));
+    titleWatch.observe(t);
+  }
+}
+
 function route() {
   if (POPOVER && pop.matches(":popover-open")) { popFrom = null; pop.hidePopover(); }
+  closeMore();
   const raw = location.hash.replace(/^#\/?/, "");
   const [pathPart, anchor] = raw.split("#");
   const [path, qs] = pathPart.split("?");
@@ -1180,9 +1212,10 @@ function route() {
   const lede = seg !== "" && main.querySelector(":scope > .lede");
   if (lede) { const at = h("span"); lede.replaceWith(at); at.replaceWith(say(LEDE_POSE[seg] || "happy", lede)); }
   const tab = TAB_OF[seg];
-  document.querySelectorAll(".tabs a").forEach(a => {
+  document.querySelectorAll(".tabs a, .tabbar a, .sheet-list a").forEach(a => {
     if (a.dataset.tab === tab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
   });
+  phoneChrome(tab);
   const t = main.querySelector("h1");
   document.title = (seg === "" || !t ? "" : t.textContent + " · ") + "Ask Insurance";
   if (anchor) {

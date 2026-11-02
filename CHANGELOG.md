@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.11.03.10
+
+- feat: iPhone feel: bottom tab bar with More sheet, large titles with a scroll title bar, bottom sheets, segmented ward-class picker, press feedback, safe areas, Add to Home Screen
+
 ## v2026.11.03.9
 
 - feat: Shieldy, a quiet helper mascot: blinks, hops, and offers one navigation hint now and then

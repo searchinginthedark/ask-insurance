@@ -8,6 +8,10 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Ask Insurance</title>
 <meta name="description" content="Every type of personal insurance in Singapore, who sells it, and what the official sources say. Every fact linked to its source.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Ask Insurance">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -40,6 +44,25 @@
     <a href="#/sources" data-tab="sources">Sources</a>
   </nav>
 </header>
+<div class="navbar" id="navbar" aria-hidden="true"><span id="navtitle"></span></div>
+<nav class="tabbar" aria-label="Main">
+  <a href="#/" data-tab="types"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></svg><span>Types</span></a>
+  <a href="#/when" data-tab="when"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .8-1 1.5v.6M12 16.9h.01"/></svg><span>What pays</span></a>
+  <a href="#/compare" data-tab="compare"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="16" rx="2"/><rect x="13.5" y="4" width="6.5" height="16" rx="2"/><path d="M6.5 9h1.5M16 9h1.5M6.5 13h1.5M16 13h1.5"/></svg><span>Compare</span></a>
+  <a href="#/check" data-tab="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M8.8 12.2l2.2 2.2 4.2-4.4"/></svg><span>Cover check</span></a>
+  <button type="button" id="more-btn" data-tab="more" aria-haspopup="dialog" aria-controls="more-sheet"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="18.5" cy="12" r="1.4"/></svg><span>More</span></button>
+</nav>
+<div id="more-sheet" class="sheet" popover="auto" role="dialog" aria-labelledby="more-h">
+  <h2 id="more-h" class="mt0">More</h2>
+  <ul class="sheet-list">
+    <li><a href="#/top5" data-tab="top5">Top 5 pitfalls</a></li>
+    <li><a href="#/insurers" data-tab="insurers">Insurers</a></li>
+    <li><a href="#/schemes" data-tab="schemes">National schemes</a></li>
+    <li><a href="#/glossary" data-tab="glossary">Key terms</a></li>
+    <li><a href="#/faq" data-tab="faq">FAQ</a></li>
+    <li><a href="#/sources" data-tab="sources">Sources</a></li>
+  </ul>
+</div>
 <main id="main" class="wrap" tabindex="-1">
   <p class="loading">Loading…</p>
 </main>
