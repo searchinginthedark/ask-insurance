@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.11.03.2
+
+- feat: IP rider Q&As (ward class, downgrading, cost from 60) and MOH's Mr A worked example
+
 ## v2026.11.03
 
 - feat: term life Q&As (end age, extending 65 to 75, whether it is worth it, death vs TPD)
