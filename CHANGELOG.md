@@ -1,5 +1,12 @@
 # Changelog
 
+## v2026.11.02
+
+- fix(moh_ip): match insurer names under MOH's new link label
+- docs: follow the workspace folder rename to kebab-case
+- chore: empty commit to test Vercel Git integration
+- chore: empty commit to test Vercel Git integration
+
 ## v2026.10.23
 
 - Fix Compare intro showing raw URLs instead of links
