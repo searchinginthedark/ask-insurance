@@ -122,6 +122,14 @@ def check_highlights(guide):
             for f in story.get("steps") or []:
                 if f.get("s") not in src:
                     errors.append("guide: %s story step has no valid source: %r" % (c["id"], f.get("t", "")[:40]))
+    # "What pays when": every line names a type page and carries its own source.
+    cats = {c["id"] for c in guide["categories"]}
+    for e in guide.get("events") or []:
+        if not (e.get("id") and e.get("label") and e.get("lines")):
+            errors.append("guide: event %r needs id, label and lines" % e.get("id"))
+        for f in e.get("lines") or []:
+            if f.get("cat") not in cats or f.get("s") not in src or not (f.get("k") and f.get("t")):
+                errors.append("guide: event %s line %r needs cat, k, t and a valid source" % (e.get("id"), f.get("k")))
     pains = guide.get("pain_points") or []
     if len(pains) != 5:
         errors.append("guide: expected 5 pain points, found %d" % len(pains))

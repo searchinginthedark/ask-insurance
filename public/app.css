@@ -403,3 +403,13 @@ h1.with-chip { display: flex; gap: 12px; align-items: center; }
 .age-form .meta { margin: 4px 0 0; }
 .bands li.is-you { box-shadow: inset 4px 0 0 var(--accent); padding-left: 10px; margin-left: -10px; border-radius: 4px; }
 .tag.you { margin-left: 6px; background: var(--accent); color: var(--surface); font-size: .75rem; vertical-align: 1px; }
+
+/* What pays when: event tiles (links, so the pick lives in the URL) and the covers that respond. */
+.ev-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 8px; margin: .5rem 0 1rem; }
+.ev-tile { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; min-height: 76px; padding: 10px 6px; text-align: center; font-weight: 650; font-size: .9rem; color: var(--text); text-decoration: none; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-ctl); }
+.ev-tile[aria-current="true"] { border: 2px solid var(--brand); background: var(--tag-bg); color: var(--tag-fg); }
+.ev-pay { list-style: none; padding: 0; margin: 0 0 1rem; display: grid; gap: 10px; }
+.ev-pay li { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-ctl); padding: 12px 14px; box-shadow: var(--shadow); }
+.ev-k { display: flex; gap: 8px; align-items: center; font-weight: 700; color: var(--text); text-decoration: none; }
+.ev-k:hover span { text-decoration: underline; }
+.ev-pay p { margin: 6px 0 0; }
