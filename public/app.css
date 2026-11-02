@@ -413,3 +413,24 @@ h1.with-chip { display: flex; gap: 12px; align-items: center; }
 .ev-k { display: flex; gap: 8px; align-items: center; font-weight: 700; color: var(--text); text-decoration: none; }
 .ev-k:hover span { text-decoration: underline; }
 .ev-pay p { margin: 6px 0 0; }
+
+/* Shieldy: every mascot blinks now and then; the corner helper hops when it speaks. All motion
+   stops under prefers-reduced-motion (the global rule above). */
+.mascot .eye { transform-box: fill-box; transform-origin: center; animation: blink 7s infinite; }
+@keyframes blink { 0%, 95%, 100% { transform: scaleY(1); } 97% { transform: scaleY(.12); } }
+.mascot.hop { animation: hop .5s ease; }
+@keyframes hop { 0%, 100% { transform: translateY(0); } 40% { transform: translateY(-8px) rotate(-6deg); } 70% { transform: translateY(0) rotate(3deg); } }
+
+.helper { position: fixed; right: max(12px, env(safe-area-inset-right)); bottom: max(12px, env(safe-area-inset-bottom)); z-index: 30; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; transition: transform .25s ease, opacity .25s ease; pointer-events: none; }
+.helper > * { pointer-events: auto; }
+.helper.tucked { transform: translateY(90px); opacity: 0; }
+.hbtn { width: 60px; height: 60px; display: grid; place-items: center; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); box-shadow: var(--shadow-up); cursor: pointer; }
+.hbtn:active .mascot { transform: scale(.92); }
+.hb { max-width: min(290px, calc(100vw - 32px)); background: var(--surface); color: var(--text); border: 1px solid var(--line); border-radius: 18px 18px 6px 18px; padding: 12px 14px; box-shadow: var(--shadow-up); font-size: .95rem; }
+.hb[hidden] { display: none; }
+.hb p { margin: 0 0 8px; }
+.hb-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.hb-row .btn { min-height: 40px; text-decoration: none; display: inline-flex; align-items: center; }
+.hb-off { background: none; border: 0; padding: 6px 2px; font: inherit; font-size: .82rem; color: var(--muted); text-decoration: underline; cursor: pointer; min-height: 40px; }
+/* Room at the end of every page so the helper never sits on the last line. */
+body.has-helper .foot { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }

@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.11.03.9
+
+- feat: Shieldy, a quiet helper mascot: blinks, hops, and offers one navigation hint now and then
+
 ## v2026.11.03.8
 
 - feat: "What pays when" explorer: pick an event, see which kinds of cover respond and how
