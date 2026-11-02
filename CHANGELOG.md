@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.11.03.6
+
+- feat: skeptical-buyer Q&As for whole life, disability income, long-term care, cancer plans and hospital cash
+
 ## v2026.11.03.5
 
 - feat: critical illness Q&As (severe vs early vs multi-pay, how much, how long)
