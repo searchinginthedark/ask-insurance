@@ -371,7 +371,8 @@ def parse_insurer_tables(soup, errors):
         elif "Availability of Pre-Auth" in head:
             found_pre = True
             for r in rows[1:]:
-                name = re.sub(r"\s*↗.*$", "", r[0]).strip() if r else ""
+                # MOH's link label: "AIA ↗" until Oct 2026, then "AIA (opens in new tab)".
+                name = re.sub(r"\s*(↗|\(opens in new tab\)).*$", "", r[0]).strip() if r else ""
                 iid = INSURERS.get(name)
                 if iid and len(r) >= 2:
                     out.setdefault(iid, {})["preauth"] = {"v": re.sub(r"\s*\d+$", "", r[1]).strip()}
