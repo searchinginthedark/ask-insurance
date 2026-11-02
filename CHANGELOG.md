@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.11.03.3
+
+- feat: Shield cash from 61 by ward class (MOH tables) and Q&As on affordability and downgrading
+
 ## v2026.11.03.2
 
 - feat: IP rider Q&As (ward class, downgrading, cost from 60) and MOH's Mr A worked example

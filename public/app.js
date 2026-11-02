@@ -241,6 +241,72 @@ function bandsChart(keys) {
     })));
 }
 
+// Shield premiums from 61 to 85, per ward class, read from MOH's own comparison tables (the same
+// data as the Compare tab, re-checked against MOH by tools/moh_ip.py). Only the private part
+// ("IP Premium (excl. MSHL)") is shown, because that is the part the MediSave limit caps; the limit
+// itself comes from the verified by-age key figure, so no amount here is typed by hand. Cash is
+// the one sum this page works out: the private part minus that limit, never below zero.
+const LATE_BANDS = ["61 to 65", "66 to 70", "71 to 73", "74 to 75", "76 to 78", "79 to 80", "81 to 83", "84 to 85"];
+
+function bandStart(label) { const m = /^(\d+)/.exec(label); return m ? +m[1] : null; }
+
+// "40 and below" / "41 to 70" / "71 and above" -> the limit for one age next birthday.
+function medisaveLimit(bands, age) {
+  for (const [label, amount] of bands) {
+    const n = (label.match(/\d+/g) || []).map(Number);
+    if (/below/.test(label) ? age <= n[0] : /above/.test(label) ? age >= n[0] : age >= n[0] && age <= n[1]) return amount;
+  }
+  return null;
+}
+
+function premiumsChart(c) {
+  const comp = state.compare[c.id];
+  const k = (c.key || []).find(x => x.bands);
+  if (!comp || comp.kind !== "moh" || !k || !comp.units) return null;
+  const num = s => (String(s).match(/[\d,]+(?:\.\d+)?/g) || []).map(x => +x.replace(/,/g, ""));
+  const money = n => "$" + Math.round(n).toLocaleString("en-SG");
+  const span = (lo, hi) => lo === hi ? money(lo) : money(lo) + " to " + money(hi);
+  const rows = comp.groups.map(g => {
+    const units = comp.units.filter(u => u.group === g.id);
+    const bands = LATE_BANDS.map(b => {
+      const xs = units.flatMap(u => num(((u.premium || {})[b] || {}).excl || ""));
+      const limit = medisaveLimit(k.bands, bandStart(b));
+      if (!xs.length || limit == null) return null;
+      const lo = Math.min(...xs), hi = Math.max(...xs);
+      return { b, lo, hi, limit, clo: Math.max(0, lo - limit), chi: Math.max(0, hi - limit) };
+    });
+    return bands.includes(null) ? null : { g, n: units.length, bands };
+  });
+  if (!rows.length || rows.includes(null)) return null;
+  const max = Math.max(...rows.flatMap(r => r.bands.map(x => x.chi)));
+  const asAt = [...new Set(comp.groups.map(g => g.as_at))].join(", ");
+  return h("section", { class: "bands late", "aria-labelledby": "late-h" },
+    h("h2", { id: "late-h", class: "mt0", text: "Cash for a Shield plan from 61, by ward class" }),
+    h("p", { class: "meta" },
+      `Yearly premium for the private part of the plan, including GST, by age next birthday, from MOH's comparison tables (as at ${asAt}). `,
+      "Cash is that premium minus the most MediSave can pay for it, if you have the MediSave to use. ",
+      "Each range runs from the cheapest to the dearest plan sold by the insurers on this site. ",
+      "Left out: the MediShield Life part, which MediSave pays in full, and riders, which are cash only. Source: ",
+      srcLink("moh_ip_compare")),
+    rows.map(({ g, n, bands }) => {
+      const first = bands[0], last = bands[bands.length - 1];
+      return h("details", { class: "late-group" },
+        h("summary", null,
+          h("span", { class: "q", text: `${g.name} (${n} plans)` }),
+          h("span", { class: "short", text: `Cash ${span(first.clo, first.chi)} a year at ${first.b}, ${span(last.clo, last.chi)} at ${last.b}` })),
+        h("ul", null, bands.map(x => {
+          const bar = h("span", { class: "band-bar", "aria-hidden": "true" });
+          bar.style.width = (max ? Math.round(x.chi / max * 100) : 0) + "%";
+          return h("li", null,
+            h("span", { class: "band-age", text: "Age " + x.b }),
+            h("span", { class: "band-track", "aria-hidden": "true" }, bar),
+            h("span", { class: "band-v" },
+              h("strong", { text: "Cash: " + span(x.clo, x.chi) + " a year" }),
+              ` (private part ${span(x.lo, x.hi)}, less up to ${money(x.limit)} from MediSave)`));
+        })));
+    }));
+}
+
 // Questions about one type, answered on its own page. Same shape and checks as the main FAQ.
 function qaSection(c) {
   if (!c.qa || !c.qa.length) return null;
@@ -327,6 +393,7 @@ function viewType(id, params) {
     glance(c.key),
     mustKnow(c),
     bandsChart(c.key),
+    premiumsChart(c),
     h("h2", { text: "In simple terms" }),
     h("p", { class: "lede" }, rich(c.plain, false)),
     h("h2", { text: "Who it is for" }),
