@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.11.03.4
+
+- style: worked-example cards stand apart (amber step numbers and label, soft shadow)
+
 ## v2026.11.03.3
 
 - feat: Shield cash from 61 by ward class (MOH tables) and Q&As on affordability and downgrading
