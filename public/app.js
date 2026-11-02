@@ -117,7 +117,7 @@ function srcLink(id) {
 }
 
 // Amounts, percentages, multiples and durations in bold so a skimming eye lands on them.
-const FIGURE = /(S?\$[\d,]+(?:\.\d+)?|\b\d[\d,]*(?:\.\d+)?%|\b\d+(?:\.\d+)?(?:x\b| times\b)|\b\d+ (?:days|weeks|months|years)\b)/;
+const FIGURE = /(S?\$[\d,]+(?:\.\d+)?(?:K\b)?|\b\d[\d,]*(?:\.\d+)?%|\b\d+(?:\.\d+)?(?:x\b| times\b)|\b\d+ (?:days|weeks|months|years)\b)/;
 // Glossary marks in guide text: {{id}} or {{id|words shown}}. Marked by hand on the first use per
 // page (the build enforces it), never matched automatically: "payer" is not "payor".
 const TERM = /\{\{([a-z-]+)(?:\|([^}]+))?\}\}/;

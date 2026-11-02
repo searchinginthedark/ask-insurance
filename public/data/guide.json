@@ -50,6 +50,11 @@
    "publisher": "CPF Board",
    "url": "https://www.cpf.gov.sg/member/healthcare-financing/medishield-life"
   },
+  "cpf_ip_need": {
+   "title": "Do you need an Integrated Shield Plan (IP)? (infographic, premiums as of 1 Apr 2026)",
+   "publisher": "CPF Board",
+   "url": "https://www.cpf.gov.sg/content/dam/web/member/healthcare/documents/Do%20you%20need%20an%20Integrated%20Shield%20Plan%20(IP).pdf"
+  },
   "cpf_careshield": {
    "title": "CareShield Life",
    "publisher": "CPF Board",
@@ -613,7 +618,47 @@
    "tools": [
     "moh_ip_compare",
     "cpf_ip"
-   ]
+   ],
+   "story": {
+    "who": "CPF's own illustration: the premiums one person would pay over a lifetime, at today's prices, for MediShield Life alone or with a Shield plan on top.",
+    "steps": [
+     {
+      "t": "MediShield Life alone adds up to about $71K in premiums from age 0 to 85. MediSave can pay all of it.",
+      "s": "cpf_ip_need",
+      "quote": [
+       "MSHL is fully payable by MediSave",
+       "This is the sum of current premiums (plan with median cumulative premiums) from ages 0 to 85"
+      ]
+     },
+     {
+      "t": "With a Shield plan on top, the lifetime total rises to about $94K for a Standard B1 plan, $130K for a Class A plan and $261K for a private-hospital plan. Each figure uses the plan with the median lifetime premium of its type.",
+      "s": "cpf_ip_need",
+      "quote": [
+       "MSHL Standard B1 IP Class A IP Private IP",
+       "plan with median cumulative premiums"
+      ]
+     },
+     {
+      "t": "So a private-hospital plan can cost up to $190,000 more than MediShield Life alone, and CPF estimates $146,000 of that extra is cash.",
+      "s": "cpf_ip_need",
+      "quote": "You pay up to $190,000 more, of which $146,000 is cash"
+     },
+     {
+      "t": "The rest of the extra is paid from MediSave. CPF estimated that amount from the current Additional Withdrawal Limits on MediSave for the private part.",
+      "s": "cpf_ip_need",
+      "quote": "The rest is paid in MediSave, and the amount is estimated based on the current Additional Withdrawal Limits for MediSave usage for Private Medical Insurance"
+     },
+     {
+      "t": "These are premiums as of 1 April 2026 added up, not a forecast. They leave out riders, which must be paid fully in cash.",
+      "s": "cpf_ip_need",
+      "quote": [
+       "Premiums are as of 1 Apr 2026",
+       "For illustrative purposes only, and not meant to be a projection of future premiums",
+       "Excludes Riders which are add-on plans to IPs and must be fully paid in cash"
+      ]
+     }
+    ]
+   }
   },
   {
    "id": "ip_rider",
