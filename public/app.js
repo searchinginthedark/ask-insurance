@@ -228,7 +228,7 @@ function bandsChart(keys) {
   const max = Math.max(...k.bands.map(([, n]) => n));
   return h("section", { class: "bands", "aria-labelledby": "bands-h" },
     h("h2", { id: "bands-h", class: "mt0", text: "MediSave vs cash, by age" }),
-    h("p", { class: "meta" }, "For the private part of a Shield plan, by your age next birthday. Source: ", srcLink(k.s)),
+    h("p", { class: "meta" }, "Only for the private part of a Shield plan, by your age next birthday. The MediShield Life part is paid from MediSave in full. Source: ", srcLink(k.s)),
     h("ul", null, k.bands.map(([label, n]) => {
       // CSP is style-src 'self', so a style attribute is refused; setting it through the DOM is not.
       const bar = h("span", { class: "band-bar", "aria-hidden": "true" });
