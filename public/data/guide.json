@@ -918,6 +918,53 @@
    ],
    "tools": [
     "comparefirst"
+   ],
+   "qa": [
+    {
+     "q": "Up to what age should my term cover last?",
+     "short": "No official age. MoneySense ties it to how long others depend on you.",
+     "a": "No official source gives an age. MoneySense says to buy term cover for the period you need protection, for example until your youngest child completes university or can support themselves. It also says to choose the term carefully, because you and your family are not protected after it expires.",
+     "s": "ms_term",
+     "quote": [
+      "if you want to be covered until your youngest child completes university or is financially self-reliant",
+      "Choose the coverage term carefully. You and/ or your dependents will not be protected after the term expires"
+     ]
+    },
+    {
+     "q": "My cover ends at 65. Can I extend it to 75 later?",
+     "short": "Only if the policy lets you renew or convert, and the new premium follows your older age.",
+     "a": "Only if your policy allows it. MoneySense says a term policy may be renewable or convertible. The premium stays the same during the term, but once the policy is renewed or converted it is revised to your age at renewal, and the renewal premium is often not guaranteed. Converting to another type of policy comes with conditions. If you reinstate a policy after it expires, you may have to go through underwriting, and you may not be able to get term insurance past a certain age.",
+     "s": "ms_term",
+     "quote": [
+      "May be renewable or convertible. Often, premium when exercising renewal is not guaranteed",
+      "Premium is constant throughout the period except when renewed, converted or reinstated. After that, premium is revised according to your age upon renewal",
+      "There will be conditions attached before conversion to another type of product",
+      "If you choose to reinstate the policy after it expires, you may be subject to underwriting",
+      "You may not be able to get term insurance past a certain age"
+     ]
+    },
+    {
+     "q": "Is it worth paying to extend cover from 65 to 75?",
+     "short": "No official verdict. Premiums rise with age, so weigh who still relies on you.",
+     "a": "No official source answers this, and this site does not recommend cover. MoneySense notes that premiums can increase substantially as you get older, which is why it suggests considering a longer term while you are younger, and that you may not be able to get term insurance past a certain age. It ties the length of cover to how long others depend on you, for example until your youngest child is financially self-reliant.",
+     "s": "ms_term",
+     "quote": [
+      "Consider buying term insurance for a longer period of protection when you are younger because the premiums can increase substantially as you get older",
+      "You may not be able to get term insurance past a certain age",
+      "financially self-reliant"
+     ]
+    },
+    {
+     "q": "Is term cover split into a death amount and a separate TPD amount?",
+     "short": "LIA describes one sum insured, paid on death or TPD. Your policy sets the details.",
+     "a": "LIA describes term insurance as paying the sum insured when you die or become {{tpd|totally and permanently disabled}}, if the policy includes a TPD benefit. It does not describe two separate amounts. It also notes that for certain products the benefit paid may not equal the sum insured, so read your policy contract for how a TPD claim is paid and what cover is left afterwards.",
+     "s": "lia_terms",
+     "quote": [
+      "Pays the sum insured when you die or become Totally and Permanently Disabled if TPD benefit is provided",
+      "For certain products, the benefit payable may not be equal to the Sum Insured",
+      "please refer to your policy contract"
+     ]
+    }
    ]
   },
   {
