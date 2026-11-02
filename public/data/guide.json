@@ -619,6 +619,41 @@
     "moh_ip_compare",
     "cpf_ip"
    ],
+   "qa": [
+    {
+     "q": "Which ward class is easier to afford after 60?",
+     "short": "No official verdict. Shield premiums rise with age, and the private part above the limit is cash.",
+     "a": "No official source picks one, and this site does not recommend cover. CPF says Shield plan premiums increase significantly with age and could be up to five times your MediShield Life premiums in your 70s or 80s, so consider whether you can afford them, especially after retirement. Premiums above the Additional Withdrawal Limits must be paid in cash, so CPF suggests assessing whether you can afford those payments throughout your lifetime. The cash chart on this page shows MOH's figures for each ward class.",
+     "s": "cpf_ip",
+     "quote": [
+      "Integrated Shield Plan premiums increase significantly with age and could be up to five times your MediShield Life premiums when you are in your 70s or 80s",
+      "Consider whether you can afford these higher premiums, especially after retirement",
+      "Integrated Shield Plan premiums above the Additional Withdrawal Limits must be paid in cash. Assess whether you can afford these payments throughout your lifetime"
+     ]
+    },
+    {
+     "q": "If I downgrade from a private or Class A plan to B1 at 60, does my cover reset?",
+     "short": "With the same insurer, MoneySense says no new underwriting is needed. Ask about the rest.",
+     "a": "MoneySense says that if you can no longer afford your Shield plan, you can consider switching to a plan for a lower ward class with the same insurer, and this would not need additional underwriting. You could also drop the Shield plan and keep only MediShield Life, which does not exclude pre-existing conditions. None of the official sources here says whether waiting periods or other terms restart, so ask your insurer in writing before you switch.",
+     "s": "ms_ip",
+     "quote": [
+      "consider switching to a plan that provides coverage for lower-ward classes with the same insurer",
+      "this would not need additional underwriting",
+      "Or you could cease your IP and be insured under only MediShield Life, which does not exclude pre-existing conditions"
+     ]
+    },
+    {
+     "q": "What if I move to a cheaper Shield plan with a different insurer?",
+     "short": "Conditions you already have may then be covered only up to MediShield Life.",
+     "a": "MoneySense says that if you switch from one Shield plan to another, pre-existing conditions are covered only up to MediShield Life benefits. If you have developed health conditions since you bought your current plan, the new one may not give you the same coverage, and it may cost more for the benefits you want.",
+     "s": "ms_health_terms",
+     "quote": [
+      "if you switch from one IP to another, you will only be covered for pre-existing conditions up to MediShield Life benefits",
+      "If you have developed any health conditions, the new policy that you switch to may not provide you with the same coverage as your current policy",
+      "The new policy may also require you to pay more premiums in order to provide you with specific benefits"
+     ]
+    }
+   ],
    "story": {
     "who": "CPF's own illustration: the premiums one person would pay over a lifetime, at today's prices, for MediShield Life alone or with a Shield plan on top.",
     "steps": [
