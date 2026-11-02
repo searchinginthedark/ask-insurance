@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.11.02.2
+
+- feat: by-age MediSave chart, per-type Q&A and worked-example shells
+
 ## v2026.11.02
 
 - fix(moh_ip): match insurer names under MOH's new link label
