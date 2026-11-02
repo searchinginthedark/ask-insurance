@@ -391,3 +391,15 @@ h1.with-chip { display: flex; gap: 12px; align-items: center; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+
+/* Your age: one input that turns every by-age chart into your own numbers. The reader's row is
+   marked with an amber edge and a "You" tag (accent clears 4.5:1 on surface, contrast.py). */
+.you-box { border: 2px solid var(--brand); }
+.age-form { margin-top: .75rem; }
+.age-form label { display: block; font-weight: 700; font-size: .93rem; }
+.age-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 6px 0 2px; }
+.age-row input { width: 5.5rem; min-height: 44px; font: inherit; font-size: 1rem; padding: 6px 10px; color: var(--text); background: var(--bg); border: 1px solid var(--edge); border-radius: var(--r-ctl); }
+.btn.ghost { background: transparent; border-color: var(--line); }
+.age-form .meta { margin: 4px 0 0; }
+.bands li.is-you { box-shadow: inset 4px 0 0 var(--accent); padding-left: 10px; margin-left: -10px; border-radius: 4px; }
+.tag.you { margin-left: 6px; background: var(--accent); color: var(--surface); font-size: .75rem; vertical-align: 1px; }

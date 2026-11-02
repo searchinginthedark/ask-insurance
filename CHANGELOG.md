@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.11.03.7
+
+- feat: "your age" lens: your Shield cash on MOH's figures, your row marked in every by-age chart
+
 ## v2026.11.03.6
 
 - feat: skeptical-buyer Q&As for whole life, disability income, long-term care, cancer plans and hospital cash

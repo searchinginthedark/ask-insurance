@@ -230,11 +230,12 @@ function bandsChart(keys) {
     h("h2", { id: "bands-h", class: "mt0", text: "MediSave vs cash, by age" }),
     h("p", { class: "meta" }, "Only for the private part of a Shield plan, by your age next birthday. The MediShield Life part is paid from MediSave in full. Source: ", srcLink(k.s)),
     h("ul", null, k.bands.map(([label, n]) => {
+      const mine = inBand(label, getAge());
       // CSP is style-src 'self', so a style attribute is refused; setting it through the DOM is not.
       const bar = h("span", { class: "band-bar", "aria-hidden": "true" });
       bar.style.width = Math.round(n / max * 100) + "%";
-      return h("li", null,
-        h("span", { class: "band-age", text: "Age " + label }),
+      return h("li", { class: mine ? "is-you" : null },
+        h("span", { class: "band-age" }, "Age " + label, mine ? youTag() : null),
         h("span", { class: "band-track", "aria-hidden": "true" }, bar),
         h("span", { class: "band-v" }, h("strong", { text: "MediSave: up to $" + n.toLocaleString("en-SG") + " a year" }), ", then ",
           h("span", { class: "tag warn", text: "cash" }), " for the rest"));
@@ -250,31 +251,111 @@ const LATE_BANDS = ["61 to 65", "66 to 70", "71 to 73", "74 to 75", "76 to 78", 
 
 function bandStart(label) { const m = /^(\d+)/.exec(label); return m ? +m[1] : null; }
 
+// Does an age next birthday fall in a band label? Covers CPF's "40 and below" / "41 to 70" /
+// "71 and above" and MOH's "1 to 20" ... "86 to 90" / "Premiums above age 90".
+function inBand(label, age) {
+  const n = (label.match(/\d+/g) || []).map(Number);
+  if (!n.length || age == null) return false;
+  if (/below/.test(label)) return age <= n[0];
+  if (/above age/.test(label)) return age > n[0];
+  if (/above/.test(label)) return age >= n[0];
+  return age >= n[0] && age <= n[1];
+}
+
 // "40 and below" / "41 to 70" / "71 and above" -> the limit for one age next birthday.
 function medisaveLimit(bands, age) {
-  for (const [label, amount] of bands) {
-    const n = (label.match(/\d+/g) || []).map(Number);
-    if (/below/.test(label) ? age <= n[0] : /above/.test(label) ? age >= n[0] : age >= n[0] && age <= n[1]) return amount;
-  }
-  return null;
+  const hit = bands.find(([label]) => inBand(label, age));
+  return hit ? hit[1] : null;
+}
+
+const num = s => (String(s).match(/[\d,]+(?:\.\d+)?/g) || []).map(x => +x.replace(/,/g, ""));
+const dollars = n => "$" + Math.round(n).toLocaleString("en-SG");
+const span = (lo, hi) => lo === hi ? dollars(lo) : dollars(lo) + " to " + dollars(hi);
+
+// The private part of the premium ("IP Premium (excl. MSHL)") across a set of plans for one MOH
+// age band, and the cash left after the MediSave limit. The one sum the site works out itself.
+function shieldCash(units, b, limit) {
+  const xs = units.flatMap(u => num(((u.premium || {})[b] || {}).excl || ""));
+  if (!xs.length || limit == null) return null;
+  const lo = Math.min(...xs), hi = Math.max(...xs);
+  return { b, lo, hi, limit, clo: Math.max(0, lo - limit), chi: Math.max(0, hi - limit) };
+}
+
+// ---------- your age (kept in this browser only, never sent anywhere) ----------
+// Storage can throw (private mode, blocked site data); the site then just works without it.
+const AGE_KEY = "ai-age-next-birthday";
+function getAge() {
+  try { const n = parseInt(localStorage.getItem(AGE_KEY), 10); return n >= 1 && n <= 120 ? n : null; } catch { return null; }
+}
+function setAge(n) {
+  try { if (n) localStorage.setItem(AGE_KEY, String(n)); else localStorage.removeItem(AGE_KEY); } catch { /* not saved */ }
+  document.dispatchEvent(new CustomEvent("ai:age", { detail: n || null }));
+}
+function youTag() { return h("span", { class: "tag you", text: "You" }); }
+
+// Re-draw the page in place after a setting changes, keeping the reader where they were.
+function rerender(focusId) {
+  const y = window.scrollY;
+  route();
+  window.scrollTo(0, y);
+  const el = focusId && document.getElementById(focusId);
+  if (el) el.focus({ preventScroll: true });
+}
+
+function ageForm() {
+  const age = getAge();
+  const input = h("input", { id: "my-age", type: "number", min: "1", max: "120", inputmode: "numeric", value: age || "", "aria-describedby": "my-age-note" });
+  return h("form", { class: "age-form", onsubmit: e => {
+      e.preventDefault();
+      const n = parseInt(input.value, 10);
+      if (n >= 1 && n <= 120) { setAge(n); rerender("my-age"); } else input.focus();
+    } },
+    h("label", { for: "my-age", text: "My age next birthday" }),
+    h("div", { class: "age-row" }, input,
+      h("button", { type: "submit", class: "btn", text: age ? "Update" : "Show my numbers" }),
+      age ? h("button", { type: "button", class: "btn ghost", text: "Clear", onclick: () => { setAge(null); rerender("my-age"); } }) : null),
+    h("p", { id: "my-age-note", class: "meta", text: "Saved in this browser only. It is never sent anywhere." }));
+}
+
+// "At 35: what a Shield plan costs you": every ward class, from MOH's own tables, for one age.
+function yourShieldCost(c) {
+  const comp = state.compare[c.id];
+  const k = (c.key || []).find(x => x.bands);
+  if (!comp || comp.kind !== "moh" || !k || !comp.units) return null;
+  const age = getAge();
+  const head = h("h2", { id: "you-h", class: "mt0", text: age ? `At ${age}: what a Shield plan costs you` : "What would a Shield plan cost you?" });
+  if (!age) return h("section", { class: "bands you-box", "aria-labelledby": "you-h" }, head,
+    h("p", { class: "meta", text: "Enter your age next birthday to see, for each ward class, the yearly premium for the private part and how much of it would be cash, on MOH's own figures." }),
+    ageForm());
+  const band = (comp.bands || []).find(b => inBand(b, age));
+  const limit = medisaveLimit(k.bands, age);
+  const rows = band ? comp.groups.map(g => ({ g, x: shieldCash(comp.units.filter(u => u.group === g.id), band, limit) })).filter(r => r.x) : [];
+  if (!rows.length) return null;
+  const max = Math.max(...rows.map(r => r.x.chi), 1);
+  const asAt = [...new Set(comp.groups.map(g => g.as_at))].join(", ");
+  return h("section", { class: "bands you-box", "aria-labelledby": "you-h" }, head,
+    h("p", { class: "meta" },
+      `Private part of the yearly premium, including GST, for age ${band} from MOH's comparison tables (as at ${asAt}). At ${age}, MediSave pays up to ${dollars(limit)} of it a year; cash is the rest, if you have the MediSave to use. Ranges run from the cheapest to the dearest plan. Source: `,
+      srcLink("moh_ip_compare")),
+    h("ul", null, rows.map(({ g, x }) => {
+      const bar = h("span", { class: "band-bar", "aria-hidden": "true" });
+      bar.style.width = Math.round(x.chi / max * 100) + "%";
+      return h("li", null,
+        h("span", { class: "band-age", text: g.name }),
+        h("span", { class: "band-track", "aria-hidden": "true" }, bar),
+        h("span", { class: "band-v" }, h("strong", { text: "Cash: " + span(x.clo, x.chi) + " a year" }), ` (private part ${span(x.lo, x.hi)})`));
+    })),
+    ageForm());
 }
 
 function premiumsChart(c) {
   const comp = state.compare[c.id];
   const k = (c.key || []).find(x => x.bands);
   if (!comp || comp.kind !== "moh" || !k || !comp.units) return null;
-  const num = s => (String(s).match(/[\d,]+(?:\.\d+)?/g) || []).map(x => +x.replace(/,/g, ""));
-  const money = n => "$" + Math.round(n).toLocaleString("en-SG");
-  const span = (lo, hi) => lo === hi ? money(lo) : money(lo) + " to " + money(hi);
+  const age = getAge();
   const rows = comp.groups.map(g => {
     const units = comp.units.filter(u => u.group === g.id);
-    const bands = LATE_BANDS.map(b => {
-      const xs = units.flatMap(u => num(((u.premium || {})[b] || {}).excl || ""));
-      const limit = medisaveLimit(k.bands, bandStart(b));
-      if (!xs.length || limit == null) return null;
-      const lo = Math.min(...xs), hi = Math.max(...xs);
-      return { b, lo, hi, limit, clo: Math.max(0, lo - limit), chi: Math.max(0, hi - limit) };
-    });
+    const bands = LATE_BANDS.map(b => shieldCash(units, b, medisaveLimit(k.bands, bandStart(b))));
     return bands.includes(null) ? null : { g, n: units.length, bands };
   });
   if (!rows.length || rows.includes(null)) return null;
@@ -297,12 +378,12 @@ function premiumsChart(c) {
         h("ul", null, bands.map(x => {
           const bar = h("span", { class: "band-bar", "aria-hidden": "true" });
           bar.style.width = (max ? Math.round(x.chi / max * 100) : 0) + "%";
-          return h("li", null,
-            h("span", { class: "band-age", text: "Age " + x.b }),
+          return h("li", { class: inBand(x.b, age) ? "is-you" : null },
+            h("span", { class: "band-age" }, "Age " + x.b, inBand(x.b, age) ? youTag() : null),
             h("span", { class: "band-track", "aria-hidden": "true" }, bar),
             h("span", { class: "band-v" },
               h("strong", { text: "Cash: " + span(x.clo, x.chi) + " a year" }),
-              ` (private part ${span(x.lo, x.hi)}, less up to ${money(x.limit)} from MediSave)`));
+              ` (private part ${span(x.lo, x.hi)}, less up to ${dollars(x.limit)} from MediSave)`));
         })));
     }));
 }
@@ -393,6 +474,7 @@ function viewType(id, params) {
     glance(c.key),
     mustKnow(c),
     bandsChart(c.key),
+    yourShieldCost(c),
     premiumsChart(c),
     h("h2", { text: "In simple terms" }),
     h("p", { class: "lede" }, rich(c.plain, false)),
@@ -580,7 +662,7 @@ function compareTable(cat, comp, params, head) {
   let picked = fromUrl.ids;
   if (!picked.length && !fromUrl.none) picked = ins ? comp.units.filter(u => u.insurer === ins).map(u => u.id)
     : groups.length ? ofGroup(groups[0].id) : comp.units.map(u => u.id);
-  let band = bands.includes(params.get("age")) ? params.get("age") : comp.default_band;
+  let band = bands.includes(params.get("age")) ? params.get("age") : bands.find(b => inBand(b, getAge())) || comp.default_band;
   const groupName = Object.fromEntries(groups.map(g => [g.id, g.name]));
   const prod = Object.fromEntries(state.products.map(p => [p.id, p]));
 
