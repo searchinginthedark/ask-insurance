@@ -1,5 +1,12 @@
 # Changelog
 
+## v2026.11.03
+
+- feat: term life Q&As (end age, extending 65 to 75, whether it is worth it, death vs TPD)
+- feat: CPF's own worked example of the MediSave/cash split on the Shield page
+- fix: cite MOH for the per-year MediSave limits on Shield premiums
+- feat: say plainly which part of a Shield premium MediSave pays in full
+
 ## v2026.11.02.2
 
 - feat: by-age MediSave chart, per-type Q&A and worked-example shells
