@@ -388,6 +388,28 @@ function premiumsChart(c) {
     }));
 }
 
+// "What pays when": pick an event, see which kinds of cover respond and how. Every line is a
+// sourced item in guide.events; the page adds no claim. It shows examples, never a shopping list.
+const EVENT_ICON = { hospital: "hospitalisation", cancer: "cancer", work: "disability_income", care: "long_term_care", death: "term_life" };
+function viewWhen(params) {
+  const evs = state.guide.events || [];
+  const pick = evs.find(e => e.id === params.get("e")) || evs[0];
+  if (!pick) return viewMissing();
+  return [
+    h("h1", { text: "If this happens, what pays?" }),
+    h("p", { class: "lede", text: "Pick an event to see which kinds of cover can respond, and how each one pays. These are examples of what can pay, not a list of what you need." }),
+    h("div", { class: "ev-grid", role: "group", "aria-label": "Events" }, evs.map(e =>
+      h("a", { class: "ev-tile", href: "#/when?e=" + e.id, "aria-current": e === pick ? "true" : null },
+        catIcon(EVENT_ICON[e.id]), h("span", { text: e.label })))),
+    h("h2", { id: "ev-h", text: pick.label }),
+    h("ul", { class: "ev-pay", "aria-labelledby": "ev-h" }, pick.lines.map(f => h("li", null,
+      h("a", { class: "ev-k", href: "#/type/" + f.cat }, catIcon(f.cat), h("span", { text: f.k })),
+      h("p", null, rich(f.t), " ", srcLink(f.s))))),
+    h("p", { class: "meta", text: "Each kind of cover has its own conditions, waiting periods and exclusions. Open its page for the details." }),
+    disclaimerNote(),
+  ];
+}
+
 // Questions about one type, answered on its own page. Same shape and checks as the main FAQ.
 function qaSection(c) {
   if (!c.qa || !c.qa.length) return null;
@@ -1030,8 +1052,8 @@ function viewMissing() {
 }
 
 // ---------- router ----------
-const LEDE_POSE = { top5: "alert", insurers: "wave", glossary: "read", sources: "read", faq: "think" };
-const TAB_OF = { "": "types", type: "types", top5: "top5", insurers: "insurers", insurer: "insurers", compare: "compare", schemes: "schemes", check: "check", glossary: "glossary", faq: "faq", sources: "sources" };
+const LEDE_POSE = { when: "think", top5: "alert", insurers: "wave", glossary: "read", sources: "read", faq: "think" };
+const TAB_OF = { "": "types", type: "types", when: "when", top5: "top5", insurers: "insurers", insurer: "insurers", compare: "compare", schemes: "schemes", check: "check", glossary: "glossary", faq: "faq", sources: "sources" };
 
 function route() {
   if (POPOVER && pop.matches(":popover-open")) { popFrom = null; pop.hidePopover(); }
@@ -1045,6 +1067,7 @@ function route() {
     case "": view = viewTypes(); break;
     case "type": view = viewType(decodeURIComponent(arg || ""), params); break;
     case "top5": view = viewTop5(); break;
+    case "when": view = viewWhen(params); break;
     case "insurers": view = viewInsurers(); break;
     case "insurer": view = viewInsurer(decodeURIComponent(arg || "")); break;
     case "compare": view = arg ? viewCompareType(decodeURIComponent(arg), params) : viewCompare(); break;

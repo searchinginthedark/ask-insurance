@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.11.03.8
+
+- feat: "What pays when" explorer: pick an event, see which kinds of cover respond and how
+
 ## v2026.11.03.7
 
 - feat: "your age" lens: your Shield cash on MOH's figures, your row marked in every by-age chart

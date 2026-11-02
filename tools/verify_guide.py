@@ -79,6 +79,9 @@ def items(guide):
             yield "glossary.%s" % g["id"], f, f["t"]
         if g.get("example"):
             yield "glossary.%s.example" % g["id"], g["example"], g["example"]["t"]
+    for e in guide.get("events", []):
+        for f in e["lines"]:
+            yield "events.%s" % e["id"], f, f["k"] + " " + plain(f["t"])
     sp = guide.get("starting_pay")
     if sp:
         yield "starting_pay", sp, sp["who"]
