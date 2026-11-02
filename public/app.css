@@ -434,3 +434,86 @@ h1.with-chip { display: flex; gap: 12px; align-items: center; }
 .hb-off { background: none; border: 0; padding: 6px 2px; font: inherit; font-size: .82rem; color: var(--muted); text-decoration: underline; cursor: pointer; min-height: 40px; }
 /* Room at the end of every page so the helper never sits on the last line. */
 body.has-helper .foot { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
+
+/* ---------- Phone: iOS-style chrome (below 720px; desktop keeps the top tabs) ----------
+   Bottom tab bar with More sheet, a large title that hands over to a slim translucent title
+   bar, bottom sheets with a grabber, segmented controls, press feedback, safe areas, no zoom
+   on focus. The palette and mascot stay the site's own: this changes how it feels, not whose
+   app it looks like. */
+:root { --tabbar-h: 0px; }
+.tabbar, .navbar { display: none; }
+.sheet { margin: 0; }
+.sheet:not(:popover-open):not(.open) { display: none; }
+
+@media (max-width: 719px) {
+  :root { --tabbar-h: calc(54px + env(safe-area-inset-bottom)); }
+  html { -webkit-tap-highlight-color: transparent; }
+  body { padding-bottom: var(--tabbar-h); }
+  .top { padding-top: env(safe-area-inset-top); }
+  .tabs { display: none; }
+  .wrap { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
+
+  /* Large title, then a slim bar once it scrolls away. */
+  h1 { font-size: 1.75rem; font-weight: 800; letter-spacing: -.01em; }
+  .hero h1 { font-size: 1.6rem; }
+  .navbar {
+    display: flex; position: fixed; top: 0; left: 0; right: 0; z-index: 20; justify-content: center; align-items: flex-end;
+    min-height: calc(44px + env(safe-area-inset-top)); padding: env(safe-area-inset-top) 56px 0;
+    background: color-mix(in srgb, var(--surface) 82%, transparent); -webkit-backdrop-filter: saturate(180%) blur(18px); backdrop-filter: saturate(180%) blur(18px);
+    border-bottom: .5px solid var(--line); opacity: 0; transform: translateY(-100%); transition: opacity .2s ease, transform .2s ease; pointer-events: none;
+  }
+  .navbar span { font: 600 17px/44px -apple-system, system-ui, sans-serif; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  body.scrolled .navbar { opacity: 1; transform: none; }
+
+  /* Bottom tab bar. */
+  .tabbar {
+    display: grid; grid-template-columns: repeat(5, 1fr); position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+    height: var(--tabbar-h); padding: 0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    background: color-mix(in srgb, var(--surface) 86%, transparent); -webkit-backdrop-filter: saturate(180%) blur(18px); backdrop-filter: saturate(180%) blur(18px);
+    border-top: .5px solid var(--line); -webkit-user-select: none; user-select: none;
+  }
+  .tabbar a, .tabbar button {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 54px; padding: 4px 0 0;
+    font: 500 10.5px/1.1 -apple-system, system-ui, sans-serif; color: var(--muted); text-decoration: none; background: none; border: 0; cursor: pointer;
+  }
+  .tabbar svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .tabbar a[aria-current="page"], .tabbar button.is-current { color: var(--brand); font-weight: 650; }
+  .tabbar a[aria-current="page"] svg, .tabbar button.is-current svg { stroke-width: 2.3; }
+
+  /* Bottom sheets: the More menu and the key-term popover. */
+  .sheet, .term-pop {
+    position: fixed; inset: auto 0 0 0; width: auto; max-width: none; max-height: 82vh; overflow: auto; margin: 0; transform: none;
+    background: var(--surface); color: var(--text); border: 0; border-radius: 22px 22px 0 0;
+    padding: 22px 16px calc(16px + env(safe-area-inset-bottom)); box-shadow: 0 -8px 30px rgba(0, 0, 0, .22);
+    transition: transform .32s cubic-bezier(.2, .8, .2, 1), overlay .32s allow-discrete, display .32s allow-discrete;
+  }
+  .sheet::before, .term-pop::before { content: ""; position: absolute; top: 7px; left: 50%; width: 36px; height: 5px; margin-left: -18px; border-radius: 3px; background: var(--line); }
+  .sheet::backdrop, .term-pop::backdrop { background: rgba(8, 16, 24, .35); }
+  @starting-style { .sheet:popover-open, .term-pop:popover-open { transform: translateY(100%); } }
+  .sheet-list { list-style: none; margin: 0; padding: 0; background: var(--bg); border-radius: 14px; overflow: hidden; }
+  .sheet-list li + li { border-top: .5px solid var(--line); }
+  .sheet-list a { display: flex; align-items: center; justify-content: space-between; min-height: 50px; padding: 0 16px; color: var(--text); text-decoration: none; font-weight: 600; }
+  .sheet-list a::after { content: "›"; color: var(--muted); font-size: 1.3rem; }
+  .sheet-list a[aria-current="page"] { color: var(--brand); }
+
+  /* Segmented control for choice rows (the ward-class picker). Action rows such as "Select all"
+     stay plain buttons, as on iOS. */
+  .quick[aria-labelledby] { display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 2px; padding: 2px; background: var(--bg); border: 1px solid var(--line); border-radius: 11px; scrollbar-width: none; }
+  .quick[aria-labelledby]::-webkit-scrollbar { display: none; }
+  .quick[aria-labelledby] .btn { flex: 1 0 auto; min-height: 36px; border: 0; border-radius: 9px; background: transparent; font-size: .88rem; white-space: nowrap; }
+  .quick[aria-labelledby] .btn[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 3px rgba(0, 0, 0, .15); }
+
+  /* No zoom when a field gets focus: iOS zooms in on inputs under 16px. */
+  input, select, textarea { font-size: 16px !important; }
+
+  /* The helper sits above the tab bar. */
+  .helper { bottom: calc(var(--tabbar-h) + 10px); }
+  body.has-helper .foot { padding-bottom: 84px; }
+}
+
+/* Press feedback, like a native control (phones and touch screens). */
+@media (hover: none) {
+  .btn, .card, .ev-tile, .tabbar a, .tabbar button, .sheet-list a, .hbtn, summary { transition: transform .12s ease, opacity .12s ease; }
+  .btn:active, .card:active, .ev-tile:active, .sheet-list a:active, summary:active { transform: scale(.97); opacity: .75; }
+  .tabbar a:active, .tabbar button:active { opacity: .5; }
+}
