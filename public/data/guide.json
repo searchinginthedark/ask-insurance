@@ -476,8 +476,14 @@
     {
      "v": "$300 / $600 / $900",
      "l": "most MediSave pays a year for the private part, by age next birthday: 40 and below / 41 to 70 / 71 and above. Rest is cash.",
-     "s": "cpf_ip",
-     "quote": "based on your age next birthday",
+     "s": "moh_ip_about",
+     "quote": [
+      "additional private insurance component is also payable by MediSave, but only up to the following Additional Withdrawal Limits",
+      "$300 per year for those at age 40 years and below on their next birthday",
+      "$600 per year for those at age 41 to 70 years on their next birthday",
+      "$900 per year for those at age 71 years and above on their next birthday",
+      "Any excess would need to be paid in cash"
+     ],
      "bands": [
       [
        "40 and below",
@@ -527,7 +533,14 @@
     },
     {
      "t": "MediSave pays the private part only up to $300 a year (age 40 and below next birthday), $600 (41 to 70) or $900 (71 and above). The rest is cash.",
-     "s": "cpf_ip"
+     "s": "moh_ip_about",
+     "quote": [
+      "additional private insurance component is also payable by MediSave, but only up to the following Additional Withdrawal Limits",
+      "$300 per year for those at age 40 years and below on their next birthday",
+      "$600 per year for those at age 41 to 70 years on their next birthday",
+      "$900 per year for those at age 71 years and above on their next birthday",
+      "Any excess would need to be paid in cash"
+     ]
     },
     {
      "t": "IP premiums rise with age and could be up to five times your MediShield Life premiums in your 70s or 80s.",
@@ -2319,7 +2332,14 @@
    "why": [
     {
      "t": "MediSave pays the private part only up to $300 a year at 40 and below (age next birthday), $600 from 41 to 70 and $900 from 71. The rest is cash.",
-     "s": "cpf_ip"
+     "s": "moh_ip_about",
+     "quote": [
+      "additional private insurance component is also payable by MediSave, but only up to the following Additional Withdrawal Limits",
+      "$300 per year for those at age 40 years and below on their next birthday",
+      "$600 per year for those at age 41 to 70 years on their next birthday",
+      "$900 per year for those at age 71 years and above on their next birthday",
+      "Any excess would need to be paid in cash"
+     ]
     },
     {
      "t": "Rider premiums are cash only and rise as you get older.",
