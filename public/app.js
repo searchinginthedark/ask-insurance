@@ -349,7 +349,7 @@ function yourShieldCost(c) {
     ageForm());
 }
 
-function premiumsChart(c) {
+function premiumsChart(c, bare) {
   const comp = state.compare[c.id];
   const k = (c.key || []).find(x => x.bands);
   if (!comp || comp.kind !== "moh" || !k || !comp.units) return null;
@@ -362,8 +362,8 @@ function premiumsChart(c) {
   if (!rows.length || rows.includes(null)) return null;
   const max = Math.max(...rows.flatMap(r => r.bands.map(x => x.chi)));
   const asAt = [...new Set(comp.groups.map(g => g.as_at))].join(", ");
-  return h("section", { class: "bands late", "aria-labelledby": "late-h" },
-    h("h2", { id: "late-h", class: "mt0", text: "Cash for a Shield plan from 61, by ward class" }),
+  return h("section", { class: "bands late" + (bare ? " bare" : ""), "aria-labelledby": bare ? null : "late-h" },
+    bare ? null : h("h2", { id: "late-h", class: "mt0", text: "Cash for a Shield plan from 61, by ward class" }),
     h("p", { class: "meta" },
       `Yearly premium for the private part of the plan, including GST, by age next birthday, from MOH's comparison tables (as at ${asAt}). `,
       "Cash is that premium minus the most MediSave can pay for it, if you have the MediSave to use. ",
@@ -411,19 +411,14 @@ function viewWhen(params) {
   ];
 }
 
-// Questions about one type, answered on its own page. Same shape and checks as the main FAQ.
-function qaSection(c) {
-  if (!c.qa || !c.qa.length) return null;
-  return [h("h2", { id: "qa-h", text: "Common questions" }), c.qa.map(faqItem)];
-}
 
 // One official worked example told as a short story, every step with its own source.
-function storyCard(c) {
+function storyCard(c, bare) {
   const st = c.story;
   if (!st) return null;
   const pubs = [...new Set(st.steps.map(f => state.guide.sources[f.s].publisher))].join(", ");
-  return h("section", { class: "story", "aria-labelledby": "story-h" },
-    h("div", { class: "must-head" }, mascot("read", 36), h("h2", { id: "story-h", class: "mt0", text: "A worked example" })),
+  return h("section", { class: "story", "aria-labelledby": bare ? null : "story-h" },
+    bare ? null : h("div", { class: "must-head" }, mascot("read", 36), h("h2", { id: "story-h", class: "mt0", text: "A worked example" })),
     h("p", { class: "ex-label", text: "Example from " + pubs }),
     h("p", { class: "story-who" }, rich(st.who, false)),
     h("ol", null, st.steps.map(f => h("li", null, rich(f.t), " ", srcLink(f.s)))));
@@ -441,27 +436,46 @@ function catName(id) { return state.cats[id] ? state.cats[id].name : id; }
 function insName(id) { const i = state.insurers.find(x => x.id === id); return i ? i.name : id; }
 
 // ---------- views ----------
+// ---------- tap-to-open sections (iOS inset rows) ----------
+// Long pages show a title and a one-line summary per section; the body opens on tap. Nothing is
+// removed, and a link to anything inside opens its section (see route()).
+function summaryOf(text, max = 110) {
+  const t = plainText(String(text || "")).trim();
+  const first = (t.match(/^.*?[.!?](?=\s|$)/) || [t])[0].trim();
+  return first.length > max ? first.slice(0, max - 1).trimEnd() + "…" : first;
+}
+function fold(id, title, short, ...kids) {
+  return h("details", { class: "fold", id },
+    h("summary", null, h("h2", { class: "fold-h", id: id ? id + "-h" : null, text: title }), short ? h("span", { class: "short", text: short }) : null),
+    h("div", { class: "fold-body" }, ...kids));
+}
+function count(n, one, many) { return n + " " + (n === 1 ? one : many); }
+
 function viewTypes() {
   const out = [
-    h("div", { class: "hero" }, mascot("wave", 88),
+    h("div", { class: "hero" }, mascot("wave", 72),
       h("h1", { text: "Singapore personal insurance, sourced" }),
       h("p", { class: "lede", text: "Every type of protection insurance except travel, explained in plain words: what it does, what can go wrong, what the Government already gives you, and which insurers sell it. Every official figure links to its source." })),
     disclaimerNote(),
     h("section", { class: "must", "aria-labelledby": "top5-h" },
       h("div", { class: "must-head" }, mascot("alert", 36), h("h2", { id: "top5-h", class: "mt0", text: "Top 5 ways people get caught out" })),
-      h("ol", { class: "top5" }, state.guide.pain_points.map(p =>
-        h("li", null, h("a", { href: "#/top5#" + p.id, text: p.title }))))),
+      h("ol", { class: "rows top5-rows" }, state.guide.pain_points.map((p, i) =>
+        h("li", null, h("a", { class: "row", href: "#/top5#" + p.id },
+          h("span", { class: "row-n", "aria-hidden": "true", text: String(i + 1) }),
+          h("span", { class: "row-main" }, h("span", { class: "row-t", text: p.title })),
+          h("span", { class: "row-go", "aria-hidden": "true", text: "›" })))))),
   ];
+  // One slim row per type, like an iOS Settings list: icon, name, one line, chevron.
   for (const [title, ids] of GROUPS) {
     out.push(h("h2", { class: "group-title", text: title }));
-    out.push(h("div", { class: "grid" }, ids.map(id => {
+    out.push(h("ul", { class: "rows" }, ids.map(id => {
       const c = state.cats[id];
-      const prods = state.products.filter(p => p.category === id);
-      const sellers = new Set(prods.map(p => p.insurer)).size;
-      return h("a", { class: "card type g" + GROUP_OF[id], href: "#/type/" + id },
-        h("div", { class: "card-head" }, catIcon(id), h("h3", { text: c.name })),
-        h("p", { text: c.short }),
-        h("p", { class: "meta", text: prods.length ? `${prods.length} plans from ${sellers} insurer${sellers === 1 ? "" : "s"}` : "National schemes and guidance" }));
+      return h("li", null, h("a", { class: "row g" + GROUP_OF[id], href: "#/type/" + id },
+        catIcon(id),
+        h("span", { class: "row-main" },
+          h("span", { class: "row-t", text: c.name }),
+          h("span", { class: "row-s", text: c.short })),
+        h("span", { class: "row-go", "aria-hidden": "true", text: "›" })));
     })));
   }
   return out;
@@ -498,58 +512,52 @@ function viewType(id, params) {
     mustKnow(c),
     bandsChart(c.key),
     yourShieldCost(c),
-    premiumsChart(c),
     h("h2", { text: "In simple terms" }),
     h("p", { class: "lede" }, rich(c.plain, false)),
-    h("h2", { text: "Who it is for" }),
-    h("p", null, rich(c.who, false)),
-    h("h2", { text: "Key facts" }),
-    h("p", null, rich(c.what, false)),
   ];
-  // Must-know items already sit at the top; the sections below hold the rest.
-  const sections = [
-    ["facts", null, null, null],
-    ["watch", "Pitfalls to avoid", "More pitfalls to avoid", "watch"],
-    ["caveats", "Caveats and fine print", "More fine print", null],
-  ];
-  for (const [key, title, moreTitle, cls] of sections) {
-    const items = rest(c[key]);
-    if (!items.length) continue;
-    if (title) out.push(h("h2", { text: items.length < c[key].length ? moreTitle : title }));
-    out.push(factList(items, cls));
-  }
-  if (c.versus) out.push(versus(c.versus));
-  out.push(storyCard(c), qaSection(c));
-  if (c.schemes.length) {
-    out.push(h("h2", { text: "What the Government already covers" }),
-      h("div", { class: "grid" }, c.schemes.map(s => {
-        const sc = state.schemes[s];
-        return h("a", { class: "card", href: "#/schemes#" + s }, h("h3", { text: sc.name }), h("p", { class: "meta", text: sc.who }));
-      })));
-  }
-  out.push(h("h2", { text: "Questions to compare plans on" }), h("ul", { class: "checklist" }, c.compare.map(q => h("li", { text: q }))));
-  if (c.tools.length) out.push(h("p", { class: "links" }, c.tools.map(t => ext(state.guide.sources[t].url, state.guide.sources[t].title))));
-  out.push(disclaimerNote());
-  out.push(h("h2", { text: `Who sells it (${all.length})` }));
+  // Everything below the essentials opens on tap; Must-know items already sit at the top.
+  const folds = [];
+  const late = premiumsChart(c, true);
+  if (late) folds.push(fold("late", "Cash for a Shield plan from 61, by ward class", "MOH's premiums for each ward class, less what MediSave can pay", late));
+  folds.push(fold("who", "Who it is for", summaryOf(c.who), h("p", null, rich(c.who, false))));
+  const factsRest = rest(c.facts);
+  folds.push(fold("facts", "Key facts", summaryOf(c.what), h("p", null, rich(c.what, false)), factsRest.length ? factList(factsRest) : null));
+  const watch = rest(c.watch), cav = rest(c.caveats);
+  if (watch.length) folds.push(fold("watch", watch.length < c.watch.length ? "More pitfalls to avoid" : "Pitfalls to avoid", count(watch.length, "pitfall", "pitfalls"), factList(watch, "watch")));
+  if (cav.length) folds.push(fold("fine", cav.length < c.caveats.length ? "More fine print" : "Caveats and fine print", count(cav.length, "point", "points"), factList(cav)));
+  if (c.versus) folds.push(fold("versus", c.versus.title || "Compared side by side", summaryOf(c.versus.intro), versus(c.versus, true)));
+  if (c.story) folds.push(fold("story", "A worked example", summaryOf(c.story.who), storyCard(c, true)));
+  if (c.qa && c.qa.length) folds.push(fold("qa", "Common questions", count(c.qa.length, "question", "questions"), c.qa.map(faqItem)));
+  if (c.schemes.length) folds.push(fold("gov", "What the Government already covers", c.schemes.map(s => state.schemes[s].name).join(", "),
+    h("div", { class: "grid" }, c.schemes.map(s => {
+      const sc = state.schemes[s];
+      return h("a", { class: "card", href: "#/schemes#" + s }, h("h3", { text: sc.name }), h("p", { class: "meta", text: sc.who }));
+    }))));
+  folds.push(fold("ask", "Questions to compare plans on", count(c.compare.length, "question", "questions"),
+    h("ul", { class: "checklist" }, c.compare.map(q => h("li", { text: q }))),
+    c.tools.length ? h("p", { class: "links" }, c.tools.map(t => ext(state.guide.sources[t].url, state.guide.sources[t].title))) : null));
+  let sells;
   if (!all.length) {
-    out.push(empty("think", h("p", { class: "meta", text: "None of the insurers covered here lists a standalone plan of this type on its website. See the national schemes above." })));
-    return out;
+    sells = empty("think", h("p", { class: "meta", text: "None of the insurers covered here lists a standalone plan of this type on its website. See the national schemes above." }));
+  } else {
+    const sel = h("select", { id: "f-ins", onchange: e => { location.hash = "#/type/" + id + (e.target.value ? "?insurer=" + e.target.value : "") + "#sells"; } },
+      h("option", { value: "", text: `All insurers (${sellers.length})` }),
+      sellers.map(s => h("option", { value: s, selected: s === pick, text: insName(s) })));
+    sells = [h("div", { class: "filters" }, h("label", { for: "f-ins", text: "Insurer" }), sel,
+      h("a", { href: "#/compare/" + id + (pick ? "?ins=" + pick : ""), text: (state.compare[id] || {}).kind === "moh" ? "Compare them side by side on MOH's figures" : "Compare them side by side" })),
+      h("div", { class: "grid" }, list.map(p => productCard(p, true)))];
   }
-  const sel = h("select", { id: "f-ins", onchange: e => { location.hash = "#/type/" + id + (e.target.value ? "?insurer=" + e.target.value : ""); } },
-    h("option", { value: "", text: `All insurers (${sellers.length})` }),
-    sellers.map(s => h("option", { value: s, selected: s === pick, text: insName(s) })));
-  out.push(h("div", { class: "filters" }, h("label", { for: "f-ins", text: "Insurer" }), sel,
-    h("a", { href: "#/compare/" + id + (pick ? "?ins=" + pick : ""), text: (state.compare[id] || {}).kind === "moh" ? "Compare them side by side on MOH's figures" : "Compare them side by side" })));
-  out.push(h("div", { class: "grid" }, list.map(p => productCard(p, true))));
+  folds.push(fold("sells", `Who sells it (${all.length})`, all.length ? count(sellers.length, "insurer", "insurers") + ", " + count(all.length, "plan", "plans") : "No standalone plans listed", sells));
+  out.push(h("div", { class: "fold-list" }, folds), disclaimerNote());
   return out;
 }
 
 // Two covers side by side, row by row, then made-up situations. Every line carries its source;
 // nothing here says which to buy.
-function versus(vs) {
+function versus(vs, bare) {
   const lines = items => items.map(f => h("p", null, rich(f.t), " ", srcLink(f.s)));
-  return h("section", { id: "versus", class: "versus", "aria-labelledby": "versus-h" },
-    h("h2", { id: "versus-h", text: vs.title }),
+  return h("section", { id: bare ? null : "versus", class: "versus", "aria-labelledby": bare ? null : "versus-h" },
+    bare ? null : h("h2", { id: "versus-h", text: vs.title }),
     h("p", { class: "lede", text: vs.intro }),
     vs.rows.map(r => h("div", { class: "vs-row" },
       h("h3", { text: r.k }),
@@ -832,9 +840,7 @@ function viewSchemes() {
   return [
     h("h1", { text: "National schemes" }),
     h("p", { class: "lede", text: "Cover most Singapore Citizens and PRs already have through CPF. Check yours on the CPF Healthcare dashboard with Singpass before buying more." }),
-    state.guide.schemes.map(s => h("section", { class: "card scheme", id: s.id },
-      h("h2", { class: "mt0", text: s.name }),
-      h("p", { class: "meta", text: s.kind + ". " + s.who }),
+    state.guide.schemes.map(s => fold(s.id, s.name, s.kind + ". " + s.who,
       glance(s.key),
       factList(s.facts),
       h("p", { class: "links mt8" }, ext(state.guide.sources[s.link].url, "Official page")))),
@@ -980,9 +986,8 @@ function viewGlossary() {
     // flatMap: route() flattens only three levels, and this nests one deeper than other views.
     g.glossary_groups.flatMap(gr => [
       h("h2", { text: gr.name }),
-      g.glossary.filter(t => t.group === gr.id).map(t => h("section", { class: "card term-card", id: "term-" + t.id, "aria-labelledby": "th-" + t.id },
-        h("h3", { id: "th-" + t.id, class: "mt0", text: t.term }),
-        termBody(t))),
+      h("div", { class: "fold-list" }, g.glossary.filter(t => t.group === gr.id).map(t =>
+        fold("term-" + t.id, t.term, summaryOf(t.lines[0] && t.lines[0].t, 90), termBody(t)))),
     ]),
     disclaimerNote(),
   ];
@@ -995,8 +1000,7 @@ function viewTop5() {
   return [
     h("h1", { text: "Top 5 ways people get caught out" }),
     h("p", { class: "lede", text: "The problems that cost people most when they buy medical, life and critical illness cover in Singapore, and what to do about each. Every figure links to its source." }),
-    state.guide.pain_points.map((p, i) => h("section", { class: "card pain", id: p.id },
-      h("h2", { class: "mt0", text: `${i + 1}. ${p.title}` }),
+    state.guide.pain_points.map((p, i) => fold(p.id, `${i + 1}. ${p.title}`, summaryOf(p.why[0] && p.why[0].t),
       glance(p.key),
       h("h3", { text: "Why it bites" }),
       bullets(p.why),
@@ -1101,7 +1105,7 @@ function helperTip(seg, arg) {
   const tips = [
     { id: "welcome", when: seg === "", text: "Hi, I'm Shieldy! New here? \"What pays when\" shows how the different covers fit together.", action: { label: "Show me", href: "#/when" } },
     { id: "age", when: seg === "type" && arg === "hospitalisation" && !getAge(), text: "Tell me your age next birthday and I'll show what a Shield plan would cost you.", action: { label: "Enter my age", run: () => { const i = document.getElementById("my-age"); if (i) { i.scrollIntoView({ block: "center" }); i.focus({ preventScroll: true }); } } } },
-    { id: "qa", when: seg === "type" && !!document.getElementById("qa-h"), text: "There are common questions about this type further down the page.", action: { label: "Take me there", run: () => document.getElementById("qa-h").scrollIntoView({ block: "start" }) } },
+    { id: "qa", when: seg === "type" && !!document.getElementById("qa-h"), text: "There are common questions about this type further down the page.", action: { label: "Take me there", run: () => { const d = document.getElementById("qa"); d.open = true; d.scrollIntoView({ block: "start" }); } } },
     { id: "sources", when: seg === "type", text: "Every official figure links to its source. Tap the little arrow to check it yourself." },
   ];
   const tip = tips.find(t => t.when && !seen.has(t.id));
@@ -1220,7 +1224,10 @@ function route() {
   document.title = (seg === "" || !t ? "" : t.textContent + " · ") + "Ask Insurance";
   if (anchor) {
     const el = document.getElementById(anchor);
-    if (el) { el.scrollIntoView(); helperOnRoute(seg, arg); return; }
+    if (el) {
+      for (let d = el.closest("details"); d; d = d.parentElement && d.parentElement.closest("details")) d.open = true;
+      el.scrollIntoView(); helperOnRoute(seg, arg); return;
+    }
   }
   window.scrollTo(0, 0);
   if (seg !== "") main.focus({ preventScroll: true });

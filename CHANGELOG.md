@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.11.03.11
+
+- fix: shorter pages (tap-to-open sections, compact home list) and a 24px gap under the header on every page
+
 ## v2026.11.03.10
 
 - feat: iPhone feel: bottom tab bar with More sheet, large titles with a scroll title bar, bottom sheets, segmented ward-class picker, press feedback, safe areas, Add to Home Screen

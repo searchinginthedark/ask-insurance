@@ -517,3 +517,41 @@ body.has-helper .foot { padding-bottom: calc(84px + env(safe-area-inset-bottom))
   .btn:active, .card:active, .ev-tile:active, .sheet-list a:active, summary:active { transform: scale(.97); opacity: .75; }
   .tabbar a:active, .tabbar button:active { opacity: .5; }
 }
+
+/* ---------- Shorter pages ----------
+   main carries .wrap, whose "padding: 0 16px" used to outrank main's own padding, so every page
+   title sat flush against the header. Restated with enough weight: 24px of breathing room. */
+main.wrap { padding-top: 24px; padding-bottom: 32px; }
+
+/* Tap-to-open sections, styled as iOS inset rows: title, one-line summary, chevron. */
+.fold-list { display: grid; gap: 10px; margin: 1.25rem 0; }
+.fold-list > .disclaimer, .fold-list + .notice { margin-top: 1rem; }
+details.fold { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-ctl); margin: 0 0 10px; }
+.fold-list details.fold { margin: 0; }
+details.fold > summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 1fr auto; column-gap: 10px; align-items: center; min-height: 56px; padding: 12px 14px; }
+details.fold > summary::-webkit-details-marker { display: none; }
+details.fold > summary::after { content: "›"; grid-column: 2; grid-row: 1 / span 2; font-size: 1.5rem; line-height: 1; color: var(--muted); transition: transform .2s ease; }
+details.fold[open] > summary::after { transform: rotate(90deg); }
+.fold-h { margin: 0; font-size: 1.02rem; font-weight: 750; grid-column: 1; }
+details.fold > summary .short { grid-column: 1; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; color: var(--muted); font-size: .9rem; font-weight: 500; margin-top: 2px; }
+details.fold[open] > summary .short { display: none; }
+.fold-body { padding: 0 14px 14px; }
+.fold-body > :first-child { margin-top: 0; }
+.fold-body .bands.bare, .fold-body .story, .fold-body .versus { border: 0; box-shadow: none; padding: 0; margin: 0; background: none; }
+.fold-body h3:first-child { margin-top: 0; }
+
+/* Home: one slim row per type, grouped like an iOS Settings list. */
+.rows { list-style: none; margin: .25rem 0 1rem; padding: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-ctl); overflow: hidden; }
+.rows li + li { border-top: 1px solid var(--line); }
+.row { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: center; min-height: 56px; padding: 10px 14px; color: var(--text); text-decoration: none; }
+.row:hover .row-t { text-decoration: underline; }
+.row .chip { width: 36px; height: 36px; }
+.row-main { display: grid; min-width: 0; }
+.row-t { font-weight: 700; line-height: 1.3; }
+.row-s { color: var(--muted); font-size: .9rem; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.row-go { color: var(--muted); font-size: 1.4rem; line-height: 1; }
+.row-n { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--tag-bg); color: var(--tag-fg); font-weight: 800; font-size: .85rem; }
+.must .rows { border: 0; background: none; margin: 0; border-radius: 0; }
+.must .row { padding-left: 0; padding-right: 0; }
+.group-title { font-size: .82rem; font-weight: 750; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 1.5rem 0 .4rem 4px; }
+@media (max-width: 719px) { .hero .mascot { width: 56px; height: 56px; } }
