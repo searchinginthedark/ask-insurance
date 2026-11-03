@@ -759,6 +759,34 @@
       "Integrated Shield Plan premiums increase significantly with age and could be up to five times your MediShield Life premiums when you are in your 70s or 80s",
       "Consider whether you can afford these higher premiums, especially after retirement",
       "Integrated Shield Plan premiums above the Additional Withdrawal Limits must be paid in cash. Assess whether you can afford these payments throughout your lifetime"
+     ],
+     "ask": [
+      {
+       "t": "Which ward would you be comfortable in: class B2 or C in a public hospital, class A or B1, or a private hospital? Do you want to choose your own doctor?",
+       "s": "cpf_ip",
+       "quote": [
+        "Review your hospitalisation preferences",
+        "If you are comfortable with class B2 or C wards in public hospitals",
+        "if you prefer class A or B1 wards, or want to choose your own doctors",
+        "Access to private hospitals and higher ward classes (A or B1) in public hospitals"
+       ]
+      },
+      {
+       "t": "Can you afford the premiums for that ward class after you retire, as they rise with age?",
+       "s": "cpf_ip",
+       "quote": [
+        "Integrated Shield Plan premiums increase significantly with age",
+        "Consider whether you can afford these higher premiums, especially after retirement"
+       ]
+      },
+      {
+       "t": "Can you pay the part of each premium above the MediSave withdrawal limit in cash, every year, into your later years?",
+       "s": "cpf_ip",
+       "quote": [
+        "Integrated Shield Plan premiums above the Additional Withdrawal Limits must be paid in cash",
+        "Assess whether you can afford these payments throughout your lifetime, particularly in your later years"
+       ]
+      }
      ]
     },
     {
@@ -1170,6 +1198,30 @@
      "quote": [
       "if you want to be covered until your youngest child completes university or is financially self-reliant",
       "Choose the coverage term carefully. You and/ or your dependents will not be protected after the term expires"
+     ],
+     "ask": [
+      {
+       "t": "For how long do you need protection, for example until your youngest child completes university or is financially self-reliant?",
+       "s": "ms_term",
+       "quote": [
+        "Buy term insurance if you only need protection coverage for a fixed period of time",
+        "if you want to be covered until your youngest child completes university or is financially self-reliant"
+       ]
+      },
+      {
+       "t": "Would you or your dependants still need protection after the term expires?",
+       "s": "ms_term",
+       "quote": [
+        "Choose the coverage term carefully. You and/ or your dependents will not be protected after the term expires"
+       ]
+      },
+      {
+       "t": "Have you compared a longer term bought now with buying cover again when you are older, when premiums can be much higher?",
+       "s": "ms_term",
+       "quote": [
+        "Consider buying term insurance for a longer period of protection when you are younger because the premiums can increase substantially as you get older"
+       ]
+      }
      ]
     },
     {
@@ -1194,6 +1246,39 @@
       "Consider buying term insurance for a longer period of protection when you are younger because the premiums can increase substantially as you get older",
       "You may not be able to get term insurance past a certain age",
       "financially self-reliant"
+     ],
+     "ask": [
+      {
+       "t": "Would you or your dependants still need protection in those extra years?",
+       "s": "ms_term",
+       "quote": [
+        "You and/ or your dependents will not be protected after the term expires"
+       ]
+      },
+      {
+       "t": "What would the premium be at your age on renewal, and is it guaranteed?",
+       "s": "ms_term",
+       "quote": [
+        "After that, premium is revised according to your age upon renewal",
+        "Often, premium when exercising renewal is not guaranteed"
+       ]
+      },
+      {
+       "t": "Does your policy let you renew or convert it, and what conditions come with converting?",
+       "s": "ms_term",
+       "quote": [
+        "May be renewable or convertible",
+        "There will be conditions attached before conversion to another type of product"
+       ]
+      },
+      {
+       "t": "If you let the cover expire, could you get term insurance again at that age, and would you face underwriting?",
+       "s": "ms_term",
+       "quote": [
+        "If you choose to reinstate the policy after it expires, you may be subject to underwriting",
+        "You may not be able to get term insurance past a certain age"
+       ]
+      }
      ]
     },
     {
@@ -1307,6 +1392,42 @@
       "Cost of Premiums More than term",
       "You bear investment risks of the non-guaranteed bonuses",
       "Before asking which product is right for you, ask yourself why you want to be insured"
+     ],
+     "ask": [
+      {
+       "t": "Why do you want to be insured: to provide for your loved ones, to save and invest for retirement, or to leave money as part of your estate?",
+       "s": "ms_term_vs_bundled",
+       "quote": [
+        "Before asking which product is right for you, ask yourself why you want to be insured",
+        "Provide for your loved ones when you are no longer around?",
+        "Protect, save and invest your money for retirement?",
+        "Leave behind some money for your loved ones as part of your estate?"
+       ]
+      },
+      {
+       "t": "Do you need to provide for your dependants for the rest of your life, or only until they are financially self-reliant?",
+       "s": "ms_whole_life",
+       "quote": [
+        "Before buying a whole life product, ask yourself if you need to provide for your dependents for the rest of your life or until they are financially self-reliant"
+       ]
+      },
+      {
+       "t": "Are you prepared to bear the investment risk of bonuses that are not guaranteed?",
+       "s": "ms_term_vs_bundled",
+       "quote": [
+        "Cash value comprises guaranteed benefits and future non-guaranteed bonuses",
+        "You bear investment risks of the non-guaranteed bonuses"
+       ]
+      },
+      {
+       "t": "Can you afford the premium as a long-term commitment, knowing that stopping early loses money?",
+       "s": "ms_whole_life",
+       "quote": [
+        "Buying a life insurance policy is a long-term commitment",
+        "Early termination causes you to lose money",
+        "Can you afford the premium?"
+       ]
+      }
      ]
     },
     {
@@ -1493,6 +1614,37 @@
       "Claims assessment across insurers will not be based on identical definitions",
       "Consumers should study these definitions and consider if the definitions meet their needs",
       "Consumers should also take into account the amount payable at the different stages of a critical illness, when making comparisons"
+     ],
+     "ask": [
+      {
+       "t": "Have you read how each insurer words its early (mild-moderate) and extremely severe stages, and do those definitions meet your needs?",
+       "s": "lia_ygthi",
+       "quote": [
+        "are not standardised and are worded by each insurer",
+        "Consumers should study these definitions and consider if the definitions meet their needs"
+       ]
+      },
+      {
+       "t": "How much does each policy pay at each stage?",
+       "s": "lia_ygthi",
+       "quote": [
+        "Consumers should also take into account the amount payable at the different stages of a critical illness, when making comparisons"
+       ]
+      },
+      {
+       "t": "Are there any limits to the benefits the policy can pay out?",
+       "s": "lia_ygthi",
+       "quote": [
+        "Are there any limits to the benefits that can be paid out from my policy?"
+       ]
+      },
+      {
+       "t": "How much will you pay in premiums, and can you afford them over the long term?",
+       "s": "lia_ygthi",
+       "quote": [
+        "How much will I be paying for my health insurance and will I be able to afford the premiums over the long term?"
+       ]
+      }
      ]
     },
     {
@@ -1527,6 +1679,33 @@
       "The amount of the premiums may increase as you grow older",
       "health insurance at an early age while you are still healthy",
       "is in addition to any medical expense policy that you may have"
+     ],
+     "ask": [
+      {
+       "t": "What do you want this cover to protect against: your medical bills, or your finances after a major illness is diagnosed?",
+       "s": "lia_ygthi",
+       "quote": [
+        "The type of health insurance policy you would need depends on what you want protection against",
+        "have your medical expenses paid",
+        "reduce your financial burden when you are diagnosed"
+       ]
+      },
+      {
+       "t": "What length of cover suits your needs: for life, or up to a certain age?",
+       "s": "lia_ygthi",
+       "quote": [
+        "Some health insurance policies provide cover for your whole life, but others cover you only up to a certain age",
+        "You should choose a policy with a length of cover that suits your needs"
+       ]
+      },
+      {
+       "t": "Will the premiums rise as you grow older, and can you afford them over the long term?",
+       "s": "lia_ygthi",
+       "quote": [
+        "The amount of the premiums may increase as you grow older",
+        "will I be able to afford the premiums over the long term?"
+       ]
+      }
      ]
     }
    ]
@@ -2083,6 +2262,39 @@
       "the total amount paid under the hospital cash insurance may be more or less than your actual expenses",
       "A hospital cash policy may have a waiting period",
       "The benefits may also be paid for only a set number of days each year, or for the life of the policy"
+     ],
+     "ask": [
+      {
+       "t": "Do you want a fixed amount of cash for each day in hospital, whatever the bill comes to?",
+       "s": "lia_ygthi",
+       "quote": [
+        "receive a fixed amount of cash when you are in hospital",
+        "regardless of the actual expenses incurred for your hospital stay"
+       ]
+      },
+      {
+       "t": "Are you already covered for the same thing under another policy?",
+       "s": "lia_ygthi",
+       "quote": [
+        "Am I already covered for the same thing under another health insurance policy?"
+       ]
+      },
+      {
+       "t": "How long is the waiting period, and for how many days a year, or in the policy's lifetime, does it pay?",
+       "s": "lia_ygthi",
+       "quote": [
+        "A hospital cash policy may have a waiting period",
+        "The benefits may also be paid for only a set number of days each year, or for the life of the policy",
+        "Waiting periods and benefit limits may vary across policies"
+       ]
+      },
+      {
+       "t": "How much will you pay in premiums, and can you afford them over the long term?",
+       "s": "lia_ygthi",
+       "quote": [
+        "How much will I be paying for my health insurance and will I be able to afford the premiums over the long term?"
+       ]
+      }
      ]
     }
    ]

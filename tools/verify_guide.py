@@ -1,10 +1,11 @@
 """Re-check every sourced number in data/guide.json against the text of its own source.
 
-Covers category facts / pitfalls / caveats, scheme facts, key figures (`key`), pain points and the
-FAQ. Each number in an item that carries a source id must appear in that source's page or PDF text,
-and every key figure must carry a source id. An optional `quote` (a string or a list) on any item
-must appear in the source too, whitespace and punctuation ignored: digits alone prove little for a
-claim like "the policy may not be valid", and a one-digit number matches almost any page.
+Covers category facts / pitfalls / caveats, Q&As and their questions to ask yourself (`ask`), scheme
+facts, key figures (`key`), pain points and the FAQ. Each number in an item that carries a source id
+must appear in that source's page or PDF text, and every key figure must carry a source id. An
+optional `quote` (a string or a list) on any item must appear in the source too, whitespace and
+punctuation ignored: digits alone prove little for a claim like "the policy may not be valid", and
+a one-digit number matches almost any page.
 
 Sources are fetched live and cached in research/raw/guide/ (gitignored); pass --fresh to refetch.
 
@@ -72,6 +73,8 @@ def items(guide):
                     yield "%s.scenario" % c["id"], f, f["t"]
         for q in c.get("qa", []):
             yield "%s.qa" % c["id"], q, plain(q["a"]) + " " + q["short"]
+            for a in q.get("ask", []):
+                yield "%s.qa.ask" % c["id"], a, a["t"]
         for f in (c.get("story") or {}).get("steps", []):
             yield "%s.story" % c["id"], f, plain(f["t"])
     for g in guide.get("glossary", []):

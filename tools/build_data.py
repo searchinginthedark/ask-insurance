@@ -104,6 +104,9 @@ def check_highlights(guide):
     for q in guide["faq"]:
         if not q.get("short"):
             errors.append("guide: FAQ %r has no short answer" % q["q"])
+        # The verifier checks questions to ask only on category Q&As, so they may not appear here.
+        if "ask" in q:
+            errors.append("guide: FAQ %r: questions to ask belong on a category Q&A" % q["q"])
     for c in guide["categories"]:
         # A by-age chart only redraws its key figure: every amount must already be in v and every
         # age label in l, so the chart can never state a number the verified figure does not.
@@ -114,6 +117,18 @@ def check_highlights(guide):
         for q in c.get("qa") or []:
             if not (q.get("q") and q.get("short") and q.get("a")) or q.get("s") not in src:
                 errors.append("guide: %s question %r needs q, short, a and a valid source" % (c["id"], q.get("q")))
+            # "Questions to ask yourself": the reader's own checklist, never advice. Each line is a
+            # question in the publisher's words (a verbatim quote, checked by verify_guide.py).
+            if "ask" in q:
+                ask = q["ask"]
+                if not isinstance(ask, list) or not 2 <= len(ask) <= 4:
+                    errors.append("guide: %s question %r needs 2 to 4 questions to ask" % (c["id"], q.get("q")))
+                for a in ask if isinstance(ask, list) else []:
+                    t = a.get("t") or ""
+                    if a.get("s") not in src or not a.get("quote"):
+                        errors.append("guide: %s ask %r needs a valid source and a quote" % (c["id"], t[:40]))
+                    if not t.endswith("?") or ADVICE.search(t):
+                        errors.append("guide: %s ask %r must be a question, not advice" % (c["id"], t[:40]))
         story = c.get("story")
         if story:
             # A worked example comes from a source, line by line; made-up stories are not allowed here.
@@ -153,6 +168,8 @@ def check_highlights(guide):
     return errors
 
 
+# Words that turn a question to ask yourself into advice. The site never tells the reader what to do.
+ADVICE = re.compile(r"\b(you should|you must|we recommend|consider buying|it is best to)\b", re.I)
 IN_APP = re.compile(r"^#/[a-z0-9/_-]*(#[a-z0-9_-]+)?$")
 # Publishers the guide may cite (user ruling 2026-10-13; MOE added 2026-10-14 for graduate starting
 # pay only). Great Eastern is here as the DPS administrator, never as a seller.

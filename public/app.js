@@ -1043,10 +1043,19 @@ function homeNote(home, age) {
 }
 
 // The short answer sits in the summary, so the page answers every question without a tap.
+// A "Questions to ask yourself" list helps the reader decide without the site deciding for them.
+// Each question carries its own source: one from the answer's source is covered by the
+// source line, and any other gets its own link, so every question stays traceable.
 function faqItem(q) {
+  const ask = q.ask || [];
   return h("details", { class: "faq" },
     h("summary", null, h("span", { class: "q", text: q.q }), h("span", { class: "short", text: q.short })),
-    h("div", null, h("p", null, rich(q.a)), h("p", { class: "meta" }, "Source: ", srcLink(q.s))));
+    h("div", null, h("p", null, rich(q.a)),
+      ask.length ? [
+        h("h3", { class: "ask-h", text: "Questions to ask yourself" }),
+        h("ul", { class: "ask" }, ask.map(a => h("li", null, a.t, a.s !== q.s ? [" ", srcLink(a.s)] : null))),
+      ] : null,
+      h("p", { class: "meta" }, "Source: ", srcLink(q.s))));
 }
 
 function viewFaq() {
