@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.11.03.12
+
+- fix: shorter Sources page: method, disclaimer, sources by publisher and disputes open on tap
+
 ## v2026.11.03.11
 
 - fix: shorter pages (tap-to-open sections, compact home list) and a 24px gap under the header on every page
