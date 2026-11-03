@@ -449,6 +449,13 @@ function fold(id, title, short, ...kids) {
     h("summary", null, h("h2", { class: "fold-h", id: id ? id + "-h" : null, text: title }), short ? h("span", { class: "short", text: short }) : null),
     h("div", { class: "fold-body" }, ...kids));
 }
+// The same, one heading level down, for sections grouped under an h2.
+function subFold(id, title, short, ...kids) {
+  const d = fold(id, title, short, ...kids);
+  const h2 = d.querySelector(".fold-h"), h3 = h("h3", { class: "fold-h", id: h2.id || null, text: title });
+  h2.replaceWith(h3);
+  return d;
+}
 function count(n, one, many) { return n + " " + (n === 1 ? one : many); }
 
 function viewTypes() {
@@ -1013,17 +1020,27 @@ function viewTop5() {
 function viewSources() {
   const n = state.products.length, pdfs = state.products.reduce((a, p) => a + p.pdfs.length, 0);
   const unv = state.products.filter(p => UNVERIFIED.has(p.status)).length;
+  const check = `Every link is re-checked by script: it must load, must not redirect to a home or error page, and a plan page must name the plan. ${unv ? unv + " plan link(s) sit on sites that block scripts and are marked \"Check link\"." : "All plan links passed the last check."}`;
+  // Official sources grouped by publisher, the biggest first.
+  const byPub = new Map();
+  for (const s of Object.values(state.guide.sources)) byPub.set(s.publisher, [...(byPub.get(s.publisher) || []), s]);
+  const pubs = [...byPub].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
   return [
     h("h1", { text: "Sources and method" }),
     h("p", { text: `${n} plans from ${state.insurers.length} insurers, with ${pdfs} official PDFs. Plan details come only from each insurer's own website and documents. Government and industry figures come from the official pages below.` }),
-    h("p", { text: `Every link is re-checked by script: it must load, must not redirect to a home or error page, and a plan page must name the plan. ${unv ? unv + " plan link(s) sit on sites that block scripts and are marked \"Check link\"." : "All plan links passed the last check."}` }),
-    h("p", { text: "Time-limited promotions are deliberately left out, and so are savings, endowment, investment-linked, annuity and wealth or legacy plans: this site covers protection only." }),
-    h("h2", { id: "disclaimer", text: "Disclaimer" }),
-    h("ul", { class: "facts" }, state.guide.disclaimer.map(t => h("li", { text: t }))),
+    h("div", { class: "fold-list" },
+      fold("method", "How facts and links are checked", summaryOf(check),
+        h("p", { text: check }),
+        h("p", { text: "Time-limited promotions are deliberately left out, and so are savings, endowment, investment-linked, annuity and wealth or legacy plans: this site covers protection only." })),
+      fold("disclaimer", "Disclaimer", summaryOf(state.guide.disclaimer[0]),
+        h("ul", { class: "facts" }, state.guide.disclaimer.map(t => h("li", { text: t }))))),
     h("h2", { text: "Official sources" }),
-    h("ul", { class: "facts" }, Object.values(state.guide.sources).map(s => h("li", null, ext(s.url, s.title), h("span", { class: "meta", text: " · " + s.publisher })))),
-    h("h2", { text: "If something goes wrong" }),
-    h("p", null, "Disputes with an insurer go first to the insurer, then to ", ext(state.guide.sources.fidrec.url, "FIDReC"), " within six months of the insurer's final reply."),
+    h("div", { class: "fold-list" }, pubs.map(([pub, list]) =>
+      subFold(null, pub, count(list.length, "official page", "official pages"),
+        h("ul", { class: "facts" }, list.map(s => h("li", null, ext(s.url, s.title))))))),
+    h("div", { class: "fold-list" },
+      fold("disputes", "If something goes wrong", "Disputes go to the insurer first, then to FIDReC.",
+        h("p", null, "Disputes with an insurer go first to the insurer, then to ", ext(state.guide.sources.fidrec.url, "FIDReC"), " within six months of the insurer's final reply."))),
   ];
 }
 
