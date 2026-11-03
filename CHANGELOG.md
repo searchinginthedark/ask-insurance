@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.11.03.14
+
+- feat: "Questions to ask yourself" on seven "is it worth it" Q&As: 3 to 4 questions each, every one quoted from MoneySense, CPF or LIA, still no verdict
+
 ## v2026.11.03.13
 
 - feat: two looks: Pandan Sunrise with Kopi the otter (default) and Berry Pop with Pip the hedgehog, switchable in the footer and the More sheet

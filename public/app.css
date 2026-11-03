@@ -399,6 +399,10 @@ details.faq { background: var(--surface); border: 1px solid var(--line); border-
 details.faq summary { cursor: pointer; padding: 12px 14px; font-weight: 700; min-height: 44px; }
 details.faq summary .short { display: block; font-weight: 500; color: var(--muted); font-size: .93rem; margin-top: 2px; }
 details.faq div { padding: 0 14px 12px; }
+/* Questions to ask yourself: the reader's own checklist, set apart from the answer with a brand edge. */
+details.faq .ask-h { font-size: .95rem; margin: 14px 0 6px; }
+details.faq ul.ask { margin: 0 0 10px; padding: 10px 12px 10px 1.9rem; background: var(--bg); border-left: 4px solid var(--brand); border-radius: var(--r-tag); display: grid; gap: 6px; }
+details.faq ul.ask li::marker { color: var(--brand); }
 
 .scheme { margin-bottom: 12px; }
 .mt0 { margin-top: 0; }
