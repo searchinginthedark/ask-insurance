@@ -6,38 +6,37 @@
 }
 
 :root {
-  /* Soft lavender paper with warm amber, coral and mint accents: friendly, never cream/off-white
-     (on the fleet's avoid list). Every text pair is checked by tools/contrast.py. */
-  --bg: #ebe8f7;
+  /* Two looks. Default: "Pandan Sunrise", pandan green and sunrise orange, with Kopi the otter.
+     Alternative: "Berry Pop" (data-look="berry" on <html>), raspberry and ink blue, with Pip the
+     hedgehog. public/look.js applies the reader's choice before first paint. Every text pair,
+     in both looks and both themes, is checked by tools/contrast.py. */
+  --bg: #eef6f1;
   --surface: #ffffff;
-  --text: #1e1a3c;
-  --muted: #514b74;
-  --line: #dbd6ee;
-  --edge: #7f78a6;
-  --brand: #372f7d;
+  --text: #13261d;
+  --muted: #4a5f55;
+  --line: #d3e5da;
+  --edge: #6f8c7e;
+  --brand: #1f6b4a;
   --on-brand: #ffffff;
-  --accent: #9a5804;      /* amber from the icon, darkened to clear 4.5:1 as text (tools/contrast.py) */
-  --link: #3346b0;
-  --focus: #5a3fd0;
-  --warn-bg: #fff0d4;
-  --warn-fg: #5a3b00;
-  --ok-bg: #dcf3e6;
+  --accent: #b4510f;
+  --link: #1d5f8f;
+  --focus: #1f6b4a;
+  --warn-bg: #fdecd6;
+  --warn-fg: #5c3100;
+  --ok-bg: #dcf1e4;
   --ok-fg: #145a31;
-  --tag-bg: #ebe7fa;
-  --tag-fg: #342e5e;
-  --shadow: 0 1px 0 rgba(55, 47, 125, .05), 0 6px 16px -10px rgba(55, 47, 125, .35);
-  --shadow-up: 0 2px 0 rgba(55, 47, 125, .06), 0 12px 24px -12px rgba(55, 47, 125, .45);
-  /* Mascot: the icon's amber shield, a darker amber for its arms, ink for the face. */
-  --m-body: #f0a23b;
-  --m-body-dk: #d9831c;
-  --m-ink: #2a2350;
-  --m-cheek: #f6a0b4;
-  /* Category chips, one soft tint per group: background and icon ink (>= 3:1 for the icon). */
-  --c0-bg: #d8f1e5; --c0-fg: #17694a;
-  --c1-bg: #e4ddfb; --c1-fg: #4b36a8;
-  --c2-bg: #fbdde6; --c2-fg: #a12d50;
-  --c3-bg: #d8eafb; --c3-fg: #1f5c96;
-  --c4-bg: #fde2cb; --c4-fg: #8a4a0f;
+  --tag-bg: #e1efe7;
+  --tag-fg: #1e4535;
+  --m-body: #9a6744;
+  --m-body-dk: #6e4529;
+  --m-belly: #f6e2c8;
+  --m-ink: #2b1d14;
+  --m-cheek: #f39c9c;
+  --m-acc: #e8752a;
+  --c0-bg: #d8f1e5; --c0-fg: #17694a; --c1-bg: #e0eef7; --c1-fg: #1f5c8a;
+  --c2-bg: #fbdde6; --c2-fg: #a12d50; --c3-bg: #e6f0d6; --c3-fg: #3f6a12; --c4-bg: #fde2cb; --c4-fg: #8a4a0f;
+  --shadow: 0 1px 0 rgba(31, 107, 74, .05), 0 6px 16px -10px rgba(31, 107, 74, .35);
+  --shadow-up: 0 2px 0 rgba(31, 107, 74, .06), 0 12px 24px -12px rgba(31, 107, 74, .45);
   /* Rounder than before, but still no pills: controls 14px, inline tags 8px. */
   --r-card: 22px;
   --r-ctl: 14px;
@@ -46,31 +45,96 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #15132a;
-    --surface: #211e3b;
-    --text: #ece9fb;
-    --muted: #b6b0d8;
-    --line: #34305a;
-    --edge: #7d76ab;
-    --brand: #bcb3ff;
-    --on-brand: #15132a;
-    --accent: #f0a23b;
-    --link: #aab8ff;
-    --focus: #b9a4ff;
-    --warn-bg: #43330f;
-    --warn-fg: #ffdf9e;
-    --ok-bg: #173a27;
-    --ok-fg: #9fe3b8;
-    --tag-bg: #2d2952;
-    --tag-fg: #ddd8f7;
+    --bg: #0f1a15;
+    --surface: #182720;
+    --text: #e8f3ec;
+    --muted: #a6bdb1;
+    --line: #2a3f34;
+    --edge: #6e8f80;
+    --brand: #6fd3a3;
+    --on-brand: #0f1a15;
+    --accent: #ffa45c;
+    --link: #8fc7ff;
+    --focus: #6fd3a3;
+    --warn-bg: #3a2610;
+    --warn-fg: #ffd39e;
+    --ok-bg: #143322;
+    --ok-fg: #8fe0b0;
+    --tag-bg: #22382d;
+    --tag-fg: #cfe8da;
+    --m-body: #b07a52;
+    --m-body-dk: #8d5d3c;
+    --m-belly: #f6e2c8;
+    --m-ink: #2b1d14;
+    --m-cheek: #f39c9c;
+    --m-acc: #f08a3e;
+    --c0-bg: #17392b; --c0-fg: #8fe0bd; --c1-bg: #16324a; --c1-fg: #9cd0ff;
+    --c2-bg: #47202f; --c2-fg: #ffadc4; --c3-bg: #26391a; --c3-fg: #b8e38a; --c4-bg: #45290f; --c4-fg: #ffc27f;
     --shadow: none;
     --shadow-up: 0 10px 24px -14px rgba(0, 0, 0, .8);
-    --m-ink: #2a2350;
-    --c0-bg: #17392b; --c0-fg: #8fe0bd;
-    --c1-bg: #2e2763; --c1-fg: #c6b9ff;
-    --c2-bg: #47202f; --c2-fg: #ffadc4;
-    --c3-bg: #182f49; --c3-fg: #9cccff;
-    --c4-bg: #45290f; --c4-fg: #ffc27f;
+  }
+}
+
+/* Berry Pop look. */
+:root[data-look="berry"] {
+  --bg: #fbf0f4;
+  --surface: #ffffff;
+  --text: #26121c;
+  --muted: #5f4552;
+  --line: #f0d6e1;
+  --edge: #9c7d8c;
+  --brand: #b0175a;
+  --on-brand: #ffffff;
+  --accent: #1d5fa8;
+  --link: #1d5fa8;
+  --focus: #b0175a;
+  --warn-bg: #fff0d4;
+  --warn-fg: #5a3b00;
+  --ok-bg: #dcf3e6;
+  --ok-fg: #145a31;
+  --tag-bg: #fae1ec;
+  --tag-fg: #6e1038;
+  --m-body: #6b4a3a;
+  --m-body-dk: #4e3328;
+  --m-belly: #f6dcc2;
+  --m-ink: #26121c;
+  --m-cheek: #ff9eb8;
+  --m-acc: #ff7ab0;
+  --c0-bg: #d8f1e5; --c0-fg: #17694a; --c1-bg: #f6dcea; --c1-fg: #9a1d5a;
+  --c2-bg: #fde3d8; --c2-fg: #a3381b; --c3-bg: #d8eafb; --c3-fg: #1f5c96; --c4-bg: #ece0fb; --c4-fg: #5b36a8;
+  --shadow: 0 1px 0 rgba(176, 23, 90, .05), 0 6px 16px -10px rgba(176, 23, 90, .3);
+  --shadow-up: 0 2px 0 rgba(176, 23, 90, .06), 0 12px 24px -12px rgba(176, 23, 90, .4);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-look="berry"] {
+    --bg: #1c0f15;
+    --surface: #2a1720;
+    --text: #fbe9f1;
+    --muted: #d1aebf;
+    --line: #47283a;
+    --edge: #9a7385;
+    --brand: #ff7ab0;
+    --on-brand: #1c0f15;
+    --accent: #8cc4ff;
+    --link: #8cc4ff;
+    --focus: #ff7ab0;
+    --warn-bg: #3a2a10;
+    --warn-fg: #ffd38a;
+    --ok-bg: #143322;
+    --ok-fg: #8fe0b0;
+    --tag-bg: #3d2130;
+    --tag-fg: #f6cfe0;
+    --m-body: #a8806a;
+    --m-body-dk: #8a6552;
+    --m-belly: #f6dcc2;
+    --m-ink: #26121c;
+    --m-cheek: #ff9eb8;
+    --m-acc: #ff7ab0;
+    --c0-bg: #17392b; --c0-fg: #8fe0bd; --c1-bg: #47203a; --c1-fg: #ffa8d4;
+    --c2-bg: #46241a; --c2-fg: #ffb39b; --c3-bg: #182f49; --c3-fg: #9cccff; --c4-bg: #2e2350; --c4-fg: #c9b6ff;
+    --shadow: none;
+    --shadow-up: 0 10px 24px -14px rgba(0, 0, 0, .8);
   }
 }
 
@@ -113,6 +177,8 @@ p { margin: 0 0 .75rem; }
 .top-row { display: flex; gap: 12px; align-items: center; padding-top: 10px; padding-bottom: 8px; }
 .brand { display: flex; align-items: center; gap: 8px; color: var(--text); text-decoration: none; font-weight: 800; font-size: 1.05rem; white-space: nowrap; }
 .brand img { border-radius: 8px; }
+/* The header logo follows the look (CSS, so it never flashes the other mascot). */
+:root[data-look="berry"] .brand img { content: url("icon-berry.svg"); }
 .search { flex: 1; min-width: 0; }
 .search input {
   width: 100%; min-height: 44px; padding: 8px 12px; font: inherit; color: var(--text);
@@ -555,3 +621,16 @@ details.fold[open] > summary .short { display: none; }
 .must .row { padding-left: 0; padding-right: 0; }
 .group-title { font-size: .82rem; font-weight: 750; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 1.5rem 0 .4rem 4px; }
 @media (max-width: 719px) { .hero .mascot { width: 56px; height: 56px; } }
+
+/* Look switch (footer and the More sheet): two looks as a segmented control, each with a
+   two-colour dot so the choice shows before it is made. */
+.look-slot { margin: 12px 0; }
+.look { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.look-l { font-weight: 700; color: var(--text); font-size: .9rem; }
+.look-seg { display: inline-flex; flex-wrap: wrap; gap: 2px; padding: 2px; background: var(--bg); border: 1px solid var(--line); border-radius: 12px; }
+.look-b { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 4px 12px; font: inherit; font-size: .86rem; font-weight: 600; color: var(--muted); background: transparent; border: 0; border-radius: 10px; cursor: pointer; }
+.look-b[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 3px rgba(0, 0, 0, .15); }
+.look-dot { width: 14px; height: 14px; border-radius: 50%; flex: none; border: 1px solid var(--line); }
+.look-dot-pandan { background: linear-gradient(135deg, #1f6b4a 50%, #e8752a 50%); }
+.look-dot-berry { background: linear-gradient(135deg, #b0175a 50%, #1d5fa8 50%); }
+.sheet .look-slot { margin-top: 16px; }
