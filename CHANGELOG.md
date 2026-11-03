@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.11.03.13
+
+- feat: two looks: Pandan Sunrise with Kopi the otter (default) and Berry Pop with Pip the hedgehog, switchable in the footer and the More sheet
+
 ## v2026.11.03.12
 
 - fix: shorter Sources page: method, disclaimer, sources by publisher and disputes open on tap

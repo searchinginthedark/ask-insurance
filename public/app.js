@@ -44,29 +44,100 @@ function svg(tag, attrs, ...kids) {
 }
 
 // The shield from the app icon, with a face. Poses change only the eyes, mouth and arms.
-const POSES = {
-  happy: { mouth: "M27.5 36 Q32 40.5 36.5 36", arms: ["M11 31 Q5.5 34 7 40", "M53 31 Q58.5 34 57 40"] },
-  wave: { mouth: "M27.5 36 Q32 40.5 36.5 36", arms: ["M11 31 Q5.5 34 7 40", "M53 29 Q60 24 58.5 16"] },
-  think: { mouth: "o", eyesUp: true, arms: ["M11 31 Q5.5 34 7 40", "M53 31 Q50 40 41 40"] },
-  alert: { mouth: "o", arms: ["M11 29 Q5 25 6 19", "M53 29 Q59 25 58 19"] },
-  oops: { mouth: "M27 37.5 Q29.5 35 32 37.5 Q34.5 40 37 37.5", arms: ["M11 29 Q4 27 4.5 21", "M53 31 Q58.5 34 57 40"] },
-  read: { mouth: "M28.5 36 Q32 39 35.5 36", eyesDown: true, arms: ["M11 33 Q14 44 21 44", "M53 33 Q50 44 43 44"], book: true },
-};
-function mascot(pose = "happy", size = 44) {
-  const p = POSES[pose] || POSES.happy;
-  const ey = p.eyesUp ? 25.5 : p.eyesDown ? 29.5 : 28;
-  const ink = { fill: "none", stroke: "var(--m-ink)", "stroke-width": "2.4", "stroke-linecap": "round", "stroke-linejoin": "round" };
-  return svg("svg", { class: "mascot m-" + pose, viewBox: "0 0 64 64", width: size, height: size, "aria-hidden": "true", focusable: "false" },
-    p.arms.map(d => svg("path", { d, fill: "none", stroke: "var(--m-body-dk)", "stroke-width": "4.5", "stroke-linecap": "round" })),
-    svg("path", { d: "M32 5 Q45 9.5 54 10 Q57 39 32 58.5 Q7 39 10 10 Q19 9.5 32 5 Z", fill: "var(--m-body)", stroke: "var(--m-body)", "stroke-width": "3", "stroke-linejoin": "round" }),
-    svg("ellipse", { cx: "21", cy: "17", rx: "5", ry: "3", fill: "#fff", opacity: ".45", transform: "rotate(-25 21 17)" }),
-    [24, 40].map(x => [svg("ellipse", { class: "eye", cx: x, cy: ey, rx: "2.7", ry: "3.4", fill: "var(--m-ink)" }),
-      svg("circle", { cx: x + 0.9, cy: ey - 1.2, r: "0.95", fill: "#fff" })]),
-    [18.5, 45.5].map(x => svg("ellipse", { cx: x, cy: "35", rx: "3.6", ry: "2.2", fill: "var(--m-cheek)" })),
-    p.mouth === "o" ? svg("ellipse", { cx: "32", cy: "37", rx: "1.9", ry: "2.3", fill: "var(--m-ink)" }) : svg("path", Object.assign({ d: p.mouth }, ink)),
-    p.book ? [svg("rect", { x: "20", y: "43", width: "24", height: "12", rx: "2.5", fill: "var(--brand)" }),
-      svg("path", { d: "M32 44.5 V53.5", stroke: "var(--on-brand)", "stroke-width": "1.6", "stroke-linecap": "round" })] : null);
+// ---------- looks and mascots ----------
+// Two looks: "pandan" (default) with Kopi the otter, and "berry" with Pip the hedgehog. Colours
+// come from the --m-* tokens in app.css, so each mascot follows light and dark. Every pose keeps
+// the face's ink on the pale muzzle (--m-belly), checked at 3:1 by tools/contrast.py.
+const LOOKS = { pandan: { name: "Pandan Sunrise", mascot: "Kopi", animal: "otter", theme: "#1f6b4a" },
+                berry: { name: "Berry Pop", mascot: "Pip", animal: "hedgehog", theme: "#b0175a" } };
+function look() { return document.documentElement.getAttribute("data-look") === "berry" ? "berry" : "pandan"; }
+function mascotName() { return LOOKS[look()].mascot; }
+
+const MV = { body: "var(--m-body)", dk: "var(--m-body-dk)", belly: "var(--m-belly)", ink: "var(--m-ink)", cheek: "var(--m-cheek)", acc: "var(--m-acc)" };
+// Six poses the site uses: happy, wave, think, alert (careful), oops (something failed), read.
+const POSES = { happy: ["", "smile"], wave: ["", "smile"], think: ["up", "o"], alert: ["wide", "wobble"], oops: ["wide", "wobble"], read: ["down", "smile"] };
+function mEyes(x1, x2, y, mode) {
+  if (mode === "shut") return [x1, x2].map(x => `<path d="M${x - 3.5} ${y} h7" fill="none" stroke="${MV.ink}" stroke-width="2.4" stroke-linecap="round"/>`).join("");
+  const dy = mode === "up" ? -1.6 : mode === "down" ? 1.4 : 0, ry = mode === "wide" ? 4.4 : 3.7;
+  return [x1, x2].map(x => `<g class="eye"><ellipse cx="${x}" cy="${y + dy}" rx="3" ry="${ry}" fill="${MV.ink}"/><circle cx="${x + 1.1}" cy="${y + dy - 1.4}" r="1.1" fill="#fff"/></g>`).join("");
 }
+function mMouth(kind, x, y) {
+  if (kind === "o") return `<ellipse cx="${x}" cy="${y + 1}" rx="2.1" ry="2.6" fill="${MV.ink}"/>`;
+  if (kind === "wobble") return `<path d="M${x - 5} ${y + 1} q2.5 -3 5 0 q2.5 3 5 0" fill="none" stroke="${MV.ink}" stroke-width="2.2" stroke-linecap="round"/>`;
+  return `<path d="M${x - 4.5} ${y - 1} q4.5 5 9 0" fill="none" stroke="${MV.ink}" stroke-width="2.4" stroke-linecap="round"/>`;
+}
+const mCheeks = (x1, x2, y) => `<ellipse cx="${x1}" cy="${y}" rx="4" ry="2.4" fill="${MV.cheek}" opacity=".85"/><ellipse cx="${x2}" cy="${y}" rx="4" ry="2.4" fill="${MV.cheek}" opacity=".85"/>`;
+const mBook = `<rect x="34" y="70" width="32" height="18" rx="3" fill="var(--brand)"/><path d="M50 72 V86" stroke="var(--on-brand)" stroke-width="1.8" stroke-linecap="round"/>`;
+
+function drawOtter(pose) {
+  const [em, mk] = POSES[pose];
+  const up = pose === "wave" ? "M70 62 Q82 50 78 38" : pose === "think" ? "M70 64 Q66 60 58 60" : pose === "oops" ? "M70 60 Q80 46 68 34" : pose === "read" ? "M70 66 Q66 74 60 76" : "M70 64 Q78 70 74 78";
+  const left = pose === "read" ? "M30 66 Q34 74 40 76" : "M30 64 Q22 70 26 78";
+  // Careful: Kopi opens the umbrella over whatever can hurt you.
+  const brolly = pose === "alert" ? `<path d="M20 24 Q50 -4 80 24 Z" fill="${MV.acc}"/><path d="M20 24 q7.5 -5 15 0 q7.5 -5 15 0 q7.5 -5 15 0 q7.5 -5 15 0" fill="none" stroke="#fff" stroke-width="1.6" opacity=".75"/><path d="M50 24 V36" stroke="${MV.ink}" stroke-width="2"/>` : "";
+  return `${brolly}<ellipse cx="50" cy="70" rx="25" ry="25" fill="${MV.body}"/>
+    <ellipse cx="50" cy="74" rx="15" ry="16" fill="${MV.belly}"/>
+    <path d="${left}" fill="none" stroke="${MV.dk}" stroke-width="6.5" stroke-linecap="round"/>
+    <circle cx="28.5" cy="38" r="4.6" fill="${MV.dk}"/><circle cx="71.5" cy="38" r="4.6" fill="${MV.dk}"/>
+    <ellipse cx="50" cy="46" rx="24" ry="20" fill="${MV.body}"/>
+    <ellipse cx="50" cy="49" rx="18" ry="13" fill="${MV.belly}"/>
+    ${mEyes(42, 58, 43.5, em)}${mCheeks(34.5, 65.5, 52)}
+    <circle cx="45.6" cy="53.2" r="4.4" fill="${MV.belly}" stroke="${MV.dk}" stroke-width=".8" stroke-opacity=".35"/>
+    <circle cx="54.4" cy="53.2" r="4.4" fill="${MV.belly}" stroke="${MV.dk}" stroke-width=".8" stroke-opacity=".35"/>
+    <ellipse cx="50" cy="49.4" rx="3.6" ry="2.6" fill="${MV.ink}"/>${mMouth(mk, 50, 59)}
+    <path d="M42 52 l-12 -2.5 M42 54.5 l-12 1 M58 52 l12 -2.5 M58 54.5 l12 1" stroke="${MV.ink}" stroke-width="1.1" opacity=".6" stroke-linecap="round"/>
+    ${pose === "read" ? mBook : ""}<path d="${up}" fill="none" stroke="${MV.dk}" stroke-width="6.5" stroke-linecap="round"/>`;
+}
+function drawHedgehog(pose) {
+  const [em, mk] = POSES[pose];
+  const curl = pose === "alert"; // Careful: Pip curls into a spiky ball.
+  const cx = 50, cy = curl ? 58 : 56, r = curl ? 27 : 30, n = curl ? 18 : 13, a0 = curl ? 0 : Math.PI * .95, a1 = curl ? Math.PI * 2 : Math.PI * 2.05;
+  let sp = "";
+  for (let i = 0; i <= n; i++) {
+    const a = a0 + (a1 - a0) * i / n, b = a + (a1 - a0) / n / 2;
+    sp += `${i ? "L" : "M"}${(cx + Math.cos(a) * r).toFixed(1)} ${(cy + Math.sin(a) * r).toFixed(1)} L${(cx + Math.cos(b) * (r + 11)).toFixed(1)} ${(cy + Math.sin(b) * (r + 11)).toFixed(1)} `;
+  }
+  if (curl) return `<path d="${sp}Z" fill="${MV.dk}"/><circle cx="${cx}" cy="${cy}" r="${r}" fill="${MV.body}"/>
+    <circle cx="50" cy="62" r="13" fill="${MV.belly}"/>${mEyes(45, 55, 60, "shut")}<circle cx="50" cy="67" r="2.2" fill="${MV.ink}"/>`;
+  const armR = pose === "wave" ? "M70 66 Q80 56 77 46" : pose === "think" ? "M68 70 Q64 66 58 66" : pose === "oops" ? "M70 64 Q78 52 66 42" : pose === "read" ? "M70 72 Q66 78 60 78" : "M70 70 Q76 76 72 82";
+  const armL = pose === "read" ? "M30 72 Q34 78 40 78" : "M30 70 Q24 76 28 82";
+  return `<path d="${sp}" fill="${MV.dk}"/><circle cx="50" cy="56" r="30" fill="${MV.body}"/>
+    <ellipse cx="50" cy="62" rx="22" ry="21" fill="${MV.belly}"/>
+    <circle cx="33" cy="38" r="5" fill="${MV.belly}"/><circle cx="67" cy="38" r="5" fill="${MV.belly}"/>
+    ${mEyes(42, 58, 57, em)}${mCheeks(35, 65, 66)}<circle cx="50" cy="64" r="2.6" fill="${MV.ink}"/>${mMouth(mk, 50, 70)}
+    ${pose === "read" ? mBook : ""}
+    <path d="${armL}" fill="none" stroke="${MV.belly}" stroke-width="6" stroke-linecap="round"/><path d="${armR}" fill="none" stroke="${MV.belly}" stroke-width="6" stroke-linecap="round"/>`;
+}
+function mascot(pose = "happy", size = 44) {
+  const el = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  for (const [k, v] of Object.entries({ class: "mascot m-" + pose, viewBox: "0 0 100 100", width: size, height: size, "aria-hidden": "true", focusable: "false" })) el.setAttribute(k, v);
+  el.innerHTML = (look() === "berry" ? drawHedgehog : drawOtter)(POSES[pose] ? pose : "happy");
+  return el;
+}
+
+// The look switch: in the footer of every page and in the phone's More sheet. The choice is
+// kept in this browser; look.js applies it before the next page paints.
+function setLook(v) {
+  if (v === "berry") document.documentElement.setAttribute("data-look", "berry"); else document.documentElement.removeAttribute("data-look");
+  try { if (v === "berry") localStorage.setItem("ai-look", "berry"); else localStorage.removeItem("ai-look"); } catch { /* not saved */ }
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute("content", LOOKS[look()].theme);
+  renderLookSwitches();
+  if (typeof helperRedraw === "function") helperRedraw();
+  rerender();
+}
+function lookSwitch(id) {
+  const cur = look();
+  return h("div", { class: "look", role: "group", "aria-labelledby": id + "-l" },
+    h("span", { id: id + "-l", class: "look-l", text: "Look" }),
+    h("div", { class: "look-seg" }, Object.entries(LOOKS).map(([k, L]) =>
+      h("button", { type: "button", class: "look-b", "aria-pressed": String(k === cur), onclick: () => { if (k !== look()) setLook(k); } },
+        h("span", { class: "look-dot look-dot-" + k, "aria-hidden": "true" }), `${L.name} · ${L.mascot}`))));
+}
+function renderLookSwitches() {
+  for (const id of ["look-foot", "look-more"]) { const slot = document.getElementById(id); if (slot) slot.replaceChildren(lookSwitch(id)); }
+}
+
 // The mascot "says" a page's intro: a speech bubble beside it, the text itself unchanged.
 function say(pose, bubble) { return h("div", { class: "say" }, mascot(pose, 48), bubble); }
 function empty(pose, ...kids) { return h("div", { class: "empty" }, mascot(pose, 64), h("div", null, ...kids)); }
@@ -1077,7 +1148,7 @@ function viewMissing() {
 const LEDE_POSE = { when: "think", top5: "alert", insurers: "wave", glossary: "read", sources: "read", faq: "think" };
 const TAB_OF = { "": "types", type: "types", when: "when", top5: "top5", insurers: "insurers", insurer: "insurers", compare: "compare", schemes: "schemes", check: "check", glossary: "glossary", faq: "faq", sources: "sources" };
 
-// ---------- Shieldy, the helper ----------
+// ---------- the helper (Kopi or Pip, by look) ----------
 // A small mascot in the corner that now and then offers a navigation hint. Rules that keep it
 // from being a nuisance: at most one tip per page view, each tip shown once ever, never in the
 // first moments of a page or while you type, gone by itself after 8 seconds, hidden while you
@@ -1120,7 +1191,7 @@ function helperTip(seg, arg) {
   if (!helper.el || helper.el.hidden || helper.shownThisPage) return;
   const seen = seenTips();
   const tips = [
-    { id: "welcome", when: seg === "", text: "Hi, I'm Shieldy! New here? \"What pays when\" shows how the different covers fit together.", action: { label: "Show me", href: "#/when" } },
+    { id: "welcome", when: seg === "", text: `Hi, I'm ${mascotName()}! New here? "What pays when" shows how the different covers fit together.`, action: { label: "Show me", href: "#/when" } },
     { id: "age", when: seg === "type" && arg === "hospitalisation" && !getAge(), text: "Tell me your age next birthday and I'll show what a Shield plan would cost you.", action: { label: "Enter my age", run: () => { const i = document.getElementById("my-age"); if (i) { i.scrollIntoView({ block: "center" }); i.focus({ preventScroll: true }); } } } },
     { id: "qa", when: seg === "type" && !!document.getElementById("qa-h"), text: "There are common questions about this type further down the page.", action: { label: "Take me there", run: () => { const d = document.getElementById("qa"); d.open = true; d.scrollIntoView({ block: "start" }); } } },
     { id: "sources", when: seg === "type", text: "Every official figure links to its source. Tap the little arrow to check it yourself." },
@@ -1146,12 +1217,18 @@ function helperOnRoute(seg, arg) {
   helperTip(seg, arg);
 }
 
+function helperRedraw() {
+  const btn = helper.el && helper.el.querySelector(".hbtn");
+  if (!btn) return;
+  btn.replaceChildren(mascot("wave", 52));
+  btn.setAttribute("aria-label", `${mascotName()}, the helper. Tap for a hint.`);
+}
 function mountHelper() {
   if (store.get(HELPER_OFF)) return;
   helper.bubble = h("div", { class: "hb", role: "status", "aria-live": "polite", hidden: true });
-  const btn = h("button", { type: "button", class: "hbtn", "aria-label": "Shieldy, the helper. Tap for a hint.", onclick: () => {
+  const btn = h("button", { type: "button", class: "hbtn", "aria-label": `${mascotName()}, the helper. Tap for a hint.`, onclick: () => {
       if (!helper.bubble.hidden) { helper.bubble.hidden = true; helper.el.classList.remove("talking"); return; }
-      const lines = ["Hi, I'm Shieldy! I point you to the right part of this site. I don't give advice.",
+      const lines = [`Hi, I'm ${mascotName()}! I point you to the right part of this site. I don't give advice.`,
         "Your age, if you enter it, stays in this browser only.",
         "Lost? \"What pays when\" is a good place to start."];
       helperSay(lines[Math.floor(Math.random() * lines.length)], null, { offer: true });
@@ -1271,6 +1348,7 @@ async function load() {
     document.getElementById("foot-meta").textContent =
       `Government facts checked ${g.updated}. ${state.products.length} plans from ${state.insurers.length} insurers.`;
     window.addEventListener("hashchange", route);
+    renderLookSwitches();
     mountHelper();
     route();
   } catch (err) {

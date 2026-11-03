@@ -18,7 +18,7 @@ PAIRS = [("text", "bg", 4.5), ("text", "surface", 4.5), ("muted", "bg", 4.5), ("
          ("ok-fg", "surface", 3.0), ("ok-fg", "bg", 3.0), ("link", "warn-bg", 3.0),
          # Category icons on their chips, and the mascot's face on its body (graphics: 3:1).
          ("c0-fg", "c0-bg", 3.0), ("c1-fg", "c1-bg", 3.0), ("c2-fg", "c2-bg", 3.0), ("c3-fg", "c3-bg", 3.0),
-         ("c4-fg", "c4-bg", 3.0), ("m-ink", "m-body", 3.0)]
+         ("c4-fg", "c4-bg", 3.0), ("m-ink", "m-belly", 3.0)]
 
 
 def lum(hexv):
@@ -32,18 +32,28 @@ def ratio(a, b):
     return (la + 0.05) / (lb + 0.05)
 
 
+def tokens(block):
+    return dict(re.findall(r"--([\w-]+):\s*(#[0-9a-fA-F]{6})", block))
+
+
 def main():
     css = open(os.path.join(ROOT, "public", "app.css"), encoding="utf-8").read()
-    light = dict(re.findall(r"--([\w-]+):\s*(#[0-9a-fA-F]{6})", css.split("@media (prefers-color-scheme: dark)")[0]))
-    dark_block = css.split("@media (prefers-color-scheme: dark)")[1].split("\n}\n")[0]
-    dark = dict(light, **dict(re.findall(r"--([\w-]+):\s*(#[0-9a-fA-F]{6})", dark_block)))
+    # Two looks (the default and data-look="berry"), each in light and dark: four palettes.
+    head, rest = css.split("@media (prefers-color-scheme: dark)", 1)
+    light = tokens(head)
+    dark = dict(light, **tokens(rest.split("\n}\n")[0]))
+    themes = [("light", light), ("dark", dark)]
+    if ':root[data-look="berry"] {' in css:
+        b_light = dict(light, **tokens(css.split(':root[data-look="berry"] {')[1].split("\n}\n")[0]))
+        b_dark_block = css.split('@media (prefers-color-scheme: dark) {\n  :root[data-look="berry"] {')[1].split("\n}\n")[0]
+        themes += [("berry-light", b_light), ("berry-dark", dict(b_light, **tokens(b_dark_block)))]
     bad = 0
-    for mode, t in (("light", light), ("dark", dark)):
+    for mode, t in themes:
         for fg, bg, need in PAIRS:
             r = ratio(t[fg], t[bg])
             flag = "" if r >= need else "  <-- FAIL"
             bad += bool(flag)
-            print("%-5s %-9s on %-9s %5.2f (need %.1f)%s" % (mode, fg, bg, r, need, flag))
+            print("%-11s %-9s on %-9s %5.2f (need %.1f)%s" % (mode, fg, bg, r, need, flag))
     return 1 if bad else 0
 
 
