@@ -1,0 +1,26 @@
+{
+  "_doc": "Sources read by hand because the site refuses scripts from the local PC too. tools/local_verify.py forgives a refusal only for a source listed here with checked_on under 30 days old. Update checked_on only after reading every source again: pages in a browser, PDFs with tools/hand_check.py.",
+  "checks": [
+    {
+      "insurer": "aia",
+      "checked_on": "2026-11-04",
+      "how": "39 cells. 24 from product pages: quotes matched in the Browser pane. 15 from PDFs saved from that browser: tools/hand_check.py.",
+      "sources": [
+        "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/aia-secure-flexi-term",
+        "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/aia-mortgage-reducing-term-assurance",
+        "https://www.aia.com.sg/en/our-products/life-insurance/term-insurance/direct-aia-term-cover",
+        "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-absolute-critical-cover",
+        "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-beyond-critical-care",
+        "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-diabetes-care",
+        "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-ultimate-critical-cover",
+        "https://www.aia.com.sg/en/our-products/health/critical-illness/aia-protect-3",
+        "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-absolute-critical-cover-brochure.pdf",
+        "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-beyond-critical-care.pdf",
+        "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-diabetes-care.pdf",
+        "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-glow-of-life.pdf",
+        "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-prime-critical-cover.pdf",
+        "https://www.aia.com.sg/content/dam/sg-wise/en/docs/our-products/en/aia-healthshield-gold-max-english-brochure.pdf"
+      ]
+    }
+  ]
+}
