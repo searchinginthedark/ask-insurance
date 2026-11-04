@@ -1,5 +1,9 @@
 # Changelog
 
+## v2026.11.04
+
+- verify: a dated hand check covers sources that refuse this PC
+
 ## v2026.11.03.14
 
 - feat: "Questions to ask yourself" on seven "is it worth it" Q&As: 3 to 4 questions each, every one quoted from MoneySense, CPF or LIA, still no verdict
