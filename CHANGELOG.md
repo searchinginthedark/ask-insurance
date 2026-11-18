@@ -1,5 +1,10 @@
 # Changelog
 
+## v2026.11.18
+
+- fix(verify): refetch a failing guide source once before calling it red
+- data: DPS quote follows Great Eastern's reworded page
+
 ## v2026.11.04
 
 - verify: a dated hand check covers sources that refuse this PC
