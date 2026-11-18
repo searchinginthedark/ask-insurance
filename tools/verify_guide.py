@@ -18,6 +18,7 @@ import json
 import os
 import re
 import sys
+import time
 import unicodedata
 
 import requests
@@ -27,6 +28,7 @@ import fetch
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, "research", "raw", "guide")
 NUM = re.compile(r"\d[\d,]*(?:\.\d+)?")
+RETRY_WAIT = 10  # seconds before refetching a source that failed a check
 
 
 def numbers(s):
@@ -53,6 +55,17 @@ def plain(s):
 
 def source_text(url, fresh):
     return fetch.text(url, CACHE, fresh=fresh, timeout=45)
+
+
+def absent(item, text, source):
+    """Numbers and quotes of one item that its source text lacks."""
+    corpus, words = source
+    missing = sorted(numbers(text) - corpus)
+    quotes = item.get("quote") or []
+    for q in [quotes] if isinstance(quotes, str) else quotes:
+        if letters(q) not in words:
+            missing.append("quote %r" % q[:40])
+    return missing
 
 
 def items(guide):
@@ -124,6 +137,7 @@ def main(argv):
     with open(os.path.join(ROOT, "data", "guide.json"), encoding="utf-8") as f:
         guide = json.load(f)
     texts, bad, checked, refused, skipped = {}, [], 0, {}, 0
+    retried, failed, shown = set(), set(), {}
     # A FAQ one-liner summarises its answer, so it may not carry a number the answer lacks. The page
     # check alone cannot see "28 days" as wrong when the page also says "updated 28 September".
     for q in guide["faq"] + [q for c in guide["categories"] for q in c.get("qa", [])]:
@@ -150,15 +164,24 @@ def main(argv):
         if texts[sid] is None:
             skipped += sid in refused
             continue
-        corpus, words = texts[sid]
-        missing = sorted(numbers(text) - corpus)
-        quotes = item.get("quote") or []
-        for q in [quotes] if isinstance(quotes, str) else quotes:
-            if letters(q) not in words:
-                missing.append("quote %r" % q[:40])
+        missing = absent(item, text, texts[sid])
+        if missing and sid not in retried:
+            # A site sometimes sends a GitHub runner a page without its usual body (SDIC, 18 Nov 2026:
+            # three figures missing on one run, present on the runs either side). Refetch once, fresh,
+            # because fetch.text caches any 200; a real change fails both reads.
+            retried.add(sid)
+            time.sleep(RETRY_WAIT)
+            try:
+                raw = source_text(guide["sources"][sid]["url"], True)
+                texts[sid] = (numbers(raw), letters(raw))
+                shown[sid] = raw
+                missing = absent(item, text, texts[sid])
+            except (fetch.Blocked, requests.RequestException) as e:
+                shown[sid] = "refetch failed: %s" % e
         checked += 1
         if missing:
             bad.append((where, text, "not in %s: %s" % (sid, ", ".join(missing))))
+            failed.add(sid)
     sp = guide.get("starting_pay")
     if sp:
         try:
@@ -173,6 +196,11 @@ def main(argv):
     fetch.warn("%s refused: %s (%s)" % (sid, why, guide["sources"][sid]["url"]) for sid, why in sorted(refused.items()))
     for where, text, why in bad:
         print("  %-28s %s | %s" % (where, why, text[:110]))
+    # Say what the failing source actually sent, so a red run shows a reworded page apart from a
+    # degraded one without a second guess.
+    for sid in sorted(failed):
+        raw = shown.get(sid, "")
+        print("  %s sent %d chars after one fresh retry: %r" % (sid, len(raw), " ".join(raw.split())[:200]))
     return 1 if bad else 0
 
 
